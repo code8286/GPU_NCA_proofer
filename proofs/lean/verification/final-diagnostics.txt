@@ -1,0 +1,307 @@
+AXWebArea Infoview, URL: live.lean-lang.org/
+				23 container react_root
+					24 container
+						25 button (expanded) mathlib-stable.lean:472:0   , Secondary Actions: Collapse
+							26 text mathlib-stable.lean:472:0
+							329 text 
+							28 container
+								29 link Description: , Help: Pin state to top
+									330 text 
+								31 link Description: , Help: Pause state
+									331 text 
+						33 text No info found.
+					45 container
+						46 button (expanded) All Messages (46) , Secondary Actions: Collapse
+							47 text All Messages (
+							48 text 46
+							49 text )
+							50 link Description: , Help: Pause 'All Messages'
+								54 text 
+						55 button (expanded) mathlib-stable.lean:426:0 , Secondary Actions: Collapse
+							56 text mathlib-stable.lean:426:0
+							57 link Description: , Help: Go to source location of message
+								58 text 
+						59 text "4.35.0"
+						60 button (expanded) mathlib-stable.lean:427:0 , Secondary Actions: Collapse
+							61 text mathlib-stable.lean:427:0
+							62 link Description: , Help: Go to source location of message
+								63 text 
+						64 container
+							65 text ' GraphNCA.graphStep_equivariant ' depends on axioms:  [ propext , Quot.sound ]
+						66 button (expanded) mathlib-stable.lean:428:0 , Secondary Actions: Collapse
+							67 text mathlib-stable.lean:428:0
+							68 link Description: , Help: Go to source location of message
+								69 text 
+						70 container
+							71 text ' GraphNCA.swappedRelation_bijective ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						72 button (expanded) mathlib-stable.lean:429:0 , Secondary Actions: Collapse
+							73 text mathlib-stable.lean:429:0
+							74 link Description: , Help: Go to source location of message
+								75 text 
+						76 container
+							77 text ' GraphNCA.swappedRelation_unique_preimage ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						78 button (expanded) mathlib-stable.lean:430:0 , Secondary Actions: Collapse
+							79 text mathlib-stable.lean:430:0
+							80 link Description: , Help: Go to source location of message
+								81 text 
+						82 container
+							83 text ' GraphNCA.totalLag_permutation ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						84 button (expanded) mathlib-stable.lean:431:0 , Secondary Actions: Collapse
+							85 text mathlib-stable.lean:431:0
+							86 link Description: , Help: Go to source location of message
+								87 text 
+						88 container
+							89 text ' GraphNCA.meanLag_permutation ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						90 button (expanded) mathlib-stable.lean:432:0 , Secondary Actions: Collapse
+							91 text mathlib-stable.lean:432:0
+							92 link Description: , Help: Go to source location of message
+								93 text 
+						94 container
+							95 text ' GraphNCA.patchLag_bounds ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						96 button (expanded) mathlib-stable.lean:433:0 , Secondary Actions: Collapse
+							97 text mathlib-stable.lean:433:0
+							98 link Description: , Help: Go to source location of message
+								99 text 
+						100 container
+							101 text ' GraphNCA.fullWindow_visibility ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						102 button (expanded) mathlib-stable.lean:434:0 , Secondary Actions: Collapse
+							103 text mathlib-stable.lean:434:0
+							104 link Description: , Help: Go to source location of message
+								105 text 
+						106 container
+							107 text ' GraphNCA.prefix_visibility ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						108 button (expanded) mathlib-stable.lean:435:0 , Secondary Actions: Collapse
+							109 text mathlib-stable.lean:435:0
+							110 link Description: , Help: Go to source location of message
+								111 text 
+						112 container
+							113 text ' GraphNCA.binary_parent_lag_fits ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						114 button (expanded) mathlib-stable.lean:436:0 , Secondary Actions: Collapse
+							115 text mathlib-stable.lean:436:0
+							116 link Description: , Help: Go to source location of message
+								117 text 
+						118 container
+							119 text ' GraphNCA.crop_prefix_can_miss_parent ' does not depend on any axioms
+						120 button (expanded) mathlib-stable.lean:437:0 , Secondary Actions: Collapse
+							121 text mathlib-stable.lean:437:0
+							122 link Description: , Help: Go to source location of message
+								123 text 
+						124 container
+							125 text ' GraphNCA.encodeBinaryPatch_lt_sixteen ' depends on axioms:  [ propext , Quot.sound ]
+						126 button (expanded) mathlib-stable.lean:438:0 , Secondary Actions: Collapse
+							127 text mathlib-stable.lean:438:0
+							128 link Description: , Help: Go to source location of message
+								129 text 
+						130 container
+							131 text ' GraphNCA.encodeBinaryPatch_injective ' depends on axioms:  [ propext , Quot.sound ]
+						132 button (expanded) mathlib-stable.lean:439:0 , Secondary Actions: Collapse
+							133 text mathlib-stable.lean:439:0
+							134 link Description: , Help: Go to source location of message
+								135 text 
+						136 container
+							137 text ' GraphNCA.binary_patch_digits ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						138 button (expanded) mathlib-stable.lean:440:0 , Secondary Actions: Collapse
+							139 text mathlib-stable.lean:440:0
+							140 link Description: , Help: Go to source location of message
+								141 text 
+						142 container
+							143 text ' GraphNCA.resetHead_preserves_backbone ' does not depend on any axioms
+						144 button (expanded) mathlib-stable.lean:441:0 , Secondary Actions: Collapse
+							145 text mathlib-stable.lean:441:0
+							146 link Description: , Help: Go to source location of message
+								147 text 
+						148 container
+							149 text ' GraphNCA.resetHead_discards_synthetic_head ' does not depend on any axioms
+						150 button (expanded) mathlib-stable.lean:442:0 , Secondary Actions: Collapse
+							151 text mathlib-stable.lean:442:0
+							152 link Description: , Help: Go to source location of message
+								153 text 
+						154 container
+							155 text ' GraphNCA.resetHead_idempotent ' does not depend on any axioms
+						156 button (expanded) mathlib-stable.lean:443:0 , Secondary Actions: Collapse
+							157 text mathlib-stable.lean:443:0
+							158 link Description: , Help: Go to source location of message
+								159 text 
+						160 container
+							161 text ' GraphNCA.descent_from_remainder_bound ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						162 button (expanded) mathlib-stable.lean:444:0 , Secondary Actions: Collapse
+							163 text mathlib-stable.lean:444:0
+							164 link Description: , Help: Go to source location of message
+								165 text 
+						166 container
+							167 text ' GraphNCA.sufficient_backbone_transfer ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						168 button (expanded) mathlib-stable.lean:445:0 , Secondary Actions: Collapse
+							169 text mathlib-stable.lean:445:0
+							170 link Description: , Help: Go to source location of message
+								171 text 
+						172 container
+							173 text ' GraphNCA.one_step_alignment ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						174 button (expanded) mathlib-stable.lean:446:0 , Secondary Actions: Collapse
+							175 text mathlib-stable.lean:446:0
+							176 link Description: , Help: Go to source location of message
+								177 text 
+						178 container
+							179 text ' GraphNCA.compare_from_two_sided_bounds ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						180 button (expanded) mathlib-stable.lean:447:0 , Secondary Actions: Collapse
+							181 text mathlib-stable.lean:447:0
+							182 link Description: , Help: Go to source location of message
+								183 text 
+						184 container
+							185 text ' GraphNCA.total_cost_break_even ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						186 button (expanded) mathlib-stable.lean:448:0 , Secondary Actions: Collapse
+							187 text mathlib-stable.lean:448:0
+							188 link Description: , Help: Go to source location of message
+								189 text 
+						190 container
+							191 text ' GraphNCA.linear_surrogate_expansion ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						192 button (expanded) mathlib-stable.lean:449:0 , Secondary Actions: Collapse
+							193 text mathlib-stable.lean:449:0
+							194 link Description: , Help: Go to source location of message
+								195 text 
+						196 container
+							197 text ' GraphNCA.equal_size_target_comparison ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						198 button (expanded) mathlib-stable.lean:450:0 , Secondary Actions: Collapse
+							199 text mathlib-stable.lean:450:0
+							200 link Description: , Help: Go to source location of message
+								201 text 
+						202 container
+							203 text ' GraphNCA.squared_difference_identity ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						204 button (expanded) mathlib-stable.lean:451:0 , Secondary Actions: Collapse
+							205 text mathlib-stable.lean:451:0
+							206 link Description: , Help: Go to source location of message
+								207 text 
+						208 container
+							209 text ' GraphNCA.synthetic_linear_recurrence ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						210 button (expanded) mathlib-stable.lean:452:0 , Secondary Actions: Collapse
+							211 text mathlib-stable.lean:452:0
+							212 link Description: , Help: Go to source location of message
+								213 text 
+						214 container
+							215 text ' GraphNCA.scalar_recurrence_solution ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						216 button (expanded) mathlib-stable.lean:453:0 , Secondary Actions: Collapse
+							217 text mathlib-stable.lean:453:0
+							218 link Description: , Help: Go to source location of message
+								219 text 
+						220 container
+							221 text ' GraphNCA.two_mode_closed_form ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						222 button (expanded) mathlib-stable.lean:454:0 , Secondary Actions: Collapse
+							223 text mathlib-stable.lean:454:0
+							224 link Description: , Help: Go to source location of message
+								225 text 
+						226 container
+							227 text ' GraphNCA.coefficient_dominance ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						228 button (expanded) mathlib-stable.lean:455:0 , Secondary Actions: Collapse
+							229 text mathlib-stable.lean:455:0
+							230 link Description: , Help: Go to source location of message
+								231 text 
+						232 container
+							233 text ' GraphNCA.initial_loss_ranking ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						234 button (expanded) mathlib-stable.lean:456:0 , Secondary Actions: Collapse
+							235 text mathlib-stable.lean:456:0
+							236 link Description: , Help: Go to source location of message
+								237 text 
+						238 container
+							239 text ' GraphNCA.after_one_step_ranking_reverses ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						240 button (expanded) mathlib-stable.lean:457:0 , Secondary Actions: Collapse
+							241 text mathlib-stable.lean:457:0
+							242 link Description: , Help: Go to source location of message
+								243 text 
+						244 container
+							245 text ' GraphNCA.scratchToyLoss_at_38 ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						246 button (expanded) mathlib-stable.lean:458:0 , Secondary Actions: Collapse
+							247 text mathlib-stable.lean:458:0
+							248 link Description: , Help: Go to source location of message
+								249 text 
+						250 container
+							251 text ' GraphNCA.scratchToyLoss_at_39 ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						252 button (expanded) mathlib-stable.lean:459:0 , Secondary Actions: Collapse
+							253 text mathlib-stable.lean:459:0
+							254 link Description: , Help: Go to source location of message
+								255 text 
+						256 container
+							257 text ' GraphNCA.transferredToyLoss_at_24 ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						258 button (expanded) mathlib-stable.lean:460:0 , Secondary Actions: Collapse
+							259 text mathlib-stable.lean:460:0
+							260 link Description: , Help: Go to source location of message
+								261 text 
+						262 container
+							263 text ' GraphNCA.transferredToyLoss_at_25 ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						264 button (expanded) mathlib-stable.lean:461:0 , Secondary Actions: Collapse
+							265 text mathlib-stable.lean:461:0
+							266 link Description: , Help: Go to source location of message
+								267 text 
+						268 container
+							269 text ' GraphNCA.unit_interval_power_antitone ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						270 button (expanded) mathlib-stable.lean:462:0 , Secondary Actions: Collapse
+							271 text mathlib-stable.lean:462:0
+							272 link Description: , Help: Go to source location of message
+								273 text 
+						274 container
+							275 text ' GraphNCA.scratchToyLoss_antitone ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						276 button (expanded) mathlib-stable.lean:463:0 , Secondary Actions: Collapse
+							277 text mathlib-stable.lean:463:0
+							278 link Description: , Help: Go to source location of message
+								279 text 
+						280 container
+							281 text ' GraphNCA.transferredToyLoss_antitone ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						282 button (expanded) mathlib-stable.lean:464:0 , Secondary Actions: Collapse
+							283 text mathlib-stable.lean:464:0
+							284 link Description: , Help: Go to source location of message
+								285 text 
+						286 container
+							287 text ' GraphNCA.scratch_first_hit ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						288 button (expanded) mathlib-stable.lean:465:0 , Secondary Actions: Collapse
+							289 text mathlib-stable.lean:465:0
+							290 link Description: , Help: Go to source location of message
+								291 text 
+						292 container
+							293 text ' GraphNCA.transferred_first_hit ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						294 button (expanded) mathlib-stable.lean:466:0 , Secondary Actions: Collapse
+							295 text mathlib-stable.lean:466:0
+							296 link Description: , Help: Go to source location of message
+								297 text 
+						298 container
+							299 text ' GraphNCA.model_parameter_count ' depends on axioms:  [ propext ]
+						300 button (expanded) mathlib-stable.lean:467:0 , Secondary Actions: Collapse
+							301 text mathlib-stable.lean:467:0
+							302 link Description: , Help: Go to source location of message
+								303 text 
+						304 container
+							305 text ' GraphNCA.retained_token_count ' depends on axioms:  [ propext ]
+						306 button (expanded) mathlib-stable.lean:468:0 , Secondary Actions: Collapse
+							307 text mathlib-stable.lean:468:0
+							308 link Description: , Help: Go to source location of message
+								309 text 
+						310 container
+							311 text ' GraphNCA.qualifying_prefix_count ' depends on axioms:  [ propext ]
+						312 button (expanded) mathlib-stable.lean:469:0 , Secondary Actions: Collapse
+							313 text mathlib-stable.lean:469:0
+							314 link Description: , Help: Go to source location of message
+								315 text 
+						316 container
+							317 text ' GraphNCA.cost_examples ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						318 button (expanded) mathlib-stable.lean:470:0 , Secondary Actions: Collapse
+							319 text mathlib-stable.lean:470:0
+							320 link Description: , Help: Go to source location of message
+								321 text 
+						322 container
+							323 text ' GraphNCA.linear_surrogate_losses ' depends on axioms:  [ propext , Classical.choice , Quot.sound ]
+						324 button (expanded) mathlib-stable.lean:471:0 , Secondary Actions: Collapse
+							325 text mathlib-stable.lean:471:0
+							326 link Description: , Help: Go to source location of message
+								327 text 
+						328 text "GNN_NCA_PROOF_BUNDLE_COMPLETE"
+					40 button Restart File, Help: Restarts this file, rebuilding all of its outdated dependencies.
+
+The focused UI element is 21 editor (settable) Description: Editor content;Press Alt+F1 for Accessibility Options., Value: import Mathlib
+/- Generated by scripts/check_lean_sources.py --write-bundle. -/
+
+/- SOURCE: GraphNCA.Graph -/
+
+set_option autoImplicit false
+
+namespace GraphNCA
+
+def graphStep {V R S : Type*} (neighbors : R → V → V)
+…#eval "GNN_NCA_PROOF_BUNDLE_COMPLETE"
+

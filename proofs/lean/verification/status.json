@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-17T07:19:24.180575+00:00",
+  "verification_method": "Official Lean Web editor; exact pasted source copied back and compared after CRLF normalization",
+  "editor_url": "https://live.lean-lang.org/",
+  "environment": "Stable Release (v4.35.0 with mathlib, cslib)",
+  "lean_version_reported": "4.35.0",
+  "browser_check": "passed",
+  "theorems_checked": 44,
+  "informational_messages": 46,
+  "errors_remaining": 0,
+  "warnings_remaining": 0,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "local_lake_build": "not_run; Lean/Lake executable unavailable",
+  "remote_ci": "configured; not_run_by_this_task",
+  "bundle_sha256": "e93d487bca099e34c6aa857a1fd006b38c43e5883bc10cea83ca70e955e57fdd",
+  "sources_sha256": {
+    "GraphNCA/Graph.lean": "72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67",
+    "GraphNCA/Serialization.lean": "34379dc8e29d9346d125a5e137b28641e3febbc7888922fa9f69ed770a1b003b",
+    "GraphNCA/Transfer.lean": "5bf206fb77b6d3afdd21799eb16e0c53665a9b262aacb66e8efd1654fac563fa",
+    "GraphNCA/LinearSurrogate.lean": "94b0dac3d96bcaaff6d8e0d3658335cf4f85311bca386a8ebd518dad56b27201",
+    "GraphNCA/Quadratic.lean": "e034cfe021c2e48c575fe444855cc21f73567befd05e14af23109d53769a165f",
+    "GraphNCA/Numerics.lean": "bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02"
+  },
+  "evidence_sha256": {
+    "attempt-1-diagnostics.txt": "89516fa9c47797096dd2001789ca331ce8feab7db9f02b400b1cec2d5d6974a0",
+    "final-diagnostics.txt": "1c7f0a369cec683719e1c65e1a6c13ef678031a13dfe7b5033ec367c3b7a5165",
+    "axiom-reports.txt": "fec6864a94270bfdeb934459af069b254224e30ceba7a38e86c106421986c5cf",
+    "lean-check.png": "e5540c08e5b5d803f2b8233c76c7d7bc42a16318cb465cf8f69d10566672b0c9"
+  },
+  "failed_full_check": {
+    "bundle_sha256": "8c76308177b423f7c8288e9daca7e9542d63a6a1192f653afd87d482659830e6",
+    "source_errors": 4,
+    "corrections": [
+      "Mark squaredLoss, quadratic2 and diagonalLoss noncomputable",
+      "Finish two_mode_closed_form with ring"
+    ],
+    "evidence": "attempt-1-diagnostics.txt"
+  }
+}
