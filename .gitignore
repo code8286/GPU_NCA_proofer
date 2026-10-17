@@ -1,0 +1,56 @@
+# Environments and Python tooling
+.venv/
+venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.lake/
+*.olean
+*.ilean
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Generated research artifacts; publish compact evidence under docs/results
+/data/
+/runs/
+/Kaggle Outputs/
+/tmp/
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.log
+
+# Credentials and personal/editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+token*.json
+.aws/
+.codex/
+.agents/
+.obsidian/
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Parent-workspace copy; publish Prod contents as a standalone repository
+/Prod/
+/sources/*.pdf
+
+#WIP
+.transfer_v3/

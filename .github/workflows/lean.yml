@@ -1,0 +1,24 @@
+name: Lean mathematical proofs
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  proofs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: proofs/lean
+          auto-config: false
+          build: true
+          build-args: --wfail
+          test: false
+          lint: false
+          use-mathlib-cache: true
+          axiom-audit: true
+          axiom-audit-root: GraphNCA
+      - name: Show representative theorem axioms
+        working-directory: proofs/lean
+        run: lake env lean Audit.lean

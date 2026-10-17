@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/danihyunlee/nca-pre-pretraining/tree/main",
+  "paper": "https://arxiv.org/html/2603.10055v1",
+  "commit": "bdd1c71e04eb2e5a2c91481faf278e95846b4431",
+  "commit_date": "2026-03-12T05:12:10Z",
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/README.md",
+      "sha256": "9e2cc92a71a77ddf7d3dd1ffa5fb09320801caf4246bf204efb2489f15f18f38"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/LICENSE",
+      "sha256": "ea227dfb2739832aeb231d777844f9e11d82e70f447e993027c1ce5686ec395f"
+    },
+    "utils/nca.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/nca.py",
+      "sha256": "04258cf58d6bea4ad1ee07e55dc2fcac8a16ad45e062ebb5dd02bdcc571fd652"
+    },
+    "utils/tokenizers.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/tokenizers.py",
+      "sha256": "274f0d18b6f7dd39e698bfd664604caf308bbd96c80e7697ee3b15e77b67dc92"
+    },
+    "utils/models.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/models.py",
+      "sha256": "8adda68e6bdab60c7e13f36552c84eeaa4b6708370f7fe113c67b856c039f24d"
+    },
+    "utils/training_args.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/training_args.py",
+      "sha256": "7127a86295bb046084ec338b972eb1d6fdd7493e6f7bee7750ec4f74dfd93b66"
+    },
+    "src/nca_ppt.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/nca_ppt.py",
+      "sha256": "183e6b4aa719995cc08fa0dfbc1b792cf10ebe51b6765604b420b9a94116f171"
+    },
+    "src/language_train.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/language_train.py",
+      "sha256": "36f98739e353a38e801ae32c1e28bb9466554884a6cc146022182dad74442f82"
+    },
+    "src/openwebtext_pt.py": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/openwebtext_pt.py",
+      "sha256": "8269e352add7a6b8c7d16144957aee3e29a0c826a3ab6e64f0662ed886ab063c"
+    },
+    "scripts/prepretraining/nca_prepretraining.sh": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/prepretraining/nca_prepretraining.sh",
+      "sha256": "47c731db19f209b9d6bb91abd45287eb1c8b60dfdfecac51f7d3372e5c20d0c8"
+    },
+    "scripts/pretraining/owt_ft.sh": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/pretraining/owt_ft.sh",
+      "sha256": "70f6a26416dc3cfb7476c3903a1c6e0b32455eeeb8f62ef6ac58cdd9be0c75d1"
+    },
+    "scripts/pretraining/ft_codeparrot.sh": {
+      "url": "https://raw.githubusercontent.com/danihyunlee/nca-pre-pretraining/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/pretraining/ft_codeparrot.sh",
+      "sha256": "926cb3ce618c201584dcf13e8063d55209f5c7a6d5d54bbef174a1c5a41d588f"
+    }
+  }
+}

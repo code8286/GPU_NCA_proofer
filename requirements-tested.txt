@@ -1,0 +1,5 @@
+# Direct versions checked on Python 3.12.14, Windows CPU.
+# Install a suitable torch build separately for CUDA.
+numpy==2.5.2
+torch==2.14.1
+matplotlib==3.11.2

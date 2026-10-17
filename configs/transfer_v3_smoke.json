@@ -1,0 +1,67 @@
+{
+  "schema_version": 3,
+  "purpose": "execution_check",
+  "seeds": [
+    17
+  ],
+  "precision": "fp32",
+  "model": {
+    "layers": 2,
+    "heads": 2,
+    "width": 32,
+    "context": 76
+  },
+  "batch": 2,
+  "accumulate": 1,
+  "eval_every": 2,
+  "eval_batch": 2,
+  "language_eval_tokens": 304,
+  "ppt_eval_rules": 4,
+  "ppt": {
+    "steps": 4,
+    "lr": 0.001,
+    "warmup_fraction": 0.25,
+    "weight_decay": 0.0,
+    "clip": null
+  },
+  "language": {
+    "steps": 6,
+    "lr": 0.001,
+    "warmup_fraction": 0.2,
+    "weight_decay": 0.0001,
+    "clip": 1.0
+  },
+  "nca": {
+    "grid": 12,
+    "states": 10,
+    "burnin": 10,
+    "temperature": 0.0,
+    "profile_frames": 10,
+    "filter_low": 0.0,
+    "filter_high": 1.1,
+    "train_rules": 8,
+    "val_rules": 4,
+    "candidate_batch": 8,
+    "max_candidates": 128,
+    "data_seed": 20261020,
+    "channel_padding": "spatial_only"
+  },
+  "gate": {
+    "enforce": false,
+    "minimum_relative_improvement": 0.05,
+    "baseline_margin_nats": 0.01
+  },
+  "text": {
+    "dataset": "offline_fixture",
+    "subset": null,
+    "revision": null,
+    "tokenizer": "byte_fixture",
+    "evaluate_test": false
+  },
+  "graph": {
+    "rewire_fraction": 0.25,
+    "topology_seed": 20261019,
+    "rule_selection": "intersection",
+    "replication": "independent_cache_per_model_seed"
+  }
+}

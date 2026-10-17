@@ -1,0 +1,23 @@
+{
+  "seeds": [17, 29, 43],
+  "layers": 4,
+  "heads": 4,
+  "width": 192,
+  "context": 128,
+  "batch": 32,
+  "pre_steps": 100,
+  "total_steps": 1000,
+  "eval_every": 50,
+  "eval_batches": 16,
+  "lr": 0.0006,
+  "warmup": 20,
+  "weight_decay": 0.1,
+  "target_nll": 2.5,
+  "grid": 8,
+  "frames": 16,
+  "trajectories": 1024,
+  "rule_hidden": 16,
+  "rewire_fraction": 0.25,
+  "data_seed": 20261017,
+  "precision": "fp32"
+}

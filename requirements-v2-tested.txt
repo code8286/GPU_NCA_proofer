@@ -1,0 +1,5 @@
+# Additional direct packages checked on Python 3.12.14, Windows CPU.
+# The real pinned WikiText/GPT-2 preparation was exercised; no v2 GPU run yet.
+-r requirements-tested.txt
+tiktoken==0.14.0
+pyarrow==26.0.0

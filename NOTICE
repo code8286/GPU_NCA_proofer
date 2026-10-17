@@ -1,0 +1,12 @@
+GNNs in NCA — graph cellular automata pre-pre-training research
+Copyright 2026 GNNs in NCA contributors
+
+Original project code and documentation are licensed under Apache License 2.0.
+See LICENSE. This notice does not modify any license terms.
+
+The pinned source under sources/nca-pre-pretraining-reference/ is
+Copyright (c) 2026 Dan Lee and remains under its included MIT license.
+It is reference material, not a runtime dependency or an assertion of endorsement.
+
+Tiny Shakespeare is downloaded or supplied at runtime, not included here.
+Dependencies are distributed separately under their respective licenses.
