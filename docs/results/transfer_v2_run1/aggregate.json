@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "scratch",
+    "mean_final_validation_nll": 5.266090889771779,
+    "perplexity_from_mean_nll": 193.65745253340364,
+    "geomean_language_token_speedup": 1.0,
+    "geomean_language_time_speedup": 1.0,
+    "geomean_cumulative_time_speedup": 1.0
+  },
+  {
+    "arm": "grid_nca",
+    "mean_final_validation_nll": 5.233321319023768,
+    "perplexity_from_mean_nll": 187.41423342422618,
+    "geomean_language_token_speedup": 1.1778306710513218,
+    "geomean_language_time_speedup": 1.1795247655358767,
+    "geomean_cumulative_time_speedup": 0.8861703252006328
+  },
+  {
+    "arm": "shuffled_nca",
+    "mean_final_validation_nll": 5.231527666250865,
+    "perplexity_from_mean_nll": 187.0783786582218,
+    "geomean_language_token_speedup": 1.1778306710513218,
+    "geomean_language_time_speedup": 1.1780371957226672,
+    "geomean_cumulative_time_speedup": 0.8828592741369198
+  }
+]

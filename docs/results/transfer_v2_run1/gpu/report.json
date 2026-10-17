@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "purpose": "development",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "primary_question": "Does NCA pre-pre-training accelerate learning in an identical language stage?",
+  "secondary_question": "Do language-stage savings repay PPT and generation costs?",
+  "graph_status": "Not run: establish grid transfer before adding the graph treatment",
+  "comparisons": [
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1800,
+      "final_validation_nll_delta": -0.013794511556625366,
+      "language_tokens_speedup": 1.1111111111111112,
+      "language_train_seconds_speedup": 1.1121787902916618,
+      "language_seconds_speedup": 1.1116791246034772,
+      "total_training_tokens_speedup": 0.7142857142857143,
+      "cumulative_seconds_speedup": 0.852495906425978
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.02940085530281067,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1786292568242087,
+      "language_seconds_speedup": 1.1778318593535,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8829174128004995
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1600,
+      "final_validation_nll_delta": -0.0473690927028656,
+      "language_tokens_speedup": 1.25,
+      "language_train_seconds_speedup": 1.2548251435578284,
+      "language_seconds_speedup": 1.2536970093007005,
+      "total_training_tokens_speedup": 0.7692307692307693,
+      "cumulative_seconds_speedup": 0.924544716292237
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1600,
+      "final_validation_nll_delta": -0.047972679138183594,
+      "language_tokens_speedup": 1.25,
+      "language_train_seconds_speedup": 1.2547397798406343,
+      "language_seconds_speedup": 1.2536582796216955,
+      "total_training_tokens_speedup": 0.7692307692307693,
+      "cumulative_seconds_speedup": 0.9243804173387196
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.03714510798454285,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1780994643087792,
+      "language_seconds_speedup": 1.1774681032868164,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8829403930151046
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1800,
+      "final_validation_nll_delta": -0.026316136121749878,
+      "language_tokens_speedup": 1.1111111111111112,
+      "language_train_seconds_speedup": 1.1075090669370196,
+      "language_seconds_speedup": 1.1071705847751923,
+      "total_training_tokens_speedup": 0.7142857142857143,
+      "cumulative_seconds_speedup": 0.843147646176858
+    }
+  ],
+  "aggregate": [
+    {
+      "arm": "grid_nca",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.03276957074801127,
+      "geomean_language_tokens_speedup_all_seeds": 1.1778306710513218,
+      "exploratory_95_ci_language_tokens": [
+        1.1111111111111112,
+        1.25
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1795247655358767,
+      "exploratory_95_ci_language_seconds": [
+        1.1116791246034772,
+        1.2536970093007005
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8861703252006328,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.852495906425978,
+        0.924544716292237
+      ]
+    },
+    {
+      "arm": "shuffled_nca",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.03456322352091471,
+      "geomean_language_tokens_speedup_all_seeds": 1.1778306710513218,
+      "exploratory_95_ci_language_tokens": [
+        1.1111111111111112,
+        1.25
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1780371957226672,
+      "exploratory_95_ci_language_seconds": [
+        1.1071705847751923,
+        1.2536582796216955
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8828592741369198,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.843147646176858,
+        0.9243804173387196
+      ]
+    }
+  ],
+  "uncertainty_note": "Three model seeds on one shared synthetic dataset are exploratory. Evaluation crossings are discrete, without interpolation. A synthetic gate pass is not proof of transfer.",
+  "test_policy": "Reserved and not loaded"
+}

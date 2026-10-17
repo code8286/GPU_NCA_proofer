@@ -1,0 +1,202 @@
+{
+  "strict_checks_passed": true,
+  "records": [
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "language_start_core_sha256": {
+          "recorded": "5de997e18acc1d72f87f8422768e759c288c5a825db555baf4d0e45715c0a711",
+          "reconstructed": "cc9445803b776bc9f5cf73bb5761bbea414302c519eaefbb3058f82b6341f9a4"
+        },
+        "core_initial_sha256": {
+          "recorded": "5de997e18acc1d72f87f8422768e759c288c5a825db555baf4d0e45715c0a711",
+          "reconstructed": "cc9445803b776bc9f5cf73bb5761bbea414302c519eaefbb3058f82b6341f9a4"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "2bf85cbc8d83ab550be6a70cd77c18503dc2070f056ad670b507f6f85446758c",
+          "reconstructed": "dc8c97e13646ec9e98aac44eaef51a59dfaea1828abfeff6c2bf95dd96b3a2ce"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "5de997e18acc1d72f87f8422768e759c288c5a825db555baf4d0e45715c0a711",
+          "reconstructed": "cc9445803b776bc9f5cf73bb5761bbea414302c519eaefbb3058f82b6341f9a4"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "2bf85cbc8d83ab550be6a70cd77c18503dc2070f056ad670b507f6f85446758c",
+          "reconstructed": "dc8c97e13646ec9e98aac44eaef51a59dfaea1828abfeff6c2bf95dd96b3a2ce"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "5de997e18acc1d72f87f8422768e759c288c5a825db555baf4d0e45715c0a711",
+          "reconstructed": "cc9445803b776bc9f5cf73bb5761bbea414302c519eaefbb3058f82b6341f9a4"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "2bf85cbc8d83ab550be6a70cd77c18503dc2070f056ad670b507f6f85446758c",
+          "reconstructed": "dc8c97e13646ec9e98aac44eaef51a59dfaea1828abfeff6c2bf95dd96b3a2ce"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 29,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "language_start_core_sha256": {
+          "recorded": "b31a56d9b21a795f791d6569b5b513d608dda820141760d73a3c17ca5967dc38",
+          "reconstructed": "9ab16dcba4199be06bef770bdbf8865840b2b155b6a2952f4390dccd227bbf80"
+        },
+        "core_initial_sha256": {
+          "recorded": "b31a56d9b21a795f791d6569b5b513d608dda820141760d73a3c17ca5967dc38",
+          "reconstructed": "9ab16dcba4199be06bef770bdbf8865840b2b155b6a2952f4390dccd227bbf80"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "906052b84082f2a23d5360d10324a8facbe1d0e301a54fcec7fc5553cc7b4ca1",
+          "reconstructed": "9f251bc9ab6d4077550e21ae7d2ced5e18e651df340babe24f87b66eaa9592d2"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "b31a56d9b21a795f791d6569b5b513d608dda820141760d73a3c17ca5967dc38",
+          "reconstructed": "9ab16dcba4199be06bef770bdbf8865840b2b155b6a2952f4390dccd227bbf80"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "906052b84082f2a23d5360d10324a8facbe1d0e301a54fcec7fc5553cc7b4ca1",
+          "reconstructed": "9f251bc9ab6d4077550e21ae7d2ced5e18e651df340babe24f87b66eaa9592d2"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "b31a56d9b21a795f791d6569b5b513d608dda820141760d73a3c17ca5967dc38",
+          "reconstructed": "9ab16dcba4199be06bef770bdbf8865840b2b155b6a2952f4390dccd227bbf80"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "906052b84082f2a23d5360d10324a8facbe1d0e301a54fcec7fc5553cc7b4ca1",
+          "reconstructed": "9f251bc9ab6d4077550e21ae7d2ced5e18e651df340babe24f87b66eaa9592d2"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 43,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "language_start_core_sha256": {
+          "recorded": "707905a1d845834fae6ec329a4085a13785200a0ad3b13b44e6b74388822959c",
+          "reconstructed": "db772671b7ffb521e6edc96cfd462ffd958510b29577ca6e44716eba03804758"
+        },
+        "core_initial_sha256": {
+          "recorded": "707905a1d845834fae6ec329a4085a13785200a0ad3b13b44e6b74388822959c",
+          "reconstructed": "db772671b7ffb521e6edc96cfd462ffd958510b29577ca6e44716eba03804758"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "62033ab40c1f5fc12bb058d005ee6cc3bb983159e145be331565fde31e61651c",
+          "reconstructed": "f5b4db2aaed7ce19e7ec93aa2a807aa1e1c5165512a1108f704aeaf5a2dff2f6"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "707905a1d845834fae6ec329a4085a13785200a0ad3b13b44e6b74388822959c",
+          "reconstructed": "db772671b7ffb521e6edc96cfd462ffd958510b29577ca6e44716eba03804758"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "62033ab40c1f5fc12bb058d005ee6cc3bb983159e145be331565fde31e61651c",
+          "reconstructed": "f5b4db2aaed7ce19e7ec93aa2a807aa1e1c5165512a1108f704aeaf5a2dff2f6"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "strict_checks_passed": true,
+      "logged_lr_max_absolute_error": 0.0,
+      "cross_runtime_unmatched_hashes": {
+        "core_initial_sha256": {
+          "recorded": "707905a1d845834fae6ec329a4085a13785200a0ad3b13b44e6b74388822959c",
+          "reconstructed": "db772671b7ffb521e6edc96cfd462ffd958510b29577ca6e44716eba03804758"
+        },
+        "language_head_initial_sha256": {
+          "recorded": "62033ab40c1f5fc12bb058d005ee6cc3bb983159e145be331565fde31e61651c",
+          "reconstructed": "f5b4db2aaed7ce19e7ec93aa2a807aa1e1c5165512a1108f704aeaf5a2dff2f6"
+        },
+        "language_schedule_sha256": {
+          "recorded": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+          "reconstructed": "088e444004e80baa202af86927c206e8684507408073593ca6bd4ba919f21e4b"
+        }
+      }
+    }
+  ],
+  "local_torch": "2.14.1+cpu",
+  "imported_torch": "2.11.0+cu128",
+  "cross_runtime_bitwise_reproduction": false,
+  "smoke_step_zero_core_max_absolute_error": 7.450580596923828e-09,
+  "scope": "Actual selected-PPT transfer hashes and reconstructed batch orders match. Within-run initialization/head/schedule hashes match across arms, and logged learning rates match numerically. Newer Windows runtime does not recreate all initialization/schedule bytes; do not claim independent bitwise regeneration of those values. Optimizer freshness is recorded by the trusted runner."
+}

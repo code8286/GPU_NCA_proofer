@@ -1,0 +1,162 @@
+{
+  "device": "cuda",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "stage_checkpoints_verified": 15,
+  "selected_stage_checkpoints_verified": 15,
+  "additional_final_ppt_checkpoints_verified": 0,
+  "records": [
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    }
+  ],
+  "language_controls_checked": true,
+  "note": "Checkpoint consistency does not prove learning acceleration"
+}

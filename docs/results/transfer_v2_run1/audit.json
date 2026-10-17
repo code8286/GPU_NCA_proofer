@@ -1,0 +1,30 @@
+{
+  "archive_name": "nca_transfer_v2_results_20261017_065212_924967.zip",
+  "archive_sha256": "eb8bd56c91d5693f48db2fa78fe3f37fac0677752d008492a10a84efe07e49a6",
+  "zip_members_crc_checked": 128,
+  "trusted_source_sha256": {
+    "__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+    "calibrate.py": "965fb0fcc0958137f5a08478bb1069092aa8c0ac37b5aa5cf80136eaca030909",
+    "common.py": "24967a682e41f4bf9dfde0add30596a826fa68cbd3fd8a2ca42a40d800c35e9a",
+    "data.py": "55f77791c6fa0927e86ae794c223df49d82fe5410a6a097a01334fc8207d1f4f",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f",
+    "report.py": "537f267f7a613483a57b319aa0ff0051cfc9b287a919805a38863df69f6a0925",
+    "run.py": "8e0f9247c49b66e9656ddb552886e1897f6b529508dac6d2f96f46e7659e565e",
+    "training.py": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5",
+    "verify.py": "872a54ebb8a24c5ced0eb4bad027e8d01a73cb61033a5295d1d26b913b25a3a1"
+  },
+  "data_manifest_sha256": "b04d73ff8fd081ca45ca2c20b7feb1730cacf271091a4f25af9c90730faa2422",
+  "imported_gpu_verification_sha256": "2a8bb36b0d4730cd452cf1c852dec874e4af4319f763e601f6e3131b926296a1",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "gpu": "Tesla T4",
+  "cpu_checkpoints_verified": 15,
+  "max_cpu_evaluation_absolute_error": 1.9562550157559144e-07,
+  "controls_and_metrics_recomputed": true,
+  "test_split_present": false,
+  "duration_seconds": 212.80731429997832
+}

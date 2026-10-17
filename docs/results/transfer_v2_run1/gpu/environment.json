@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "config": {
+    "schema_version": 2,
+    "purpose": "development",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "precision": "fp32",
+    "model": {
+      "layers": 6,
+      "heads": 4,
+      "width": 192,
+      "context": 1024
+    },
+    "batch": 2,
+    "accumulate": 2,
+    "eval_every": 100,
+    "eval_batch": 2,
+    "language_eval_tokens": 32768,
+    "ppt_eval_rules": 32,
+    "ppt": {
+      "steps": 1000,
+      "lr": 0.0001,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0,
+      "clip": null
+    },
+    "language": {
+      "steps": 2000,
+      "lr": 0.0005,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0001,
+      "clip": 1.0
+    },
+    "nca": {
+      "grid": 12,
+      "states": 10,
+      "burnin": 10,
+      "temperature": 0.0001,
+      "profile_frames": 10,
+      "filter_low": 0.5,
+      "filter_high": 1.0,
+      "train_rules": 4096,
+      "val_rules": 128,
+      "candidate_batch": 64,
+      "max_candidates": 262144,
+      "data_seed": 20261018,
+      "channel_padding": "spatial_only"
+    },
+    "gate": {
+      "enforce": true,
+      "minimum_relative_improvement": 0.05,
+      "baseline_margin_nats": 0.01
+    },
+    "text": {
+      "dataset": "Salesforce/wikitext",
+      "subset": "wikitext-2-raw-v1",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "tokenizer": "gpt2",
+      "evaluate_test": false
+    }
+  },
+  "started_utc": "2026-10-17T06:53:02.419726+00:00",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "torch": "2.11.0+cu128",
+  "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "numpy": "2.1.3",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "cuda": "12.8",
+  "tf32": false,
+  "reference_commit": "bdd1c71e04eb2e5a2c91481faf278e95846b4431",
+  "source_sha256": {
+    "__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+    "calibrate.py": "965fb0fcc0958137f5a08478bb1069092aa8c0ac37b5aa5cf80136eaca030909",
+    "common.py": "24967a682e41f4bf9dfde0add30596a826fa68cbd3fd8a2ca42a40d800c35e9a",
+    "data.py": "55f77791c6fa0927e86ae794c223df49d82fe5410a6a097a01334fc8207d1f4f",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f",
+    "report.py": "537f267f7a613483a57b319aa0ff0051cfc9b287a919805a38863df69f6a0925",
+    "run.py": "8e0f9247c49b66e9656ddb552886e1897f6b529508dac6d2f96f46e7659e565e",
+    "training.py": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5",
+    "verify.py": "872a54ebb8a24c5ced0eb4bad027e8d01a73cb61033a5295d1d26b913b25a3a1"
+  },
+  "data_manifest_sha256": "b04d73ff8fd081ca45ca2c20b7feb1730cacf271091a4f25af9c90730faa2422",
+  "graph_treatment": "Deferred until grid transfer is established",
+  "timing_scope": "Language seconds start after model/head/optimizer construction and include validation. Cumulative adds text preparation, relevant synthetic preparation/cache writes, head/optimizer construction, shared manifest work and measured PPT stage. Excludes package startup, cloud queue, optional disposable calibration and final language checkpoint/verification/plot/archive work."
+}
