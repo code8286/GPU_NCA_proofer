@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-10-16T22:26:43.578415+00:00",
+  "scope": "New CPU re-audit of existing GPU artifacts; no new GPU training",
+  "original_archive_sha256": "14f02cd87e924c18f6658333a0fde11b3e06b968504954b0320d33ff9a516ee6",
+  "experiment_sha256": "76b535acbf08050295648d5692d46690366c1f4802d5668c99edeca003cf1981",
+  "checkpoints_verified": 15,
+  "max_cpu_gpu_nll_error": 8.195638656616211e-08,
+  "all_integrity_checks_passed": true,
+  "all_reported_speedups_recomputed": true,
+  "retrospective_diagnosis_exact_json_match": true,
+  "new_offline_smoke_checkpoints_verified": 5,
+  "new_offline_smoke_max_loss_error": 0.0,
+  "unit_tests_passed": 17,
+  "raw_check_transcripts": "logs/checks.jsonl",
+  "standalone_prod_unit_tests_passed": 17,
+  "standalone_prod_offline_smoke_checkpoints_verified": 5,
+  "standalone_prod_offline_smoke_max_loss_error": 0.0,
+  "git_checkout_preserves_all_hashes": true,
+  "gitignore_disposable_probes_excluded": 7,
+  "first_party_markdown_links_checked": 22,
+  "notebook_embedded_sources_checked": 16,
+  "pinned_reference_files_verified": 12
+}

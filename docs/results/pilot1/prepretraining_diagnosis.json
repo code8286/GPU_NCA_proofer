@@ -1,0 +1,148 @@
+{
+  "status": "retrospective diagnosis, not confirmatory evidence",
+  "caveat": "Scratch optimizer restarted after 100 TEXT updates; NCA language optimizer started after 100 SYNTHETIC updates. Equal-language-token alignment cannot repair this scheduler difference or recover missing checkpoints.",
+  "aligned_validation": [
+    {
+      "target_text_updates": 50,
+      "target_text_tokens": 204800,
+      "scratch": 2.7398176342248917,
+      "reserve_text": 2.518888329466184,
+      "grid_nca": 3.082101156314214,
+      "graph_nca": 3.099101016918818,
+      "shuffled_graph": 3.0798264741897583
+    },
+    {
+      "target_text_updates": 100,
+      "target_text_tokens": 409600,
+      "scratch": 2.6141103307406106,
+      "reserve_text": 2.458169177174568,
+      "grid_nca": 2.610030382871628,
+      "graph_nca": 2.642751013239225,
+      "shuffled_graph": 2.6184183607498803
+    },
+    {
+      "target_text_updates": 150,
+      "target_text_tokens": 614400,
+      "scratch": 2.51329671839873,
+      "reserve_text": 2.3788590133190155,
+      "grid_nca": 2.5097659627596536,
+      "graph_nca": 2.5252117862304053,
+      "shuffled_graph": 2.5145402600367865
+    },
+    {
+      "target_text_updates": 200,
+      "target_text_tokens": 819200,
+      "scratch": 2.4512303471565247,
+      "reserve_text": 2.3062867472569146,
+      "grid_nca": 2.4343669513861337,
+      "graph_nca": 2.4459933191537857,
+      "shuffled_graph": 2.439831187327703
+    },
+    {
+      "target_text_updates": 300,
+      "target_text_tokens": 1228800,
+      "scratch": 2.3027609288692474,
+      "reserve_text": 2.159001181523005,
+      "grid_nca": 2.278237054745356,
+      "graph_nca": 2.2988631377617517,
+      "shuffled_graph": 2.2817924320697784
+    },
+    {
+      "target_text_updates": 500,
+      "target_text_tokens": 2048000,
+      "scratch": 2.019273020327091,
+      "reserve_text": 1.9176967466870944,
+      "grid_nca": 2.00648196041584,
+      "graph_nca": 2.0287130201856294,
+      "shuffled_graph": 2.013290748000145
+    },
+    {
+      "target_text_updates": 900,
+      "target_text_tokens": 3686400,
+      "scratch": 1.7541961297392845,
+      "reserve_text": 1.7282549267013867,
+      "grid_nca": 1.8002142906188965,
+      "graph_nca": 1.8170041367411613,
+      "shuffled_graph": 1.809930257499218
+    }
+  ],
+  "synthetic_diagnostics": {
+    "grid": {
+      "marker_fraction": 0.1111111111111111,
+      "final_fixed_transition_fraction": 0.357421875,
+      "patch_unigram_entropy_bits": 3.553570969577595,
+      "max_patch_unigram_entropy_bits": 4,
+      "marker_free_int32_gzip_quartiles_no_burnin": [
+        0.09375,
+        0.158203125,
+        0.209228515625
+      ],
+      "warning": "Not directly comparable to author screening: different alphabet, trajectory length and no burn-in; original logged ratios also included markers and used uint16.",
+      "original_logged_stats": {
+        "generation_seconds": 0.3270819519999577,
+        "tokens": 294912,
+        "gzip_ratio": 0.1918826633029514,
+        "mean_cell_change": 0.3342508951822917,
+        "final_fixed_point_fraction": 0.357421875,
+        "per_trajectory_gzip_quartiles": [
+          0.1701388888888889,
+          0.2855902777777778,
+          0.375
+        ],
+        "distinct_patch_tokens": 16,
+        "changed_edges_fraction": 0.0,
+        "topology_sha256": "81d09a1e91fd68052e0982b4c38b3bc01df3870b4cf783880eaf46ab5001a3f0"
+      }
+    },
+    "graph": {
+      "marker_fraction": 0.1111111111111111,
+      "final_fixed_transition_fraction": 0.36328125,
+      "patch_unigram_entropy_bits": 3.45737232965171,
+      "max_patch_unigram_entropy_bits": 4,
+      "marker_free_int32_gzip_quartiles_no_burnin": [
+        0.09375,
+        0.1865234375,
+        0.2431640625
+      ],
+      "warning": "Not directly comparable to author screening: different alphabet, trajectory length and no burn-in; original logged ratios also included markers and used uint16.",
+      "original_logged_stats": {
+        "generation_seconds": 0.1505913210000358,
+        "tokens": 294912,
+        "gzip_ratio": 0.20886060926649305,
+        "mean_cell_change": 0.31649169921875,
+        "final_fixed_point_fraction": 0.36328125,
+        "per_trajectory_gzip_quartiles": [
+          0.1662326388888889,
+          0.3333333333333333,
+          0.4288194444444444
+        ],
+        "distinct_patch_tokens": 16,
+        "changed_edges_fraction": 0.220703125,
+        "topology_sha256": "4e05377e44944731c15106a0893dbf58f8369889f13f542b52213a1651094bc3"
+      }
+    },
+    "shuffled": {
+      "marker_fraction": 0.1111111111111111,
+      "final_fixed_transition_fraction": 0.0146484375,
+      "patch_unigram_entropy_bits": 3.45737232965171,
+      "max_patch_unigram_entropy_bits": 4,
+      "marker_free_int32_gzip_quartiles_no_burnin": [
+        0.1142578125,
+        0.21484375,
+        0.2470703125
+      ],
+      "warning": "Not directly comparable to author screening: different alphabet, trajectory length and no burn-in; original logged ratios also included markers and used uint16.",
+      "original_logged_stats": {
+        "generation_seconds": 0.16228626700001314,
+        "parent": "graph",
+        "preserves": "per-trajectory patch histogram and marker positions"
+      }
+    }
+  },
+  "missing_measurements": [
+    "NCA train/held-out-rule loss",
+    "pre-pre-training checkpoint",
+    "fresh scratch language-only run with matched text-stage scheduler",
+    "matched-language-budget final scratch test checkpoint"
+  ]
+}

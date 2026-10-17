@@ -1,0 +1,92 @@
+{
+  "threshold_nll": 2.5,
+  "comparisons": [
+    {
+      "baseline": "scratch",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.3878977298736572,
+      "total_tokens_speedup": null,
+      "target_text_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "pipeline_seconds_speedup": null,
+      "target_status": "unresolved_not_both_reached"
+    },
+    {
+      "baseline": "grid_nca",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": -0.02085399627685547,
+      "total_tokens_speedup": null,
+      "target_text_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "pipeline_seconds_speedup": null,
+      "target_status": "unresolved_not_both_reached"
+    },
+    {
+      "baseline": "reserve_text",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.38089680671691895,
+      "total_tokens_speedup": null,
+      "target_text_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "pipeline_seconds_speedup": null,
+      "target_status": "unresolved_not_both_reached"
+    },
+    {
+      "baseline": "shuffled_graph",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": -0.006903290748596191,
+      "total_tokens_speedup": null,
+      "target_text_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "pipeline_seconds_speedup": null,
+      "target_status": "unresolved_not_both_reached"
+    }
+  ],
+  "aggregate": [
+    {
+      "baseline": "scratch",
+      "paired_seeds": 1,
+      "mean_test_nll_delta": 0.3878977298736572,
+      "bootstrap_95_ci_exploratory": null,
+      "pairs_both_reached_target": 0,
+      "geomean_pipeline_speedup_reached_pairs_only": null,
+      "speedup_bootstrap_95_ci_exploratory": null,
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "grid_nca",
+      "paired_seeds": 1,
+      "mean_test_nll_delta": -0.02085399627685547,
+      "bootstrap_95_ci_exploratory": null,
+      "pairs_both_reached_target": 0,
+      "geomean_pipeline_speedup_reached_pairs_only": null,
+      "speedup_bootstrap_95_ci_exploratory": null,
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "reserve_text",
+      "paired_seeds": 1,
+      "mean_test_nll_delta": 0.38089680671691895,
+      "bootstrap_95_ci_exploratory": null,
+      "pairs_both_reached_target": 0,
+      "geomean_pipeline_speedup_reached_pairs_only": null,
+      "speedup_bootstrap_95_ci_exploratory": null,
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "shuffled_graph",
+      "paired_seeds": 1,
+      "mean_test_nll_delta": -0.006903290748596191,
+      "bootstrap_95_ci_exploratory": null,
+      "pairs_both_reached_target": 0,
+      "geomean_pipeline_speedup_reached_pairs_only": null,
+      "speedup_bootstrap_95_ci_exploratory": null,
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    }
+  ],
+  "claim": "No automatic proof: inspect paired results and measured time-to-target."
+}

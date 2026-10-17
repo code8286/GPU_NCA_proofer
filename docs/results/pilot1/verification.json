@@ -1,0 +1,112 @@
+{
+  "device": "cuda",
+  "checkpoints_verified": 15,
+  "records": [
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "reproduced_test_nll": 1.9576761350035667,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 29,
+      "reproduced_test_nll": 1.9235593974590302,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 43,
+      "reproduced_test_nll": 1.9269470125436783,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "reproduced_test_nll": 1.9327416345477104,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "reproduced_test_nll": 1.9393645375967026,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "reproduced_test_nll": 1.914739452302456,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 17,
+      "reproduced_test_nll": 1.881062626838684,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 29,
+      "reproduced_test_nll": 1.8799845054745674,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 43,
+      "reproduced_test_nll": 1.8758269250392914,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "reproduced_test_nll": 1.8787748962640762,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "scratch",
+      "seed": 29,
+      "reproduced_test_nll": 1.8846777752041817,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "scratch",
+      "seed": 43,
+      "reproduced_test_nll": 1.8850411176681519,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "reproduced_test_nll": 1.956089086830616,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 29,
+      "reproduced_test_nll": 1.9316999539732933,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 43,
+      "reproduced_test_nll": 1.9210385531187057,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    }
+  ],
+  "limitation": "Verification establishes artifact consistency, not a scientific speedup."
+}

@@ -1,0 +1,249 @@
+\section{When can synthetic pre-pre-training help?}
+\label{sec:transfer}
+
+\subsection{The effect of resetting the token table}
+
+Write $f(B)=L_{\rm lang}(B,E_0)$ for language loss immediately after
+transfer. A synthetic stage may train both $B$ and its token table, but
+the transfer map keeps only the backbone change. Its differential is
+\begin{equation}
+ D\mathcal T\,(\delta B,\delta E)=(\delta B,0).
+ \label{eq:projection}
+\end{equation}
+The synthetic table may even have a different vocabulary size; the
+backbone comparison is still well-defined. Synthetic head learning can
+affect later backbone updates \emph{during} pre-pre-training, but its
+terminal displacement is not itself carried across the reset.
+
+Let $B_G=B_0+\delta_G$ be any synthetic-trained backbone. Assume $f$ has
+an $L$-Lipschitz gradient on the segment joining $B_0$ and $B_G$.
+Taylor's integral remainder gives
+\begin{equation}
+ \begin{aligned}
+ f(B_G)-f(B_0)&=g^\top\delta_G+R_G,\qquad g=\nabla f(B_0),\\
+ R_G&=\int_0^1(1-t)\delta_G^\top
+    \nabla^2 f(B_0+t\delta_G)\delta_G\,dt.
+ \end{aligned}
+\end{equation}
+Consequently
+\begin{equation}
+ \left|f(B_G)-f(B_0)-g^\top\delta_G\right|
+ \leq\frac L2\norm{\delta_G}^2.
+ \label{eq:displacement}
+\end{equation}
+This is local and requires no claim that a transformer loss is globally
+convex.
+
+\begin{proposition}[Sufficient backbone-transfer condition]
+\label{prop:alignment}
+Under the preceding smoothness assumption,
+\begin{equation}
+ -g^\top\delta_G>\frac L2\norm{\delta_G}^2
+ \quad\Longrightarrow\quad f(B_G)<f(B_0).
+ \label{eq:alignment}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Use the upper side of \eqref{eq:displacement}. The right side of
+$f(B_G)-f(B_0)\leq g^\top\delta_G+(L/2)\norm{\delta_G}^2$
+is strictly negative under \eqref{eq:alignment}.
+\end{proof}
+For $\delta_G\ne0$, $g\ne0$, define
+$a_G=-g^\top\delta_G/(\norm g\norm{\delta_G})$.
+The sufficient condition is
+$a_G>L\norm{\delta_G}/(2\norm g)$.
+Positive direction alignment can be destroyed by too large a step.
+More synthetically learned structure is not automatically a better
+initialization.
+
+For one synthetic gradient step, $\delta_G=-\eta g_G^{\rm syn}$, so
+\begin{equation}
+ g^\top g_G^{\rm syn}>
+       \frac{L\eta}{2}\norm{g_G^{\rm syn}}^2
+ \label{eq:singlealignment}
+\end{equation}
+is sufficient. The language and synthetic backbone gradients are
+evaluated at the shared backbone, with their respective initial token
+tables. For Adam or another optimizer, replace $g_G^{\rm syn}$ by its
+actual update direction $v_G$. For a fixed diagonal preconditioner
+$A\succ0$, the relevant alignment is $g^\top A g_G^{\rm syn}$;
+ordinary Euclidean gradient cosine need not have the same sign.
+Weight decay, clipping and momentum must also be included in $v_G$.
+For a multi-step synthetic stage, \eqref{eq:displacement} applies to its
+total backbone displacement directly; it is not necessary to pretend
+Adam performed a single gradient step.
+
+For grid and graph one-step displacements, two-sided remainder bounds
+give the stronger comparison
+\begin{align}
+ f(B_G)-f(B_{\rm grid})
+ &\leq-\eta\,g^\top
+           (g_G^{\rm syn}-g_{\rm grid}^{\rm syn})\\
+ &\quad+\frac{L\eta^2}{2}
+       \left(\norm{g_G^{\rm syn}}^2+
+             \norm{g_{\rm grid}^{\rm syn}}^2\right).
+ \label{eq:graphvsgrid}
+\end{align}
+A larger first-order graph alignment must exceed the displayed
+remainder to certify an advantage by this sufficient bound.
+Subtracting two separate upper bounds would not justify
+\eqref{eq:graphvsgrid}; its derivation uses an upper remainder for graph
+and a lower remainder for grid.
+
+\subsection{An explicit topology-to-transfer calculation}
+
+The preceding criterion leaves the synthetic gradient unspecified.
+Here is a model in which it can be derived from the graph exactly.
+It is a squared-loss linear prediction surrogate, not a claim that
+binary NCA token prediction is linear.
+Let $x$ have mean zero and covariance $I_n$; independent fair signed
+bits are sufficient. Define a degree-normalized graph target
+\[
+ A_G=\frac1d\sum_{r=1}^dP_r,\qquad y_G=A_Gx.
+\]
+A trainable matrix $M$ predicts $Mx$, with population synthetic loss
+\begin{equation}
+ L_G^{\rm lin}(M)=\frac12\E\norm{(M-A_G)x}_2^2
+                 =\frac12\norm{M-A_G}_F^2.
+ \label{eq:linearsynthetic}
+\end{equation}
+The equality follows from
+$\E[x^\top R^\top R x]={\rm tr}(R^\top R\E[xx^\top])$.
+Starting at $M=0$, $K$ synthetic gradient updates with
+$0<\eta<1$ give the exact formula
+\begin{equation}
+ M_G=\gamma A_G,\qquad
+ \gamma=1-(1-\eta)^K.
+ \label{eq:linearpretrain}
+\end{equation}
+For a target task $y_T=Cx$, define
+$L_T^{\rm lin}(M)=\tfrac12\norm{M-C}_F^2$. Its change from scratch is
+\begin{equation}
+ L_T^{\rm lin}(M_G)-L_T^{\rm lin}(0)
+ =\frac{\gamma^2}{2}\norm{A_G}_F^2
+       -\gamma\langle A_G,C\rangle_F.
+ \label{eq:graphcovtransfer}
+\end{equation}
+This supplies a concrete interpretation: topology enters through the
+cross-covariance $\E[y_Gx^\top]=A_G$, and useful transfer depends on
+its overlap with the target operator $C$.
+
+When every row has $d$ distinct neighbors, each row of $A_G$ has $d$
+entries equal to $1/d$, so $\norm{A_G}_F^2=n/d$.
+For a degree-matched grid operator $A_0$, these norm terms cancel:
+\begin{equation}
+ L_T^{\rm lin}(\gamma A_G)-L_T^{\rm lin}(\gamma A_0)
+ =-\gamma\langle A_G-A_0,C\rangle_F.
+ \label{eq:exactgraphtarget}
+\end{equation}
+If $C=A_G$, this becomes
+$-\tfrac{\gamma}{2}\norm{A_G-A_0}_F^2$.
+If $C=A_0$, its sign reverses. Degree matching alone therefore cannot
+choose the favorable target.
+
+For a fully numerical construction, take $n=6,d=2$.
+Let $A_0$ average cyclic offsets $\pm1$ modulo six, and let $A_G$
+average offsets $\pm2$. Both are valid two-regular typed graphs;
+the latter consists of two triangles. Their edge supports are disjoint:
+\[
+ \norm{A_0}_F^2=\norm{A_G}_F^2=3,\qquad
+ \langle A_0,A_G\rangle_F=0.
+ \]
+Use one synthetic step with $\eta=1/2$, so $\gamma=1/2$, and set
+$C=A_G$. Target losses are then
+\begin{align}
+ L_T^{\rm lin}(0)&=\frac32=1.5,\\
+ L_T^{\rm lin}(\tfrac12 A_G)&=\frac12\cdot\frac14\cdot3
+                              =0.375,\\
+ L_T^{\rm lin}(\tfrac12 A_0)&=\frac12
+                              \left(\frac14\cdot3+3\right)
+                              =1.875.
+\end{align}
+The graph-matched synthetic task helps and the grid-like cycle task
+hurts in this constructed target. Setting $C=A_0$ reverses the
+roles. A disconnected graph can thus be useful for a matching target
+even though it has poor global diffusion mixing.
+This proves a conditional mechanism in a fully specified surrogate,
+not an improvement for natural language or the actual nonlinear NCA.
+
+\subsection{A completely worked gradient-alignment example}
+
+Consider the constructed loss on $\R^2$
+\begin{equation}
+ f(b)=\frac12(b-b_*)^\top(4I)(b-b_*),
+ \quad b_*=(-1/2,-1/4),\quad b_0=(0,0).
+\end{equation}
+Then $g=(2,1)$, $L=4$, and $f(b_0)=5/8=0.625$.
+Take $\eta=0.1$, graph synthetic gradient $(1,1)$, and grid gradient
+$(-1,1)$. These vectors are specified examples, not measured project
+gradients. The exact quadratic changes are
+\begin{align}
+ \Delta f_G&=-0.1(2+1)+
+       \frac42(0.1)^2(1^2+1^2)=-0.26,\\
+ \Delta f_{\rm grid}&=-0.1(-2+1)+
+       \frac42(0.1)^2((-1)^2+1^2)=+0.14.
+\end{align}
+Thus $f_G=0.365$ and $f_{\rm grid}=0.765$.
+Equal synthetic gradient norms and update counts do not imply equal
+transfer; their alignment with the target matters. Interchanging the
+two specified synthetic gradients interchanges the conclusion. Graph
+topology has not supplied either favorable gradient by theorem.
+
+\subsection{Exact convergence in a local quadratic model}
+
+Now let $\theta$ denote all language parameters after transfer, including
+the common token table. Assume an exactly quadratic objective on a
+chosen parameter subspace:
+\begin{equation}
+ f(\theta)-f_*=\frac12(\theta-\theta_*)^\top
+                   H(\theta-\theta_*),\qquad
+ 0<\mu I\preceq H\preceq LI.
+ \label{eq:quadratic}
+\end{equation}
+This is an analytic model, not an assertion about the global loss of a
+transformer. Under full-batch gradient descent with $0<\alpha<2/L$,
+$e_n=\theta_n-\theta_*$ obeys
+\begin{equation}
+ e_n=(I-\alpha H)^n e_0.
+\end{equation}
+Using orthonormal eigenvectors $u_j$ of $H$, let
+$c_j=u_j^\top e_0$ and $H u_j=\lambda_j u_j$. Then
+\begin{equation}
+ \boxed{\ f_n-f_*=
+   \frac12\sum_j \lambda_j(1-\alpha\lambda_j)^{2n}c_j^2.\ }
+ \label{eq:modeformula}
+\end{equation}
+This follows by substituting the eigendecomposition into the quadratic
+form. No fitted rate constant or simulated trajectory is needed.
+
+In particular, if transferred coefficients satisfy
+$(c_j^G)^2\leq(c_j^0)^2$ for every $j$, then transferred loss is no worse
+at every $n$. A smaller total initial loss is a weaker condition and
+does not suffice: a transfer can increase error along slowly decaying
+modes while reducing fast-mode error.
+
+\subsection{Counterexample: initially better, subsequently worse}
+
+Take $H=\diag(1,100)$, $\alpha=0.01$, scratch error $e_0=(1,0.2)$ and
+transferred error $e_G=(2,0)$. Initially,
+\begin{equation}
+ f_0-f_*=\frac12(1+100\cdot0.2^2)=2.5,\qquad
+ f_G-f_*=\frac12(2^2)=2.
+\end{equation}
+The fast factor $1-\alpha100$ is zero. After one common language step,
+\begin{equation}
+ f_1-f_*=\frac12(0.99)^2=0.49005,\qquad
+ f_{G,1}-f_*=\frac12(2\cdot0.99)^2=1.9602.
+\end{equation}
+The initial ranking reverses exactly. These coordinates can be
+backbone directions, so the example is compatible with a common,
+unchanged token-table initialization.
+
+There is also no universal improvement theorem based only on graph
+structure: choose a target quadratic minimized at the scratch
+initialization and any synthetic displacement away from it. Scratch
+has zero excess loss and stays optimal, while the displaced model has
+positive excess loss for every finite non-annihilating gradient step.
+Additional assumptions linking synthetic updates to the target are
+therefore logically necessary.
+

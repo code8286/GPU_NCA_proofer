@@ -1,0 +1,149 @@
+\section{What synthetic prediction can teach}
+\label{sec:information}
+
+\subsection{Determinism, rule uncertainty and finite entropy}
+
+Condition on a fixed topology and rule. The complete trajectory is a
+deterministic function of $X^0$, so, in bits,
+\begin{equation}
+ H(X^{0:T-1}\mid F,G)=H(X^0\mid F,G)
+ \leq n\log_2q.
+ \label{eq:knownruleentropy}
+\end{equation}
+The equality includes $X^0$ in the observed trajectory. It does not mean
+that a computationally bounded predictor can cheaply recover all later
+states, or that a short-window predictor sees $X^0$.
+
+Continuous neural weights do not have a discrete entropy measured by their
+parameter count. Instead, consider the \emph{effective deterministic local
+rule} $F:\mathcal A^{d+1}\to\mathcal A$.
+There are at most $q^{q^{d+1}}$ such functions, including functions not
+representable by the chosen MLP. Hence
+\begin{align}
+ H(F\mid G)&\leq q^{d+1}\log_2q,\\
+ H(X^{0:T-1}\mid G)&\leq
+     H(X^0,F\mid G)
+     \leq(n+q^{d+1})\log_2q.
+ \label{eq:unknownruleentropy}
+\end{align}
+This avoids the invalid use of differential entropy as a bound on
+discrete trajectory entropy.
+
+For the binary pilot, $n=64$, $d+1=9$, $q=2$, $T=16$:
+\begin{equation}
+ H(X^{0:15}\mid G)\leq64+512=576\ {\rm bits}.
+\end{equation}
+The uncompressed 16-frame state array has $16\cdot64=1024$ binary entries.
+With a known rule its entropy bound is only 64 bits. With an unknown
+sampled rule the bound is at most 576 bits; the neural rule family and its
+nonuniform prior can lower it further. These are distributional entropy
+bounds, not a prediction of the finite gzip ratio.
+
+For stochastic transitions, additional fresh randomness remains even
+after conditioning on the parameters. The relevant decomposition becomes
+\begin{equation}
+ H(X^{0:T-1}\mid\omega,G)
+ =H(X^0\mid\omega,G)+
+   \sum_{t=0}^{T-2}H(X^{t+1}\mid X^t,\omega,G).
+ \label{eq:stochasticentropy}
+\end{equation}
+The second term is generally nonzero. Thus the 576-bit argument must not
+be applied to a categorical softmax sampler with nonzero temperature.
+
+\subsection{Rule inference as an idealized prediction problem}
+
+For context $C$ and next token $Y$, an ideal rule-aware predictor has
+\begin{equation}
+ p(Y\mid C,G)=
+     \sum_f p(Y\mid C,f,G)\,p(f\mid C,G).
+ \label{eq:posteriorpredictive}
+\end{equation}
+If there are unresolved initial states or stochastic transitions, the
+conditional factor also integrates those uncertainties.
+The transformer can approximate this computation without explicitly
+storing a symbolic posterior; the equation alone does not establish that
+it actually does so.
+
+An exact toy calculation makes the distinction concrete. Suppose the
+local binary rule is drawn uniformly from all $2^{512}$ truth tables,
+independently of the initial state,
+not from the pilot's Gaussian-weight MLP prior. An observed complete
+trajectory queries local 9-bit patterns and records their next bits.
+If $D(C)$ distinct patterns have been queried, consistency fixes precisely
+those $D(C)$ entries. The remaining entries are still independent fair
+bits, even though successive queries can depend on earlier answers:
+\begin{equation}
+ H(F\mid C=c,X^0=x^0,G)=512-D(c).
+ \label{eq:truthposterior}
+\end{equation}
+For the random context, taking expectations gives
+$I(F;C\mid X^0,G)=\E[D(C)]$ when $C$ contains only the resulting transition
+observations with their queried patterns. Each new truth-table entry
+provides one bit; repeated queries provide none.
+
+For example, 100 distinct queried patterns leave $412$ unknown bits.
+Predicting an already queried pattern has Bayes error zero. Predicting
+a previously unqueried pattern still has Bayes error $1/2$ and loss
+$\log2$ nats under this prior. Thus memorizing visited transitions does
+not establish extrapolation to unvisited neighborhoods. New rules and
+new initial conditions probe different forms of generalization.
+The number $D(C)$ is not measured in the historical pilot.
+
+\subsection{Contextual structure versus unigram matching}
+
+For any predictor $q_\theta(Y\mid C)$ with adequate support,
+\begin{equation}
+ \E[-\log q_\theta(Y\mid C)]
+ =H(Y\mid C)+
+   \E_C\KL\!\left(p(\cdot\mid C)\,\|\,q_\theta(\cdot\mid C)\right),
+ \label{eq:kl}
+\end{equation}
+using nats throughout this equation. An oracle unigram predictor attains
+$H(Y)$. Its improvement to the oracle contextual predictor is exactly
+\begin{equation}
+ H(Y)-H(Y\mid C)=I(Y;C).
+ \label{eq:mi}
+\end{equation}
+Matching token frequencies therefore matches $H(Y)$, not
+$H(Y\mid C)$ or the difficulty of approximating the conditional model.
+High marginal entropy alone is not evidence of useful temporal
+computation.
+
+The pilot shuffle is a uniform permutation of the patch-token multiset
+within each trajectory, retaining frame markers. It does not produce
+independent draws. For $M$ tokens with fraction $p$ of one chosen token,
+indicators $A_j$ and $A_k$ at two different shuffled positions satisfy
+\begin{align}
+ \E[A_jA_k]&=\frac{(Mp)(Mp-1)}{M(M-1)},\\
+ \Cov(A_j,A_k)&=-\frac{p(1-p)}{M-1}.
+ \label{eq:shufflecov}
+\end{align}
+For $M=256$ and a hypothetical $p=1/2$ this is
+$-1/1020=-0.0009803922$.
+Markers also retain their deterministic positions. It is therefore
+incorrect to set all contextual mutual information of the shuffled
+control to zero.
+
+\subsection{A task-focused loss}
+
+For retained frames and patch tokens, define a mask $a_j$ that equals one
+only for patch targets after the initial context frame, and zero for
+markers or initial-frame targets. A useful synthetic objective is
+\begin{equation}
+ L_{\rm patch}(\theta)=
+ -\E\!\left[\frac{1}{\sum_j a_j}
+       \sum_j a_j\log p_\theta(Z_j\mid Z_{<j})\right].
+ \label{eq:masked}
+\end{equation}
+For 16 retained frames and 16 patches/frame, this gives
+$(16-1)16=240$ patch targets per complete trajectory.
+Unmasked sequences have 32 marker tokens among 288 tokens, a fraction
+$1/9$. Predictable marker positions can reduce total loss without proving
+rule learning. The numerator, denominator and units must be specified
+when comparing masked patch loss with unmasked next-token loss.
+
+Nothing in \eqref{eq:mi} or \eqref{eq:masked} supplies factual information
+about independently sampled language data. Any finite-budget advantage
+must arise through the learned predictor/optimization bias. Whether this
+bias is useful is the alignment question in Section~\ref{sec:transfer}.
+

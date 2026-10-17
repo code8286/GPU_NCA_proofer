@@ -1,0 +1,148 @@
+\section{Serialization changes the learning problem}
+\label{sec:serialization}
+
+\subsection{A bijection and its accounting}
+
+For an even $s\times s$ lattice, write $P=(s/2)^2$ for the number of
+$2\times2$ patches. For alphabet size $q$, the encoding
+\begin{equation}
+ z_{t,p}=\beta+\sum_{a=0}^{1}\sum_{b=0}^{1}
+        q^{2a+b}X^t_{2r+a,2c+b},
+ \quad p=(s/2)r+c
+ \label{eq:patch}
+\end{equation}
+is a bijection between four cell states and $q^4$ patch symbols.
+Repeated division by $q$ recovers its four digits, proving invertibility.
+$\beta$ is a vocabulary offset; the binary pilot uses $\beta=256$.
+Two additional marker tokens make
+\begin{equation}
+ \ell=P+2,\qquad M_{\rm seq}=T(P+2).
+\end{equation}
+For $q=2,s=8,T=16$, the values are
+\[
+ q^4=16,\quad P=16,\quad\ell=18,\quad M_{\rm seq}=288.
+\]
+For a $12\times12$, ten-state construction, they become
+$q^4=10\,000$, $P=36$, and $\ell=38$.
+The number of possible patch patterns is not necessarily the allocated
+transformer vocabulary. An invertible recoding of a complete trajectory
+preserves its entropy; markers and integer storage width change file size,
+not its underlying discrete information.
+
+\subsection{Direct-parent visibility}
+
+Index tokens from zero. Patch $p$ in frame $t$ occupies
+$j(t,p)=t\ell+1+p$. A source cell in patch $r$ of the preceding frame
+is encoded at $j(t-1,r)$, so its backward token lag is
+\begin{equation}
+ D(p,r)=j(t,p)-j(t-1,r)=\ell+p-r.
+ \label{eq:lag}
+\end{equation}
+Since $0\leq p,r\leq P-1$,
+\begin{equation}
+ 3\leq D(p,r)\leq2P+1.
+ \label{eq:lagrange}
+\end{equation}
+This includes arbitrary rewired one-step parents; there is no assumption
+that their patches are spatially adjacent.
+
+\begin{proposition}[Full-window one-step visibility]
+If predicting a patch token with a complete preceding-token window of
+length $W\geq2P+1$, all of its preceding-frame source patches are
+available to the causal predictor, regardless of the rewiring.
+\end{proposition}
+\begin{proof}
+Every required source token precedes the target, and its lag is bounded
+by \eqref{eq:lagrange}. The specified window therefore contains it.
+\end{proof}
+
+For the binary pilot, $2P+1=33<128$. Thus arbitrary direct parents
+\emph{can fit} inside the configured context. This does not show that
+the model can identify those parents, extract the required bits, infer
+the local rule, or learn it efficiently. For $P=36$, the corresponding
+threshold is 73, also below a 1024-token context.
+
+\textbf{Crop-boundary qualification.}
+The historical training loss is applied at every position of a randomly
+cropped sequence. A target at offset $j\in\{1,\ldots,W\}$ from the first
+input has only $j$ preceding input tokens, not $W$ of them. The full-window
+proposition guarantees visibility only if $j\geq33$ in the binary case.
+For $W=128$, offsets 33 through 128 give $96$ qualifying positions;
+the first 32 can lose some direct parents. Which positions are patch
+targets depends on the crop's frame offset. We therefore cannot dismiss
+all truncation effects merely because the configured context is 128.
+A full-frame-aware objective or a sufficiently masked prefix is needed
+to make the guarantee apply to every evaluated patch target.
+
+\subsection{An exact invariant of degree-preserving rewiring}
+
+Let $p(i)$ be the patch index of vertex $i$. Choose a vertex and a
+non-self relation uniformly and let $J$ be its source. Every patch contains
+four vertices. Both endpoints are uniform because each relation is a
+permutation. Therefore
+\begin{equation}
+ \E[p(i)]=\E[p(J)]=\frac{P-1}{2},
+ \qquad \boxed{\E[D]=\ell.}
+ \label{eq:meanlag}
+\end{equation}
+This holds for every fixed typed-permutation topology, including grid
+and rewired graphs. Rewiring cannot change this mean lag when the
+average weights all relation-slot occurrences equally.
+It can change the lag distribution and which specific nodes are related.
+If the neural rule weights some slots more strongly, an influence-weighted
+quantity requires a different definition.
+
+Writing $\sigma_p^2=(P^2-1)/12$,
+\begin{equation}
+ \Var(D)=2\sigma_p^2-2\Cov(p(i),p(J)).
+ \label{eq:lagvariance}
+\end{equation}
+Thus equal mean lag does not imply equally dispersed dependencies.
+This identifies a possible serialization effect without assuming a
+language-transfer effect.
+
+\subsection{Exact grid variance for the binary pilot}
+
+On the $8\times8$ grid,
+$p(r,c)=4\lfloor r/2\rfloor+\lfloor c/2\rfloor$.
+Let $A=\lfloor r/2\rfloor$, $B=\lfloor c/2\rfloor$, with $r,c$ uniform.
+For a unit periodic row shift, $\Delta A$ has squared values
+$0,1,0,1,0,1,0,9$, hence
+\begin{equation}
+ \E[\Delta A]=0,\qquad \E[(\Delta A)^2]=\frac{12}{8}=\frac32.
+\end{equation}
+A column shift has the same properties for $\Delta B$. Among the eight
+Moore directions, six shift the row and six shift the column. For a
+diagonal shift the row and column increments are independent with mean
+zero. Averaging $(4\Delta A+\Delta B)^2$ therefore gives
+\begin{align}
+ \Var(D_{\rm grid})
+ &=16\cdot\frac32\cdot\frac68
+       +\frac32\cdot\frac68\\
+ &=\frac{153}{8}=19.125,\qquad
+ {\rm sd}(D_{\rm grid})=4.373213921.
+ \label{eq:gridlagvariance}
+\end{align}
+The result includes periodic wrap-around; dropping the wrap terms would
+give a different and incorrect calculation.
+
+For comparison, consider an idealized vertex-exchangeable non-self
+source, uniform among the other 63 vertices. For independent uniform
+vertices with replacement, $2\sigma_p^2=2(255/12)=42.5$.
+The excluded self pairs contribute zero to the squared difference.
+Conditioning on distinct vertices thus gives
+\begin{equation}
+ \begin{aligned}
+ \Var(D_{\rm uniform\ nonself})
+ &=\frac{64}{63}\cdot42.5=\frac{2720}{63}
+ =43.17460317,\\
+ {\rm sd}(D_{\rm uniform\ nonself})&=6.570738404.
+ \end{aligned}
+ \label{eq:randomlagvariance}
+\end{equation}
+This comparison law is not a calculation of the pilot's partial-swap
+graph, whose endpoints are not assumed to follow this idealized law.
+It shows how lag dispersion can rise while mean lag remains exactly 18.
+Neither \eqref{eq:gridlagvariance} nor \eqref{eq:randomlagvariance}
+establishes that dispersion is beneficial.
+

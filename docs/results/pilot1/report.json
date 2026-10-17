@@ -1,0 +1,196 @@
+{
+  "threshold_nll": 2.5,
+  "comparisons": [
+    {
+      "baseline": "scratch",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.07890123873949051,
+      "total_tokens_speedup": 0.6666666666666666,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 0.5964521589654893,
+      "pipeline_seconds_speedup": 0.6233930645265481,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "scratch",
+      "seed": 29,
+      "graph_minus_baseline_test_nll": 0.03888162225484848,
+      "total_tokens_speedup": 0.6666666666666666,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 0.6657513842586552,
+      "pipeline_seconds_speedup": 0.68169800001513,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "scratch",
+      "seed": 43,
+      "graph_minus_baseline_test_nll": 0.04190589487552643,
+      "total_tokens_speedup": 0.8,
+      "target_text_tokens_speedup": 1.3333333333333333,
+      "train_seconds_speedup": 0.7974380172786785,
+      "pipeline_seconds_speedup": 0.8014755966669997,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "grid_nca",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.024934500455856323,
+      "total_tokens_speedup": 1.0,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 0.9580490878518246,
+      "pipeline_seconds_speedup": 0.9799859140765426,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "grid_nca",
+      "seed": 29,
+      "graph_minus_baseline_test_nll": -0.015805140137672424,
+      "total_tokens_speedup": 1.0,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 1.0000949092193394,
+      "pipeline_seconds_speedup": 1.0184290224894466,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "grid_nca",
+      "seed": 43,
+      "graph_minus_baseline_test_nll": 0.012207560241222382,
+      "total_tokens_speedup": 1.0,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 0.9948409020398297,
+      "pipeline_seconds_speedup": 1.018008422045674,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "reserve_text",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.07661350816488266,
+      "total_tokens_speedup": 0.6666666666666666,
+      "target_text_tokens_speedup": 0.5,
+      "train_seconds_speedup": 0.6118052304159982,
+      "pipeline_seconds_speedup": 0.6309782315812158,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "reserve_text",
+      "seed": 29,
+      "graph_minus_baseline_test_nll": 0.04357489198446274,
+      "total_tokens_speedup": 0.6666666666666666,
+      "target_text_tokens_speedup": 0.5,
+      "train_seconds_speedup": 0.6617950389070624,
+      "pipeline_seconds_speedup": 0.6773138921896321,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "reserve_text",
+      "seed": 43,
+      "graph_minus_baseline_test_nll": 0.0511200875043869,
+      "total_tokens_speedup": 0.8,
+      "target_text_tokens_speedup": 0.6666666666666666,
+      "train_seconds_speedup": 0.7935102334117624,
+      "pipeline_seconds_speedup": 0.7974877198146451,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "shuffled_graph",
+      "seed": 17,
+      "graph_minus_baseline_test_nll": 0.0015870481729507446,
+      "total_tokens_speedup": 1.0,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 1.0090614348361917,
+      "pipeline_seconds_speedup": 1.0097102841529542,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "shuffled_graph",
+      "seed": 29,
+      "graph_minus_baseline_test_nll": -0.008140556514263153,
+      "total_tokens_speedup": 1.0,
+      "target_text_tokens_speedup": 1.0,
+      "train_seconds_speedup": 0.9999618509678374,
+      "pipeline_seconds_speedup": 1.0001149375356093,
+      "target_status": "both_reached"
+    },
+    {
+      "baseline": "shuffled_graph",
+      "seed": 43,
+      "graph_minus_baseline_test_nll": 0.005908459424972534,
+      "total_tokens_speedup": 1.2,
+      "target_text_tokens_speedup": 1.3333333333333333,
+      "train_seconds_speedup": 1.199404348198663,
+      "pipeline_seconds_speedup": 1.1791238099740513,
+      "target_status": "both_reached"
+    }
+  ],
+  "aggregate": [
+    {
+      "baseline": "scratch",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.05322958528995514,
+      "bootstrap_95_ci_exploratory": [
+        0.03888162225484848,
+        0.07890123873949051
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 0.6983633343828036,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.6233930645265481,
+        0.8014755966669997
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "grid_nca",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.0071123068531354266,
+      "bootstrap_95_ci_exploratory": [
+        -0.015805140137672424,
+        0.024934500455856323
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 1.0053115151416316,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.9799859140765426,
+        1.0184290224894466
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "reserve_text",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.05710282921791077,
+      "bootstrap_95_ci_exploratory": [
+        0.04357489198446274,
+        0.07661350816488266
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 0.6985156188441433,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.6309782315812158,
+        0.7974877198146451
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "shuffled_graph",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": -0.00021501630544662476,
+      "bootstrap_95_ci_exploratory": [
+        -0.008140556514263153,
+        0.005908459424972534
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 1.0599092953112177,
+      "speedup_bootstrap_95_ci_exploratory": [
+        1.0001149375356093,
+        1.1791238099740513
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    }
+  ],
+  "claim": "No automatic proof: inspect paired results and measured time-to-target."
+}

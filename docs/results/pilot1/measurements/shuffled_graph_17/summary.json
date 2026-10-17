@@ -1,0 +1,16 @@
+{
+  "arm": "shuffled_graph",
+  "seed": 17,
+  "parameters": 1857024,
+  "initial_sha256": "d4c62293009acd4a0d474331ae215b7eb492781b9c1c303ec9a1ae7591dccb09",
+  "test_nll": 1.956089086830616,
+  "test_perplexity": 7.071616435696646,
+  "final_val_nll": 1.8405354246497154,
+  "train_seconds": 25.357647679999957,
+  "preparation_seconds": 0.5937438070000098,
+  "val_evaluated_tokens": 65536,
+  "embedding_transfer": "reset",
+  "total_tokens": 4096000,
+  "approx_train_flops_6PD": 45638221824000,
+  "model_sha256": "db000b6f9c0464ccc1fb6f516acaaf74d3a3c1f05697ac9ec8c9624d3f3526be"
+}

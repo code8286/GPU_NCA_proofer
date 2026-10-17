@@ -1,0 +1,16 @@
+{
+  "arm": "reserve_text",
+  "seed": 17,
+  "parameters": 1857024,
+  "initial_sha256": "d4c62293009acd4a0d474331ae215b7eb492781b9c1c303ec9a1ae7591dccb09",
+  "test_nll": 1.881062626838684,
+  "test_perplexity": 6.560472493685634,
+  "final_val_nll": 1.7425666898488998,
+  "train_seconds": 23.596845065001162,
+  "preparation_seconds": 0.4314575399999967,
+  "val_evaluated_tokens": 65536,
+  "embedding_transfer": "preserved",
+  "total_tokens": 4096000,
+  "approx_train_flops_6PD": 45638221824000,
+  "model_sha256": "1812e0b0bb2e16d38b2fe62bf824ef6bf87dbb687741e8f665edd5423cf737ac"
+}

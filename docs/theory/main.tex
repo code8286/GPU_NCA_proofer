@@ -1,0 +1,106 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\allowdisplaybreaks
+\numberwithin{equation}{section}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}[proposition]{Corollary}
+\newtheorem{definition}[proposition]{Definition}
+\newtheorem{remark}[proposition]{Remark}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\1}{\mathbf{1}}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1\right\rvert}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\KL}{KL}
+\DeclareMathOperator{\ReLU}{ReLU}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\title{GNNs in NCA\\[3pt]
+\large Mathematical foundations, transfer conditions,\\
+and worked numerical derivations}
+\author{GNNs in NCA research contributors}
+\date{17 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Can changing the topology of a neural cellular automaton improve the
+initialization from which a transformer learns language? We formulate this as
+a comparison of synthetic pre-pre-training distributions followed by the same
+language optimization problem. We derive the equivalence between a grid neural
+rule and typed message passing, identify what degree-preserving rewiring does
+and does not preserve, bound deterministic trajectory entropy, and derive
+exact serialization-lag statistics for the binary pilot. We then prove a
+conditional descent criterion for backbone transfer with embedding reset,
+solve a quadratic model of subsequent convergence, give counterexamples to
+unconditional improvement, and calculate when language-stage savings exceed
+synthetic preparation costs. All numerical examples are substitutions into
+displayed equations or explicit evaluations of closed-form expressions.
+No simulation, model training, or fitted convergence curve is used to establish
+these results. The note supplies mathematical support and falsifiable conditions;
+it does not prove that the project's graph distribution improves real language
+models.
+\end{abstract}
+
+\textbf{Scope and provenance.}
+This is a theoretical working document, not a new empirical benchmark or a
+claim of novelty for standard mathematical tools. General statements are
+proved under stated assumptions. Numerical specialization to the binary
+pilot uses its preserved configuration and source identity.
+Categorical and stochastic extensions are distinguished explicitly.
+The prior GPU pilot is used only for clearly labeled arithmetic checks on
+reported measurements.
+
+\newpage
+\tableofcontents
+\newpage
+\input{sections/01_problem}
+\input{sections/02_dynamics}
+\input{sections/03_information}
+\input{sections/04_serialization}
+\input{sections/05_transfer}
+\input{sections/06_numerical}
+\input{sections/07_conclusions}
+
+\begin{thebibliography}{9}
+\bibitem{lee2026}
+D. Lee, S. Han, A. Kumar, and P. Agrawal.
+\emph{Training Language Models via Neural Cellular Automata}.
+arXiv:2603.10055v1, 9 March 2026.
+\url{https://arxiv.org/html/2603.10055v1}.
+
+\bibitem{gilmer2017}
+J. Gilmer, S. S. Schoenholz, P. F. Riley, O. Vinyals, and G. E. Dahl.
+\emph{Neural Message Passing for Quantum Chemistry}.
+arXiv:1704.01212, 2017.
+\url{https://arxiv.org/abs/1704.01212}.
+
+\bibitem{mordvintsev2020}
+A. Mordvintsev, E. Randazzo, E. Niklasson, and M. Levin.
+\emph{Growing Neural Cellular Automata}.
+Distill, 2020. DOI: 10.23915/distill.00023.
+\url{https://distill.pub/2020/growing-ca/}.
+
+\bibitem{project}
+GNNs in NCA contributors.
+\emph{Historical binary pilot and methodology audit}, 2026.
+Local sources: \texttt{experiment.py}, \texttt{configs/pilot.json},
+\texttt{METHODOLOGY\_AUDIT.md}, and \texttt{docs/results/pilot1/}.
+The historical experiment SHA-256 is recorded in the companion README.
+
+\bibitem{upstream}
+D. Lee.
+\emph{NCA pre-pre-training reference source}, pinned revision
+\texttt{bdd1c71e04eb2e5a2c91481faf278e95846b4431}, 12 March 2026.
+\href{https://github.com/danihyunlee/nca-pre-pretraining/tree/bdd1c71e04eb2e5a2c91481faf278e95846b4431}{Immutable upstream revision}.
+The included source snapshot retains its MIT license.
+\end{thebibliography}
+\end{document}

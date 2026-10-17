@@ -1,0 +1,239 @@
+{
+  "archive_sha256": "14f02cd87e924c18f6658333a0fde11b3e06b968504954b0320d33ff9a516ee6",
+  "gpu": "Tesla T4",
+  "pilot_runs_completed": 15,
+  "gpu_saved_verification_count": 15,
+  "local_cpu_verification": [
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "gpu_test_nll": 1.8787748962640762,
+      "cpu_recomputed_test_nll": 1.8787749037146568,
+      "absolute_error": 7.450580596923828e-09
+    },
+    {
+      "arm": "scratch",
+      "seed": 29,
+      "gpu_test_nll": 1.8846777752041817,
+      "cpu_recomputed_test_nll": 1.8846777826547623,
+      "absolute_error": 7.450580596923828e-09
+    },
+    {
+      "arm": "scratch",
+      "seed": 43,
+      "gpu_test_nll": 1.8850411176681519,
+      "cpu_recomputed_test_nll": 1.8850411549210548,
+      "absolute_error": 3.725290298461914e-08
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 17,
+      "gpu_test_nll": 1.881062626838684,
+      "cpu_recomputed_test_nll": 1.8810626044869423,
+      "absolute_error": 2.2351741790771484e-08
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 29,
+      "gpu_test_nll": 1.8799845054745674,
+      "cpu_recomputed_test_nll": 1.8799845352768898,
+      "absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 43,
+      "gpu_test_nll": 1.8758269250392914,
+      "cpu_recomputed_test_nll": 1.875826932489872,
+      "absolute_error": 7.450580596923828e-09
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "gpu_test_nll": 1.9327416345477104,
+      "cpu_recomputed_test_nll": 1.9327416867017746,
+      "absolute_error": 5.21540641784668e-08
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "gpu_test_nll": 1.9393645375967026,
+      "cpu_recomputed_test_nll": 1.939364455640316,
+      "absolute_error": 8.195638656616211e-08
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "gpu_test_nll": 1.914739452302456,
+      "cpu_recomputed_test_nll": 1.914739452302456,
+      "absolute_error": 0.0
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "gpu_test_nll": 1.9576761350035667,
+      "cpu_recomputed_test_nll": 1.9576761275529861,
+      "absolute_error": 7.450580596923828e-09
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 29,
+      "gpu_test_nll": 1.9235593974590302,
+      "cpu_recomputed_test_nll": 1.923559419810772,
+      "absolute_error": 2.2351741790771484e-08
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 43,
+      "gpu_test_nll": 1.9269470125436783,
+      "cpu_recomputed_test_nll": 1.9269470497965813,
+      "absolute_error": 3.725290298461914e-08
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "gpu_test_nll": 1.956089086830616,
+      "cpu_recomputed_test_nll": 1.9560890942811966,
+      "absolute_error": 7.450580596923828e-09
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 29,
+      "gpu_test_nll": 1.9316999539732933,
+      "cpu_recomputed_test_nll": 1.9316999688744545,
+      "absolute_error": 1.4901161193847656e-08
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 43,
+      "gpu_test_nll": 1.9210385531187057,
+      "cpu_recomputed_test_nll": 1.9210385456681252,
+      "absolute_error": 7.450580596923828e-09
+    }
+  ],
+  "max_cpu_gpu_nll_error": 8.195638656616211e-08,
+  "all_integrity_checks_passed": true,
+  "all_reported_speedups_recomputed": true,
+  "table": [
+    {
+      "arm": "scratch",
+      "mean_test_nll": 1.88283126304547,
+      "sample_sd_test_nll": 0.00351761112623704,
+      "geometric_mean_byte_perplexity": 6.572085849745307,
+      "mean_seconds_to_target": 6.117232932333347,
+      "mean_total_tokens_to_target": 819200,
+      "mean_target_text_tokens_to_target": 819200
+    },
+    {
+      "arm": "reserve_text",
+      "mean_test_nll": 1.8789580191175144,
+      "sample_sd_test_nll": 0.0027646697838897743,
+      "geometric_mean_byte_perplexity": 6.546679791825402,
+      "mean_seconds_to_target": 6.116598652000012,
+      "mean_total_tokens_to_target": 819200,
+      "mean_target_text_tokens_to_target": 409600
+    },
+    {
+      "arm": "grid_nca",
+      "mean_test_nll": 1.9289485414822896,
+      "sample_sd_test_nll": 0.01274320888510576,
+      "geometric_mean_byte_perplexity": 6.882270014421233,
+      "mean_seconds_to_target": 8.817859579333307,
+      "mean_total_tokens_to_target": 1160533.3333333333,
+      "mean_target_text_tokens_to_target": 750933.3333333334
+    },
+    {
+      "arm": "graph_nca",
+      "mean_test_nll": 1.9360608483354251,
+      "sample_sd_test_nll": 0.0187958625048145,
+      "geometric_mean_byte_perplexity": 6.931393313523732,
+      "mean_seconds_to_target": 8.775430482666707,
+      "mean_total_tokens_to_target": 1160533.3333333333,
+      "mean_target_text_tokens_to_target": 750933.3333333334
+    },
+    {
+      "arm": "shuffled_graph",
+      "mean_test_nll": 1.9362758646408718,
+      "sample_sd_test_nll": 0.01796772654513315,
+      "geometric_mean_byte_perplexity": 6.932883836343216,
+      "mean_seconds_to_target": 9.275652992000005,
+      "mean_total_tokens_to_target": 1228800,
+      "mean_target_text_tokens_to_target": 819200
+    }
+  ],
+  "timing": {
+    "summed_training_seconds": 375.1981355529966,
+    "summed_last_logged_pipeline_seconds": 424.987420023,
+    "note": "Summed per-arm recorded costs, not exact notebook wall time; excludes startup, final checkpoints, verification, plotting and archive creation."
+  },
+  "original_aggregates": [
+    {
+      "baseline": "scratch",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.05322958528995514,
+      "bootstrap_95_ci_exploratory": [
+        0.03888162225484848,
+        0.07890123873949051
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 0.6983633343828036,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.6233930645265481,
+        0.8014755966669997
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "grid_nca",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.0071123068531354266,
+      "bootstrap_95_ci_exploratory": [
+        -0.015805140137672424,
+        0.024934500455856323
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 1.0053115151416316,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.9799859140765426,
+        1.0184290224894466
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "reserve_text",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": 0.05710282921791077,
+      "bootstrap_95_ci_exploratory": [
+        0.04357489198446274,
+        0.07661350816488266
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 0.6985156188441433,
+      "speedup_bootstrap_95_ci_exploratory": [
+        0.6309782315812158,
+        0.7974877198146451
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    },
+    {
+      "baseline": "shuffled_graph",
+      "paired_seeds": 3,
+      "mean_test_nll_delta": -0.00021501630544662476,
+      "bootstrap_95_ci_exploratory": [
+        -0.008140556514263153,
+        0.005908459424972534
+      ],
+      "pairs_both_reached_target": 3,
+      "geomean_pipeline_speedup_reached_pairs_only": 1.0599092953112177,
+      "speedup_bootstrap_95_ci_exploratory": [
+        1.0001149375356093,
+        1.1791238099740513
+      ],
+      "speedup_caution": "Exclude no seed silently: if any seed is censored, reached-only speedup does not establish a suite-wide gain.",
+      "caution": "Three seeds are exploratory; one seed has no uncertainty estimate."
+    }
+  ],
+  "audit_seconds": 33.005320199998096
+}

@@ -1,0 +1,99 @@
+\section{What the mathematics establishes}
+\label{sec:conclusions}
+
+The concept can be expressed as a chain of distinct requirements:
+\begin{equation}
+ \begin{gathered}
+ \text{topology/rule distribution}
+ \ \longrightarrow\
+ \text{predictive synthetic structure}\\
+ \longrightarrow\
+ \text{useful backbone displacement}
+ \ \longrightarrow\
+ \text{language-stage gain}.
+ \end{gathered}
+\end{equation}
+Only the first arrow is fixed by designing a generator.
+None of the later arrows is guaranteed by eight-regular connectivity.
+
+\subsection{Results established under stated assumptions}
+
+\begin{enumerate}
+ \item A periodic grid NCA is exactly representable by typed message
+ passing with matching kernels and relation order
+ (Proposition~\ref{prop:convolution}).
+ Rewiring is a change of dynamical system, not merely a notation change.
+
+ \item Degree-preserving swaps preserve typed degree and uniform
+ endpoint marginals. They do not guarantee connectivity, a larger
+ mixing gap, or useful language transfer. An explicit disconnected
+ eight-regular graph demonstrates the first obstruction.
+
+ \item A deterministic binary rule has a finite effective truth table.
+ For the pilot, complete-trajectory entropy is bounded by 576 bits
+ conditional on the graph, despite 1024 raw state bits.
+ This does not make gzip ratios universal complexity measures or prove
+ that a finite predictor can cheaply exploit the bound.
+
+ \item For full preceding-token windows, direct-parent lags are at most
+ 33 in the binary pilot. Crop prefixes require a separate qualification.
+ Mean structural lag is exactly 18 under every typed-permutation
+ rewiring, while grid lag variance is exactly $153/8$.
+
+ \item Favorable backbone displacement satisfies the sufficient
+ alignment inequality \eqref{eq:alignment}.
+ The fully specified linear surrogate \eqref{eq:exactgraphtarget}
+ derives favorable or unfavorable transfer directly from topology and
+ target overlap, with both outcomes possible at the same degree.
+ A solved quadratic model explains the role of slow error modes;
+ a counterexample shows that a lower initial loss need not improve
+ subsequent convergence.
+
+ \item Cumulative benefit requires \eqref{eq:breakeven}.
+ The explicit $39$-versus-$25$ language-update example produces either
+ a total gain or a total loss as synthetic cost changes.
+\end{enumerate}
+
+\subsection{The remaining research hypothesis}
+
+A precise, still unproved hypothesis is the following:
+\begin{quote}
+There exists a declared graph/rule distribution for which, under common
+language-stage initialization of the token table, data order and
+optimizer, synthetic pre-pre-training reduces language loss or first-hit
+cost relative to a matched grid distribution, across independent
+rule/topology/data seeds.
+\end{quote}
+This is an existence and reproducibility claim about a particular
+distribution and model family. It is not a theorem about all graph NCAs.
+Neither the favorable toy gradients nor the toy quadratic hitting times
+are evidence that the project's actual backbone satisfies the required
+conditions.
+
+There are several mathematically distinct unresolved quantities:
+the rule-conditioned predictive entropy seen through finite windows;
+the fraction of loss reducible by markers or repeated patches;
+the actual transfer displacement and its language-gradient alignment;
+its projection onto slowly decaying language directions;
+and the cost needed to obtain it. Better values of one quantity do not
+force better values of all the others.
+
+\subsection{How to extend this note}
+
+Future mathematical work can replace individual assumptions explicitly:
+use stochastic transition kernels in \eqref{eq:stochasticentropy};
+analyze another serialization through \eqref{eq:lag};
+derive update-direction bounds for a specified optimizer;
+or study a declared graph ensemble rather than assuming that partial
+rewiring is a uniform random graph.
+Any new theorem should state its quantifiers, regularity assumptions,
+and the observable quantity it controls. A new numerical claim should
+show the equation and its substituted values, distinguish a constructed
+example from a recorded measurement, and retain the failure cases.
+
+No dynamical rollout, optimization simulation, or new experimental run
+was used for this note. Its numerical values are evaluations of the
+displayed algebra, matrix spectra, counts, and previously recorded
+measurements. The document therefore provides a mathematical working
+foundation, while leaving the empirical transfer question open.
+

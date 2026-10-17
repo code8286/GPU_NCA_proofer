@@ -1,0 +1,176 @@
+\section{Worked convergence, cost and scale calculations}
+\label{sec:numerical}
+
+\subsection{An explicit favorable transfer model}
+
+Use \eqref{eq:quadratic} with $H=\diag(1,10)$ and $\alpha=0.05$.
+Let scratch error be $(1,1)$ and transferred error be $(1/2,1)$.
+The two contraction factors are $0.95$ and $0.5$, so
+\begin{align}
+ f_0(n)-f_*&=\frac12\left(0.95^{2n}+10\,0.5^{2n}\right),\\
+ f_G(n)-f_*&=\frac12\left(\frac14\,0.95^{2n}
+                                  +10\,0.5^{2n}\right).
+ \label{eq:toycurves}
+\end{align}
+The transfer reduced only the slow-mode initial error.
+For target excess loss $\varepsilon=0.01$, evaluate the exact expressions:
+\begin{center}
+\begin{tabular}{@{}llrl@{}}
+\toprule
+Initialization & Update $n$ & Excess loss & Target reached?\\
+\midrule
+Scratch & 38 & 0.01013827358 & No\\
+Scratch & 39 & 0.00914979190 & Yes\\
+Transferred & 24 & 0.01065719879 & No\\
+Transferred & 25 & 0.00961812191 & Yes\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both squared factors lie strictly between zero and one, so loss is
+monotonically decreasing. The neighboring checks therefore establish
+the \emph{first} hitting updates:
+\begin{equation}
+ N_0=39,\qquad N_G=25,\qquad
+ S_{\rm language}=\frac{39}{25}=1.56.
+\end{equation}
+These values come directly from powers in \eqref{eq:toycurves}, not
+from a simulated optimizer.
+
+In a single dominant mode, with factor $\rho=|1-\alpha\lambda|\in(0,1)$,
+the exact mode loss is $A\rho^{2n}$. For $A>\varepsilon$,
+\begin{equation}
+ N(A,\varepsilon)=
+ \left\lceil\frac{\log(\varepsilon/A)}{2\log\rho}\right\rceil.
+ \label{eq:onemodehit}
+\end{equation}
+Reducing the coefficient amplitude by $r\in(0,1)$ replaces $A$ by
+$r^2A$. Before integer rounding and any zero-step clipping, the saved
+updates are
+\begin{equation}
+ N(A,\varepsilon)-N(r^2A,\varepsilon)
+ \simeq\frac{\log r}{\log\rho}.
+\end{equation}
+For $r=1/2$ and $\rho=0.95$, this is about 13.5 updates, consistent with
+the exact 14-update difference above after rounding and the fast mode.
+The formula explains why reducing slow-mode error matters.
+
+\subsection{Break-even with synthetic cost}
+
+Against scratch, the necessary and sufficient cost inequality under
+\eqref{eq:twocosts} is
+\begin{equation}
+ c_0^{\rm lang}N_0-c_G^{\rm lang}N_G
+ >C_G^{\rm gen}+c_G^{\rm ppt}K.
+ \label{eq:breakeven}
+\end{equation}
+If language-step costs are equal to $c$,
+\begin{equation}
+ N_0-N_G>
+ \frac{C_G^{\rm gen}}c+\frac{c_G^{\rm ppt}}cK.
+\end{equation}
+For equal-cost steps and zero generation cost, the toy model gives
+\begin{align}
+ K=10:&\quad S_{\rm total}=\frac{39}{10+25}
+                    =1.114285714,\\
+ K=20:&\quad S_{\rm total}=\frac{39}{20+25}
+                    =0.866666667.
+\end{align}
+The same $1.56\times$ language-stage speedup can therefore correspond to
+either a total gain or a total loss. With $K=10$, generation must cost
+less than four language-step units to retain a strict total benefit.
+At exactly four units, total costs tie.
+
+For graph versus grid, include the \emph{difference} in preparation
+cost rather than automatically charging a common cost twice:
+\begin{equation}
+ c_{\rm grid}^{\rm lang}N_{\rm grid}
+       -c_G^{\rm lang}N_G
+ >
+ (C_G^{\rm gen}-C_{\rm grid}^{\rm gen})
+ +(c_G^{\rm ppt}-c_{\rm grid}^{\rm ppt})K.
+\end{equation}
+Caching changes amortized generation cost per use. It does not remove
+the initial cost. A stated conservative full-cost metric and an amortized
+metric can both be reported, provided their denominators are explicit.
+
+\subsection{Exact binary-pilot transformer parameter count}
+
+Let vocabulary size be $V$, width $D$, context length $W$, and block
+count $L_b$. A block has attention weights $3D^2+D^2$, feed-forward
+weights $4D^2+4D^2$, linear biases $3D+D+4D+D=9D$, and two layer
+normalizations with total $4D$ scale/shift parameters. Thus
+\begin{equation}
+ P_{\rm block}=12D^2+13D.
+\end{equation}
+For tied token/output embeddings and a final layer normalization,
+\begin{equation}
+ P_{\rm model}=VD+WD+
+             L_b(12D^2+13D)+2D.
+ \label{eq:paramcount}
+\end{equation}
+Substituting $V=274,D=192,W=128,L_b=4$:
+\begin{align}
+ VD&=52\,608,\qquad WD=24\,576,\\
+ P_{\rm block}&=12(192)^2+13(192)=444\,864,\\
+ P_{\rm model}
+ &=52\,608+24\,576+4(444\,864)+384\\
+ &=\boxed{1\,857\,024}.
+\end{align}
+Counting another $VD$ for the output head would be incorrect because its
+weights are tied to the input table.
+
+At batch size 32 and context 128, each update contains
+$32\cdot128=4096$ prediction targets before any proposed masking:
+\begin{align}
+ D_{\rm ppt}&=100\cdot4096=409\,600,\\
+ D_{\rm language}&=900\cdot4096=3\,686\,400,\\
+ D_{\rm total}&=1000\cdot4096=4\,096\,000.
+\end{align}
+Five arms and three seeds give
+$15\cdot4\,096\,000=61\,440\,000$ total training tokens.
+Those are historical design counts, not evidence that they are
+matched-language-stage budgets.
+
+The commonly used dense-parameter training proxy gives
+\begin{equation}
+ 6P_{\rm model}D_{\rm total}
+ =45\,638\,221\,824\,000
+ \approx4.56382\times10^{13}
+\end{equation}
+arithmetic operations per run. The factor six approximates two
+operations per weight for forward multiplication and four for backward
+work. It is a proxy, not an exact FLOP count: attention's token-pair
+work, generator operations, nonlinearities, memory movement and runtime
+overhead are not all represented. Equal parameter/token products do not
+establish equal measured time.
+
+\subsection{Interpreting recorded losses mathematically}
+
+For loss $L$ in nats per byte, byte perplexity is $\exp(L)$.
+For paired losses, the geometric perplexity ratio follows from a mean
+loss difference:
+\begin{equation}
+ \exp\!\left(\frac1S\sum_{s=1}^{S}(L_{G,s}-L_{0,s})\right).
+\end{equation}
+The recorded pilot mean test difference of approximately $0.053230$
+nats/byte gives $\exp(0.053230)\approx1.05467$, about $5.47\%$ worse
+geometric-mean byte perplexity. It is not a $5.47\%$ accuracy difference.
+
+For positive finite paired cost ratios $r_s=C_{G,s}/C_{0,s}$, the
+paired geometric ratio is
+\begin{equation}
+ R=\exp\!\left(\frac1S\sum_s\log r_s\right).
+\end{equation}
+The recorded historical ratio $R\approx1.432$ corresponds to a speedup
+$R^{-1}\approx0.6983$, favoring scratch for that declared pipeline metric.
+It neither resolves the scheduler confound nor identifies a mechanism.
+An arithmetic ratio of group mean times generally differs from $R$.
+
+If a target is not reached, its first-hit cost is censored. Removing
+those seeds and averaging only finite ratios changes the population
+being summarized. No finite universal speedup follows from that
+operation. A fixed evaluation cadence also locates the first true
+crossing only within an interval if loss is monotone between evaluations;
+without monotonicity, an earlier unobserved crossing cannot be excluded.
+The toy quadratic is monotone; real validation curves need not be.
+

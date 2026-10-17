@@ -1,0 +1,176 @@
+\section{Graph dynamics: exact identities and limits}
+\label{sec:dynamics}
+
+\subsection{Typed message passing}
+
+Assume each of $d$ relation types supplies one incoming neighbor per vertex.
+For relation $r$, let $\pi_r$ be a permutation and set
+$(P_rx)_i=x_{\pi_r(i)}$. Hence
+\begin{equation}
+ P_r\1=\1,\qquad P_r^\top\1=\1,\qquad P_r^\top P_r=I.
+ \label{eq:permutation}
+\end{equation}
+Self edges and duplicate neighbors are separately prohibited in the pilot;
+those exclusions do not follow merely from \eqref{eq:permutation}.
+
+For the binary alphabet let $s_i=2X_i-1$. With $d=8$, the ordered local
+input and two-logit rule are
+\begin{align}
+ u_i&=(s_i,(P_1s)_i,\ldots,(P_8s)_i)^\top\in\{-1,1\}^{9},\\
+ z_i&=W_2\ReLU(W_1u_i+b_1)+b_2,\qquad
+ X_i^{t+1}=\argmax_{a\in\{0,1\}}z_{i,a}.
+ \label{eq:binaryrule}
+\end{align}
+Use $W_1\in\R^{16\times9}$ and $W_2\in\R^{2\times16}$.
+The $9\cdot16+16+2\cdot16+2=194$ rule parameters are sampled and frozen.
+Relation labels are retained; this is not an unordered average of neighbors.
+
+For $q$ categorical states, replace $s_i$ by its $q$-dimensional one-hot
+encoding and gather a vector in $\R^{(d+1)q}$. A spatial perception map
+$\R^{9q}\to\R^4$, then $\R^4\to\R^{16}\to\R^q$, is one possible
+categorical rule family. It is different from the binary family in
+\eqref{eq:binaryrule}, even if both use the same graph.
+
+\begin{proposition}[Grid equivalence]
+\label{prop:convolution}
+On a periodic square grid with the eight Moore-neighbor relation types,
+the first affine map in \eqref{eq:binaryrule} is exactly a periodic
+$3\times3$ cross-correlation with 16 output channels, after matching
+the central/neighborhood order. The remaining maps are pointwise.
+\end{proposition}
+\begin{proof}
+For hidden channel $h$, the gathered expression is
+\[
+ (W_1u_i+b_1)_h
+ =b_{1,h}+\sum_{\delta\in\{-1,0,1\}^2}
+                   k_{h,\delta}s_{i+\delta},
+\]
+where $k_{h,\delta}$ is the corresponding column of $W_1$. Periodic
+indexing makes this precisely the cross-correlation expression.
+ReLU and the output affine map act at each vertex independently.
+Matching columns and offsets therefore gives identical logits and argmax
+states, including a common tie convention.
+\end{proof}
+
+Re-expressing a fixed grid calculation as message passing therefore
+introduces no new mathematical treatment. Rewiring changes the inputs to
+the shared rule; it is not, by itself, a faster numerical implementation.
+
+\begin{proposition}[Equivariance under consistent relabeling]
+For a vertex permutation $\Pi$, replace $x$ by $\Pi x$ and each $P_r$ by
+$\Pi P_r\Pi^\top$. The shared rule then satisfies
+\[
+ F_{\omega,\Pi G}(\Pi x)=\Pi F_{\omega,G}(x).
+\]
+\end{proposition}
+\begin{proof}
+The new gathered source is
+$(\Pi P_r\Pi^\top)(\Pi x)=\Pi P_rx$. Every row receives the same local
+function, so row permutation commutes with the update.
+\end{proof}
+This is not invariance of a raster-serialized transformer with fixed
+position embeddings: relabeling also changes its input sequence.
+
+\subsection{What endpoint swaps preserve}
+
+Swapping $\pi_r(a)$ and $\pi_r(b)$ leaves $\pi_r$ bijective. Thus it
+preserves one incoming and one outgoing edge of type $r$ at every vertex.
+Degree alone does not preserve connectivity, distances, eigenvalues,
+motifs, rule outputs, or the distribution of serialized token sequences.
+
+An explicit counterexample uses 64 vertices split into two sets of 32.
+Within each set, use the eight cyclic offsets
+$\{-4,-3,-2,-1,1,2,3,4\}$ modulo 32. Every relation is a permutation;
+there are no self or duplicate neighbors and all degrees equal eight.
+Yet the graph is disconnected. Degree constraints alone therefore cannot
+guarantee better information mixing than the connected periodic grid.
+This does not assert that the pilot's particular swap sequence produces
+that counterexample.
+
+\subsection{An exactly solvable diffusion surrogate}
+
+To study a limited meaning of mixing, define the linear operator
+\begin{equation}
+ Q_G=\frac{I+\sum_{r=1}^{8}P_r}{9}.
+ \label{eq:diffusion}
+\end{equation}
+It is doubly stochastic, so the uniform mean is preserved.
+\emph{This is a linear surrogate, not the random ReLU--argmax NCA.}
+On an $s\times s$ periodic Moore grid, Fourier vectors
+$v_{ab}(r,c)=\exp(2\pi\mathrm i(ar+bc)/s)$ are eigenvectors with
+\begin{equation}
+ \lambda_{ab}=
+ \frac{(1+2\cos(2\pi a/s))(1+2\cos(2\pi b/s))}{9}.
+ \label{eq:fourier}
+\end{equation}
+This follows by summing the nine separable shifts.
+For $s=8$, the largest nonconstant eigenvalue magnitude is
+\begin{equation}
+ \rho=\frac{1+\sqrt2}{3}=0.8047378541,\qquad
+ 1-\rho=\frac{2-\sqrt2}{3}=0.1952621459.
+\end{equation}
+Indeed, the largest nonconstant product in \eqref{eq:fourier} is
+$3(1+\sqrt2)$; all negative products have magnitude at most three.
+Since $Q_{\rm grid}$ is symmetric, if $\bar x=n^{-1}\1^\top x$,
+\begin{equation}
+ \norm{Q_{\rm grid}^t(x-\bar x\1)}_2
+ \leq \rho^t\norm{x-\bar x\1}_2.
+\end{equation}
+Reducing this norm bound by a factor $\delta$ requires
+\begin{equation}
+ t\geq\left\lceil\frac{\log\delta}{\log\rho}\right\rceil
+ =\begin{cases}11,&\delta=0.1,\\22,&\delta=0.01.\end{cases}
+\end{equation}
+These are exact bound calculations, not simulated relaxation times.
+
+For directed rewiring, a general $Q_G$ need not be symmetric.
+The appropriate one-step Euclidean bound on mean-zero signals is
+$\norm{Q_G-J}_2$, where $J=\1\1^\top/n$, rather than an unqualified
+claim about its second eigenvalue. The disconnected example has a
+nonconstant componentwise-constant vector with eigenvalue one.
+Nothing here proves that rewiring increases the relevant gap, or that a
+larger diffusion gap improves language pre-training.
+
+\subsection{How many local inputs can change?}
+
+Let
+\begin{equation}
+ h=\sum_{i=1}^n\sum_{r=1}^{d}
+       \mathbf1\{\pi_r^G(i)\ne\pi_r^0(i)\}
+\end{equation}
+count changed \emph{typed source slots}. If
+$S_Gx=(x,P_1^Gx,\ldots,P_d^Gx)$ is the stacked gather operator, then
+\begin{equation}
+ \norm{S_G-S_0}_F^2
+ =\sum_{r=1}^d\norm{P_r^G-P_r^0}_F^2=2h.
+ \label{eq:gatherfrobenius}
+\end{equation}
+Each changed row replaces one unit entry by a different unit entry.
+For independent binary $X_i$ with probability $1/2$,
+$\E[(X_j-X_k)^2]=1/2$ for distinct $j,k$, giving
+\begin{equation}
+ \E\norm{(S_G-S_0)X}_2^2=\frac h2.
+ \label{eq:binaryperturb}
+\end{equation}
+The preserved pilot reports changed-slot fraction $113/512=0.220703125$,
+so $h=113$ and \eqref{eq:binaryperturb} equals $56.5$.
+This identity concerns the \emph{first update's common independent initial
+state}; later states become correlated. A nominal attempted rewiring rate
+of $0.25$ is not the same quantity.
+
+At a common state supplied to both topologies, for a node with $c_i$
+changed slots, its signed local vectors
+obey $\norm{u_i^G-u_i^0}_2\leq2\sqrt{c_i}$. Let
+$m(u)=z_1(u)-z_0(u)$ and
+\[
+ L_m=\norm{W_{2,1:}-W_{2,0:}}_2\norm{W_1}_2.
+\]
+ReLU is 1-Lipschitz, so
+\begin{equation}
+ \abs{m(u_i^G)-m(u_i^0)}\leq2L_m\sqrt{c_i}.
+\end{equation}
+If $\abs{m(u_i^0)}>2L_m\sqrt{c_i}$, the binary prediction cannot change.
+Outside that margin condition it may change. Argmax is discontinuous at
+zero margin; a global Lipschitz bound for the discrete NCA must not be
+inferred from a bound for its logits.
+

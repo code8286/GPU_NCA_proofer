@@ -1,0 +1,42 @@
+{
+  "device": "cpu",
+  "checkpoints_verified": 5,
+  "records": [
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "reproduced_test_nll": 3.277369499206543,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "reproduced_test_nll": 3.2982234954833984,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "reserve_text",
+      "seed": 17,
+      "reproduced_test_nll": 2.896472692489624,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "reproduced_test_nll": 2.8894717693328857,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "reproduced_test_nll": 3.284272789955139,
+      "absolute_error": 0.0,
+      "checkpoint_sha256_valid": true
+    }
+  ],
+  "limitation": "Verification establishes artifact consistency, not a scientific speedup."
+}

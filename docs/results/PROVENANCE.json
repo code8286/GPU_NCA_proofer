@@ -1,0 +1,258 @@
+{
+  "description": "Compact historical evidence copied for source publication. Full archives remain local; no new verification implied.",
+  "files": {
+    "docs/results/pilot1/audit.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/audit.json",
+      "original_sha256": "78b3784f35ecccb5507014a46b06fb85f4022ca33bcf8fc5fe5f5a5b08156ecd",
+      "published_sha256": "78b3784f35ecccb5507014a46b06fb85f4022ca33bcf8fc5fe5f5a5b08156ecd",
+      "adapted": false
+    },
+    "docs/results/pilot1/comparison.csv": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/comparison.csv",
+      "original_sha256": "6d998111891740c7b9be7ca281599aadc75669d22a0f44e953a766fe889a7d3f",
+      "published_sha256": "6d998111891740c7b9be7ca281599aadc75669d22a0f44e953a766fe889a7d3f",
+      "adapted": false
+    },
+    "docs/results/pilot1/prepretraining_diagnosis.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/prepretraining_diagnosis.json",
+      "original_sha256": "69ebcbc04f494964ca26828e0bf0a7314984b57445a76faacfcf94b547b87b8c",
+      "published_sha256": "69ebcbc04f494964ca26828e0bf0a7314984b57445a76faacfcf94b547b87b8c",
+      "adapted": false
+    },
+    "docs/results/pilot1/language_aligned_curves.png": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/language_aligned_curves.png",
+      "original_sha256": "a1d6a7f4edb21a6d347bd7bcef8eabb78dd341ffe92e248e7c1f6c7a241818d1",
+      "published_sha256": "a1d6a7f4edb21a6d347bd7bcef8eabb78dd341ffe92e248e7c1f6c7a241818d1",
+      "adapted": false
+    },
+    "docs/results/pilot1/language_aligned_curves.svg": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/language_aligned_curves.svg",
+      "original_sha256": "be00d1029477bba008cb47b5a669daab820c8066f75a62edbb57f19fdb698e18",
+      "published_sha256": "be00d1029477bba008cb47b5a669daab820c8066f75a62edbb57f19fdb698e18",
+      "adapted": false
+    },
+    "docs/results/pilot1/REVIEW.md": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/REVIEW.md",
+      "original_sha256": "fb65ff17394adb36d4ba5ca1b9fd177da49191429ef4d7cd66d4fbf4d72a820f",
+      "published_sha256": "15dc3403366f3fdeb5b31ca777dda5457ea402806ace010e3f161dc1a922fe8d",
+      "adapted": true
+    },
+    "docs/results/pilot1/summary.csv": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/summary.csv",
+      "original_sha256": "8705d3d8bd4b9262dc22dea07b12c7ca1cda62f1f866ccb19a468f582a29e53d",
+      "published_sha256": "8705d3d8bd4b9262dc22dea07b12c7ca1cda62f1f866ccb19a468f582a29e53d",
+      "adapted": false
+    },
+    "docs/results/pilot1/report.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/report.json",
+      "original_sha256": "fb2c3a5e3a73284ca81878d57a70609385122168ca2b75a404224fa013711588",
+      "published_sha256": "fb2c3a5e3a73284ca81878d57a70609385122168ca2b75a404224fa013711588",
+      "adapted": false
+    },
+    "docs/results/pilot1/verification.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/verification.json",
+      "original_sha256": "52df0f9b215544e6d0b1fa09b89eb2ef6481d7871223457ab024ea105919b0a0",
+      "published_sha256": "52df0f9b215544e6d0b1fa09b89eb2ef6481d7871223457ab024ea105919b0a0",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_17/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_17/summary.json",
+      "original_sha256": "a530e2a3c5a0b6b1e7c59d141120d3c9e551fbbae664be26a7d0b9afe248138e",
+      "published_sha256": "a530e2a3c5a0b6b1e7c59d141120d3c9e551fbbae664be26a7d0b9afe248138e",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_17/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_17/metrics.jsonl",
+      "original_sha256": "07bdc83bb5d500d2e82d90be06d65f357d66d7fcd867d825681a70f1ff041999",
+      "published_sha256": "07bdc83bb5d500d2e82d90be06d65f357d66d7fcd867d825681a70f1ff041999",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_29/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_29/summary.json",
+      "original_sha256": "2d21c92a6425f3f57c2d22dff4a1346a91b1ed4979abcae8da72011d47921f19",
+      "published_sha256": "2d21c92a6425f3f57c2d22dff4a1346a91b1ed4979abcae8da72011d47921f19",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_29/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_29/metrics.jsonl",
+      "original_sha256": "5f5abf177a915d67da5fa601a80a64d27aae2a8665fb8a4fdd986896e9941e78",
+      "published_sha256": "5f5abf177a915d67da5fa601a80a64d27aae2a8665fb8a4fdd986896e9941e78",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_43/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_43/summary.json",
+      "original_sha256": "174411dde352e83500ba8bdf4ebbf2290bb3bf0351cb1ec80a778e2a15519025",
+      "published_sha256": "174411dde352e83500ba8bdf4ebbf2290bb3bf0351cb1ec80a778e2a15519025",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/scratch_43/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/scratch_43/metrics.jsonl",
+      "original_sha256": "9d3a94ea89deca9d4bf623be28793dbe1c6ca8b19d2faf746dee4a0d8e8834d5",
+      "published_sha256": "9d3a94ea89deca9d4bf623be28793dbe1c6ca8b19d2faf746dee4a0d8e8834d5",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_17/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_17/summary.json",
+      "original_sha256": "acf86a5251e117aa76528a1d05d3386187918384321e8bb3c91b76bf3ab84d5f",
+      "published_sha256": "acf86a5251e117aa76528a1d05d3386187918384321e8bb3c91b76bf3ab84d5f",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_17/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_17/metrics.jsonl",
+      "original_sha256": "600c9269794c7cd65b397217b68bb700c57686a4ccb105ab0d47a7c1e6dddbff",
+      "published_sha256": "600c9269794c7cd65b397217b68bb700c57686a4ccb105ab0d47a7c1e6dddbff",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_29/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_29/summary.json",
+      "original_sha256": "2b78211c622dfa27cb7dba01570c5d977e26bc01881bcb1150c82150fe481c33",
+      "published_sha256": "2b78211c622dfa27cb7dba01570c5d977e26bc01881bcb1150c82150fe481c33",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_29/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_29/metrics.jsonl",
+      "original_sha256": "b87aa9109e85744ff2965a9a66d27316ced170d3aefc1557129ff116418601da",
+      "published_sha256": "b87aa9109e85744ff2965a9a66d27316ced170d3aefc1557129ff116418601da",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_43/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_43/summary.json",
+      "original_sha256": "1215700d68d32831b15239aaaa9b2c92701bf6ace908924340b1ceab3b48f44e",
+      "published_sha256": "1215700d68d32831b15239aaaa9b2c92701bf6ace908924340b1ceab3b48f44e",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/reserve_text_43/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/reserve_text_43/metrics.jsonl",
+      "original_sha256": "27013cc6516fe9579038c9ff733ce480331946b22cf8bbde71ac8894dd7823c7",
+      "published_sha256": "27013cc6516fe9579038c9ff733ce480331946b22cf8bbde71ac8894dd7823c7",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_17/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_17/summary.json",
+      "original_sha256": "347ea5c0de5389ba3ebe5d93f4d8d730ce9f6637c1e7699390f207721dc8ae93",
+      "published_sha256": "347ea5c0de5389ba3ebe5d93f4d8d730ce9f6637c1e7699390f207721dc8ae93",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_17/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_17/metrics.jsonl",
+      "original_sha256": "cc6e99666eca80c3a415d7f364194571b25e03602abd436b3d8dde409c87746c",
+      "published_sha256": "cc6e99666eca80c3a415d7f364194571b25e03602abd436b3d8dde409c87746c",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_29/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_29/summary.json",
+      "original_sha256": "4f67b8b39fb4a368ec0235af3b96f99fa20fb621724dfaca5ec1863eb017afeb",
+      "published_sha256": "4f67b8b39fb4a368ec0235af3b96f99fa20fb621724dfaca5ec1863eb017afeb",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_29/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_29/metrics.jsonl",
+      "original_sha256": "9bbf4ad23ae81b61d2cbfa6810d43feb39884e56ab83cf2d66f7b4afdc5c38b1",
+      "published_sha256": "9bbf4ad23ae81b61d2cbfa6810d43feb39884e56ab83cf2d66f7b4afdc5c38b1",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_43/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_43/summary.json",
+      "original_sha256": "3ac6dfe19f3fe25869d4baf23314adaf07f5991c52954afffb5be74fc4741c65",
+      "published_sha256": "3ac6dfe19f3fe25869d4baf23314adaf07f5991c52954afffb5be74fc4741c65",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/grid_nca_43/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/grid_nca_43/metrics.jsonl",
+      "original_sha256": "14d186adf65bb7f9fd2f68cf0d6ae21db8971814f41f8e146771eabd74f8540b",
+      "published_sha256": "14d186adf65bb7f9fd2f68cf0d6ae21db8971814f41f8e146771eabd74f8540b",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_17/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_17/summary.json",
+      "original_sha256": "1f3f2b0bd16dc7998a3c83eb12f04c59baead48312d8fef6c5a2dc643fcd0a59",
+      "published_sha256": "1f3f2b0bd16dc7998a3c83eb12f04c59baead48312d8fef6c5a2dc643fcd0a59",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_17/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_17/metrics.jsonl",
+      "original_sha256": "04bc387380b349efcedabd85e9f097cfb73424a1aed645aeb395c3a74217904b",
+      "published_sha256": "04bc387380b349efcedabd85e9f097cfb73424a1aed645aeb395c3a74217904b",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_29/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_29/summary.json",
+      "original_sha256": "46bd559af539e80d62655bd2d4bf16867417c4a45c173c69cce96d14ed417a17",
+      "published_sha256": "46bd559af539e80d62655bd2d4bf16867417c4a45c173c69cce96d14ed417a17",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_29/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_29/metrics.jsonl",
+      "original_sha256": "50c99923a01444482c9e39408b80d10e624588556471e3488c7c5efcb17afbb2",
+      "published_sha256": "50c99923a01444482c9e39408b80d10e624588556471e3488c7c5efcb17afbb2",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_43/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_43/summary.json",
+      "original_sha256": "933da3812afcdc5b638859ba7827e54d7b2476ffeec0b866011a34b27eabcab0",
+      "published_sha256": "933da3812afcdc5b638859ba7827e54d7b2476ffeec0b866011a34b27eabcab0",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/graph_nca_43/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/graph_nca_43/metrics.jsonl",
+      "original_sha256": "474f541f6c15c975e09df4be8b9304cf7c309eccff0d28f9e873f32cecf77df3",
+      "published_sha256": "474f541f6c15c975e09df4be8b9304cf7c309eccff0d28f9e873f32cecf77df3",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_17/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_17/summary.json",
+      "original_sha256": "d8d9461895c30e210a4e08f90c2ea3700f1297dae3d2a5638e665881040d9e2f",
+      "published_sha256": "d8d9461895c30e210a4e08f90c2ea3700f1297dae3d2a5638e665881040d9e2f",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_17/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_17/metrics.jsonl",
+      "original_sha256": "c141c6c8e7eae4a8b2d4e1015c33f672d6a60b9183eb88ab964402af117c2de4",
+      "published_sha256": "c141c6c8e7eae4a8b2d4e1015c33f672d6a60b9183eb88ab964402af117c2de4",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_29/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_29/summary.json",
+      "original_sha256": "ab16ee4a35165acb76877c588a3236294051fdd7bea9b35bcdfcbccf1a81b774",
+      "published_sha256": "ab16ee4a35165acb76877c588a3236294051fdd7bea9b35bcdfcbccf1a81b774",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_29/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_29/metrics.jsonl",
+      "original_sha256": "6fa3cdba0e9c8746621017a1fc5832f6cb027af27196c79a121d67c4fe44d7df",
+      "published_sha256": "6fa3cdba0e9c8746621017a1fc5832f6cb027af27196c79a121d67c4fe44d7df",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_43/summary.json": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_43/summary.json",
+      "original_sha256": "e88879825616eaa281da27e18461ea9163465f65cd9ebd04b6353103fa180e23",
+      "published_sha256": "e88879825616eaa281da27e18461ea9163465f65cd9ebd04b6353103fa180e23",
+      "adapted": false
+    },
+    "docs/results/pilot1/measurements/shuffled_graph_43/metrics.jsonl": {
+      "source_workspace_relative": "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/shuffled_graph_43/metrics.jsonl",
+      "original_sha256": "7598367c979576582a65794b1a5fbf6758f9f150bcb901056115ec308b52217b",
+      "published_sha256": "7598367c979576582a65794b1a5fbf6758f9f150bcb901056115ec308b52217b",
+      "adapted": false
+    },
+    "docs/results/cpu_check/summary.csv": {
+      "source_workspace_relative": "runs/cpu_verified/summary.csv",
+      "original_sha256": "e302399726df0e3b3bd3a3ee019ea689270a3161e33185053a165fb98906eb5e",
+      "published_sha256": "e302399726df0e3b3bd3a3ee019ea689270a3161e33185053a165fb98906eb5e",
+      "adapted": false
+    },
+    "docs/results/cpu_check/report.json": {
+      "source_workspace_relative": "runs/cpu_verified/report.json",
+      "original_sha256": "36ab00033c0e88ec2c0100dc4acdd1b916dd219fa287ae329878749d0a5020c2",
+      "published_sha256": "36ab00033c0e88ec2c0100dc4acdd1b916dd219fa287ae329878749d0a5020c2",
+      "adapted": false
+    },
+    "docs/results/cpu_check/verification.json": {
+      "source_workspace_relative": "runs/cpu_verified/verification.json",
+      "original_sha256": "ebfd9543e68deb4a8875e286d605b36128218de547ea8b261c5b393441e7cdb8",
+      "published_sha256": "ebfd9543e68deb4a8875e286d605b36128218de547ea8b261c5b393441e7cdb8",
+      "adapted": false
+    }
+  },
+  "archive_sha256": "14f02cd87e924c18f6658333a0fde11b3e06b968504954b0320d33ff9a516ee6"
+}

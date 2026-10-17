@@ -1,0 +1,16 @@
+{
+  "arm": "graph_nca",
+  "seed": 29,
+  "parameters": 1857024,
+  "initial_sha256": "356e551510ac8bc5f5ae013856114e941921ce10a4958562a45e1a31eb3a4c49",
+  "test_nll": 1.9235593974590302,
+  "test_perplexity": 6.845280231265055,
+  "final_val_nll": 1.8003520965576172,
+  "train_seconds": 25.30613329299814,
+  "preparation_seconds": 0.5820488610000325,
+  "val_evaluated_tokens": 65536,
+  "embedding_transfer": "reset",
+  "total_tokens": 4096000,
+  "approx_train_flops_6PD": 45638221824000,
+  "model_sha256": "65bdc8fb2dd1f3017ca54151f10391c17e6f48b31e0aa8b7d5a93b4fe4f6e443"
+}

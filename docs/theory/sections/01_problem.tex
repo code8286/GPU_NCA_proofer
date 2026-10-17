@@ -1,0 +1,127 @@
+\section{The object being studied}
+\label{sec:problem}
+
+\subsection{Three different objects}
+
+An NCA is a dynamical system whose local transition rule is parametrized by a
+neural network. A graph specifies which cells exchange information.
+A transformer is a separate predictor trained on serialized trajectories.
+These roles must be kept distinct. The NCA background is
+\cite{mordvintsev2020}; the message-passing viewpoint is
+\cite{gilmer2017}. Synthetic-then-language training follows the research
+question of \cite{lee2026}, without inheriting that paper's positive
+empirical conclusions.
+
+Let $G$ have $n$ vertices, let the cell alphabet be
+$\mathcal A=\{0,\ldots,q-1\}$, and write
+\begin{equation}
+ X^t=(X_1^t,\ldots,X_n^t)\in\mathcal A^n,\qquad
+ X^{t+1}=F_{\omega,G}(X^t).
+ \label{eq:dynamics}
+\end{equation}
+Here $\omega$ is sampled once per trajectory and then held fixed. It is not
+updated by the transformer's optimizer. A serialization map $\mathcal S$
+produces a token sequence $Z=\mathcal S(X^{0:T-1})$. Sampling
+$\omega$, $X^0$, and, if declared, $G$, defines a synthetic distribution
+$\mathcal D_G$. Graph versus grid pre-pre-training changes $\mathcal D_G$.
+It need not change the transformer architecture.
+
+The binary pilot uses deterministic argmax transitions. A stochastic
+extension instead specifies a transition kernel
+$p_\omega(X^{t+1}\mid X^t,G)$. Statements below that require determinism
+do not automatically apply to that extension.
+
+\subsection{The primary estimand}
+
+Partition transformer parameters into a backbone $B$ and a token
+embedding/output table $E$. With tied embeddings, the same $E$ appears at
+the input and output. Position parameters belong to $B$ here.
+Let $\mathcal U_{G,K}$ be $K$ synthetic optimizer updates and let
+\begin{equation}
+ \mathcal T(B,E)=(B,E_0)
+ \label{eq:reset}
+\end{equation}
+reset the token table to a common language initialization $E_0$.
+Writing $(B_G^{\rm ppt},E_G^{\rm ppt})
+=\mathcal U_{G,K}(B_0,E_{{\rm syn},0})$, the language-stage initializations are
+\begin{equation}
+ \begin{aligned}
+ \theta_G^0&=(B_G^{\rm ppt},E_0),\\
+ \theta_{\rm grid}^0&=(B_{\rm grid}^{\rm ppt},E_0),\\
+ \theta_{\rm scratch}^0&=(B_0,E_0).
+ \end{aligned}
+ \label{eq:initializations}
+\end{equation}
+The synthetic initial table $E_{{\rm syn},0}$ is common to matched synthetic
+arms; its vocabulary can differ from the language table's vocabulary.
+The binary pilot happens to use a common 274-symbol allocation.
+All arms then receive the same language update map $\mathcal V_n$,
+including optimizer initialization, learning-rate schedule and minibatch
+order. A population comparison at language update $n$ is
+\begin{equation}
+ \Delta_G(n)=
+ \E\!\left[
+ L_{\rm lang}(\mathcal V_n(\theta_G^0))-
+ L_{\rm lang}(\mathcal V_n(\theta_{\rm scratch}^0))
+ \right].
+ \label{eq:estimand}
+\end{equation}
+The expectation averages declared paired initializations and data/rule/graph
+sampling. A negative value is favorable in loss units. The graph-specific
+effect replaces scratch in \eqref{eq:estimand} by the grid treatment.
+These are different questions.
+
+The historical fixed-total-budget design instead compares $K+N$ text
+updates against $K$ synthetic plus $N$ text updates, with an additional
+scratch scheduler boundary. That design does not identify
+\eqref{eq:estimand}. This note derives conditions for the matched
+language-stage question, rather than relabeling historical measurements.
+
+\subsection{A loss and two clocks}
+
+For a language distribution and autoregressive model $p_\theta$, define
+\begin{equation}
+ L_{\rm lang}(\theta)
+ =\E\!\left[-\frac{1}{m}\sum_{j=1}^{m}
+       \log p_\theta(Y_j\mid Y_{<j})\right].
+\end{equation}
+Logs are natural unless a quantity is explicitly in bits.
+If $\varepsilon$ is a predeclared loss target, define the first
+language-stage hit
+\begin{equation}
+ N_G(\varepsilon)=\inf\{n\geq0:L_{\rm lang}(\mathcal V_n(\theta_G^0))
+                               \leq\varepsilon\}.
+ \label{eq:hit}
+\end{equation}
+An empty set means $+\infty$, not zero speedup. Actual validation is
+sampled and evaluated at a finite cadence, so observed hitting times are
+coarser than \eqref{eq:hit}.
+
+Language-stage cost and total preparation-plus-training cost are separate:
+\begin{align}
+ C_G^{\rm lang}&=c_G^{\rm lang}N_G,\\
+ C_G^{\rm total}&=C_G^{\rm gen}+c_G^{\rm ppt}K+
+                         c_G^{\rm lang}N_G.
+ \label{eq:twocosts}
+\end{align}
+The constants must use a common unit, such as seconds or token-equivalent
+cost. We solve their break-even condition in Section~\ref{sec:numerical}.
+
+\subsection{Notation}
+
+\begin{center}
+\begin{tabular}{@{}p{.20\linewidth}p{.73\linewidth}@{}}
+\toprule
+Symbol & Meaning\\
+\midrule
+$n,q,d,T$ & Vertices, states/cell, non-self relation types, retained frames.\\
+$P_r$ & Permutation matrix gathering the source for relation $r$.\\
+$\omega,F$ & Neural rule parameters and their induced discrete rule.\\
+$B,E$ & Transformer backbone and token embedding/output parameters.\\
+$K,N$ & Synthetic updates and common language-stage updates.\\
+$P,\ell,W$ & Patches/frame, tokens/frame, preceding-token context length.\\
+$H,\mu,L$ & Local language Hessian and its lower/upper eigenvalue bounds.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
