@@ -13,6 +13,9 @@ Recorded cumulative time was about 13% higher for grid NCA at that reference.
 See [the v2 results review](docs/results/transfer_v2_run1/REVIEW.md).
 The [results ledger](RESULTS.md) collects current measurements, mathematical
 verification and historical evidence in one place.
+The detailed [research presentation](docs/presentation/GPU_NCA_Research_Detailed_v2.pptx)
+and its [slide/source index](docs/presentation/README.md) cover the theory,
+proofs, implementation, notebooks, visualizations and reviewed results.
 Graph rewiring has not been tested in v2. The historical
 `experiment.py` still implements **matched-total-budget pilot 1**.
 The first GPU pilot did not demonstrate a graph benefit. Its scratch model saw

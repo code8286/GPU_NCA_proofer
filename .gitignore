@@ -8,6 +8,7 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 .lake/
+/.chart-data-*/
 *.olean
 *.ilean
 .coverage
@@ -51,6 +52,3 @@ desktop.ini
 # Parent-workspace copy; publish Prod contents as a standalone repository
 /Prod/
 /sources/*.pdf
-
-#WIP
-.transfer_v3/

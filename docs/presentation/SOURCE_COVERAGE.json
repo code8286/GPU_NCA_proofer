@@ -1,0 +1,2202 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "deck": "GPU_NCA_Research_Detailed_v2.pptx",
+  "deck_sha256": "b76c1e7e2572bd0b385157cb3f74942d5725b61987d60fa9a0655da241ae9703",
+  "slide_count": 92,
+  "original_deck": {
+    "path": "docs/GPU_NCA_Proofer_Presentation.pptx",
+    "sha256": "07f9c9bcf297317a1851625647f6529502f73c9cacfaf288359ac875e96144c6",
+    "slides": 18
+  },
+  "source_inventory_scope": "Canonical publication inputs at authoring time, plus explicitly identified retained dataset/figure examples. This is a source snapshot, not a claim to inspect dependency caches or every model tensor.",
+  "canonical_source_snapshot": [
+    {
+      "path": ".gitattributes",
+      "sha256": "cea84768d2e35270c7aab23d2f7458be9f772388b0f597cd3078a57179dcb2e6",
+      "bytes": 269
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "1a8bb465dedf93b07b652ad250288a5472cf3f10165e811e3a79def57ece0cde",
+      "bytes": 482
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/research_proposal.md",
+      "sha256": "a42ab3b1703332ba6ff8939a8a2913c0a23c619a1b8fb2eabfb659437d7d0955",
+      "bytes": 373
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "3f03b9a3ef0424a0618bbc02478cb8c2d88ef1387b33faf9b58ceb04ca6de09e",
+      "bytes": 513
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "9fba43417deb097d74466bf289771672b0d62fd35f113c82e0b949226233c2ea",
+      "bytes": 2097
+    },
+    {
+      "path": ".github/workflows/lean.yml",
+      "sha256": "74858eca108468ac42d0a0660e371f3b03846f9dbb86880ae584eca5a3d9699d",
+      "bytes": 667
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "400a42080a86e2dd561d27e61cb240551c822d15c26bfd3f3fe32d1e256360fe",
+      "bytes": 669
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "95c8941739ad1b6fe53ad6b7d374a01f0ea46ea1fef4cdb3136a35941a90df71",
+      "bytes": 2011
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "720ba1d5e52ec07c6377c9846623f879266111f1fe546244d7da22afca3adfe6",
+      "bytes": 5320
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "a8fa2a8005d60e7986a43459461d0d3146e575013a6ebc1e2468985edb4abe8a",
+      "bytes": 3723
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "LOGBOOK.md",
+      "sha256": "3e5b5b722e5904af7caabf12001d0a030b4f549abf1b5ac9219b16ec69879aeb",
+      "bytes": 35431
+    },
+    {
+      "path": "METHODOLOGY_AUDIT.md",
+      "sha256": "f281cf8153ab9db181a79dee8feffdc16094cc1755b693cefb915e20930173a5",
+      "bytes": 15195
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "b22c31f5c4510caa2fc66767f1fdc9b841c134b9907018caeff871f6995972e2",
+      "bytes": 615
+    },
+    {
+      "path": "README.md",
+      "sha256": "cce087a9d601ef32ca0436ac0051a4526a513c4f8748901cf955e7d9734b0bf1",
+      "bytes": 15036
+    },
+    {
+      "path": "RESEARCH_CONTEXT.md",
+      "sha256": "7fa3e74556f3a5c131ff777d2bfc609921dc9c0e7d65ee8e53d482df21ca040b",
+      "bytes": 5760
+    },
+    {
+      "path": "RESULTS.md",
+      "sha256": "b8edf644854f92d54c7946ada5fc3a9eb3b3ee12443d2bcc5a9e7ede6afcce0a",
+      "bytes": 3941
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "c333ca0bb09b4c42a649cc471997d3807beadff988e4995c14d3c50c93dbf5a1",
+      "bytes": 1791
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "6b5ffc47cea2ba71f158d52ed86d4ee7f9adc1aad413a1876d5e2e1501fde520",
+      "bytes": 6807
+    },
+    {
+      "path": "audit_kaggle_output.py",
+      "sha256": "4ace244793265ec0bec4258f8c52d7f1ad4fcd225a557228207e5493c431ef5d",
+      "bytes": 18060
+    },
+    {
+      "path": "build_graph_notebook.py",
+      "sha256": "67ee4bcbcd3b9ae98293f8419bff5757105f72c1713b732f39cb87ddc8d00a55",
+      "bytes": 9436
+    },
+    {
+      "path": "build_notebook.py",
+      "sha256": "29bda2929a2dc5ca30050b29dd58cbfe5493ca4358458a0b5e53d82198273f6c",
+      "bytes": 8363
+    },
+    {
+      "path": "build_transfer_notebook.py",
+      "sha256": "127d7862eaf2c13163566fa0538b4f771496e0e65e704730801908950b5bddd4",
+      "bytes": 8937
+    },
+    {
+      "path": "configs/cpu_check.json",
+      "sha256": "a38d506f1332df4ae5a2ae57d2d86e226ec91557c77977e74e191e2be624ffb8",
+      "bytes": 400
+    },
+    {
+      "path": "configs/pilot.json",
+      "sha256": "38703548c00a3c60b63d0b7420e77d438bbe2961868896a9d1158ddf7130df57",
+      "bytes": 416
+    },
+    {
+      "path": "configs/smoke.json",
+      "sha256": "b63c4b7236587e99ff742d67617cb3668f75cb47036cccd24d7be190c5eaf598",
+      "bytes": 394
+    },
+    {
+      "path": "configs/transfer_v2.json",
+      "sha256": "7b57ee23c89c1ff60c5d334baaa094deffc6a632d578e86d7c618537feafde59",
+      "bytes": 1102
+    },
+    {
+      "path": "configs/transfer_v2_smoke.json",
+      "sha256": "598fc867dc7212806c1da0cfc0bea08f0c4587541e670c2234ea862e22a37fe2",
+      "bytes": 1007
+    },
+    {
+      "path": "configs/transfer_v3.json",
+      "sha256": "f46a17d3a7979a1a1445425ad1472e700397e1557da45126882e69f039bb5772",
+      "bytes": 1412
+    },
+    {
+      "path": "configs/transfer_v3_smoke.json",
+      "sha256": "ccf5f3abf88f4fa90d8c12c0f4b46b94dc777b9f39031a3a64056ff7f3a7002a",
+      "bytes": 1325
+    },
+    {
+      "path": "diagnose_prepretraining.py",
+      "sha256": "2786b0577946a7c0fa2e6135bb00c0af5522c3efda775a9369ede92a78de73a9",
+      "bytes": 5798
+    },
+    {
+      "path": "docs/GPU_NCA_Proofer_Presentation.pptx",
+      "sha256": "07f9c9bcf297317a1851625647f6529502f73c9cacfaf288359ac875e96144c6",
+      "bytes": 933935
+    },
+    {
+      "path": "docs/PILOT_PROTOCOL.md",
+      "sha256": "c9c09eae188e1d1bf38e14d0b4e21a9cb077f9311f0e9f6c7768b70f108ee3db",
+      "bytes": 12492
+    },
+    {
+      "path": "docs/TRANSFER_V2_PROTOCOL.md",
+      "sha256": "0455d149381b98f63e1973fc12e4e94774dee37a96309bea62fef2a7698de5a1",
+      "bytes": 13379
+    },
+    {
+      "path": "docs/TRANSFER_V3_PROTOCOL.md",
+      "sha256": "2de7c875d4c37d29c6462e03ec07339dc2dfb15ebbcb0fb342a2ba4b32e2f0c5",
+      "bytes": 9894
+    },
+    {
+      "path": "docs/results/PROVENANCE.json",
+      "sha256": "a1c43fa03ca41d603b1a3dd99d02e649ef518888a25af5afad58fe35995de073",
+      "bytes": 17956
+    },
+    {
+      "path": "docs/results/PUBLICATION_CHECKS.json",
+      "sha256": "4663535d1a2b58466c3f7b760f2c6fead3acd1ca518b37e5cdaccc61e636be37",
+      "bytes": 1078
+    },
+    {
+      "path": "docs/results/README.md",
+      "sha256": "cbf306a73b08e60a7813f0b81b691706ef6b91e6aea646d5dffc93d6e4a2770c",
+      "bytes": 1018
+    },
+    {
+      "path": "docs/results/cpu_check/report.json",
+      "sha256": "36ab00033c0e88ec2c0100dc4acdd1b916dd219fa287ae329878749d0a5020c2",
+      "bytes": 3717
+    },
+    {
+      "path": "docs/results/cpu_check/summary.csv",
+      "sha256": "e302399726df0e3b3bd3a3ee019ea689270a3161e33185053a165fb98906eb5e",
+      "bytes": 1587
+    },
+    {
+      "path": "docs/results/cpu_check/verification.json",
+      "sha256": "ebfd9543e68deb4a8875e286d605b36128218de547ea8b261c5b393441e7cdb8",
+      "bytes": 1069
+    },
+    {
+      "path": "docs/results/pilot1/REVIEW.md",
+      "sha256": "15dc3403366f3fdeb5b31ca777dda5457ea402806ace010e3f161dc1a922fe8d",
+      "bytes": 6425
+    },
+    {
+      "path": "docs/results/pilot1/audit.json",
+      "sha256": "78b3784f35ecccb5507014a46b06fb85f4022ca33bcf8fc5fe5f5a5b08156ecd",
+      "bytes": 8346
+    },
+    {
+      "path": "docs/results/pilot1/comparison.csv",
+      "sha256": "6d998111891740c7b9be7ca281599aadc75669d22a0f44e953a766fe889a7d3f",
+      "bytes": 705
+    },
+    {
+      "path": "docs/results/pilot1/language_aligned_curves.png",
+      "sha256": "a1d6a7f4edb21a6d347bd7bcef8eabb78dd341ffe92e248e7c1f6c7a241818d1",
+      "bytes": 245792
+    },
+    {
+      "path": "docs/results/pilot1/language_aligned_curves.svg",
+      "sha256": "be00d1029477bba008cb47b5a669daab820c8066f75a62edbb57f19fdb698e18",
+      "bytes": 84267
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_17/metrics.jsonl",
+      "sha256": "04bc387380b349efcedabd85e9f097cfb73424a1aed645aeb395c3a74217904b",
+      "bytes": 5759
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_17/summary.json",
+      "sha256": "1f3f2b0bd16dc7998a3c83eb12f04c59baead48312d8fef6c5a2dc643fcd0a59",
+      "bytes": 570
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_29/metrics.jsonl",
+      "sha256": "50c99923a01444482c9e39408b80d10e624588556471e3488c7c5efcb17afbb2",
+      "bytes": 5776
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_29/summary.json",
+      "sha256": "46bd559af539e80d62655bd2d4bf16867417c4a45c173c69cce96d14ed417a17",
+      "bytes": 570
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_43/metrics.jsonl",
+      "sha256": "474f541f6c15c975e09df4be8b9304cf7c309eccff0d28f9e873f32cecf77df3",
+      "bytes": 5771
+    },
+    {
+      "path": "docs/results/pilot1/measurements/graph_nca_43/summary.json",
+      "sha256": "933da3812afcdc5b638859ba7827e54d7b2476ffeec0b866011a34b27eabcab0",
+      "bytes": 572
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_17/metrics.jsonl",
+      "sha256": "cc6e99666eca80c3a415d7f364194571b25e03602abd436b3d8dde409c87746c",
+      "bytes": 5757
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_17/summary.json",
+      "sha256": "347ea5c0de5389ba3ebe5d93f4d8d730ce9f6637c1e7699390f207721dc8ae93",
+      "bytes": 571
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_29/metrics.jsonl",
+      "sha256": "9bbf4ad23ae81b61d2cbfa6810d43feb39884e56ab83cf2d66f7b4afdc5c38b1",
+      "bytes": 5745
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_29/summary.json",
+      "sha256": "4f67b8b39fb4a368ec0235af3b96f99fa20fb621724dfaca5ec1863eb017afeb",
+      "bytes": 570
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_43/metrics.jsonl",
+      "sha256": "14d186adf65bb7f9fd2f68cf0d6ae21db8971814f41f8e146771eabd74f8540b",
+      "bytes": 5733
+    },
+    {
+      "path": "docs/results/pilot1/measurements/grid_nca_43/summary.json",
+      "sha256": "3ac6dfe19f3fe25869d4baf23314adaf07f5991c52954afffb5be74fc4741c65",
+      "bytes": 568
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_17/metrics.jsonl",
+      "sha256": "600c9269794c7cd65b397217b68bb700c57686a4ccb105ab0d47a7c1e6dddbff",
+      "bytes": 5813
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_17/summary.json",
+      "sha256": "acf86a5251e117aa76528a1d05d3386187918384321e8bb3c91b76bf3ab84d5f",
+      "bytes": 577
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_29/metrics.jsonl",
+      "sha256": "b87aa9109e85744ff2965a9a66d27316ced170d3aefc1557129ff116418601da",
+      "bytes": 5826
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_29/summary.json",
+      "sha256": "2b78211c622dfa27cb7dba01570c5d977e26bc01881bcb1150c82150fe481c33",
+      "bytes": 578
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_43/metrics.jsonl",
+      "sha256": "27013cc6516fe9579038c9ff733ce480331946b22cf8bbde71ac8894dd7823c7",
+      "bytes": 5844
+    },
+    {
+      "path": "docs/results/pilot1/measurements/reserve_text_43/summary.json",
+      "sha256": "1215700d68d32831b15239aaaa9b2c92701bf6ace908924340b1ceab3b48f44e",
+      "bytes": 577
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_17/metrics.jsonl",
+      "sha256": "07bdc83bb5d500d2e82d90be06d65f357d66d7fcd867d825681a70f1ff041999",
+      "bytes": 5749
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_17/summary.json",
+      "sha256": "a530e2a3c5a0b6b1e7c59d141120d3c9e551fbbae664be26a7d0b9afe248138e",
+      "bytes": 571
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_29/metrics.jsonl",
+      "sha256": "5f5abf177a915d67da5fa601a80a64d27aae2a8665fb8a4fdd986896e9941e78",
+      "bytes": 5749
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_29/summary.json",
+      "sha256": "2d21c92a6425f3f57c2d22dff4a1346a91b1ed4979abcae8da72011d47921f19",
+      "bytes": 573
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_43/metrics.jsonl",
+      "sha256": "9d3a94ea89deca9d4bf623be28793dbe1c6ca8b19d2faf746dee4a0d8e8834d5",
+      "bytes": 5748
+    },
+    {
+      "path": "docs/results/pilot1/measurements/scratch_43/summary.json",
+      "sha256": "174411dde352e83500ba8bdf4ebbf2290bb3bf0351cb1ec80a778e2a15519025",
+      "bytes": 573
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_17/metrics.jsonl",
+      "sha256": "c141c6c8e7eae4a8b2d4e1015c33f672d6a60b9183eb88ab964402af117c2de4",
+      "bytes": 5878
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_17/summary.json",
+      "sha256": "d8d9461895c30e210a4e08f90c2ea3700f1297dae3d2a5638e665881040d9e2f",
+      "bytes": 575
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_29/metrics.jsonl",
+      "sha256": "6fa3cdba0e9c8746621017a1fc5832f6cb027af27196c79a121d67c4fe44d7df",
+      "bytes": 5888
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_29/summary.json",
+      "sha256": "ab16ee4a35165acb76877c588a3236294051fdd7bea9b35bcdfcbccf1a81b774",
+      "bytes": 576
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_43/metrics.jsonl",
+      "sha256": "7598367c979576582a65794b1a5fbf6758f9f150bcb901056115ec308b52217b",
+      "bytes": 5880
+    },
+    {
+      "path": "docs/results/pilot1/measurements/shuffled_graph_43/summary.json",
+      "sha256": "e88879825616eaa281da27e18461ea9163465f65cd9ebd04b6353103fa180e23",
+      "bytes": 575
+    },
+    {
+      "path": "docs/results/pilot1/prepretraining_diagnosis.json",
+      "sha256": "69ebcbc04f494964ca26828e0bf0a7314984b57445a76faacfcf94b547b87b8c",
+      "bytes": 5607
+    },
+    {
+      "path": "docs/results/pilot1/report.json",
+      "sha256": "fb2c3a5e3a73284ca81878d57a70609385122168ca2b75a404224fa013711588",
+      "bytes": 7069
+    },
+    {
+      "path": "docs/results/pilot1/summary.csv",
+      "sha256": "8705d3d8bd4b9262dc22dea07b12c7ca1cda62f1f866ccb19a468f582a29e53d",
+      "bytes": 4444
+    },
+    {
+      "path": "docs/results/pilot1/verification.json",
+      "sha256": "52df0f9b215544e6d0b1fa09b89eb2ef6481d7871223457ab024ea105919b0a0",
+      "bytes": 2770
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/PROVENANCE.json",
+      "sha256": "0e269e62be202cf87919371940b13cd66add8d4e65b6a2ed577963a0513dd917",
+      "bytes": 8701
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/REVIEW.md",
+      "sha256": "1d0f5e180e31cd588b8efc5b8f3b5e64a3bcaed743f9d4e28d84e02a7d1e7a6f",
+      "bytes": 8205
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/aggregate.json",
+      "sha256": "afcdfc04db78785f2a5328a33ac5d14836741638e6d4a404eb396c065e8546cd",
+      "bytes": 913
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/audit.json",
+      "sha256": "210448529c5385812b7b736f703c5cb4184f13d195270bd46778d712e05523a3",
+      "bytes": 1740
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/comparisons.csv",
+      "sha256": "bbb69df9be7d03beb3a23edc2ceddecc6800f946020c4d295ba7a1bedc1b7e66",
+      "bytes": 1107
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/cpu_verification.json",
+      "sha256": "57b330f665191f94221792a0f3249d95a846b2a77fc81b5b9e76360b42ec314b",
+      "bytes": 3922
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/environment.json",
+      "sha256": "9ebf28adcfbe8cc901634422bb476c69e480f6f1d806da371d10a4f2a7f13635",
+      "bytes": 3196
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_17/language_metrics.jsonl",
+      "sha256": "dc397feafec0807dff32c493176668249b8cb0b16ad6c0be4a21ad9c97144ffe",
+      "bytes": 8165
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_17/language_summary.json",
+      "sha256": "ed289ad7f3688e7c4ff21716b2cc7243e66931a5366417965194ea1dffbba0cb",
+      "bytes": 1111
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_17/ppt_metrics.jsonl",
+      "sha256": "a6432ffd478cdcfd2b5868f0ecd5c8cf9f9be9021d21adf82b80b8729e5d4308",
+      "bytes": 3629
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_17/ppt_summary.json",
+      "sha256": "df66349ffdd92816cb4433075b85079e820f8408f08ad9fe7d1d2881ce101645",
+      "bytes": 1826
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_29/language_metrics.jsonl",
+      "sha256": "64110fa3d3f0333522469e624b012271c0e45742085afbd7dc1d7f10bc1b4165",
+      "bytes": 8174
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_29/language_summary.json",
+      "sha256": "e6afff2d7c523d8b73e7ebe36a309da10209629802042c46d4988d23b4f25f44",
+      "bytes": 1108
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_29/ppt_metrics.jsonl",
+      "sha256": "c34b8c052c6c73e3ba036d886c7dcd416b9b95e468ec1408bf3943c1efbef2e7",
+      "bytes": 3628
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_29/ppt_summary.json",
+      "sha256": "adbf8bc8173ec663e9fb7d8f2742706f27c6929c8c894005ee7d057c4409df9d",
+      "bytes": 1816
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_43/language_metrics.jsonl",
+      "sha256": "eee11ee3962709137ca6eee287bab715af057589a44da5f8d9420f4d8a6cac9e",
+      "bytes": 8174
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_43/language_summary.json",
+      "sha256": "c6f6771991bc655091947c12679a5e65d141f2ca8e6931f4e2bb285b1df3c00e",
+      "bytes": 1109
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_43/ppt_metrics.jsonl",
+      "sha256": "0f79304ae2fbda2d8f6cfc246ecb88ac6cb2ddfdca59228024af09a078374c6a",
+      "bytes": 3628
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/grid_nca_43/ppt_summary.json",
+      "sha256": "a2e413ba5295a81a622df83131c6d62da4707a93fc72b1b248ac925533104583",
+      "bytes": 1824
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/learning_curves.png",
+      "sha256": "c1c94ab59832faeffb9e93c9ad2929351074645fbecabb226ae40682f14b1599",
+      "bytes": 167305
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/ppt_diagnostics.png",
+      "sha256": "0674177b528df916cd4b4d3ca9eedd43bf4a1375c9177c13f60f7a44cb51b532",
+      "bytes": 227906
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/report.json",
+      "sha256": "86b84b9b23c600e521835374d74c6a17dee19fddb9b2219236d7d27bda02d1d9",
+      "bytes": 5865
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_17/language_metrics.jsonl",
+      "sha256": "ef23ded64c89c5a02a66d90a45860bcd31654f46058c041778cf39b9ad5db746",
+      "bytes": 8029
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_17/language_summary.json",
+      "sha256": "abc59ced5575da241ed883f6acd550add32a8963742d3bd3d182554202250849",
+      "bytes": 1099
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_29/language_metrics.jsonl",
+      "sha256": "1e9aef81e78e82b5a5938d833f927144cefe9a55a8950d307b57d84a2c9582e7",
+      "bytes": 8023
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_29/language_summary.json",
+      "sha256": "403ff3f50ccab58e2448438325ece671fe5cb341470aa222a3ba4bea1a73b0ce",
+      "bytes": 1101
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_43/language_metrics.jsonl",
+      "sha256": "40ca7294304b61937bacd2e83475b9e54fb276ac0fdcb551e77a600765830689",
+      "bytes": 8015
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/scratch_43/language_summary.json",
+      "sha256": "e896801b63362c138d03a894036f46284a7b35a7ad187637dac988946caf72ca",
+      "bytes": 1100
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_17/language_metrics.jsonl",
+      "sha256": "2485abfb1c734c2cef50669b93cd82e0d922730bcf11a88b2e584deeebd0b596",
+      "bytes": 8238
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_17/language_summary.json",
+      "sha256": "0ee84ec18a4a962b73a544cdb0e9d1db6e161c96a3096fc329474104350528bb",
+      "bytes": 1109
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_17/ppt_metrics.jsonl",
+      "sha256": "79f7a54324ed0159b8efb06ab032991f91147b2f73e42d83c55ea7bb85c2e31a",
+      "bytes": 3633
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_17/ppt_summary.json",
+      "sha256": "b4d0bfcb6960ac94ca3d5d2f078926011027b47203fad77d58e049d41c47ca95",
+      "bytes": 1826
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_29/language_metrics.jsonl",
+      "sha256": "db14e339708ed4acfdb7043170110645a8eff496ec14f68aea81984a664f506a",
+      "bytes": 8252
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_29/language_summary.json",
+      "sha256": "816718f601506714c7d37a8db2dcc4999148b530f94733375b0eb34b61292ecc",
+      "bytes": 1111
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_29/ppt_metrics.jsonl",
+      "sha256": "fe1cb0769526868cd1ddd1dd06d52d086f02458980d6880045b69380954314e7",
+      "bytes": 3641
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_29/ppt_summary.json",
+      "sha256": "f35621998fef602ef090f9119dde8406adcbea042b9c6010059ce57607fb64f7",
+      "bytes": 1828
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_43/language_metrics.jsonl",
+      "sha256": "06a63cd64469e4e889fba7b2934b3283526fb58176817cadb2cddf3fb1a8195e",
+      "bytes": 8259
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_43/language_summary.json",
+      "sha256": "82b997e07c3cb1b6aba50f90456572391d003b87b72ef1f2fc916747f06aff32",
+      "bytes": 1109
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_43/ppt_metrics.jsonl",
+      "sha256": "bdc55a84c32699d1b89b459e2b96780e5b857a7399c9ab706be26093b7d6ebee",
+      "bytes": 3609
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/shuffled_nca_43/ppt_summary.json",
+      "sha256": "3f2637e13d0ffc91fa6ea85bfe59184b6f973f72a61535cf456ca2a458dbd605",
+      "bytes": 1827
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/status.json",
+      "sha256": "8edab15cab7464e05cb144ac197588fef79e253245379fa8353d15f51637f34a",
+      "bytes": 177
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/gpu/verification.json",
+      "sha256": "2a8bb36b0d4730cd452cf1c852dec874e4af4319f763e601f6e3131b926296a1",
+      "bytes": 3418
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/metric_audit.json",
+      "sha256": "b79299f1e61341c77688ad3b398f94e3e88bb38154e4126440adc1be3fc3b1b3",
+      "bytes": 5724
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/paired_language_gain.png",
+      "sha256": "9069d7c688d54facf12b68c5a620f449de1128a8c3326252c1acb6027bbfa3d9",
+      "bytes": 150125
+    },
+    {
+      "path": "docs/results/transfer_v2_run1/stage_control_audit.json",
+      "sha256": "9564b7e8f1cbe955fdda4c0f8aa7dbe7b68d7707d3caaf88a8d0c6ec857da2ce",
+      "bytes": 9482
+    },
+    {
+      "path": "docs/results/v2_checks/README.md",
+      "sha256": "5fbd51f452f9a8d723ef485cf0202430c13b974efb3712d628347d57f72f5157",
+      "bytes": 1731
+    },
+    {
+      "path": "docs/theory/README.md",
+      "sha256": "0d1685369354726df0b778932452d1b711748b8db5c1650246591ccba39a217f",
+      "bytes": 2840
+    },
+    {
+      "path": "docs/theory/VALIDATION.md",
+      "sha256": "e54e70a49a4df4aa812bf6f599111b7164366dcec45c0ec6f4c608b5309eae9e",
+      "bytes": 1328
+    },
+    {
+      "path": "docs/theory/main.tex",
+      "sha256": "1667890d545ec0868a92003c5226e2dfe56aeaec587d40b27bf5c4081bda7f09",
+      "bytes": 4367
+    },
+    {
+      "path": "docs/theory/numerical_checks.json",
+      "sha256": "8bdb354844e8db75b1d11cfe64a7f91d5ba46af2ffc8291cad9525957681fdcf",
+      "bytes": 1960
+    },
+    {
+      "path": "docs/theory/sections/01_problem.tex",
+      "sha256": "7aa227f7eee0404d8816f9c91650ec55425e6678a5cb97c57c46da32dd403682",
+      "bytes": 5225
+    },
+    {
+      "path": "docs/theory/sections/02_dynamics.tex",
+      "sha256": "c5e28da6e8f687fedec1a4530faf9851204ac09d1afa6af7dd5b55cd11bfb6c1",
+      "bytes": 7196
+    },
+    {
+      "path": "docs/theory/sections/03_information.tex",
+      "sha256": "c90d72744e88fdeccd8d88c7a14b8c1881796fa93dab23c57e7dc53147179d9e",
+      "bytes": 6348
+    },
+    {
+      "path": "docs/theory/sections/04_serialization.tex",
+      "sha256": "279459b44dcfda4cbb6bede7da43f0c8fc4bbef736297d6cc251ea2fdbd6acfb",
+      "bytes": 6096
+    },
+    {
+      "path": "docs/theory/sections/05_transfer.tex",
+      "sha256": "addaf7196076d86ec05c2eba87ae0b3827abed34a035fbff7376887a7c853975",
+      "bytes": 9908
+    },
+    {
+      "path": "docs/theory/sections/06_numerical.tex",
+      "sha256": "c5d1989047ad94c1a88242461c7318a5a1e48eedf6d5745c68a219efb61aabd2",
+      "bytes": 6822
+    },
+    {
+      "path": "docs/theory/sections/07_conclusions.tex",
+      "sha256": "1a1492864431a237353022614d46cd1f448231769364f40758569043f9067e77",
+      "bytes": 4523
+    },
+    {
+      "path": "experiment.py",
+      "sha256": "76b535acbf08050295648d5692d46690366c1f4802d5668c99edeca003cf1981",
+      "bytes": 25897
+    },
+    {
+      "path": "fetch_reference.py",
+      "sha256": "e057fa19f84b1450246e44cda3526350da09af44b7629358d57f16c9e1b514c1",
+      "bytes": 3601
+    },
+    {
+      "path": "kaggle_gnn_nca_pilot.ipynb",
+      "sha256": "e47cc0c3e505354f64c4d21aaf2c3d3d114ea3ea52d8d064dab6e491da9f458d",
+      "bytes": 127058
+    },
+    {
+      "path": "kaggle_nca_transfer_v2.ipynb",
+      "sha256": "80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b",
+      "bytes": 133003
+    },
+    {
+      "path": "kaggle_nca_transfer_v3.ipynb",
+      "sha256": "3b32f4030cec46df0970b11c58e16bac0af86e8c9b14872365f3ae1a242adfb7",
+      "bytes": 152966
+    },
+    {
+      "path": "logs/checks.jsonl",
+      "sha256": "cc923274dd92eae8632eda2e746e2227aa95a52e2c55c71803807272a37b37ce",
+      "bytes": 1180811
+    },
+    {
+      "path": "plot_results.py",
+      "sha256": "d68ba0af7917fd31f7f87085d73b24a77c6cebe5109e0e397977eac1f846a768",
+      "bytes": 2181
+    },
+    {
+      "path": "proofs/lean/Audit.lean",
+      "sha256": "670dc4e3ca768f733dd997f4760498fc73123cf9c475c4732b74a3ba156b4f82",
+      "bytes": 443
+    },
+    {
+      "path": "proofs/lean/BrowserBundle.lean",
+      "sha256": "e93d487bca099e34c6aa857a1fd006b38c43e5883bc10cea83ca70e955e57fdd",
+      "bytes": 17499
+    },
+    {
+      "path": "proofs/lean/GraphNCA.lean",
+      "sha256": "82432a7f025a98254490562255f1770984760fbe19a9910cb3a90c358bc61e18",
+      "bytes": 160
+    },
+    {
+      "path": "proofs/lean/GraphNCA/Graph.lean",
+      "sha256": "72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67",
+      "bytes": 2681
+    },
+    {
+      "path": "proofs/lean/GraphNCA/LinearSurrogate.lean",
+      "sha256": "94b0dac3d96bcaaff6d8e0d3658335cf4f85311bca386a8ebd518dad56b27201",
+      "bytes": 2317
+    },
+    {
+      "path": "proofs/lean/GraphNCA/Numerics.lean",
+      "sha256": "bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02",
+      "bytes": 2999
+    },
+    {
+      "path": "proofs/lean/GraphNCA/Quadratic.lean",
+      "sha256": "e034cfe021c2e48c575fe444855cc21f73567befd05e14af23109d53769a165f",
+      "bytes": 2069
+    },
+    {
+      "path": "proofs/lean/GraphNCA/Serialization.lean",
+      "sha256": "34379dc8e29d9346d125a5e137b28641e3febbc7888922fa9f69ed770a1b003b",
+      "bytes": 2563
+    },
+    {
+      "path": "proofs/lean/GraphNCA/Transfer.lean",
+      "sha256": "5bf206fb77b6d3afdd21799eb16e0c53665a9b262aacb66e8efd1654fac563fa",
+      "bytes": 2525
+    },
+    {
+      "path": "proofs/lean/PROOF_MAP.md",
+      "sha256": "860a89089d154708f751350e3ef9169d8bb7efdc683849fe0229bedcdb122aaf",
+      "bytes": 5140
+    },
+    {
+      "path": "proofs/lean/README.md",
+      "sha256": "02f296814729fa0482fe38fe6711a8b0b3f8fbcbee0f16eeb6638a880fda9ecb",
+      "bytes": 4694
+    },
+    {
+      "path": "proofs/lean/lakefile.toml",
+      "sha256": "091efc2e5f370971c849c8b9e1d78de3f2cd7758b82650cee035a6fed9012dce",
+      "bytes": 211
+    },
+    {
+      "path": "proofs/lean/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25
+    },
+    {
+      "path": "proofs/lean/verification/README.md",
+      "sha256": "9bf12913c4f0c9fe48e5b8af13a071e86dbb8ab7de2d1acb50aff022f48d5b9b",
+      "bytes": 2749
+    },
+    {
+      "path": "proofs/lean/verification/attempt-1-diagnostics.txt",
+      "sha256": "89516fa9c47797096dd2001789ca331ce8feab7db9f02b400b1cec2d5d6974a0",
+      "bytes": 21407
+    },
+    {
+      "path": "proofs/lean/verification/axiom-reports.txt",
+      "sha256": "fec6864a94270bfdeb934459af069b254224e30ceba7a38e86c106421986c5cf",
+      "bytes": 4868
+    },
+    {
+      "path": "proofs/lean/verification/final-diagnostics.txt",
+      "sha256": "1c7f0a369cec683719e1c65e1a6c13ef678031a13dfe7b5033ec367c3b7a5165",
+      "bytes": 17213
+    },
+    {
+      "path": "proofs/lean/verification/lean-check.png",
+      "sha256": "e5540c08e5b5d803f2b8233c76c7d7bc42a16318cb465cf8f69d10566672b0c9",
+      "bytes": 99709
+    },
+    {
+      "path": "proofs/lean/verification/status.json",
+      "sha256": "d5846887b586db408934b61ad856406dc744347d9676f0fda87cbd204fd2cbc3",
+      "bytes": 2142
+    },
+    {
+      "path": "publication.json",
+      "sha256": "a687352a194b1757da06c42d459da01d3f4e6e052a5d8cb7382108f48296f004",
+      "bytes": 1876
+    },
+    {
+      "path": "requirements-tested.txt",
+      "sha256": "658830f6ddf44ca6173fea2a2c268bdc401433d7b7c3743a1f6dcc5c230e6d5b",
+      "bytes": 158
+    },
+    {
+      "path": "requirements-v2-tested.txt",
+      "sha256": "5c27ddc642f3cb34358c6135d62cea2326fb323a91226a4cb832ce8a77bc9424",
+      "bytes": 208
+    },
+    {
+      "path": "requirements-v2.txt",
+      "sha256": "02f5eb07a3211eb19a6649e42280f79c72bd94cb517c46f479c2051eb9bb834c",
+      "bytes": 53
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "dd9f21aac774362ab95eeec24c342f813e183dd0ea241f9dcba348383a04657e",
+      "bytes": 48
+    },
+    {
+      "path": "scripts/audit_transfer_v2_output.py",
+      "sha256": "65485c11ccf8409387a255bd9f8fc7474f6eadde9a9e477179c059364313f794",
+      "bytes": 10314
+    },
+    {
+      "path": "scripts/check_docs.py",
+      "sha256": "8c8db2ef6001420fc9d44c614788007269b47fc5872d54d44160c1e273f15af9",
+      "bytes": 2221
+    },
+    {
+      "path": "scripts/check_lean_sources.py",
+      "sha256": "f2e21e2f01d6dba5a6d404c90637c62572d9ee4c4e821df1ca3b9570ddb8d216",
+      "bytes": 5097
+    },
+    {
+      "path": "scripts/check_release.py",
+      "sha256": "2d78d59ec39995dcfb9f43e9bc853a869fe78a2ffad2a143f003cf99a8a1f41d",
+      "bytes": 5734
+    },
+    {
+      "path": "scripts/check_v2_text.py",
+      "sha256": "49ba7ec3a122e1943214db39e82296749583b8625ae8fbc8deb56e78f9d29d69",
+      "bytes": 1694
+    },
+    {
+      "path": "scripts/check_v3_generator.py",
+      "sha256": "d79204374536cb756be293391b47ca61f7feaa167bebdbddf19d548e4bd9dca4",
+      "bytes": 2461
+    },
+    {
+      "path": "scripts/git_roundtrip_check.py",
+      "sha256": "527ccdb6f87324ca21451aff05938eab4351dfb749e486ebe75bda92e796af9b",
+      "bytes": 2985
+    },
+    {
+      "path": "scripts/run_logged.py",
+      "sha256": "bb0d2c28b94416cce5d0aa72194dd2cd76e7db1db5b59a98233dda5648469dd2",
+      "bytes": 3594
+    },
+    {
+      "path": "scripts/smoke_check.py",
+      "sha256": "76c8446657c2b80dbe2d58aac3466fd0455b40500a5cd68168d1b8d5cbd5cfcd",
+      "bytes": 2597
+    },
+    {
+      "path": "scripts/smoke_transfer_v2.py",
+      "sha256": "5c894ebe97bb5c27068c21642c07c9853d7bd2e9a038c917fa8f6abb89488121",
+      "bytes": 4193
+    },
+    {
+      "path": "scripts/smoke_transfer_v3.py",
+      "sha256": "915b7a050848c57a9bb99b41deddb318f08ab273319cee1bf1da809b57a22e0c",
+      "bytes": 5723
+    },
+    {
+      "path": "scripts/summarize_transfer_v2_audit.py",
+      "sha256": "303a3456b65b1d555cfad5f994b8713f4f6ba2a35c760185376b588a31f9a1f7",
+      "bytes": 9426
+    },
+    {
+      "path": "scripts/sync_prod.py",
+      "sha256": "7788ddd3323c3f28c628054fbd1e055935a53367231f4b8312613c17f39091cb",
+      "bytes": 2253
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/LICENSE",
+      "sha256": "ea227dfb2739832aeb231d777844f9e11d82e70f447e993027c1ce5686ec395f",
+      "bytes": 1064
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/README.md",
+      "sha256": "9e2cc92a71a77ddf7d3dd1ffa5fb09320801caf4246bf204efb2489f15f18f38",
+      "bytes": 7881
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/prepretraining/nca_prepretraining.sh",
+      "sha256": "47c731db19f209b9d6bb91abd45287eb1c8b60dfdfecac51f7d3372e5c20d0c8",
+      "bytes": 1153
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/pretraining/ft_codeparrot.sh",
+      "sha256": "926cb3ce618c201584dcf13e8063d55209f5c7a6d5d54bbef174a1c5a41d588f",
+      "bytes": 942
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/scripts/pretraining/owt_ft.sh",
+      "sha256": "70f6a26416dc3cfb7476c3903a1c6e0b32455eeeb8f62ef6ac58cdd9be0c75d1",
+      "bytes": 857
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/language_train.py",
+      "sha256": "36f98739e353a38e801ae32c1e28bb9466554884a6cc146022182dad74442f82",
+      "bytes": 27155
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/nca_ppt.py",
+      "sha256": "183e6b4aa719995cc08fa0dfbc1b792cf10ebe51b6765604b420b9a94116f171",
+      "bytes": 28484
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/src/openwebtext_pt.py",
+      "sha256": "8269e352add7a6b8c7d16144957aee3e29a0c826a3ab6e64f0662ed886ab063c",
+      "bytes": 27298
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/models.py",
+      "sha256": "8adda68e6bdab60c7e13f36552c84eeaa4b6708370f7fe113c67b856c039f24d",
+      "bytes": 22774
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/nca.py",
+      "sha256": "04258cf58d6bea4ad1ee07e55dc2fcac8a16ad45e062ebb5dd02bdcc571fd652",
+      "bytes": 13133
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/tokenizers.py",
+      "sha256": "274f0d18b6f7dd39e698bfd664604caf308bbd96c80e7697ee3b15e77b67dc92",
+      "bytes": 3177
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/bdd1c71e04eb2e5a2c91481faf278e95846b4431/utils/training_args.py",
+      "sha256": "7127a86295bb046084ec338b972eb1d6fdd7493e6f7bee7750ec4f74dfd93b66",
+      "bytes": 47782
+    },
+    {
+      "path": "sources/nca-pre-pretraining-reference/reference.json",
+      "sha256": "9bcf83c30ff9e4ef6d1c17730a0aad0a008dc5e81bd13fc2b318227ad1f62bd2",
+      "bytes": 3489
+    },
+    {
+      "path": "tests/test_experiment.py",
+      "sha256": "bbec012927425be4ecf1e0541ee2511e91a22a902a9523ded51040fd7038578f",
+      "bytes": 5655
+    },
+    {
+      "path": "tests/test_integrity.py",
+      "sha256": "3d590fd2342557604b822f449307ecacfaafc1d448459aa08d78b192ab34399e",
+      "bytes": 4365
+    },
+    {
+      "path": "tests/test_transfer_v2.py",
+      "sha256": "868be80cab62c80f2cc1291624015abe90b1e61a172a2ed3a6c2b1d878bb3ef4",
+      "bytes": 7528
+    },
+    {
+      "path": "tests/test_transfer_v3.py",
+      "sha256": "84f91c825bee9d627565a2292bdaea436fef98fd4a48b7000dcc8141e26f1c0d",
+      "bytes": 13788
+    },
+    {
+      "path": "transfer_v2/__init__.py",
+      "sha256": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+      "bytes": 80
+    },
+    {
+      "path": "transfer_v2/calibrate.py",
+      "sha256": "965fb0fcc0958137f5a08478bb1069092aa8c0ac37b5aa5cf80136eaca030909",
+      "bytes": 2809
+    },
+    {
+      "path": "transfer_v2/common.py",
+      "sha256": "24967a682e41f4bf9dfde0add30596a826fa68cbd3fd8a2ca42a40d800c35e9a",
+      "bytes": 3451
+    },
+    {
+      "path": "transfer_v2/data.py",
+      "sha256": "55f77791c6fa0927e86ae794c223df49d82fe5410a6a097a01334fc8207d1f4f",
+      "bytes": 6193
+    },
+    {
+      "path": "transfer_v2/model.py",
+      "sha256": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+      "bytes": 3753
+    },
+    {
+      "path": "transfer_v2/nca.py",
+      "sha256": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f",
+      "bytes": 9646
+    },
+    {
+      "path": "transfer_v2/report.py",
+      "sha256": "537f267f7a613483a57b319aa0ff0051cfc9b287a919805a38863df69f6a0925",
+      "bytes": 7833
+    },
+    {
+      "path": "transfer_v2/run.py",
+      "sha256": "8e0f9247c49b66e9656ddb552886e1897f6b529508dac6d2f96f46e7659e565e",
+      "bytes": 6825
+    },
+    {
+      "path": "transfer_v2/training.py",
+      "sha256": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5",
+      "bytes": 15356
+    },
+    {
+      "path": "transfer_v2/verify.py",
+      "sha256": "872a54ebb8a24c5ced0eb4bad027e8d01a73cb61033a5295d1d26b913b25a3a1",
+      "bytes": 5939
+    },
+    {
+      "path": "transfer_v3/__init__.py",
+      "sha256": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+      "bytes": 80
+    },
+    {
+      "path": "transfer_v3/calibrate.py",
+      "sha256": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+      "bytes": 2821
+    },
+    {
+      "path": "transfer_v3/common.py",
+      "sha256": "94c8a870fd3b19b06f7a2d2ccc870c59488a2b596bed7b0c81e572d1d4c1ec95",
+      "bytes": 4157
+    },
+    {
+      "path": "transfer_v3/data.py",
+      "sha256": "b3ad2e76dc509934d55f7fb3cd66ed59a388499a0db4bce18b8ff5d76e1e646e",
+      "bytes": 7309
+    },
+    {
+      "path": "transfer_v3/graph.py",
+      "sha256": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+      "bytes": 6930
+    },
+    {
+      "path": "transfer_v3/model.py",
+      "sha256": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+      "bytes": 3753
+    },
+    {
+      "path": "transfer_v3/nca.py",
+      "sha256": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+      "bytes": 6206
+    },
+    {
+      "path": "transfer_v3/report.py",
+      "sha256": "ee9e69294fd8a7d314ed4541eedf05f2c31e07682762d50fc0220b190a096f05",
+      "bytes": 9995
+    },
+    {
+      "path": "transfer_v3/run.py",
+      "sha256": "6badb47576c49f398b82850f4ceda177c54b1d601f692ed02d89fea61e704ad7",
+      "bytes": 7880
+    },
+    {
+      "path": "transfer_v3/training.py",
+      "sha256": "de2e03c560b8c51813a7b59de7488a3a2b7d85a88ea33a00bf2fee8177a668fa",
+      "bytes": 15895
+    },
+    {
+      "path": "transfer_v3/verify.py",
+      "sha256": "4c738cad63c046975c215b1a0b7ddf34884e26afa7a0331d3b955b53d49b4e05",
+      "bytes": 9109
+    },
+    {
+      "path": "verify.py",
+      "sha256": "d9a4ca4037076650f2d31326ef8715a96ed35acd1b03d8ba69bdf35c417b2c44",
+      "bytes": 2495
+    },
+    {
+      "path": "write_validation.py",
+      "sha256": "9399a55a4f8e890f196ed28f99911c5cdd5bcbe87147118883aa79fef2536fb9",
+      "bytes": 2957
+    }
+  ],
+  "notebooks": {
+    "kaggle_gnn_nca_pilot.ipynb": {
+      "sha256": "e47cc0c3e505354f64c4d21aaf2c3d3d114ea3ea52d8d064dab6e491da9f458d",
+      "cells": 29
+    },
+    "kaggle_nca_transfer_v2.ipynb": {
+      "sha256": "80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b",
+      "cells": 33
+    },
+    "kaggle_nca_transfer_v3.ipynb": {
+      "sha256": "3b32f4030cec46df0970b11c58e16bac0af86e8c9b14872365f3ae1a242adfb7",
+      "cells": 34
+    }
+  },
+  "code_excerpts": {
+    "message": {
+      "file": "transfer_v2/nca.py",
+      "first": 36,
+      "last": 40,
+      "sha256": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+    },
+    "encoding": {
+      "file": "transfer_v2/nca.py",
+      "first": 76,
+      "last": 81,
+      "sha256": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+    },
+    "mask": {
+      "file": "transfer_v2/nca.py",
+      "first": 157,
+      "last": 164,
+      "sha256": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+    },
+    "transfer": {
+      "file": "transfer_v2/model.py",
+      "first": 92,
+      "last": 97,
+      "sha256": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+    },
+    "step": {
+      "file": "transfer_v2/nca.py",
+      "first": 54,
+      "last": 59,
+      "sha256": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+    },
+    "optimizer": {
+      "file": "transfer_v2/training.py",
+      "first": 76,
+      "last": 79,
+      "sha256": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+    },
+    "update": {
+      "file": "transfer_v2/training.py",
+      "first": 86,
+      "last": 98,
+      "sha256": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+    },
+    "attention": {
+      "file": "transfer_v2/model.py",
+      "first": 42,
+      "last": 48,
+      "sha256": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+    },
+    "graph": {
+      "file": "transfer_v3/graph.py",
+      "first": 49,
+      "last": 56,
+      "sha256": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+    },
+    "paired": {
+      "file": "transfer_v3/graph.py",
+      "first": 65,
+      "last": 73,
+      "sha256": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+    },
+    "select": {
+      "file": "transfer_v3/graph.py",
+      "first": 103,
+      "last": 109,
+      "sha256": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+    },
+    "lean": {
+      "file": "proofs/lean/GraphNCA/Graph.lean",
+      "first": 19,
+      "last": 24,
+      "sha256": "72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67"
+    },
+    "leanhit": {
+      "file": "proofs/lean/GraphNCA/Numerics.lean",
+      "first": 60,
+      "last": 66,
+      "sha256": "bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02"
+    }
+  },
+  "dataset_example": {
+    "source": "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development",
+    "rule_row": 0,
+    "retained_frames": [
+      0,
+      1,
+      10,
+      26
+    ],
+    "array_identities": {
+      "nca_train.npy": {
+        "shape": [
+          4096,
+          1026
+        ],
+        "sha256": "7aee1b81c50bd6e6f92118098502e4f71674013b1605f587723bf6537ceb33ec"
+      },
+      "nca_validation.npy": {
+        "shape": [
+          128,
+          1026
+        ],
+        "sha256": "65879d2cd2fb6052e419f56735148279a8ae286785fa46bddd2d88738f3f707f"
+      },
+      "shuffled_train.npy": {
+        "shape": [
+          4096,
+          1026
+        ],
+        "sha256": "f1e7a55f3129a1be077aaf9f51e634d12ef86ebcec5dce8bd1aa60f005bc116e"
+      },
+      "shuffled_validation.npy": {
+        "shape": [
+          128,
+          1026
+        ],
+        "sha256": "02753e7074a56a64051d4f03a66523b9c092b213da8ffbb28b283c296319b6db"
+      },
+      "text_train.npy": {
+        "shape": [
+          2403644
+        ],
+        "sha256": "9c4dcc69216d391a0b0b9f09fb895ae70aa2e80656cd01a7252de43c8af995d5"
+      },
+      "text_validation.npy": {
+        "shape": [
+          248461
+        ],
+        "sha256": "a6b07b121120aaba6fb9d23e8197c8f5096b9620df38b9df258ecaa09c8f91da"
+      }
+    },
+    "patch_token": 6527,
+    "histogram_matches": true
+  },
+  "figure_encodings": {
+    "8e00158738785cd1e8f4a9e52e8d4b5dcdff09d2e94f51ed2f74caf4a038593b": [
+      "runs/cpu_check/curves.svg"
+    ],
+    "3875e8fc1d129c724a667dcd2aa5915822516860d5677fcdc191e431fe407da4": [
+      "runs/cpu_verified/curves.png"
+    ],
+    "9ba725a1b38c564aafca767d95e55255f061568c32abe7dae7f0beaa754fb01b": [
+      "runs/cpu_verified/curves.svg"
+    ],
+    "a1d6a7f4edb21a6d347bd7bcef8eabb78dd341ffe92e248e7c1f6c7a241818d1": [
+      "runs/publication_audit_20261017/language_aligned_curves.png",
+      "Kaggle Outputs/gnn_nca_results_1_review/language_aligned_curves.png",
+      "docs/results/pilot1/language_aligned_curves.png"
+    ],
+    "c488e68fbdb0410f0f5c74547cdf90c03c78c053cd14d0892d43d70d578013c6": [
+      "runs/publication_audit_20261017/language_aligned_curves.svg"
+    ],
+    "3c427158bb910141b178654045e20d879ea2e67e0cd995822b2088d5fd2324ed": [
+      "runs/smoke/curves.svg"
+    ],
+    "0e30654b8065f5ba09d36d126dbdc8de1d57439ce0d03dfe119d53528280fd7d": [
+      "runs/publication_audit_20261017/artifacts/runs/pilot_20261016_214947_390021/curves.png",
+      "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/curves.png"
+    ],
+    "6058bcec04c6a006701fe68eac39e42a60970737826d30d7eef855a894549cc0": [
+      "runs/publication_audit_20261017/artifacts/runs/pilot_20261016_214947_390021/curves.svg",
+      "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/curves.svg"
+    ],
+    "ab123cb09072028a8e311186505631ea01e7383fd7fa2a5e6dfeb19e870b86ab": [
+      "runs/publication_audit_20261017/artifacts/runs/smoke_20261016_214947_390021/curves.svg",
+      "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/smoke_20261016_214947_390021/curves.svg"
+    ],
+    "be00d1029477bba008cb47b5a669daab820c8066f75a62edbb57f19fdb698e18": [
+      "Kaggle Outputs/gnn_nca_results_1_review/language_aligned_curves.svg",
+      "docs/results/pilot1/language_aligned_curves.svg"
+    ],
+    "c1c94ab59832faeffb9e93c9ad2929351074645fbecabb226ae40682f14b1599": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/development/learning_curves.png",
+      "docs/results/transfer_v2_run1/gpu/learning_curves.png"
+    ],
+    "f7b013a32bd8f353bbefda72e8d7e170182825dbac0748f7b872b1553583177a": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/development/learning_curves.svg"
+    ],
+    "0674177b528df916cd4b4d3ca9eedd43bf4a1375c9177c13f60f7a44cb51b532": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/development/ppt_diagnostics.png",
+      "docs/results/transfer_v2_run1/gpu/ppt_diagnostics.png"
+    ],
+    "f7bdf75bffcf1a8b59adb4c7a7281e9c707beb34c1957ca2f25b24b7ff1c9d83": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/development/ppt_diagnostics.svg"
+    ],
+    "b7e65c64b7596b559497fd3392619474ee4db09ce69f33a588054467c3a0080e": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/learning_curves.png"
+    ],
+    "584ac02b04ed6f5c6f83a5868ebb76daee0cc63f1340b9b0737d0e0d38918a21": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/learning_curves.svg"
+    ],
+    "9c82bc3a0b7fb16ec7ddc0f8a13c9bf5cb35f133bb04124a6168655cb22484ca": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/ppt_diagnostics.png"
+    ],
+    "04446483c9114bcfdcdf8961f17df8dfef3d47735ffe4538a9750f9dffc22e98": [
+      "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/ppt_diagnostics.svg"
+    ],
+    "9069d7c688d54facf12b68c5a620f449de1128a8c3326252c1acb6027bbfa3d9": [
+      "docs/results/transfer_v2_run1/paired_language_gain.png"
+    ],
+    "e5540c08e5b5d803f2b8233c76c7d7bc42a16318cb465cf8f69d10566672b0c9": [
+      "proofs/lean/verification/lean-check.png"
+    ]
+  },
+  "figure_note": "Identical image bytes are grouped by SHA-256. PNG/SVG encodings of the same scientific figure are separate encodings. Execution diagnostics are labeled as fixtures in the appendix.",
+  "slides": [
+    {
+      "title": "GNNs in Neural Cellular Automata",
+      "kind": "updated original",
+      "original_slide": 1,
+      "sources": [
+        "README.md",
+        "RESULTS.md"
+      ],
+      "slide": 1
+    },
+    {
+      "title": "Research map",
+      "kind": "expanded",
+      "sources": [
+        "RESULTS.md",
+        "RESEARCH_CONTEXT.md",
+        "docs/theory/main.tex"
+      ],
+      "slide": 2
+    },
+    {
+      "title": "Problem statement and research question",
+      "kind": "updated original",
+      "original_slide": 2,
+      "sources": [
+        "RESEARCH_CONTEXT.md",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 3
+    },
+    {
+      "title": "Preliminary targets and present status",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "RESULTS.md"
+      ],
+      "slide": 4
+    },
+    {
+      "title": "Literature review",
+      "kind": "expanded",
+      "sources": [
+        "https://distill.pub/2020/growing-ca/",
+        "https://arxiv.org/abs/1704.01212",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/2302.13971",
+        "https://arxiv.org/html/2603.10055v1"
+      ],
+      "slide": 5
+    },
+    {
+      "title": "Reference study and this development experiment",
+      "kind": "expanded",
+      "sources": [
+        "https://arxiv.org/html/2603.10055v1",
+        "sources/nca-pre-pretraining-reference/reference.json",
+        "configs/transfer_v2.json"
+      ],
+      "slide": 6
+    },
+    {
+      "title": "Hypotheses and falsifiable comparisons",
+      "kind": "expanded",
+      "sources": [
+        "RESEARCH_CONTEXT.md",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 7
+    },
+    {
+      "title": "Measured v2 transfer and cumulative cost",
+      "kind": "updated original",
+      "original_slide": 3,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json"
+      ],
+      "slide": 8
+    },
+    {
+      "title": "Theory: dynamics, graph and transformer",
+      "kind": "updated original",
+      "original_slide": 6,
+      "sources": [
+        "docs/theory/sections/01_problem.tex",
+        "docs/theory/sections/02_dynamics.tex"
+      ],
+      "slide": 9
+    },
+    {
+      "title": "GNN visualization from a saved topology",
+      "kind": "expanded",
+      "sources": [
+        "data/cpu_check/grid_edges.npy",
+        "data/cpu_check/graph_edges.npy",
+        "experiment.py"
+      ],
+      "slide": 10
+    },
+    {
+      "title": "Actual message-passing code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:36-40; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 11
+    },
+    {
+      "title": "Grid convolution equals typed message passing",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex: Proposition grid equivalence",
+        "transfer_v2/nca.py:convolution_logits",
+        "tests/test_transfer_v2.py"
+      ],
+      "slide": 12
+    },
+    {
+      "title": "Relabeling equivariance and swap invariants",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "proofs/lean/GraphNCA/Graph.lean"
+      ],
+      "slide": 13
+    },
+    {
+      "title": "Exactly solvable diffusion surrogate",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 14
+    },
+    {
+      "title": "Degree preservation does not guarantee mixing",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex"
+      ],
+      "slide": 15
+    },
+    {
+      "title": "Exact perturbation and a logit-margin condition",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 16
+    },
+    {
+      "title": "Information bounds for deterministic trajectories",
+      "kind": "updated original",
+      "original_slide": 7,
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 17
+    },
+    {
+      "title": "Rule uncertainty and stochastic transitions",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 18
+    },
+    {
+      "title": "Contextual prediction and the shuffled control",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex",
+        "transfer_v2/nca.py:shuffled"
+      ],
+      "slide": 19
+    },
+    {
+      "title": "Serialization: exact accounting and parent lags",
+      "kind": "updated original",
+      "original_slide": 8,
+      "sources": [
+        "docs/theory/sections/04_serialization.tex"
+      ],
+      "slide": 20
+    },
+    {
+      "title": "A decoded categorical patch from the actual dataset",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy, rule row 0, frame 0",
+        "transfer_v2/nca.py:encode_frames"
+      ],
+      "slide": 21
+    },
+    {
+      "title": "Actual 2 \u00d7 2 patch-token encoding",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:76-81; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 22
+    },
+    {
+      "title": "Parent visibility and crop boundaries",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/04_serialization.tex",
+        "proofs/lean/GraphNCA/Serialization.lean"
+      ],
+      "slide": 23
+    },
+    {
+      "title": "Mean lag is fixed while dispersion can change",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/04_serialization.tex",
+        "proofs/lean/GraphNCA/Graph.lean"
+      ],
+      "slide": 24
+    },
+    {
+      "title": "Actual synthetic target mask",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:157-164; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 25
+    },
+    {
+      "title": "Transfer mathematics and an exact convergence example",
+      "kind": "updated original",
+      "original_slide": 9,
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "docs/theory/sections/06_numerical.tex"
+      ],
+      "slide": 26
+    },
+    {
+      "title": "Actual stage-boundary transfer code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/model.py:92-97; SHA-256 4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+      ],
+      "slide": 27
+    },
+    {
+      "title": "Taylor derivation for backbone transfer",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: eq:displacement and prop:alignment",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 28
+    },
+    {
+      "title": "Worked gradient-alignment calculation",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 29
+    },
+    {
+      "title": "Exact topology-to-target surrogate",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "proofs/lean/GraphNCA/LinearSurrogate.lean"
+      ],
+      "slide": 30
+    },
+    {
+      "title": "A six-node numerical topology example",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: exact topology surrogate",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 31
+    },
+    {
+      "title": "Quadratic convergence and ranking reversal",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "proofs/lean/GraphNCA/Quadratic.lean"
+      ],
+      "slide": 32
+    },
+    {
+      "title": "Closed-form toy loss curves",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Numerics.lean"
+      ],
+      "slide": 33
+    },
+    {
+      "title": "Exact numerical first hits",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Numerics.lean"
+      ],
+      "slide": 34
+    },
+    {
+      "title": "Break-even derivation and numerical costs",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 35
+    },
+    {
+      "title": "Parameter and token arithmetic",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "transfer_v2/model.py",
+        "configs/transfer_v2.json"
+      ],
+      "slide": 36
+    },
+    {
+      "title": "Lean 4: verified coverage and explicit boundaries",
+      "kind": "updated original",
+      "original_slide": 10,
+      "sources": [
+        "proofs/lean/PROOF_MAP.md",
+        "proofs/lean/verification/status.json"
+      ],
+      "slide": 37
+    },
+    {
+      "title": "An actual Lean equivariance proof",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA/Graph.lean:19-24; SHA-256 72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67"
+      ],
+      "slide": 38
+    },
+    {
+      "title": "An actual Lean first-hit proof",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA/Numerics.lean:60-66; SHA-256 bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02"
+      ],
+      "slide": 39
+    },
+    {
+      "title": "Formal proof failures, corrections and trust",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/verification/README.md",
+        "proofs/lean/verification/attempt-1-diagnostics.txt",
+        "proofs/lean/verification/final-diagnostics.txt"
+      ],
+      "slide": 40
+    },
+    {
+      "title": "Historical pilot 1 and its exposure confound",
+      "kind": "updated original",
+      "original_slide": 4,
+      "sources": [
+        "docs/results/pilot1/REVIEW.md",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 41
+    },
+    {
+      "title": "Historical pilot: language-exposure alignment",
+      "kind": "updated original",
+      "original_slide": 5,
+      "sources": [
+        "docs/results/pilot1/language_aligned_curves.png",
+        "docs/results/pilot1/prepretraining_diagnosis.json"
+      ],
+      "slide": 42
+    },
+    {
+      "title": "Methodology across three versions",
+      "kind": "expanded",
+      "sources": [
+        "docs/PILOT_PROTOCOL.md",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 43
+    },
+    {
+      "title": "V2: identical language-stage controls",
+      "kind": "updated original",
+      "original_slide": 11,
+      "sources": [
+        "configs/transfer_v2.json",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 44
+    },
+    {
+      "title": "Dataset preparation and rule separation",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:generate_split",
+        "transfer_v2/data.py",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 45
+    },
+    {
+      "title": "Saved dataset sizes and screening outcomes",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/manifest.json"
+      ],
+      "slide": 46
+    },
+    {
+      "title": "Actual NCA states from the retained v2 dataset",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy, row 0",
+        "transfer_v2/nca.py:encode_frames"
+      ],
+      "slide": 47
+    },
+    {
+      "title": "Structured and shuffled data at fixed markers",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/shuffled_validation.npy",
+        "transfer_v2/nca.py:shuffled"
+      ],
+      "slide": 48
+    },
+    {
+      "title": "Actual full-trajectory token histogram",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/shuffled_validation.npy"
+      ],
+      "slide": 49
+    },
+    {
+      "title": "Actual transformer attention and feed-forward code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/model.py:42-48; SHA-256 4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+      ],
+      "slide": 50
+    },
+    {
+      "title": "Actual optimizers for the two stages",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:76-79; SHA-256 fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+      ],
+      "slide": 51
+    },
+    {
+      "title": "Actual gradient accumulation in the runner",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:86-98; SHA-256 fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+      ],
+      "slide": 52
+    },
+    {
+      "title": "Historical notebook: preserved pilot execution",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_gnn_nca_pilot.ipynb, cell 25; notebook SHA-256 e47cc0c3e505354f64c4d21aaf2c3d3d114ea3ea52d8d064dab6e491da9f458d"
+      ],
+      "slide": 53
+    },
+    {
+      "title": "V2 notebook: actual development execution",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v2.ipynb, cell 29; notebook SHA-256 80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b"
+      ],
+      "slide": 54
+    },
+    {
+      "title": "V2 notebook: actual result packaging",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v2.ipynb, cell 33; notebook SHA-256 80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b"
+      ],
+      "slide": 55
+    },
+    {
+      "title": "V2 training configuration",
+      "kind": "expanded",
+      "sources": [
+        "configs/transfer_v2.json",
+        "docs/TRANSFER_V2_PROTOCOL.md"
+      ],
+      "slide": 56
+    },
+    {
+      "title": "Synthetic prediction passed the declared gate",
+      "kind": "updated original",
+      "original_slide": 12,
+      "sources": [
+        "docs/results/transfer_v2_run1/gpu/ppt_diagnostics.png",
+        "docs/results/transfer_v2_run1/gpu/grid_nca_17/ppt_summary.json"
+      ],
+      "slide": 57
+    },
+    {
+      "title": "Gate definition and interpretation",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:quality_gate",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 58
+    },
+    {
+      "title": "V2 language-stage result at paired reference loss",
+      "kind": "updated original",
+      "original_slide": 13,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json",
+        "docs/results/transfer_v2_run1/paired_language_gain.png"
+      ],
+      "slide": 59
+    },
+    {
+      "title": "Full curves and the shuffled comparison",
+      "kind": "updated original",
+      "original_slide": 14,
+      "sources": [
+        "docs/results/transfer_v2_run1/gpu/learning_curves.png",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 60
+    },
+    {
+      "title": "Per-seed language updates to the scratch endpoint",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 61
+    },
+    {
+      "title": "Speedup calculation and final perplexity",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv",
+        "docs/results/transfer_v2_run1/aggregate.json"
+      ],
+      "slide": 62
+    },
+    {
+      "title": "Paired final losses and their uncertainty",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 63
+    },
+    {
+      "title": "Cumulative accounting and synthetic-stage cost",
+      "kind": "updated original",
+      "original_slide": 15,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 64
+    },
+    {
+      "title": "Timing scope and input-token accounting",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 65
+    },
+    {
+      "title": "Independent replay, provenance and limitations",
+      "kind": "updated original",
+      "original_slide": 16,
+      "sources": [
+        "docs/results/transfer_v2_run1/cpu_verification.json",
+        "docs/results/transfer_v2_run1/stage_control_audit.json"
+      ],
+      "slide": 66
+    },
+    {
+      "title": "Analytical survey of alternative explanations",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/theory/sections/03_information.tex",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 67
+    },
+    {
+      "title": "V3: the next graph-versus-grid experiment",
+      "kind": "updated original",
+      "original_slide": 18,
+      "sources": [
+        "docs/TRANSFER_V3_PROTOCOL.md",
+        "transfer_v3/graph.py",
+        "VALIDATION.md"
+      ],
+      "slide": 68
+    },
+    {
+      "title": "V3 code: common random draws for graph and grid",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v3/graph.py:65-73; SHA-256 a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+      ],
+      "slide": 69
+    },
+    {
+      "title": "V3 code: a degree-preserving donor swap",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v3/graph.py:49-56; SHA-256 a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+      ],
+      "slide": 70
+    },
+    {
+      "title": "V3 notebook: actual five-arm execution cell",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v3.ipynb, cell 30; notebook SHA-256 3b32f4030cec46df0970b11c58e16bac0af86e8c9b14872365f3ae1a242adfb7"
+      ],
+      "slide": 71
+    },
+    {
+      "title": "V3 design and confirmation requirements",
+      "kind": "expanded",
+      "sources": [
+        "docs/TRANSFER_V3_PROTOCOL.md",
+        "VALIDATION.md",
+        "tests/test_transfer_v3.py"
+      ],
+      "slide": 72
+    },
+    {
+      "title": "Comparison with the external evidence",
+      "kind": "expanded",
+      "sources": [
+        "https://arxiv.org/html/2603.10055v1",
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/results/pilot1/REVIEW.md"
+      ],
+      "slide": 73
+    },
+    {
+      "title": "Applications at larger scale",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 74
+    },
+    {
+      "title": "Research decisions supported by the mathematics",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/07_conclusions.tex",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 75
+    },
+    {
+      "title": "Conclusion: observed transfer and open mechanisms",
+      "kind": "updated original",
+      "original_slide": 17,
+      "sources": [
+        "RESULTS.md",
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "slide": 76
+    },
+    {
+      "title": "Documentation, proofs and publication workflow",
+      "kind": "expanded",
+      "sources": [
+        "AGENTS.md",
+        "publication.json",
+        "CONTRIBUTING.md",
+        "LOGBOOK.md",
+        "CHANGELOG.md"
+      ],
+      "slide": 77
+    },
+    {
+      "title": "Source and code navigation",
+      "kind": "expanded",
+      "sources": [
+        "experiment.py",
+        "transfer_v2",
+        "transfer_v3",
+        "build_notebook.py",
+        "build_transfer_notebook.py",
+        "build_graph_notebook.py"
+      ],
+      "slide": 78
+    },
+    {
+      "title": "Mathematical documentation coverage",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/main.tex",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "slide": 79
+    },
+    {
+      "title": "Proof module and axiom inventory",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA.lean",
+        "proofs/lean/verification/axiom-reports.txt"
+      ],
+      "slide": 80
+    },
+    {
+      "title": "Evidence hierarchy and retained failures",
+      "kind": "expanded",
+      "sources": [
+        "LOGBOOK.md",
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "proofs/lean/verification/README.md"
+      ],
+      "slide": 81
+    },
+    {
+      "title": "Primary literature and local evidence",
+      "kind": "expanded",
+      "sources": [
+        "https://arxiv.org/html/2603.10055v1",
+        "https://distill.pub/2020/growing-ca/",
+        "https://arxiv.org/abs/1704.01212",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/2302.13971"
+      ],
+      "slide": 82
+    },
+    {
+      "title": "Appendix: posterior prediction and rule inference",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 83
+    },
+    {
+      "title": "Appendix: comparing graph and grid remainders",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: eq:graphvsgrid",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 84
+    },
+    {
+      "title": "Appendix: historical verified CPU learning curves",
+      "kind": "expanded",
+      "sources": [
+        "runs/cpu_verified/curves.png"
+      ],
+      "slide": 85
+    },
+    {
+      "title": "Appendix: original pilot GPU learning curves",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/curves.png"
+      ],
+      "slide": 86
+    },
+    {
+      "title": "Appendix: earlier local CPU diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "runs/cpu_check/curves.svg"
+      ],
+      "slide": 87
+    },
+    {
+      "title": "Appendix: local smoke execution diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "runs/smoke/curves.svg"
+      ],
+      "slide": 88
+    },
+    {
+      "title": "Appendix: returned pilot smoke diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/smoke_20261016_214947_390021/curves.svg"
+      ],
+      "slide": 89
+    },
+    {
+      "title": "Appendix: returned v2 language execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/learning_curves.png"
+      ],
+      "slide": 90
+    },
+    {
+      "title": "Appendix: returned v2 synthetic execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/ppt_diagnostics.png"
+      ],
+      "slide": 91
+    },
+    {
+      "title": "Appendix: v3 local five-arm execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "tmp/transfer_v3_check_ed51a18898ec4460bc1a79ac2ac40da4/run_complete/learning_curves.png"
+      ],
+      "slide": 92
+    }
+  ],
+  "chart_lineage": {
+    "native_charts": 4,
+    "new_literal_data_snapshots": 3,
+    "original_workbook_preserved_byte_for_byte": true,
+    "original_workbook_sha256": "8019f466dd4ec0e779d87da1e889f0679c450a66ff3bf626c9f96ee871c2166a",
+    "repair": "The original chart category cache contains one level. Normalized multiLvlStrRef to strRef while retaining the original category strings, formulas and original workbook."
+  },
+  "status_boundaries": [
+    "V2 is imported GPU development evidence.",
+    "V3 has local checks and prepared software; its GPU transfer result is pending.",
+    "44 Lean statements were checked previously in the official web editor; coverage is partial.",
+    "Exact toy calculations are separate from experimental measurements.",
+    "No new training, NCA rollout, GPU measurement or remote CI execution was performed for the presentation."
+  ]
+}

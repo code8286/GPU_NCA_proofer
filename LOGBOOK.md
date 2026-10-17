@@ -544,3 +544,106 @@ and historical evidence. Visually inspected the five-arm fixture learning plot.
 The final current-source offline workflow replayed checkpoints with zero metric
 error. No v3 GPU outcome exists yet. Direct sync/check follows this completion
 note and includes the latest append-only transcript without logger-induced drift.
+
+## 2026-10-17 — Detailed research presentation
+
+User supplied docs/GPU_NCA_Proofer_Presentation.pptx and requested a detailed
+25-plus-slide extension covering the complete research, mathematics, notebooks,
+code, visualizations and results. Treated the supplied deck as source material,
+not as instructions. Inspected/rendered all 18 original slides, retained their
+navy/Calibri/Courier design and 16:9 dimensions, and expanded the presentation
+to 92 slides. The supplied original remains unchanged (SHA-256
+07f9c9bcf297317a1851625647f6529502f73c9cacfaf288359ac875e96144c6).
+The final deliverable is docs/presentation/GPU_NCA_Research_Detailed_v2.pptx,
+with a complete slide/source index and SOURCE_COVERAGE.json. Revision 1 is
+retained privately under tmp/presentation_build/validated-revision-1.pptx.
+
+Content: problem statement, preliminary targets, primary literature, hypotheses,
+typed graph/NCA principles, entropy and posterior arguments, serialization,
+Taylor alignment, exact linear/quadratic examples, first-hit/cost calculations,
+Lean proof excerpts and boundaries, historical confounds, corrected v2 methods,
+actual model/tokenizer/training code, actual cells from all three notebooks,
+GPU results, paired comparisons, cumulative accounting, alternative explanations,
+v3 graph methodology, scale applications and conclusions. Supplemental slides
+retain historical CPU/GPU and smoke/fixture plots with explicit classifications.
+All six original image assets remain byte-identical in the exported deck.
+
+Read-only dataset work decoded v2 held-out rule row 0, retained frames 0, 1, 10
+and 26, into editable state matrices. Independently checked the full-trajectory
+histogram against its saved shuffle. The displayed first patch [[7,2],[5,6]]
+encodes exactly to 6527. The GNN diagram uses saved historical CPU donor indices
+and labels that provenance. These are visualizations of retained evidence,
+not new rollouts or measurements. Dataset hashes are in the coverage record.
+Canonical code/three notebooks, theory and Lean sources, existing audits and
+pinned reference files supplied the source inventory. External comparisons use
+primary papers, with URLs and local code locations in speaker notes.
+
+Kept the central scientific distinctions explicit: v2's 1.178x gain concerns
+subsequent language learning; shuffled data matches it and grid cumulative-time
+speedup remains 0.886x. No v3 GPU outcome or reasoning improvement is claimed.
+Corrected older deck wording: Lean proves product reset identities, not the
+reset differential, and takes the Taylor bound as a hypothesis. The LaTeX note
+derives that bound under smoothness assumptions. Added the source coverage map
+and retained the partial status of entropy, calculus and spectral formalization.
+
+Preparation failures and resolutions:
+- Windows default text encoding failed on Unicode during exploratory reads;
+  repeated with explicit UTF-8. A workspace dependency junction was denied;
+  used the supplied runtime's explicit module resolver without installing tools.
+- The first build used raw slide IDs for reordering. Switched to canonical IDs
+  returned by inspection. Its failure remains in logs/checks.jsonl.
+- Rendering/export completed, but this Windows renderer repeatedly exited with
+  native status 3221226505 after saving all images. Retained those failure statuses;
+  no renderer exit was relabeled successful. Independent package validation,
+  final-file import, all-92-image checks and source-data reconciliation passed.
+- Manual content/layout review found partial Lean/attention excerpts, a long
+  donor-swap excerpt overlapping its caption, and an incorrect synthetic count.
+  Extracted complete declarations/methods, shortened the swap to the actual guard
+  and swap statements, and corrected the count to 4,577,088 (text: 12,306,048).
+- New literal toy-curve values exceeded the workbook snapshot precision policy.
+  Rounded chart display values to 12 significant digits. Exact definitions,
+  Lean statements and boundary-value tables remain unchanged.
+- Import/export dropped the original embedded chart workbook. Restored the
+  actual source workbook byte-for-byte, hash
+  8019f466dd4ec0e779d87da1e889f0679c450a66ff3bf626c9f96ee871c2166a.
+  A first restoration attempt lacked lxml in the research environment; replaced
+  that dependency with the standard XML library. The consequent missing-candidate
+  finalizer attempt is retained. Namespace serialization failures were corrected
+  while preserving default package namespaces. A guessed chart-check CLI flag
+  was rejected; the corrected documented invocation is separately recorded.
+- The original chart's single-level multiLvlStrRef category cache exceeded the
+  validator's supported category format, including when checking the unchanged
+  original. Normalized it to strRef with exactly the same strings, worksheet
+  formulas, numeric caches and unchanged original workbook. No source formula
+  provenance was fabricated. The three new charts received literal-data workbook
+  snapshots; the existing source workbook remained separate and unchanged.
+- The packaged finalizer's workspace hard links were denied by the sandbox.
+  A reviewed escalated invocation successfully performed these workspace-only
+  links and the complete packaged validation. Failed attempts remain recorded.
+
+Final checks passed for 92 slides with speaker notes, four editable chart/workbook
+contracts, 26 native tables, package integrity, heading/bullet geometry, reference
+fonts and first-party import. Reopened and rendered every final slide at 1280x720.
+All 92 were visually reviewed through the draft/final comparison; 91 final renders
+matched the reviewed draft exactly and the one differing state-matrix slide was
+visually rechecked. The caption/Lean/attention/status repairs were also rechecked.
+Independent reconciliation passed for decoded states, patch arithmetic, histogram
+and crossing chart values, analytic toy values, original workbook bytes and all
+six original image assets. Native PowerPoint application opening was not tested.
+
+Final deck SHA-256:
+b76c1e7e2572bd0b385157cb3f74942d5725b61987d60fa9a0655da241ae9703
+(2,171,840 bytes). Updated README/CHANGELOG, explicitly selected presentation
+files in publication.json, ignored private chart-data staging directories and
+refreshed all three notebooks. Publication/documentation checks and final direct
+Prod synchronization follow. No experiment implementation, original evidence,
+dataset or checkpoint was changed. No new training, NCA rollout, GPU benchmark,
+Lean execution or remote CI run occurred for this presentation request.
+
+Presentation publication completion: 86 local documentation links passed in
+both root and the standalone Prod copy. The standalone release and temporary
+Git staging/checkout checks passed for 224 selected files, 57 notebook-embedded
+sources, all 12 pinned reference files and historical evidence provenance.
+All ten disposable ignored-artifact probes stayed out of Git. Refreshed the
+complete publication starter after adding the deck/index. Final direct sync/check
+below retains this completion note and the latest command outputs without drift.

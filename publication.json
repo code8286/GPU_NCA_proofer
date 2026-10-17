@@ -57,7 +57,11 @@
     "tests/test_transfer_v3.py",
     "scripts/smoke_transfer_v3.py",
     "scripts/check_v3_generator.py",
-    "docs/TRANSFER_V3_PROTOCOL.md"
+    "docs/TRANSFER_V3_PROTOCOL.md",
+    "docs/GPU_NCA_Proofer_Presentation.pptx",
+    "docs/presentation/GPU_NCA_Research_Detailed_v2.pptx",
+    "docs/presentation/README.md",
+    "docs/presentation/SOURCE_COVERAGE.json"
   ],
   "directories": [
     "docs",

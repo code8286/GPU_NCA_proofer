@@ -5,6 +5,16 @@ Public changes are summarized here; measurements and failures are in
 
 ## Unreleased
 
+### Detailed research presentation — 2026-10-17
+
+- Expanded the supplied descriptive presentation into a detailed research deck
+  with the original material, literature, mathematical derivations, Lean proof
+  excerpts, actual notebook/code references, dataset views and measured results.
+- Retained historical and fixture plots with explicit scope, distinguished
+  language-stage acceleration from cumulative cost, and covered the prepared
+  v3 graph methodology separately from measured v2 outcomes.
+- Added a slide/source coverage index and preserved the original presentation.
+
 ### Graph transfer next stage — 2026-10-17
 
 - Added versioned `transfer_v3/` and a self-contained graph-vs-grid Kaggle
