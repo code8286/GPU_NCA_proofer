@@ -1,0 +1,790 @@
+{
+  "device": "cuda",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "stage_checkpoints_verified": 78,
+  "selected_stage_checkpoints_verified": 78,
+  "additional_final_ppt_checkpoints_verified": 0,
+  "saved_initializations_verified": 6,
+  "records": [
+    {
+      "arm": "scratch",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 59,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 59,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 71,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 71,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 83,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 83,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 97,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 97,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 109,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 109,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 127,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 0.0,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 127,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    }
+  ],
+  "language_controls_checked": true,
+  "note": "Checkpoint consistency does not prove learning acceleration"
+}

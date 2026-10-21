@@ -1,0 +1,165 @@
+{
+  "scope": "New CPU paired known-rule bridge; no language-transfer result",
+  "files": {
+    "plan.json": {
+      "sha256": "869690ac3805b2b015d4d918d7e3ca742358c7185b983cdcf41ae32476942251",
+      "origin": "Frozen CPU spatial bridge: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "1a3393ba2c55022edd2f8e1f6acbe6590304c944eb5ebfc1acd9312b5c11a80b",
+      "origin": "Frozen CPU spatial bridge: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "8ab148392b1900913ef77b35fda266418713ce7f6537465a243cdf5161a823b5",
+      "origin": "Frozen CPU spatial bridge: FROZEN_PROTOCOL.md"
+    },
+    "training_complete.json": {
+      "sha256": "8e2c03078d2c98438e4b05bb5772c90764dca385f4770614c89061860d92eb62",
+      "origin": "Frozen CPU spatial bridge: training_complete.json"
+    },
+    "training_receipt.json": {
+      "sha256": "5e79726753b30311156a3e203e9087cc74d59149a3d85dc114bb288012453076",
+      "origin": "Frozen CPU spatial bridge: training_receipt.json"
+    },
+    "results.json": {
+      "sha256": "7deea867ede208fb8c62c8388e4259f6f2a02579d38d12f34a1faf6282e738e4",
+      "origin": "Frozen CPU spatial bridge: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "fbe2490c008c9dc66c04a44f254fdc05fb42a97099e007e0218fcd2ee145608f",
+      "origin": "Frozen CPU spatial bridge: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "25f18a46379ff963ac358b28737dfd109e37ec98799e638d95216a4ccf8ead4e",
+      "origin": "Frozen CPU spatial bridge: verification.json"
+    },
+    "status.json": {
+      "sha256": "774dafeed43577040ddf83d400fff176fbd9b73c318109eee8150c66d04c78a2",
+      "origin": "Frozen CPU spatial bridge: status.json"
+    },
+    "complement_coherent_131/metrics.jsonl": {
+      "sha256": "c863af3e97cbbdeddb23ab9c8ea7d54c71ad98b8044b19acc7cd8cc9d1d63a55",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_131/metrics.jsonl"
+    },
+    "complement_coherent_131/summary.json": {
+      "sha256": "ef466007d3cf1bef14a262515ad2a6cb0b59c8196492780a09e4332c327697f4",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_131/summary.json"
+    },
+    "complement_prefix_131/metrics.jsonl": {
+      "sha256": "416e32ed2090e993989bd7eafd3580ab39c5ebb460a95dae6c83dcba2425c83c",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_131/metrics.jsonl"
+    },
+    "complement_prefix_131/summary.json": {
+      "sha256": "d8c603284e29e408784fa69748bf76cc5334f6b173a44cc8bd1989b734658543",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_131/summary.json"
+    },
+    "spatial_coherent_131/metrics.jsonl": {
+      "sha256": "82548c4dedb106c172589ce24acadb89cfb5d9903cee86c110fede71ba2cc352",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_131/metrics.jsonl"
+    },
+    "spatial_coherent_131/summary.json": {
+      "sha256": "427bce9d0d8a285f0b3635e45bee708272551a8040c23a73a908aec7aedcc0c7",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_131/summary.json"
+    },
+    "spatial_prefix_131/metrics.jsonl": {
+      "sha256": "bc5329f923ecdb37f00ba2b3106c9ca733eac2eb47ebc9ed8e21eb2f1c290aa1",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_131/metrics.jsonl"
+    },
+    "spatial_prefix_131/summary.json": {
+      "sha256": "d79b4bce9f60e16e23e99aaa8f714147a30b316e631e9a8c034f0c3033b40a0d",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_131/summary.json"
+    },
+    "complement_coherent_149/metrics.jsonl": {
+      "sha256": "7b2f394c5f4a08e3e19bf8926c007c16ec5bfae6cbdd84ec6b3c82e7f8dd9fd1",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_149/metrics.jsonl"
+    },
+    "complement_coherent_149/summary.json": {
+      "sha256": "c61cfabd4e1ab98cae7080ea8d4819cf772ad22727e092eaf8332c64c9adf142",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_149/summary.json"
+    },
+    "complement_prefix_149/metrics.jsonl": {
+      "sha256": "c0b0a48b2e2342c9e58d410035f6b9243dffddee253ed890a448b01917161334",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_149/metrics.jsonl"
+    },
+    "complement_prefix_149/summary.json": {
+      "sha256": "c5837f514e98d412b65699f9ad233815acedc3e7f3805770f42978d4aaaaed70",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_149/summary.json"
+    },
+    "spatial_coherent_149/metrics.jsonl": {
+      "sha256": "414ebdfef47d078713dcd5b9d6394fbf3e91b9619a48c863433a5554d35f12ad",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_149/metrics.jsonl"
+    },
+    "spatial_coherent_149/summary.json": {
+      "sha256": "b8ffb9fce37c3e3f7c48159239138edbc0c72832936cc40b0ccc30915f4439bc",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_149/summary.json"
+    },
+    "spatial_prefix_149/metrics.jsonl": {
+      "sha256": "c893f6a928ce720b11daba62f15aab5f15146f6a47fc56510603c8ea4f290c47",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_149/metrics.jsonl"
+    },
+    "spatial_prefix_149/summary.json": {
+      "sha256": "9fd3b4ec0079f40ff0335d6c08c3a3057498a805256e7ae2004b7708c2e80278",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_149/summary.json"
+    },
+    "complement_coherent_167/metrics.jsonl": {
+      "sha256": "f58f55a2e656b862f51b168372e234ff26c86bcc7071563e5e576bfbd3a1e1f0",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_167/metrics.jsonl"
+    },
+    "complement_coherent_167/summary.json": {
+      "sha256": "06c5f3e1811195a195636672ca27e6043dd2bbdddfc30a717bb2f3fb7ea81a8f",
+      "origin": "Frozen CPU spatial bridge: complement_coherent_167/summary.json"
+    },
+    "complement_prefix_167/metrics.jsonl": {
+      "sha256": "3ed54bd665e5a5e539ac6ca9379ea86a038eb7c23e8bf8d91cf5bbe672b6bd27",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_167/metrics.jsonl"
+    },
+    "complement_prefix_167/summary.json": {
+      "sha256": "f159b4ce69881272daec69994b748ac24f7a246b31ce22fc76485e0edb91d477",
+      "origin": "Frozen CPU spatial bridge: complement_prefix_167/summary.json"
+    },
+    "spatial_coherent_167/metrics.jsonl": {
+      "sha256": "71d92d8438ca82fcd3b41889c7bee0eaff5b304c23811fb9e16dd5bcdab49e99",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_167/metrics.jsonl"
+    },
+    "spatial_coherent_167/summary.json": {
+      "sha256": "bcbca48b95d335f87d1262da8e29bba001796722c9de6716a10995225264c0a1",
+      "origin": "Frozen CPU spatial bridge: spatial_coherent_167/summary.json"
+    },
+    "spatial_prefix_167/metrics.jsonl": {
+      "sha256": "58e8694def3cb9204e8e0b45ace1b986c8dbe956bde151686043e46156aaaec7",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_167/metrics.jsonl"
+    },
+    "spatial_prefix_167/summary.json": {
+      "sha256": "5e6685a098ff216d997e127f5cfb71955201bbf80d6970c8d1335b91233229f5",
+      "origin": "Frozen CPU spatial bridge: spatial_prefix_167/summary.json"
+    },
+    "first_transition/plan.json": {
+      "sha256": "befb1207e0effb2ab212f855c7aba62174b69bd85db506f116732c85373cb597",
+      "origin": "Frozen CPU spatial bridge: first_transition/plan.json"
+    },
+    "first_transition/plan_receipt.json": {
+      "sha256": "47df9863decd2ffdb22c2bc10cb24a0a709b3e6b4e5b0dad6cf68f78ef294048",
+      "origin": "Frozen CPU spatial bridge: first_transition/plan_receipt.json"
+    },
+    "first_transition/FROZEN_PROTOCOL.md": {
+      "sha256": "49c179646556df30fa11a825012f4f47d67c1499e1736f02df5448c8e88301cc",
+      "origin": "Frozen CPU spatial bridge: first_transition/FROZEN_PROTOCOL.md"
+    },
+    "first_transition/eligibility.json": {
+      "sha256": "34441b33c9a9caee068eb0e4fbf2d6f89ba9561347157ee22c89599edad74c28",
+      "origin": "Frozen CPU spatial bridge: first_transition/eligibility.json"
+    },
+    "first_transition/results.json": {
+      "sha256": "ddc3b10e8d66e3f2b542a01c06464bb1412d438548a4e6888b7eaae32524eaf4",
+      "origin": "Frozen CPU spatial bridge: first_transition/results.json"
+    },
+    "first_transition/results_receipt.json": {
+      "sha256": "4bcc1d84be2182d0e18edbef854fc8b13237d3de6b16171c73dfbbd297bbd85c",
+      "origin": "Frozen CPU spatial bridge: first_transition/results_receipt.json"
+    },
+    "first_transition/verification.json": {
+      "sha256": "03cb824149c7297c284ff06ccc67f8f311045e65ae1b969c68fe848734af166e",
+      "origin": "Frozen CPU spatial bridge: first_transition/verification.json"
+    }
+  }
+}

@@ -34,12 +34,26 @@ jobs:
         run: python scripts/run_logged.py --label ci-transfer-v2-notebook -- python build_transfer_notebook.py --check
       - name: Graph transfer-v3 notebook parity
         run: python scripts/run_logged.py --label ci-transfer-v3-notebook -- python build_graph_notebook.py --check
+      - name: Mechanism transfer-v4 notebook parity
+        run: python scripts/run_logged.py --label ci-transfer-v4-notebook -- python build_mechanism_notebook.py --check
       - name: Offline smoke and verification
         run: python scripts/run_logged.py --label ci-smoke -- python scripts/smoke_check.py
       - name: Independent-stage transfer workflows
         run: python scripts/run_logged.py --label ci-transfer-v2-offline -- python scripts/smoke_transfer_v2.py
       - name: Paired graph/grid transfer workflows
         run: python scripts/run_logged.py --label ci-transfer-v3-offline -- python scripts/smoke_transfer_v3.py
+      - name: Exact-prefix control transfer workflows
+        run: python scripts/run_logged.py --label ci-transfer-v4-offline -- python scripts/smoke_transfer_v4.py
+      - name: Isolated v4 notebook payload
+        run: |
+          python build_mechanism_notebook.py
+          python scripts/run_logged.py --label ci-transfer-v4-payload -- python scripts/check_v4_notebook.py
+      - name: Readiness measurement positive and negative controls
+        run: python scripts/run_logged.py --label ci-readiness-v5-controls -- python -m readiness_v5.run positive-control
+      - name: Controlled transformer trainability execution fixture
+        run: python scripts/run_logged.py --label ci-trainability-v6-execution -- python scripts/smoke_trainability_v6.py
+      - name: Paired spatial-rule execution fixture
+        run: python scripts/run_logged.py --label ci-interaction-v7-execution -- python scripts/smoke_interaction_v7.py
       - name: Preserve check transcripts, including failures
         if: always()
         uses: actions/upload-artifact@v4

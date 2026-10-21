@@ -1,0 +1,27 @@
+{
+  "scope": "Additional common-target comparison; not the primary paired grid-endpoint criterion",
+  "records": [
+    {
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "grid_language_updates": 1900,
+      "graph_language_updates": 1700,
+      "language_token_speedup_graph_over_grid": 1.1176470588235294
+    },
+    {
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1600,
+      "language_token_speedup_graph_over_grid": 1.0625
+    },
+    {
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "grid_language_updates": 1800,
+      "graph_language_updates": 1800,
+      "language_token_speedup_graph_over_grid": 1.0
+    }
+  ],
+  "geomean_language_token_speedup_graph_over_grid": 1.0589558960637233
+}

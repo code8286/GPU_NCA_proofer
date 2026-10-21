@@ -1,0 +1,33 @@
+{
+  "archive_name": "nca_transfer_v4_results_20261019_073853_931720.zip",
+  "archive_sha256": "d49a157b38c2e069b077d579c2f532b7b8d8914d190db8f284b98cd5e02d55c5",
+  "members_crc_checked": 454,
+  "trusted_source_sha256": {
+    "__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+    "analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+    "calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+    "data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+    "graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+    "report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+    "run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+    "training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+    "verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4"
+  },
+  "data_manifest_sha256": "a0b9894c6688cb68c992ba035f457745c1f4c11618e92f1e1b27b6613c4b83f1",
+  "gpu": "Tesla T4",
+  "imported_gpu_verification_sha256": "4ce6eaadbc79232cb535ce47f13c6422c8495e34a87f23bd243657f7a59a64cc",
+  "cpu_checkpoints_verified": 78,
+  "cpu_initializations_verified": 6,
+  "max_cpu_evaluation_absolute_error": 2.782757881902853e-07,
+  "language_data_sha256": {
+    "text_train.npy": "9c4dcc69216d391a0b0b9f09fb895ae70aa2e80656cd01a7252de43c8af995d5",
+    "text_validation.npy": "a6b07b121120aaba6fb9d23e8197c8f5096b9620df38b9df258ecaa09c8f91da"
+  },
+  "test_split_present": false,
+  "duration_seconds": 1439.2433524000226
+}

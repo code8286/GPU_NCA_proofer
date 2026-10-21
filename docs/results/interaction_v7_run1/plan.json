@@ -1,0 +1,117 @@
+{
+  "schema_version": 7,
+  "created_utc": "2026-10-19T18:49:24.420773+00:00",
+  "config": {
+    "schema_version": 7,
+    "purpose": "development_interaction",
+    "rule": "paired_complement_and_neighbor_parity",
+    "seeds": [
+      131,
+      149,
+      167
+    ],
+    "data_seed": 20261022,
+    "splits": {
+      "train": 512,
+      "development": 64,
+      "assessment": 128
+    },
+    "frames": 8,
+    "nca": {
+      "grid": 4,
+      "states": 2
+    },
+    "model": {
+      "layers": 6,
+      "heads": 4,
+      "width": 192,
+      "context": 47
+    },
+    "batch": 2,
+    "accumulate": 2,
+    "eval_batch": 8,
+    "eval_every": 100,
+    "ppt_eval_rules": 128,
+    "ppt": {
+      "steps": 1000,
+      "lr": 0.0001,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0,
+      "clip": null
+    },
+    "minimum_frequency_advantage_nats": 0.01,
+    "minimum_ordering_advantage_nats": 0.01,
+    "frequency_fit_rules": 256,
+    "frequency_concentrations": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "selection": "final_declared_update",
+    "language_allowed": false,
+    "oracle_probability": 0.99,
+    "minimum_local_table_advantage_nats": 0.01
+  },
+  "source_sha256": {
+    "trainability_v6/__init__.py": "642988988cc21fe055c8bbd53649c0f516e8c37d1e928b02fec80378e3d11eea",
+    "trainability_v6/data.py": "8a01068b366194a84b1ea775b136fa8c14d2997f6cebdd488d541f9bca864e3d",
+    "trainability_v6/plan.py": "01bb39b9ad5f621bbd0b04d57e60ee4e989a2d7ca30110d263f6387e0715e21b",
+    "trainability_v6/run.py": "8695fe651299a211aabbba862e99e821d490614bdd4169f342f6032d8c77b69b",
+    "readiness_v5/__init__.py": "2da8a58b8d8dad7ceec5a5a7ff7137259e312ffd93f317efa6e2cd6d5dcbd167",
+    "readiness_v5/evaluate.py": "0cd1b2a2ccc6ede6ea08b6041905ceb8fee938acd77de021032273cf2d111b70",
+    "readiness_v5/frequency.py": "5076ac2ae3eeb883ba68da1e00cc6b0e8acc7021c73a65d1a01a32f6ba4e8821",
+    "readiness_v5/gate.py": "eff3d6e5c08c05d705cb464b8c56e36f91d738a0e91344214da4e176988be110",
+    "readiness_v5/plan.py": "b0bc6d6055eec6eb42800fd0378cf0a1e36a4882c74c7e98feed5e40ae1c69a9",
+    "readiness_v5/positive_control.py": "622513d923d1e5144eaa040d0af07bfc9a2069bb05a7bcdf3700d44e0cf5fd1b",
+    "readiness_v5/run.py": "3fa075474a413f7c64cba48bcf6ade0148cf7c9c7509a403d88a48dbed9b19fa",
+    "interaction_v7/__init__.py": "2018d8e8851503f7150e11f3d85ded38d5b70326e1e92e53a79a9e4b11818913",
+    "interaction_v7/data.py": "0a350844743fa56006ec457ab8ce7a7c3359361c5c46c5cd27f8a4108bc6b18f",
+    "interaction_v7/plan.py": "c0fac544f6bc95901943048ca9fa80e9f313066ee8a8e986a84301d911346efc",
+    "interaction_v7/run.py": "bda7f22e6f3c14acef17e8fda204edc2861175c72852b0b6e3872de4fa89bbf5"
+  },
+  "v4_source_sha256": {
+    "__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+    "analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+    "calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+    "data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+    "graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+    "report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+    "run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+    "training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+    "verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4"
+  },
+  "protocol_sha256": "8ab148392b1900913ef77b35fda266418713ce7f6537465a243cdf5161a823b5",
+  "input_files_sha256": {
+    "data/complement_train.npy": "971d67b611d1dbd844723d7343f88d92b21ae13a6fa078b1909a7523f952cab2",
+    "data/complement_prefix_train.npy": "a0a9c09fd7122ee97c5030246dafd888f84b0f15e25878704d8f119a5cc79337",
+    "data/complement_development.npy": "1815092e60c7eb8a14afaa48aaf8f243542e0809845573df526df94d7b364828",
+    "data/complement_prefix_development.npy": "d25a50f4fbff94925f5a14d5440b92604685d6db141e34d8af4f2d5c3dc39339",
+    "data/complement_assessment.npy": "7a2f166ae3b05fbfd8388c1d33edd0487deb2c5cacf7fdb2979ea4a7bca2ecd6",
+    "data/complement_prefix_assessment.npy": "2813d03787c2c22beb6b836452e54e5ec51b01f7a8550d54c21e982ac4574bf0",
+    "data/spatial_train.npy": "507882ef82d756f8cedb830923d501bf4aca2a121571a681df775cb97df3507c",
+    "data/spatial_prefix_train.npy": "9c65db38cc4357d22440576458d3a1c468eed096902433b3949bf89370254114",
+    "data/spatial_development.npy": "e667287e540839c74e65337f67db94378ca6fb6e6771f4f0d86af7c8a2de726d",
+    "data/spatial_prefix_development.npy": "78cec1aea74f9bbca65e4e4a60a90bfa18fd184c673ca985d04e86b28bcda892",
+    "data/spatial_assessment.npy": "2eed0e34b8cc5e1228c2ac2bc65bb75e79fa0cf9f28104f9ed2bc64bd2a3a9e8",
+    "data/spatial_prefix_assessment.npy": "3294e8d482d585885f2a3e4c204886b173f2c5142c71a8f4a9f4acee4be04ca0",
+    "data/split_identities.json": "404a742d70038b6959d4c82f3e7849f7d8864f7700d4b708a1083f0c3c014b0e",
+    "initialization_131.pt": "63a8cdcec17ed81c5b7655efa8b1def85de27c9b57ddb52c3a91f908716d1057",
+    "initialization_149.pt": "11fbd4a2280f6cda3f44778720521dca1d6ca4f76b9f4c6ebb0e3085a40ef1e0",
+    "initialization_167.pt": "4c4200b2b78e7aab87e9e2aaab8ea8fd35ace606a82c73a8295f735d7d978fb2"
+  },
+  "reference_v6_plan_sha256": "3970a3b041e26ddecdd977c22f673b744a5f910643acb809e0d9c63a7b010ed4",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.2"
+  },
+  "scope": "Matched spatial/complement fixed-rule bridge, shared joint-orbit-disjoint split; no language stage"
+}

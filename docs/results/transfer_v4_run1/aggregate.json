@@ -1,0 +1,58 @@
+[
+  {
+    "arm": "scratch",
+    "mean_final_validation_nll": 5.273956134915352,
+    "perplexity_from_mean_nll": 195.18662163325303,
+    "geomean_language_tokens_speedup_vs_scratch": 1.0,
+    "geomean_language_seconds_speedup_vs_scratch": 1.0,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 1.0
+  },
+  {
+    "arm": "grid_nca",
+    "mean_final_validation_nll": 5.230608105659485,
+    "perplexity_from_mean_nll": 186.90642782542983,
+    "geomean_language_tokens_speedup_vs_scratch": 1.165316270724421,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1648853618119719,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8643278786831824
+  },
+  {
+    "arm": "graph_nca",
+    "mean_final_validation_nll": 5.23433671394984,
+    "perplexity_from_mean_nll": 187.6046295331815,
+    "geomean_language_tokens_speedup_vs_scratch": 1.154267709192811,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1541945452236761,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8579889220154413
+  },
+  {
+    "arm": "shuffled_nca",
+    "mean_final_validation_nll": 5.23629788060983,
+    "perplexity_from_mean_nll": 187.97291449393435,
+    "geomean_language_tokens_speedup_vs_scratch": 1.143913091770108,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1428733635730808,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8516261339117507
+  },
+  {
+    "arm": "shuffled_graph",
+    "mean_final_validation_nll": 5.23417183260123,
+    "perplexity_from_mean_nll": 187.573699578815,
+    "geomean_language_tokens_speedup_vs_scratch": 1.1659896699763,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1662460356169935,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8643762413402717
+  },
+  {
+    "arm": "prefix_grid",
+    "mean_final_validation_nll": 5.235062922040622,
+    "perplexity_from_mean_nll": 187.74091901428898,
+    "geomean_language_tokens_speedup_vs_scratch": 1.1665905411810837,
+    "geomean_language_seconds_speedup_vs_scratch": 1.167201004461764,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8648905034615778
+  },
+  {
+    "arm": "prefix_graph",
+    "mean_final_validation_nll": 5.235680475831032,
+    "perplexity_from_mean_nll": 187.85689493744093,
+    "geomean_language_tokens_speedup_vs_scratch": 1.154267709192811,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1542882669563697,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8580345945502262
+  }
+]

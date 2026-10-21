@@ -1,0 +1,416 @@
+{
+  "schema_version": 3,
+  "purpose": "development",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "primary_question": "Does graph-NCA PPT accelerate the identical language stage relative to grid-NCA PPT?",
+  "secondary_question": "Do language-stage savings repay PPT and generation costs?",
+  "graph_status": "Paired grid/graph frozen rules, same complexity band and independent topology/cache per paired model seed",
+  "treatment_comparisons": [
+    {
+      "arm": "graph_nca",
+      "reference_arm": "grid_nca",
+      "paired_replicates": 3,
+      "seeds_reaching_reference": 2,
+      "mean_final_validation_nll_delta": -0.0055497388044993086,
+      "comparisons": [
+        {
+          "arm": "graph_nca",
+          "reference_arm": "grid_nca",
+          "seed": 17,
+          "reference_nll": 5.229810118675232,
+          "reference_reached": true,
+          "language_step_at_reference": 1800,
+          "final_validation_nll_delta": -0.016762465238571167,
+          "language_tokens_speedup": 1.1111111111111112,
+          "language_seconds_speedup": 1.1099150457996456,
+          "cumulative_seconds_speedup": 1.0737010867782706
+        },
+        {
+          "arm": "graph_nca",
+          "reference_arm": "grid_nca",
+          "seed": 29,
+          "reference_nll": 5.2440981566905975,
+          "reference_reached": true,
+          "language_step_at_reference": 2000,
+          "final_validation_nll_delta": -0.002020418643951416,
+          "language_tokens_speedup": 1.0,
+          "language_seconds_speedup": 1.0021205262448076,
+          "cumulative_seconds_speedup": 1.0010265366762507
+        },
+        {
+          "arm": "graph_nca",
+          "reference_arm": "grid_nca",
+          "seed": 43,
+          "reference_nll": 5.239526003599167,
+          "reference_reached": false,
+          "language_step_at_reference": null,
+          "final_validation_nll_delta": 0.002133667469024658,
+          "language_tokens_speedup": null,
+          "language_seconds_speedup": null,
+          "cumulative_seconds_speedup": null
+        }
+      ],
+      "geomean_language_tokens_speedup_all_seeds": null,
+      "geomean_language_seconds_speedup_all_seeds": null,
+      "geomean_cumulative_seconds_speedup_all_seeds": null
+    },
+    {
+      "arm": "graph_nca",
+      "reference_arm": "shuffled_graph",
+      "paired_replicates": 3,
+      "seeds_reaching_reference": 2,
+      "mean_final_validation_nll_delta": -0.002627025047938029,
+      "comparisons": [
+        {
+          "arm": "graph_nca",
+          "reference_arm": "shuffled_graph",
+          "seed": 17,
+          "reference_nll": 5.213871240615845,
+          "reference_reached": true,
+          "language_step_at_reference": 2000,
+          "final_validation_nll_delta": -0.00082358717918396,
+          "language_tokens_speedup": 1.0,
+          "language_seconds_speedup": 1.0039699490852414,
+          "cumulative_seconds_speedup": 1.0042833332430467
+        },
+        {
+          "arm": "graph_nca",
+          "reference_arm": "shuffled_graph",
+          "seed": 29,
+          "reference_nll": 5.25035172700882,
+          "reference_reached": true,
+          "language_step_at_reference": 1900,
+          "final_validation_nll_delta": -0.008273988962173462,
+          "language_tokens_speedup": 1.0526315789473684,
+          "language_seconds_speedup": 1.0539572261009011,
+          "cumulative_seconds_speedup": 1.0393398300346288
+        },
+        {
+          "arm": "graph_nca",
+          "reference_arm": "shuffled_graph",
+          "seed": 43,
+          "reference_nll": 5.240443170070648,
+          "reference_reached": false,
+          "language_step_at_reference": null,
+          "final_validation_nll_delta": 0.001216500997543335,
+          "language_tokens_speedup": null,
+          "language_seconds_speedup": null,
+          "cumulative_seconds_speedup": null
+        }
+      ],
+      "geomean_language_tokens_speedup_all_seeds": null,
+      "geomean_language_seconds_speedup_all_seeds": null,
+      "geomean_cumulative_seconds_speedup_all_seeds": null
+    },
+    {
+      "arm": "grid_nca",
+      "reference_arm": "shuffled_nca",
+      "paired_replicates": 3,
+      "seeds_reaching_reference": 2,
+      "mean_final_validation_nll_delta": 0.002922197182973226,
+      "comparisons": [
+        {
+          "arm": "grid_nca",
+          "reference_arm": "shuffled_nca",
+          "seed": 17,
+          "reference_nll": 5.216033935546875,
+          "reference_reached": false,
+          "language_step_at_reference": null,
+          "final_validation_nll_delta": 0.013776183128356934,
+          "language_tokens_speedup": null,
+          "language_seconds_speedup": null,
+          "cumulative_seconds_speedup": null
+        },
+        {
+          "arm": "grid_nca",
+          "reference_arm": "shuffled_nca",
+          "seed": 29,
+          "reference_nll": 5.244662821292877,
+          "reference_reached": true,
+          "language_step_at_reference": 2000,
+          "final_validation_nll_delta": -0.0005646646022796631,
+          "language_tokens_speedup": 1.0,
+          "language_seconds_speedup": 0.9980137819849608,
+          "cumulative_seconds_speedup": 0.9981482731442511
+        },
+        {
+          "arm": "grid_nca",
+          "reference_arm": "shuffled_nca",
+          "seed": 43,
+          "reference_nll": 5.2439709305763245,
+          "reference_reached": true,
+          "language_step_at_reference": 2000,
+          "final_validation_nll_delta": -0.004444926977157593,
+          "language_tokens_speedup": 1.0,
+          "language_seconds_speedup": 1.0062091018797217,
+          "cumulative_seconds_speedup": 1.0029241961472268
+        }
+      ],
+      "geomean_language_tokens_speedup_all_seeds": null,
+      "geomean_language_seconds_speedup_all_seeds": null,
+      "geomean_cumulative_seconds_speedup_all_seeds": null
+    }
+  ],
+  "comparisons": [
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1900,
+      "final_validation_nll_delta": -0.011062145233154297,
+      "language_tokens_speedup": 1.0526315789473684,
+      "language_train_seconds_speedup": 1.0629791165434024,
+      "language_seconds_speedup": 1.0628367078136387,
+      "total_training_tokens_speedup": 0.6896551724137931,
+      "cumulative_seconds_speedup": 0.8123548020441466
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.027824610471725464,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1877844995410491,
+      "language_seconds_speedup": 1.1868363318200954,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8749428825944293
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1800,
+      "final_validation_nll_delta": -0.02483832836151123,
+      "language_tokens_speedup": 1.1111111111111112,
+      "language_train_seconds_speedup": 1.1124446267380466,
+      "language_seconds_speedup": 1.11209515434721,
+      "total_training_tokens_speedup": 0.7142857142857143,
+      "cumulative_seconds_speedup": 0.8343369141270877
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "reference_nll": 5.240872263908386,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.027001023292541504,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1819231778939143,
+      "language_seconds_speedup": 1.1813244488919374,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8707386272488236
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.04525446891784668,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1757055362319564,
+      "language_seconds_speedup": 1.1751073869804323,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8688783240047339
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1600,
+      "final_validation_nll_delta": -0.047274887561798096,
+      "language_tokens_speedup": 1.25,
+      "language_train_seconds_speedup": 1.2527767437641106,
+      "language_seconds_speedup": 1.2517628254800623,
+      "total_training_tokens_speedup": 0.7692307692307693,
+      "cumulative_seconds_speedup": 0.9087663002790098
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.04468980431556702,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1788191459768698,
+      "language_seconds_speedup": 1.1781331185647803,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8708446153082375
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 29,
+      "reference_nll": 5.289352625608444,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1700,
+      "final_validation_nll_delta": -0.039000898599624634,
+      "language_tokens_speedup": 1.1764705882352942,
+      "language_train_seconds_speedup": 1.1770539092333392,
+      "language_seconds_speedup": 1.1764327991116312,
+      "total_training_tokens_speedup": 0.7407407407407407,
+      "cumulative_seconds_speedup": 0.8699805392978903
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1800,
+      "final_validation_nll_delta": -0.02852177619934082,
+      "language_tokens_speedup": 1.1111111111111112,
+      "language_train_seconds_speedup": 1.1139000012419906,
+      "language_seconds_speedup": 1.1136159681070843,
+      "total_training_tokens_speedup": 0.7142857142857143,
+      "cumulative_seconds_speedup": 0.8350564468309151
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1800,
+      "final_validation_nll_delta": -0.026388108730316162,
+      "language_tokens_speedup": 1.1111111111111112,
+      "language_train_seconds_speedup": 1.109282560796285,
+      "language_seconds_speedup": 1.1088835903279624,
+      "total_training_tokens_speedup": 0.7142857142857143,
+      "cumulative_seconds_speedup": 0.8329146815295138
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1900,
+      "final_validation_nll_delta": -0.024076849222183228,
+      "language_tokens_speedup": 1.0526315789473684,
+      "language_train_seconds_speedup": 1.049439230502951,
+      "language_seconds_speedup": 1.049250750611057,
+      "total_training_tokens_speedup": 0.6896551724137931,
+      "cumulative_seconds_speedup": 0.8003745997155297
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 43,
+      "reference_nll": 5.268047779798508,
+      "reference_policy": "Paired scratch final validation loss at its declared N language updates",
+      "reference_reached": true,
+      "language_step_at_reference": 1900,
+      "final_validation_nll_delta": -0.027604609727859497,
+      "language_tokens_speedup": 1.0526315789473684,
+      "language_train_seconds_speedup": 1.0498985945076549,
+      "language_seconds_speedup": 1.0497643126127851,
+      "total_training_tokens_speedup": 0.6896551724137931,
+      "cumulative_seconds_speedup": 0.7990543258031201
+    }
+  ],
+  "aggregate": [
+    {
+      "arm": "grid_nca",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.028279463450113933,
+      "geomean_language_tokens_speedup_all_seeds": 1.1122565872945904,
+      "exploratory_95_ci_language_tokens": [
+        1.0526315789473684,
+        1.1764705882352942
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1162458325726456,
+      "exploratory_95_ci_language_seconds": [
+        1.0628367078136387,
+        1.1751073869804323
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8384429475737575,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.8123548020441466,
+        0.8688783240047339
+      ]
+    },
+    {
+      "arm": "graph_nca",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.03382920225461324,
+      "geomean_language_tokens_speedup_all_seeds": 1.1778306710513218,
+      "exploratory_95_ci_language_tokens": [
+        1.1111111111111112,
+        1.25
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1810445495429065,
+      "exploratory_95_ci_language_seconds": [
+        1.1088835903279624,
+        1.2517628254800623
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8716540343344168,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.8329146815295138,
+        0.9087663002790098
+      ]
+    },
+    {
+      "arm": "shuffled_nca",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.031201660633087158,
+      "geomean_language_tokens_speedup_all_seeds": 1.1122565872945904,
+      "exploratory_95_ci_language_tokens": [
+        1.0526315789473684,
+        1.1764705882352942
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1119157122855219,
+      "exploratory_95_ci_language_seconds": [
+        1.049250750611057,
+        1.1781331185647803
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8346898691972118,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.8003745997155297,
+        0.8708446153082375
+      ]
+    },
+    {
+      "arm": "shuffled_graph",
+      "paired_seeds": 3,
+      "seeds_reaching_reference": 3,
+      "mean_final_validation_nll_delta": -0.031202177206675213,
+      "geomean_language_tokens_speedup_all_seeds": 1.133651362765851,
+      "exploratory_95_ci_language_tokens": [
+        1.0526315789473684,
+        1.1764705882352942
+      ],
+      "geomean_language_seconds_speedup_all_seeds": 1.1341644761214034,
+      "exploratory_95_ci_language_seconds": [
+        1.0497643126127851,
+        1.1813244488919374
+      ],
+      "geomean_cumulative_seconds_speedup_all_seeds": 0.8459107652278886,
+      "exploratory_95_ci_cumulative_seconds": [
+        0.7990543258031201,
+        0.8707386272488236
+      ]
+    }
+  ],
+  "uncertainty_note": "Three paired model/data/topology replicates are exploratory; these variance sources are not separately estimated. Evaluation crossings are discrete. A gate pass is not proof of transfer or dynamics-specific learning.",
+  "test_policy": "Reserved and not loaded"
+}

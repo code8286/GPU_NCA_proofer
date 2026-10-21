@@ -1,0 +1,263 @@
+{
+  "archive_name": "nca_transfer_v3_results_20261018_161811_573163.zip",
+  "archive_sha256": "14d7053a55007d01dd36522bca3885dfcb68894866c30467cf58addc149e2fa5",
+  "note": "Development GPU records copied unchanged; independent CPU audits and derived plots are separate. Execution fixtures, weights and corpora are excluded.",
+  "files": {
+    "audit.json": {
+      "sha256": "09c0a776005ffbc4c80f7952892d74bc946dc512b5264d4b394103780f92416d",
+      "origin": "Independent local CPU audit: audit.json"
+    },
+    "metric_audit.json": {
+      "sha256": "2fc9f304a1d2f62ed20933d33bcc99e44081bd76203aeb27f9e576514c52ac7d",
+      "origin": "Independent local CPU audit: metric_audit.json"
+    },
+    "cpu_verification.json": {
+      "sha256": "b23c74976b252173355db772e28a35b599fe6b42f6dd2123e787696b272b4a22",
+      "origin": "Independent local CPU audit: cpu_verification.json"
+    },
+    "gpu/environment.json": {
+      "sha256": "7bed4ea91d919ed79993cb49834dba090d97cb946515778397dfc9d9d0708f9b",
+      "origin": "runs/development/environment.json"
+    },
+    "gpu/status.json": {
+      "sha256": "8edab15cab7464e05cb144ac197588fef79e253245379fa8353d15f51637f34a",
+      "origin": "runs/development/status.json"
+    },
+    "gpu/report.json": {
+      "sha256": "2eeace7bed40cd2d3a29d8f68a6dae8034b09c7f062cd8c10fd95185938065e4",
+      "origin": "runs/development/report.json"
+    },
+    "gpu/verification.json": {
+      "sha256": "b23996f952613493a0ecb59b2739202414d19ca1966a11e077d7c783c545468f",
+      "origin": "runs/development/verification.json"
+    },
+    "gpu/summary.csv": {
+      "sha256": "6d7600a06097eae44130c5dbbceb851237e352e2c950343488e75dd78128d377",
+      "origin": "runs/development/summary.csv"
+    },
+    "gpu/learning_curves.png": {
+      "sha256": "2f996309f658e8be0a5b0aaa381f9276c8e7916b61b93edd5702c4e599495e38",
+      "origin": "runs/development/learning_curves.png"
+    },
+    "gpu/ppt_diagnostics.png": {
+      "sha256": "a60e7c9ec81e920aa91209e3d0bc7ee4c0c60afd36d3d265837bdfab3bdcd39d",
+      "origin": "runs/development/ppt_diagnostics.png"
+    },
+    "gpu/graph_nca_17/language_metrics.jsonl": {
+      "sha256": "b80dd695f9d84ff10f1c33d5a8281fa878a12f3095bce21a5d18818ef4c4a13c",
+      "origin": "runs/development/graph_nca_17/language_metrics.jsonl"
+    },
+    "gpu/graph_nca_17/language_summary.json": {
+      "sha256": "e386a2517ed65fc5aa95d97c30b0878d94fac92a5ffd47e23861d3ed8c3a5de3",
+      "origin": "runs/development/graph_nca_17/language_summary.json"
+    },
+    "gpu/graph_nca_17/ppt_metrics.jsonl": {
+      "sha256": "c41c66c82c46ff4f6a8359b8f9203449a20772f13e2c499ebd392da719e766e8",
+      "origin": "runs/development/graph_nca_17/ppt_metrics.jsonl"
+    },
+    "gpu/graph_nca_17/ppt_summary.json": {
+      "sha256": "e01fbdb6a8f67522c6d62cc624324494095f1f5297a95cb2a5190bc8fab02dbe",
+      "origin": "runs/development/graph_nca_17/ppt_summary.json"
+    },
+    "gpu/graph_nca_29/language_metrics.jsonl": {
+      "sha256": "abfac89f74bf0d81ff1f02b1c18ee972aa80d298eaf8da5bde900a2d4565b29a",
+      "origin": "runs/development/graph_nca_29/language_metrics.jsonl"
+    },
+    "gpu/graph_nca_29/language_summary.json": {
+      "sha256": "85dde081b077579c945e16f1113b3c855c92195c1e8291d40426d26a593a30b2",
+      "origin": "runs/development/graph_nca_29/language_summary.json"
+    },
+    "gpu/graph_nca_29/ppt_metrics.jsonl": {
+      "sha256": "845926837a9f007168f2d5b210ffefcd782cb33381f386e904d0938d256d482e",
+      "origin": "runs/development/graph_nca_29/ppt_metrics.jsonl"
+    },
+    "gpu/graph_nca_29/ppt_summary.json": {
+      "sha256": "9faf2777459785ce1879270af7730791179b46bd4a2d209ff60909e55b8ad020",
+      "origin": "runs/development/graph_nca_29/ppt_summary.json"
+    },
+    "gpu/graph_nca_43/language_metrics.jsonl": {
+      "sha256": "6bb8335772f96a00109f3aaa5b6e2819560305f68b03473c7eefa72c0cc28b8b",
+      "origin": "runs/development/graph_nca_43/language_metrics.jsonl"
+    },
+    "gpu/graph_nca_43/language_summary.json": {
+      "sha256": "5acaeb286048842b80c5496e61ab2f9abb03e30920132f6f68749592ae47c285",
+      "origin": "runs/development/graph_nca_43/language_summary.json"
+    },
+    "gpu/graph_nca_43/ppt_metrics.jsonl": {
+      "sha256": "953f6a73638a40395d9e3b39333feb624156d19bf69a02f1fbe5be39fa95a2f1",
+      "origin": "runs/development/graph_nca_43/ppt_metrics.jsonl"
+    },
+    "gpu/graph_nca_43/ppt_summary.json": {
+      "sha256": "608bf2ac6c1178a12dec0125810ef71bde771c183410025b962c3b1275fdec83",
+      "origin": "runs/development/graph_nca_43/ppt_summary.json"
+    },
+    "gpu/grid_nca_17/language_metrics.jsonl": {
+      "sha256": "a048a028e6bc7f0895cbee3ad8f1c2fad3a1262c67c7050f8d2ccc7b420a3688",
+      "origin": "runs/development/grid_nca_17/language_metrics.jsonl"
+    },
+    "gpu/grid_nca_17/language_summary.json": {
+      "sha256": "963390d8d4ba2d469b842c379ededfa42d59e6aa7d6c1a97f02eb1db3714fd54",
+      "origin": "runs/development/grid_nca_17/language_summary.json"
+    },
+    "gpu/grid_nca_17/ppt_metrics.jsonl": {
+      "sha256": "1d0c93d0b8e8fb4cbfa787e001fc4f26a8408f53ff94e121bb6810933795abd7",
+      "origin": "runs/development/grid_nca_17/ppt_metrics.jsonl"
+    },
+    "gpu/grid_nca_17/ppt_summary.json": {
+      "sha256": "81ded09edc8eb09f3efd54b8285de33cff1354246249f778ada9b47772b072a0",
+      "origin": "runs/development/grid_nca_17/ppt_summary.json"
+    },
+    "gpu/grid_nca_29/language_metrics.jsonl": {
+      "sha256": "c5fc814d69ca6942482e03cc4f1d2c7c90e2951ebfa54440a212dd19b8341f34",
+      "origin": "runs/development/grid_nca_29/language_metrics.jsonl"
+    },
+    "gpu/grid_nca_29/language_summary.json": {
+      "sha256": "41511799ae918eb9147bc8b5bc5663f6cf5c23c65364c2572d3e860f5013d446",
+      "origin": "runs/development/grid_nca_29/language_summary.json"
+    },
+    "gpu/grid_nca_29/ppt_metrics.jsonl": {
+      "sha256": "8af1abf3d280127db38e9d557b1cbb1485197472a858a767a1ef87db3556051e",
+      "origin": "runs/development/grid_nca_29/ppt_metrics.jsonl"
+    },
+    "gpu/grid_nca_29/ppt_summary.json": {
+      "sha256": "5f98cbb1392cd26b8ac96a71306f6ca3e5b67fc3e502b8701a439fcc344a6aea",
+      "origin": "runs/development/grid_nca_29/ppt_summary.json"
+    },
+    "gpu/grid_nca_43/language_metrics.jsonl": {
+      "sha256": "252925060dbdb2d6d8cc97566e9bfd18934747666ab72265c74e70558939e5f7",
+      "origin": "runs/development/grid_nca_43/language_metrics.jsonl"
+    },
+    "gpu/grid_nca_43/language_summary.json": {
+      "sha256": "f92762328da09d3c924ca9081fee51b469044f5847cc81fbab3d09a452974a16",
+      "origin": "runs/development/grid_nca_43/language_summary.json"
+    },
+    "gpu/grid_nca_43/ppt_metrics.jsonl": {
+      "sha256": "7160ccf0c0435eea10e3fa7ea5978a9d81e0bffd9d48b6443bda492c695ba50c",
+      "origin": "runs/development/grid_nca_43/ppt_metrics.jsonl"
+    },
+    "gpu/grid_nca_43/ppt_summary.json": {
+      "sha256": "314392a42acfb73d5b9e34f07efb648a605b47431f9ee1d7eb64583d4b2b5d29",
+      "origin": "runs/development/grid_nca_43/ppt_summary.json"
+    },
+    "gpu/scratch_17/language_metrics.jsonl": {
+      "sha256": "de7f19c53f34c066c01c5c7e82430ddd7a7a883307b952e4b4c238091a58be67",
+      "origin": "runs/development/scratch_17/language_metrics.jsonl"
+    },
+    "gpu/scratch_17/language_summary.json": {
+      "sha256": "1958ec44336337272d9b08101945081d9d68a2be0678e957992636b0fa2cbe7e",
+      "origin": "runs/development/scratch_17/language_summary.json"
+    },
+    "gpu/scratch_29/language_metrics.jsonl": {
+      "sha256": "abc81218ed28769a4c0737ad32ab4c8adeeb0ff49c7ba86720db930e8f7c6863",
+      "origin": "runs/development/scratch_29/language_metrics.jsonl"
+    },
+    "gpu/scratch_29/language_summary.json": {
+      "sha256": "828ad666c6b101887eb87ac2d0b9a9996ede1532d05c25587428a0cd644aa957",
+      "origin": "runs/development/scratch_29/language_summary.json"
+    },
+    "gpu/scratch_43/language_metrics.jsonl": {
+      "sha256": "25610c9f7302503b7bca3a419cc9e102a001b6ade7861377635ce352ca1ec6e1",
+      "origin": "runs/development/scratch_43/language_metrics.jsonl"
+    },
+    "gpu/scratch_43/language_summary.json": {
+      "sha256": "f97894f46f2c4556633327d3c05a2287a6e644a26fdaa5c8af2b18ec8ee7e59f",
+      "origin": "runs/development/scratch_43/language_summary.json"
+    },
+    "gpu/shuffled_graph_17/language_metrics.jsonl": {
+      "sha256": "02b7b6b67fddc61da1c329dfa2fdeed35adeb5e76bfc753523db6f5cad46847d",
+      "origin": "runs/development/shuffled_graph_17/language_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_17/language_summary.json": {
+      "sha256": "c04049513cfb11528b646427ee08f4d9514c3c35f94228c7fb092e01017bf81f",
+      "origin": "runs/development/shuffled_graph_17/language_summary.json"
+    },
+    "gpu/shuffled_graph_17/ppt_metrics.jsonl": {
+      "sha256": "da6020b889e59b3fef265da9daa53939088a17e74004ff9b841ea619eff4e197",
+      "origin": "runs/development/shuffled_graph_17/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_17/ppt_summary.json": {
+      "sha256": "0d46adf76af6d1a280e3251b313d966a9fd209d229b9f76c02323c832be80524",
+      "origin": "runs/development/shuffled_graph_17/ppt_summary.json"
+    },
+    "gpu/shuffled_graph_29/language_metrics.jsonl": {
+      "sha256": "2d52911e9168321534e5b6072bf100bea320b54f3e5a07ea1c2c13ba328ec245",
+      "origin": "runs/development/shuffled_graph_29/language_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_29/language_summary.json": {
+      "sha256": "48e827eb1ddf97af083d72b19eeaf696ef8351265cf861de8d3cf61a8c56d8e5",
+      "origin": "runs/development/shuffled_graph_29/language_summary.json"
+    },
+    "gpu/shuffled_graph_29/ppt_metrics.jsonl": {
+      "sha256": "9d42103dc9360938ce5f4e07927b5f1d5f29df3746a727ec79c17c0867818741",
+      "origin": "runs/development/shuffled_graph_29/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_29/ppt_summary.json": {
+      "sha256": "92bf4e0f6d82369b9ed8061e86dfb7a18c6e666c332332cff575ecfc22ab7197",
+      "origin": "runs/development/shuffled_graph_29/ppt_summary.json"
+    },
+    "gpu/shuffled_graph_43/language_metrics.jsonl": {
+      "sha256": "8ae8daf19c1c96787f84d0c6f0ed21f94d427db54195885c551f664ee538d754",
+      "origin": "runs/development/shuffled_graph_43/language_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_43/language_summary.json": {
+      "sha256": "63aa086ff8320690ec5eac37cf65bb88cca9d60b4bc3be570d56ac0392085061",
+      "origin": "runs/development/shuffled_graph_43/language_summary.json"
+    },
+    "gpu/shuffled_graph_43/ppt_metrics.jsonl": {
+      "sha256": "323d1c2991200144b30f6f126255c3573820008e4ef611ace5a51adc85644b79",
+      "origin": "runs/development/shuffled_graph_43/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_graph_43/ppt_summary.json": {
+      "sha256": "0dd02c2a6af8d383c44c3dd6ee16d4def7e42a149ab27f364ac04e8eea15be7b",
+      "origin": "runs/development/shuffled_graph_43/ppt_summary.json"
+    },
+    "gpu/shuffled_nca_17/language_metrics.jsonl": {
+      "sha256": "5d39fb0ccdbaa13246904eb2527f9c024a79a6b8ab91ec29300789c159625ecf",
+      "origin": "runs/development/shuffled_nca_17/language_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_17/language_summary.json": {
+      "sha256": "712696a56bbb0cb9253f512791d8369d441bc5aa5b52269bf257a95de47f784c",
+      "origin": "runs/development/shuffled_nca_17/language_summary.json"
+    },
+    "gpu/shuffled_nca_17/ppt_metrics.jsonl": {
+      "sha256": "51707db32f65faf8471a62cb36ae26a10be14470b5e9922c8276b6303ee63b6c",
+      "origin": "runs/development/shuffled_nca_17/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_17/ppt_summary.json": {
+      "sha256": "1564d2977d50d5377c0d775e58a57aa5dc99ffabb3f2e63e4cf17ea8f11dfc14",
+      "origin": "runs/development/shuffled_nca_17/ppt_summary.json"
+    },
+    "gpu/shuffled_nca_29/language_metrics.jsonl": {
+      "sha256": "9c7212947ea3cf324a5cc40bc30ba512b4e049e78a0aa76f965e0cdb482599dd",
+      "origin": "runs/development/shuffled_nca_29/language_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_29/language_summary.json": {
+      "sha256": "269abe871d38394e9cf176dbb1a50350b88b56b31bdc429b164fbe140079dd20",
+      "origin": "runs/development/shuffled_nca_29/language_summary.json"
+    },
+    "gpu/shuffled_nca_29/ppt_metrics.jsonl": {
+      "sha256": "631bd16a3b61ac9115a912bf0beb0406eb311878d7fc1fb3f4d032fc9728e5e3",
+      "origin": "runs/development/shuffled_nca_29/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_29/ppt_summary.json": {
+      "sha256": "651617259a7623dca7750f47841920cfc778bbaa2756906cbb110334e22c257e",
+      "origin": "runs/development/shuffled_nca_29/ppt_summary.json"
+    },
+    "gpu/shuffled_nca_43/language_metrics.jsonl": {
+      "sha256": "bc1485ec747e00543826c4df951b18dd4488f079b7874556df5ab7e9304e6b2c",
+      "origin": "runs/development/shuffled_nca_43/language_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_43/language_summary.json": {
+      "sha256": "6e8219b8df47592a36daa27157db3125f6755f7c2ac8dfc478765b368d41c39b",
+      "origin": "runs/development/shuffled_nca_43/language_summary.json"
+    },
+    "gpu/shuffled_nca_43/ppt_metrics.jsonl": {
+      "sha256": "af656a577210f0fe9815e07a5107124480d759259d082670da3d94cfb47a42ca",
+      "origin": "runs/development/shuffled_nca_43/ppt_metrics.jsonl"
+    },
+    "gpu/shuffled_nca_43/ppt_summary.json": {
+      "sha256": "29dcd1c766b9e36dceb6cbddaf29436cf72320ed2b72365cabe838bcea425f23",
+      "origin": "runs/development/shuffled_nca_43/ppt_summary.json"
+    }
+  }
+}

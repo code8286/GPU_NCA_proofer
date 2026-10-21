@@ -1,0 +1,42 @@
+[
+  {
+    "arm": "scratch",
+    "mean_final_validation_nll": 5.266090889771779,
+    "perplexity_from_mean_nll": 193.65745253340364,
+    "geomean_language_tokens_speedup_vs_scratch": 1.0,
+    "geomean_language_seconds_speedup_vs_scratch": 1.0,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 1.0
+  },
+  {
+    "arm": "grid_nca",
+    "mean_final_validation_nll": 5.237811426321666,
+    "perplexity_from_mean_nll": 188.2576355073887,
+    "geomean_language_tokens_speedup_vs_scratch": 1.1122565872945904,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1162458325726456,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8384429475737575
+  },
+  {
+    "arm": "graph_nca",
+    "mean_final_validation_nll": 5.232261687517166,
+    "perplexity_from_mean_nll": 187.21574857667505,
+    "geomean_language_tokens_speedup_vs_scratch": 1.1778306710513218,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1810445495429065,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8716540343344168
+  },
+  {
+    "arm": "shuffled_nca",
+    "mean_final_validation_nll": 5.234889229138692,
+    "perplexity_from_mean_nll": 187.7083125810894,
+    "geomean_language_tokens_speedup_vs_scratch": 1.1122565872945904,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1119157122855219,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8346898691972118
+  },
+  {
+    "arm": "shuffled_graph",
+    "mean_final_validation_nll": 5.2348887125651045,
+    "perplexity_from_mean_nll": 187.708215615958,
+    "geomean_language_tokens_speedup_vs_scratch": 1.133651362765851,
+    "geomean_language_seconds_speedup_vs_scratch": 1.1341644761214034,
+    "geomean_cumulative_seconds_speedup_vs_scratch": 0.8459107652278886
+  }
+]

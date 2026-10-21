@@ -1,0 +1,24 @@
+{
+  "arm": "coherent",
+  "seed": 131,
+  "steps": 1000,
+  "input_tokens": 188000,
+  "prediction_targets": 168000,
+  "checkpoint_sha256": "ab8e3c5427e515c89b4dc672f0bde464cbd215ab5b32e7dcdd2815e963a82820",
+  "initial_core_sha256": "a3daef693ed8363b07d4257f0e4f24f2d5be58e998ed217b8931a1c85ad49a83",
+  "initial_head_sha256": "113bf6f6208f2412e1d27aa7f33ed93d5774a1601a57efc9153b306a81502f10",
+  "final_core_sha256": "f7e095fc0e9c65b74a6e763d81c3c432768fbefcb53b3117bb5d2f5bc3e54b60",
+  "final_head_sha256": "5a4552d8dc94c959addf323f759f7fbda5df0a9c5c745dbbcffc0a727e2c3e4a",
+  "train_order_sha256": "0195e6607098ab7b492a9009d6030023a612c3074c64630898c4c0b8c33bfae3",
+  "final_development": {
+    "nll": 0.04454333086808523,
+    "targets": 2688,
+    "patch_nll": 0.052280960870640616,
+    "patch_accuracy": 1.0,
+    "patch_targets": 1792,
+    "rules": 64
+  },
+  "stage_seconds": 69.02734929998405,
+  "parameter_count": 2660160,
+  "backbone_parameters": 2656704
+}

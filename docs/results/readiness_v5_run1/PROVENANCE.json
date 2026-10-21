@@ -1,0 +1,33 @@
+{
+  "scope": "New CPU diagnostic on inspected v4 rules; no neural training or language evaluation",
+  "files": {
+    "plan.json": {
+      "sha256": "774e9deefe517adf2b93e7c40c3b1242fa4c97e1942a36e5df9b2db576c678f3",
+      "origin": "Frozen readiness CPU run: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "09ec925c298f9a0e6eaf9e0f1f5e96edc89f409e03f377979d96c5f7c2fe51fd",
+      "origin": "Frozen readiness CPU run: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "7619ee1e3f815dcb72fcb9c2dad764b749d9a7d8774714104b57806da4ae7ab8",
+      "origin": "Frozen readiness CPU run: FROZEN_PROTOCOL.md"
+    },
+    "results.json": {
+      "sha256": "be515494a3f1ddb503fb514d909d932d6f66acc751eb0895d036dc14160487e0",
+      "origin": "Frozen readiness CPU run: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "d1ca709da1941e460ab877f717ead81332a51ed0eeaf7742616fbd6348d23318",
+      "origin": "Frozen readiness CPU run: results_receipt.json"
+    },
+    "positive_control.json": {
+      "sha256": "182040d2ec61a8ca24a49021627d181c9846eb15b908d04d253c3aee6bcd4edf",
+      "origin": "Frozen readiness CPU run: positive_control.json"
+    },
+    "status.json": {
+      "sha256": "3939aac4a2555f6c21a0a4aa0a9a2042799bebc30ada58aa36d1c371e6de046a",
+      "origin": "Frozen readiness CPU run: status.json"
+    }
+  }
+}

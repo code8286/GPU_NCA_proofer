@@ -1,0 +1,143 @@
+{
+  "models": [
+    {
+      "arm": "coherent",
+      "seed": 131,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "5c09f7c0dd7a1447321c6ecc0a72d306d84240a1ce9531ebe6ef99b537c2da48",
+      "initial_core_sha256": "a3daef693ed8363b07d4257f0e4f24f2d5be58e998ed217b8931a1c85ad49a83",
+      "initial_head_sha256": "113bf6f6208f2412e1d27aa7f33ed93d5774a1601a57efc9153b306a81502f10",
+      "final_core_sha256": "b2067ab31792ce21259b276a81af6e37a311ede66d77985503b0ff78667ba448",
+      "final_head_sha256": "3816e08bbc76c2506d9b5afff5811207de70621545e03fb20c3c3a8f0cf4ed50",
+      "train_order_sha256": "0195e6607098ab7b492a9009d6030023a612c3074c64630898c4c0b8c33bfae3",
+      "final_unweighted_development": {
+        "nll": 0.891723462513515,
+        "targets": 2688,
+        "patch_nll": 1.3225006886890955,
+        "patch_accuracy": 0.5106026785714286,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 77.65855469997041,
+      "summary_sha256": "3557e84d1f1e2cec46e5b0573c307334f0f62094b11b7fb14d2b31cf29e31530"
+    },
+    {
+      "arm": "prefix",
+      "seed": 131,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "b57dc8547422c24291c30445ee1d56ecc277799a3cf708c0fdb0fd9d97c0e056",
+      "initial_core_sha256": "a3daef693ed8363b07d4257f0e4f24f2d5be58e998ed217b8931a1c85ad49a83",
+      "initial_head_sha256": "113bf6f6208f2412e1d27aa7f33ed93d5774a1601a57efc9153b306a81502f10",
+      "final_core_sha256": "a751ee58c4924dced229c112ef85625276b07080ccc21e1f7a2e81b1566f3cf8",
+      "final_head_sha256": "f0871bcc103f23bb79887d346ed298c4a4aad67b14b7be4b34e112cf3e3a59a3",
+      "train_order_sha256": "0195e6607098ab7b492a9009d6030023a612c3074c64630898c4c0b8c33bfae3",
+      "final_unweighted_development": {
+        "nll": 1.4977410974956693,
+        "targets": 2688,
+        "patch_nll": 2.23282185622624,
+        "patch_accuracy": 0.19587053571428573,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 70.9474443999934,
+      "summary_sha256": "4871c0a0b9ea95249608739433a7057abfe0245ce3d12f20f51c29fc44776867"
+    },
+    {
+      "arm": "coherent",
+      "seed": 149,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "26b955a51e5fcd3cd89946317e03b610f4d10de23c4128c64af729398651bad8",
+      "initial_core_sha256": "542482c62ca4fbdac80c43f9ae96a5a98e8f21c22519376ce8209deea9f2eaac",
+      "initial_head_sha256": "27da727837857adbc83d500a7b9361560505a491491f972568e38b0279e0c7a3",
+      "final_core_sha256": "f362bd9aced3389070ebb861a4219460ebf1f0e1bd0ffd67a3ccdea6346f5d0f",
+      "final_head_sha256": "2da245269bba3e11f4ee742d4ba12c4d78cfa4244d86a474cf8e31388c17647a",
+      "train_order_sha256": "de17bdad60f521ae2a38e22a67d59d049a7d92fdb2bebafa0851e6c4eebd0e85",
+      "final_unweighted_development": {
+        "nll": 0.9255273682730538,
+        "targets": 2688,
+        "patch_nll": 1.3735666615622384,
+        "patch_accuracy": 0.5083705357142857,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 72.93491850001737,
+      "summary_sha256": "4755c969a110eee07e070ea82a34a509016d590d512d49f5f60b0f022afabcb6"
+    },
+    {
+      "arm": "prefix",
+      "seed": 149,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "d9ec77be164196a0d6319b69eba0baf1bd64c2156722af65e6d04e3593536acd",
+      "initial_core_sha256": "542482c62ca4fbdac80c43f9ae96a5a98e8f21c22519376ce8209deea9f2eaac",
+      "initial_head_sha256": "27da727837857adbc83d500a7b9361560505a491491f972568e38b0279e0c7a3",
+      "final_core_sha256": "e069ee014c86b76332ee2064f1868407448b2e1513b725ec8d65f68850238f30",
+      "final_head_sha256": "f1dce5ecd30e5cd12ad03eba632b3d91f031341a74fdf99acb56473d8d3fdb85",
+      "train_order_sha256": "de17bdad60f521ae2a38e22a67d59d049a7d92fdb2bebafa0851e6c4eebd0e85",
+      "final_unweighted_development": {
+        "nll": 1.4960761524382091,
+        "targets": 2688,
+        "patch_nll": 2.2303044285093034,
+        "patch_accuracy": 0.19363839285714285,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 71.9348742000293,
+      "summary_sha256": "354d571c561e09d976e831e3d089c9caee08205281c21f5710f2ef9d0384c424"
+    },
+    {
+      "arm": "coherent",
+      "seed": 167,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "0c8a40d30dd0b99a25ca89be7b528e0d4222b12a274c34cc1ebeae152540ea7c",
+      "initial_core_sha256": "df8b9d0ab44fde49e41b87f6aa9bc21f695afd18afc188f79709699ee9774ffa",
+      "initial_head_sha256": "b779cfe87d681dfce42832253648c98c13f65c934449512f9ba541a7fc6a147c",
+      "final_core_sha256": "d84c952b1a53ecd831544a7c46f14735dbe410f9acb1def742801e3885e65887",
+      "final_head_sha256": "74ac72a9016752c39e2aafb99b61ff3414ebafe13fe75f86fa245555274db9a7",
+      "train_order_sha256": "d85a981cbb0efaac899d2b0bd982e6df1e7f3572ee26814ad2366b9276c51ecb",
+      "final_unweighted_development": {
+        "nll": 0.9575614020937965,
+        "targets": 2688,
+        "patch_nll": 1.4205527986798967,
+        "patch_accuracy": 0.47154017857142855,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 77.76201800000854,
+      "summary_sha256": "95bf53736e3f5cc74f927eaf12e8af302c99bf326edb5e108f167213d3c52821"
+    },
+    {
+      "arm": "prefix",
+      "seed": 167,
+      "steps": 1000,
+      "input_tokens": 188000,
+      "prediction_targets": 168000,
+      "checkpoint_sha256": "9358ebd84a18731cdfe580c557ca3fe8158a437c1a109c1314d2dd0da4af4af4",
+      "initial_core_sha256": "df8b9d0ab44fde49e41b87f6aa9bc21f695afd18afc188f79709699ee9774ffa",
+      "initial_head_sha256": "b779cfe87d681dfce42832253648c98c13f65c934449512f9ba541a7fc6a147c",
+      "final_core_sha256": "a8b97e1422138d133d2433f0d310653bd98d1b10dc668160b6cca545dc5f7563",
+      "final_head_sha256": "5a8a1bdfc69072d507b666feefece703375c95bad2e7e2e74fa7574c007c9f20",
+      "train_order_sha256": "d85a981cbb0efaac899d2b0bd982e6df1e7f3572ee26814ad2366b9276c51ecb",
+      "final_unweighted_development": {
+        "nll": 1.5000359217325847,
+        "targets": 2688,
+        "patch_nll": 2.2352502005440846,
+        "patch_accuracy": 0.18638392857142858,
+        "patch_targets": 1792,
+        "rules": 64
+      },
+      "stage_seconds": 77.61033779999707,
+      "summary_sha256": "69b12df9b36cdcea1064b0c965d11d109e1557e10ee4870b6dba7bfc9d0138bf"
+    }
+  ],
+  "plan_sha256": "d8d69d609cf9de8b1bf683397eebdc8468ce5b82513f653d142a4e2481a21abf"
+}

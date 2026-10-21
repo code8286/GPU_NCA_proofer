@@ -1,0 +1,33 @@
+{
+  "scope": "Post-hoc inspected-development inference only; no new training or confirmation",
+  "files": {
+    "plan.json": {
+      "sha256": "73eca0060bef35833a4579b3dc2c04f1353a093b90446621ba0dfb75f81aca9f",
+      "origin": "Frozen split-fit diagnostic: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "83254caf4f998d47842e801285405943d3707b23e6a9d9091dde4a5b069628bd",
+      "origin": "Frozen split-fit diagnostic: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "c31f5dee11e68fb19acd40f940a3fd9a592a40b19dab51d46a977fbbaea77961",
+      "origin": "Frozen split-fit diagnostic: FROZEN_PROTOCOL.md"
+    },
+    "results.json": {
+      "sha256": "47b41e77c3efd2734bb917042262e6e27cc9d7f5badd0019596546e189edfd06",
+      "origin": "Frozen split-fit diagnostic: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "cc9a01c73fcc8457b2215607a9f07a082ae271de4134379a34db0f3026fc4a25",
+      "origin": "Frozen split-fit diagnostic: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "3b8d34862a72428202c95313f88a83d9e3fa22cb98078034da419c999009524b",
+      "origin": "Frozen split-fit diagnostic: verification.json"
+    },
+    "status.json": {
+      "sha256": "76bbc7f22b8dc25f8ba7aa0f6fc04c0a9847f4072131663f2edc35f01844ea6e",
+      "origin": "Frozen split-fit diagnostic: status.json"
+    }
+  }
+}

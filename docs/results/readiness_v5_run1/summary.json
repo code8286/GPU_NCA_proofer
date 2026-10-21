@@ -1,0 +1,31 @@
+{
+  "families": [
+    {
+      "arm": "grid_nca",
+      "cohorts": 6,
+      "frequency_passes": 0,
+      "ordering_passes": 0,
+      "both_passes": 0,
+      "mean_frequency_advantage_nats": -0.5875455340730328,
+      "mean_ordering_advantage_nats": 0.000849306333990422,
+      "mean_prefix_model_ordering_gap": 0.00075687287359442,
+      "mean_difference_in_ordering_gaps": 9.243346039600198e-05
+    },
+    {
+      "arm": "graph_nca",
+      "cohorts": 6,
+      "frequency_passes": 0,
+      "ordering_passes": 0,
+      "both_passes": 0,
+      "mean_frequency_advantage_nats": -0.29795116535117633,
+      "mean_ordering_advantage_nats": 0.0009873211927753367,
+      "mean_prefix_model_ordering_gap": 0.0008852133232881698,
+      "mean_difference_in_ordering_gaps": 0.00010210786948716688
+    }
+  ],
+  "language_blocked_by_guard": true,
+  "approved_initializations": [],
+  "maximum_native_cell_replay_error": 1.6155660631511637e-07,
+  "positive_control_passed": true,
+  "plan_sha256": "774e9deefe517adf2b93e7c40c3b1242fa4c97e1942a36e5df9b2db576c678f3"
+}

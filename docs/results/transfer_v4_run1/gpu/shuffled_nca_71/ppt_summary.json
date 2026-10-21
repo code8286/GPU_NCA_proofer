@@ -1,0 +1,49 @@
+{
+  "arm": "shuffled_nca",
+  "seed": 71,
+  "ppt_updates": 1000,
+  "ppt_tokens": 4096000,
+  "ppt_prediction_targets": 3948000,
+  "initial": {
+    "nll": 9.243788513369111,
+    "targets": 31584,
+    "patch_nll": 9.23829592191256,
+    "patch_accuracy": 0.0006009615384615385,
+    "patch_targets": 29952,
+    "rules": 32
+  },
+  "selected": {
+    "nll": 7.712926491657168,
+    "targets": 31584,
+    "patch_nll": 8.12321534116044,
+    "patch_accuracy": 0.019464476495726496,
+    "patch_targets": 29952,
+    "rules": 32
+  },
+  "selected_step": 1000,
+  "controls": {
+    "unigram_patch_nll": 8.747441789618595,
+    "copy_mixture_patch_nll": 8.738046485693808,
+    "copy_mixture_weight_fitted_on_train": 0.01,
+    "unigram_patch_accuracy": 0.008547008547008548,
+    "previous_frame_patch_accuracy": 0.007044604700854701,
+    "patch_targets": 29952
+  },
+  "gate": {
+    "passed": true,
+    "enforced": true,
+    "relative_patch_nll_improvement": 0.12070197687727559,
+    "improvement_over_best_control_nats": 0.6148311445333672,
+    "required_relative_improvement": 0.05,
+    "required_baseline_margin_nats": 0.01,
+    "control_scope": "Unseen-rule validation; control probabilities fitted only on synthetic train prefixes"
+  },
+  "core_initial_sha256": "3388542bb8475a4d878889ad38df19a26dd2398df30c22ac3a5495a2eacc774e",
+  "train_order_sha256": "36800a8113c4e956e2827e5f05adcaa4a7f9c1c3fd7c477c40e55b12fda49642",
+  "train_seconds": 121.39855452900338,
+  "stage_seconds": 129.3512053710001,
+  "checkpoint": "ppt_selected.pt",
+  "checkpoint_sha256": "fa9d00dab5677f1397e77f8d5d9fef226b0f5611e3b626ba046649df6a412610",
+  "final_checkpoint_sha256": "fa9d00dab5677f1397e77f8d5d9fef226b0f5611e3b626ba046649df6a412610",
+  "selection_policy": "Minimum held-out-rule patch NLL; full declared PPT budget is charged regardless of selected step"
+}

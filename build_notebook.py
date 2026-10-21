@@ -1,5 +1,6 @@
 """Build the portable Kaggle notebook directly from the checked project sources."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import zipfile
@@ -152,11 +153,15 @@ def main():
     target.write_text(rendered, encoding="utf-8", newline="\n")
     # The local starter archive is a complete source snapshot; the notebook
     # embeds only the files needed by its direct scientific execution cells.
-    from scripts.check_release import MANIFEST, inventory, selected_files
+    from scripts.check_release import MANIFEST, inventory
+    snapshot = inventory(ROOT)
     with zipfile.ZipFile(ROOT / "gnn_nca_starter.zip", "w", compression=zipfile.ZIP_DEFLATED) as z:
-        for name in selected_files(ROOT):
-            z.write(ROOT/name, name)
-        z.writestr(MANIFEST, json.dumps(inventory(ROOT), indent=2) + "\n")
+        for name, expected_hash in snapshot['files'].items():
+            content = (ROOT/name).read_bytes()
+            if hashlib.sha256(content).hexdigest() != expected_hash:
+                raise ValueError(f'Publication input changed while packaging: {name}; rebuild the snapshot')
+            z.writestr(name, content)
+        z.writestr(MANIFEST, json.dumps(snapshot, indent=2) + "\n")
     print(f"Wrote {target.name}: {len(cells)} cells; embedded sources match local files.")
 
 

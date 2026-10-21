@@ -1,0 +1,53 @@
+{
+  "scope": "Known self-local cell rule; held-out initial conditions, not unseen rules or transformer competence",
+  "train_trajectories": 256,
+  "held_out_trajectories": 32,
+  "complement_equivalence_classes_disjoint": true,
+  "transition_table_recovers_rule": true,
+  "concentration": 1,
+  "concentration_fit": [
+    {
+      "concentration": 0.1,
+      "train_patch_nll": 2.5032603445821957
+    },
+    {
+      "concentration": 1,
+      "train_patch_nll": 2.298793864287269
+    },
+    {
+      "concentration": 10,
+      "train_patch_nll": 2.3095564853078487
+    },
+    {
+      "concentration": 100,
+      "train_patch_nll": 2.6069010492512055
+    },
+    {
+      "concentration": 1000,
+      "train_patch_nll": 2.7460284704658084
+    },
+    {
+      "concentration": 10000,
+      "train_patch_nll": 2.766116598401325
+    }
+  ],
+  "learned_coherent_nll": 0.033056308647650696,
+  "learned_shuffled_nll": 5.0952851586084815,
+  "frequency_nll": 2.4178893247662336,
+  "frequency_shuffled_nll": 2.4178893247662336,
+  "learned_gate": {
+    "frequency_advantage_nats": 2.384833016118583,
+    "ordering_advantage_nats": 5.062228849960831,
+    "frequency_passed": true,
+    "ordering_passed": true,
+    "passed": true
+  },
+  "frequency_negative_gate": {
+    "frequency_advantage_nats": 0.0,
+    "ordering_advantage_nats": 0.0,
+    "frequency_passed": false,
+    "ordering_passed": false,
+    "passed": false
+  },
+  "passed": true
+}

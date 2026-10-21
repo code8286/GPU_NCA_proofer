@@ -1,0 +1,22 @@
+{
+  "arm": "coherent",
+  "seed": 131,
+  "steps": 1000,
+  "input_tokens": 188000,
+  "prediction_targets": 168000,
+  "checkpoint_sha256": "5c09f7c0dd7a1447321c6ecc0a72d306d84240a1ce9531ebe6ef99b537c2da48",
+  "initial_core_sha256": "a3daef693ed8363b07d4257f0e4f24f2d5be58e998ed217b8931a1c85ad49a83",
+  "initial_head_sha256": "113bf6f6208f2412e1d27aa7f33ed93d5774a1601a57efc9153b306a81502f10",
+  "final_core_sha256": "b2067ab31792ce21259b276a81af6e37a311ede66d77985503b0ff78667ba448",
+  "final_head_sha256": "3816e08bbc76c2506d9b5afff5811207de70621545e03fb20c3c3a8f0cf4ed50",
+  "train_order_sha256": "0195e6607098ab7b492a9009d6030023a612c3074c64630898c4c0b8c33bfae3",
+  "final_unweighted_development": {
+    "nll": 0.891723462513515,
+    "targets": 2688,
+    "patch_nll": 1.3225006886890955,
+    "patch_accuracy": 0.5106026785714286,
+    "patch_targets": 1792,
+    "rules": 64
+  },
+  "stage_seconds": 77.65855469997041
+}

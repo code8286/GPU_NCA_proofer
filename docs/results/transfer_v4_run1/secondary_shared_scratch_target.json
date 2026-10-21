@@ -1,0 +1,48 @@
+{
+  "scope": "Common scratch target, also used by the v4 co-primary tests; preserve full sign-test decisions in primary_analysis.json",
+  "records": [
+    {
+      "seed": 59,
+      "reference_nll": 5.27196991443634,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1700,
+      "language_token_speedup_graph_over_grid": 1.0
+    },
+    {
+      "seed": 71,
+      "reference_nll": 5.272154211997986,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1700,
+      "language_token_speedup_graph_over_grid": 1.0
+    },
+    {
+      "seed": 83,
+      "reference_nll": 5.280246764421463,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1700,
+      "language_token_speedup_graph_over_grid": 1.0
+    },
+    {
+      "seed": 97,
+      "reference_nll": 5.262572795152664,
+      "grid_language_updates": 1800,
+      "graph_language_updates": 1800,
+      "language_token_speedup_graph_over_grid": 1.0
+    },
+    {
+      "seed": 109,
+      "reference_nll": 5.286953300237656,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1700,
+      "language_token_speedup_graph_over_grid": 1.0
+    },
+    {
+      "seed": 127,
+      "reference_nll": 5.269839823246002,
+      "grid_language_updates": 1700,
+      "graph_language_updates": 1800,
+      "language_token_speedup_graph_over_grid": 0.9444444444444444
+    }
+  ],
+  "geomean_language_token_speedup_graph_over_grid": 0.9905188301157578
+}

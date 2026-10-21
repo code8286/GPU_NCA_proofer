@@ -38,6 +38,18 @@ def main():
                   for p in sorted((ROOT / 'transfer_v2').glob('*.py'))}
     v3_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
                   for p in sorted((ROOT / 'transfer_v3').glob('*.py'))}
+    v4_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                  for p in sorted((ROOT / 'transfer_v4').glob('*.py'))}
+    readiness_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                         for p in sorted((ROOT / 'readiness_v5').glob('*.py'))}
+    trainability_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                           for p in sorted((ROOT / 'trainability_v6').glob('*.py'))}
+    interaction_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                           for p in sorted((ROOT / 'interaction_v7').glob('*.py'))}
+    weighting_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                         for p in sorted((ROOT / 'loss_weight_v8').glob('*.py'))}
+    fit_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                   for p in sorted((ROOT / 'fit_v9').glob('*.py'))}
     tick = time.perf_counter()
     try:
         result = subprocess.run(command, cwd=args.cwd, env=env, capture_output=True,
@@ -62,6 +74,12 @@ def main():
         "experiment_sha256": hashlib.sha256((ROOT / "experiment.py").read_bytes()).hexdigest(),
         "transfer_v2_sources_sha256": v2_sources,
         "transfer_v3_sources_sha256": v3_sources,
+        "transfer_v4_sources_sha256": v4_sources,
+        "readiness_v5_sources_sha256": readiness_sources,
+        "trainability_v6_sources_sha256": trainability_sources,
+        "interaction_v7_sources_sha256": interaction_sources,
+        "loss_weight_v8_sources_sha256": weighting_sources,
+        "fit_v9_sources_sha256": fit_sources,
         "stdout": portable(stdout), "stderr": portable(stderr),
     }
     log = ROOT / "logs/checks.jsonl"

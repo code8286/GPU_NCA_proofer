@@ -1,0 +1,23 @@
+{
+  "schema_version": 6,
+  "purpose": "development_trainability",
+  "rule": "binary_cell_complement",
+  "seeds": [131, 149, 167],
+  "data_seed": 20261022,
+  "splits": {"train": 512, "development": 64, "assessment": 128},
+  "frames": 8,
+  "nca": {"grid": 4, "states": 2},
+  "model": {"layers": 6, "heads": 4, "width": 192, "context": 47},
+  "batch": 2,
+  "accumulate": 2,
+  "eval_batch": 8,
+  "eval_every": 100,
+  "ppt_eval_rules": 128,
+  "ppt": {"steps": 1000, "lr": 0.0001, "warmup_fraction": 0.1, "weight_decay": 0.0, "clip": null},
+  "minimum_frequency_advantage_nats": 0.01,
+  "minimum_ordering_advantage_nats": 0.01,
+  "frequency_fit_rules": 256,
+  "frequency_concentrations": [0.1, 1, 10, 100, 1000, 10000],
+  "selection": "final_declared_update",
+  "language_allowed": false
+}

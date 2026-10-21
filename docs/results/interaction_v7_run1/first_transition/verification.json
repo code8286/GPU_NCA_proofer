@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "replayed_cells": 18,
+  "results_sha256": "ddc3b10e8d66e3f2b542a01c06464bb1412d438548a4e6888b7eaae32524eaf4",
+  "language_allowed": false,
+  "logged_chronology": {
+    "supplement_completed_utc": "2026-10-19T18:53:32.408855+00:00",
+    "primary_assessment_started_utc": "2026-10-19T19:03:29.689028+00:00",
+    "supplement_frozen_during_training_before_assessment": true
+  }
+}

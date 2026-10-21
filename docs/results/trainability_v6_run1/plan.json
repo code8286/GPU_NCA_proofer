@@ -1,0 +1,104 @@
+{
+  "schema_version": 6,
+  "created_utc": "2026-10-19T18:23:14.754278+00:00",
+  "config": {
+    "schema_version": 6,
+    "purpose": "development_trainability",
+    "rule": "binary_cell_complement",
+    "seeds": [
+      131,
+      149,
+      167
+    ],
+    "data_seed": 20261022,
+    "splits": {
+      "train": 512,
+      "development": 64,
+      "assessment": 128
+    },
+    "frames": 8,
+    "nca": {
+      "grid": 4,
+      "states": 2
+    },
+    "model": {
+      "layers": 6,
+      "heads": 4,
+      "width": 192,
+      "context": 47
+    },
+    "batch": 2,
+    "accumulate": 2,
+    "eval_batch": 8,
+    "eval_every": 100,
+    "ppt_eval_rules": 128,
+    "ppt": {
+      "steps": 1000,
+      "lr": 0.0001,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0,
+      "clip": null
+    },
+    "minimum_frequency_advantage_nats": 0.01,
+    "minimum_ordering_advantage_nats": 0.01,
+    "frequency_fit_rules": 256,
+    "frequency_concentrations": [
+      0.1,
+      1,
+      10,
+      100,
+      1000,
+      10000
+    ],
+    "selection": "final_declared_update",
+    "language_allowed": false
+  },
+  "source_sha256": {
+    "trainability_v6/__init__.py": "642988988cc21fe055c8bbd53649c0f516e8c37d1e928b02fec80378e3d11eea",
+    "trainability_v6/data.py": "8a01068b366194a84b1ea775b136fa8c14d2997f6cebdd488d541f9bca864e3d",
+    "trainability_v6/plan.py": "01bb39b9ad5f621bbd0b04d57e60ee4e989a2d7ca30110d263f6387e0715e21b",
+    "trainability_v6/run.py": "8695fe651299a211aabbba862e99e821d490614bdd4169f342f6032d8c77b69b",
+    "readiness_v5/__init__.py": "2da8a58b8d8dad7ceec5a5a7ff7137259e312ffd93f317efa6e2cd6d5dcbd167",
+    "readiness_v5/evaluate.py": "0cd1b2a2ccc6ede6ea08b6041905ceb8fee938acd77de021032273cf2d111b70",
+    "readiness_v5/frequency.py": "5076ac2ae3eeb883ba68da1e00cc6b0e8acc7021c73a65d1a01a32f6ba4e8821",
+    "readiness_v5/gate.py": "eff3d6e5c08c05d705cb464b8c56e36f91d738a0e91344214da4e176988be110",
+    "readiness_v5/plan.py": "b0bc6d6055eec6eb42800fd0378cf0a1e36a4882c74c7e98feed5e40ae1c69a9",
+    "readiness_v5/positive_control.py": "622513d923d1e5144eaa040d0af07bfc9a2069bb05a7bcdf3700d44e0cf5fd1b",
+    "readiness_v5/run.py": "3fa075474a413f7c64cba48bcf6ade0148cf7c9c7509a403d88a48dbed9b19fa"
+  },
+  "v4_source_sha256": {
+    "__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+    "analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+    "calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+    "data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+    "graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+    "report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+    "run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+    "training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+    "verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4"
+  },
+  "protocol_sha256": "a6ec9bce877b1def16e0a9d4fd48d1c183559a4276eb3846d2d3dc13bdd526ce",
+  "input_files_sha256": {
+    "data/train.npy": "3a91fd1a2599d36ccaf9cb68296264b17397a25ea29199296b927c24ef8497ca",
+    "data/prefix_train.npy": "88c0586ffb46751d976ac18dc071bcd50534736ea4e126c65cf5f6a709fb6e5e",
+    "data/development.npy": "d0eba29ef108714f27f527fdedb7ae2befce447546f97f909cbbc5f5f47d0ee3",
+    "data/prefix_development.npy": "df4c76ccbf31fd0d36febe092a8b26c28617ad1288393720d0e65c23e1b5574f",
+    "data/assessment.npy": "761fdf618afeeaf4f1c61219b99997eacb853c2656b3ffc40fe83c2fdc81f626",
+    "data/prefix_assessment.npy": "fbb4f97ae53b52397f034e41857a06cc6e3aa465d07c8ebec658c0dc9f37c9d7",
+    "data/split_identities.json": "3a15b2ace63d40a6e3394e40dc238937c5deca706777d1152c40283ce142f469",
+    "initialization_131.pt": "63a8cdcec17ed81c5b7655efa8b1def85de27c9b57ddb52c3a91f908716d1057",
+    "initialization_149.pt": "11fbd4a2280f6cda3f44778720521dca1d6ca4f76b9f4c6ebb0e3085a40ef1e0",
+    "initialization_167.pt": "4c4200b2b78e7aab87e9e2aaab8ea8fd35ace606a82c73a8295f735d7d978fb2"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.2"
+  },
+  "scope": "Known self-local rule, held-out initial conditions, final checkpoints; no language stage"
+}

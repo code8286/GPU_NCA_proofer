@@ -1,0 +1,24 @@
+{
+  "rule": "spatial",
+  "treatment": "prefix",
+  "arm": "spatial_prefix",
+  "seed": 149,
+  "steps": 1000,
+  "input_tokens": 188000,
+  "prediction_targets": 168000,
+  "checkpoint_sha256": "3d24b3255624ecd1adfd74e40286bb78c9ea3becf21e8aca46de713438425a95",
+  "initial_core_sha256": "542482c62ca4fbdac80c43f9ae96a5a98e8f21c22519376ce8209deea9f2eaac",
+  "initial_head_sha256": "27da727837857adbc83d500a7b9361560505a491491f972568e38b0279e0c7a3",
+  "final_core_sha256": "4acc6891e2832b5ed2264665ffbd278f2c82136c6bb962970db7f4be709cfd12",
+  "final_head_sha256": "800fd114b06131c4f7e00266304fe1a825dc8d0704c4aaa590d8aded7d76a850",
+  "train_order_sha256": "de17bdad60f521ae2a38e22a67d59d049a7d92fdb2bebafa0851e6c4eebd0e85",
+  "final_development": {
+    "nll": 1.4524843352181571,
+    "targets": 2688,
+    "patch_nll": 2.1664733716419766,
+    "patch_accuracy": 0.19698660714285715,
+    "patch_targets": 1792,
+    "rules": 64
+  },
+  "stage_seconds": 65.62880720000248
+}

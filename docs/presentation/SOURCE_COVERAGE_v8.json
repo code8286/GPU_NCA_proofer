@@ -1,0 +1,1814 @@
+{
+  "schema_version": 2,
+  "date": "2026-10-20",
+  "deck": "GPU_NCA_Research_Detailed_v8.pptx",
+  "deck_sha256": "3e904da4e0f9b4e2b4f5fe2569d4856ef00d9b6b9aa6c81e5ca864558a5907a5",
+  "slide_count": 128,
+  "source_deck": {
+    "path": "docs/presentation/GPU_NCA_Research_Detailed_v2.pptx",
+    "sha256": "b76c1e7e2572bd0b385157cb3f74942d5725b61987d60fa9a0655da241ae9703",
+    "slides": 92
+  },
+  "prior_coverage": {
+    "path": "docs/presentation/SOURCE_COVERAGE.json",
+    "sha256": "aa7b57453b751d6b048946077ca3ea9dba39a61b6bb1b12fb0d2bf9d68dc1754",
+    "scope": "Historical authoring snapshot for the retained v2 theory, dataset views, plots and code."
+  },
+  "scope": "Authoring-time hashes of reviewed result records and canonical scientific sources. This is not a live publication manifest or a new experiment/proof execution.",
+  "reviewed_evidence_sha256": {
+    "docs/results/transfer_v3_run1/aggregate.json": "4717d9c68de35dcd70c85db6c3f184e0de51e0e85de580a0ebea056d06f9322e",
+    "docs/results/transfer_v3_run1/audit.json": "09c0a776005ffbc4c80f7952892d74bc946dc512b5264d4b394103780f92416d",
+    "docs/results/transfer_v3_run1/cpu_verification.json": "b23c74976b252173355db772e28a35b599fe6b42f6dd2123e787696b272b4a22",
+    "docs/results/transfer_v3_run1/generator_diagnostics.json": "f9146b71778b1393cb55964a9fd000206d339a046d9fb1d3b83985a10a7b3ee9",
+    "docs/results/transfer_v3_run1/metric_audit.json": "2fc9f304a1d2f62ed20933d33bcc99e44081bd76203aeb27f9e576514c52ac7d",
+    "docs/results/transfer_v3_run1/paired_graph_transfer.png": "d6fe682e2ec2cc4666362375bd2fb29cfe81d4141ed80ad12d474924c3964441",
+    "docs/results/transfer_v3_run1/paired_graph_transfer.svg": "6b6e911b48888be324b97202defc31339fb04f2f289dd6667da47b96cf50d367",
+    "docs/results/transfer_v3_run1/PROVENANCE.json": "4a1f1425060c3b53b6d93c652c00dde44f81ac2380f60bf405480e938510a470",
+    "docs/results/transfer_v3_run1/REVIEW.md": "dc4688f3146f89a7677edbc0a5c45bf2e91238b880d83c6d22085fe8e53db774",
+    "docs/results/transfer_v3_run1/secondary_shared_scratch_target.json": "500323d897bfedca70e66590bf1eb112ee2421d0ce38028a1dbb85c2d7668de7",
+    "docs/results/transfer_v3_run1/treatment_comparisons.csv": "81cea0d6bb4e6c4c13820da2809922f53743abe6eda0ea3b08d9fb50b43e9930",
+    "docs/results/transfer_v3_run1/gpu/environment.json": "7bed4ea91d919ed79993cb49834dba090d97cb946515778397dfc9d9d0708f9b",
+    "docs/results/transfer_v3_run1/gpu/learning_curves.png": "2f996309f658e8be0a5b0aaa381f9276c8e7916b61b93edd5702c4e599495e38",
+    "docs/results/transfer_v3_run1/gpu/ppt_diagnostics.png": "a60e7c9ec81e920aa91209e3d0bc7ee4c0c60afd36d3d265837bdfab3bdcd39d",
+    "docs/results/transfer_v3_run1/gpu/report.json": "2eeace7bed40cd2d3a29d8f68a6dae8034b09c7f062cd8c10fd95185938065e4",
+    "docs/results/transfer_v3_run1/gpu/status.json": "8edab15cab7464e05cb144ac197588fef79e253245379fa8353d15f51637f34a",
+    "docs/results/transfer_v3_run1/gpu/summary.csv": "6d7600a06097eae44130c5dbbceb851237e352e2c950343488e75dd78128d377",
+    "docs/results/transfer_v3_run1/gpu/verification.json": "b23996f952613493a0ecb59b2739202414d19ca1966a11e077d7c783c545468f",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_17/language_metrics.jsonl": "b80dd695f9d84ff10f1c33d5a8281fa878a12f3095bce21a5d18818ef4c4a13c",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_17/language_summary.json": "e386a2517ed65fc5aa95d97c30b0878d94fac92a5ffd47e23861d3ed8c3a5de3",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_17/ppt_metrics.jsonl": "c41c66c82c46ff4f6a8359b8f9203449a20772f13e2c499ebd392da719e766e8",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_17/ppt_summary.json": "e01fbdb6a8f67522c6d62cc624324494095f1f5297a95cb2a5190bc8fab02dbe",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_29/language_metrics.jsonl": "abfac89f74bf0d81ff1f02b1c18ee972aa80d298eaf8da5bde900a2d4565b29a",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_29/language_summary.json": "85dde081b077579c945e16f1113b3c855c92195c1e8291d40426d26a593a30b2",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_29/ppt_metrics.jsonl": "845926837a9f007168f2d5b210ffefcd782cb33381f386e904d0938d256d482e",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_29/ppt_summary.json": "9faf2777459785ce1879270af7730791179b46bd4a2d209ff60909e55b8ad020",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_43/language_metrics.jsonl": "6bb8335772f96a00109f3aaa5b6e2819560305f68b03473c7eefa72c0cc28b8b",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_43/language_summary.json": "5acaeb286048842b80c5496e61ab2f9abb03e30920132f6f68749592ae47c285",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_43/ppt_metrics.jsonl": "953f6a73638a40395d9e3b39333feb624156d19bf69a02f1fbe5be39fa95a2f1",
+    "docs/results/transfer_v3_run1/gpu/graph_nca_43/ppt_summary.json": "608bf2ac6c1178a12dec0125810ef71bde771c183410025b962c3b1275fdec83",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_17/language_metrics.jsonl": "a048a028e6bc7f0895cbee3ad8f1c2fad3a1262c67c7050f8d2ccc7b420a3688",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_17/language_summary.json": "963390d8d4ba2d469b842c379ededfa42d59e6aa7d6c1a97f02eb1db3714fd54",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_17/ppt_metrics.jsonl": "1d0c93d0b8e8fb4cbfa787e001fc4f26a8408f53ff94e121bb6810933795abd7",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_17/ppt_summary.json": "81ded09edc8eb09f3efd54b8285de33cff1354246249f778ada9b47772b072a0",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_29/language_metrics.jsonl": "c5fc814d69ca6942482e03cc4f1d2c7c90e2951ebfa54440a212dd19b8341f34",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_29/language_summary.json": "41511799ae918eb9147bc8b5bc5663f6cf5c23c65364c2572d3e860f5013d446",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_29/ppt_metrics.jsonl": "8af1abf3d280127db38e9d557b1cbb1485197472a858a767a1ef87db3556051e",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_29/ppt_summary.json": "5f98cbb1392cd26b8ac96a71306f6ca3e5b67fc3e502b8701a439fcc344a6aea",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_43/language_metrics.jsonl": "252925060dbdb2d6d8cc97566e9bfd18934747666ab72265c74e70558939e5f7",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_43/language_summary.json": "f92762328da09d3c924ca9081fee51b469044f5847cc81fbab3d09a452974a16",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_43/ppt_metrics.jsonl": "7160ccf0c0435eea10e3fa7ea5978a9d81e0bffd9d48b6443bda492c695ba50c",
+    "docs/results/transfer_v3_run1/gpu/grid_nca_43/ppt_summary.json": "314392a42acfb73d5b9e34f07efb648a605b47431f9ee1d7eb64583d4b2b5d29",
+    "docs/results/transfer_v3_run1/gpu/scratch_17/language_metrics.jsonl": "de7f19c53f34c066c01c5c7e82430ddd7a7a883307b952e4b4c238091a58be67",
+    "docs/results/transfer_v3_run1/gpu/scratch_17/language_summary.json": "1958ec44336337272d9b08101945081d9d68a2be0678e957992636b0fa2cbe7e",
+    "docs/results/transfer_v3_run1/gpu/scratch_29/language_metrics.jsonl": "abc81218ed28769a4c0737ad32ab4c8adeeb0ff49c7ba86720db930e8f7c6863",
+    "docs/results/transfer_v3_run1/gpu/scratch_29/language_summary.json": "828ad666c6b101887eb87ac2d0b9a9996ede1532d05c25587428a0cd644aa957",
+    "docs/results/transfer_v3_run1/gpu/scratch_43/language_metrics.jsonl": "25610c9f7302503b7bca3a419cc9e102a001b6ade7861377635ce352ca1ec6e1",
+    "docs/results/transfer_v3_run1/gpu/scratch_43/language_summary.json": "f97894f46f2c4556633327d3c05a2287a6e644a26fdaa5c8af2b18ec8ee7e59f",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_17/language_metrics.jsonl": "02b7b6b67fddc61da1c329dfa2fdeed35adeb5e76bfc753523db6f5cad46847d",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_17/language_summary.json": "c04049513cfb11528b646427ee08f4d9514c3c35f94228c7fb092e01017bf81f",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_17/ppt_metrics.jsonl": "da6020b889e59b3fef265da9daa53939088a17e74004ff9b841ea619eff4e197",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_17/ppt_summary.json": "0d46adf76af6d1a280e3251b313d966a9fd209d229b9f76c02323c832be80524",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_29/language_metrics.jsonl": "2d52911e9168321534e5b6072bf100bea320b54f3e5a07ea1c2c13ba328ec245",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_29/language_summary.json": "48e827eb1ddf97af083d72b19eeaf696ef8351265cf861de8d3cf61a8c56d8e5",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_29/ppt_metrics.jsonl": "9d42103dc9360938ce5f4e07927b5f1d5f29df3746a727ec79c17c0867818741",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_29/ppt_summary.json": "92bf4e0f6d82369b9ed8061e86dfb7a18c6e666c332332cff575ecfc22ab7197",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_43/language_metrics.jsonl": "8ae8daf19c1c96787f84d0c6f0ed21f94d427db54195885c551f664ee538d754",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_43/language_summary.json": "63aa086ff8320690ec5eac37cf65bb88cca9d60b4bc3be570d56ac0392085061",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_43/ppt_metrics.jsonl": "323d1c2991200144b30f6f126255c3573820008e4ef611ace5a51adc85644b79",
+    "docs/results/transfer_v3_run1/gpu/shuffled_graph_43/ppt_summary.json": "0dd02c2a6af8d383c44c3dd6ee16d4def7e42a149ab27f364ac04e8eea15be7b",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_17/language_metrics.jsonl": "5d39fb0ccdbaa13246904eb2527f9c024a79a6b8ab91ec29300789c159625ecf",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_17/language_summary.json": "712696a56bbb0cb9253f512791d8369d441bc5aa5b52269bf257a95de47f784c",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_17/ppt_metrics.jsonl": "51707db32f65faf8471a62cb36ae26a10be14470b5e9922c8276b6303ee63b6c",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_17/ppt_summary.json": "1564d2977d50d5377c0d775e58a57aa5dc99ffabb3f2e63e4cf17ea8f11dfc14",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_29/language_metrics.jsonl": "9c7212947ea3cf324a5cc40bc30ba512b4e049e78a0aa76f965e0cdb482599dd",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_29/language_summary.json": "269abe871d38394e9cf176dbb1a50350b88b56b31bdc429b164fbe140079dd20",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_29/ppt_metrics.jsonl": "631bd16a3b61ac9115a912bf0beb0406eb311878d7fc1fb3f4d032fc9728e5e3",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_29/ppt_summary.json": "651617259a7623dca7750f47841920cfc778bbaa2756906cbb110334e22c257e",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_43/language_metrics.jsonl": "bc1485ec747e00543826c4df951b18dd4488f079b7874556df5ab7e9304e6b2c",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_43/language_summary.json": "6e8219b8df47592a36daa27157db3125f6755f7c2ac8dfc478765b368d41c39b",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_43/ppt_metrics.jsonl": "af656a577210f0fe9815e07a5107124480d759259d082670da3d94cfb47a42ca",
+    "docs/results/transfer_v3_run1/gpu/shuffled_nca_43/ppt_summary.json": "29dcd1c766b9e36dceb6cbddaf29436cf72320ed2b72365cabe838bcea425f23",
+    "docs/results/transfer_v4_run1/aggregate.json": "efc11cedd82b0d4f114b6c32c3c3fd81c006a79dfb1cd85329f38e1d51ffa339",
+    "docs/results/transfer_v4_run1/audit.json": "4b67f24e8595376e9b566253c1a7662552fa4bf5a3f7a64ad8d4d14243d82960",
+    "docs/results/transfer_v4_run1/cpu_verification.json": "69f2acc0850b058f0926ef0cb5bb0017554152a202b94c9042cc6dd44f22a33a",
+    "docs/results/transfer_v4_run1/frequency_diagnostic.json": "cddf3fbcdf6a4bbe219e13966a666c66aab6afa3a553c05fbff3f0508882529b",
+    "docs/results/transfer_v4_run1/generator_diagnostics.json": "59f0ef75b712719faa14b57f9f1b21b738e15439657c9ffc20b53a720366582c",
+    "docs/results/transfer_v4_run1/metric_audit.json": "4892a090ec177b00261e8624ea7ac8a0d6fc33ca1a1c2730d6c434dd98938c71",
+    "docs/results/transfer_v4_run1/paired_graph_transfer.png": "9d5648ebf7e26b4cadeec33a719c6137ad56dea8d7c3bf8dbaf0c6a8512ef267",
+    "docs/results/transfer_v4_run1/paired_graph_transfer.svg": "5b06858cc31e5247170532b48042cfe768612b01441743be1ade507045a01f1a",
+    "docs/results/transfer_v4_run1/paired_target_crossings.csv": "3dd77135339dcde6c3c1a523f55b12c888d2c3b0b7a19583b7d6de238a1aa1a3",
+    "docs/results/transfer_v4_run1/primary_analysis.json": "6fe9ef7b4d88e78d0b2e38f135308e96ef41f255dc6f734471ffd5d74ca2e231",
+    "docs/results/transfer_v4_run1/PROVENANCE.json": "30dc23eaae724c496b9ab86e140cf005a48b22bef937e3d5cbcfbb0e3a4662f7",
+    "docs/results/transfer_v4_run1/REVIEW.md": "556c6982eceb1cc174a6293587259d6697db8aef0fa6b325bca72086232fc207",
+    "docs/results/transfer_v4_run1/secondary_shared_scratch_target.json": "a796e1480e2c1f767caa3ea0bc9ef94d5626861bdfc8522939c64d64f980ff5f",
+    "docs/results/transfer_v4_run1/timing_summary.json": "ad00181165945f7d3f4621220bedc653ceb85a96969a5ef3380e67ee67e4cde0",
+    "docs/results/transfer_v4_run1/treatment_comparisons.csv": "8652a370ccf9b08d6d7655c36cc85e7cd56c98567e0820d51d8f86164189d1d4",
+    "docs/results/transfer_v4_run1/gpu/analysis_plan.json": "48c229bccecb7c2b677fdf1f4f1cfb18a43ecc49e802d9acb7d65103d2ac6574",
+    "docs/results/transfer_v4_run1/gpu/calibration.json": "1fc91415da23dba12e78a4e159fee823bd533b516c0f29774e9e73fecddf4866",
+    "docs/results/transfer_v4_run1/gpu/environment.json": "050653bc2602503ded515b5b60da68370fc7146f6975a293491a1c1dbc6f6aa8",
+    "docs/results/transfer_v4_run1/gpu/FROZEN_PROTOCOL.md": "b13ddf4b966047ce209581f64bacee328eb0f21976a78d8008b6a141837b9da8",
+    "docs/results/transfer_v4_run1/gpu/learning_curves.png": "5588a7e8897b5531048df94c1383b0fd71d12ec62a9ac11fe1f27f59e80afd4c",
+    "docs/results/transfer_v4_run1/gpu/ppt_diagnostics.png": "95d1cddbb9dd8a06ba1f0b3d277b619b723f572674d80cf2612adce8dc69fcdf",
+    "docs/results/transfer_v4_run1/gpu/report.json": "8ffeeae14998914b8e99b4b23c29f0fa8183dbaaba931229ddebc8d5a30c2fb1",
+    "docs/results/transfer_v4_run1/gpu/status.json": "8edab15cab7464e05cb144ac197588fef79e253245379fa8353d15f51637f34a",
+    "docs/results/transfer_v4_run1/gpu/summary.csv": "7163aa22cf18b3dd2d4ff6ce9fd0faba6f1ffbacec4fc79de09c7fb06da73450",
+    "docs/results/transfer_v4_run1/gpu/verification.json": "4ce6eaadbc79232cb535ce47f13c6422c8495e34a87f23bd243657f7a59a64cc",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_109/language_metrics.jsonl": "7c162429eb9adaae4661866a04eb12080baad643852b2dd260bbbf97db81def1",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_109/language_summary.json": "21b406257322f49709d24bfdf7010632200c668c963edaddc6e4328ef71e33b7",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_109/ppt_metrics.jsonl": "3ca32230662f02040bc51da0d5b12b3a59e919fa6fe64ac80fde0a34d2871d17",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_109/ppt_summary.json": "d02f19a5da058fb9427c37ba99dcc0fb3d3f57a5eda13806791ccca79976f88e",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_127/language_metrics.jsonl": "823153a44d1ee5ce9d8061fcf1ff1f90197e48717ee58096b322f9c14511ac64",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_127/language_summary.json": "6496dcf5b723ef27854ced97450d84a8405d583701180ccddfb38d96f662e193",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_127/ppt_metrics.jsonl": "d26b2ffedd6772287d03bb7d2b67acc09ddad65ae75e474960ba068678c37bda",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_127/ppt_summary.json": "b27871a1c085b3b2ebdf3489614a3d348e49c441d14424f7c3e2cc981de2949e",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_59/language_metrics.jsonl": "6dd9249b608e9c8f54220d721d7bac287f7b4d2eb55e26e7e53cd9071a3a9489",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_59/language_summary.json": "e2fe9e153a46fba9f70895a8bc362a4ad7f2594704da4c88cd4554fb4eb100ae",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_59/ppt_metrics.jsonl": "beeee07a829f75f9bf6a7e18ee49b3779588f4c5f3588a663f7945390765699e",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_59/ppt_summary.json": "b24cee982711dca57bae50c77a57fae6511647c7f7c68697157152808c04c92e",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_71/language_metrics.jsonl": "2ad231dfa580c378fc17e3d1da9d678ae2257081da8ff9665e599fdbab06a651",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_71/language_summary.json": "1991c23407808c7919420b80f85234f9fc2326413987db0a9085b0c1f3d24d02",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_71/ppt_metrics.jsonl": "32008a18e953a08d15126a07655380c240c57eff729786a0609042d7fa272f33",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_71/ppt_summary.json": "76300dd3bbfe0b688979762f2c6ac3a69ec8743389643f6fc892d4610edc7c62",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_83/language_metrics.jsonl": "477edb88ad836806c4e7db638ab0f27e48d65d05d4b86fa0b08f03f34721a0cf",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_83/language_summary.json": "0b098864eea4eb6bbf91e20c0e0e0cc3e912d614fde06c138eb805734cc407de",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_83/ppt_metrics.jsonl": "dd20192143de3ea074cec0304d0d51cac1bf08fc49a94575c4fb8fbc16d7e7fa",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_83/ppt_summary.json": "3d11340dfc76033e2439178fbceb7f195a695fee1f976615123d7e72af85a1c9",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_97/language_metrics.jsonl": "9f2d1be95d91b694830ae33ede1a8d22498269f9520d0f6dac94979dc974d4df",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_97/language_summary.json": "a4289877f96b19a9b26db5a1b4df1b248e1729f04725c527696a8f5013fa53e3",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_97/ppt_metrics.jsonl": "cf5d8d93545537d82cceeb73f253285fa3c3d06249d4830d2a5a762ac33159ad",
+    "docs/results/transfer_v4_run1/gpu/graph_nca_97/ppt_summary.json": "89a37145dc032486f24b61343a9c555228692f013b25f04a7f99a45699a25a2f",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_109/language_metrics.jsonl": "93a580975bfb1f729a218775e0c94dc9835254745a7fcf498d6989a96122b5d0",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_109/language_summary.json": "c2aec68a96ff1fc03ea22ba1d981c505aad062469885c8958687f3925770cc9f",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_109/ppt_metrics.jsonl": "918a7508401f5eda95d26f63779a97b07dccaf509499637190cbc2e54a279a62",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_109/ppt_summary.json": "26f20d900e42d13f37f2f53e92be025f63e44b0ee1ca78a893a6ccf379e90a7f",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_127/language_metrics.jsonl": "08a97752a10abe105ae3856df55119f6af26561d61c7b89eb9a1ff827f462730",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_127/language_summary.json": "8db3564e8cf411a9fd881f73dfe23ce064f8c3933231e343a30bd464338a4c53",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_127/ppt_metrics.jsonl": "ecf7e08472a47784738157d09d50c7f1fb1a24787dcf15c18dd80390ead2bfeb",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_127/ppt_summary.json": "b17fc51d6d892db2050bffef7928c6b46b5e85b553d0f1066e84c73aa41a90ce",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_59/language_metrics.jsonl": "2ebbd52504983fe347f92c46c4896227d61bdc757b2746d116f9158d5e4b7029",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_59/language_summary.json": "9e89a2c7eb495f8e5b0de625d0340cefa4b149ad1e58db1252de6335194e3870",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_59/ppt_metrics.jsonl": "831734c106fda3ce1215cad1c7b80ac94fc28c881f004f9602350514e4ab3ea8",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_59/ppt_summary.json": "030f02e71126009d8641b472fdb2ae5715697c0e4efafc659bc1cb1f629e8738",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_71/language_metrics.jsonl": "166224b04fe4ce65ed0c3bd3363d379e29e121337f4061affbfb99d7da616bbe",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_71/language_summary.json": "c7e608acca317a6b9fd199c7e29d34e9dfeb14ad9017be0157bdc2721ccc4c1b",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_71/ppt_metrics.jsonl": "0fe28ec78f7910b090ee7c3e01e40cf15c12887152f4720387a25932918df0ed",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_71/ppt_summary.json": "17b1e0dd9fae6edf574876d80792c667f3bbb26b512a90f2a528c17cfae8982f",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_83/language_metrics.jsonl": "cbb9e3422d16b62eef19273092a9b6ee5bfafa122eab4bee48d0c39da40629fe",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_83/language_summary.json": "2c670b70486eccc7db95fa2c0a73035fb6f1ad9f8597b78010205abe5498af04",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_83/ppt_metrics.jsonl": "d2ee30d6784d081173f840fcf0ebadc51363064cea6fe24161dab377fe20e527",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_83/ppt_summary.json": "5e1a56cf54ac7cc5435b9a03a0f7d75e2f4d6ec7712a03b913309254109caa51",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_97/language_metrics.jsonl": "51891ea7efc57a9811f86003c4f3c580e1eb6f476d1dd93c2455b16d20d62186",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_97/language_summary.json": "3cb9f00340bb210ef5a6f5d463e0c03974e82b81af75f88c250fa9704cfb91e7",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_97/ppt_metrics.jsonl": "964db8e9c363b3f3820465220c0d7e1b43aac8313652cdd2603b9e4027be10eb",
+    "docs/results/transfer_v4_run1/gpu/grid_nca_97/ppt_summary.json": "c417f4598bb1d90b6c0ff550ead2f5564d4238384776b453d835ed21a96e3d4b",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_109/language_metrics.jsonl": "20bb24bd3882f1951ee1039c222ddae7bbdbad78f50d370a861a6586b2561d76",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_109/language_summary.json": "62def5e6acf18dba845e5d0bb8010b3d9414b8cee6a43698c59428608bf50f50",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_109/ppt_metrics.jsonl": "1ed9007c504c3576d528ee05577b2bea2cf86a30cb8c5b159f221b6a9b6f54fb",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_109/ppt_summary.json": "2f1947b76ecb3bc78175776895be1b7cda57e8487caebf6c9ee745e9534be276",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_127/language_metrics.jsonl": "ae517b1309eea9cfc02c8fd0459375114d716cfbabdc5b0c5a1461a256b89650",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_127/language_summary.json": "bf90f3d31b8ebe8cc93805103a6f29b0ac21e0a27950ef9ba14819dcc03b8c35",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_127/ppt_metrics.jsonl": "b26fb41fc5a1b65856554b6d17d9cd271c15640735eae6aa682f6e31c195d56b",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_127/ppt_summary.json": "8c41297d39519c9c54cb261c373ac20616d3f595ad412d2f404301b45f9f8d99",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_59/language_metrics.jsonl": "d714c904c97d69a08bfe996adbab124d2f0efd69e99aed2a4de075b576318765",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_59/language_summary.json": "44e25343886856ce301ee52a5b8e80e550be0c1b76229b2c522f40143273d9dd",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_59/ppt_metrics.jsonl": "f0e3e83bc87828a5e7d2a7fba4f502f67a4defbfc5f4505777841a837516ba59",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_59/ppt_summary.json": "096897b5483c573cd976727fc5deccc0cb8f9c7f17ddfd7b02527a80229f46e6",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_71/language_metrics.jsonl": "54844a77dd70728007b5f3f0190fd37842e617eee1efa8ab3581417013dd0867",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_71/language_summary.json": "2f6f52f60acf44a6ec4fa6268b980b7376ee15c3c8637c48987f1bd47b8ab89a",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_71/ppt_metrics.jsonl": "bf8d4d9e697995030e2d033804ff6a10154f796339cb2688c707ed1b8120a95b",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_71/ppt_summary.json": "c0e0a60260f2f1bdaaeb9006324e425e6c839fb6a4a5bc6ac5985a11772241ea",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_83/language_metrics.jsonl": "84e97adbebf8c76223c22787b31012304ffb072e992b03c7f3bdc1fdff5d2b6e",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_83/language_summary.json": "b3a0db710010d82805c258607b543697a1582bfbd2d7ef19c583fb946e800ad9",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_83/ppt_metrics.jsonl": "71f0774089bcf5563acfa6321f070b5d11ce7aa45f484291c345acacc1276360",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_83/ppt_summary.json": "3884961c70576e50063fcf52ad4eca54757cddd8ae294a0d82a1fdfaf4e1317a",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_97/language_metrics.jsonl": "0fa64e6fd88fa5529551cf5fe859d3bbcd3a123fc06ceca809bb0e4a753c7284",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_97/language_summary.json": "f52d84ecbfb4c3abd7159e621c2b981ba315eb82dc10e27d20a48b242759b0a3",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_97/ppt_metrics.jsonl": "bbcb1e1eef438f9f851f5ee1570e8c42525e9e07f311e41d86dedb9d5aeb57a1",
+    "docs/results/transfer_v4_run1/gpu/prefix_graph_97/ppt_summary.json": "f055ef259c91924be687378b7f184a8aad80a7c9657c6498133dac9a26386e27",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_109/language_metrics.jsonl": "f409eeb16a21c748b47ece300c0d619f8ceabc7f21d4e9aaca7cef1cfd758298",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_109/language_summary.json": "2f0cda34a354e8e619ae025c9d63bd2448ee717b2f57d9c03c851126d4467c72",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_109/ppt_metrics.jsonl": "40eb167c2162f8f5d7de1ce525d001e9894651791b3932d45e5f2fdf051c31b7",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_109/ppt_summary.json": "73910c000ddef7613483ef1daf18fe4626e503c96c73ebe81c21c3f13d080187",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_127/language_metrics.jsonl": "fc9b4be0c693828545837ec00b22dbe48abc25b1e2bb0af76077b073195a28ee",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_127/language_summary.json": "50d6b21e4e64ec88b2dbed29ba594ca4fd5b16bbe6f53d83f9c8a76646c8274b",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_127/ppt_metrics.jsonl": "c6b4fdc123208535420df36b62cd273a0bb0b1370add549d40139a2f42e4cdfd",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_127/ppt_summary.json": "96d415b5fb8532b793fff1b317566206086fe0ff3d8f7e9b6ddf556470e2ba5b",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_59/language_metrics.jsonl": "1da72d0a87c110bac8a9a7eb07a78197b970d5916b29446e58a6c81e11954fbe",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_59/language_summary.json": "d47a3b488dd1799b905579ab83c8389cfc0463ef9467672ac24a8193bea8499e",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_59/ppt_metrics.jsonl": "3a78b46dc371b1f45cad41fd52553764cf379aebfd52f0d172730a6868e651aa",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_59/ppt_summary.json": "c6657559a2ae9d1e691e1fab2c8cb4b82efd344d519a1b8305c3fe0c1d9e569d",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_71/language_metrics.jsonl": "1ca1f3105dcf7e55cd48f3497aff2b0ae739b22cb26945da6ed39fb0cd620bc8",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_71/language_summary.json": "32857d94e44196e50588edfbc5f7cc4d2efd3db25ff3e4f1189052b758b1955a",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_71/ppt_metrics.jsonl": "95870bbc436f9ec3fc934817d14f1bc147b5c71003630f0766624a7c0e1beec0",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_71/ppt_summary.json": "d44ac6cedeaf51672fab380f9cec5348f2025a50e27777a4f6c49a2af81eabc4",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_83/language_metrics.jsonl": "110c9538119f49f3d4c124e8b8748752d143bfdfffd8badb670006b290e5045b",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_83/language_summary.json": "88388e250af1b66f7c391964c7b460459a15a588d8f65b816ff239e0380a0035",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_83/ppt_metrics.jsonl": "483333cce66a8a892f0b82402e85497ff54df3a25d083bcb787165f8805d6784",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_83/ppt_summary.json": "26b2e1097c9fc21648e022f96c0e84337d9c12fdf426ea244a696e1916e0feec",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_97/language_metrics.jsonl": "45c47915b59d405b3c39e8be416852078a4a863d0b3882c52068295851b17c91",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_97/language_summary.json": "34dfb56b3df4d1d0ea92b0fe1f3cf710169f53342c155ed6ac5fda4da9064040",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_97/ppt_metrics.jsonl": "61edcf95bf956a63305a82ab91894903ada2e022c0a189298af46154a9857904",
+    "docs/results/transfer_v4_run1/gpu/prefix_grid_97/ppt_summary.json": "4a19fe63f0229363c8b970d41b3e8da8591e3d5ff52729fef736b5844331a27e",
+    "docs/results/transfer_v4_run1/gpu/scratch_109/language_metrics.jsonl": "7b257cad283dd10646d517ff95ba4c3b1908cfb6ed7f48ebad77a9951e5d36af",
+    "docs/results/transfer_v4_run1/gpu/scratch_109/language_summary.json": "7e2064fc62120001d2a895a0bd62dd625b48b33e9807ec2b1a5a0e150e850ebf",
+    "docs/results/transfer_v4_run1/gpu/scratch_127/language_metrics.jsonl": "0bbc91a718cd9ca63f8186fd96c8ed055da0ad6fe584888b7343cd27ce540f1b",
+    "docs/results/transfer_v4_run1/gpu/scratch_127/language_summary.json": "64980869a5cf7f25d6259a8611a7ccd311719f905cbd0d460b6d08b442b73d19",
+    "docs/results/transfer_v4_run1/gpu/scratch_59/language_metrics.jsonl": "784f3ec555184d45d60e95783bc8fa9640045ea33bcae7e48e7c90af1c942768",
+    "docs/results/transfer_v4_run1/gpu/scratch_59/language_summary.json": "8f050e1928c220f478e63cd6129c9767844f1c98f2ed0183737f5ca9841a884f",
+    "docs/results/transfer_v4_run1/gpu/scratch_71/language_metrics.jsonl": "e5365c13f9f1a8728bda105ff4fb371cfb4542777ee48b940b9546b22aa09254",
+    "docs/results/transfer_v4_run1/gpu/scratch_71/language_summary.json": "70960617677d0e4f1cb7399b8cdb37140f686060ee774fab28af52ed9355a8f3",
+    "docs/results/transfer_v4_run1/gpu/scratch_83/language_metrics.jsonl": "c2eec8a2df700292deeb319f816eaff4eda23655c44dc0bb3c7459aae6a7d071",
+    "docs/results/transfer_v4_run1/gpu/scratch_83/language_summary.json": "b02cff802ba0687ba8e2d2b6800ce5f8607e3e708123d7e9068c90874abcae5d",
+    "docs/results/transfer_v4_run1/gpu/scratch_97/language_metrics.jsonl": "3e9d7b8a586d766722384cc6d744e780324003f6970232c0982a7bce25e2d57a",
+    "docs/results/transfer_v4_run1/gpu/scratch_97/language_summary.json": "622d58a4b6981e39586c3bfe021113ea574b2030f5bbc7f56f4e49c7a23cf359",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_109/language_metrics.jsonl": "349d5cd0c0497e841507ef47a41db3eca6eb9f1f5780b372b52427d0deb87c42",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_109/language_summary.json": "49b7ee3104e4845f08006a03607d466bef759f179f94e2f8f58afd3b3d0e7fb4",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_109/ppt_metrics.jsonl": "3c5d734cb03d1c2c4cd48c7efd04732e4a54e4c9240df388a8fb1f356f49a7ee",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_109/ppt_summary.json": "1bab0a615039d721e4337a8bc99a303d0b59fde183b246c77bcbb226e68269bd",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_127/language_metrics.jsonl": "e499f94e6256c503cc3fc55df7512b3319f0fdf09b198b6617bb615e5e14f3ff",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_127/language_summary.json": "84e1ed8dc97ef31da0d8bdbf9a3be488069f0ae0cd275e99a39408f268bf19f3",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_127/ppt_metrics.jsonl": "b507f003e076512cca99a6af0765bd6e022b850bc1c10ee10d3e725bdaadacd9",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_127/ppt_summary.json": "4361b1602ec6d40660ba48cec7336491429511f841300fc4ce196e09369ddb1d",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_59/language_metrics.jsonl": "426a0133e7eeb9a000ae89a8bdd782f7f9dcb04025e41b60cb99b967c36a7519",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_59/language_summary.json": "fe2e8bfe29b581b2e5ef0af1eeac99e4cc36559d5b2383c5f935d9a47c83287a",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_59/ppt_metrics.jsonl": "6125d63071e0f5bec6f467961670374102727cfdc9c1d599ad37dbcc2825e441",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_59/ppt_summary.json": "46b28f32bb09f1a85e2b7fde6cb07f23d2818906d009afd1bdd44529fdd79ace",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_71/language_metrics.jsonl": "132d375e2969ba3ea530c1ce7bb10d9806675e1ad425661186215b60c3ee6c21",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_71/language_summary.json": "1a8477e7b016c16c7ba415d402ddca9b443fd432f9f125a82dc38e64b0077c78",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_71/ppt_metrics.jsonl": "31177eec63acb513abaf5763a77f0fa06cbef3fc0f662f9143f65e0d0b3c18e2",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_71/ppt_summary.json": "d7aad4ef6ced3af177522c332e7b470706ce65e3517f13e453d41cc4026812f3",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_83/language_metrics.jsonl": "e6ef725c64ac8b82aa16da66c9aeb34ea15299f76500d50488218e44c073f6ac",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_83/language_summary.json": "d61c024a7d254835070fd202a30c43cc78f82c729fb6da52d4fab207c409d73d",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_83/ppt_metrics.jsonl": "f236cc810e7cfba8028928f9d6e9198f4b13c244f8f03ffe4d195f1feb911809",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_83/ppt_summary.json": "a6665e2e31303aaf02c08d74c426d20b0d3cea626a777413b4b1ed7a68dc0e17",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_97/language_metrics.jsonl": "4e835965fb88973c632c162734be397a897d12c92f709c47d75c5a87ae342916",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_97/language_summary.json": "1a27cfd80c7d270d22dbf5e32c0fb799b4c2d7e3cde4c8103e7d249899ef649e",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_97/ppt_metrics.jsonl": "be46265b3d07586ccafb6061cc201d2241f3501efc16b5cd1b96bd465d98485b",
+    "docs/results/transfer_v4_run1/gpu/shuffled_graph_97/ppt_summary.json": "a40572881747036fff8445b546d0b7fbb04160202ea8451168e3683b27751c73",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_109/language_metrics.jsonl": "eb5c53ab249136ceeea8054b46d47129dae44d4b9f719d1de80839f912b5b798",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_109/language_summary.json": "7250cfdb1441aa4c9a434a3f3ac08938a0e20aa0afe2156ba4a890ecfdaa8c65",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_109/ppt_metrics.jsonl": "91b81cff903814ec2197267a1eb4216513437c7b4954900e6222fcb2a3f97524",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_109/ppt_summary.json": "d313fc1344619e0ef49776569f6ab7086b2b4b7f93e12c47afb113aa6c485cef",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_127/language_metrics.jsonl": "4dc4794654c64c25e00776a22eb5c128712a851b77655dda118530a8a0fde514",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_127/language_summary.json": "b828bf08781bcea8a0afa56e7a84c82d0bbcbf9800184ddf30042f577145cc53",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_127/ppt_metrics.jsonl": "daa9a0cffbeba33ce2b2c88af77e1ff08009afb7ff192d1f783cc881f295c315",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_127/ppt_summary.json": "43c1c0e009a77c03a4bd564587d0818e97e0fd00fc9c92e24e1d66258eccc59e",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_59/language_metrics.jsonl": "0b3047e5456ca0fb3078992f13a38fabae25dd3f639a9e799952572f48d8f041",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_59/language_summary.json": "91c5ef3029c38a035aad5ed286809b89d9d87f525df06878c8b3a31263d65435",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_59/ppt_metrics.jsonl": "8f63078e6b8851cf991a25e4ddddc9d147261d736e1fa16269d77156c028158f",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_59/ppt_summary.json": "68a7b48538e7cea78386ad5c72cff6261af079f1036954d65fef2a7106f83376",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_71/language_metrics.jsonl": "f766a6f177ce90f01fa66227dee30ba3899b818b1a0efd0a3ae1869e37551fac",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_71/language_summary.json": "0f47d91cedf29469634fa7d4329a881573768e5283757d41025046dd44fcdd3b",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_71/ppt_metrics.jsonl": "c242b4ba4ffb79c6ad743918e1e294ed896860f8ec17c7cf3ad93d76304a9051",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_71/ppt_summary.json": "809edf51d0d9e477575ed6a5684a00c489d21b8e910322166aac6b0858f642b9",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_83/language_metrics.jsonl": "20a4bc4755cbeec87537451e8c41c7907744a7730e568f40738317b748cd70b6",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_83/language_summary.json": "57ffc69edf1ee2e70d031bda1b2ab607869ae6996b24c566fa432f16c98be6ff",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_83/ppt_metrics.jsonl": "389faf2a0dc710bb7855ea5e206639a27a4ea201f49b8cd3432e0d5199cfca14",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_83/ppt_summary.json": "a2d9b50e60a88cb17bac0427f3e5b1945a4a7b3a11f34f3c59697d47a6d644c4",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_97/language_metrics.jsonl": "50809c997bd72670517aef3ec59843740993d9bb73cabfdbfcacfb4b27f3092b",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_97/language_summary.json": "ffa1da55e7a4e6b0b373d53e574a0d85e6ca765433c000a131432d334879b8ea",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_97/ppt_metrics.jsonl": "620ea09d5376944244a858bb8e68560e0f53effc24203a07661fca0224fba27e",
+    "docs/results/transfer_v4_run1/gpu/shuffled_nca_97/ppt_summary.json": "d613ae2510480d614e0569f9801c20ffc9afee9b1f42a6bd1c8ef24c14d06b51",
+    "docs/results/readiness_v5_run1/cross_evaluation_cells.csv": "c9159584d124c69ed09582e0c11a599c8b26d5e745a1463b2bcbf2deb0af94ee",
+    "docs/results/readiness_v5_run1/FROZEN_PROTOCOL.md": "7619ee1e3f815dcb72fcb9c2dad764b749d9a7d8774714104b57806da4ae7ab8",
+    "docs/results/readiness_v5_run1/plan.json": "774e9deefe517adf2b93e7c40c3b1242fa4c97e1942a36e5df9b2db576c678f3",
+    "docs/results/readiness_v5_run1/plan_receipt.json": "09ec925c298f9a0e6eaf9e0f1f5e96edc89f409e03f377979d96c5f7c2fe51fd",
+    "docs/results/readiness_v5_run1/positive_control.json": "182040d2ec61a8ca24a49021627d181c9846eb15b908d04d253c3aee6bcd4edf",
+    "docs/results/readiness_v5_run1/PROVENANCE.json": "249779e19b7aac20866dbc4cfff0c57db2fd332c56d3b2ce98dda659e40aae80",
+    "docs/results/readiness_v5_run1/readiness_advantages.png": "4fe60ad421e94d2b70b1249349bf03c7283786cf2110e2d5fefdd91d766d460c",
+    "docs/results/readiness_v5_run1/readiness_advantages.svg": "e179d6f89d5cdae065c84ab922eeb7d9ab5f55bb69f701fd2ce318d23e3dc18f",
+    "docs/results/readiness_v5_run1/results.json": "be515494a3f1ddb503fb514d909d932d6f66acc751eb0895d036dc14160487e0",
+    "docs/results/readiness_v5_run1/results_receipt.json": "d1ca709da1941e460ab877f717ead81332a51ed0eeaf7742616fbd6348d23318",
+    "docs/results/readiness_v5_run1/REVIEW.md": "97d9917fb037151070d1f589b4292be2314cafe47ed2abc727d0f04a678337d1",
+    "docs/results/readiness_v5_run1/status.json": "3939aac4a2555f6c21a0a4aa0a9a2042799bebc30ada58aa36d1c371e6de046a",
+    "docs/results/readiness_v5_run1/summary.json": "21678493cfe3f63ddd198c10bd43c3373b0c176af468115c1f78588106c3b4d0",
+    "docs/results/trainability_v6_run1/assessment_cells.csv": "c1cc503b5ba2d6aa7abdf72269f89629e914c241c2a7398d270858bd96b7ec36",
+    "docs/results/trainability_v6_run1/FROZEN_PROTOCOL.md": "a6ec9bce877b1def16e0a9d4fd48d1c183559a4276eb3846d2d3dc13bdd526ce",
+    "docs/results/trainability_v6_run1/learning_curves.png": "3e381f635897bbcc12332d5065f871e255abcc2ce354d3ad274e313bb4e7a90e",
+    "docs/results/trainability_v6_run1/learning_curves.svg": "010b6ebc3ef15247f69a1693659744dcbc9cea6e3f2b1f7e2c39f509e92b6383",
+    "docs/results/trainability_v6_run1/plan.json": "3970a3b041e26ddecdd977c22f673b744a5f910643acb809e0d9c63a7b010ed4",
+    "docs/results/trainability_v6_run1/plan_receipt.json": "809a0a01f62635136dde3e1635685efb8ef728247d6c5b9bb93df4c9c3974520",
+    "docs/results/trainability_v6_run1/PROVENANCE.json": "06712d15dcbb1c590993d9a0561b72ee777add4b311122ef01f3435ec519b635",
+    "docs/results/trainability_v6_run1/results.json": "3b8e5a1cbb6b54cfb3951830cf27398f0d17202d3d0b269bb3c79a50958485c1",
+    "docs/results/trainability_v6_run1/results_receipt.json": "c58c506706d3111ac15893e5501d8ccd2a8f849061707f4e57ac832921da9b45",
+    "docs/results/trainability_v6_run1/REVIEW.md": "ed8f288c74ddecb380dbbd8fa0894378d7a696f21f584d5f71ff82ca4cbe17cc",
+    "docs/results/trainability_v6_run1/status.json": "71a42e3518d1dcc7a8d676fa94d570d699bc69b8181be50c372c826ffbc77902",
+    "docs/results/trainability_v6_run1/summary.json": "c78690f8b125f694dea561d4b65f9313174cd0aa72c5e9a9012fc9048fe635a5",
+    "docs/results/trainability_v6_run1/training_complete.json": "1f905b46b85b2d0d5edd081c21acc128922c9372b6a73c3295c18481e27f8f3f",
+    "docs/results/trainability_v6_run1/training_receipt.json": "9842d942a7a670ed2d3b3dee9867be488059275bd7db814b5e72fdf97f1080ba",
+    "docs/results/trainability_v6_run1/verification.json": "339a84a4ec626a1c688a4fcbe486eeffe6bfad9f2265c536283ca063b44b3e9a",
+    "docs/results/trainability_v6_run1/coherent_131/metrics.jsonl": "4a44115e21b5ad729292b6062810cc18dc809d913ee8673335715e29ff1e1686",
+    "docs/results/trainability_v6_run1/coherent_131/summary.json": "20161ccc92ef12acd2c53a2dd1db2f36bfd29d5cbdfc015666c5c009e0c0b25d",
+    "docs/results/trainability_v6_run1/coherent_149/metrics.jsonl": "9087c26f8c2a423832ff60f2421bfd081b6fedd62bf50368912cd5a3342c397b",
+    "docs/results/trainability_v6_run1/coherent_149/summary.json": "557df8ffbdf85af8b5157600a5191f3bbeb772cbacbfa82f8acfe57d485cf27a",
+    "docs/results/trainability_v6_run1/coherent_167/metrics.jsonl": "ad23f638ba7b914c88ee9c0532fa7b632edb80a187f75e7a5d09348c605d4b6f",
+    "docs/results/trainability_v6_run1/coherent_167/summary.json": "27ef99653de0e5a8c0a96159268df2df0ac713373f2fe6528f8ad1d63d3201d5",
+    "docs/results/trainability_v6_run1/prefix_131/metrics.jsonl": "dbffd80634ccba7b2312630d2f8b725684d7bb1d0421c05d73ad18752c44149e",
+    "docs/results/trainability_v6_run1/prefix_131/summary.json": "782ef87214114bb210469760e4eb40433cac593357085750dc1f9922ba679884",
+    "docs/results/trainability_v6_run1/prefix_149/metrics.jsonl": "acc1f7a14a031d98ee53fd73cc79f5f64489900cb8ddfad5a839810081d0b87f",
+    "docs/results/trainability_v6_run1/prefix_149/summary.json": "62183fe2de3f9aa551b6c18bdb45f40e7b70c8491ece30d4c1d5011b9f3427f8",
+    "docs/results/trainability_v6_run1/prefix_167/metrics.jsonl": "fad08a48c27f75f90a6963cbf60d4a252479fd4e7a2acd2a840de5b491afd298",
+    "docs/results/trainability_v6_run1/prefix_167/summary.json": "7d0d4beb23293d0ff487063013a7d8c6fe2b4dd86071becb198b5fc341d70575",
+    "docs/results/interaction_v7_run1/assessment_cells.csv": "0edcc42bcef21e9db390ca4ea32986e2314696c270dc05cd2efcd44f594175cc",
+    "docs/results/interaction_v7_run1/FROZEN_PROTOCOL.md": "8ab148392b1900913ef77b35fda266418713ce7f6537465a243cdf5161a823b5",
+    "docs/results/interaction_v7_run1/learning_curves.png": "1bef3c3a4e91a9703362cb1d365bd6004f8e079a7d5295758f1bfc3343583985",
+    "docs/results/interaction_v7_run1/learning_curves.svg": "4fb31d7cad394415e1d9f8041517834837fa228eaa0005c612705ec4af03d3ed",
+    "docs/results/interaction_v7_run1/plan.json": "869690ac3805b2b015d4d918d7e3ca742358c7185b983cdcf41ae32476942251",
+    "docs/results/interaction_v7_run1/plan_receipt.json": "1a3393ba2c55022edd2f8e1f6acbe6590304c944eb5ebfc1acd9312b5c11a80b",
+    "docs/results/interaction_v7_run1/PROVENANCE.json": "3c2a8bbd8020e39b58f6a26ffed858f58f32ab3b0534681cc8732f28359d3d33",
+    "docs/results/interaction_v7_run1/results.json": "7deea867ede208fb8c62c8388e4259f6f2a02579d38d12f34a1faf6282e738e4",
+    "docs/results/interaction_v7_run1/results_receipt.json": "fbe2490c008c9dc66c04a44f254fdc05fb42a97099e007e0218fcd2ee145608f",
+    "docs/results/interaction_v7_run1/REVIEW.md": "6d27e5f7c670ea763be1da2ffabf0cb4e41dffc1be1d105ba0cba529cf94c5aa",
+    "docs/results/interaction_v7_run1/status.json": "774dafeed43577040ddf83d400fff176fbd9b73c318109eee8150c66d04c78a2",
+    "docs/results/interaction_v7_run1/summary.json": "8fb1b8e3cf8948c5cd6a3777b38960e0fbe6c975d4f54398118069cb87ca1a0c",
+    "docs/results/interaction_v7_run1/training_complete.json": "8e2c03078d2c98438e4b05bb5772c90764dca385f4770614c89061860d92eb62",
+    "docs/results/interaction_v7_run1/training_receipt.json": "5e79726753b30311156a3e203e9087cc74d59149a3d85dc114bb288012453076",
+    "docs/results/interaction_v7_run1/verification.json": "25f18a46379ff963ac358b28737dfd109e37ec98799e638d95216a4ccf8ead4e",
+    "docs/results/interaction_v7_run1/complement_coherent_131/metrics.jsonl": "c863af3e97cbbdeddb23ab9c8ea7d54c71ad98b8044b19acc7cd8cc9d1d63a55",
+    "docs/results/interaction_v7_run1/complement_coherent_131/summary.json": "ef466007d3cf1bef14a262515ad2a6cb0b59c8196492780a09e4332c327697f4",
+    "docs/results/interaction_v7_run1/complement_coherent_149/metrics.jsonl": "7b2f394c5f4a08e3e19bf8926c007c16ec5bfae6cbdd84ec6b3c82e7f8dd9fd1",
+    "docs/results/interaction_v7_run1/complement_coherent_149/summary.json": "c61cfabd4e1ab98cae7080ea8d4819cf772ad22727e092eaf8332c64c9adf142",
+    "docs/results/interaction_v7_run1/complement_coherent_167/metrics.jsonl": "f58f55a2e656b862f51b168372e234ff26c86bcc7071563e5e576bfbd3a1e1f0",
+    "docs/results/interaction_v7_run1/complement_coherent_167/summary.json": "06c5f3e1811195a195636672ca27e6043dd2bbdddfc30a717bb2f3fb7ea81a8f",
+    "docs/results/interaction_v7_run1/complement_prefix_131/metrics.jsonl": "416e32ed2090e993989bd7eafd3580ab39c5ebb460a95dae6c83dcba2425c83c",
+    "docs/results/interaction_v7_run1/complement_prefix_131/summary.json": "d8c603284e29e408784fa69748bf76cc5334f6b173a44cc8bd1989b734658543",
+    "docs/results/interaction_v7_run1/complement_prefix_149/metrics.jsonl": "c0b0a48b2e2342c9e58d410035f6b9243dffddee253ed890a448b01917161334",
+    "docs/results/interaction_v7_run1/complement_prefix_149/summary.json": "c5837f514e98d412b65699f9ad233815acedc3e7f3805770f42978d4aaaaed70",
+    "docs/results/interaction_v7_run1/complement_prefix_167/metrics.jsonl": "3ed54bd665e5a5e539ac6ca9379ea86a038eb7c23e8bf8d91cf5bbe672b6bd27",
+    "docs/results/interaction_v7_run1/complement_prefix_167/summary.json": "f159b4ce69881272daec69994b748ac24f7a246b31ce22fc76485e0edb91d477",
+    "docs/results/interaction_v7_run1/first_transition/eligibility.json": "34441b33c9a9caee068eb0e4fbf2d6f89ba9561347157ee22c89599edad74c28",
+    "docs/results/interaction_v7_run1/first_transition/FROZEN_PROTOCOL.md": "49c179646556df30fa11a825012f4f47d67c1499e1736f02df5448c8e88301cc",
+    "docs/results/interaction_v7_run1/first_transition/plan.json": "befb1207e0effb2ab212f855c7aba62174b69bd85db506f116732c85373cb597",
+    "docs/results/interaction_v7_run1/first_transition/plan_receipt.json": "47df9863decd2ffdb22c2bc10cb24a0a709b3e6b4e5b0dad6cf68f78ef294048",
+    "docs/results/interaction_v7_run1/first_transition/results.json": "ddc3b10e8d66e3f2b542a01c06464bb1412d438548a4e6888b7eaae32524eaf4",
+    "docs/results/interaction_v7_run1/first_transition/results_receipt.json": "4bcc1d84be2182d0e18edbef854fc8b13237d3de6b16171c73dfbbd297bbd85c",
+    "docs/results/interaction_v7_run1/first_transition/verification.json": "03cb824149c7297c284ff06ccc67f8f311045e65ae1b969c68fe848734af166e",
+    "docs/results/interaction_v7_run1/spatial_coherent_131/metrics.jsonl": "82548c4dedb106c172589ce24acadb89cfb5d9903cee86c110fede71ba2cc352",
+    "docs/results/interaction_v7_run1/spatial_coherent_131/summary.json": "427bce9d0d8a285f0b3635e45bee708272551a8040c23a73a908aec7aedcc0c7",
+    "docs/results/interaction_v7_run1/spatial_coherent_149/metrics.jsonl": "414ebdfef47d078713dcd5b9d6394fbf3e91b9619a48c863433a5554d35f12ad",
+    "docs/results/interaction_v7_run1/spatial_coherent_149/summary.json": "b8ffb9fce37c3e3f7c48159239138edbc0c72832936cc40b0ccc30915f4439bc",
+    "docs/results/interaction_v7_run1/spatial_coherent_167/metrics.jsonl": "71d92d8438ca82fcd3b41889c7bee0eaff5b304c23811fb9e16dd5bcdab49e99",
+    "docs/results/interaction_v7_run1/spatial_coherent_167/summary.json": "bcbca48b95d335f87d1262da8e29bba001796722c9de6716a10995225264c0a1",
+    "docs/results/interaction_v7_run1/spatial_prefix_131/metrics.jsonl": "bc5329f923ecdb37f00ba2b3106c9ca733eac2eb47ebc9ed8e21eb2f1c290aa1",
+    "docs/results/interaction_v7_run1/spatial_prefix_131/summary.json": "d79b4bce9f60e16e23e99aaa8f714147a30b316e631e9a8c034f0c3033b40a0d",
+    "docs/results/interaction_v7_run1/spatial_prefix_149/metrics.jsonl": "c893f6a928ce720b11daba62f15aab5f15146f6a47fc56510603c8ea4f290c47",
+    "docs/results/interaction_v7_run1/spatial_prefix_149/summary.json": "9fd3b4ec0079f40ff0335d6c08c3a3057498a805256e7ae2004b7708c2e80278",
+    "docs/results/interaction_v7_run1/spatial_prefix_167/metrics.jsonl": "58e8694def3cb9204e8e0b45ace1b986c8dbe956bde151686043e46156aaaec7",
+    "docs/results/interaction_v7_run1/spatial_prefix_167/summary.json": "5e6685a098ff216d997e127f5cfb71955201bbf80d6970c8d1335b91233229f5",
+    "docs/results/loss_weight_v8_run1/first_transition_accuracy.png": "c25e70a9b915780e43a8e83aedc9561f7c9c44f86110bab8052e983c8408f82d",
+    "docs/results/loss_weight_v8_run1/first_transition_accuracy.svg": "9a109ae05f409a3a3b22238b877aa8a291311d0ae2b13be19be560aa11905c3b",
+    "docs/results/loss_weight_v8_run1/first_transition_cells.csv": "dc2365b041c2cf437b734eadc37a2efd009c5b1d0dfdefaa1b0f2e63e3b18e2e",
+    "docs/results/loss_weight_v8_run1/FROZEN_PROTOCOL.md": "e882c8671778d54149ade13a8526e5bb8e6082edc96199231e509a4a759825c1",
+    "docs/results/loss_weight_v8_run1/full_cells.csv": "4e20fca0f18f05dcb6d8f6d43a78a12d888b2d26c5aa1816b8bfa5d3b3564357",
+    "docs/results/loss_weight_v8_run1/plan.json": "d8d69d609cf9de8b1bf683397eebdc8468ce5b82513f653d142a4e2481a21abf",
+    "docs/results/loss_weight_v8_run1/plan_receipt.json": "b19b9558d9643cca0972d159c65c77285c01cec1500650d2817ee7d17d69f66e",
+    "docs/results/loss_weight_v8_run1/PROVENANCE.json": "17e9d84bb8bac36b190ebfdb26bc90dcdf8e7e0ea642fb044d0280a61fec141a",
+    "docs/results/loss_weight_v8_run1/results.json": "7e44fe3b8e80a30ca9b6103020681c25e71b15e5d249d6fd9cdabc0e08bb6fe4",
+    "docs/results/loss_weight_v8_run1/results_receipt.json": "8f09fce498337215d74bd64d0f9d53ca18e2e2676c891ba5f1bd8e870c3cd465",
+    "docs/results/loss_weight_v8_run1/REVIEW.md": "40ca1d744a6d43e7b14642c5abd0e55dd497a2cfd770ceaac28db1252e1fcbcf",
+    "docs/results/loss_weight_v8_run1/status.json": "b1be63fb14cfd4677ddbdda80b44c801565ed7022395a3df42f91aaa18c3ddb1",
+    "docs/results/loss_weight_v8_run1/summary.json": "a317450d39a10598755e02c7ef81d7f548b1ebed087a8d8cc2268dc3434f0cd5",
+    "docs/results/loss_weight_v8_run1/training_complete.json": "b3acaab4aa831003982f16869744d623811d787d6ea19128416f4d094e1b9e2c",
+    "docs/results/loss_weight_v8_run1/training_receipt.json": "b0637396f866b43d8318bd8ed9d890cb5f0159eabccad2bb5d15a80918504670",
+    "docs/results/loss_weight_v8_run1/verification.json": "b44443a368b3e254d26d24c769503aa1866cd7cc9481a77f6a96a4f18711a6fb",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_131/metrics.jsonl": "4f8776bb03dc309fd808e840c5b40ce8bd7ea924cdf859261cd0a26de99912dd",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_131/summary.json": "3557e84d1f1e2cec46e5b0573c307334f0f62094b11b7fb14d2b31cf29e31530",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_149/metrics.jsonl": "440afddd7a6d25ff41b645f1b6b70be6d2b60acb6c84958d01c6ef9abbf848d8",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_149/summary.json": "4755c969a110eee07e070ea82a34a509016d590d512d49f5f60b0f022afabcb6",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_167/metrics.jsonl": "e060eda6cba29e652e9f3a9063b951d6c364ed0c7a72614ca7d4b1917986be34",
+    "docs/results/loss_weight_v8_run1/weighted_coherent_167/summary.json": "95bf53736e3f5cc74f927eaf12e8af302c99bf326edb5e108f167213d3c52821",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_131/metrics.jsonl": "616a6e1645b0910fdb1358d62f253653d1d6f8c321542ca153c5e4fea87ceff3",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_131/summary.json": "4871c0a0b9ea95249608739433a7057abfe0245ce3d12f20f51c29fc44776867",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_149/metrics.jsonl": "68e1af369ed6ce0fdf0b5123eac5b6f1f2ea4ce32ef88fef27399fee540cc205",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_149/summary.json": "354d571c561e09d976e831e3d089c9caee08205281c21f5710f2ef9d0384c424",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_167/metrics.jsonl": "78c10a4323a4bda3388224e4c6363421e0ab0bee211db6ab8f896d7906bbee05",
+    "docs/results/loss_weight_v8_run1/weighted_prefix_167/summary.json": "69b12df9b36cdcea1064b0c965d11d109e1557e10ee4870b6dba7bfc9d0138bf",
+    "RESULTS.md": "7f356ecb4d9524f671014afa425d7df5ddf85ca9145d1c36dba99b5fa195ffeb",
+    "RESEARCH_CONTEXT.md": "14db0e18fa9bf994a5d1237825c992b5d7cd0d4b8f353651fb1350ca0e77c6cc",
+    "METHODOLOGY_AUDIT.md": "f281cf8153ab9db181a79dee8feffdc16094cc1755b693cefb915e20930173a5",
+    "docs/TRANSFER_V3_PROTOCOL.md": "2de7c875d4c37d29c6462e03ec07339dc2dfb15ebbcb0fb342a2ba4b32e2f0c5",
+    "docs/TRANSFER_V4_PROTOCOL.md": "b13ddf4b966047ce209581f64bacee328eb0f21976a78d8008b6a141837b9da8",
+    "docs/READINESS_V5_PROTOCOL.md": "7619ee1e3f815dcb72fcb9c2dad764b749d9a7d8774714104b57806da4ae7ab8",
+    "docs/TRAINABILITY_V6_PROTOCOL.md": "a6ec9bce877b1def16e0a9d4fd48d1c183559a4276eb3846d2d3dc13bdd526ce",
+    "docs/INTERACTION_V7_PROTOCOL.md": "8ab148392b1900913ef77b35fda266418713ce7f6537465a243cdf5161a823b5",
+    "docs/INTERACTION_V7_FIRST_TRANSITION.md": "49c179646556df30fa11a825012f4f47d67c1499e1736f02df5448c8e88301cc",
+    "docs/LOSS_WEIGHT_V8_PROTOCOL.md": "e882c8671778d54149ade13a8526e5bb8e6082edc96199231e509a4a759825c1"
+  },
+  "scientific_source_sha256": {
+    "transfer_v2/calibrate.py": "965fb0fcc0958137f5a08478bb1069092aa8c0ac37b5aa5cf80136eaca030909",
+    "transfer_v2/common.py": "24967a682e41f4bf9dfde0add30596a826fa68cbd3fd8a2ca42a40d800c35e9a",
+    "transfer_v2/data.py": "55f77791c6fa0927e86ae794c223df49d82fe5410a6a097a01334fc8207d1f4f",
+    "transfer_v2/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "transfer_v2/nca.py": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f",
+    "transfer_v2/report.py": "537f267f7a613483a57b319aa0ff0051cfc9b287a919805a38863df69f6a0925",
+    "transfer_v2/run.py": "8e0f9247c49b66e9656ddb552886e1897f6b529508dac6d2f96f46e7659e565e",
+    "transfer_v2/training.py": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5",
+    "transfer_v2/verify.py": "872a54ebb8a24c5ced0eb4bad027e8d01a73cb61033a5295d1d26b913b25a3a1",
+    "transfer_v2/__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+    "transfer_v3/calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "transfer_v3/common.py": "94c8a870fd3b19b06f7a2d2ccc870c59488a2b596bed7b0c81e572d1d4c1ec95",
+    "transfer_v3/data.py": "b3ad2e76dc509934d55f7fb3cd66ed59a388499a0db4bce18b8ff5d76e1e646e",
+    "transfer_v3/graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "transfer_v3/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "transfer_v3/nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "transfer_v3/report.py": "ee9e69294fd8a7d314ed4541eedf05f2c31e07682762d50fc0220b190a096f05",
+    "transfer_v3/run.py": "6badb47576c49f398b82850f4ceda177c54b1d601f692ed02d89fea61e704ad7",
+    "transfer_v3/training.py": "de2e03c560b8c51813a7b59de7488a3a2b7d85a88ea33a00bf2fee8177a668fa",
+    "transfer_v3/verify.py": "4c738cad63c046975c215b1a0b7ddf34884e26afa7a0331d3b955b53d49b4e05",
+    "transfer_v3/__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+    "transfer_v4/analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+    "transfer_v4/calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "transfer_v4/common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "transfer_v4/controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+    "transfer_v4/data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+    "transfer_v4/graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "transfer_v4/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "transfer_v4/nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "transfer_v4/plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+    "transfer_v4/report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+    "transfer_v4/run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+    "transfer_v4/training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+    "transfer_v4/verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4",
+    "transfer_v4/__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+    "readiness_v5/evaluate.py": "0cd1b2a2ccc6ede6ea08b6041905ceb8fee938acd77de021032273cf2d111b70",
+    "readiness_v5/frequency.py": "5076ac2ae3eeb883ba68da1e00cc6b0e8acc7021c73a65d1a01a32f6ba4e8821",
+    "readiness_v5/gate.py": "eff3d6e5c08c05d705cb464b8c56e36f91d738a0e91344214da4e176988be110",
+    "readiness_v5/plan.py": "b0bc6d6055eec6eb42800fd0378cf0a1e36a4882c74c7e98feed5e40ae1c69a9",
+    "readiness_v5/positive_control.py": "622513d923d1e5144eaa040d0af07bfc9a2069bb05a7bcdf3700d44e0cf5fd1b",
+    "readiness_v5/run.py": "3fa075474a413f7c64cba48bcf6ade0148cf7c9c7509a403d88a48dbed9b19fa",
+    "readiness_v5/__init__.py": "2da8a58b8d8dad7ceec5a5a7ff7137259e312ffd93f317efa6e2cd6d5dcbd167",
+    "trainability_v6/data.py": "8a01068b366194a84b1ea775b136fa8c14d2997f6cebdd488d541f9bca864e3d",
+    "trainability_v6/plan.py": "01bb39b9ad5f621bbd0b04d57e60ee4e989a2d7ca30110d263f6387e0715e21b",
+    "trainability_v6/run.py": "8695fe651299a211aabbba862e99e821d490614bdd4169f342f6032d8c77b69b",
+    "trainability_v6/__init__.py": "642988988cc21fe055c8bbd53649c0f516e8c37d1e928b02fec80378e3d11eea",
+    "interaction_v7/data.py": "0a350844743fa56006ec457ab8ce7a7c3359361c5c46c5cd27f8a4108bc6b18f",
+    "interaction_v7/plan.py": "c0fac544f6bc95901943048ca9fa80e9f313066ee8a8e986a84301d911346efc",
+    "interaction_v7/run.py": "bda7f22e6f3c14acef17e8fda204edc2861175c72852b0b6e3872de4fa89bbf5",
+    "interaction_v7/__init__.py": "2018d8e8851503f7150e11f3d85ded38d5b70326e1e92e53a79a9e4b11818913",
+    "loss_weight_v8/objective.py": "22f9354021a9f79ba39b6d7d28ab318d7cc17f3a493c6d30673891929a1372ad",
+    "loss_weight_v8/plan.py": "38c7e70a3056e9c6947fe19eb1f68f85e725b1053e907e37a020c09a24f3f512",
+    "loss_weight_v8/run.py": "206b8b4cff5ca066be3f918883ca2cc77f9f766eaafba77cc40b505775a844ec",
+    "loss_weight_v8/__init__.py": "436645ebfa84fb290d3cc6557e877c8112ed61afb8bd1c034925ac6b1922075f",
+    "proofs/lean/Audit.lean": "670dc4e3ca768f733dd997f4760498fc73123cf9c475c4732b74a3ba156b4f82",
+    "proofs/lean/BrowserBundle.lean": "e93d487bca099e34c6aa857a1fd006b38c43e5883bc10cea83ca70e955e57fdd",
+    "proofs/lean/GraphNCA.lean": "82432a7f025a98254490562255f1770984760fbe19a9910cb3a90c358bc61e18",
+    "proofs/lean/lakefile.toml": "091efc2e5f370971c849c8b9e1d78de3f2cd7758b82650cee035a6fed9012dce",
+    "proofs/lean/lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "proofs/lean/PROOF_MAP.md": "860a89089d154708f751350e3ef9169d8bb7efdc683849fe0229bedcdb122aaf",
+    "proofs/lean/README.md": "02f296814729fa0482fe38fe6711a8b0b3f8fbcbee0f16eeb6638a880fda9ecb",
+    "proofs/lean/GraphNCA/Graph.lean": "72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67",
+    "proofs/lean/GraphNCA/LinearSurrogate.lean": "94b0dac3d96bcaaff6d8e0d3658335cf4f85311bca386a8ebd518dad56b27201",
+    "proofs/lean/GraphNCA/Numerics.lean": "bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02",
+    "proofs/lean/GraphNCA/Quadratic.lean": "e034cfe021c2e48c575fe444855cc21f73567befd05e14af23109d53769a165f",
+    "proofs/lean/GraphNCA/Serialization.lean": "34379dc8e29d9346d125a5e137b28641e3febbc7888922fa9f69ed770a1b003b",
+    "proofs/lean/GraphNCA/Transfer.lean": "5bf206fb77b6d3afdd21799eb16e0c53665a9b262aacb66e8efd1654fac563fa",
+    "proofs/lean/verification/attempt-1-diagnostics.txt": "89516fa9c47797096dd2001789ca331ce8feab7db9f02b400b1cec2d5d6974a0",
+    "proofs/lean/verification/axiom-reports.txt": "fec6864a94270bfdeb934459af069b254224e30ceba7a38e86c106421986c5cf",
+    "proofs/lean/verification/final-diagnostics.txt": "1c7f0a369cec683719e1c65e1a6c13ef678031a13dfe7b5033ec367c3b7a5165",
+    "proofs/lean/verification/lean-check.png": "e5540c08e5b5d803f2b8233c76c7d7bc42a16318cb465cf8f69d10566672b0c9",
+    "proofs/lean/verification/README.md": "9bf12913c4f0c9fe48e5b8af13a071e86dbb8ab7de2d1acb50aff022f48d5b9b",
+    "proofs/lean/verification/status.json": "d5846887b586db408934b61ad856406dc744347d9676f0fda87cbd204fd2cbc3",
+    "docs/theory/main.tex": "1667890d545ec0868a92003c5226e2dfe56aeaec587d40b27bf5c4081bda7f09",
+    "docs/theory/numerical_checks.json": "8bdb354844e8db75b1d11cfe64a7f91d5ba46af2ffc8291cad9525957681fdcf",
+    "docs/theory/README.md": "0d1685369354726df0b778932452d1b711748b8db5c1650246591ccba39a217f",
+    "docs/theory/VALIDATION.md": "e54e70a49a4df4aa812bf6f599111b7164366dcec45c0ec6f4c608b5309eae9e",
+    "docs/theory/sections/01_problem.tex": "7aa227f7eee0404d8816f9c91650ec55425e6678a5cb97c57c46da32dd403682",
+    "docs/theory/sections/02_dynamics.tex": "c5e28da6e8f687fedec1a4530faf9851204ac09d1afa6af7dd5b55cd11bfb6c1",
+    "docs/theory/sections/03_information.tex": "c90d72744e88fdeccd8d88c7a14b8c1881796fa93dab23c57e7dc53147179d9e",
+    "docs/theory/sections/04_serialization.tex": "279459b44dcfda4cbb6bede7da43f0c8fc4bbef736297d6cc251ea2fdbd6acfb",
+    "docs/theory/sections/05_transfer.tex": "addaf7196076d86ec05c2eba87ae0b3827abed34a035fbff7376887a7c853975",
+    "docs/theory/sections/06_numerical.tex": "c5d1989047ad94c1a88242461c7318a5a1e48eedf6d5745c68a219efb61aabd2",
+    "docs/theory/sections/07_conclusions.tex": "1a1492864431a237353022614d46cd1f448231769364f40758569043f9067e77"
+  },
+  "notebooks": {
+    "kaggle_gnn_nca_pilot.ipynb": {
+      "sha256": "878f01f801f80de7b8c3518324231233b4324856b145b5a9b9e22fcb80c0cc83",
+      "cells": 29,
+      "embedded_source_cells": 16
+    },
+    "kaggle_nca_transfer_v2.ipynb": {
+      "sha256": "80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b",
+      "cells": 33,
+      "embedded_source_cells": 20
+    },
+    "kaggle_nca_transfer_v3.ipynb": {
+      "sha256": "3b32f4030cec46df0970b11c58e16bac0af86e8c9b14872365f3ae1a242adfb7",
+      "cells": 34,
+      "embedded_source_cells": 21
+    },
+    "kaggle_nca_transfer_v4.ipynb": {
+      "sha256": "bce1df7b540372fa253c6193852e4bfbfea617f8a1553ce745924e90aad9a18a",
+      "cells": 38,
+      "embedded_source_cells": 25
+    }
+  },
+  "slides": [
+    {
+      "title": "GNNs in Neural Cellular Automata",
+      "kind": "updated original",
+      "original_slide": 1,
+      "sources": [
+        "README.md",
+        "RESULTS.md"
+      ],
+      "slide": 1,
+      "source_slide": 1
+    },
+    {
+      "title": "Research map",
+      "kind": "updated source slide",
+      "sources": [
+        "RESULTS.md",
+        "docs/theory/main.tex"
+      ],
+      "source_slide": 2,
+      "slide": 2
+    },
+    {
+      "title": "Problem statement and research question",
+      "kind": "updated original",
+      "original_slide": 2,
+      "sources": [
+        "RESEARCH_CONTEXT.md",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 3,
+      "source_slide": 3
+    },
+    {
+      "title": "Research status through stage 8",
+      "kind": "updated source slide",
+      "sources": [
+        "RESULTS.md"
+      ],
+      "source_slide": 4,
+      "slide": 4
+    },
+    {
+      "title": "Literature review",
+      "kind": "expanded",
+      "sources": [
+        "https://distill.pub/2020/growing-ca/",
+        "https://arxiv.org/abs/1704.01212",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/2302.13971",
+        "https://arxiv.org/html/2603.10055v1"
+      ],
+      "slide": 5,
+      "source_slide": 5
+    },
+    {
+      "title": "Reference study and this development experiment",
+      "kind": "expanded",
+      "sources": [
+        "https://arxiv.org/html/2603.10055v1",
+        "sources/nca-pre-pretraining-reference/reference.json",
+        "configs/transfer_v2.json"
+      ],
+      "slide": 6,
+      "source_slide": 6
+    },
+    {
+      "title": "Hypotheses and falsifiable comparisons",
+      "kind": "expanded",
+      "sources": [
+        "RESEARCH_CONTEXT.md",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 7,
+      "source_slide": 7
+    },
+    {
+      "title": "Measured v2 transfer and cumulative cost",
+      "kind": "updated original",
+      "original_slide": 3,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json"
+      ],
+      "slide": 8,
+      "source_slide": 8
+    },
+    {
+      "title": "Theory: dynamics, graph and transformer",
+      "kind": "updated original",
+      "original_slide": 6,
+      "sources": [
+        "docs/theory/sections/01_problem.tex",
+        "docs/theory/sections/02_dynamics.tex"
+      ],
+      "slide": 9,
+      "source_slide": 9
+    },
+    {
+      "title": "GNN visualization from a saved topology",
+      "kind": "expanded",
+      "sources": [
+        "data/cpu_check/grid_edges.npy",
+        "data/cpu_check/graph_edges.npy",
+        "experiment.py"
+      ],
+      "slide": 10,
+      "source_slide": 10
+    },
+    {
+      "title": "Actual message-passing code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:36-40; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 11,
+      "source_slide": 11
+    },
+    {
+      "title": "Grid convolution equals typed message passing",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex: Proposition grid equivalence",
+        "transfer_v2/nca.py:convolution_logits",
+        "tests/test_transfer_v2.py"
+      ],
+      "slide": 12,
+      "source_slide": 12
+    },
+    {
+      "title": "Relabeling equivariance and swap invariants",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "proofs/lean/GraphNCA/Graph.lean"
+      ],
+      "slide": 13,
+      "source_slide": 13
+    },
+    {
+      "title": "Exactly solvable diffusion surrogate",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 14,
+      "source_slide": 14
+    },
+    {
+      "title": "Degree preservation does not guarantee mixing",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex"
+      ],
+      "slide": 15,
+      "source_slide": 15
+    },
+    {
+      "title": "Exact perturbation and a logit-margin condition",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/02_dynamics.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 16,
+      "source_slide": 16
+    },
+    {
+      "title": "Information bounds for deterministic trajectories",
+      "kind": "updated original",
+      "original_slide": 7,
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 17,
+      "source_slide": 17
+    },
+    {
+      "title": "Rule uncertainty and stochastic transitions",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 18,
+      "source_slide": 18
+    },
+    {
+      "title": "Contextual prediction and the shuffled control",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex",
+        "transfer_v2/nca.py:shuffled"
+      ],
+      "slide": 19,
+      "source_slide": 19
+    },
+    {
+      "title": "Serialization: exact accounting and parent lags",
+      "kind": "updated original",
+      "original_slide": 8,
+      "sources": [
+        "docs/theory/sections/04_serialization.tex"
+      ],
+      "slide": 20,
+      "source_slide": 20
+    },
+    {
+      "title": "A decoded categorical patch from the actual dataset",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy, rule row 0, frame 0",
+        "transfer_v2/nca.py:encode_frames"
+      ],
+      "slide": 21,
+      "source_slide": 21
+    },
+    {
+      "title": "Actual 2 \u00c3\u2014 2 patch-token encoding",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:76-81; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 22,
+      "source_slide": 22
+    },
+    {
+      "title": "Parent visibility and crop boundaries",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/04_serialization.tex",
+        "proofs/lean/GraphNCA/Serialization.lean"
+      ],
+      "slide": 23,
+      "source_slide": 23
+    },
+    {
+      "title": "Mean lag is fixed while dispersion can change",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/04_serialization.tex",
+        "proofs/lean/GraphNCA/Graph.lean"
+      ],
+      "slide": 24,
+      "source_slide": 24
+    },
+    {
+      "title": "Actual synthetic target mask",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:157-164; SHA-256 4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f"
+      ],
+      "slide": 25,
+      "source_slide": 25
+    },
+    {
+      "title": "Transfer mathematics and an exact convergence example",
+      "kind": "updated original",
+      "original_slide": 9,
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "docs/theory/sections/06_numerical.tex"
+      ],
+      "slide": 26,
+      "source_slide": 26
+    },
+    {
+      "title": "Actual stage-boundary transfer code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/model.py:92-97; SHA-256 4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+      ],
+      "slide": 27,
+      "source_slide": 27
+    },
+    {
+      "title": "Taylor derivation for backbone transfer",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: eq:displacement and prop:alignment",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 28,
+      "source_slide": 28
+    },
+    {
+      "title": "Worked gradient-alignment calculation",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 29,
+      "source_slide": 29
+    },
+    {
+      "title": "Exact topology-to-target surrogate",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "proofs/lean/GraphNCA/LinearSurrogate.lean"
+      ],
+      "slide": 30,
+      "source_slide": 30
+    },
+    {
+      "title": "A six-node numerical topology example",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: exact topology surrogate",
+        "docs/theory/numerical_checks.json"
+      ],
+      "slide": 31,
+      "source_slide": 31
+    },
+    {
+      "title": "Quadratic convergence and ranking reversal",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex",
+        "proofs/lean/GraphNCA/Quadratic.lean"
+      ],
+      "slide": 32,
+      "source_slide": 32
+    },
+    {
+      "title": "Closed-form toy loss curves",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Numerics.lean"
+      ],
+      "slide": 33,
+      "source_slide": 33
+    },
+    {
+      "title": "Exact numerical first hits",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Numerics.lean"
+      ],
+      "slide": 34,
+      "source_slide": 34
+    },
+    {
+      "title": "Break-even derivation and numerical costs",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 35,
+      "source_slide": 35
+    },
+    {
+      "title": "Parameter and token arithmetic",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "transfer_v2/model.py",
+        "configs/transfer_v2.json"
+      ],
+      "slide": 36,
+      "source_slide": 36
+    },
+    {
+      "title": "Lean 4: verified coverage and explicit boundaries",
+      "kind": "updated original",
+      "original_slide": 10,
+      "sources": [
+        "proofs/lean/PROOF_MAP.md",
+        "proofs/lean/verification/status.json"
+      ],
+      "slide": 37,
+      "source_slide": 37
+    },
+    {
+      "title": "An actual Lean equivariance proof",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA/Graph.lean:19-24; SHA-256 72cf666ca49daa9f75f780b596c4b1bc8418d0540443025d945f81d52bef6d67"
+      ],
+      "slide": 38,
+      "source_slide": 38
+    },
+    {
+      "title": "An actual Lean first-hit proof",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA/Numerics.lean:60-66; SHA-256 bcca26b251d6a5c31c0abd4ce12870572cd46351bae064a8d5a3283872b94b02"
+      ],
+      "slide": 39,
+      "source_slide": 39
+    },
+    {
+      "title": "Formal proof failures, corrections and trust",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/verification/README.md",
+        "proofs/lean/verification/attempt-1-diagnostics.txt",
+        "proofs/lean/verification/final-diagnostics.txt"
+      ],
+      "slide": 40,
+      "source_slide": 40
+    },
+    {
+      "title": "Historical pilot 1 and its exposure confound",
+      "kind": "updated original",
+      "original_slide": 4,
+      "sources": [
+        "docs/results/pilot1/REVIEW.md",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 41,
+      "source_slide": 41
+    },
+    {
+      "title": "Historical pilot: language-exposure alignment",
+      "kind": "updated original",
+      "original_slide": 5,
+      "sources": [
+        "docs/results/pilot1/language_aligned_curves.png",
+        "docs/results/pilot1/prepretraining_diagnosis.json"
+      ],
+      "slide": 42,
+      "source_slide": 42
+    },
+    {
+      "title": "Methodology across three versions",
+      "kind": "expanded",
+      "sources": [
+        "docs/PILOT_PROTOCOL.md",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 43,
+      "source_slide": 43
+    },
+    {
+      "title": "V2: identical language-stage controls",
+      "kind": "updated original",
+      "original_slide": 11,
+      "sources": [
+        "configs/transfer_v2.json",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 44,
+      "source_slide": 44
+    },
+    {
+      "title": "Dataset preparation and rule separation",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/nca.py:generate_split",
+        "transfer_v2/data.py",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 45,
+      "source_slide": 45
+    },
+    {
+      "title": "Saved dataset sizes and screening outcomes",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/manifest.json"
+      ],
+      "slide": 46,
+      "source_slide": 46
+    },
+    {
+      "title": "Actual NCA states from the retained v2 dataset",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy, row 0",
+        "transfer_v2/nca.py:encode_frames"
+      ],
+      "slide": 47,
+      "source_slide": 47
+    },
+    {
+      "title": "Structured and shuffled data at fixed markers",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/shuffled_validation.npy",
+        "transfer_v2/nca.py:shuffled"
+      ],
+      "slide": 48,
+      "source_slide": 48
+    },
+    {
+      "title": "Actual full-trajectory token histogram",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/nca_validation.npy",
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/data/development/shuffled_validation.npy"
+      ],
+      "slide": 49,
+      "source_slide": 49
+    },
+    {
+      "title": "Actual transformer attention and feed-forward code",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/model.py:42-48; SHA-256 4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+      ],
+      "slide": 50,
+      "source_slide": 50
+    },
+    {
+      "title": "Actual optimizers for the two stages",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:76-79; SHA-256 fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+      ],
+      "slide": 51,
+      "source_slide": 51
+    },
+    {
+      "title": "Actual gradient accumulation in the runner",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:86-98; SHA-256 fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5"
+      ],
+      "slide": 52,
+      "source_slide": 52
+    },
+    {
+      "title": "Historical notebook: preserved pilot execution",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_gnn_nca_pilot.ipynb, cell 25; notebook SHA-256 e47cc0c3e505354f64c4d21aaf2c3d3d114ea3ea52d8d064dab6e491da9f458d"
+      ],
+      "slide": 53,
+      "source_slide": 53
+    },
+    {
+      "title": "V2 notebook: actual development execution",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v2.ipynb, cell 29; notebook SHA-256 80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b"
+      ],
+      "slide": 54,
+      "source_slide": 54
+    },
+    {
+      "title": "V2 notebook: actual result packaging",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v2.ipynb, cell 33; notebook SHA-256 80c23b8cdceeb9dd607e92779e095357bb2c088daeb3c196dba1402de773199b"
+      ],
+      "slide": 55,
+      "source_slide": 55
+    },
+    {
+      "title": "V2 training configuration",
+      "kind": "expanded",
+      "sources": [
+        "configs/transfer_v2.json",
+        "docs/TRANSFER_V2_PROTOCOL.md"
+      ],
+      "slide": 56,
+      "source_slide": 56
+    },
+    {
+      "title": "Synthetic prediction passed the declared gate",
+      "kind": "updated original",
+      "original_slide": 12,
+      "sources": [
+        "docs/results/transfer_v2_run1/gpu/ppt_diagnostics.png",
+        "docs/results/transfer_v2_run1/gpu/grid_nca_17/ppt_summary.json"
+      ],
+      "slide": 57,
+      "source_slide": 57
+    },
+    {
+      "title": "Gate definition and interpretation",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v2/training.py:quality_gate",
+        "docs/TRANSFER_V2_PROTOCOL.md",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 58,
+      "source_slide": 58
+    },
+    {
+      "title": "V2 language-stage result at paired reference loss",
+      "kind": "updated original",
+      "original_slide": 13,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json",
+        "docs/results/transfer_v2_run1/paired_language_gain.png"
+      ],
+      "slide": 59,
+      "source_slide": 59
+    },
+    {
+      "title": "Full curves and the shuffled comparison",
+      "kind": "updated original",
+      "original_slide": 14,
+      "sources": [
+        "docs/results/transfer_v2_run1/gpu/learning_curves.png",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 60,
+      "source_slide": 60
+    },
+    {
+      "title": "Per-seed language updates to the scratch endpoint",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 61,
+      "source_slide": 61
+    },
+    {
+      "title": "Speedup calculation and final perplexity",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv",
+        "docs/results/transfer_v2_run1/aggregate.json"
+      ],
+      "slide": 62,
+      "source_slide": 62
+    },
+    {
+      "title": "Paired final losses and their uncertainty",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/comparisons.csv",
+        "docs/results/transfer_v2_run1/REVIEW.md"
+      ],
+      "slide": 63,
+      "source_slide": 63
+    },
+    {
+      "title": "Cumulative accounting and synthetic-stage cost",
+      "kind": "updated original",
+      "original_slide": 15,
+      "sources": [
+        "docs/results/transfer_v2_run1/aggregate.json",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 64,
+      "source_slide": 64
+    },
+    {
+      "title": "Timing scope and input-token accounting",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/results/transfer_v2_run1/comparisons.csv"
+      ],
+      "slide": 65,
+      "source_slide": 65
+    },
+    {
+      "title": "Independent replay, provenance and limitations",
+      "kind": "updated original",
+      "original_slide": 16,
+      "sources": [
+        "docs/results/transfer_v2_run1/cpu_verification.json",
+        "docs/results/transfer_v2_run1/stage_control_audit.json"
+      ],
+      "slide": 66,
+      "source_slide": 66
+    },
+    {
+      "title": "Analytical survey of alternative explanations",
+      "kind": "expanded",
+      "sources": [
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/theory/sections/03_information.tex",
+        "METHODOLOGY_AUDIT.md"
+      ],
+      "slide": 67,
+      "source_slide": 67
+    },
+    {
+      "title": "Graph study and later diagnostic stages",
+      "kind": "updated source slide",
+      "sources": [
+        "RESULTS.md",
+        "RESEARCH_CONTEXT.md"
+      ],
+      "source_slide": 68,
+      "slide": 68
+    },
+    {
+      "title": "V3 code: common random draws for graph and grid",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v3/graph.py:65-73; SHA-256 a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+      ],
+      "slide": 69,
+      "source_slide": 69
+    },
+    {
+      "title": "V3 code: a degree-preserving donor swap",
+      "kind": "expanded",
+      "sources": [
+        "transfer_v3/graph.py:49-56; SHA-256 a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2"
+      ],
+      "slide": 70,
+      "source_slide": 70
+    },
+    {
+      "title": "V3 notebook: actual five-arm execution cell",
+      "kind": "expanded",
+      "sources": [
+        "kaggle_nca_transfer_v3.ipynb, cell 30; notebook SHA-256 3b32f4030cec46df0970b11c58e16bac0af86e8c9b14872365f3ae1a242adfb7"
+      ],
+      "slide": 71,
+      "source_slide": 71
+    },
+    {
+      "title": "V3 design and completed audit",
+      "kind": "updated source slide",
+      "sources": [
+        "docs/TRANSFER_V3_PROTOCOL.md",
+        "docs/results/transfer_v3_run1/REVIEW.md"
+      ],
+      "source_slide": 72,
+      "slide": 72
+    },
+    {
+      "title": "Research progression and unchanged comparisons",
+      "kind": "current update",
+      "sources": [
+        "RESULTS.md",
+        "RESEARCH_CONTEXT.md"
+      ],
+      "slide": 73
+    },
+    {
+      "title": "Definitions for the experimental comparisons",
+      "kind": "current update",
+      "sources": [
+        "docs/TRANSFER_V4_PROTOCOL.md",
+        "docs/READINESS_V5_PROTOCOL.md"
+      ],
+      "slide": 74
+    },
+    {
+      "title": "V3 primary comparison remains partly censored",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v3_run1/REVIEW.md"
+      ],
+      "slide": 75
+    },
+    {
+      "title": "V3 paired graph effects",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v3_run1/paired_graph_transfer.png",
+        "docs/results/transfer_v3_run1/REVIEW.md"
+      ],
+      "slide": 76
+    },
+    {
+      "title": "V3 recorded language curves",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v3_run1/gpu/learning_curves.png",
+        "docs/results/transfer_v3_run1/REVIEW.md"
+      ],
+      "slide": 77
+    },
+    {
+      "title": "V3 synthetic learning diagnostics",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v3_run1/gpu/ppt_diagnostics.png",
+        "docs/results/transfer_v3_run1/REVIEW.md"
+      ],
+      "slide": 78
+    },
+    {
+      "title": "V4 strengthens the supervised-prefix control",
+      "kind": "current update",
+      "sources": [
+        "docs/TRANSFER_V4_PROTOCOL.md",
+        "transfer_v4/controls.py"
+      ],
+      "slide": 79
+    },
+    {
+      "title": "Actual v4 prefix-control code",
+      "kind": "current update",
+      "sources": [
+        "transfer_v4/controls.py:15-29"
+      ],
+      "slide": 80
+    },
+    {
+      "title": "V4 notebook execution cell",
+      "kind": "current update",
+      "sources": [
+        "kaggle_nca_transfer_v4.ipynb:cell 34",
+        "build_mechanism_notebook.py"
+      ],
+      "slide": 81
+    },
+    {
+      "title": "V4 crossings at the common scratch target",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/primary_analysis.json"
+      ],
+      "slide": 82
+    },
+    {
+      "title": "V4 frozen graph-advantage tests both fail",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/primary_analysis.json",
+        "docs/TRANSFER_V4_PROTOCOL.md"
+      ],
+      "slide": 83
+    },
+    {
+      "title": "V4 language gain and cumulative cost",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/REVIEW.md",
+        "docs/results/transfer_v4_run1/aggregate.json"
+      ],
+      "slide": 84
+    },
+    {
+      "title": "V4 paired graph comparisons",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/paired_graph_transfer.png",
+        "docs/results/transfer_v4_run1/REVIEW.md"
+      ],
+      "slide": 85
+    },
+    {
+      "title": "V4 recorded language curves",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/gpu/learning_curves.png",
+        "docs/results/transfer_v4_run1/REVIEW.md"
+      ],
+      "slide": 86
+    },
+    {
+      "title": "V4 original synthetic diagnostics",
+      "kind": "current update",
+      "sources": [
+        "docs/results/transfer_v4_run1/gpu/ppt_diagnostics.png",
+        "docs/results/transfer_v4_run1/REVIEW.md"
+      ],
+      "slide": 87
+    },
+    {
+      "title": "Causal frequency and dynamics interpretation",
+      "kind": "current update",
+      "sources": [
+        "readiness_v5/frequency.py",
+        "docs/results/transfer_v4_run1/frequency_diagnostic.json"
+      ],
+      "slide": 88
+    },
+    {
+      "title": "Actual causal frequency likelihood",
+      "kind": "current update",
+      "sources": [
+        "readiness_v5/frequency.py:20-29"
+      ],
+      "slide": 89
+    },
+    {
+      "title": "Stage 5 readiness rejects the original checkpoints",
+      "kind": "current update",
+      "sources": [
+        "docs/results/readiness_v5_run1/REVIEW.md",
+        "docs/results/readiness_v5_run1/summary.json",
+        "readiness_v5/gate.py"
+      ],
+      "slide": 90
+    },
+    {
+      "title": "Stage 5 frequency and ordering evidence",
+      "kind": "current update",
+      "sources": [
+        "docs/results/readiness_v5_run1/readiness_advantages.png",
+        "docs/results/readiness_v5_run1/REVIEW.md"
+      ],
+      "slide": 91
+    },
+    {
+      "title": "Stage 6 tests basic transformer trainability",
+      "kind": "current update",
+      "sources": [
+        "docs/TRAINABILITY_V6_PROTOCOL.md",
+        "docs/results/trainability_v6_run1/REVIEW.md"
+      ],
+      "slide": 92
+    },
+    {
+      "title": "Stage 6 learns the complement rule",
+      "kind": "current update",
+      "sources": [
+        "docs/results/trainability_v6_run1/REVIEW.md",
+        "docs/results/trainability_v6_run1/summary.json"
+      ],
+      "slide": 93
+    },
+    {
+      "title": "Stage 6 fixed-budget learning curves",
+      "kind": "current update",
+      "sources": [
+        "docs/results/trainability_v6_run1/learning_curves.png",
+        "docs/results/trainability_v6_run1/REVIEW.md"
+      ],
+      "slide": 94
+    },
+    {
+      "title": "Stage 7 adds a matched spatial interaction",
+      "kind": "current update",
+      "sources": [
+        "interaction_v7/data.py:10-15"
+      ],
+      "slide": 95
+    },
+    {
+      "title": "Exact period-two structure of the spatial rule",
+      "kind": "current update",
+      "sources": [
+        "interaction_v7/data.py",
+        "tests/test_interaction_v7.py",
+        "docs/results/interaction_v7_run1/REVIEW.md"
+      ],
+      "slide": 96
+    },
+    {
+      "title": "Stage 7 full-trajectory results",
+      "kind": "current update",
+      "sources": [
+        "docs/results/interaction_v7_run1/REVIEW.md",
+        "docs/results/interaction_v7_run1/summary.json"
+      ],
+      "slide": 97
+    },
+    {
+      "title": "Stage 7 matched learning curves",
+      "kind": "current update",
+      "sources": [
+        "docs/results/interaction_v7_run1/learning_curves.png",
+        "docs/results/interaction_v7_run1/REVIEW.md"
+      ],
+      "slide": 98
+    },
+    {
+      "title": "First transition and neighbor intervention",
+      "kind": "current update",
+      "sources": [
+        "docs/INTERACTION_V7_FIRST_TRANSITION.md",
+        "docs/results/interaction_v7_run1/first_transition/FROZEN_PROTOCOL.md"
+      ],
+      "slide": 99
+    },
+    {
+      "title": "Stage 7 first spatial predictions remain partial",
+      "kind": "current update",
+      "sources": [
+        "docs/results/interaction_v7_run1/REVIEW.md",
+        "docs/results/interaction_v7_run1/first_transition/results.json"
+      ],
+      "slide": 100
+    },
+    {
+      "title": "Stage 8 objective and exact loss-mass accounting",
+      "kind": "current update",
+      "sources": [
+        "docs/LOSS_WEIGHT_V8_PROTOCOL.md",
+        "loss_weight_v8/objective.py"
+      ],
+      "slide": 101
+    },
+    {
+      "title": "Actual weighted-loss implementation",
+      "kind": "current update",
+      "sources": [
+        "loss_weight_v8/objective.py:18-25"
+      ],
+      "slide": 102
+    },
+    {
+      "title": "Stage 8 fails every coherent seed",
+      "kind": "current update",
+      "sources": [
+        "docs/results/loss_weight_v8_run1/summary.json",
+        "docs/LOSS_WEIGHT_V8_PROTOCOL.md"
+      ],
+      "slide": 103
+    },
+    {
+      "title": "Stage 8 coherent-model outcomes",
+      "kind": "current update",
+      "sources": [
+        "docs/results/loss_weight_v8_run1/summary.json"
+      ],
+      "slide": 104
+    },
+    {
+      "title": "Stage 8 original and intervened correctness",
+      "kind": "current update",
+      "sources": [
+        "docs/results/loss_weight_v8_run1/first_transition_accuracy.png",
+        "docs/results/loss_weight_v8_run1/REVIEW.md"
+      ],
+      "slide": 105
+    },
+    {
+      "title": "Stage 8 controls, replay and cost scope",
+      "kind": "current update",
+      "sources": [
+        "docs/results/loss_weight_v8_run1/REVIEW.md",
+        "docs/results/loss_weight_v8_run1/verification.json",
+        "docs/results/loss_weight_v8_run1/PROVENANCE.json"
+      ],
+      "slide": 106
+    },
+    {
+      "title": "Analytical survey of what the evidence supports",
+      "kind": "current update",
+      "sources": [
+        "RESULTS.md",
+        "docs/results/loss_weight_v8_run1/REVIEW.md",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "slide": 107
+    },
+    {
+      "title": "Next declared diagnostic and research limits",
+      "kind": "current update",
+      "sources": [
+        "docs/results/loss_weight_v8_run1/REVIEW.md",
+        "RESEARCH_CONTEXT.md"
+      ],
+      "slide": 108
+    },
+    {
+      "title": "Comparison with the motivating study",
+      "kind": "updated source slide",
+      "sources": [
+        "sources/nca-pre-pretraining-reference/reference.json",
+        "docs/results/transfer_v4_run1/REVIEW.md",
+        "docs/presentation/SOURCE_COVERAGE.json"
+      ],
+      "source_slide": 73,
+      "slide": 109
+    },
+    {
+      "title": "Applications at larger scale",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/06_numerical.tex",
+        "docs/results/transfer_v2_run1/REVIEW.md",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 110,
+      "source_slide": 74
+    },
+    {
+      "title": "Research decisions supported by the mathematics",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/07_conclusions.tex",
+        "docs/TRANSFER_V3_PROTOCOL.md"
+      ],
+      "slide": 111,
+      "source_slide": 75
+    },
+    {
+      "title": "Conclusion through stage 8",
+      "kind": "updated source slide",
+      "sources": [
+        "RESULTS.md",
+        "docs/results/loss_weight_v8_run1/REVIEW.md",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "source_slide": 76,
+      "slide": 112
+    },
+    {
+      "title": "Documentation, proofs and publication",
+      "kind": "updated source slide",
+      "sources": [
+        "AGENTS.md",
+        "publication.json",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "source_slide": 77,
+      "slide": 113
+    },
+    {
+      "title": "Source and code navigation",
+      "kind": "updated source slide",
+      "sources": [
+        "publication.json",
+        "RESULTS.md"
+      ],
+      "source_slide": 78,
+      "slide": 114
+    },
+    {
+      "title": "Mathematical documentation coverage",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/main.tex",
+        "proofs/lean/PROOF_MAP.md"
+      ],
+      "slide": 115,
+      "source_slide": 79
+    },
+    {
+      "title": "Proof module and axiom inventory",
+      "kind": "expanded",
+      "sources": [
+        "proofs/lean/GraphNCA.lean",
+        "proofs/lean/verification/axiom-reports.txt"
+      ],
+      "slide": 116,
+      "source_slide": 80
+    },
+    {
+      "title": "Evidence hierarchy and retained failures",
+      "kind": "updated source slide",
+      "sources": [
+        "LOGBOOK.md",
+        "RESULTS.md",
+        "proofs/lean/verification/README.md"
+      ],
+      "source_slide": 81,
+      "slide": 117
+    },
+    {
+      "title": "Primary literature and local evidence",
+      "kind": "expanded",
+      "sources": [
+        "https://arxiv.org/html/2603.10055v1",
+        "https://distill.pub/2020/growing-ca/",
+        "https://arxiv.org/abs/1704.01212",
+        "https://arxiv.org/abs/1706.03762",
+        "https://arxiv.org/abs/2302.13971"
+      ],
+      "slide": 118,
+      "source_slide": 82
+    },
+    {
+      "title": "Appendix: posterior prediction and rule inference",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/03_information.tex"
+      ],
+      "slide": 119,
+      "source_slide": 83
+    },
+    {
+      "title": "Appendix: comparing graph and grid remainders",
+      "kind": "expanded",
+      "sources": [
+        "docs/theory/sections/05_transfer.tex: eq:graphvsgrid",
+        "proofs/lean/GraphNCA/Transfer.lean"
+      ],
+      "slide": 120,
+      "source_slide": 84
+    },
+    {
+      "title": "Appendix: historical verified CPU learning curves",
+      "kind": "expanded",
+      "sources": [
+        "runs/cpu_verified/curves.png"
+      ],
+      "slide": 121,
+      "source_slide": 85
+    },
+    {
+      "title": "Appendix: original pilot GPU learning curves",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/pilot_20261016_214947_390021/curves.png"
+      ],
+      "slide": 122,
+      "source_slide": 86
+    },
+    {
+      "title": "Appendix: earlier local CPU diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "runs/cpu_check/curves.svg"
+      ],
+      "slide": 123,
+      "source_slide": 87
+    },
+    {
+      "title": "Appendix: local smoke execution diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "runs/smoke/curves.svg"
+      ],
+      "slide": 124,
+      "source_slide": 88
+    },
+    {
+      "title": "Appendix: returned pilot smoke diagnostic",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/gnn_nca_results_1_review/artifacts/runs/smoke_20261016_214947_390021/curves.svg"
+      ],
+      "slide": 125,
+      "source_slide": 89
+    },
+    {
+      "title": "Appendix: returned v2 language execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/learning_curves.png"
+      ],
+      "slide": 126,
+      "source_slide": 90
+    },
+    {
+      "title": "Appendix: returned v2 synthetic execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "Kaggle Outputs/nca_transfer_v2_run1_review/artifacts/runs/smoke/ppt_diagnostics.png"
+      ],
+      "slide": 127,
+      "source_slide": 91
+    },
+    {
+      "title": "Appendix: v3 local five-arm execution fixture",
+      "kind": "expanded",
+      "sources": [
+        "tmp/transfer_v3_check_ed51a18898ec4460bc1a79ac2ac40da4/run_complete/learning_curves.png"
+      ],
+      "slide": 128,
+      "source_slide": 92
+    }
+  ],
+  "native_chart_owner_slides": [
+    33,
+    49,
+    61,
+    64
+  ],
+  "native_table_owner_slides": [
+    2,
+    4,
+    5,
+    6,
+    21,
+    31,
+    34,
+    36,
+    41,
+    43,
+    46,
+    47,
+    48,
+    56,
+    59,
+    63,
+    67,
+    68,
+    73,
+    74,
+    75,
+    82,
+    83,
+    84,
+    90,
+    93,
+    97,
+    100,
+    103,
+    104,
+    107,
+    111,
+    113,
+    114,
+    115,
+    116
+  ],
+  "unchanged_chart_workbook_parts": {
+    "ppt/slides/charts/chart1.xml": "eede5e1fe7a293fcc1fd9b207df0fd6f08919ce11f1536ceac8ddcbd6610f35c",
+    "ppt/slides/charts/chart2.xml": "a15d087a700cc0d820adcd52ddb363bd08f4024c156e5574df7506e3a0ea9fcb",
+    "ppt/slides/charts/chart3.xml": "059d39dfdfd22f09c8a3f4fae5dd243ae9e6a53871eb94c08284902632c4ecf4",
+    "ppt/slides/charts/chart4.xml": "c9a6d29d4b4d02f47dd05c6ab96782c7218952d9967a57628c964be41f4a1a77",
+    "ppt/embeddings/original-template-data.xlsx": "8019f466dd4ec0e779d87da1e889f0679c450a66ff3bf626c9f96ee871c2166a",
+    "ppt/slides/charts/_rels/chart4.xml.rels": "2f38d4c279787d69326548914c847a16f8c82144d9269d12d72bd53b6790b1a8",
+    "ppt/embeddings/chart-data-snapshot-001.xlsx": "d00cdff3e78c8c75d4b1c90c7ee3eb33d620d91a772ba967f86dde425a2eb30c",
+    "ppt/slides/charts/_rels/chart1.xml.rels": "08d9a730b9d55a57141192c8ffdf07d56687ac3b98e8afe58707157f5369d5af",
+    "ppt/embeddings/chart-data-snapshot-002.xlsx": "1e3ea2980135c5d410f507788cf18f17de742b10d59e67936c5daf190c2c9a77",
+    "ppt/slides/charts/_rels/chart2.xml.rels": "68115ab9999b1dc383cf32895a0c7fc443ded8adddc8a60d4cc8b69bd8bab27b",
+    "ppt/embeddings/chart-data-snapshot-003.xlsx": "6e7d77e039ed94b59852e035cb1fe58c93bc0d07b83b46bd2ea26252b2d30cf9",
+    "ppt/slides/charts/_rels/chart3.xml.rels": "2347e0511cd42389af538e25bd0e4b052e45c1454cc31e4b8b8621b26e832702"
+  },
+  "proof_scope": "Existing 44-statement Lean core and prior LaTeX validation only. No new Lean or LaTeX compilation for this presentation. Spatial involution algebra and weighting arithmetic are displayed derivations."
+}

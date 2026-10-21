@@ -1,0 +1,20 @@
+{
+  "purpose": "Disposable warmup/timing calibration only; no checkpoint used for transfer",
+  "device": "cuda",
+  "stage_measurements": {
+    "ppt": {
+      "seconds_per_update_median": 0.1371710329999587,
+      "validation_seconds": 0.44587475399998766,
+      "parameters": 4577088,
+      "peak_allocated_gpu_mb": 698.39872
+    },
+    "language": {
+      "seconds_per_update_median": 0.2103116539999519,
+      "validation_seconds": 1.4316782150000336,
+      "parameters": 12306048,
+      "peak_allocated_gpu_mb": 2139.040768
+    }
+  },
+  "approx_full_training_and_validation_minutes": 400.72737853680826,
+  "excludes": "Generation, checkpoint saves, verification, plotting, downloads, queueing and changing GPU load; not a runtime guarantee"
+}

@@ -1,0 +1,30 @@
+{
+  "archive_name": "nca_transfer_v3_results_20261018_161811_573163.zip",
+  "archive_sha256": "14d7053a55007d01dd36522bca3885dfcb68894866c30467cf58addc149e2fa5",
+  "members_crc_checked": 215,
+  "trusted_source_sha256": {
+    "__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+    "calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "common.py": "94c8a870fd3b19b06f7a2d2ccc870c59488a2b596bed7b0c81e572d1d4c1ec95",
+    "data.py": "b3ad2e76dc509934d55f7fb3cd66ed59a388499a0db4bce18b8ff5d76e1e646e",
+    "graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "report.py": "ee9e69294fd8a7d314ed4541eedf05f2c31e07682762d50fc0220b190a096f05",
+    "run.py": "6badb47576c49f398b82850f4ceda177c54b1d601f692ed02d89fea61e704ad7",
+    "training.py": "de2e03c560b8c51813a7b59de7488a3a2b7d85a88ea33a00bf2fee8177a668fa",
+    "verify.py": "4c738cad63c046975c215b1a0b7ddf34884e26afa7a0331d3b955b53d49b4e05"
+  },
+  "data_manifest_sha256": "d27b2fec2962e9e4c66a1d337ac1ecbcde6f725ba4cd4afbbe98268893906dfe",
+  "gpu": "Tesla T4",
+  "imported_gpu_verification_sha256": "b23996f952613493a0ecb59b2739202414d19ca1966a11e077d7c783c545468f",
+  "cpu_checkpoints_verified": 27,
+  "cpu_initializations_verified": 3,
+  "max_cpu_evaluation_absolute_error": 1.8551719271897582e-07,
+  "language_data_sha256": {
+    "text_train.npy": "9c4dcc69216d391a0b0b9f09fb895ae70aa2e80656cd01a7252de43c8af995d5",
+    "text_validation.npy": "a6b07b121120aaba6fb9d23e8197c8f5096b9620df38b9df258ecaa09c8f91da"
+  },
+  "test_split_present": false,
+  "duration_seconds": 751.2935097000445
+}

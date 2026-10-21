@@ -52,3 +52,4 @@ desktop.ini
 # Parent-workspace copy; publish Prod contents as a standalone repository
 /Prod/
 /sources/*.pdf
+nca_transfer_v4_starter.zip

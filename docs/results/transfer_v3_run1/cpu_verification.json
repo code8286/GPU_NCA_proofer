@@ -1,0 +1,283 @@
+{
+  "device": "cpu",
+  "status": {
+    "state": "complete",
+    "purpose": "development",
+    "scientific_claim": "Inspect paired language-stage curves and censored reference crossings; completion is not success."
+  },
+  "stage_checkpoints_verified": 27,
+  "selected_stage_checkpoints_verified": 27,
+  "additional_final_ppt_checkpoints_verified": 0,
+  "saved_initializations_verified": 3,
+  "records": [
+    {
+      "arm": "scratch",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 2.9802322387695312e-08
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "scratch",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 9.275859547130949e-08,
+        "patch_nll": 6.52084999330782e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 1.8551719271897582e-07,
+        "patch_nll": 1.6302125160905234e-07,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 1.2367812818325774e-07,
+        "patch_nll": 3.260425174289594e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 9.275859635948791e-08,
+        "patch_nll": 6.520850170943504e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 6.183906453571808e-08,
+        "patch_nll": 6.52084999330782e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 1.5459766000702757e-07,
+        "patch_nll": 9.78127498996173e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 2.9802322387695312e-08
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 3.091953182376983e-08,
+        "patch_nll": 3.26042499665391e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 8.940696716308594e-08
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 6.183906364753966e-08,
+        "patch_nll": 9.78127498996173e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 2.9802322387695312e-08
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 3.091953182376983e-08,
+        "patch_nll": 1.6302125160905234e-07,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_nca",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 0.0,
+        "patch_nll": 1.304169998661564e-07,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 17,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 1.4901161193847656e-07
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 29,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 6.183906364753966e-08,
+        "patch_nll": 1.304169998661564e-07,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 29,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 43,
+      "stage": "ppt",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "nll": 9.275859635948791e-08,
+        "patch_nll": 6.52084999330782e-08,
+        "patch_accuracy": 0.0
+      }
+    },
+    {
+      "arm": "shuffled_graph",
+      "seed": 43,
+      "stage": "language",
+      "checksum_valid": true,
+      "absolute_errors": {
+        "validation_nll": 5.960464477539063e-08
+      }
+    }
+  ],
+  "language_controls_checked": true,
+  "note": "Checkpoint consistency does not prove learning acceleration"
+}

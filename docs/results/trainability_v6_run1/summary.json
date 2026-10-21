@@ -1,0 +1,20 @@
+{
+  "trainability_passed": true,
+  "language_allowed": false,
+  "models_trained": 6,
+  "replayed_cells": 18,
+  "frequency_nll": 2.305333676283364,
+  "mean_coherent_nll": 0.05641713012855256,
+  "mean_coherent_accuracy": 1.0,
+  "frequency_passes": 3,
+  "ordering_passes": 3,
+  "both_passes": 3,
+  "mean_frequency_advantage_nats": 2.2489165461548115,
+  "mean_ordering_advantage_nats": 4.466259723238528,
+  "recorded_training_stage_seconds": 417.97186699998565,
+  "total_updates": 6000,
+  "total_input_tokens": 1128000,
+  "backbone_parameters": 2656704,
+  "model_parameters": 2660160,
+  "plan_sha256": "3970a3b041e26ddecdd977c22f673b744a5f910643acb809e0d9c63a7b010ed4"
+}

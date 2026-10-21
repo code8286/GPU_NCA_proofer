@@ -1,0 +1,13 @@
+{
+  "parent_plan_sha256": "869690ac3805b2b015d4d918d7e3ca742358c7185b983cdcf41ae32476942251",
+  "source_sha256": "cd0ec7021b7bf8cf72dae4651b0891984ddffef12633abc24a0dbdf94571cfe5",
+  "protocol_sha256": "49c179646556df30fa11a825012f4f47d67c1499e1736f02df5448c8e88301cc",
+  "query_files_sha256": {
+    "complement_native.npy": "fd817ad5e9c449112c94e305777b717069bfcc5bff84ac050795d9f2174e48de",
+    "complement_changed.npy": "fe3e1cdbec3e8dee777bce9ce66db55deea8e2b783831f01f55872ac7345fdf8",
+    "spatial_native.npy": "64d534d4552d819d6861fbc8fbff7fb0059ccc3f49dd8abb2bb57819b95ffaab",
+    "spatial_changed.npy": "3054499a6f0609179c4ef8b514ba1e9c7ebf91edb6e870f40566e4a0b0b2a9ed",
+    "eligibility.json": "34441b33c9a9caee068eb0e4fbf2d6f89ba9561347157ee22c89599edad74c28"
+  },
+  "scope": "Supplementary development plan frozen during training before assessment; primary criteria unchanged"
+}

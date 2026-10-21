@@ -26,4 +26,12 @@
 - Keep secrets, personal paths, corpora, model weights and caches out of public
   files. Explicitly select new distributable files in `publication.json`.
   Preserve upstream MIT notices and reference checksums.
+- Every request to update Prod includes all current and newly added Lean proof
+  sources, proof documentation and verification records under `proofs/lean/`,
+  plus LaTeX sources and supporting mathematical documentation under
+  `docs/theory/`, by default. Keep these directories recursively selected in
+  `publication.json`; explicitly select any new proof/documentation locations.
+  Exclude local build caches and private artifacts under the publication policy.
+  Verify inclusion and root/Prod parity; do not imply a new Lean check or LaTeX
+  compilation merely because their existing sources and evidence were copied.
 - Do not push, publish or launch remote/paid training without user authorization.

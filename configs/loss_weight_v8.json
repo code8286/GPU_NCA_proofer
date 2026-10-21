@@ -1,0 +1,11 @@
+{
+  "schema_version": 8,
+  "purpose": "development_loss_weighting",
+  "first_transition_weight": 6.0,
+  "minimum_first_patch_nll_improvement": 0.01,
+  "minimum_intervention_nll_improvement": 0.01,
+  "require_all_seeds": true,
+  "reference_plan_sha256": "869690ac3805b2b015d4d918d7e3ca742358c7185b983cdcf41ae32476942251",
+  "selection": "final_declared_update",
+  "language_allowed": false
+}

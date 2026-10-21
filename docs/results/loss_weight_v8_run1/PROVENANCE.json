@@ -1,0 +1,89 @@
+{
+  "scope": "Imported verified standard controls versus new weighted CPU models; inspected development data only",
+  "files": {
+    "plan.json": {
+      "sha256": "d8d69d609cf9de8b1bf683397eebdc8468ce5b82513f653d142a4e2481a21abf",
+      "origin": "Frozen objective ablation: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "b19b9558d9643cca0972d159c65c77285c01cec1500650d2817ee7d17d69f66e",
+      "origin": "Frozen objective ablation: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "e882c8671778d54149ade13a8526e5bb8e6082edc96199231e509a4a759825c1",
+      "origin": "Frozen objective ablation: FROZEN_PROTOCOL.md"
+    },
+    "training_complete.json": {
+      "sha256": "b3acaab4aa831003982f16869744d623811d787d6ea19128416f4d094e1b9e2c",
+      "origin": "Frozen objective ablation: training_complete.json"
+    },
+    "training_receipt.json": {
+      "sha256": "b0637396f866b43d8318bd8ed9d890cb5f0159eabccad2bb5d15a80918504670",
+      "origin": "Frozen objective ablation: training_receipt.json"
+    },
+    "results.json": {
+      "sha256": "7e44fe3b8e80a30ca9b6103020681c25e71b15e5d249d6fd9cdabc0e08bb6fe4",
+      "origin": "Frozen objective ablation: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "8f09fce498337215d74bd64d0f9d53ca18e2e2676c891ba5f1bd8e870c3cd465",
+      "origin": "Frozen objective ablation: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "b44443a368b3e254d26d24c769503aa1866cd7cc9481a77f6a96a4f18711a6fb",
+      "origin": "Frozen objective ablation: verification.json"
+    },
+    "status.json": {
+      "sha256": "b1be63fb14cfd4677ddbdda80b44c801565ed7022395a3df42f91aaa18c3ddb1",
+      "origin": "Frozen objective ablation: status.json"
+    },
+    "weighted_coherent_131/metrics.jsonl": {
+      "sha256": "4f8776bb03dc309fd808e840c5b40ce8bd7ea924cdf859261cd0a26de99912dd",
+      "origin": "Frozen objective ablation: weighted_coherent_131/metrics.jsonl"
+    },
+    "weighted_coherent_131/summary.json": {
+      "sha256": "3557e84d1f1e2cec46e5b0573c307334f0f62094b11b7fb14d2b31cf29e31530",
+      "origin": "Frozen objective ablation: weighted_coherent_131/summary.json"
+    },
+    "weighted_prefix_131/metrics.jsonl": {
+      "sha256": "616a6e1645b0910fdb1358d62f253653d1d6f8c321542ca153c5e4fea87ceff3",
+      "origin": "Frozen objective ablation: weighted_prefix_131/metrics.jsonl"
+    },
+    "weighted_prefix_131/summary.json": {
+      "sha256": "4871c0a0b9ea95249608739433a7057abfe0245ce3d12f20f51c29fc44776867",
+      "origin": "Frozen objective ablation: weighted_prefix_131/summary.json"
+    },
+    "weighted_coherent_149/metrics.jsonl": {
+      "sha256": "440afddd7a6d25ff41b645f1b6b70be6d2b60acb6c84958d01c6ef9abbf848d8",
+      "origin": "Frozen objective ablation: weighted_coherent_149/metrics.jsonl"
+    },
+    "weighted_coherent_149/summary.json": {
+      "sha256": "4755c969a110eee07e070ea82a34a509016d590d512d49f5f60b0f022afabcb6",
+      "origin": "Frozen objective ablation: weighted_coherent_149/summary.json"
+    },
+    "weighted_prefix_149/metrics.jsonl": {
+      "sha256": "68e1af369ed6ce0fdf0b5123eac5b6f1f2ea4ce32ef88fef27399fee540cc205",
+      "origin": "Frozen objective ablation: weighted_prefix_149/metrics.jsonl"
+    },
+    "weighted_prefix_149/summary.json": {
+      "sha256": "354d571c561e09d976e831e3d089c9caee08205281c21f5710f2ef9d0384c424",
+      "origin": "Frozen objective ablation: weighted_prefix_149/summary.json"
+    },
+    "weighted_coherent_167/metrics.jsonl": {
+      "sha256": "e060eda6cba29e652e9f3a9063b951d6c364ed0c7a72614ca7d4b1917986be34",
+      "origin": "Frozen objective ablation: weighted_coherent_167/metrics.jsonl"
+    },
+    "weighted_coherent_167/summary.json": {
+      "sha256": "95bf53736e3f5cc74f927eaf12e8af302c99bf326edb5e108f167213d3c52821",
+      "origin": "Frozen objective ablation: weighted_coherent_167/summary.json"
+    },
+    "weighted_prefix_167/metrics.jsonl": {
+      "sha256": "78c10a4323a4bda3388224e4c6363421e0ab0bee211db6ab8f896d7906bbee05",
+      "origin": "Frozen objective ablation: weighted_prefix_167/metrics.jsonl"
+    },
+    "weighted_prefix_167/summary.json": {
+      "sha256": "69b12df9b36cdcea1064b0c965d11d109e1557e10ee4870b6dba7bfc9d0138bf",
+      "origin": "Frozen objective ablation: weighted_prefix_167/summary.json"
+    }
+  }
+}

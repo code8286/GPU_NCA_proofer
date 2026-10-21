@@ -1,0 +1,128 @@
+{
+  "config": {
+    "schema_version": 4,
+    "purpose": "development",
+    "seeds": [
+      59,
+      71,
+      83,
+      97,
+      109,
+      127
+    ],
+    "precision": "fp32",
+    "model": {
+      "layers": 6,
+      "heads": 4,
+      "width": 192,
+      "context": 1024
+    },
+    "batch": 2,
+    "accumulate": 2,
+    "eval_every": 100,
+    "eval_batch": 2,
+    "language_eval_tokens": 32768,
+    "ppt_eval_rules": 32,
+    "ppt": {
+      "steps": 1000,
+      "lr": 0.0001,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0,
+      "clip": null
+    },
+    "language": {
+      "steps": 2000,
+      "lr": 0.0005,
+      "warmup_fraction": 0.1,
+      "weight_decay": 0.0001,
+      "clip": 1.0
+    },
+    "nca": {
+      "grid": 12,
+      "states": 10,
+      "burnin": 10,
+      "temperature": 0.0001,
+      "profile_frames": 10,
+      "filter_low": 0.5,
+      "filter_high": 1.0,
+      "train_rules": 4096,
+      "val_rules": 128,
+      "candidate_batch": 64,
+      "max_candidates": 262144,
+      "data_seed": 20261020,
+      "channel_padding": "spatial_only"
+    },
+    "gate": {
+      "enforce": true,
+      "minimum_relative_improvement": 0.05,
+      "baseline_margin_nats": 0.01
+    },
+    "text": {
+      "dataset": "Salesforce/wikitext",
+      "subset": "wikitext-2-raw-v1",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "tokenizer": "gpt2",
+      "evaluate_test": false
+    },
+    "graph": {
+      "rewire_fraction": 0.25,
+      "topology_seed": 20261019,
+      "rule_selection": "intersection",
+      "replication": "independent_cache_per_model_seed"
+    },
+    "study": {
+      "id": "prefix_frequency_control_v1",
+      "target": "paired_scratch_endpoint",
+      "primary_pairs": [
+        [
+          "grid_nca",
+          "graph_nca"
+        ],
+        [
+          "prefix_graph",
+          "graph_nca"
+        ]
+      ],
+      "alpha_per_comparison": 0.025,
+      "minimum_cohorts": 6,
+      "control": "initial_frame_and_supervised_prefix_histogram",
+      "crossing": "first_recorded_no_interpolation_all_cohorts_required"
+    }
+  },
+  "study": {
+    "id": "prefix_frequency_control_v1",
+    "target": "paired_scratch_endpoint",
+    "primary_pairs": [
+      [
+        "grid_nca",
+        "graph_nca"
+      ],
+      [
+        "prefix_graph",
+        "graph_nca"
+      ]
+    ],
+    "alpha_per_comparison": 0.025,
+    "minimum_cohorts": 6,
+    "control": "initial_frame_and_supervised_prefix_histogram",
+    "crossing": "first_recorded_no_interpolation_all_cohorts_required"
+  },
+  "source_sha256": {
+    "__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+    "analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+    "calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+    "common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+    "data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+    "graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+    "model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+    "plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+    "report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+    "run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+    "training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+    "verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4"
+  },
+  "protocol_sha256": "b13ddf4b966047ce209581f64bacee328eb0f21976a78d8008b6a141837b9da8",
+  "scope": "Prospective validation replication and mechanism study, not untouched-domain confirmation"
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "development_on_inspected_v4_rules",
+  "seeds": [59, 71, 83, 97, 109, 127],
+  "families": [["grid_nca", "prefix_grid", "nca"], ["graph_nca", "prefix_graph", "graph"]],
+  "held_out_rules": 32,
+  "minimum_frequency_advantage_nats": 0.01,
+  "minimum_ordering_advantage_nats": 0.01,
+  "frequency_fit_rules": 256,
+  "frequency_concentrations": [0.1, 1, 10, 100, 1000, 10000],
+  "require_all_structured_cohorts": true,
+  "positive_control": {"seed": 20261019, "grid": 4, "states": 2, "frames": 8, "train_trajectories": 256, "validation_trajectories": 32},
+  "reference_archive_sha256": "d49a157b38c2e069b077d579c2f532b7b8d8914d190db8f284b98cd5e02d55c5",
+  "reference_data_manifest_sha256": "a0b9894c6688cb68c992ba035f457745c1f4c11618e92f1e1b27b6613c4b83f1"
+}

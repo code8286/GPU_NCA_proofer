@@ -1,0 +1,89 @@
+{
+  "scope": "New CPU controlled-rule transformer training and replay; no language-transfer result",
+  "files": {
+    "plan.json": {
+      "sha256": "3970a3b041e26ddecdd977c22f673b744a5f910643acb809e0d9c63a7b010ed4",
+      "origin": "Frozen CPU trainability run: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "809a0a01f62635136dde3e1635685efb8ef728247d6c5b9bb93df4c9c3974520",
+      "origin": "Frozen CPU trainability run: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "a6ec9bce877b1def16e0a9d4fd48d1c183559a4276eb3846d2d3dc13bdd526ce",
+      "origin": "Frozen CPU trainability run: FROZEN_PROTOCOL.md"
+    },
+    "training_complete.json": {
+      "sha256": "1f905b46b85b2d0d5edd081c21acc128922c9372b6a73c3295c18481e27f8f3f",
+      "origin": "Frozen CPU trainability run: training_complete.json"
+    },
+    "training_receipt.json": {
+      "sha256": "9842d942a7a670ed2d3b3dee9867be488059275bd7db814b5e72fdf97f1080ba",
+      "origin": "Frozen CPU trainability run: training_receipt.json"
+    },
+    "results.json": {
+      "sha256": "3b8e5a1cbb6b54cfb3951830cf27398f0d17202d3d0b269bb3c79a50958485c1",
+      "origin": "Frozen CPU trainability run: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "c58c506706d3111ac15893e5501d8ccd2a8f849061707f4e57ac832921da9b45",
+      "origin": "Frozen CPU trainability run: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "339a84a4ec626a1c688a4fcbe486eeffe6bfad9f2265c536283ca063b44b3e9a",
+      "origin": "Frozen CPU trainability run: verification.json"
+    },
+    "status.json": {
+      "sha256": "71a42e3518d1dcc7a8d676fa94d570d699bc69b8181be50c372c826ffbc77902",
+      "origin": "Frozen CPU trainability run: status.json"
+    },
+    "coherent_131/summary.json": {
+      "sha256": "20161ccc92ef12acd2c53a2dd1db2f36bfd29d5cbdfc015666c5c009e0c0b25d",
+      "origin": "Frozen CPU trainability run: coherent_131/summary.json"
+    },
+    "coherent_131/metrics.jsonl": {
+      "sha256": "4a44115e21b5ad729292b6062810cc18dc809d913ee8673335715e29ff1e1686",
+      "origin": "Frozen CPU trainability run: coherent_131/metrics.jsonl"
+    },
+    "prefix_131/summary.json": {
+      "sha256": "782ef87214114bb210469760e4eb40433cac593357085750dc1f9922ba679884",
+      "origin": "Frozen CPU trainability run: prefix_131/summary.json"
+    },
+    "prefix_131/metrics.jsonl": {
+      "sha256": "dbffd80634ccba7b2312630d2f8b725684d7bb1d0421c05d73ad18752c44149e",
+      "origin": "Frozen CPU trainability run: prefix_131/metrics.jsonl"
+    },
+    "coherent_149/summary.json": {
+      "sha256": "557df8ffbdf85af8b5157600a5191f3bbeb772cbacbfa82f8acfe57d485cf27a",
+      "origin": "Frozen CPU trainability run: coherent_149/summary.json"
+    },
+    "coherent_149/metrics.jsonl": {
+      "sha256": "9087c26f8c2a423832ff60f2421bfd081b6fedd62bf50368912cd5a3342c397b",
+      "origin": "Frozen CPU trainability run: coherent_149/metrics.jsonl"
+    },
+    "prefix_149/summary.json": {
+      "sha256": "62183fe2de3f9aa551b6c18bdb45f40e7b70c8491ece30d4c1d5011b9f3427f8",
+      "origin": "Frozen CPU trainability run: prefix_149/summary.json"
+    },
+    "prefix_149/metrics.jsonl": {
+      "sha256": "acc1f7a14a031d98ee53fd73cc79f5f64489900cb8ddfad5a839810081d0b87f",
+      "origin": "Frozen CPU trainability run: prefix_149/metrics.jsonl"
+    },
+    "coherent_167/summary.json": {
+      "sha256": "27ef99653de0e5a8c0a96159268df2df0ac713373f2fe6528f8ad1d63d3201d5",
+      "origin": "Frozen CPU trainability run: coherent_167/summary.json"
+    },
+    "coherent_167/metrics.jsonl": {
+      "sha256": "ad23f638ba7b914c88ee9c0532fa7b632edb80a187f75e7a5d09348c605d4b6f",
+      "origin": "Frozen CPU trainability run: coherent_167/metrics.jsonl"
+    },
+    "prefix_167/summary.json": {
+      "sha256": "7d0d4beb23293d0ff487063013a7d8c6fe2b4dd86071becb198b5fc341d70575",
+      "origin": "Frozen CPU trainability run: prefix_167/summary.json"
+    },
+    "prefix_167/metrics.jsonl": {
+      "sha256": "fad08a48c27f75f90a6963cbf60d4a252479fd4e7a2acd2a840de5b491afd298",
+      "origin": "Frozen CPU trainability run: prefix_167/metrics.jsonl"
+    }
+  }
+}

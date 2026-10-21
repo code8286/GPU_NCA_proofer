@@ -1,0 +1,293 @@
+{
+  "total_prepare_seconds": 60.278679933999996,
+  "replicates": {
+    "17": {
+      "graph": {
+        "seed": 20261036,
+        "requested_changed_fraction": 0.25,
+        "actual_changed_fraction": 0.25,
+        "accepted_swaps": 170,
+        "attempts": 191,
+        "sha256": "b15ad5d88d57b3eb13fd876b6cdbb2ac1ec8f43c7930f210a23b22ea4667e012",
+        "grid_sha256": "170e292a26243313da10f68101511f6128bc41b6216b7124f0cbe7ce5dae6dfa",
+        "kind": "Directed slot-labeled donor graph; fixed self slot; eight distinct other donors; per-slot degree preserved"
+      },
+      "splits": {
+        "train": {
+          "replicate_seed": 17,
+          "generation_seed": 21961071,
+          "accepted": 4096,
+          "candidates": 9088,
+          "individual_band_passes": {
+            "nca": 4185,
+            "graph": 4813
+          },
+          "generation_seconds": 17.01286807599999,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 17.357901126,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5423611111111111,
+              0.575,
+              0.6055555555555555
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4765946502057613,
+              0.5120884773662552,
+              0.5478395061728395
+            ],
+            "final_fixed_transition_fraction": 0.001953125
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.5576388888888889,
+              0.5854166666666667,
+              0.6125
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.49228395061728397,
+              0.5248199588477367,
+              0.5558127572016461
+            ],
+            "final_fixed_transition_fraction": 0.00048828125
+          }
+        },
+        "validation": {
+          "replicate_seed": 17,
+          "generation_seed": 22961074,
+          "accepted": 128,
+          "candidates": 384,
+          "individual_band_passes": {
+            "nca": 145,
+            "graph": 184
+          },
+          "generation_seconds": 0.6647378119999985,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 0.6783765750000157,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5435763888888888,
+              0.5805555555555556,
+              0.6126736111111112
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.47800925925925924,
+              0.5172325102880658,
+              0.5575488683127572
+            ],
+            "final_fixed_transition_fraction": 0.0
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.5560763888888889,
+              0.59375,
+              0.6151041666666667
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.49434156378600824,
+              0.5340792181069959,
+              0.5628215020576132
+            ],
+            "final_fixed_transition_fraction": 0.0
+          }
+        }
+      }
+    },
+    "29": {
+      "graph": {
+        "seed": 20261048,
+        "requested_changed_fraction": 0.25,
+        "actual_changed_fraction": 0.25,
+        "accepted_swaps": 171,
+        "attempts": 192,
+        "sha256": "79c329a66fdc00678fa45f53635252d356a0afc4b7a65d504d8f835bf03b3fc0",
+        "grid_sha256": "170e292a26243313da10f68101511f6128bc41b6216b7124f0cbe7ce5dae6dfa",
+        "kind": "Directed slot-labeled donor graph; fixed self slot; eight distinct other donors; per-slot degree preserved"
+      },
+      "splits": {
+        "train": {
+          "replicate_seed": 29,
+          "generation_seed": 23161107,
+          "accepted": 4096,
+          "candidates": 9088,
+          "individual_band_passes": {
+            "nca": 4190,
+            "graph": 4815
+          },
+          "generation_seconds": 16.397719094000024,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 16.72055699699999,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5451388888888888,
+              0.5756944444444444,
+              0.6041666666666666
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4765946502057613,
+              0.5108024691358025,
+              0.5473251028806584
+            ],
+            "final_fixed_transition_fraction": 0.001220703125
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.5583333333333333,
+              0.5861111111111111,
+              0.6111111111111112
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4933127572016461,
+              0.5241769547325102,
+              0.5563271604938271
+            ],
+            "final_fixed_transition_fraction": 0.000244140625
+          }
+        },
+        "validation": {
+          "replicate_seed": 29,
+          "generation_seed": 24161110,
+          "accepted": 128,
+          "candidates": 320,
+          "individual_band_passes": {
+            "nca": 158,
+            "graph": 181
+          },
+          "generation_seconds": 0.5715287069999988,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 0.5854567549999956,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5368055555555555,
+              0.5666666666666667,
+              0.5984375
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.47190072016460904,
+              0.5028292181069959,
+              0.5392875514403292
+            ],
+            "final_fixed_transition_fraction": 0.0
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.554513888888889,
+              0.5802083333333334,
+              0.6119791666666667
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4886188271604938,
+              0.5147890946502058,
+              0.5525977366255144
+            ],
+            "final_fixed_transition_fraction": 0.0
+          }
+        }
+      }
+    },
+    "43": {
+      "graph": {
+        "seed": 20261062,
+        "requested_changed_fraction": 0.25,
+        "actual_changed_fraction": 0.25,
+        "accepted_swaps": 159,
+        "attempts": 178,
+        "sha256": "ab3b9645f69419de5001672f011e9a386679f780abfc150d0e8abea30bc41c86",
+        "grid_sha256": "170e292a26243313da10f68101511f6128bc41b6216b7124f0cbe7ce5dae6dfa",
+        "kind": "Directed slot-labeled donor graph; fixed self slot; eight distinct other donors; per-slot degree preserved"
+      },
+      "splits": {
+        "train": {
+          "replicate_seed": 43,
+          "generation_seed": 24561149,
+          "accepted": 4096,
+          "candidates": 8896,
+          "individual_band_passes": {
+            "nca": 4188,
+            "graph": 4755
+          },
+          "generation_seconds": 16.102111950000022,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 16.459083399000008,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5409722222222222,
+              0.5743055555555555,
+              0.6027777777777777
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4747942386831276,
+              0.5100308641975309,
+              0.5457818930041153
+            ],
+            "final_fixed_transition_fraction": 0.00146484375
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.55625,
+              0.5840277777777778,
+              0.6097222222222223
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4920267489711934,
+              0.5227623456790123,
+              0.5547839506172839
+            ],
+            "final_fixed_transition_fraction": 0.001220703125
+          }
+        },
+        "validation": {
+          "replicate_seed": 43,
+          "generation_seed": 25561152,
+          "accepted": 128,
+          "candidates": 320,
+          "individual_band_passes": {
+            "nca": 150,
+            "graph": 169
+          },
+          "generation_seconds": 0.571305738999996,
+          "selection": "Same rule retained only if BOTH independent grid/graph profiles pass the same strict band",
+          "randomness": "Common initial states and sampling draws within each paired rollout; fresh actual rollout after screening",
+          "fresh_rollout_note": "Fresh initial conditions may produce complexity outside the screening band",
+          "prepare_seconds": 0.5857619159999956,
+          "nca": {
+            "profile_gzip_quartiles": [
+              0.5380208333333333,
+              0.5708333333333333,
+              0.6071180555555555
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.4702289094650206,
+              0.5074588477366255,
+              0.5502186213991769
+            ],
+            "final_fixed_transition_fraction": 0.0
+          },
+          "graph": {
+            "profile_gzip_quartiles": [
+              0.5512152777777778,
+              0.5795138888888889,
+              0.6126736111111112
+            ],
+            "fresh_rollout_gzip_quartiles": [
+              0.48842592592592593,
+              0.5201903292181069,
+              0.5557484567901234
+            ],
+            "final_fixed_transition_fraction": 0.0078125
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
+import zipfile
 
 import experiment as e
 from scripts.check_release import check, safe_file, selected_files, write_inventory
@@ -87,6 +89,47 @@ class PublicationIntegrityChecks(unittest.TestCase):
             (root / "README.md").write_text("Changed after inventory\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "Stale publication inventory"):
                 check(root)
+
+
+class StarterSnapshotChecks(unittest.TestCase):
+    def fixture(self, root):
+        (root/'publication.json').write_text(json.dumps({'files': ['README.md'], 'directories': ['docs']}), encoding='utf-8')
+        (root/'README.md').write_text('Original snapshot bytes\n', encoding='utf-8', newline='\n')
+        (root/'docs').mkdir()
+
+    def run_builder(self, root, side_effect):
+        import build_notebook as builder
+        with patch.object(builder, 'ROOT', root), patch('sys.argv', ['build_notebook.py']), patch('scripts.check_release.inventory', side_effect=side_effect) as capture:
+            builder.main()
+        self.assertEqual(capture.call_count, 1)
+
+    def test_late_file_cannot_enter_only_archive_manifest(self):
+        from scripts.check_release import inventory
+        with workspace_tempdir() as name:
+            root = Path(name)
+            self.fixture(root)
+            def late_file(folder):
+                snapshot = inventory(folder)
+                (folder/'docs/late.md').write_text('Created after inventory\n', encoding='utf-8')
+                return snapshot
+            self.run_builder(root, late_file)
+            with zipfile.ZipFile(root/'gnn_nca_starter.zip') as archive:
+                manifest = json.loads(archive.read('PUBLICATION_MANIFEST.json'))
+                self.assertEqual(set(archive.namelist()), set(manifest['files'])|{'PUBLICATION_MANIFEST.json'})
+                self.assertNotIn('docs/late.md', manifest['files'])
+                self.assertEqual(archive.read('README.md'), b'Original snapshot bytes\n')
+
+    def test_changed_selected_bytes_require_explicit_rebuild(self):
+        from scripts.check_release import inventory
+        with workspace_tempdir() as name:
+            root = Path(name)
+            self.fixture(root)
+            def changed_file(folder):
+                snapshot = inventory(folder)
+                (folder/'README.md').write_text('Changed after inventory\n', encoding='utf-8')
+                return snapshot
+            with self.assertRaisesRegex(ValueError, 'changed while packaging'):
+                self.run_builder(root, changed_file)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,488 @@
+{
+  "scope": "Post-hoc CPU diagnostic, not a revised admission gate or predeclared language-transfer outcome",
+  "prior": "Add-one-smoothed global frequencies from all training rule prefixes; concentration selected only on first 256 training rules",
+  "conditioning": "Actual first frame; marker tokens excluded; posterior updates after each observed patch",
+  "data_manifest_sha256": "a0b9894c6688cb68c992ba035f457745c1f4c11618e92f1e1b27b6613c4b83f1",
+  "results": [
+    {
+      "seed": 59,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.389063684414342
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.385936891379252
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.409551927903088
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.634590581171844
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.594910091075157
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.234430479410513
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.529110805088301,
+      "imported_ppt_patch_nll": 8.170676467765091,
+      "imported_control_patch_nll": 8.165834704016008,
+      "ppt_minus_exchangeable_nll": 0.6415656626767898,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 59,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.95283364510606
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.862662459130743
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.799217604934785
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.937044901355826
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.80894583303273
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.356847020209491
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.828430084546542,
+      "imported_ppt_patch_nll": 8.155935727632963,
+      "imported_control_patch_nll": 8.15743927262787,
+      "ppt_minus_exchangeable_nll": 0.32750564308642094,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 71,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.330406676640884
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.338580280190008
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.373492580037341
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.609799980533021
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.581235016822959
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.231237432782175
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.680923359755244,
+      "imported_ppt_patch_nll": 8.138369731414013,
+      "imported_control_patch_nll": 8.133775107880943,
+      "ppt_minus_exchangeable_nll": 0.45744637165876867,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 71,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.88117139405384
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.803761886617655
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.75308132470433
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.903699617220864
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.78864246154126
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.350433427630753
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.830615955347233,
+      "imported_ppt_patch_nll": 8.0801144135304,
+      "imported_control_patch_nll": 8.079690688695663,
+      "ppt_minus_exchangeable_nll": 0.24949845818316607,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 83,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.637281183740361
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.594621130342206
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.578704219689723
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.764228978052134
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.685373550111831
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.28896456966858
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.61469070115468,
+      "imported_ppt_patch_nll": 8.182049514900925,
+      "imported_control_patch_nll": 8.181332351814987,
+      "ppt_minus_exchangeable_nll": 0.5673588137462451,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 83,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 11.179939302656205
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 10.05049596782991
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.947795107756631
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 8.046526524736068
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.88076459336622
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.398843925448192
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.905505642259011,
+      "imported_ppt_patch_nll": 8.131096831753723,
+      "imported_control_patch_nll": 8.126078092134916,
+      "ppt_minus_exchangeable_nll": 0.22559118949471202,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 97,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.383519175118531
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.37765471316563
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.398541420970142
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.620948474598694
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.579621773964404
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.222834135831247
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.350285125161533,
+      "imported_ppt_patch_nll": 8.054327875121027,
+      "imported_control_patch_nll": 8.04641873612363,
+      "ppt_minus_exchangeable_nll": 0.7040427499594939,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 97,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 11.009061115972335
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.909559306248928
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.836785542669032
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.965307712060378
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.828310780865423
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.370215221458928
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.457795310196492,
+      "imported_ppt_patch_nll": 7.898978469718216,
+      "imported_control_patch_nll": 7.90524406107063,
+      "ppt_minus_exchangeable_nll": 0.4411831595217244,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 109,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.471456377907245
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.452426053134719
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.46013899774447
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.669292127924673
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.613983611925601
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.240615451389502
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.6702897270877335,
+      "imported_ppt_patch_nll": 8.193078163342598,
+      "imported_control_patch_nll": 8.198820130437868,
+      "ppt_minus_exchangeable_nll": 0.5227884362548645,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 109,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 11.05392289472701
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.94456242534111
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.861935899243674
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.980656140622903
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.834111630712282
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.367776051964613
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.8669106186584035,
+      "imported_ppt_patch_nll": 8.17321060050247,
+      "imported_control_patch_nll": 8.169969640226446,
+      "ppt_minus_exchangeable_nll": 0.3062999818440666,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 127,
+      "arm": "grid_nca",
+      "control_arm": "prefix_grid",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.42276965318468
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.411291631781623
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.42655023356842
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.643189434175434
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.595041993019313
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.2281368247452
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.592449296474741,
+      "imported_ppt_patch_nll": 8.224520854460888,
+      "imported_control_patch_nll": 8.221346080812634,
+      "ppt_minus_exchangeable_nll": 0.6320715579861469,
+      "matched_control_exchangeable_nll_identical": true
+    },
+    {
+      "seed": 127,
+      "arm": "graph_nca",
+      "control_arm": "prefix_graph",
+      "train_rules_for_concentration_fit": 256,
+      "concentration_fit": [
+        {
+          "concentration": 0.1,
+          "train_patch_nll": 10.959480217230999
+        },
+        {
+          "concentration": 1.0,
+          "train_patch_nll": 9.867233701389527
+        },
+        {
+          "concentration": 10.0,
+          "train_patch_nll": 8.801716435825526
+        },
+        {
+          "concentration": 100.0,
+          "train_patch_nll": 7.937505138781035
+        },
+        {
+          "concentration": 1000.0,
+          "train_patch_nll": 7.807824783035359
+        },
+        {
+          "concentration": 10000.0,
+          "train_patch_nll": 8.35729705817142
+        }
+      ],
+      "selected_concentration": 1000.0,
+      "held_out_rules": 32,
+      "patch_targets": 29952,
+      "causal_exchangeable_patch_nll": 7.934952253017071,
+      "imported_ppt_patch_nll": 8.172580914619642,
+      "imported_control_patch_nll": 8.166641496185564,
+      "ppt_minus_exchangeable_nll": 0.2376286616025709,
+      "matched_control_exchangeable_nll_identical": true
+    }
+  ]
+}

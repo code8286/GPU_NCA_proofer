@@ -5,18 +5,40 @@ improve a transformer's initialization **before language pre-training**.
 We compare graph, grid and shuffled synthetic trajectories with text controls.
 The GNN is a frozen random-rule data generator, not a component inside the LM.
 
-**Status:** the returned **version 2 GPU transfer experiment** completed on a
-Tesla T4. Grid-NCA pre-pre-training reached the paired no-PPT endpoint in
-1600–1800 language updates instead of 2000 across three seeds. Shuffled NCA
-achieved comparable gains, so this does not establish a dynamics-specific benefit.
-Recorded cumulative time was about 13% higher for grid NCA at that reference.
-See [the v2 results review](docs/results/transfer_v2_run1/REVIEW.md).
+**Latest stage: existing-checkpoint fit diagnostics completed without training.**
+The stage 9 split comparison finds a training-to-held-out first-patch reversal
+for two seeds; the third also worsens on training data. Mean first-patch accuracy
+with weighting rises 75.39% to 83.46% on training examples but falls 47.40% to
+32.03% on assessment. Meanwhile all-four-patch first-transition assessment
+accuracy rises 42.90% to 46.48%. Aggregate transition prediction hides the
+first-patch failure. Read the [stage 9 review](docs/results/fit_v9_run1/REVIEW.md)
+and [protocol](docs/FIT_V9_PROTOCOL.md). All 90 cells replay exactly from 15
+retained checkpoints; the local suite passes 122 tests. The
+[stage 8 negative result](docs/results/loss_weight_v8_run1/REVIEW.md) remains unchanged.
+The original random-rule checkpoints still fail
+[stage 5 readiness](docs/results/readiness_v5_run1/REVIEW.md).
+No new language/GPU run occurred. Historical notebooks below reproduce their
+original gates; they do not implement the new readiness criteria.
+
+**Latest GPU result:** the returned **version 4 experiment** completed all seven arms
+across six fresh paired cohorts on a Tesla T4. Both predeclared graph-advantage
+tests fail: graph/grid has five token ties and one loss; graph/prefix-matched
+shuffle has four ties, one win and one loss. Graph uses about 13.4% fewer
+language tokens than scratch but about 16.6% more recorded cumulative time.
+See [the v4 review and next steps](docs/results/transfer_v4_run1/REVIEW.md).
+All 78 selected development checkpoints and six actual starting states passed
+independent CPU replay. A new post-hoc causal frequency predictor beats every
+structured PPT model on held-out synthetic patch loss, so the original gate
+does not establish dynamics-specific learning. No graph-specific acceleration
+or cost recovery is demonstrated. Earlier [v3](docs/results/transfer_v3_run1/REVIEW.md)
+and [v2](docs/results/transfer_v2_run1/REVIEW.md) remain separate evidence.
 The [results ledger](RESULTS.md) collects current measurements, mathematical
 verification and historical evidence in one place.
-The detailed [research presentation](docs/presentation/GPU_NCA_Research_Detailed_v2.pptx)
+The detailed [research presentation](docs/presentation/GPU_NCA_Research_Detailed_v8.pptx)
 and its [slide/source index](docs/presentation/README.md) cover the theory,
-proofs, implementation, notebooks, visualizations and reviewed results.
-Graph rewiring has not been tested in v2. The historical
+proofs, implementation, notebooks, visualizations and reviewed results through
+stage 8 (20 October 2026), including the negative weighting outcome.
+Graph rewiring was introduced in v3, retaining grid and shuffled controls. The historical
 `experiment.py` still implements **matched-total-budget pilot 1**.
 The first GPU pilot did not demonstrate a graph benefit. Its scratch model saw
 1000 text updates; NCA arms saw 100 synthetic + 900 text updates. The language
@@ -24,14 +46,156 @@ stage and scheduler confounds prevent interpreting that result as a clean test
 of equal-language-stage pre-pre-training transfer.
 
 Start with [research context](RESEARCH_CONTEXT.md), [methodology audit](METHODOLOGY_AUDIT.md),
-and [historical GPU evidence](docs/results/pilot1/REVIEW.md). The v2 result is a
-small development experiment with one shared synthetic cache. No general acceleration,
+and [historical GPU evidence](docs/results/pilot1/REVIEW.md). V3 has three paired
+model/data/topology replicates, v4 has six fresh cohorts, and v2 used one shared synthetic cache. No general acceleration,
 reasoning improvement or successful reproduction of the reference paper is claimed.
 
-## Next run: graph versus grid pre-pre-training, version 3
+## Stage 9: first-transition fit and generalization
+
+The inference-only `fit_v9/` diagnostic retains initial, standard/weighted and
+coherent/shuffled models across all three existing splits and both data versions.
+It reuses the exact first-patch scorer and separates teacher-forced first-transition
+patch and marker predictions. No optimizer update, new dataset or language stage
+is introduced. This is inspected development evidence, not fresh confirmation.
+Read the [completed review](docs/results/fit_v9_run1/REVIEW.md) and
+[frozen protocol](docs/FIT_V9_PROTOCOL.md).
+
+Repeating it requires the verified private stage 7/8 data and checkpoint folders.
+Use a fresh output directory; the public compact evidence excludes raw arrays
+and weights:
+
+```text
+python scripts/run_logged.py --label fit-repeat -- python -m fit_v9.diagnostic all --out runs/fit_repeat
+```
+
+The next candidate treatment varies training initial-condition diversity alone,
+holding objectives, rule, architecture and update/token budget fixed with all
+controls. It needs a separate frozen protocol and has not been run. Language
+training remains gated.
+
+## Stage 8: first-transition loss weighting
+
+The separate `loss_weight_v8/` experiment changes only the first transition's
+normalized loss weight from one to six, giving it half the training loss.
+It retains the stage 7 spatial rule, exact cached inputs, initial weights,
+batch order, backbone and 1000-update endpoint. Six new weighted models are
+compared with six verified imported standard-loss checkpoints; coherent and
+prefix-shuffled training controls remain paired for every seed. Read the
+[frozen protocol](docs/LOSS_WEIGHT_V8_PROTOCOL.md).
+The [completed review](docs/results/loss_weight_v8_run1/REVIEW.md) records the
+negative result, all controls, per-query scores and whole-trajectory regression.
+
+A repeat requires the private verified `runs/interaction_v7_run1` data and
+checkpoints and a fresh output directory. The public compact evidence alone
+does not include those arrays/weights. This repeats the same inspected data;
+fresh confirmation needs its own declared split and protocol.
+
+```text
+python scripts/run_logged.py --label loss-weight-repeat -- python -m loss_weight_v8.run all --out runs/loss_weight_repeat
+```
+
+The frozen primary requires >=0.01 nats improvement in original AND intervened
+first-patch NLL for all three coherent seeds, retaining trajectory readiness.
+Final checkpoints are evaluated without selection. Language remains disabled.
+
+## Stage 7: matched spatial-interaction bridge
+
+The separate `interaction_v7/` experiment adds left/right neighbor parity to
+the complement rule. The new reference and spatial models share initial grids,
+weights, minibatch order and all v6 model/representation/training settings.
+Their common new split excludes phase overlap under both rules; the historical
+v6 endpoint is not used as the controlled reference. Twelve CPU models each
+receive the fixed 1000-update budget. Read the
+[main protocol](docs/INTERACTION_V7_PROTOCOL.md) and separately frozen
+[first-transition diagnostic](docs/INTERACTION_V7_FIRST_TRANSITION.md).
+The [completed review](docs/results/interaction_v7_run1/REVIEW.md) retains all
+primary and supplementary results, including the remaining first-transition errors.
+
+The first-transition check prevents interpreting two-frame recall alone as
+neighbor-rule learning. It scores the first target patch and a neighbor-bit
+intervention before repeated frames are available. A repeat uses one fresh
+folder and freezes both plans before fitting:
+
+```text
+python scripts/run_logged.py --label interaction-repeat -- python scripts/run_interaction_v7.py --out runs/interaction_repeat
+```
+
+Primary readiness, the own-patch-table qualification and the supplementary
+first-transition result remain separate. Language training stays disabled.
+
+## Stage 6: controlled transformer trainability
+
+`trainability_v6/` tests the actual full v4 backbone on the simple binary
+cell-complement rule used by the measurement control. The alphabet, lattice and
+context are deliberately simplified. Three paired seeds each train coherent
+and prefix-shuffled arms for 1000 updates. Final checkpoints are assessed on
+phase-disjoint initial conditions after all arms finish, with the same two
+0.01-nat readiness requirements. This stage has no language-training command.
+Read the [frozen protocol](docs/TRAINABILITY_V6_PROTOCOL.md) and
+[completed CPU review](docs/results/trainability_v6_run1/REVIEW.md) for its limits.
+
+This diagnostic runs locally on CPU with PyTorch and NumPy; no GPU, account,
+corpus download or external pretrained weights are needed. For a repeat, retain
+the original run and select a fresh directory:
+
+```text
+python scripts/run_logged.py --label trainability-repeat -- python -m trainability_v6.run all --out runs/trainability_repeat
+```
+
+The command freezes inputs before fitting and replays every initial/final
+assessment cell after training. Existing random-rule checkpoints retain their
+failed stage 5 readiness regardless of this simpler capability check's outcome.
+
+## Stage 5: checkpoint-only readiness
+
+The separate `readiness_v5/` package uses the retained v4 audit, cached held-out
+trajectories and selected PPT checkpoints. It freezes inputs and code before
+48 coherent/matched-shuffled comparisons, validates a known-rule positive and
+frequency-only negative control, and requires both advantages to reach 0.01
+nats per patch in every structured cohort. It has no training command.
+
+With the retained private v4 artifacts at their documented location, use a
+**new** output directory for a repeat; never overwrite the frozen first run:
+
+```text
+python scripts/run_logged.py --label readiness-repeat -- python -m readiness_v5.run all --out runs/readiness_repeat
+```
+
+The defaults and reproduction limits are in the protocol. Public evidence
+contains hashes and scores, not weights or corpora. A future language runner
+must call `readiness_v5.run.require_readiness(review, out)` before accepting
+the returned checkpoint identities. That guard currently rejects all 12
+structured cohorts; it does not bypass the separate study-design step.
+
+## Reproduce historical version 4: stronger controls and fresh replication
+
+Upload **[kaggle_nca_transfer_v4.ipynb](kaggle_nca_transfer_v4.ipynb)** to Kaggle,
+enable one GPU and Internet, then Run All to reproduce the completed experiment.
+Its objective is to test whether
+ordered graph trajectories accelerate language learning beyond grid trajectories
+and matched frequency/formatting structure. Six fresh paired cohorts enter
+identical language stages, retaining both original shuffled controls and adding
+two controls that preserve the exact supervised-prefix counts and initial frame.
+The model, topology, serializer, rule filter and stage budgets retain v3 settings.
+
+The [v4 protocol](docs/TRANSFER_V4_PROTOCOL.md) fixes two comparisons at the same
+paired scratch-endpoint target before training. All cohorts, ties and missed
+targets remain in the result. The run archives its analysis plan and verifies
+checkpoints, controls and raw-curve analysis. This is a prospective validation
+replication/mechanism study; the official test remains reserved.
+
+The returned run recorded about **6.92 hours across saved stage timers**, plus
+preparation, verification and export work. The notebook prints a fresh estimate
+on the assigned GPU; that estimate is not a runtime guarantee. Completion prints
+`WORKFLOW FINISHED: complete` or `WORKFLOW FINISHED: stopped_at_synthetic_gate`
+and exports `nca_transfer_v4_results_<timestamp>.zip` (potentially several GB).
+The [returned review](docs/results/transfer_v4_run1/REVIEW.md) recommends a
+checkpoint-level order-sensitivity diagnostic before another full GPU suite.
+
+## Repeat the graph versus grid experiment, version 3
 
 Upload **[kaggle_nca_transfer_v3.ipynb](kaggle_nca_transfer_v3.ipynb)** to Kaggle,
-enable one GPU and Internet, then Run All. This next stage tests graph-NCA PPT
+enable one GPU and Internet, then Run All. This stage tests graph-NCA PPT
 against grid-NCA PPT, with shuffled controls for both and a no-PPT control.
 All five enter the same 2000-update language stage after 1000 PPT updates
 (zero for scratch). Three paired model/data/topology replicates use common
@@ -47,13 +211,15 @@ measures a fresh estimate before training.
 Completion prints `WORKFLOW FINISHED: complete` or
 `WORKFLOW FINISHED: stopped_at_synthetic_gate`, followed by the download link for
 `nca_transfer_v3_results_<timestamp>.zip`. Read [the v3 protocol](docs/TRANSFER_V3_PROTOCOL.md).
-V3 has local software checks; a new GPU outcome has not been measured.
+The first returned GPU outcome is documented in the v3 review above. Completion
+does not by itself establish a graph or dynamics advantage.
 
 ## Previous run: pre-pre-training transfer, version 2
 
 Upload **[kaggle_nca_transfer_v2.ipynb](kaggle_nca_transfer_v2.ipynb)** to Kaggle,
-enable one available GPU and Internet, then Run All to repeat v2. For the next
-graph experiment use v3 above; `kaggle_gnn_nca_pilot.ipynb` is historical pilot 1.
+enable one available GPU and Internet, then Run All to repeat v2. Later controlled
+experiments are preserved above; consult the latest review for next research steps.
+`kaggle_gnn_nca_pilot.ipynb` is historical pilot 1.
 
 Default: 1000 synthetic updates followed by **2000 equal language updates**,
 three paired seeds, with zero synthetic updates for scratch. Categorical NCA,
@@ -261,6 +427,13 @@ workspace. `PUBLICATION_MANIFEST.json` inventories every selected file. In a
 standalone checkout, use `python scripts/check_release.py --refresh` after
 changes/tests, then `python scripts/check_release.py`. New publishable files
 must be selected in `publication.json`. Ignore rules alone do not select a release.
+
+Every Prod update includes new and existing Lean proofs, supporting documentation
+and retained verification evidence in `proofs/lean/`, together with LaTeX sources
+and mathematical documentation in `docs/theory/`. Both trees are selected
+recursively by default; add any new locations to `publication.json`. Local build
+caches and private artifacts remain excluded. Copying these materials does not
+constitute a new proof check or document compilation.
 
 ## License and references
 

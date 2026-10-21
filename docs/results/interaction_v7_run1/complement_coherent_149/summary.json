@@ -1,0 +1,24 @@
+{
+  "rule": "complement",
+  "treatment": "coherent",
+  "arm": "complement_coherent",
+  "seed": 149,
+  "steps": 1000,
+  "input_tokens": 188000,
+  "prediction_targets": 168000,
+  "checkpoint_sha256": "03e2fee8f57c27f1b6229eb8d00748614fa28d1fc0af2f936bf6cd29d95364f8",
+  "initial_core_sha256": "542482c62ca4fbdac80c43f9ae96a5a98e8f21c22519376ce8209deea9f2eaac",
+  "initial_head_sha256": "27da727837857adbc83d500a7b9361560505a491491f972568e38b0279e0c7a3",
+  "final_core_sha256": "76e66f213e91d0cad50bc2b9943649c569dd17c4bfdc22126d570418bb31453e",
+  "final_head_sha256": "e25016edbfa43c9a3105f5155c1aafaceeaed85d4fa6ea1b8c5b03573f84c72d",
+  "train_order_sha256": "de17bdad60f521ae2a38e22a67d59d049a7d92fdb2bebafa0851e6c4eebd0e85",
+  "final_development": {
+    "nll": 0.042590055437315075,
+    "targets": 2688,
+    "patch_nll": 0.05034008515732629,
+    "patch_accuracy": 1.0,
+    "patch_targets": 1792,
+    "rules": 64
+  },
+  "stage_seconds": 68.01486080000177
+}
