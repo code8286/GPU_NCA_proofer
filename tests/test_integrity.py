@@ -39,6 +39,34 @@ class CacheIntegrityChecks(unittest.TestCase):
 
 
 class PublicationIntegrityChecks(unittest.TestCase):
+    def test_only_declared_acceleration_result_has_larger_metadata_bound(self):
+        with workspace_tempdir() as directory:
+            root = Path(directory)
+            for name,size,allowed in (("docs/results/accel_v18_run1/results.json",5_000_001,True),
+                                      ("docs/results/accel_v18_run1/results.json",12_000_001,False),
+                                      ("other_results.json",5_000_001,False)):
+                path=root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(b' '*size)
+                self.fixture(root,files=[name])
+                if allowed:self.assertEqual(selected_files(root),[name])
+                else:
+                    with self.assertRaisesRegex(ValueError,'exceeds'):selected_files(root)
+
+    def test_only_exact_append_only_log_has_bounded_larger_size_allowance(self):
+        with workspace_tempdir() as directory:
+            root = Path(directory)
+            for name, size, allowed in (("logs/checks.jsonl", 5_000_001, True),
+                                        ("logs/checks.jsonl", 10_000_001, False),
+                                        ("checks.jsonl", 5_000_001, False)):
+                target = root / name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(b" " * size)
+                self.fixture(root, files=[name])
+                if allowed:
+                    self.assertEqual(selected_files(root), [name])
+                else:
+                    with self.assertRaisesRegex(ValueError, "exceeds"):
+                        selected_files(root)
+
     def fixture(self, root, files=None, directories=None):
         (root / "publication.json").write_text(json.dumps({
             "files": files or ["README.md"], "directories": directories or []}), encoding="utf-8")
@@ -89,6 +117,32 @@ class PublicationIntegrityChecks(unittest.TestCase):
             (root / "README.md").write_text("Changed after inventory\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "Stale publication inventory"):
                 check(root)
+
+    def test_declared_build_output_exclusion_preserves_paper_sources(self):
+        with workspace_tempdir() as directory:
+            root = Path(directory)
+            self.fixture(root, directories=['docs'])
+            (root/'docs/paper/output/pdf').mkdir(parents=True)
+            (root/'docs/paper/main.tex').write_text('Scientific source', encoding='utf-8')
+            (root/'docs/paper/output/pdf/build.pdf').write_bytes(b'derived build output')
+            policy = json.loads((root/'publication.json').read_text())
+            policy['excluded_directories'] = ['docs/paper/output']
+            (root/'publication.json').write_text(json.dumps(policy), encoding='utf-8')
+            self.assertEqual(selected_files(root), ['README.md', 'docs/paper/main.tex'])
+            policy['files'].append('docs/paper/output/pdf/build.pdf')
+            (root/'publication.json').write_text(json.dumps(policy), encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'Non-distributable artifact'):
+                selected_files(root)
+
+    def test_unsafe_exclusion_path_is_rejected(self):
+        with workspace_tempdir() as directory:
+            root = Path(directory)
+            self.fixture(root)
+            policy = json.loads((root/'publication.json').read_text())
+            policy['excluded_directories'] = ['../private']
+            (root/'publication.json').write_text(json.dumps(policy), encoding='utf-8')
+            with self.assertRaises(ValueError):
+                selected_files(root)
 
 
 class StarterSnapshotChecks(unittest.TestCase):

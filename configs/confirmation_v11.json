@@ -1,0 +1,12 @@
+{
+  "schema_version": 11,
+  "purpose": "fresh_phase_weighted_diversity_confirmation",
+  "training_conditions": [512, 4096],
+  "data_seed": 20261023,
+  "seeds": [179, 193, 211],
+  "minimum_first_patch_improvement_nats": 0.01,
+  "minimum_intervention_improvement_nats": 0.01,
+  "primary_objective": "weighted",
+  "selection": "final_declared_update",
+  "language_allowed": false
+}

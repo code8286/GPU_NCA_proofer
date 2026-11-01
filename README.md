@@ -5,20 +5,126 @@ improve a transformer's initialization **before language pre-training**.
 We compare graph, grid and shuffled synthetic trajectories with text controls.
 The GNN is a frozen random-rule data generator, not a component inside the LM.
 
-**Latest stage: existing-checkpoint fit diagnostics completed without training.**
-The stage 9 split comparison finds a training-to-held-out first-patch reversal
-for two seeds; the third also worsens on training data. Mean first-patch accuracy
-with weighting rises 75.39% to 83.46% on training examples but falls 47.40% to
-32.03% on assessment. Meanwhile all-four-patch first-transition assessment
-accuracy rises 42.90% to 46.48%. Aggregate transition prediction hides the
-first-patch failure. Read the [stage 9 review](docs/results/fit_v9_run1/REVIEW.md)
-and [protocol](docs/FIT_V9_PROTOCOL.md). All 90 cells replay exactly from 15
-retained checkpoints; the local suite passes 122 tests. The
-[stage 8 negative result](docs/results/loss_weight_v8_run1/REVIEW.md) remains unchanged.
-The original random-rule checkpoints still fail
+**Latest stage: the seen-example fitting target also fails.**
+[Stage 19](docs/results/fit_audit_v19_run1/REVIEW.md) evaluates the five unchanged
+stage18 endpoints on a frozen, balanced128-example training probe. Every arm
+gets0/128 exact answers and misses the semantic target on both seen and held-out
+cases. Seen node accuracy is23.5–28.7%, while held-out is20.6–21.7%. Aggregate
+training loss fell, but gold-prefix digit prediction remains weak; held-out
+generalization alone cannot explain all observed failure. No unique cause is
+identified. All213 root and standalone tests pass and five endpoints/640 new answers replay
+exactly. No model update occurs. See the [protocol](docs/FIT_AUDIT_V19_PROTOCOL.md)
+and [usage](docs/FIT_AUDIT_V19_USAGE.md); all earlier endpoints/gates remain intact.
+
+**Previous stage: exploratory ID acceleration measured; all arms are right-censored.**
+[Stage 18](docs/results/accel_v18_run1/REVIEW.md) freezes a fresh shared ID
+sample, identical 600-update training for all five arms, seven learning-curve
+checkpoints and a per-cell non-source advantage over a training-only marginal
+baseline. No arm reaches the target, so time-to-target ratios remain undefined.
+All final exact scores are 0/128; final node accuracy is 20.6–21.7%. This is
+an exploratory censored result, not evidence of graph equivalence or impossibility.
+Original T4 PPT/generation/language costs are retained alongside new CPU costs;
+mixed-hardware sums are component accounts, not controlled throughput.
+All 208 root and standalone tests pass; all 35 checkpoints/4,480 predictions and teacher scores
+replay exactly. Read the [protocol](docs/ACCEL_V18_PROTOCOL.md) and
+[usage](docs/ACCEL_V18_USAGE.md). Earlier calibration/readiness failures and the
+separate confirmation/OOD gates remain unchanged.
+
+**Earlier stage: the 64-example cache fits; full held-out competence still fails.**
+[Stage 17](docs/results/cache_v17_run1/REVIEW.md) runs all five original
+pre-adaptation starts for the same 600 updates on a frozen nested 64-example
+cache. Every arm gets **64/64 cache answers and 0/128 held-out answers**. Held-out
+NLL improves over the 16-example cache for every arm, while the 512-example
+reference retains lower NLL and higher node accuracy in every arm. Graph's node
+score is 17.1%; its prefix control reaches 18.7% in this cohort. No graph-specific
+acceleration follows. All 20 new checkpoints/1,920 predictions and teacher scores
+replay exactly; all 199 root and standalone tests pass. Both imported references use the SAME
+common16/dev128 cases; unmeasured small16-on-extra48 cases are absent, not zero.
+Read the [protocol](docs/CACHE_V17_PROTOCOL.md) and
+[usage](docs/CACHE_V17_USAGE.md). OOD and synthetic readiness remain gated.
+
+**Earlier stage: retained-output error audit completed.**
+[Stage 16](docs/results/error_audit_v16_run1/REVIEW.md) rescores 1,440 saved
+endpoint outputs, with all five arms, both cache-size variants and all task/size
+cells retained. Small-cache held-out node accuracy stays only 16.8–19.8% even
+within valid vectors; teacher-forced digit accuracy is 19.2–20.6%. Source and
+one-hop errors also remain. Formatting failure alone cannot explain the endpoint.
+No new fitting or model inference occurs; OOD and synthetic readiness stay gated.
+See the [protocol](docs/ERROR_AUDIT_V16_PROTOCOL.md),
+[usage](docs/ERROR_AUDIT_V16_USAGE.md) and explicit
+[data-regeneration disclosure](docs/ERROR_AUDIT_V16_REGENERATION_NOTE.md).
+
+**Earlier stage: small-cache fitting control passes; held-out performance remains poor.**
+[Stage 15](docs/results/overfit_v15_run1/REVIEW.md) restarts all five original
+language endpoints and changes only the training cache, 512 to 16 examples, at
+the same 600-update procedure. Every arm reaches **16/16 correct cache answers**;
+the verified 512-cache reference has 0/16 on those same examples. Each small-cache
+example is presented 300 times. Actual token/padding differences are recorded.
+All new models still have **0/128 development answers**; validity drops to
+51.6–66.4% and node accuracy to 8.6–12.3%, below the larger-cache reference.
+This demonstrates fitting capability on the selected set, not unseen-graph
+algorithm execution or GraphNCA acceleration. All 184 root tests pass; 20 checkpoints and 960 new predictions replay exactly.
+The same-cache reference, actual exposure and public-only reproduction pass.
+OOD and original synthetic readiness remain gated. See the
+[protocol](docs/OVERFIT_V15_PROTOCOL.md) and [usage](docs/OVERFIT_V15_USAGE.md).
+
+**Previous stage: matched training/development error audit completed.**
+[Stage 14](docs/results/id_audit_v14_run1/REVIEW.md) evaluates the five saved final
+models with matched 128-example probes (32 per task/size cell). Every arm has
+**0/128 exact answers on both seen training and development examples**. Training
+node accuracy is 29.6–32.9%; development is 18.9–21.6%. Teacher-forced digit-token
+accuracy remains weak even with correct earlier answers supplied, while other
+tokens are nearly perfect. Seen-example competence remains unresolved alongside
+lower held-out performance. This does not identify a unique cause. There are
+zero new scientific optimizer updates; OOD and original readiness remain gated.
+All 176 local tests pass; all 1,280 audit predictions and teacher-forced metrics
+replay exactly. Public-only probe/error reproduction passes too. See the [protocol](docs/ID_AUDIT_V14_PROTOCOL.md) and
+[usage](docs/ID_AUDIT_V14_USAGE.md). The proposed next fit is a separately frozen
+small-cache overfit control with other training settings held fixed.
+
+**Previous stage: matched ID adaptation completed; task criterion fails.**
+[Stage 13](docs/results/adaptation_v13_run1/REVIEW.md) gives all five retained v4
+language models the same 600-update algorithmic-adaptation procedure and actual
+batch order. Each receives 562,855 input tokens and 96,016 answer/EOS targets.
+All final models have **0/128 exact ID answers**, despite 98.4–100% valid vectors.
+Formatting is learned, but the frozen graph-task criterion is not met. OOD is
+skipped, all arms/endpoints remain, and original random-rule readiness still
+fails. This is local CPU interface/trainability calibration, not a new language
+stage or graph-specific acceleration claim. All 168 local tests pass; 20
+checkpoints reproduce 2,560 answers exactly. Public scoring also reproduces
+without private weights. See the
+[protocol](docs/ADAPTATION_V13_PROTOCOL.md) and
+[usage](docs/ADAPTATION_V13_USAGE.md).
+
+**Previous stage: out-of-domain graph evaluation is implemented.**
+[Stage 12](docs/results/ood_v12_run1/REVIEW.md) adds CLRS-Text-inspired BFS/Dijkstra
+size, graph-family and joint shifts, with relabel/order/intervention controls.
+Independent graph oracles verify all 5,760 generated examples. In a frozen
+zero-shot calibration, five retained v4 language checkpoints each score 0/32
+valid answers: they were never taught this task interface. All 160 predictions
+replay exactly. This is a formatting floor, not a graph-transfer no-effect test.
+The local suite passes 160 tests. See the [protocol](docs/OOD_V12_PROTOCOL.md)
+and [runnable usage guide](docs/OOD_V12_USAGE.md). No new scientific fitting,
+Gmail reply or GPU job occurred. Private correspondence stays excluded.
+A meaningful learned OOD comparison first needs matched ID task competence,
+stronger synthetic readiness and separately frozen fresh confirmation.
+
+**Previous stage: fresh-phase weighted confirmation passes.**
+All 24 CPU models completed the fixed 1000-update budget: both 512/4096 caches,
+both standard/weighted objectives and coherent/shuffled controls from three
+fresh paired starts. New data excludes 4,926 historical joint phase classes;
+all 128 intervention pairs were reserved outside training/development.
+The weighted primary confirmation **passes** (3/3 paired seeds); standard passes 1/3. The broader both-objective criterion **fails**.
+Read the [stage 11 review](docs/results/confirmation_v11_run1/REVIEW.md) and
+[protocol](docs/CONFIRMATION_V11_PROTOCOL.md). All 54 full, 108 fit-probe and 27
+intervention cases replay exactly; the local suite passes 146 tests.
+This is one known binary rule and one fresh split, not a language-learning
+speedup or GraphNCA result. Language remains gated. Stage 10's failed broad
+primary remains intact; its historical derived CSV has a documented
+[column caveat](docs/STAGE10_CSV_CAVEAT.md), with correct JSON/review decisions.
+Original random-rule checkpoints still fail
 [stage 5 readiness](docs/results/readiness_v5_run1/REVIEW.md).
-No new language/GPU run occurred. Historical notebooks below reproduce their
-original gates; they do not implement the new readiness criteria.
+Historical notebooks retain their original gates.
 
 **Latest GPU result:** the returned **version 4 experiment** completed all seven arms
 across six fresh paired cohorts on a Tesla T4. Both predeclared graph-advantage
@@ -38,6 +144,9 @@ The detailed [research presentation](docs/presentation/GPU_NCA_Research_Detailed
 and its [slide/source index](docs/presentation/README.md) cover the theory,
 proofs, implementation, notebooks, visualizations and reviewed results through
 stage 8 (20 October 2026), including the negative weighting outcome.
+The accompanying [research paper and editable LaTeX project](docs/paper/README.md)
+cover the completed work through stage 9, with source-grounded mathematics,
+reviewed results and explicit verification limits.
 Graph rewiring was introduced in v3, retaining grid and shuffled controls. The historical
 `experiment.py` still implements **matched-total-budget pilot 1**.
 The first GPU pilot did not demonstrate a graph benefit. Its scratch model saw
@@ -49,6 +158,31 @@ Start with [research context](RESEARCH_CONTEXT.md), [methodology audit](METHODOL
 and [historical GPU evidence](docs/results/pilot1/REVIEW.md). V3 has three paired
 model/data/topology replicates, v4 has six fresh cohorts, and v2 used one shared synthetic cache. No general acceleration,
 reasoning improvement or successful reproduction of the reference paper is claimed.
+
+## Stage 10: initial-condition diversity
+
+The separate `diversity_v10/` study expands the training cache from 512 to 4096
+nested, jointly phase-disjoint initial conditions while retaining the exact
+original rows, held-out data and eligible neighbor interventions. Standard and
+sixfold-weighted objectives each retain coherent and prefix-shuffled arms.
+Twelve new 1000-update models are compared with twelve verified imported controls.
+Read the [frozen protocol](docs/DIVERSITY_V10_PROTOCOL.md).
+The [completed review](docs/results/diversity_v10_run1/REVIEW.md) preserves the
+objective-specific result, failing standard seeds, all controls and actual coverage.
+
+The only training treatment is available initial-condition diversity. Uniform
+sampling with replacement changes actual examples and repetition at fixed
+updates/tokens; the same seed/draw count does not mean identical sampled rows
+across cache sizes. Actual exposure counts and probe masks are retained.
+Both objective strata must satisfy the predeclared all-seed criteria for the
+study-wide primary. No result automatically enables a language stage.
+
+Repetition requires the private verified stage 7/8/9 run folders and a fresh
+output directory; public compact evidence excludes arrays and checkpoint weights:
+
+```text
+python scripts/run_logged.py --label diversity-repeat -- python -m diversity_v10.run all --out runs/diversity_repeat
+```
 
 ## Stage 9: first-transition fit and generalization
 

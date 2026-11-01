@@ -1,0 +1,162 @@
+{
+  "plan_sha256": "959921b6a2852f0075ef2ca677c82af6dcf15134359c490beeb3360bd616359e",
+  "models": [
+    {
+      "arm": "scratch",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2865234375,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.28000992063492064,
+        "teacher_nll": 0.7944996231209238,
+        "teacher_digit_accuracy": 0.3765625,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.205859375,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.21428571428571427,
+        "teacher_nll": 0.9440328337283951,
+        "teacher_digit_accuracy": 0.280859375,
+        "teacher_other_accuracy": 0.9993489583333334
+      },
+      "decision": {
+        "training_semantic_ready": false,
+        "development_semantic_ready": false,
+        "interpretation": "seen_probe_semantic_fitting_not_established",
+        "training_exact_calibration": false,
+        "development_exact_calibration": false
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2642578125,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.2709573412698413,
+        "teacher_nll": 0.8237535879288139,
+        "teacher_digit_accuracy": 0.3486328125,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2166015625,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.22172619047619047,
+        "teacher_nll": 0.93352480791047,
+        "teacher_digit_accuracy": 0.2646484375,
+        "teacher_other_accuracy": 0.9984375
+      },
+      "decision": {
+        "training_semantic_ready": false,
+        "development_semantic_ready": false,
+        "interpretation": "seen_probe_semantic_fitting_not_established",
+        "training_exact_calibration": false,
+        "development_exact_calibration": false
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2548828125,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.2527281746031746,
+        "teacher_nll": 0.8197515849156152,
+        "teacher_digit_accuracy": 0.36015625,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2078125,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.2201140873015873,
+        "teacher_nll": 0.939635902269913,
+        "teacher_digit_accuracy": 0.2546875,
+        "teacher_other_accuracy": 0.99921875
+      },
+      "decision": {
+        "training_semantic_ready": false,
+        "development_semantic_ready": false,
+        "interpretation": "seen_probe_semantic_fitting_not_established",
+        "training_exact_calibration": false,
+        "development_exact_calibration": false
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.234765625,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.23561507936507936,
+        "teacher_nll": 0.8376052688493674,
+        "teacher_digit_accuracy": 0.3400390625,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.215234375,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.2242063492063492,
+        "teacher_nll": 0.9065315795225292,
+        "teacher_digit_accuracy": 0.284375,
+        "teacher_other_accuracy": 1.0
+      },
+      "decision": {
+        "training_semantic_ready": false,
+        "development_semantic_ready": false,
+        "interpretation": "seen_probe_semantic_fitting_not_established",
+        "training_exact_calibration": false,
+        "development_exact_calibration": false
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.28125,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.28435019841269843,
+        "teacher_nll": 0.8316585237070118,
+        "teacher_digit_accuracy": 0.3408203125,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2060546875,
+        "coverage": 1,
+        "non_source_macro_accuracy": 0.21180555555555555,
+        "teacher_nll": 0.923854392298487,
+        "teacher_digit_accuracy": 0.2501953125,
+        "teacher_other_accuracy": 1.0
+      },
+      "decision": {
+        "training_semantic_ready": false,
+        "development_semantic_ready": false,
+        "interpretation": "seen_probe_semantic_fitting_not_established",
+        "training_exact_calibration": false,
+        "development_exact_calibration": false
+      }
+    }
+  ],
+  "new_optimizer_updates": 0,
+  "new_predictions": 640,
+  "imported_development_predictions": 640,
+  "new_ood_predictions": 0,
+  "confirmation_allowed": false,
+  "new_evaluation_seconds": 151.5580611999976,
+  "plot_sha256": "b33b00e0cc4876e3263d8e5a27417271223fea808a7fee78338842e5f60fa2df"
+}

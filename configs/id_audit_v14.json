@@ -1,0 +1,16 @@
+{
+  "schema_version": 14,
+  "purpose": "development_existing_checkpoint_fit_generalization_audit",
+  "selection_salt": "id-audit-v14-20261031",
+  "training_graphs_per_size": 32,
+  "endpoint": 600,
+  "arms": ["scratch", "grid_nca", "graph_nca", "prefix_grid", "prefix_graph"],
+  "generation_tokens": 128,
+  "batch": 8,
+  "threads": 2,
+  "exact_target": 0.8,
+  "format_target": 0.95,
+  "large_gap": 0.1,
+  "new_optimizer_updates": 0,
+  "ood_evaluation_allowed": false
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "New CPU OOD control checks and retained historical checkpoint inference, not new training/GPU measurement",
+  "files": {
+    "plan.json": "55b705756dcec4c546928a6c3a52e66314a2e455ad2026f2819a5b3642c824c4",
+    "plan_receipt.json": "9f862ed4f47499f191f543455c9af8071bf6baf44673a3ae2149009dd624ec46",
+    "FROZEN_PROTOCOL.md": "c6438edf52b9fac5e5d0d3a8363f3cd42129153689640cf7495e7edf791e4d6d",
+    "controls.json": "b3a4065dda6bd91e677ee6dd26f1c4ff411a172deab453560adfe8949f655462",
+    "controls_receipt.json": "988a2f1fb518e202b9b34d1611f82094b793c4eeaf209c11d1994924271ce558",
+    "legacy_results.json": "bad017c032e6312c571c2006c46bdf9013435238ec3d7717780ffe7420278dd0",
+    "legacy_results_receipt.json": "b51abc9c8ef8c79eea121495b8b7cd487dc3456ac7aa6be0438e619c3d7f6e5d",
+    "verification.json": "6c5816559e7b9199b32f9a6c5aa21b4adf0e73c56c2a4c9dc73973b17b00db8e",
+    "predictions/scratch_59.jsonl": "3d93cbfaa903968a02c05596c6a2f3b83e7f9f616fc82b1159431870160b216a",
+    "predictions/grid_nca_59.jsonl": "383bc60a760b1ff2e452ec2082fddc20ddb7b49dd5eface3d69717491876069c",
+    "predictions/graph_nca_59.jsonl": "f6066628c5bc5785b6e459e747bb36dc0b157747a92308ce5f51686167a55942",
+    "predictions/prefix_grid_59.jsonl": "e8f56fe3951cfefc37d34ffc960e1f3dadf1a615e5b3d1340db379c241b7162b",
+    "predictions/prefix_graph_59.jsonl": "a62b02843aff18179f7bb3fbe2ab6c472ec9a62304c4ff547474aca4132ca5c3"
+  }
+}

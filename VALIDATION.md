@@ -320,3 +320,331 @@ held-out findings and whole-transition/first-patch distinction are retained in
 the [review](docs/results/fit_v9_run1/REVIEW.md). This is post-hoc development on
 inspected data, not new confirmation, a language gate, GPU measurement or remote
 CI result. Raw inputs, checkpoints and historical sources remain preserved.
+
+## Stage 10 diversity ablation — completed CPU study
+
+Ten new scientific regressions pass, and the full root suite passes **134 tests**,
+including two subsequent publication-policy checks. The scientific tests
+cover exact nested trajectories/shuffles, joint-phase and intervention exclusions,
+deterministic expansion/capacity limits, replacement-sampling traces, cache versus
+actual exposure, null empty subsets, all-objective/all-seed decisions, fixed
+settings and assessment blocking before every model completes. A tiny isolated
+four-arm/two-update fixture with mocked provenance checks execution separately.
+
+The scientific plan froze before training all twelve larger-cache endpoints;
+assessment followed completion of every fixed 1000-update model. Initial states,
+update/input/target budgets and actual sampling digests match declared controls.
+Independent reconstruction verifies every larger-cache trajectory and shuffle,
+4096 unique joint phases and unchanged eligible intervention exclusions.
+
+All 54 full, 108 fit and 27 intervention cells replay exactly after loading 27
+initial/final files. All common historical score vectors reproduce stages 8/9.
+Nine per-seed raw files retain query scores/exposure masks; 42 copied evidence
+identities, nested aggregates/subsets, both objective decisions and logged
+freeze-training-assessment chronology pass. Replay uses the same scorers, not
+independent loss code or a training rerun. No result is inferred from remote CI.
+
+The weighted stratum passes, standard fails and study-wide primary fails. No
+criterion, seed, endpoint, cache size or weighting factor changed after outcomes.
+The [review](docs/results/diversity_v10_run1/REVIEW.md) preserves all controls,
+costs, imperfect accuracy and coarse-readiness limitations. This is development
+evidence, not language/GNN acceleration, confirmation or a new official test.
+
+## Stage 11 fresh-phase confirmation â€” completed local CPU study
+
+Nine new stage 11 and three recovery regressions and the full root suite pass 146 tests. They check fresh
+joint-phase and intervention reservation, deterministic generation/capacity
+limits, exact nested prefix shuffles and known neighbor targets, frozen settings,
+all-seed/stratum decisions, assessment blocking before all fits, tiny eight-arm
+execution with mocked provenance, and distinct CSV complete/readiness decisions.
+The tiny fixture is software evidence, separate from the 24 scientific models.
+
+The plan froze before all 24 full-budget fits. Independent reconstruction checks
+fresh arrays/shuffles and exclusion of 4926 historical phase classes. All 128
+intervention partners are reserved prospectively. Source/input/initial-state
+receipts, per-model 1000 updates /188000 input tokens /168000 targets, shared
+within-seed starts and actual row-order digests pass. Assessment follows all
+fits; separate checkpoint replay reproduces all 54 full, 108 fit and 27
+intervention cases, per-query vectors and decisions exactly with the same
+scorers. This is not independent loss code or a rerun of fitting.
+
+All 71 exported evidence hashes, nested arithmetic/subset masks, CSV decisions,
+summary and frozen chronology pass. The interrupted status write and journaled recovery preserve 21 completed
+endpoints; the restarted fit reproduces its recorded 800-update prefix exactly.
+Charge discarded work: actual 24800 updates /4662400 inputs /4166400 targets,
+versus 24000 /4512000 /4032000 contributing to final endpoints. The weighted
+primary and standard/broader criteria remain separate. No post-outcome criterion or treatment changed.
+The [review](docs/results/confirmation_v11_run1/REVIEW.md) records the outcome,
+controls and costs. Historical stage 10 CSV ambiguity is documented separately;
+its original JSON and review decisions remain correct and unchanged. Static
+Lean source/retained-evidence checks pass without a new Lean compiler execution.
+No remote CI, GPU/language run or fresh mathematical compilation is implied.
+
+The standalone copy also passes all 146 tests and publication integrity for
+866 selected files, 82 embedded sources and 12 pinned reference checksums.
+All 19 Lean package/evidence files, 11 theory files and 16 paper sources/figures/
+records are recursively included with exact root/Prod parity. Generated paper
+output remains excluded and preserved locally. These checks copy and inspect
+existing mathematical evidence; they do not execute Lean or LaTeX.
+
+
+## Stage 12 OOD measurement — completed CPU validation
+
+Fourteen new regressions and the full local suite pass **160 tests**. They
+cover independent weighted/unweighted shortest-path oracles; all four graph
+families and several sizes; guaranteed causal cuts; invalid edges; relabeling-
+invariant structural exclusion including interventions; deterministic generation;
+strict full-vector/official-reference semantics; missing/duplicate predictions;
+wrong-but-consistent controls; censored ID-only target selection; future paired
+stage metadata; last-position/full-forward agreement and explicit context refusal.
+
+The protocol/config/data/source/checkpoint identities froze before new neural
+predictions. Independent graph labels agree on all 5760 written examples; all
+5120 assessment oracle predictions and 1280 paired native/cut cases pass. Cached-
+native and source-only paired correctness is zero. A separate invocation reloads
+all five historical v4 final language checkpoints and reproduces all 160 raw
+generated predictions and scores. Same-code neural replay is not independent
+neural inference or repeated fitting. These models make no valid task answers;
+the floor cannot support a graph-transfer effect or no-effect conclusion.
+
+Thirteen exact public/private evidence copies, per-cell CSV accounting, source
+identity, original common language stages, frozen chronology and exclusion of
+private correspondence pass. Original readiness failures remain unchanged.
+No newly measured GPU training or language/official-test access is implied.
+Private tokenizer cache setup and sandbox DNS failures and their resolution
+remain logged. Seven pinned upstream files and Apache license verify separately.
+The informal [control arguments](docs/theory/OOD_graph_controls.md) add no new
+Lean or LaTeX compiler execution. See the [review](docs/results/ood_v12_run1/REVIEW.md).
+
+The standalone distribution also passes all 160 tests, without the private
+historical model folders. The checkpoint-independent dataset generator exactly
+recreates all three frozen data files. Publication integrity passes for 907
+selected files and 82 embedded sources. All 304 local links and full starter
+content identities pass. Recursive source/retained-evidence inclusion and exact
+root/Prod parity pass for 19 Lean, 12 theory and 16 paper files, including the new
+informal control arguments; no Lean/LaTeX compiler or remote CI is executed.
+
+## Stage 13: completed matched ID adaptation, 30 October 2026
+
+Eight new pipeline tests and the full local 168-test suite pass. All five
+historical language endpoints complete the separately frozen 600-update CPU
+algorithmic-adaptation budget (3000 scientific updates), identical actual sample
+order, LR schedule and per-arm 562855 input /96016 supervised answer-EOS tokens.
+All final models score 0/128 exact ID answers with 98.4-100% valid vectors; every
+per-task/size exact criterion fails, all 80% crossings are censored and OOD is
+skipped. This is historical trainability calibration, not synthetic-readiness
+admission, new language/PPT training or a graph-acceleration result.
+
+A separate invocation reopens all 20 model/optimizer checkpoints and reproduces
+all 2560 generated answers, token IDs/stops, scores and train/development NLL
+exactly; optimizer steps and actual exposures pass. This is same-code neural
+replay, not independent fitting or loss implementation. Independent JSON parsing
+confirms the observed accuracy/format values; all 80 CSV cells, 32 exact evidence
+copies, source/input identities, freeze-before-fit chronology, decisions and
+private-artifact exclusions pass the evidence audit. Public score reproduction
+regenerates ID dataset bytes and all 2560 answer scores without private model
+weights/data, tokenizer cache or network. It does not replay neural inference.
+
+The declared first-64 training NLL probe is eight-node-only while development
+mixes sizes; do not interpret pooled NLL differences as a matched generalization
+gap. Prior-receipt integrity checking hashes old assessment bytes but only ID
+train/development is parsed for fitting; the frozen protocol's literal not-read
+wording has a separate explicit clarification. No reserved official-language
+test, fresh confirmation, new OOD predictions or remote/paid GPU is accessed.
+See docs/results/adaptation_v13_run1/REVIEW.md and the usage guide.
+
+Stage 13 final distribution: root AND standalone suites each pass 168 tests;
+standalone public-only data/score reproduction passes all 2560 answers. All four
+notebooks regenerate, 321 local links and the starter CRC/955 content hashes pass.
+Publication checks 955 selected files/82 embedded sources. Recursive mathematical
+source/evidence membership and parity pass for 19 Lean, 12 theory and 16 paper
+files, without new compiler execution. Original stage 12/reference evidence stays
+valid. Final direct sync/check follows the logged checks to preserve log parity.
+
+## Stage 14: completed matched ID checkpoint-error audit, 31 October 2026
+
+Eight new invariants and all 176 root tests pass. A separately frozen checkpoint-
+only study scores five fixed stage 13 final models on 128 training and 128
+matched development examples, 32 per task/size cell. All selected train IDs were
+actually used 9-10 times; no dev ID was in optimizer batches. Each arm has 0/128
+exact answers on BOTH probes. Node accuracy is 29.55-32.89% train, 18.95-21.60%
+dev. Teacher-forced digit accuracy is 35.06-39.61% /24.36-28.09%, while other
+accuracy is 100% /99.92-100%. Matching fixes the prior NLL composition issue,
+though graph instances, degrees and target distances are not paired/equalized.
+This establishes weak seen-example competence alongside held-out differences,
+not a unique causal failure mechanism. No new scientific optimizer update or
+OOD/GPU/learning-speed measurement occurs. Original readiness remains failed.
+
+Separate invocation reopens all five checkpoints and exactly reproduces 1280
+free generations/IDs/stops, teacher-forced scores, node errors and fixed flags;
+model tensors and retained optimizer steps stay unchanged. This is same-code
+neural replay, not independent implementation or fitting. The evidence audit
+checks 22 byte-identical copies, independent decimal-vector/source/hop accuracy,
+signed and first-node errors, token partitions/NLL, all 40 CSV cells/summary,
+actual exposure, source/chronology identities and private-artifact exclusion.
+Public-only generation/scoring reproduces exact probe bytes, independent labels
+and all 1280 error scores without private weights/data/tokenizer cache/network.
+It cannot reproduce neural or teacher-forced measurements without weights.
+The plot was visually checked for readable labels and correctly scoped axes.
+
+Stage 14 final distribution: both root and standalone suites pass 176 tests;
+public-only standalone reproduction passes all 1280 errors. All four notebooks
+regenerate; 335 local links, starter CRC/992 content hashes and 82 embedded source
+identities pass. The prior stage 13 evidence audit remains valid. Mathematical
+source/evidence inclusion and parity pass for 19 Lean, 12 theory and 16 paper
+files without new compiler execution. Final direct sync/check follows the logged
+checks, preserving the append-only log and all private/historical artifacts.
+
+## Stage 15: completed small-cache overfit control, 31 October 2026
+
+Eight new tests and all 184 root regressions pass. The nested 16-example cache
+uses the original numerical adaptation procedure, all five original full step-0
+models and fresh optimizers, fixed 600 updates/4800 presentations. Every arm
+achieves 16/16 final cache vectors (4/4 per cell); the imported 512-cache reference
+has 0/16 on those same examples. The fitting control passes. All development
+results remain 0/128, with worse validity, node accuracy and NLL than the reference.
+No cache-fitting success clears original synthetic readiness, full-ID competence
+or OOD. There are 3000 new CPU task-adaptation updates; the reference 3000 are
+imported. Actual token/padding differences are recorded, not an equal-FLOP claim.
+
+Separate invocation reopens all 20 new checkpoints and exactly reproduces 960
+cache/development predictions, teacher-forced scores, decisions/crossings, full
+initial states, optimizer steps and actual order/token exposure; reference metrics
+reconstruct from unchanged stage 14 evidence. This is same-code replay, not a
+second fit or independent neural implementation. Fifty-two exact copies and all
+140 CSV cells/summary pass independent decimal-vector/token/budget accounting,
+source/config/start/reference identities, 300 presentations/example, freeze
+chronology and publication privacy checks. Public-only data/label/order/reference
+and 960 generated-score reproduction passes without private weights/data/cache/
+network; neural and new teacher-forced reproduction require weights. Plot labels,
+axes, target/crossing scope and zero held-out bars were visually inspected.
+
+Stage 15 final distribution: root and standalone suites pass 184 tests each;
+standalone public-only data/order/reference/score reproduction passes. All four
+notebooks regenerate; 349 local links, starter CRC/1059 content hashes and 82
+embedded source identities pass. Prior stage 14 evidence stays intact. Recursive
+math source/evidence membership and parity pass for 19 Lean, 12 theory and 16
+paper files without new compiler execution. Final direct sync/check follows all
+logged checks, preserving append-only evidence and private-artifact exclusions.
+
+Stage 16: all 193 root tests pass (eight new error-denominator tests and one
+bounded exact-log-size policy test). The first pre-freeze invocation failed on
+an invalid test-only weight-12 edge; its correction to weight8 is logged and
+the failed record retained. No scientific source/config/endpoint changed after
+freeze. Independent generated parsing and all-pairs hop computation reproduce
+1440 imported outputs; 100 diagnostic cells and 50 paired rows/CSV counters,
+first-error/teacher/role partitions, paired marginals and exact rendered review
+pass. Teacher counters and prior neural replay remain imported evidence.
+Zero new scientific model forwards, generations or updates; ordinary regression
+fixtures are CPU execution checks, not new benchmark fits. Protocol regeneration
+scope deviation is explicitly disclosed and original frozen wording preserved.
+
+Stage 16 standalone validation also passes all 193 tests and public-only replay
+of 1440 retained outputs without private weights/data, tokenizer cache or network.
+Counter/CSV/review checks pass in both copies. Prior stage 15's 52 exact copies,
+20/960 neural replay receipts, source/start/exposure/reference identities and
+140 original cells remain valid; this check is not another neural replay.
+All four notebooks regenerate. Documentation/starter checks pass 365 local links
+and 1077 content hashes; standalone inventory verifies 1077 selected files and
+82 embedded sources with pinned references/historical integrity. Recursive
+source/evidence inclusion and root/Prod parity pass for 19 Lean, 12 theory and
+16 paper files. No new Lean/LaTeX compiler or remote CI execution is claimed.
+The bounded 10 MB exception preserves the now >5 MB append-only check history.
+Regenerate the final starter after these notes, then sync/check directly after
+all logged checks so no logger append creates distribution drift.
+
+Stage 17: all 199 root tests pass, including six new nesting/reference-scope and
+integer decision-boundary tests; the inherited numerical-update equivalence
+checks pass before freeze. Five fixed CPU fits complete in 1,611.880 seconds.
+Separate replay completes in 562.925 seconds and reproduces all 20 model/optimizer
+checkpoints, 1,920 new cache/development generations/teacher scores, common16
+subsets, starts, optimizer steps, actual order/LR/token counts and both reference
+extractions exactly. This is same-code replay, not independent neural inference
+or retraining. Scientific source/config/data/criteria remain unchanged after
+freeze; ordinary regression fixtures are separate from the benchmark fits.
+
+The evidence audit passes 72 byte-identical copies, 220 CSV rows/summary/review,
+actual 75 presentations per example, both matched references, independent
+generated vector/hop/sign/cell counts and frozen chronology/source/privacy.
+Public data/labels/order/reference/generated-score reproduction passes without
+private weights/data, tokenizer cache or network; teacher logits require weights.
+The cache-fit curves, observed crossing line, all legends/axes, three-variant
+held-out bars and overlap disclosure are visually checked. No new GPU, remote CI,
+official language test or Lean/LaTeX compiler execution is claimed.
+
+Stage 17 distribution checks: standalone also passes all 199 tests and public-only
+data/order/reference/1,920-score reconstruction. Source/evidence inclusion and
+root/Prod parity pass for 19 Lean, 12 theory and 16 paper files; saved verification
+records are retained without a new compiler run. All four notebooks regenerate;
+377 local Markdown links, starter CRC and all 1,164 inventoried content hashes
+pass. No CI completion, push, remote/paid job or external publication is claimed.
+Final starter regeneration and direct sync/check follow the final logger writes.
+
+Stage18 (31 October–1 November 2026): all 208 root tests pass. Eight new tests
+cover train-only marginals, source/format shortcuts, per-cell target requirements,
+first/sustained crossings, right-censoring, step0 and component costs. The added
+publication test bounds only the exact all-case result path at12MB, preserving
+all other artifact exclusions/limits. Sixteen targeted new/inherited numerical
+tests pass before freeze. Five matched fits complete in2561.106 seconds;
+separate replay completes in970.423 seconds, verifying all35 checkpoints and4480
+new generations/teacher scores, actual starts/optimizer/order/LR/token counts,
+baseline/target/censoring/contrast and original cost identities. This is same-code
+neural replay, not a second fit or independent neural implementation; timings
+remain the original observations. No frozen scientific source/input/target changes.
+
+All4480 saved answers independently parse/score with matching semantic/cell and
+teacher-counter/cost aggregation. The first private preflight command fails only
+on PowerShell quotation before executing its body; its corrected passing command
+and the failed transcript remain logged. Public-only reconstruction passes ID-only
+data/labels/order, train-only baseline, imported cost evidence, all4480 generated
+scores,140 CSV rows and exact review without private weights/data/cache/network.
+New neural logits require retained weights. The four-panel plot is inspected:
+five legends, all seven points, gray baseline/black dotted target, both tasks/
+sizes, full0..1 axes and coincident-curve disclosure are correct. No individual
+semantic target is met at any observed cell; all arms stay right-censored.
+
+Stage18 final distribution: standalone also passes all 208 tests and public-only
+ID data/order/baseline/cost/4,480-score reproduction. All60 exact evidence copies,
+140 cells,35/4480 replay receipts, actual token/optimizer identities and frozen
+source/chronology/privacy pass the evidence audit. Stage17's72 exact copies,
+20/1920 historical replay receipts,220 cells, references and fixed endpoints
+remain valid. These preservation checks do not execute another neural replay.
+
+All four notebooks regenerate. Starter CRC/1,239 content hashes and393 local
+Markdown links pass; standalone inventory verifies1,239 files/82 embedded sources
+and pinned-reference/historical integrity. Root/Prod recursive inclusion/parity
+passes19 Lean,12 theory and16 paper source/evidence files. No new Lean/LaTeX,
+remote CI, GPU, OOD or official-language-test execution is inferred. Regenerate
+the final starter after these notes and finish direct sync/check AFTER all
+logged commands, preserving append-only log parity and private-artifact rules.
+
+Stage19 checkpoint-only diagnostic: all 213 root tests pass, including five new
+selection/exposure/trace/decision tests; 13 targeted new/inherited tests pass
+before freeze. Evaluate all five unchanged stage18 endpoints on128 seen cases
+each; import the640 development outputs and exact-value teacher counters. The
+evaluation command completes in265.287 seconds with zero optimizer updates.
+Separate replay completes in213.673 seconds and exactly reproduces all five
+endpoints/640 new predictions/teacher scores, fixed decisions and trace summaries.
+This is same-code replay, not a new fit or independent neural implementation.
+
+Public-only ID/probe/baseline/order reconstruction independently parses all1280
+new/imported outputs and checks all3000 raw optimization rows,40 cell rows,
+30 trace blocks, decisions/summary/review without private weights/data/cache/
+network. The private evidence audit passes36 byte-identical copies, actual token
+encodings, optimizer/count receipts and source/chronology/privacy. All five fail
+semantic readiness on seen and held-out probes, with0/128 exact vectors on each.
+The plot is visually inspected; palette counts confirm all four model/baseline
+bar series, and all six fixed trace-block means/labels are retained. No new
+PPT/language/GPU/OOD/official-test run or target/gate change is introduced.
+
+Stage19 distribution: standalone also passes all213 tests and public-only probe/
+baseline/1280-answer/3000-trace reconstruction. All four notebooks regenerate;
+411 first-party local links, starter CRC/all1303 file hashes and standalone
+1303-file/82-embedded-source integrity pass. Stage18's unchanged4480 output/
+baseline/cost/censoring reconstruction passes without reexecuting neural replay.
+Root/Prod recursive membership/parity retains19 Lean,12 theory and16 paper
+source/evidence files. No new Lean/LaTeX compilation or remote CI is claimed.
+The independently added scientific_transfer package and its own source-bound
+evidence/receipts remain included under the existing publication selections;
+its tests are not relabeled as newly run by this diagnostic. After final notes,
+regenerate the starter and directly sync/check after the last logger append.

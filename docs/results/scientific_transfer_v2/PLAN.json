@@ -1,0 +1,63 @@
+{
+  "config": {
+    "model_id": "steady_hybrid_v2",
+    "purpose": "development physical-model and numerical-reference checks only",
+    "training_enabled": false,
+    "manuscript_replication_enabled": false,
+    "cases": {
+      "pure": {},
+      "zinc": {
+        "phi_zinc": 0.01
+      },
+      "titania": {
+        "phi_titania": 0.01
+      },
+      "hybrid_radiative": {
+        "phi_zinc": 0.01,
+        "phi_titania": 0.01,
+        "magnetic": 0.2,
+        "rotation": 0.2,
+        "buoyancy": 0.1,
+        "radiation": 0.2,
+        "temperature_ratio": 1.2
+      }
+    },
+    "independent_reference": {
+      "points": [
+        49,
+        65
+      ],
+      "length": 10.0,
+      "prandtl": 1.0,
+      "wall_agreement_absolute": 1e-05,
+      "published_homann_fpp0_rounded": 1.311938,
+      "published_value_role": "rounded consistency anchor, not manuscript reference"
+    }
+  },
+  "sources": {
+    "__init__.py": "a01e251e6e74e12db0a18315edb1b428beadfa90ca22a6e77a768f56fd4b6ee3",
+    "config.json": "df2b07d09a556c956cc6d0428fe308718f3f189b7265cd0799071487bc7d6252",
+    "DERIVATION_V2.md": "83730a68c2ebcd73d3dcf9c26c35a1e2ae34c0492c65148562a61d62ff6a3764",
+    "EQUATION_AUDIT.md": "2552182307bcd1d443e38c6950c8f4538f4612b3b9e8fca26eaf045121a1fddb",
+    "hybrid_v2.py": "ce938601342ba0c352a3e3c23ae4f4c1ec6742377f41bc6f46acf5548578764a",
+    "independent_reference.py": "46266cf329aa5096830df9922b1afdb0a0c05593108a719b882a1d9c365ef527",
+    "materials.py": "1b8c0e27634589af30f34cce44c717e81ad89a14d4f44485e705840408e48784",
+    "metrics.py": "be5254a46bf567c777751de682e75cd94326ad9065788c35423ae2e054567189",
+    "milestone2_config.json": "5cc5be96068e6c06d3778b6e7e92003b34168d2026731004e51b74e81017691a",
+    "milestones.py": "a0c19e67157e012a52c8f61e4c9befcc5e795af590fc0cea8958cfbf99aca917",
+    "physics.py": "0d2354fbb0aae53168ed5f1837e07732668d34e6f8a8ca12385a2045a696235a",
+    "PROTOCOL.md": "3981537bad949a20c5cb3508dd32ea395f4f8b90f39029ddc6574b3358d9f1ae",
+    "README.md": "7e8d21f547580ea4ddf79948a1d37864875790145cbd160f48295a517480386a",
+    "requirements.txt": "5b38e632ce60bc2814d0441240ce82fd4fc962a9b138a4012552907124d09119",
+    "run.py": "76039c524933fafe1ab360199d69841876bbe0d4c449f3e04e9cdb6b40679c5e",
+    "test_hybrid_v2.py": "243207534e98f52eb8c5a9917b55aa7fac00ea5b0c819bc8fce676aaab8bd3d7",
+    "test_scientific_transfer.py": "99dc94446bceeece72f707b033234bc006a8fcc8132b7a5fb24afa84121abfb0"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "scipy": "1.17.0"
+  },
+  "scope": "new local CPU numerical checks, no neural updates",
+  "sha256": "2db65ce93f2863043b79f9148a6d8cede9d05a77decf24feda0abf2a54494155"
+}

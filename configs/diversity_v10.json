@@ -1,0 +1,10 @@
+{
+  "schema_version": 10,
+  "purpose": "development_initial_condition_diversity",
+  "training_conditions": 4096,
+  "expansion_seed": 20261021,
+  "minimum_first_patch_improvement_nats": 0.01,
+  "minimum_intervention_improvement_nats": 0.01,
+  "selection": "final_declared_update",
+  "language_allowed": false
+}

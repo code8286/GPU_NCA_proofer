@@ -1,0 +1,19 @@
+{
+  "schema_version": 13,
+  "purpose": "historical_id_interface_trainability_calibration",
+  "updates": 600,
+  "batch": 8,
+  "order_seed": 20261031,
+  "learning_rate": 0.0003,
+  "warmup_updates": 30,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "evaluation_updates": [0, 100, 300, 600],
+  "id_exact_match_target": 0.8,
+  "id_format_target": 0.95,
+  "generation_tokens": 128,
+  "device": "cpu",
+  "threads": 2,
+  "language_training_allowed": false,
+  "confirmatory_graph_claim_allowed": false
+}

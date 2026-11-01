@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "models": 5,
+  "predictions_replayed": 1280,
+  "plan_sha256": "190ab24f24655072f8ebfe9f309d61135920aab57dd7c7611628db6fef57e393",
+  "results_sha256": "37035df1150bb8f3ad116116f1581aeb9b575c1ac8cb79b635f48fa38847cb24",
+  "new_optimizer_updates": 0,
+  "scope": "Separate same-code checkpoint replay, not independent neural implementation or fitting"
+}

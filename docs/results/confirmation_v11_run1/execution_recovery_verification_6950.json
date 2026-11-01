@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "completed_final_endpoints": 24,
+  "retained_models_unchanged": 21,
+  "interrupted_prefix_metrics_reproduced_through_update": 800,
+  "extra_aborted_updates": 800,
+  "extra_aborted_input_tokens": 150400,
+  "recovery_sha256": "6950f408095018c0b6021bc139bb8eb69f44ee559d683c139f86bcc5a8c15478",
+  "preserved_executed_helper_sha256": "099c0a5895a64ea636055d768845c83455fb4d5802ce7a3f221870db8efb6e61",
+  "training_sha256": "ff9aa1b28b14812e0996069c709225819eda0d1d5f1e7e1952a47efe9e7c302f",
+  "language_allowed": false
+}

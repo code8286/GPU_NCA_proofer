@@ -1,0 +1,45 @@
+{
+  "schema_version": 12,
+  "purpose": "development_ood_measurement_and_historical_zero_shot",
+  "data_seed": 20261030,
+  "tasks": [
+    "bfs_distances",
+    "dijkstra_distances"
+  ],
+  "id_sizes": [
+    8,
+    10
+  ],
+  "ood_sizes": [
+    12,
+    16,
+    20
+  ],
+  "families": [
+    "cyclic_er",
+    "branching_tree",
+    "path",
+    "two_components"
+  ],
+  "train_graphs_per_cell": 128,
+  "development_graphs_per_cell": 32,
+  "assessment_graphs_per_cell": 32,
+  "context_limit": 1024,
+  "generation_tokens": 128,
+  "legacy_seed": 59,
+  "legacy_arms": [
+    "scratch",
+    "grid_nca",
+    "graph_nca",
+    "prefix_grid",
+    "prefix_graph"
+  ],
+  "legacy_cases": [
+    "id_cyclic_er_8",
+    "size_cyclic_er_16",
+    "family_path_8",
+    "joint_path_16"
+  ],
+  "language_training_allowed": false,
+  "reserved_confirmation_generated": false
+}

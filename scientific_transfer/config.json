@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "model_id": "steady_bridge_v1",
+  "seed": 20261101,
+  "counts": {"train": 8, "development": 4, "assessment": 4, "extrapolation": 4},
+  "ranges": {"magnetic": [0.0, 1.0], "rotation": [0.0, 1.0], "buoyancy": [0.0, 0.5], "prandtl": [0.7, 3.0]},
+  "extrapolation": {"magnetic": [1.2, 1.5]},
+  "solver": {"length": 10.0, "points": 161, "tol": 0.000001, "max_nodes": 5000},
+  "verification": {"length": 14.0, "points": 321, "tol": 0.0000001, "max_nodes": 10000},
+  "agreement_absolute": 0.0001,
+  "arms": ["scratch", "grid_nca", "graph_nca", "prefix_grid", "prefix_graph"],
+  "training_enabled": false,
+  "manuscript_replication_enabled": false,
+  "downstream_training": {
+    "status": "draft_not_frozen",
+    "interface": "full_seven_state_profile",
+    "policy": "same architecture/head initialization, data order, optimizer, schedule and budget across all arms; preserve identical preceding language stage",
+    "checkpoints": null,
+    "budget": null
+  }
+}

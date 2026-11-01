@@ -1,0 +1,21 @@
+{
+  "schema_version": 18,
+  "purpose": "exploratory_id_learning_acceleration",
+  "arms": ["scratch", "grid_nca", "graph_nca", "prefix_grid", "prefix_graph"],
+  "data_seed": 2026103118,
+  "order_seed": 2026103118,
+  "updates": 600,
+  "batch": 8,
+  "learning_rate": 0.0003,
+  "warmup_updates": 30,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "evaluation_updates": [0, 100, 200, 300, 400, 500, 600],
+  "generation_tokens": 128,
+  "threads": 2,
+  "baseline_margin": 0.10,
+  "format_target": 0.95,
+  "language_training_allowed": false,
+  "ood_allowed": false,
+  "confirmation_allowed": false
+}

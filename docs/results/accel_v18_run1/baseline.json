@@ -1,0 +1,59 @@
+{
+  "modes": [
+    {
+      "task": "bfs_distances",
+      "n": 8,
+      "distance": 2
+    },
+    {
+      "task": "bfs_distances",
+      "n": 10,
+      "distance": 2
+    },
+    {
+      "task": "dijkstra_distances",
+      "n": 8,
+      "distance": 4
+    },
+    {
+      "task": "dijkstra_distances",
+      "n": 10,
+      "distance": 6
+    }
+  ],
+  "semantic": {
+    "cells": [
+      {
+        "task": "bfs_distances",
+        "n": 8,
+        "nodes": 224,
+        "correct": 96,
+        "accuracy": 0.42857142857142855
+      },
+      {
+        "task": "bfs_distances",
+        "n": 10,
+        "nodes": 288,
+        "correct": 129,
+        "accuracy": 0.4479166666666667
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 8,
+        "nodes": 224,
+        "correct": 14,
+        "accuracy": 0.0625
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 10,
+        "nodes": 288,
+        "correct": 16,
+        "accuracy": 0.05555555555555555
+      }
+    ],
+    "valid_format": 1,
+    "coverage": 1,
+    "exact_match": 0
+  }
+}

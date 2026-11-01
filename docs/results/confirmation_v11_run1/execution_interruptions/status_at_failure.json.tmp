@@ -1,0 +1,10 @@
+{
+  "state": "training",
+  "seed": 211,
+  "objective": "standard",
+  "arm": "prefix",
+  "level": 4096,
+  "step": 800,
+  "finished_models": 21,
+  "language_allowed": false
+}

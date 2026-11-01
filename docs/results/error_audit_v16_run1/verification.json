@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "plan_sha256": "279bd3b7ea385de061d9ec8c02c5a87b329c8c2d4b1bdd15a9a1c225aa357702",
+  "results_sha256": "229c93bb57b55cd784755cafb494c05e1deee56a03291904a2dfe466fdb0b1d1",
+  "verified_utc": "2026-10-31T13:55:52.267458+00:00",
+  "retained_outputs_rescored": 1440,
+  "independent_generated_parser_and_hops": true,
+  "independent_neural_replay": false,
+  "scope": "Independent generated semantic parser/hops; shared aggregation; imported teacher counters only"
+}

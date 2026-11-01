@@ -27,3 +27,14 @@ revision and retains its CC-BY-SA-3.0/GFDL terms. Dataset/checkpoint artifacts
 remain excluded from the public source selection.
 `docs/results/` contains project measurements and plots; its provenance manifest
 distinguishes copied originals from adapted summaries.
+
+
+The CLRS-Text methodological reference is retained at
+[sources/clrs-text-reference](sources/clrs-text-reference/reference.json), commit
+`d1c2ad7af8437c7536cf329d9cef8fdf93184d9d` (release v2.0.1), under the included
+[Apache License 2.0](sources/clrs-text-reference/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/LICENSE).
+Copyright DeepMind Technologies Limited; original file headers remain intact.
+These seven files are reference material and are not imported by the local
+`ood_v12` diagnostic. Its task/output adaptation is not a reproduction or
+replacement of official CLRS-Text results. Public paper:
+[CLRS-Text, arXiv:2406.04229v1](https://arxiv.org/html/2406.04229v1).

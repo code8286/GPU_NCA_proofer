@@ -1,6 +1,6 @@
 # Research context: GNNs in NCA pre-pre-training
 
-Updated: 20 October 2026.
+Updated: 1 November 2026.
 
 The research question is whether **graph-NCA data improves the transformer
 initialization acquired during pre-pre-training**, before ordinary language
@@ -268,3 +268,253 @@ It needs a new frozen declaration; it has not been configured or fitted here.
 The failed stage 8 endpoint and original random-rule readiness remain unchanged.
 Language training remains gated; later confirmation and transfer still need
 fresh paired data/cohorts and an identical full language stage.
+
+## Stage 10 — initial-condition diversity (21 October 2026)
+
+The separately frozen diversity ablation is complete: 4096 nested available
+training conditions versus 512, with the known spatial rule, objectives, full
+backbone, actual initial states and per-model 1000-update/token budget fixed.
+Twelve new CPU models retain both standard/weighted objectives and coherent/
+shuffled controls against twelve imported endpoints. All original rows and
+shuffles are exact. New phases exclude held-out and all eligible intervention
+classes; the old 122-pair mask is unchanged. This is inspected development data.
+
+The predeclared study-wide primary FAILS. All three weighted seeds improve
+original AND intervention NLL by >=0.01 while retaining trajectory readiness;
+standard loss improves only seed 167, with both first/intervention NLL worse for
+131 and 149. Weighted first accuracy rises 32.03% -> 45.57%, intervention 30.05%
+-> 43.99%, full trajectory 50.86% -> 57.56%. Standard first accuracy falls
+47.40% -> 27.86%, intervention 42.08% -> 25.96%. Do not remove the failing
+objective or call this a general diversity/learning-speed success.
+
+The weighted larger-cache arm still has lower first/full accuracy than the
+original standard smaller-cache arm (descriptive cross-objective comparison).
+Larger-cache shuffle controls pass readiness in 3/3 standard and 2/3 weighted
+seeds despite weak first-patch performance. These coarse gates alone cannot
+establish dynamics-specific competence or a unique mechanism.
+
+Actual distinct rows drawn are 2532/2533/2558 from the 4096 cache versus
+512/512/511 originally, each from 4000 draws. All four new arms share indices
+within each seed, but cache sizes cannot share identical sampled examples.
+Common anchor/extension probes retain drawn/undrawn masks and null empty subsets;
+they are not exhaustive full-cache fit measurements. Both frequency priors are
+calibrated from their own training cache under the unchanged policy.
+
+All 54 full, 108 fit-probe and 27 intervention cases replay exactly, retaining
+every imported score vector, endpoint and criterion. The local suite passes 134
+tests, including two publication-policy regressions. See the
+[stage 10 review](docs/results/diversity_v10_run1/REVIEW.md).
+The next step is separately frozen fresh phase-disjoint confirmation with both
+objective strata/controls retained, focused on the observed objective-specific
+effect. No such confirmation was launched. The manuscript and presentation
+remain their earlier authored snapshots; they do not silently acquire stage 10
+coverage. Original random-rule readiness remains failed, and language transfer
+still requires fresh paired cohorts and an identical full language stage.
+
+## Stage 11 â€” fresh-phase confirmation (21 October 2026)
+
+The weighted primary confirmation **passes** (3/3 paired seeds); standard passes 1/3. The broader both-objective criterion **fails**.
+The separately frozen weighted hypothesis follows stage 10's development
+finding; that earlier broad primary remains failed. Fresh seeds 179/193/211
+share one new split, excluding 4926 historical joint phase classes. All 128
+intervention pairs are reserved outside fresh training/development. All 24
+512/4096 Ã— standard/weighted Ã— coherent/shuffled models are new fits at the
+unchanged rule/model/serializer/1000-update budget. No inspected endpoint was
+continued or imported as a control.
+
+All 54 full, 108 fit-probe and 27 intervention cells replay exactly. Sixty-six
+copied records, nine raw evidence files and source/input/order/cost receipts
+remain retained. The local suite passes 146 tests. See the
+[stage 11 review](docs/results/confirmation_v11_run1/REVIEW.md).
+The historical stage 10 CSV has a documented
+[column caveat](docs/STAGE10_CSV_CAVEAT.md); its nested JSON/review and negative
+broad primary are unchanged. Declare a separate bridge toward interacting categorical rules, changing one task property at a time and retaining both objectives and controls.
+This is conditional confirmation on one known binary rule and one fresh split,
+not evidence of GraphNCA acceleration or unseen-rule transfer. Original random-
+rule checkpoints remain unready. Any language study needs a separately frozen
+eligible synthetic configuration, fresh paired cohorts and an identical full
+language stage. No language, official-test, remote/paid run, push or publication.
+
+
+## Stage 12 — explicit OOD graph evaluation (30 October 2026)
+
+Add an evaluation layer motivated by methodological feedback and CLRS-Text:
+test a learned procedure outside its ID distribution, separating size shifts,
+graph-family shifts and their joint shift. Preserve the question of graph/grid
+PPT before the identical language stage. Any additional algorithmic adaptation
+must also use identical data/order/optimizer/schedule/budget across arms; it is
+a third stage, not synthetic PPT or additional hidden language exposure.
+
+The implemented local diagnostic uses BFS/Dijkstra full distance vectors,
+explicitly different from official CLRS-Text outputs. A separate official-export
+scorer preserves official prompt/reference semantics. Paired relabeling,
+edge-order and guaranteed answer-changing edge cuts distinguish invariance and
+functional correctness. Independent all-pairs labels agree on 5760 written
+examples. All 5120 assessment views are development evidence; future untouched
+confirmation remains ungenerated. Graph-isomorphism-invariant conservative
+exclusion includes intervention graphs, with repeated topology counts retained.
+
+A predeclared historical zero-shot calibration uses the five final v4 language
+arms in cohort 59, without any new fitting or task teaching. All 160 predictions
+are invalid-format and incorrect; every input fits the original context. Exact
+same-code checkpoint replay passes. This cannot establish graph equivalence,
+no-effect or learning acceleration: the task interface is not learned. The
+next learned calibration must establish ID competence before comparing OOD.
+
+Read [stage 12 review](docs/results/ood_v12_run1/REVIEW.md),
+[protocol](docs/OOD_V12_PROTOCOL.md) and [usage](docs/OOD_V12_USAGE.md).
+Stage 11 results and original failed random-rule readiness stay intact. A future
+confirmatory transfer study still needs eligible synthetic initialization, its
+separate categorical bridge, fresh paired cohorts, identical downstream stages,
+predeclared targets/censoring and total-cost accounting. No new training,
+official-language-test access, remote/paid job or publication occurred here.
+
+## Stage 13: matched historical ID adaptation completed
+
+The [new calibration](docs/results/adaptation_v13_run1/REVIEW.md) trains all five
+retained cohort-59 final language models with identical 600-update answer-only
+supervised task adaptation, full inherited model/head policy, actual sample order,
+optimizer and schedule. Every model scores 0/128 exact ID answers at the fixed
+endpoint, despite 98.4–100% valid vectors. The 80% pooled/per-task-size competence
+criterion fails and OOD is skipped. There are 3000 new CPU adaptation updates,
+zero new language/PPT updates and no GPU measurement. Historical costs and old
+negative results remain separate. Low NLL/format acquisition is not graph-task
+competence or graph-specific acceleration. Original random-rule readiness stays
+failed; future transfer requires its separate categorical bridge and fresh paired
+cohorts. Before another fit, use existing checkpoints for a separately frozen,
+task/size-matched training/development generated-error audit. Read the
+[protocol](docs/ADAPTATION_V13_PROTOCOL.md) and
+[usage](docs/ADAPTATION_V13_USAGE.md). Preserve the explicit
+[integrity wording clarification](docs/ADAPTATION_V13_INTEGRITY_CLARIFICATION.md).
+
+## Stage 14: matched ID checkpoint-error audit
+
+The [new development diagnostic](docs/results/id_audit_v14_run1/REVIEW.md) uses
+all five fixed stage 13 final models without fitting. Matched training and dev
+probes have 128 examples each, 32 per task/size cell; salted graph-ID selection
+is outcome-blind and genuine earlier exposure is verified. Every arm has zero
+exact answers on both probes. Training node accuracy is 29.55–32.89% versus dev
+18.95–21.60%. Conditional digit-token accuracy is weak even with gold previous
+answer tokens, while other-token accuracy is nearly perfect. Reliable predictions
+on seen examples are not established; the held-out difference remains descriptive,
+not a unique cause or graph-specific treatment conclusion.
+
+All 176 root tests pass. No optimizer update, new language/PPT/GPU measurement,
+OOD prediction or untouched confirmation is introduced. The original random-rule
+readiness failure and categorical bridge remain. The next proposal is a separately
+frozen small-cache overfit positive control with model/tokenizer/objective/budget
+held fixed and the original cache reference/all arms retained from common prior
+starts. That new fit has not been launched. See the
+[protocol](docs/ID_AUDIT_V14_PROTOCOL.md) and [usage](docs/ID_AUDIT_V14_USAGE.md).
+
+## Stage 15: small-cache fitting positive control
+
+The separately frozen [new study](docs/results/overfit_v15_run1/REVIEW.md)
+restarts all five original stage 13 step-0 models and changes the training cache
+from 512 to 16 nested, outcome-blind examples. Numerical updates, codec/model,
+head policy, objective, optimizer and 600-update budget are fixed. Each selected
+example receives 300 presentations. Actual token/padding differences and coupled
+cache diversity/content/repetition are preserved in cost accounting. The imported
+512-cache reference is scored on the exact same selected examples and full dev.
+
+All five small-cache models pass the fixed final criterion with 16/16 exact
+cache answers; the historical reference has 0/16. All new models still score
+0/128 exact development answers, with worse validity/node/NLL than the 512-cache
+reference. This establishes fitting capability on this limited cache, not a
+unique cause of full-cache weakness or reliable algorithm generalization.
+All 184 root tests pass. There are 3000 new CPU task-adaptation updates, zero
+new PPT/language/GPU/OOD measurements; original reference costs remain imported.
+The categorical/random-rule bridge, failed stronger readiness and OOD gates
+remain intact. Any next diversity/budget/generalization treatment must be frozen
+separately, with all controls retained. See the
+[protocol](docs/OVERFIT_V15_PROTOCOL.md) and [usage](docs/OVERFIT_V15_USAGE.md).
+
+## Stage 16: retained-output semantic and token error audit
+
+The [frozen audit](docs/results/error_audit_v16_run1/REVIEW.md) independently
+parses/hop-scores 1440 imported outputs, including every fixed endpoint arm,
+cache-size variant and task/size cell. No scientific fitting or inference is
+performed. Explicit invalid/valid-vector denominators show held-out semantic
+weakness even among parsed vectors (16.83–19.81% node-micro for small16).
+Teacher-forced digit token-micro accuracy is also low (19.18–20.57%), and source/
+one-hop errors persist. A sole formatting or long-path explanation is inadequate;
+no unique causal diagnosis follows. Keep all prior failed endpoints and gates.
+
+The frozen no-OOD-data wording was broader than implementation: unchanged
+deterministic generation also recreates unused assessment/OOD rows in memory.
+The [disclosure](docs/ERROR_AUDIT_V16_REGENERATION_NOTE.md) preserves that wording
+and executed sources. No assessment/OOD scoring, prediction, selection or model
+input occurs. The next proposed cache64/fixed600 development treatment requires
+its own freeze and all controls, not an extension or retuning of this audit.
+
+## Stage 17: intermediate-cache fitting study
+
+The [separately frozen experiment](docs/results/cache_v17_run1/REVIEW.md) changes
+cache size to 64 examples at the same 600 updates, from all five original full
+pre-adaptation states. Every arm reaches 64/64 exact cache answers, with all
+four cells 16/16. Every arm still has 0/128 exact development answers. All
+pooled cache crossings are first observed at update 300; no speedup ratio is
+inferred from these coarse observations or across different training caches.
+
+The SAME common16/dev128 cases retain both imported references; only reference512
+covers the full64. New64 held-out NLL improves over reference16 in every arm,
+while reference512 has better NLL AND node accuracy in every arm. Graph node
+accuracy is 17.09% versus grid 12.54% and matched prefix-graph 18.71%. All are
+descriptive single-cohort endpoints, not a graph acceleration/equivalence claim.
+Full-ID competence, categorical bridge and original random-rule readiness remain
+unmet. No OOD, new language/PPT run or official-language-test evaluation occurs.
+
+All 20 checkpoints/1,920 new predictions and teacher scores replay exactly in a
+separate invocation; 199 root tests and independent counter/public score checks
+pass. Public reproduction needs no private weights/data/cache/network. New
+scientific updates are 3,000 CPU task-adaptation updates; 6,000 reference updates
+are imported. The run changes no frozen target or prior evidence. Future work
+must declare a separate treatment, preserving all controls and existing gates.
+
+## Stage18: direct exploratory ID acceleration measurement
+
+User authorizes the exploratory study despite the unchanged original synthetic-
+readiness failure; this is a prospective exception for development measurement,
+not a change to the separate confirmation protocol. The
+[frozen plan](docs/ACCEL_V18_PROTOCOL.md) uses the same five original language-
+trained states, new shared ID sampling/order, 600 updates and seven held-out
+evaluations. All language stages remain identical before this new task stage.
+No new PPT or language stage is trained. The target requires non-source semantic
+accuracy +10pp above a source-aware train-marginal baseline in all four cells,
+95% pooled validity and coverage1. Exact-vector calibration is retained separately.
+
+All five fits complete without reaching that target: every arm is censored at
+600, all140 individual semantic cell targets also remain unmet, and speedup
+ratios are undefined. Full curves/endpoints stay intact; do not replace the
+threshold or cap to obtain a ratio. The result measures task adaptation after
+the language stage, not language convergence or standalone GNN speed. It does
+not establish graph equivalence, universal harm/impossibility or confirmation.
+
+Include full imported T4 generation/preparation/PPT/language costs and actual
+new CPU token/time counts, separating heterogeneous-hardware components and
+unmeasured overheads. All208 root tests and independent4480-output parser/
+counter/cost checks pass; separate neural replay verifies all 35 checkpoints
+and 4,480 predictions/teacher scores, cost/target decisions and optimizer budgets.
+Original categorical/random-rule bridge, eligible starts, fresh paired cohorts,
+all controls, ID-only selection, OOD criteria/censoring/multiplicity and full
+cost requirements remain intact for confirmation. No OOD run occurs.
+
+## Stage19: checkpoint-only fitting and generalization diagnostic
+
+The [new frozen diagnostic](docs/FIT_AUDIT_V19_PROTOCOL.md) measures all five
+stage18 final models on128 outcome-blind seen cases and imports the unchanged
+development128 reference. It uses the same original train-fitted marginal
+predictor, scored separately on each probe's own cases; old held-out targets
+remain exact. All five fail the semantic target on BOTH probes, with zero exact
+answers on seen data as well as development. Seen whole-node accuracy is only
+23.48–28.65% despite prior exposure. Held-out generalization alone cannot explain
+all failure; neither this result nor declining mixed-token loss identifies a
+unique cause or guarantees that more training is the solution.
+
+All213 root tests pass. Separate five-checkpoint replay verifies640 new seen
+generations/teacher scores, optimizer/count identities, interpretations and trace
+summaries. The640 dev outputs are imported, not new neural measurements. All600
+updates per arm and fixed blocks/first50/last50 summaries are retained. There is
+no fitting, new language/PPT/GPU/OOD/official-test evaluation or confirmation-gate
+change. A later longer-budget treatment must freeze data/model/objective/controls,
+schedule, target/censoring and costs separately, preserving all old endpoints.

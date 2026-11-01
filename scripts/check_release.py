@@ -31,12 +31,16 @@ def safe_file(root, name):
 def selected_files(root):
     policy = json.loads((root / "publication.json").read_text(encoding="utf-8"))
     names = set(policy["files"])
+    excluded = [safe_file(root, name).relative_to(root).as_posix()
+                for name in policy.get("excluded_directories", [])]
     for directory in policy["directories"]:
         folder = safe_file(root, directory)
         if not folder.is_dir():
             raise ValueError(f"Missing publication directory: {directory}")
         for path in folder.rglob("*"):
             relative = path.relative_to(root)
+            if any(PurePosixPath(relative.as_posix()).is_relative_to(name) for name in excluded):
+                continue
             if {"__pycache__", ".lake"}.intersection(relative.parts) or path.suffix in (
                 ".pyc", ".pyo", ".olean", ".ilean"
             ):
@@ -52,8 +56,13 @@ def selected_files(root):
             ".zip", ".pt", ".pth", ".ckpt", ".npy", ".npz", ".pdf", ".pem", ".key"
         } or path.name.startswith(".env"):
             raise ValueError(f"Non-distributable artifact: {name}")
-        if path.stat().st_size > 5_000_000:
-            raise ValueError(f"Publication file exceeds 5 MB: {name}")
+        # Retain complete command history and stage18 all-case metadata with
+        # bounded exact-path allowances. Private artifact exclusions remain.
+        limits = {"logs/checks.jsonl": 10_000_000,
+                  "docs/results/accel_v18_run1/results.json": 12_000_000}
+        limit = limits.get(name, 5_000_000)
+        if path.stat().st_size > limit:
+            raise ValueError(f"Publication file exceeds {limit} bytes: {name}")
     return sorted(names)
 
 

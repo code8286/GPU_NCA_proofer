@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checkpoints": 20,
+  "new_predictions_replayed": 1920,
+  "plan_sha256": "6b52c649bdfab7fd8d43d11a308e62606a0e285a10f9210db2a502a629195028",
+  "results_sha256": "eace048e5eacfa1621c14fdef51c0f741475f89f271571d4ad9a3c1d5caeebc7",
+  "scope": "Separate same-code checkpoint/teacher replay and imported reference reconstruction; not retraining"
+}

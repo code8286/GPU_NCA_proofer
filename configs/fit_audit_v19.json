@@ -1,0 +1,10 @@
+{
+  "schema_version": 19,
+  "purpose": "checkpoint_only_seen_vs_heldout_and_optimization_audit",
+  "selection_salt": "fit-audit-v19-20261101",
+  "training_graphs_per_size": 32,
+  "endpoint": 600,
+  "arms": ["scratch", "grid_nca", "graph_nca", "prefix_grid", "prefix_graph"],
+  "new_optimizer_updates": 0,
+  "ood_allowed": false
+}

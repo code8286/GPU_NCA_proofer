@@ -1,0 +1,433 @@
+{
+  "plan_sha256": "9e18f7f90def47c453f29847244d7715ebab48cdbf0d267a23bbde66957d5b5e",
+  "passed": false,
+  "models": [
+    {
+      "arm": "scratch",
+      "passed": false,
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "tokens": null,
+        "seconds": null
+      },
+      "final": {
+        "step": 600,
+        "selection_split": "id_development",
+        "tokens": 562855,
+        "targets": 96016,
+        "seconds": 238.3869824999456,
+        "evaluation_seconds": 98.15915310000128,
+        "exact_match": 0,
+        "valid_format": 0.9921875,
+        "coverage": 1,
+        "node_accuracy": 0.216015625,
+        "cells": [
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.37109375
+          },
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 0.96875,
+            "exact_match": 0,
+            "node_accuracy": 0.33125
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.08984375
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.07187500000000001
+          }
+        ],
+        "train_nll": {
+          "answer_eos_nll": 0.7587424516677856,
+          "supervised_targets": 1152,
+          "examples": 64
+        },
+        "development_nll": {
+          "answer_eos_nll": 0.9767919566482306,
+          "supervised_targets": 2560,
+          "examples": 128
+        }
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "passed": false,
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "tokens": null,
+        "seconds": null
+      },
+      "final": {
+        "step": 600,
+        "selection_split": "id_development",
+        "tokens": 562855,
+        "targets": 96016,
+        "seconds": 229.91104940000878,
+        "evaluation_seconds": 96.41633069999443,
+        "exact_match": 0,
+        "valid_format": 1,
+        "coverage": 1,
+        "node_accuracy": 0.189453125,
+        "cells": [
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.29296875
+          },
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.3
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.08984375
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.075
+          }
+        ],
+        "train_nll": {
+          "answer_eos_nll": 0.753802627325058,
+          "supervised_targets": 1152,
+          "examples": 64
+        },
+        "development_nll": {
+          "answer_eos_nll": 0.9926717948168516,
+          "supervised_targets": 2560,
+          "examples": 128
+        }
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "passed": false,
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "tokens": null,
+        "seconds": null
+      },
+      "final": {
+        "step": 600,
+        "selection_split": "id_development",
+        "tokens": 562855,
+        "targets": 96016,
+        "seconds": 228.44391850002285,
+        "evaluation_seconds": 101.97733299999891,
+        "exact_match": 0,
+        "valid_format": 1,
+        "coverage": 1,
+        "node_accuracy": 0.2107421875,
+        "cells": [
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.3203125
+          },
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.340625
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.09765625
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.084375
+          }
+        ],
+        "train_nll": {
+          "answer_eos_nll": 0.7447111457586288,
+          "supervised_targets": 1152,
+          "examples": 64
+        },
+        "development_nll": {
+          "answer_eos_nll": 0.9983437817543745,
+          "supervised_targets": 2560,
+          "examples": 128
+        }
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "passed": false,
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "tokens": null,
+        "seconds": null
+      },
+      "final": {
+        "step": 600,
+        "selection_split": "id_development",
+        "tokens": 562855,
+        "targets": 96016,
+        "seconds": 244.41627530002006,
+        "evaluation_seconds": 99.73459659999207,
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "coverage": 1,
+        "node_accuracy": 0.1958984375,
+        "cells": [
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 0.9375,
+            "exact_match": 0,
+            "node_accuracy": 0.30859375
+          },
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.33125
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.078125
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.065625
+          }
+        ],
+        "train_nll": {
+          "answer_eos_nll": 0.7853281870484352,
+          "supervised_targets": 1152,
+          "examples": 64
+        },
+        "development_nll": {
+          "answer_eos_nll": 0.9668718032538891,
+          "supervised_targets": 2560,
+          "examples": 128
+        }
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "passed": false,
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "tokens": null,
+        "seconds": null
+      },
+      "final": {
+        "step": 600,
+        "selection_split": "id_development",
+        "tokens": 562855,
+        "targets": 96016,
+        "seconds": 231.4185601000063,
+        "evaluation_seconds": 99.57527500000651,
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "coverage": 1,
+        "node_accuracy": 0.213671875,
+        "cells": [
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.36328125
+          },
+          {
+            "task": "bfs_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 1,
+            "exact_match": 0,
+            "node_accuracy": 0.309375
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 8,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 0.96875,
+            "exact_match": 0,
+            "node_accuracy": 0.09765625
+          },
+          {
+            "task": "dijkstra_distances",
+            "regime": "id",
+            "family": "cyclic_er",
+            "n": 10,
+            "view": "native",
+            "count": 32,
+            "coverage": 1,
+            "valid_format": 0.96875,
+            "exact_match": 0,
+            "node_accuracy": 0.084375
+          }
+        ],
+        "train_nll": {
+          "answer_eos_nll": 0.7491743192076683,
+          "supervised_targets": 1152,
+          "examples": 64
+        },
+        "development_nll": {
+          "answer_eos_nll": 0.9739836916327477,
+          "supervised_targets": 2560,
+          "examples": 128
+        }
+      }
+    }
+  ],
+  "scientific_optimizer_updates": 3000,
+  "per_arm_exposure": {
+    "input_tokens": 562855,
+    "supervised_targets": 96016,
+    "padded_positions": 691560
+  },
+  "training_seconds": 1172.5767858000036,
+  "evaluation_seconds": 495.8626883999932,
+  "checkpoint_replays": 20,
+  "generated_answers_replayed": 2560,
+  "ood_decision": "skipped_failed_ID_calibration",
+  "new_ood_predictions": 0,
+  "new_language_updates": 0,
+  "new_gpu_measurements": 0,
+  "graph_acceleration_claim": null,
+  "original_random_rule_readiness": "still_failed",
+  "learning_curves_sha256": "44ae1098026f3d988c2950703345e01760c0b624bba8f3003fb12d2fb2d2d039"
+}

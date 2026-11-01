@@ -1,0 +1,18 @@
+{
+  "model_id": "steady_hybrid_v2",
+  "purpose": "development physical-model and numerical-reference checks only",
+  "training_enabled": false,
+  "manuscript_replication_enabled": false,
+  "cases": {
+    "pure": {},
+    "zinc": {"phi_zinc": 0.01},
+    "titania": {"phi_titania": 0.01},
+    "hybrid_radiative": {"phi_zinc": 0.01, "phi_titania": 0.01, "magnetic": 0.2, "rotation": 0.2, "buoyancy": 0.1, "radiation": 0.2, "temperature_ratio": 1.2}
+  },
+  "independent_reference": {
+    "points": [49, 65], "length": 10.0, "prandtl": 1.0,
+    "wall_agreement_absolute": 0.00001,
+    "published_homann_fpp0_rounded": 1.311938,
+    "published_value_role": "rounded consistency anchor, not manuscript reference"
+  }
+}

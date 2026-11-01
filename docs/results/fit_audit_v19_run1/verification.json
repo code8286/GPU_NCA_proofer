@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checkpoints": 5,
+  "new_predictions_replayed": 640,
+  "results_sha256": "5ac60419f1a5ff70bbb4ee35af4c9cbc6a06c5723d62309adddd857e435fbdde",
+  "scope": "Separate same-code five-endpoint seen-probe replay; development imported;no fitting"
+}

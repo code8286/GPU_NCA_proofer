@@ -1,0 +1,565 @@
+{
+  "plan_sha256": "1477e7887baea612119c09717242061d000c7c1a59df44407a3c8f6e24767076",
+  "models": [
+    {
+      "arm": "scratch",
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "sustained_crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "pipeline_at_crossing": {
+        "reached": false,
+        "total_tokens": null,
+        "total_updates": null,
+        "accounted_mixed_hardware_seconds": null,
+        "reason": "right_censored"
+      },
+      "final_non_source_cells": [
+        {
+          "task": "bfs_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 82,
+          "accuracy": 0.36607142857142855
+        },
+        {
+          "task": "bfs_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 98,
+          "accuracy": 0.3402777777777778
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 19,
+          "accuracy": 0.08482142857142858
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 19,
+          "accuracy": 0.06597222222222222
+        }
+      ],
+      "final_target_met": false,
+      "final_exact": 0,
+      "counts": {
+        "input_tokens": 562823,
+        "supervised_targets": 96024,
+        "padded_positions": 696256
+      },
+      "cost": {
+        "arm": "scratch",
+        "hardware": "imported original GPU run",
+        "language_updates": 2000,
+        "language_tokens": 8192000,
+        "language_train_seconds": 449.91828571199676,
+        "language_stage_seconds": 481.13701209600003,
+        "original_cumulative_seconds": 487.96314237700017,
+        "ppt_updates": 0,
+        "ppt_tokens": 0,
+        "ppt_train_seconds": 0.0,
+        "ppt_stage_seconds": 0.0,
+        "paired_generation_seconds": 0.0,
+        "paired_preparation_seconds": 0.0,
+        "text_preparation_seconds": 5.316646405999961,
+        "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+        "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+        "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+      },
+      "full_budget_accounted_pipeline": {
+        "total_tokens": 8754823,
+        "total_updates": 2600,
+        "accounted_mixed_hardware_seconds": 1008.6493673770015,
+        "reason": "component account only; imported GPU + new CPU, not controlled throughput",
+        "scope": "full-budget spending; not an observed target crossing",
+        "target_met_at_final": false
+      },
+      "training_seconds": 292.3161457999995,
+      "evaluation_seconds": 225.82403320000594
+    },
+    {
+      "arm": "grid_nca",
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "sustained_crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "pipeline_at_crossing": {
+        "reached": false,
+        "total_tokens": null,
+        "total_updates": null,
+        "accounted_mixed_hardware_seconds": null,
+        "reason": "right_censored"
+      },
+      "final_non_source_cells": [
+        {
+          "task": "bfs_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 92,
+          "accuracy": 0.4107142857142857
+        },
+        {
+          "task": "bfs_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 98,
+          "accuracy": 0.3402777777777778
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 11,
+          "accuracy": 0.049107142857142856
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 25,
+          "accuracy": 0.08680555555555555
+        }
+      ],
+      "final_target_met": false,
+      "final_exact": 0,
+      "counts": {
+        "input_tokens": 562823,
+        "supervised_targets": 96024,
+        "padded_positions": 696256
+      },
+      "cost": {
+        "arm": "grid_nca",
+        "hardware": "imported original GPU run",
+        "language_updates": 2000,
+        "language_tokens": 8192000,
+        "language_train_seconds": 449.573977261005,
+        "language_stage_seconds": 480.7262336500007,
+        "original_cumulative_seconds": 631.7861601090007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_train_seconds": 119.37398238499907,
+        "ppt_stage_seconds": 127.346663116,
+        "paired_generation_seconds": 15.45149788699996,
+        "paired_preparation_seconds": 16.825503201999993,
+        "text_preparation_seconds": 5.316646405999961,
+        "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+        "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+        "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+      },
+      "full_budget_accounted_pipeline": {
+        "total_tokens": 12850823,
+        "total_updates": 3600,
+        "accounted_mixed_hardware_seconds": 1051.2008371090014,
+        "reason": "component account only; imported GPU + new CPU, not controlled throughput",
+        "scope": "full-budget spending; not an observed target crossing",
+        "target_met_at_final": false
+      },
+      "training_seconds": 231.2187109000006,
+      "evaluation_seconds": 186.01761809999516
+    },
+    {
+      "arm": "graph_nca",
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "sustained_crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "pipeline_at_crossing": {
+        "reached": false,
+        "total_tokens": null,
+        "total_updates": null,
+        "accounted_mixed_hardware_seconds": null,
+        "reason": "right_censored"
+      },
+      "final_non_source_cells": [
+        {
+          "task": "bfs_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 86,
+          "accuracy": 0.38392857142857145
+        },
+        {
+          "task": "bfs_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 99,
+          "accuracy": 0.34375
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 21,
+          "accuracy": 0.09375
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 17,
+          "accuracy": 0.059027777777777776
+        }
+      ],
+      "final_target_met": false,
+      "final_exact": 0,
+      "counts": {
+        "input_tokens": 562823,
+        "supervised_targets": 96024,
+        "padded_positions": 696256
+      },
+      "cost": {
+        "arm": "graph_nca",
+        "hardware": "imported original GPU run",
+        "language_updates": 2000,
+        "language_tokens": 8192000,
+        "language_train_seconds": 449.94134314299845,
+        "language_stage_seconds": 481.1545481309995,
+        "original_cumulative_seconds": 633.964263117999,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_train_seconds": 121.30475407099846,
+        "ppt_stage_seconds": 129.095979892,
+        "paired_generation_seconds": 15.45149788699996,
+        "paired_preparation_seconds": 16.825503201999993,
+        "text_preparation_seconds": 5.316646405999961,
+        "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+        "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+        "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+      },
+      "full_budget_accounted_pipeline": {
+        "total_tokens": 12850823,
+        "total_updates": 3600,
+        "accounted_mixed_hardware_seconds": 1078.5309397179985,
+        "reason": "component account only; imported GPU + new CPU, not controlled throughput",
+        "scope": "full-budget spending; not an observed target crossing",
+        "target_met_at_final": false
+      },
+      "training_seconds": 251.21311149992835,
+      "evaluation_seconds": 191.17453049999676
+    },
+    {
+      "arm": "prefix_grid",
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "sustained_crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "pipeline_at_crossing": {
+        "reached": false,
+        "total_tokens": null,
+        "total_updates": null,
+        "accounted_mixed_hardware_seconds": null,
+        "reason": "right_censored"
+      },
+      "final_non_source_cells": [
+        {
+          "task": "bfs_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 84,
+          "accuracy": 0.375
+        },
+        {
+          "task": "bfs_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 101,
+          "accuracy": 0.3506944444444444
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 22,
+          "accuracy": 0.09821428571428571
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 21,
+          "accuracy": 0.07291666666666667
+        }
+      ],
+      "final_target_met": false,
+      "final_exact": 0,
+      "counts": {
+        "input_tokens": 562823,
+        "supervised_targets": 96024,
+        "padded_positions": 696256
+      },
+      "cost": {
+        "arm": "prefix_grid",
+        "hardware": "imported original GPU run",
+        "language_updates": 2000,
+        "language_tokens": 8192000,
+        "language_train_seconds": 450.2743481489915,
+        "language_stage_seconds": 481.4449266169995,
+        "original_cumulative_seconds": 634.4720692359996,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_train_seconds": 121.47571103999746,
+        "ppt_stage_seconds": 129.3231750770001,
+        "paired_generation_seconds": 15.45149788699996,
+        "paired_preparation_seconds": 16.825503201999993,
+        "text_preparation_seconds": 5.316646405999961,
+        "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+        "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+        "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+      },
+      "full_budget_accounted_pipeline": {
+        "total_tokens": 12850823,
+        "total_updates": 3600,
+        "accounted_mixed_hardware_seconds": 1135.5240756360008,
+        "reason": "component account only; imported GPU + new CPU, not controlled throughput",
+        "scope": "full-budget spending; not an observed target crossing",
+        "target_met_at_final": false
+      },
+      "training_seconds": 284.6340768000373,
+      "evaluation_seconds": 214.07670420000068
+    },
+    {
+      "arm": "prefix_graph",
+      "crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "sustained_crossing": {
+        "reached": false,
+        "step": null,
+        "counts": null,
+        "training_seconds": null,
+        "elapsed_seconds": null,
+        "censoring_step": 600,
+        "censoring_counts": {
+          "input_tokens": 562823,
+          "supervised_targets": 96024,
+          "padded_positions": 696256
+        },
+        "preexisting": false
+      },
+      "pipeline_at_crossing": {
+        "reached": false,
+        "total_tokens": null,
+        "total_updates": null,
+        "accounted_mixed_hardware_seconds": null,
+        "reason": "right_censored"
+      },
+      "final_non_source_cells": [
+        {
+          "task": "bfs_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 77,
+          "accuracy": 0.34375
+        },
+        {
+          "task": "bfs_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 97,
+          "accuracy": 0.3368055555555556
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 8,
+          "nodes": 224,
+          "correct": 21,
+          "accuracy": 0.09375
+        },
+        {
+          "task": "dijkstra_distances",
+          "n": 10,
+          "nodes": 288,
+          "correct": 21,
+          "accuracy": 0.07291666666666667
+        }
+      ],
+      "final_target_met": false,
+      "final_exact": 0,
+      "counts": {
+        "input_tokens": 562823,
+        "supervised_targets": 96024,
+        "padded_positions": 696256
+      },
+      "cost": {
+        "arm": "prefix_graph",
+        "hardware": "imported original GPU run",
+        "language_updates": 2000,
+        "language_tokens": 8192000,
+        "language_train_seconds": 449.966462693048,
+        "language_stage_seconds": 481.1424818000005,
+        "original_cumulative_seconds": 633.9153657880007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_train_seconds": 121.26699256699783,
+        "ppt_stage_seconds": 129.013564438,
+        "paired_generation_seconds": 15.45149788699996,
+        "paired_preparation_seconds": 16.825503201999993,
+        "text_preparation_seconds": 5.316646405999961,
+        "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+        "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+        "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+      },
+      "full_budget_accounted_pipeline": {
+        "total_tokens": 12850823,
+        "total_updates": 3600,
+        "accounted_mixed_hardware_seconds": 1231.4103061880005,
+        "reason": "component account only; imported GPU + new CPU, not controlled throughput",
+        "scope": "full-budget spending; not an observed target crossing",
+        "target_met_at_final": false
+      },
+      "training_seconds": 316.00059099997816,
+      "evaluation_seconds": 278.89254230000006
+    }
+  ],
+  "contrasts": [
+    {
+      "treatment": "graph_nca",
+      "reference": "grid_nca",
+      "updates_speedup": null,
+      "input_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "reason": "at_least_one_right_censored"
+    },
+    {
+      "treatment": "graph_nca",
+      "reference": "prefix_graph",
+      "updates_speedup": null,
+      "input_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "reason": "at_least_one_right_censored"
+    },
+    {
+      "treatment": "graph_nca",
+      "reference": "scratch",
+      "updates_speedup": null,
+      "input_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "reason": "at_least_one_right_censored"
+    },
+    {
+      "treatment": "graph_nca",
+      "reference": "prefix_grid",
+      "updates_speedup": null,
+      "input_tokens_speedup": null,
+      "train_seconds_speedup": null,
+      "reason": "at_least_one_right_censored"
+    }
+  ],
+  "new_scientific_updates": 3000,
+  "new_language_or_ppt_updates": 0,
+  "new_ood_predictions": 0,
+  "confirmation_allowed": false,
+  "original_random_rule_readiness": "still_failed",
+  "plot_sha256": "30d1cc8ca76b194910cfd45b9d720e10c749a3d5a295b76b174dc1d371662cb6"
+}

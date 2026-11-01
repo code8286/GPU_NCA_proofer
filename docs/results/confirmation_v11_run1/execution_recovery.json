@@ -1,0 +1,363 @@
+{
+  "created_utc": "2026-10-21T15:09:20.376616+00:00",
+  "plan_sha256": "f66ad56b5ef509c188f33d92cefc4032ee6979e658aff7259bf8685a49720a4a",
+  "driver_sha256": "099c0a5895a64ea636055d768845c83455fb4d5802ce7a3f221870db8efb6e61",
+  "original_train_sha256": "ee2d2c7760e1028d65f24ed1599e8576a380b58eb7c3753522b35ec5482b0f78",
+  "derived_train_sha256": "365f29e6f80c67af380d413894366d9451c6dc5f1408265b76ce5fdefa01a0db",
+  "retained_models": {
+    "4096_standard_coherent_179": {
+      "final.pt": "d1a13aac03e10aeff09a725fa9059a3ac8a1c00fb1fef9a999b3d60b687541f5",
+      "metrics.jsonl": "cd123c71b3d8b38eb20f5622e127a6fb09c5bad4abe997fc5a60af70871085fe",
+      "summary.json": "fb39dcda07a7ae5196a8d4b376959210c4d4004182cd051b023d89b31ed3da9b"
+    },
+    "4096_standard_coherent_193": {
+      "final.pt": "3dbf53096d0eec5963219dc458b93c935e885f94286179258083076b0db41d5b",
+      "metrics.jsonl": "98b184d62902ca2a8ca5e4f89c488c7cce2269cabe4ae019634ea774a2da4801",
+      "summary.json": "6e41e5fc9a02bd2ec771f220433d9bd8205892f8235dd700839995864bdd0240"
+    },
+    "4096_standard_coherent_211": {
+      "final.pt": "452926ee4d5154bba45d9bc15b4b91fe5ab2a61be2b5688e3b3ad95b39d889cd",
+      "metrics.jsonl": "fd7d922a4acb3cb52839e7fc7e89315e4198b036bb4f3adc1093fa2b4f71fc04",
+      "summary.json": "04962cec431bcbd42066b511ac328e0ca76214832a6609c43029143af92e4c60"
+    },
+    "4096_standard_prefix_179": {
+      "final.pt": "1593d33bfa394567a667f5ac95066668144da111efed45d31a8efddb9c89810d",
+      "metrics.jsonl": "02d1138c6bbf1fd36323eb8d2ceae94be524fe07b550383853c1428c878f5e0b",
+      "summary.json": "39ecab4e9064cdd2ca60728cfc00c2944d4532c601af6c67d540f7c8f38ed4ad"
+    },
+    "4096_standard_prefix_193": {
+      "final.pt": "b33438e8fe9c07562aa3117678d94dfd224998b817dd7fee16c23a9bbc46ef6e",
+      "metrics.jsonl": "0a02885120a6e45515649c965063a2468cdbe13c4bd07d1fc8974c83123002f1",
+      "summary.json": "ca5a93c636f8be69b81ef9e0714093533c1fa0e43cf42492c104da49cc3151b4"
+    },
+    "4096_weighted_coherent_179": {
+      "final.pt": "2853726e43b8ae0bb50aecbd86507abc4ed1eed15e5590d6851d0ebd45761df9",
+      "metrics.jsonl": "73e603dcccadae90af38af6f40145e5f0b07fd4f93afc4026116728ad1226108",
+      "summary.json": "8503c039edcae515601b8481134de83ce12013a26da9f0f1101dd2e5d6f802ac"
+    },
+    "4096_weighted_coherent_193": {
+      "final.pt": "025376d0dbf8334d0597aa138a89af0182771048a206d62002866293ab00529d",
+      "metrics.jsonl": "ebfec61bd39f07a0e64d7b019745c63691c92a2839b734e20fd4540187d16a95",
+      "summary.json": "fd139c7953683fc156bd8074ab94dc41022cf981497a7debacfac315c2631ecc"
+    },
+    "4096_weighted_prefix_179": {
+      "final.pt": "2546223553a9b9aab37f3b21c2d76acb21302af1557b40f8f83ce6b43a393a6f",
+      "metrics.jsonl": "d4d93f95e65ce09e7c67e4037a1808661a215eff2e24a208c6182795ba7b4f69",
+      "summary.json": "af029d83f151b518b6ede46f2f3b4bcb5f11243ef06fcda5227a8902f75e2f43"
+    },
+    "4096_weighted_prefix_193": {
+      "final.pt": "07531f6ed1a500bd9017f2b77bffb51a43e51285b70c1539fbb38844de25d3b9",
+      "metrics.jsonl": "d94f33df1d39c20740224060c2660a4cdb7af14146f20aca21b8c1b04456ae4c",
+      "summary.json": "8bf52e1a2eb65a89b6fec8684773c36d3b9bdcc1e6f826c5a9f45d115f22060e"
+    },
+    "512_standard_coherent_179": {
+      "final.pt": "05eba40dc76e65065ca2f49cd11d6b4a837eadcf550249f9e0dd117baa741572",
+      "metrics.jsonl": "1fd840b967c295e544b1264dda0c29e973733744af5c7d13dfadb867c48dacd6",
+      "summary.json": "d9a758c91ce936dbafeafc39946ecb049f2e2d7511557cf0c366bf49100d8bbd"
+    },
+    "512_standard_coherent_193": {
+      "final.pt": "4ab481e481cc59d86a0c64eda7c17be7ec51d4a445c981f1ee57c29548b92dcc",
+      "metrics.jsonl": "dddf6afcf1d05c3e6e0149b9f05f2870c156963d8a052bb23f599f9313e9ae70",
+      "summary.json": "e4d1dac99688480f9e843d83ad6dd00a7b87487467d2beb7c46bb5cd30b44b0c"
+    },
+    "512_standard_coherent_211": {
+      "final.pt": "b1611f222db19f60f9a29edfc523d61c907525194d53b461694aadd419d8f783",
+      "metrics.jsonl": "ccacde19dd167169a61682e78c065539557e7030b57a79872b1039a1d6d806bb",
+      "summary.json": "fabf126edf44f48f6be7a0cfad0965e2fe8e809f09bbfa2168800d11c34c64f3"
+    },
+    "512_standard_prefix_179": {
+      "final.pt": "d7e8013166ba1331a912928423f2678610cfcf3ef29f088ea81c8a84426cef64",
+      "metrics.jsonl": "2de96559b9c9558b222bca948e639191846af1b99b4fcce10198bdf4c2c6630b",
+      "summary.json": "cadd2fbecca3be03f7f0340546c8f0e1509f44b676ed4bc91d3ea0f0afe03ca0"
+    },
+    "512_standard_prefix_193": {
+      "final.pt": "6d1d9fe991bd92751cb6adc1179219adb6ac78e1a52f3ee7a17e3657f97f0ea4",
+      "metrics.jsonl": "1be1165a9a8f44fa4548c34f827249c8d96199be7fd6bf4cc996ba04ea07201a",
+      "summary.json": "fa3cf8e55ca412a8eae2738c4e0418a30749644f1cff7aee7370b4112f3e7a0d"
+    },
+    "512_standard_prefix_211": {
+      "final.pt": "ae94173323fbd03fae555ba05cc12d610d513ddd780a13d9364cd09775d7e700",
+      "metrics.jsonl": "4cfa84f32bbcf9c640dd31c3c6bb2cff388daea2f0a1c639116dfd18fa114b8e",
+      "summary.json": "b09aadb56bb3e9ebe669d6539f0ab117c3bfe3c79ceddcd66e667cc7e2f23609"
+    },
+    "512_weighted_coherent_179": {
+      "final.pt": "3fb1044db607ca7592858ed4770a6b7012b40f1c3097364c5f53b94f4f6f4fac",
+      "metrics.jsonl": "2919d5c756b0b0b4f670b45320ee31fc049cf0889e4e9e0d2a17efa54485f2bc",
+      "summary.json": "37490bfa2fc2c0b1d87fa4e24a01cf153b25dc40c985b4a459b1888f1704e3b5"
+    },
+    "512_weighted_coherent_193": {
+      "final.pt": "5be57f8db2b5192d9c7f0254cba0f06921a1baa7e21972e44c284a8689c7befd",
+      "metrics.jsonl": "9111137506117e1d84a720c0aa1301146c4b2ca437c91f845a9c8a5b27015082",
+      "summary.json": "b1ce6e76edcf4386c54fcc3570cbbca779c9b0f0e2f0806b78f418bff4aa824f"
+    },
+    "512_weighted_coherent_211": {
+      "final.pt": "1020a35dd88e816ae5b1e7cba4f27b8587b824a69bad01f088c2a71953c90de6",
+      "metrics.jsonl": "9c6f334b1c7c27157d5b9685808b146b4dd1f7a5ce1534899b644890dac9bed7",
+      "summary.json": "41e72127fc9a9ab35c9823630055bb75dba85aeb2fd0283dd9febd9d6bb9800b"
+    },
+    "512_weighted_prefix_179": {
+      "final.pt": "35851f415c5da727a65f7289323e93a77cb818ea417d610bfae10553c12ee3fe",
+      "metrics.jsonl": "2f723d39185b4bda7bf86c1434396c142682ed68adc0cabd43645dc8bda85897",
+      "summary.json": "46fa3d42d870f0db345fa59eb9794fa03afde187197fc432abd4a721e0966df5"
+    },
+    "512_weighted_prefix_193": {
+      "final.pt": "ee63b5dc2e7c387deea891935221849d0259cd372932314fd9aabfec1e9cf8aa",
+      "metrics.jsonl": "89ea694629e7494ccd4e78312851a703e7d80a03f88688a886726edda2b592b1",
+      "summary.json": "5cfb033944444265323956ee0ab818994009905b6ea1a021ebb05a777e0ed1c3"
+    },
+    "512_weighted_prefix_211": {
+      "final.pt": "f3df7d9b136365e86e8a8bd437ed54ff37fd447eb4dc090011eba7748ceb20a1",
+      "metrics.jsonl": "1eee6126b757e7107b7e309ea4d72183601bc5fa6b6dd9f7cda02fe7c3975157",
+      "summary.json": "48457e154e1d042a5c076fb6d27c2c697b3c9d5d7680672c80a4c0edf54fa53c"
+    }
+  },
+  "interrupted_models": {
+    "4096_standard_prefix_211": {
+      "files_sha256": {
+        "metrics.jsonl": "49a3363e256fd447eeffa13b59a8dd3c87bce7bb09e14f199d7f601c143e9f11"
+      },
+      "metrics": [
+        {
+          "step": 0,
+          "unweighted_development": {
+            "nll": 2.9056719825381325,
+            "targets": 2688,
+            "patch_nll": 2.909048250743321,
+            "patch_accuracy": 0.07087053571428571,
+            "patch_targets": 1792,
+            "rules": 64
+          }
+        },
+        {
+          "step": 100,
+          "objective_train_loss": 2.492479839324951,
+          "factor": 1.0,
+          "lr": 0.0001,
+          "unweighted_development": {
+            "nll": 2.055446670168922,
+            "targets": 2688,
+            "patch_nll": 2.6192245483398438,
+            "patch_accuracy": 0.09542410714285714,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 6.891029000005801
+        },
+        {
+          "step": 200,
+          "objective_train_loss": 1.7735538643598556,
+          "factor": 1.0,
+          "lr": 9.733377199334387e-05,
+          "unweighted_development": {
+            "nll": 1.6280928566342308,
+            "targets": 2688,
+            "patch_nll": 2.3708589247294833,
+            "patch_accuracy": 0.16015625,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 14.067483300008462
+        },
+        {
+          "step": 300,
+          "objective_train_loss": 1.5433202546834945,
+          "factor": 1.0,
+          "lr": 8.955049118980877e-05,
+          "unweighted_development": {
+            "nll": 1.5410149097442627,
+            "targets": 2688,
+            "patch_nll": 2.273995518684387,
+            "patch_accuracy": 0.17912946428571427,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 21.15999250000459
+        },
+        {
+          "step": 400,
+          "objective_train_loss": 1.4870714437961579,
+          "factor": 1.0,
+          "lr": 7.759072970573522e-05,
+          "unweighted_development": {
+            "nll": 1.5000582195463634,
+            "targets": 2688,
+            "patch_nll": 2.222858718463353,
+            "patch_accuracy": 0.19698660714285715,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 28.398723100006464
+        },
+        {
+          "step": 500,
+          "objective_train_loss": 1.4396987342834473,
+          "factor": 1.0,
+          "lr": 6.290018949967638e-05,
+          "unweighted_development": {
+            "nll": 1.463835182644072,
+            "targets": 2688,
+            "patch_nll": 2.175103953906468,
+            "patch_accuracy": 0.16685267857142858,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 35.72113020000688
+        },
+        {
+          "step": 600,
+          "objective_train_loss": 1.4262837594747544,
+          "factor": 1.0,
+          "lr": 4.725467042988078e-05,
+          "unweighted_development": {
+            "nll": 1.4460135641552152,
+            "targets": 2688,
+            "patch_nll": 2.1514566796166554,
+            "patch_accuracy": 0.17912946428571427,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 50.02932640000654
+        },
+        {
+          "step": 700,
+          "objective_train_loss": 1.406620980501175,
+          "factor": 1.0,
+          "lr": 3.2545410677971455e-05,
+          "unweighted_development": {
+            "nll": 1.4321229117257255,
+            "targets": 2688,
+            "patch_nll": 2.132649064064026,
+            "patch_accuracy": 0.18024553571428573,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 59.22431679999863
+        },
+        {
+          "step": 800,
+          "objective_train_loss": 1.384118475317955,
+          "factor": 1.0,
+          "lr": 2.055047293027548e-05,
+          "unweighted_development": {
+            "nll": 1.412803297951108,
+            "targets": 2688,
+            "patch_nll": 2.104840023177011,
+            "patch_accuracy": 0.17857142857142858,
+            "patch_targets": 1792,
+            "rules": 64
+          },
+          "stage_seconds": 68.24401370000851
+        }
+      ],
+      "completed_updates": 800,
+      "archive": "execution_interruptions/4096_standard_prefix_211"
+    }
+  },
+  "failed_event": {
+    "started_utc": "2026-10-21T14:38:56.504031+00:00",
+    "label": "confirmation-v11-twenty-four-fresh-fixed-budget-models",
+    "cwd": "<repo>",
+    "command": [
+      "python",
+      "-m",
+      "confirmation_v11.run",
+      "train"
+    ],
+    "exit_code": 1,
+    "duration_seconds": 1519.694013,
+    "python": "3.12.14",
+    "experiment_sha256": "76b535acbf08050295648d5692d46690366c1f4802d5668c99edeca003cf1981",
+    "transfer_v2_sources_sha256": {
+      "transfer_v2/__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+      "transfer_v2/calibrate.py": "965fb0fcc0958137f5a08478bb1069092aa8c0ac37b5aa5cf80136eaca030909",
+      "transfer_v2/common.py": "24967a682e41f4bf9dfde0add30596a826fa68cbd3fd8a2ca42a40d800c35e9a",
+      "transfer_v2/data.py": "55f77791c6fa0927e86ae794c223df49d82fe5410a6a097a01334fc8207d1f4f",
+      "transfer_v2/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+      "transfer_v2/nca.py": "4b7bbf83f70614d2feca5619a68f4313a18172900d0fb3397d14d96f0d0bc52f",
+      "transfer_v2/report.py": "537f267f7a613483a57b319aa0ff0051cfc9b287a919805a38863df69f6a0925",
+      "transfer_v2/run.py": "8e0f9247c49b66e9656ddb552886e1897f6b529508dac6d2f96f46e7659e565e",
+      "transfer_v2/training.py": "fa34eb401bacf01490191bbcfa4729db95e4db2fed95f0de68a15337a36abfe5",
+      "transfer_v2/verify.py": "872a54ebb8a24c5ced0eb4bad027e8d01a73cb61033a5295d1d26b913b25a3a1"
+    },
+    "transfer_v3_sources_sha256": {
+      "transfer_v3/__init__.py": "491ce87fd9e35cefc0dcf7325216026f4b404099c6182971479adcd06258072e",
+      "transfer_v3/calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+      "transfer_v3/common.py": "94c8a870fd3b19b06f7a2d2ccc870c59488a2b596bed7b0c81e572d1d4c1ec95",
+      "transfer_v3/data.py": "b3ad2e76dc509934d55f7fb3cd66ed59a388499a0db4bce18b8ff5d76e1e646e",
+      "transfer_v3/graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+      "transfer_v3/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+      "transfer_v3/nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+      "transfer_v3/report.py": "ee9e69294fd8a7d314ed4541eedf05f2c31e07682762d50fc0220b190a096f05",
+      "transfer_v3/run.py": "6badb47576c49f398b82850f4ceda177c54b1d601f692ed02d89fea61e704ad7",
+      "transfer_v3/training.py": "de2e03c560b8c51813a7b59de7488a3a2b7d85a88ea33a00bf2fee8177a668fa",
+      "transfer_v3/verify.py": "4c738cad63c046975c215b1a0b7ddf34884e26afa7a0331d3b955b53d49b4e05"
+    },
+    "transfer_v4_sources_sha256": {
+      "transfer_v4/__init__.py": "2e03423e34bd349756ea096c0a4ff6707b041f3a957cd91fd8a07ae4764c02b1",
+      "transfer_v4/analysis.py": "1313c0c13d0bebe7bf2063cfaa6653f97babd9188d4a3f80af8f2a251c26ceca",
+      "transfer_v4/calibrate.py": "3d99fe38477d6a8f01d679bc9ca356de92d7de60ff6d3e3a804ff57f745dcd5b",
+      "transfer_v4/common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+      "transfer_v4/controls.py": "2f033f259bc009a437ca3c9ba0c6dc317b8de23a84c637537dd5610a726f9339",
+      "transfer_v4/data.py": "11985a27df72cc5a6b298475726ec326816ff173f6b76b1b1519e82d1dbab5fa",
+      "transfer_v4/graph.py": "a0787e8a15f5ff058107260c5f762615cdc832848c2bfd484c927f7860022ee2",
+      "transfer_v4/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+      "transfer_v4/nca.py": "d12642ce78d7826ad9ad4f08a81e53a0c53e32cbf23d78e03074f5cb6942ed66",
+      "transfer_v4/plan.py": "d3d27db1802fa8e7321ee28e16a09e6e0b6e8b4dc65aec7cee65f9c520f055d0",
+      "transfer_v4/report.py": "714385197a1c1a3a5580d3b95cf326282c9a460b0c73a6e771e4b9de611d12ff",
+      "transfer_v4/run.py": "7926016972d72e4d86eadcb3ef9d143ea34d41ecfad17a992b2cc2871c11f44f",
+      "transfer_v4/training.py": "2e85937d7199b831db3ae55fa3b7cde8068f3e5775568c45797700f48c39042e",
+      "transfer_v4/verify.py": "0727904578b80a34c2e90d2c62e4e1fde17c30c09c495eecf9fba6f4216168f4"
+    },
+    "readiness_v5_sources_sha256": {
+      "readiness_v5/__init__.py": "2da8a58b8d8dad7ceec5a5a7ff7137259e312ffd93f317efa6e2cd6d5dcbd167",
+      "readiness_v5/evaluate.py": "0cd1b2a2ccc6ede6ea08b6041905ceb8fee938acd77de021032273cf2d111b70",
+      "readiness_v5/frequency.py": "5076ac2ae3eeb883ba68da1e00cc6b0e8acc7021c73a65d1a01a32f6ba4e8821",
+      "readiness_v5/gate.py": "eff3d6e5c08c05d705cb464b8c56e36f91d738a0e91344214da4e176988be110",
+      "readiness_v5/plan.py": "b0bc6d6055eec6eb42800fd0378cf0a1e36a4882c74c7e98feed5e40ae1c69a9",
+      "readiness_v5/positive_control.py": "622513d923d1e5144eaa040d0af07bfc9a2069bb05a7bcdf3700d44e0cf5fd1b",
+      "readiness_v5/run.py": "3fa075474a413f7c64cba48bcf6ade0148cf7c9c7509a403d88a48dbed9b19fa"
+    },
+    "trainability_v6_sources_sha256": {
+      "trainability_v6/__init__.py": "642988988cc21fe055c8bbd53649c0f516e8c37d1e928b02fec80378e3d11eea",
+      "trainability_v6/data.py": "8a01068b366194a84b1ea775b136fa8c14d2997f6cebdd488d541f9bca864e3d",
+      "trainability_v6/plan.py": "01bb39b9ad5f621bbd0b04d57e60ee4e989a2d7ca30110d263f6387e0715e21b",
+      "trainability_v6/run.py": "8695fe651299a211aabbba862e99e821d490614bdd4169f342f6032d8c77b69b"
+    },
+    "interaction_v7_sources_sha256": {
+      "interaction_v7/__init__.py": "2018d8e8851503f7150e11f3d85ded38d5b70326e1e92e53a79a9e4b11818913",
+      "interaction_v7/data.py": "0a350844743fa56006ec457ab8ce7a7c3359361c5c46c5cd27f8a4108bc6b18f",
+      "interaction_v7/plan.py": "c0fac544f6bc95901943048ca9fa80e9f313066ee8a8e986a84301d911346efc",
+      "interaction_v7/run.py": "bda7f22e6f3c14acef17e8fda204edc2861175c72852b0b6e3872de4fa89bbf5"
+    },
+    "loss_weight_v8_sources_sha256": {
+      "loss_weight_v8/__init__.py": "436645ebfa84fb290d3cc6557e877c8112ed61afb8bd1c034925ac6b1922075f",
+      "loss_weight_v8/objective.py": "22f9354021a9f79ba39b6d7d28ab318d7cc17f3a493c6d30673891929a1372ad",
+      "loss_weight_v8/plan.py": "38c7e70a3056e9c6947fe19eb1f68f85e725b1053e907e37a020c09a24f3f512",
+      "loss_weight_v8/run.py": "206b8b4cff5ca066be3f918883ca2cc77f9f766eaafba77cc40b505775a844ec"
+    },
+    "fit_v9_sources_sha256": {
+      "fit_v9/__init__.py": "07a66b592057debc34ddd53975170540726d3853f8c5bb73139cfe03afe5c25c",
+      "fit_v9/diagnostic.py": "430962d61ce1131470203b0fdb9586d07ff79d7a11bdd79143749d82a0809bdb"
+    },
+    "diversity_v10_sources_sha256": {
+      "diversity_v10/__init__.py": "d00023ef9c7f97914c616ebfed3225b3f51aa476a68bdbf9f9f1e72563e7ff2e",
+      "diversity_v10/data.py": "c76f91eac280a5c5f283ed3787df18c04853023e7ed6cefca33fa552d102e214",
+      "diversity_v10/plan.py": "ad81b7063d5be778aadd89f7f2affd1910acdae8241906ceb176ced06d16c244",
+      "diversity_v10/run.py": "4402f085026ae81e17f02ae4d9c55bc328baea22f580123e0342e74251c7d8b4"
+    },
+    "confirmation_v11_sources_sha256": {
+      "confirmation_v11/__init__.py": "ab543cea1360ae46875ae71d2cc957285695c5a0b31ebb89aa0cc222e8669579",
+      "confirmation_v11/data.py": "6f47f66500a71fec0965d086b8fca5077afba9f8f771748c192f4e309e3cef02",
+      "confirmation_v11/plan.py": "a50ee8fbebfc452409bba2efb3c5955ef646d7fc9d46fe7ef26e937d5cc6971c",
+      "confirmation_v11/run.py": "e46d06afe884fa4abaca7ab91fb99504b1bd68aa3ebf869cc149354987c9c34b"
+    },
+    "stdout": "cache=512 standard/coherent seed=179: 100/1000, unweighted dev patch NLL=2.596455\ncache=512 standard/coherent seed=179: 200/1000, unweighted dev patch NLL=2.257811\ncache=512 standard/coherent seed=179: 300/1000, unweighted dev patch NLL=1.017915\ncache=512 standard/coherent seed=179: 400/1000, unweighted dev patch NLL=0.472971\ncache=512 standard/coherent seed=179: 500/1000, unweighted dev patch NLL=0.395159\ncache=512 standard/coherent seed=179: 600/1000, unweighted dev patch NLL=0.359880\ncache=512 standard/coherent seed=179: 700/1000, unweighted dev patch NLL=0.324587\ncache=512 standard/coherent seed=179: 800/1000, unweighted dev patch NLL=0.306221\ncache=512 standard/coherent seed=179: 900/1000, unweighted dev patch NLL=0.293398\ncache=512 standard/coherent seed=179: 1000/1000, unweighted dev patch NLL=0.285704\ncache=512 standard/prefix seed=179: 100/1000, unweighted dev patch NLL=2.620852\ncache=512 standard/prefix seed=179: 200/1000, unweighted dev patch NLL=2.358252\ncache=512 standard/prefix seed=179: 300/1000, unweighted dev patch NLL=2.310099\ncache=512 standard/prefix seed=179: 400/1000, unweighted dev patch NLL=2.244881\ncache=512 standard/prefix seed=179: 500/1000, unweighted dev patch NLL=2.221803\ncache=512 standard/prefix seed=179: 600/1000, unweighted dev patch NLL=2.188259\ncache=512 standard/prefix seed=179: 700/1000, unweighted dev patch NLL=2.170072\ncache=512 standard/prefix seed=179: 800/1000, unweighted dev patch NLL=2.168334\ncache=512 standard/prefix seed=179: 900/1000, unweighted dev patch NLL=2.167442\ncache=512 standard/prefix seed=179: 1000/1000, unweighted dev patch NLL=2.159143\ncache=512 weighted/coherent seed=179: 100/1000, unweighted dev patch NLL=2.748836\ncache=512 weighted/coherent seed=179: 200/1000, unweighted dev patch NLL=2.365103\ncache=512 weighted/coherent seed=179: 300/1000, unweighted dev patch NLL=2.262197\ncache=512 weighted/coherent seed=179: 400/1000, unweighted dev patch NLL=2.125413\ncache=512 weighted/coherent seed=179: 500/1000, unweighted dev patch NLL=1.928518\ncache=512 weighted/coherent seed=179: 600/1000, unweighted dev patch NLL=1.750796\ncache=512 weighted/coherent seed=179: 700/1000, unweighted dev patch NLL=1.629565\ncache=512 weighted/coherent seed=179: 800/1000, unweighted dev patch NLL=1.586226\ncache=512 weighted/coherent seed=179: 900/1000, unweighted dev patch NLL=1.524581\ncache=512 weighted/coherent seed=179: 1000/1000, unweighted dev patch NLL=1.484493\ncache=512 weighted/prefix seed=179: 100/1000, unweighted dev patch NLL=2.722640\ncache=512 weighted/prefix seed=179: 200/1000, unweighted dev patch NLL=2.389096\ncache=512 weighted/prefix seed=179: 300/1000, unweighted dev patch NLL=2.330870\ncache=512 weighted/prefix seed=179: 400/1000, unweighted dev patch NLL=2.289257\ncache=512 weighted/prefix seed=179: 500/1000, unweighted dev patch NLL=2.266702\ncache=512 weighted/prefix seed=179: 600/1000, unweighted dev patch NLL=2.245460\ncache=512 weighted/prefix seed=179: 700/1000, unweighted dev patch NLL=2.244131\ncache=512 weighted/prefix seed=179: 800/1000, unweighted dev patch NLL=2.243203\ncache=512 weighted/prefix seed=179: 900/1000, unweighted dev patch NLL=2.256612\ncache=512 weighted/prefix seed=179: 1000/1000, unweighted dev patch NLL=2.262906\ncache=4096 standard/coherent seed=179: 100/1000, unweighted dev patch NLL=2.591009\ncache=4096 standard/coherent seed=179: 200/1000, unweighted dev patch NLL=2.224928\ncache=4096 standard/coherent seed=179: 300/1000, unweighted dev patch NLL=0.946946\ncache=4096 standard/coherent seed=179: 400/1000, unweighted dev patch NLL=0.458929\ncache=4096 standard/coherent seed=179: 500/1000, unweighted dev patch NLL=0.386233\ncache=4096 standard/coherent seed=179: 600/1000, unweighted dev patch NLL=0.323182\ncache=4096 standard/coherent seed=179: 700/1000, unweighted dev patch NLL=0.291415\ncache=4096 standard/coherent seed=179: 800/1000, unweighted dev patch NLL=0.274307\ncache=4096 standard/coherent seed=179: 900/1000, unweighted dev patch NLL=0.264947\ncache=4096 standard/coherent seed=179: 1000/1000, unweighted dev patch NLL=0.263558\ncache=4096 standard/prefix seed=179: 100/1000, unweighted dev patch NLL=2.624604\ncache=4096 standard/prefix seed=179: 200/1000, unweighted dev patch NLL=2.366435\ncache=4096 standard/prefix seed=179: 300/1000, unweighted dev patch NLL=2.273159\ncache=4096 standard/prefix seed=179: 400/1000, unweighted dev patch NLL=2.203969\ncache=4096 standard/prefix seed=179: 500/1000, unweighted dev patch NLL=2.170840\ncache=4096 standard/prefix seed=179: 600/1000, unweighted dev patch NLL=2.150881\ncache=4096 standard/prefix seed=179: 700/1000, unweighted dev patch NLL=2.125892\ncache=4096 standard/prefix seed=179: 800/1000, unweighted dev patch NLL=2.113203\ncache=4096 standard/prefix seed=179: 900/1000, unweighted dev patch NLL=2.105692\ncache=4096 standard/prefix seed=179: 1000/1000, unweighted dev patch NLL=2.099709\ncache=4096 weighted/coherent seed=179: 100/1000, unweighted dev patch NLL=2.688578\ncache=4096 weighted/coherent seed=179: 200/1000, unweighted dev patch NLL=2.356236\ncache=4096 weighted/coherent seed=179: 300/1000, unweighted dev patch NLL=2.179982\ncache=4096 weighted/coherent seed=179: 400/1000, unweighted dev patch NLL=1.993269\ncache=4096 weighted/coherent seed=179: 500/1000, unweighted dev patch NLL=1.720903\ncache=4096 weighted/coherent seed=179: 600/1000, unweighted dev patch NLL=1.430006\ncache=4096 weighted/coherent seed=179: 700/1000, unweighted dev patch NLL=1.222161\ncache=4096 weighted/coherent seed=179: 800/1000, unweighted dev patch NLL=1.141602\ncache=4096 weighted/coherent seed=179: 900/1000, unweighted dev patch NLL=1.067553\ncache=4096 weighted/coherent seed=179: 1000/1000, unweighted dev patch NLL=1.021932\ncache=4096 weighted/prefix seed=179: 100/1000, unweighted dev patch NLL=2.667878\ncache=4096 weighted/prefix seed=179: 200/1000, unweighted dev patch NLL=2.376991\ncache=4096 weighted/prefix seed=179: 300/1000, unweighted dev patch NLL=2.278711\ncache=4096 weighted/prefix seed=179: 400/1000, unweighted dev patch NLL=2.233910\ncache=4096 weighted/prefix seed=179: 500/1000, unweighted dev patch NLL=2.220928\ncache=4096 weighted/prefix seed=179: 600/1000, unweighted dev patch NLL=2.189054\ncache=4096 weighted/prefix seed=179: 700/1000, unweighted dev patch NLL=2.173696\ncache=4096 weighted/prefix seed=179: 800/1000, unweighted dev patch NLL=2.153440\ncache=4096 weighted/prefix seed=179: 900/1000, unweighted dev patch NLL=2.139827\ncache=4096 weighted/prefix seed=179: 1000/1000, unweighted dev patch NLL=2.135631\ncache=512 standard/coherent seed=193: 100/1000, unweighted dev patch NLL=2.638725\ncache=512 standard/coherent seed=193: 200/1000, unweighted dev patch NLL=2.232150\ncache=512 standard/coherent seed=193: 300/1000, unweighted dev patch NLL=0.893277\ncache=512 standard/coherent seed=193: 400/1000, unweighted dev patch NLL=0.482063\ncache=512 standard/coherent seed=193: 500/1000, unweighted dev patch NLL=0.411602\ncache=512 standard/coherent seed=193: 600/1000, unweighted dev patch NLL=0.377455\ncache=512 standard/coherent seed=193: 700/1000, unweighted dev patch NLL=0.332269\ncache=512 standard/coherent seed=193: 800/1000, unweighted dev patch NLL=0.312467\ncache=512 standard/coherent seed=193: 900/1000, unweighted dev patch NLL=0.296936\ncache=512 standard/coherent seed=193: 1000/1000, unweighted dev patch NLL=0.289049\ncache=512 standard/prefix seed=193: 100/1000, unweighted dev patch NLL=2.677244\ncache=512 standard/prefix seed=193: 200/1000, unweighted dev patch NLL=2.384361\ncache=512 standard/prefix seed=193: 300/1000, unweighted dev patch NLL=2.311950\ncache=512 standard/prefix seed=193: 400/1000, unweighted dev patch NLL=2.256895\ncache=512 standard/prefix seed=193: 500/1000, unweighted dev patch NLL=2.216910\ncache=512 standard/prefix seed=193: 600/1000, unweighted dev patch NLL=2.186568\ncache=512 standard/prefix seed=193: 700/1000, unweighted dev patch NLL=2.182521\ncache=512 standard/prefix seed=193: 800/1000, unweighted dev patch NLL=2.178268\ncache=512 standard/prefix seed=193: 900/1000, unweighted dev patch NLL=2.178279\ncache=512 standard/prefix seed=193: 1000/1000, unweighted dev patch NLL=2.171966\ncache=512 weighted/coherent seed=193: 100/1000, unweighted dev patch NLL=2.725360\ncache=512 weighted/coherent seed=193: 200/1000, unweighted dev patch NLL=2.394352\ncache=512 weighted/coherent seed=193: 300/1000, unweighted dev patch NLL=2.233341\ncache=512 weighted/coherent seed=193: 400/1000, unweighted dev patch NLL=1.974888\ncache=512 weighted/coherent seed=193: 500/1000, unweighted dev patch NLL=1.376152\ncache=512 weighted/coherent seed=193: 600/1000, unweighted dev patch NLL=0.767796\ncache=512 weighted/coherent seed=193: 700/1000, unweighted dev patch NLL=0.514543\ncache=512 weighted/coherent seed=193: 800/1000, unweighted dev patch NLL=0.436484\ncache=512 weighted/coherent seed=193: 900/1000, unweighted dev patch NLL=0.384849\ncache=512 weighted/coherent seed=193: 1000/1000, unweighted dev patch NLL=0.371162\ncache=512 weighted/prefix seed=193: 100/1000, unweighted dev patch NLL=2.665885\ncache=512 weighted/prefix seed=193: 200/1000, unweighted dev patch NLL=2.416033\ncache=512 weighted/prefix seed=193: 300/1000, unweighted dev patch NLL=2.348930\ncache=512 weighted/prefix seed=193: 400/1000, unweighted dev patch NLL=2.292202\ncache=512 weighted/prefix seed=193: 500/1000, unweighted dev patch NLL=2.274921\ncache=512 weighted/prefix seed=193: 600/1000, unweighted dev patch NLL=2.228453\ncache=512 weighted/prefix seed=193: 700/1000, unweighted dev patch NLL=2.233389\ncache=512 weighted/prefix seed=193: 800/1000, unweighted dev patch NLL=2.245114\ncache=512 weighted/prefix seed=193: 900/1000, unweighted dev patch NLL=2.238849\ncache=512 weighted/prefix seed=193: 1000/1000, unweighted dev patch NLL=2.242976\ncache=4096 standard/coherent seed=193: 100/1000, unweighted dev patch NLL=2.629656\ncache=4096 standard/coherent seed=193: 200/1000, unweighted dev patch NLL=2.217272\ncache=4096 standard/coherent seed=193: 300/1000, unweighted dev patch NLL=0.887783\ncache=4096 standard/coherent seed=193: 400/1000, unweighted dev patch NLL=0.487365\ncache=4096 standard/coherent seed=193: 500/1000, unweighted dev patch NLL=0.398576\ncache=4096 standard/coherent seed=193: 600/1000, unweighted dev patch NLL=0.342130\ncache=4096 standard/coherent seed=193: 700/1000, unweighted dev patch NLL=0.307860\ncache=4096 standard/coherent seed=193: 800/1000, unweighted dev patch NLL=0.283551\ncache=4096 standard/coherent seed=193: 900/1000, unweighted dev patch NLL=0.277114\ncache=4096 standard/coherent seed=193: 1000/1000, unweighted dev patch NLL=0.271109\ncache=4096 standard/prefix seed=193: 100/1000, unweighted dev patch NLL=2.607778\ncache=4096 standard/prefix seed=193: 200/1000, unweighted dev patch NLL=2.352620\ncache=4096 standard/prefix seed=193: 300/1000, unweighted dev patch NLL=2.280794\ncache=4096 standard/prefix seed=193: 400/1000, unweighted dev patch NLL=2.218992\ncache=4096 standard/prefix seed=193: 500/1000, unweighted dev patch NLL=2.174431\ncache=4096 standard/prefix seed=193: 600/1000, unweighted dev patch NLL=2.149684\ncache=4096 standard/prefix seed=193: 700/1000, unweighted dev patch NLL=2.130766\ncache=4096 standard/prefix seed=193: 800/1000, unweighted dev patch NLL=2.119994\ncache=4096 standard/prefix seed=193: 900/1000, unweighted dev patch NLL=2.106091\ncache=4096 standard/prefix seed=193: 1000/1000, unweighted dev patch NLL=2.099230\ncache=4096 weighted/coherent seed=193: 100/1000, unweighted dev patch NLL=2.703232\ncache=4096 weighted/coherent seed=193: 200/1000, unweighted dev patch NLL=2.381185\ncache=4096 weighted/coherent seed=193: 300/1000, unweighted dev patch NLL=2.213249\ncache=4096 weighted/coherent seed=193: 400/1000, unweighted dev patch NLL=2.159082\ncache=4096 weighted/coherent seed=193: 500/1000, unweighted dev patch NLL=1.476575\ncache=4096 weighted/coherent seed=193: 600/1000, unweighted dev patch NLL=1.005324\ncache=4096 weighted/coherent seed=193: 700/1000, unweighted dev patch NLL=0.595972\ncache=4096 weighted/coherent seed=193: 800/1000, unweighted dev patch NLL=0.464717\ncache=4096 weighted/coherent seed=193: 900/1000, unweighted dev patch NLL=0.417971\ncache=4096 weighted/coherent seed=193: 1000/1000, unweighted dev patch NLL=0.387086\ncache=4096 weighted/prefix seed=193: 100/1000, unweighted dev patch NLL=2.644813\ncache=4096 weighted/prefix seed=193: 200/1000, unweighted dev patch NLL=2.381439\ncache=4096 weighted/prefix seed=193: 300/1000, unweighted dev patch NLL=2.311353\ncache=4096 weighted/prefix seed=193: 400/1000, unweighted dev patch NLL=2.261082\ncache=4096 weighted/prefix seed=193: 500/1000, unweighted dev patch NLL=2.201310\ncache=4096 weighted/prefix seed=193: 600/1000, unweighted dev patch NLL=2.184756\ncache=4096 weighted/prefix seed=193: 700/1000, unweighted dev patch NLL=2.164052\ncache=4096 weighted/prefix seed=193: 800/1000, unweighted dev patch NLL=2.148791\ncache=4096 weighted/prefix seed=193: 900/1000, unweighted dev patch NLL=2.138596\ncache=4096 weighted/prefix seed=193: 1000/1000, unweighted dev patch NLL=2.136321\ncache=512 standard/coherent seed=211: 100/1000, unweighted dev patch NLL=2.611065\ncache=512 standard/coherent seed=211: 200/1000, unweighted dev patch NLL=2.240186\ncache=512 standard/coherent seed=211: 300/1000, unweighted dev patch NLL=2.120961\ncache=512 standard/coherent seed=211: 400/1000, unweighted dev patch NLL=1.641755\ncache=512 standard/coherent seed=211: 500/1000, unweighted dev patch NLL=0.576874\ncache=512 standard/coherent seed=211: 600/1000, unweighted dev patch NLL=0.432780\ncache=512 standard/coherent seed=211: 700/1000, unweighted dev patch NLL=0.393702\ncache=512 standard/coherent seed=211: 800/1000, unweighted dev patch NLL=0.367336\ncache=512 standard/coherent seed=211: 900/1000, unweighted dev patch NLL=0.357577\ncache=512 standard/coherent seed=211: 1000/1000, unweighted dev patch NLL=0.348806\ncache=512 standard/prefix seed=211: 100/1000, unweighted dev patch NLL=2.673447\ncache=512 standard/prefix seed=211: 200/1000, unweighted dev patch NLL=2.372591\ncache=512 standard/prefix seed=211: 300/1000, unweighted dev patch NLL=2.297362\ncache=512 standard/prefix seed=211: 400/1000, unweighted dev patch NLL=2.249845\ncache=512 standard/prefix seed=211: 500/1000, unweighted dev patch NLL=2.214450\ncache=512 standard/prefix seed=211: 600/1000, unweighted dev patch NLL=2.191458\ncache=512 standard/prefix seed=211: 700/1000, unweighted dev patch NLL=2.181514\ncache=512 standard/prefix seed=211: 800/1000, unweighted dev patch NLL=2.168196\ncache=512 standard/prefix seed=211: 900/1000, unweighted dev patch NLL=2.172991\ncache=512 standard/prefix seed=211: 1000/1000, unweighted dev patch NLL=2.172513\ncache=512 weighted/coherent seed=211: 100/1000, unweighted dev patch NLL=2.756794\ncache=512 weighted/coherent seed=211: 200/1000, unweighted dev patch NLL=2.359068\ncache=512 weighted/coherent seed=211: 300/1000, unweighted dev patch NLL=2.261390\ncache=512 weighted/coherent seed=211: 400/1000, unweighted dev patch NLL=2.129416\ncache=512 weighted/coherent seed=211: 500/1000, unweighted dev patch NLL=1.892528\ncache=512 weighted/coherent seed=211: 600/1000, unweighted dev patch NLL=1.706648\ncache=512 weighted/coherent seed=211: 700/1000, unweighted dev patch NLL=1.647476\ncache=512 weighted/coherent seed=211: 800/1000, unweighted dev patch NLL=1.535874\ncache=512 weighted/coherent seed=211: 900/1000, unweighted dev patch NLL=1.543885\ncache=512 weighted/coherent seed=211: 1000/1000, unweighted dev patch NLL=1.516121\ncache=512 weighted/prefix seed=211: 100/1000, unweighted dev patch NLL=2.662551\ncache=512 weighted/prefix seed=211: 200/1000, unweighted dev patch NLL=2.399362\ncache=512 weighted/prefix seed=211: 300/1000, unweighted dev patch NLL=2.333373\ncache=512 weighted/prefix seed=211: 400/1000, unweighted dev patch NLL=2.287655\ncache=512 weighted/prefix seed=211: 500/1000, unweighted dev patch NLL=2.270870\ncache=512 weighted/prefix seed=211: 600/1000, unweighted dev patch NLL=2.256603\ncache=512 weighted/prefix seed=211: 700/1000, unweighted dev patch NLL=2.264894\ncache=512 weighted/prefix seed=211: 800/1000, unweighted dev patch NLL=2.247183\ncache=512 weighted/prefix seed=211: 900/1000, unweighted dev patch NLL=2.252851\ncache=512 weighted/prefix seed=211: 1000/1000, unweighted dev patch NLL=2.253093\ncache=4096 standard/coherent seed=211: 100/1000, unweighted dev patch NLL=2.590298\ncache=4096 standard/coherent seed=211: 200/1000, unweighted dev patch NLL=2.258585\ncache=4096 standard/coherent seed=211: 300/1000, unweighted dev patch NLL=2.062424\ncache=4096 standard/coherent seed=211: 400/1000, unweighted dev patch NLL=1.136989\ncache=4096 standard/coherent seed=211: 500/1000, unweighted dev patch NLL=0.441956\ncache=4096 standard/coherent seed=211: 600/1000, unweighted dev patch NLL=0.366525\ncache=4096 standard/coherent seed=211: 700/1000, unweighted dev patch NLL=0.334176\ncache=4096 standard/coherent seed=211: 800/1000, unweighted dev patch NLL=0.304263\ncache=4096 standard/coherent seed=211: 900/1000, unweighted dev patch NLL=0.291754\ncache=4096 standard/coherent seed=211: 1000/1000, unweighted dev patch NLL=0.283579\ncache=4096 standard/prefix seed=211: 100/1000, unweighted dev patch NLL=2.619225\ncache=4096 standard/prefix seed=211: 200/1000, unweighted dev patch NLL=2.370859\ncache=4096 standard/prefix seed=211: 300/1000, unweighted dev patch NLL=2.273996\ncache=4096 standard/prefix seed=211: 400/1000, unweighted dev patch NLL=2.222859\ncache=4096 standard/prefix seed=211: 500/1000, unweighted dev patch NLL=2.175104\ncache=4096 standard/prefix seed=211: 600/1000, unweighted dev patch NLL=2.151457\ncache=4096 standard/prefix seed=211: 700/1000, unweighted dev patch NLL=2.132649\n",
+    "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<repo>\\confirmation_v11\\run.py\", line 301, in <module>\n    main()\n  File \"<repo>\\confirmation_v11\\run.py\", line 293, in main\n    train(a.out)\n  File \"<repo>\\confirmation_v11\\run.py\", line 88, in train\n    dump(out/'status.json', {'state': 'training', 'seed': seed, 'objective': objective,\n  File \"<repo>\\transfer_v4\\common.py\", line 30, in dump\n    temporary.replace(path)\n  File \"<user-home>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1376, in replace\n    os.replace(self, target)\nPermissionError: [WinError 5] Access is denied: 'runs\\\\confirmation_v11_run1\\\\status.json.tmp' -> 'runs\\\\confirmation_v11_run1\\\\status.json'\n"
+  },
+  "extra_aborted_updates": 800,
+  "extra_aborted_input_tokens": 150400,
+  "extra_aborted_prediction_targets": 134400,
+  "remaining_endpoints": 3,
+  "numerical_changes": false,
+  "language_allowed": false
+}

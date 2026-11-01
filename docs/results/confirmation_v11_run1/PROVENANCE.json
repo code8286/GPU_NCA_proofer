@@ -1,0 +1,289 @@
+{
+  "scope": "Fresh-phase confirmation of weighted diversity gain; both objectives/controls, 24 new CPU models, one data split and three fresh initialization seeds",
+  "files": {
+    "plan.json": {
+      "sha256": "f66ad56b5ef509c188f33d92cefc4032ee6979e658aff7259bf8685a49720a4a",
+      "origin": "Frozen fresh-phase confirmation: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "e19013b9719dbbc0a2442b34e8f43c0c1cf4ea4e8e6134c14a2087787cabc12f",
+      "origin": "Frozen fresh-phase confirmation: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "0b790498c77ebdf644a764d6e136214a80fdccea0eec2c4b316ebad0136e657b",
+      "origin": "Frozen fresh-phase confirmation: FROZEN_PROTOCOL.md"
+    },
+    "training_complete.json": {
+      "sha256": "ff9aa1b28b14812e0996069c709225819eda0d1d5f1e7e1952a47efe9e7c302f",
+      "origin": "Frozen fresh-phase confirmation: training_complete.json"
+    },
+    "training_receipt.json": {
+      "sha256": "9d11a1e2c9b932a7c38bc64868604afa415ba4cc0a36eff35595f6797d3a41fb",
+      "origin": "Frozen fresh-phase confirmation: training_receipt.json"
+    },
+    "results.json": {
+      "sha256": "7b556ab9d35d3579aeb8fa98786bd46bd2c8016f3eb629dbcedb9043d88e35bd",
+      "origin": "Frozen fresh-phase confirmation: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "e5454580e1307b16dffbf7b7df8ecba4f210b335041c32c496c6f2ee0915c7ae",
+      "origin": "Frozen fresh-phase confirmation: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "96db8703356c1ca0c8cffb72db2b0d51ce2c868d8a9bc9ca81dc5ba26d150ab0",
+      "origin": "Frozen fresh-phase confirmation: verification.json"
+    },
+    "status.json": {
+      "sha256": "cc86499268e7e3cbe6da61c46c88c59c59faad15e4bab1d464f5041f5b8ceb3e",
+      "origin": "Frozen fresh-phase confirmation: status.json"
+    },
+    "evidence/full_cells_179.json": {
+      "sha256": "6a33a56429d91dc33f5bb89c144194957b44bb5a8bc037272bbbd0f121f7dc1d",
+      "origin": "Frozen fresh-phase confirmation: evidence/full_cells_179.json"
+    },
+    "evidence/fit_cells_179.json": {
+      "sha256": "4b611934151e9a42dbf4bf2d35d73b6382e706738787039968496105aabe58ed",
+      "origin": "Frozen fresh-phase confirmation: evidence/fit_cells_179.json"
+    },
+    "evidence/intervention_cells_179.json": {
+      "sha256": "b224e1a1b42c197b55a9fed60e82f0baf731e820d8c50e78cb50df3caa9badfd",
+      "origin": "Frozen fresh-phase confirmation: evidence/intervention_cells_179.json"
+    },
+    "evidence/full_cells_193.json": {
+      "sha256": "c5023c2fcdfbd8d987e53eb5e21aeb163df2142ab67189ea2947aea3fa095e1a",
+      "origin": "Frozen fresh-phase confirmation: evidence/full_cells_193.json"
+    },
+    "evidence/fit_cells_193.json": {
+      "sha256": "b0b461985175ef0afecdead9118cafaa6e3b6b56a23a45059560ed741040644f",
+      "origin": "Frozen fresh-phase confirmation: evidence/fit_cells_193.json"
+    },
+    "evidence/intervention_cells_193.json": {
+      "sha256": "6afa7f4487887a27c3c027c6d285c11dca3bdf8ff6997b3f26b3b8b312d07227",
+      "origin": "Frozen fresh-phase confirmation: evidence/intervention_cells_193.json"
+    },
+    "evidence/full_cells_211.json": {
+      "sha256": "d40e621434ebd370d7906431aa5798ff2de3e1d1eed72d9eca9b9a177424cbda",
+      "origin": "Frozen fresh-phase confirmation: evidence/full_cells_211.json"
+    },
+    "evidence/fit_cells_211.json": {
+      "sha256": "c413814e64616695c9bddebb97fa76def0bdef66db71c90f9148cf704f5cbe17",
+      "origin": "Frozen fresh-phase confirmation: evidence/fit_cells_211.json"
+    },
+    "evidence/intervention_cells_211.json": {
+      "sha256": "560d466c37a38ac785013d9af33b8b42036e3136d776803d90a773fc8d132b69",
+      "origin": "Frozen fresh-phase confirmation: evidence/intervention_cells_211.json"
+    },
+    "512_standard_coherent_179/metrics.jsonl": {
+      "sha256": "1fd840b967c295e544b1264dda0c29e973733744af5c7d13dfadb867c48dacd6",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_179/metrics.jsonl"
+    },
+    "512_standard_coherent_179/summary.json": {
+      "sha256": "d9a758c91ce936dbafeafc39946ecb049f2e2d7511557cf0c366bf49100d8bbd",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_179/summary.json"
+    },
+    "512_standard_prefix_179/metrics.jsonl": {
+      "sha256": "2de96559b9c9558b222bca948e639191846af1b99b4fcce10198bdf4c2c6630b",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_179/metrics.jsonl"
+    },
+    "512_standard_prefix_179/summary.json": {
+      "sha256": "cadd2fbecca3be03f7f0340546c8f0e1509f44b676ed4bc91d3ea0f0afe03ca0",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_179/summary.json"
+    },
+    "512_weighted_coherent_179/metrics.jsonl": {
+      "sha256": "2919d5c756b0b0b4f670b45320ee31fc049cf0889e4e9e0d2a17efa54485f2bc",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_179/metrics.jsonl"
+    },
+    "512_weighted_coherent_179/summary.json": {
+      "sha256": "37490bfa2fc2c0b1d87fa4e24a01cf153b25dc40c985b4a459b1888f1704e3b5",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_179/summary.json"
+    },
+    "512_weighted_prefix_179/metrics.jsonl": {
+      "sha256": "2f723d39185b4bda7bf86c1434396c142682ed68adc0cabd43645dc8bda85897",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_179/metrics.jsonl"
+    },
+    "512_weighted_prefix_179/summary.json": {
+      "sha256": "46fa3d42d870f0db345fa59eb9794fa03afde187197fc432abd4a721e0966df5",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_179/summary.json"
+    },
+    "4096_standard_coherent_179/metrics.jsonl": {
+      "sha256": "cd123c71b3d8b38eb20f5622e127a6fb09c5bad4abe997fc5a60af70871085fe",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_179/metrics.jsonl"
+    },
+    "4096_standard_coherent_179/summary.json": {
+      "sha256": "fb39dcda07a7ae5196a8d4b376959210c4d4004182cd051b023d89b31ed3da9b",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_179/summary.json"
+    },
+    "4096_standard_prefix_179/metrics.jsonl": {
+      "sha256": "02d1138c6bbf1fd36323eb8d2ceae94be524fe07b550383853c1428c878f5e0b",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_179/metrics.jsonl"
+    },
+    "4096_standard_prefix_179/summary.json": {
+      "sha256": "39ecab4e9064cdd2ca60728cfc00c2944d4532c601af6c67d540f7c8f38ed4ad",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_179/summary.json"
+    },
+    "4096_weighted_coherent_179/metrics.jsonl": {
+      "sha256": "73e603dcccadae90af38af6f40145e5f0b07fd4f93afc4026116728ad1226108",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_179/metrics.jsonl"
+    },
+    "4096_weighted_coherent_179/summary.json": {
+      "sha256": "8503c039edcae515601b8481134de83ce12013a26da9f0f1101dd2e5d6f802ac",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_179/summary.json"
+    },
+    "4096_weighted_prefix_179/metrics.jsonl": {
+      "sha256": "d4d93f95e65ce09e7c67e4037a1808661a215eff2e24a208c6182795ba7b4f69",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_179/metrics.jsonl"
+    },
+    "4096_weighted_prefix_179/summary.json": {
+      "sha256": "af029d83f151b518b6ede46f2f3b4bcb5f11243ef06fcda5227a8902f75e2f43",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_179/summary.json"
+    },
+    "512_standard_coherent_193/metrics.jsonl": {
+      "sha256": "dddf6afcf1d05c3e6e0149b9f05f2870c156963d8a052bb23f599f9313e9ae70",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_193/metrics.jsonl"
+    },
+    "512_standard_coherent_193/summary.json": {
+      "sha256": "e4d1dac99688480f9e843d83ad6dd00a7b87487467d2beb7c46bb5cd30b44b0c",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_193/summary.json"
+    },
+    "512_standard_prefix_193/metrics.jsonl": {
+      "sha256": "1be1165a9a8f44fa4548c34f827249c8d96199be7fd6bf4cc996ba04ea07201a",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_193/metrics.jsonl"
+    },
+    "512_standard_prefix_193/summary.json": {
+      "sha256": "fa3cf8e55ca412a8eae2738c4e0418a30749644f1cff7aee7370b4112f3e7a0d",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_193/summary.json"
+    },
+    "512_weighted_coherent_193/metrics.jsonl": {
+      "sha256": "9111137506117e1d84a720c0aa1301146c4b2ca437c91f845a9c8a5b27015082",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_193/metrics.jsonl"
+    },
+    "512_weighted_coherent_193/summary.json": {
+      "sha256": "b1ce6e76edcf4386c54fcc3570cbbca779c9b0f0e2f0806b78f418bff4aa824f",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_193/summary.json"
+    },
+    "512_weighted_prefix_193/metrics.jsonl": {
+      "sha256": "89ea694629e7494ccd4e78312851a703e7d80a03f88688a886726edda2b592b1",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_193/metrics.jsonl"
+    },
+    "512_weighted_prefix_193/summary.json": {
+      "sha256": "5cfb033944444265323956ee0ab818994009905b6ea1a021ebb05a777e0ed1c3",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_193/summary.json"
+    },
+    "4096_standard_coherent_193/metrics.jsonl": {
+      "sha256": "98b184d62902ca2a8ca5e4f89c488c7cce2269cabe4ae019634ea774a2da4801",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_193/metrics.jsonl"
+    },
+    "4096_standard_coherent_193/summary.json": {
+      "sha256": "6e41e5fc9a02bd2ec771f220433d9bd8205892f8235dd700839995864bdd0240",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_193/summary.json"
+    },
+    "4096_standard_prefix_193/metrics.jsonl": {
+      "sha256": "0a02885120a6e45515649c965063a2468cdbe13c4bd07d1fc8974c83123002f1",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_193/metrics.jsonl"
+    },
+    "4096_standard_prefix_193/summary.json": {
+      "sha256": "ca5a93c636f8be69b81ef9e0714093533c1fa0e43cf42492c104da49cc3151b4",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_193/summary.json"
+    },
+    "4096_weighted_coherent_193/metrics.jsonl": {
+      "sha256": "ebfec61bd39f07a0e64d7b019745c63691c92a2839b734e20fd4540187d16a95",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_193/metrics.jsonl"
+    },
+    "4096_weighted_coherent_193/summary.json": {
+      "sha256": "fd139c7953683fc156bd8074ab94dc41022cf981497a7debacfac315c2631ecc",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_193/summary.json"
+    },
+    "4096_weighted_prefix_193/metrics.jsonl": {
+      "sha256": "d94f33df1d39c20740224060c2660a4cdb7af14146f20aca21b8c1b04456ae4c",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_193/metrics.jsonl"
+    },
+    "4096_weighted_prefix_193/summary.json": {
+      "sha256": "8bf52e1a2eb65a89b6fec8684773c36d3b9bdcc1e6f826c5a9f45d115f22060e",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_193/summary.json"
+    },
+    "512_standard_coherent_211/metrics.jsonl": {
+      "sha256": "ccacde19dd167169a61682e78c065539557e7030b57a79872b1039a1d6d806bb",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_211/metrics.jsonl"
+    },
+    "512_standard_coherent_211/summary.json": {
+      "sha256": "fabf126edf44f48f6be7a0cfad0965e2fe8e809f09bbfa2168800d11c34c64f3",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_coherent_211/summary.json"
+    },
+    "512_standard_prefix_211/metrics.jsonl": {
+      "sha256": "4cfa84f32bbcf9c640dd31c3c6bb2cff388daea2f0a1c639116dfd18fa114b8e",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_211/metrics.jsonl"
+    },
+    "512_standard_prefix_211/summary.json": {
+      "sha256": "b09aadb56bb3e9ebe669d6539f0ab117c3bfe3c79ceddcd66e667cc7e2f23609",
+      "origin": "Frozen fresh-phase confirmation: 512_standard_prefix_211/summary.json"
+    },
+    "512_weighted_coherent_211/metrics.jsonl": {
+      "sha256": "9c6f334b1c7c27157d5b9685808b146b4dd1f7a5ce1534899b644890dac9bed7",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_211/metrics.jsonl"
+    },
+    "512_weighted_coherent_211/summary.json": {
+      "sha256": "41e72127fc9a9ab35c9823630055bb75dba85aeb2fd0283dd9febd9d6bb9800b",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_coherent_211/summary.json"
+    },
+    "512_weighted_prefix_211/metrics.jsonl": {
+      "sha256": "1eee6126b757e7107b7e309ea4d72183601bc5fa6b6dd9f7cda02fe7c3975157",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_211/metrics.jsonl"
+    },
+    "512_weighted_prefix_211/summary.json": {
+      "sha256": "48457e154e1d042a5c076fb6d27c2c697b3c9d5d7680672c80a4c0edf54fa53c",
+      "origin": "Frozen fresh-phase confirmation: 512_weighted_prefix_211/summary.json"
+    },
+    "4096_standard_coherent_211/metrics.jsonl": {
+      "sha256": "fd7d922a4acb3cb52839e7fc7e89315e4198b036bb4f3adc1093fa2b4f71fc04",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_211/metrics.jsonl"
+    },
+    "4096_standard_coherent_211/summary.json": {
+      "sha256": "04962cec431bcbd42066b511ac328e0ca76214832a6609c43029143af92e4c60",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_coherent_211/summary.json"
+    },
+    "4096_standard_prefix_211/metrics.jsonl": {
+      "sha256": "f39fa4c5500e1616f0cf295b7cc8aa0d34686cfa57f6221474c0a01e93004d4f",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_211/metrics.jsonl"
+    },
+    "4096_standard_prefix_211/summary.json": {
+      "sha256": "2d4df904c3dae0ae74c77b64af091c3da937572e212dc5d1167530bed214595b",
+      "origin": "Frozen fresh-phase confirmation: 4096_standard_prefix_211/summary.json"
+    },
+    "4096_weighted_coherent_211/metrics.jsonl": {
+      "sha256": "eb87fadb96cf8b8a2dffbffccbd8a12922b2c3bbc0b9ed0ff3518cb8cfc3433b",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_211/metrics.jsonl"
+    },
+    "4096_weighted_coherent_211/summary.json": {
+      "sha256": "fb57450750d25e69fe0f72b3240b005377f42ca60cc422a0c57a7e05592622a8",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_coherent_211/summary.json"
+    },
+    "4096_weighted_prefix_211/metrics.jsonl": {
+      "sha256": "33acd843db071060b125b95114fe4fc0c37ef699fce58356b6ff0a3e21471395",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_211/metrics.jsonl"
+    },
+    "4096_weighted_prefix_211/summary.json": {
+      "sha256": "a57334546c57a8920bdbc5a59b3ca468d686a1532e83347ecefc13b663619d06",
+      "origin": "Frozen fresh-phase confirmation: 4096_weighted_prefix_211/summary.json"
+    },
+    "execution_recovery.json": {
+      "sha256": "6950f408095018c0b6021bc139bb8eb69f44ee559d683c139f86bcc5a8c15478",
+      "origin": "Frozen fresh-phase confirmation: execution_recovery.json"
+    },
+    "execution_recovery_receipt.json": {
+      "sha256": "b005d48fd05962ddc36ede3d4a98b7fe4feb80c55a1976d465219b5ae865778b",
+      "origin": "Frozen fresh-phase confirmation: execution_recovery_receipt.json"
+    },
+    "execution_recovery_verification_6950.json": {
+      "sha256": "b1feed6770d0ae1730080d56cbb9ea619f1c55c7d189f5a817b1e57db4c8e8f5",
+      "origin": "Frozen fresh-phase confirmation: execution_recovery_verification_6950.json"
+    },
+    "execution_interruptions/4096_standard_prefix_211/metrics.jsonl": {
+      "sha256": "49a3363e256fd447eeffa13b59a8dd3c87bce7bb09e14f199d7f601c143e9f11",
+      "origin": "Frozen fresh-phase confirmation: execution_interruptions/4096_standard_prefix_211/metrics.jsonl"
+    },
+    "execution_interruptions/status_at_failure.json.tmp": {
+      "sha256": "ac23bde065c33a15471b546325c2fac7ba6c2b7552b0576070788cc110f36c66",
+      "origin": "Frozen fresh-phase confirmation: execution_interruptions/status_at_failure.json.tmp"
+    }
+  }
+}

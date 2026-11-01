@@ -1,0 +1,96 @@
+{
+  "plan_sha256": "55b705756dcec4c546928a6c3a52e66314a2e455ad2026f2819a5b3642c824c4",
+  "independent_oracle_examples": {
+    "train": 512,
+    "development": 128,
+    "assessment": 5120
+  },
+  "data_inventory": {
+    "train": {
+      "examples": 512,
+      "base_graph_instances": 256,
+      "base_topology_clusters": 252,
+      "reserved_topology_clusters_including_cuts": 613
+    },
+    "development": {
+      "examples": 128,
+      "base_graph_instances": 64,
+      "base_topology_clusters": 64,
+      "reserved_topology_clusters_including_cuts": 161
+    },
+    "assessment": {
+      "examples": 5120,
+      "base_graph_instances": 640,
+      "base_topology_clusters": 376,
+      "reserved_topology_clusters_including_cuts": 908
+    }
+  },
+  "legacy_predictions_replayed": 160,
+  "models": [
+    {
+      "arm": "scratch",
+      "seed": 59,
+      "stop_reasons": {
+        "irrecoverable_format_prefix": 32
+      },
+      "prediction_seconds": 1.1049283999964246,
+      "overall_exact_match": 0,
+      "overall_valid_format": 0,
+      "coverage": 1,
+      "native_and_cut_correct": 0
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 59,
+      "stop_reasons": {
+        "irrecoverable_format_prefix": 32
+      },
+      "prediction_seconds": 0.8426821999964886,
+      "overall_exact_match": 0,
+      "overall_valid_format": 0,
+      "coverage": 1,
+      "native_and_cut_correct": 0
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 59,
+      "stop_reasons": {
+        "irrecoverable_format_prefix": 32
+      },
+      "prediction_seconds": 0.866721400001552,
+      "overall_exact_match": 0,
+      "overall_valid_format": 0,
+      "coverage": 1,
+      "native_and_cut_correct": 0
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 59,
+      "stop_reasons": {
+        "irrecoverable_format_prefix": 32
+      },
+      "prediction_seconds": 1.2971460999979172,
+      "overall_exact_match": 0,
+      "overall_valid_format": 0,
+      "coverage": 1,
+      "native_and_cut_correct": 0
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 59,
+      "stop_reasons": {
+        "irrecoverable_format_prefix": 32
+      },
+      "prediction_seconds": 1.0487021000008099,
+      "overall_exact_match": 0,
+      "overall_valid_format": 0,
+      "coverage": 1,
+      "native_and_cut_correct": 0
+    }
+  ],
+  "scientific_optimizer_updates": 0,
+  "new_gpu_measurements": 0,
+  "graph_acceleration_claim": null,
+  "reserved_confirmation_generated": false,
+  "language_training_allowed": false
+}

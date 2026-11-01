@@ -1,0 +1,187 @@
+{
+  "plan_sha256": "190ab24f24655072f8ebfe9f309d61135920aab57dd7c7611628db6fef57e393",
+  "models": [
+    {
+      "arm": "scratch",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3138671875,
+        "coverage": 1,
+        "teacher_nll": 0.8171716635133186,
+        "teacher_accuracy": 0.7189078282828283,
+        "teacher_digit_accuracy": 0.375,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.265625,
+        "one_hop_accuracy": 0.366120218579235,
+        "multi_hop_accuracy": 0.2887537993920973
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.9921875,
+        "node_accuracy": 0.216015625,
+        "coverage": 1,
+        "teacher_nll": 0.9764048867786023,
+        "teacher_accuracy": 0.6753077651515151,
+        "teacher_digit_accuracy": 0.2787109375,
+        "teacher_other_accuracy": 0.9993489583333334,
+        "source_accuracy": 0.109375,
+        "one_hop_accuracy": 0.22164948453608246,
+        "multi_hop_accuracy": 0.23113207547169812
+      },
+      "interpretation": {
+        "training_probe_competent": false,
+        "development_competent": false,
+        "train_minus_development_exact": 0,
+        "interpretation": "training_probe_competence_not_established"
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3234375,
+        "coverage": 1,
+        "teacher_nll": 0.8154171220942822,
+        "teacher_accuracy": 0.7230508207070707,
+        "teacher_digit_accuracy": 0.3841796875,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.265625,
+        "one_hop_accuracy": 0.4098360655737705,
+        "multi_hop_accuracy": 0.28419452887537994
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.189453125,
+        "coverage": 1,
+        "teacher_nll": 0.9911621774440569,
+        "teacher_accuracy": 0.6599195075757576,
+        "teacher_digit_accuracy": 0.2435546875,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.09375,
+        "one_hop_accuracy": 0.2190721649484536,
+        "multi_hop_accuracy": 0.19025157232704404
+      },
+      "interpretation": {
+        "training_probe_competent": false,
+        "development_competent": false,
+        "train_minus_development_exact": 0,
+        "interpretation": "training_probe_competence_not_established"
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.32890625,
+        "coverage": 1,
+        "teacher_nll": 0.7951031559241172,
+        "teacher_accuracy": 0.7284169823232323,
+        "teacher_digit_accuracy": 0.39609374999999997,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.4609375,
+        "one_hop_accuracy": 0.33060109289617484,
+        "multi_hop_accuracy": 0.2978723404255319
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2107421875,
+        "coverage": 1,
+        "teacher_nll": 0.9983352744329982,
+        "teacher_accuracy": 0.676333648989899,
+        "teacher_digit_accuracy": 0.280859375,
+        "teacher_other_accuracy": 0.9993489583333334,
+        "source_accuracy": 0.1328125,
+        "one_hop_accuracy": 0.19072164948453607,
+        "multi_hop_accuracy": 0.2389937106918239
+      },
+      "interpretation": {
+        "training_probe_competent": false,
+        "development_competent": false,
+        "train_minus_development_exact": 0,
+        "interpretation": "training_probe_competence_not_established"
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2955078125,
+        "coverage": 1,
+        "teacher_nll": 0.8369863458585763,
+        "teacher_accuracy": 0.7079782196969697,
+        "teacher_digit_accuracy": 0.3505859375,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.25,
+        "one_hop_accuracy": 0.3524590163934426,
+        "multi_hop_accuracy": 0.270516717325228
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.1958984375,
+        "coverage": 1,
+        "teacher_nll": 0.9659795184908762,
+        "teacher_accuracy": 0.6644965277777778,
+        "teacher_digit_accuracy": 0.2546875,
+        "teacher_other_accuracy": 0.99921875,
+        "source_accuracy": 0.1015625,
+        "one_hop_accuracy": 0.1958762886597938,
+        "multi_hop_accuracy": 0.21540880503144655
+      },
+      "interpretation": {
+        "training_probe_competent": false,
+        "development_competent": false,
+        "train_minus_development_exact": 0,
+        "interpretation": "training_probe_competence_not_established"
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "train": {
+        "exact_match": 0,
+        "valid_format": 0.9921875,
+        "node_accuracy": 0.305859375,
+        "coverage": 1,
+        "teacher_nll": 0.8199335335205357,
+        "teacher_accuracy": 0.7133838383838383,
+        "teacher_digit_accuracy": 0.362890625,
+        "teacher_other_accuracy": 1.0,
+        "source_accuracy": 0.34375,
+        "one_hop_accuracy": 0.4180327868852459,
+        "multi_hop_accuracy": 0.22644376899696048
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.213671875,
+        "coverage": 1,
+        "teacher_nll": 0.9713285652580896,
+        "teacher_accuracy": 0.6736505681818181,
+        "teacher_digit_accuracy": 0.2751953125,
+        "teacher_other_accuracy": 0.99921875,
+        "source_accuracy": 0.1484375,
+        "one_hop_accuracy": 0.24742268041237114,
+        "multi_hop_accuracy": 0.2028301886792453
+      },
+      "interpretation": {
+        "training_probe_competent": false,
+        "development_competent": false,
+        "train_minus_development_exact": 0,
+        "interpretation": "training_probe_competence_not_established"
+      }
+    }
+  ],
+  "new_optimizer_updates": 0,
+  "inference_scoring_seconds": 324.5070534000042,
+  "predictions_replayed": 1280,
+  "original_random_rule_readiness": "still_failed",
+  "ood_evaluation_allowed": false,
+  "graph_acceleration_claim": null,
+  "plot_sha256": "f8186172c2d316acc00b4f76630d1b7ad0efbbfad86422896d3aedf6f23e6c65"
+}

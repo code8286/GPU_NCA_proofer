@@ -1,0 +1,27 @@
+{
+  "files": {
+    "plan.json": "190ab24f24655072f8ebfe9f309d61135920aab57dd7c7611628db6fef57e393",
+    "plan_receipt.json": "0dbcf824df2b05347b1dcde4b49b21a6626c610f28a0d287dfcd23de9d461dd1",
+    "FROZEN_PROTOCOL.md": "94e970497e1c3cbbed2792b3309990bf68209cac481b6a4c40a12e06d5d898d4",
+    "evaluation_started.json": "d2da8ca6772af7e0a9c961c98129bd00c6eba3c5790deba01cb0d47ad44b7320",
+    "results.json": "37035df1150bb8f3ad116116f1581aeb9b575c1ac8cb79b635f48fa38847cb24",
+    "results_receipt.json": "b788d7271e5fc5f9896a262bbd2315d1e67432f0a1bf5a0843fff21f3cf05391",
+    "verification.json": "6ea29dc2c889d87104a27ccd356b5adff0484f57a136a0d9f2b49555d07b8959",
+    "models/scratch/train_predictions.jsonl": "c290484600ae656387074f03f26729f0ac71e0a02ccc0997f7870289f5d93bc4",
+    "models/scratch/development_predictions.jsonl": "e319322674332d27410dd77e941c9838ad62a027903b1ab8bb2d2ef869f1d22a",
+    "models/scratch/metrics.json": "de3322d4b8e2b664c08c4215a7ec36068faf07b1a18c264b5e4ba440ec5a9c49",
+    "models/grid_nca/train_predictions.jsonl": "0fbb97416d2bb2eb6ecd4ea0aa668282ddc216af928ea4dcf53c2bfa6572e071",
+    "models/grid_nca/development_predictions.jsonl": "c21995cfeb90434d0c9aea37726f882398f95dc875d6f98f0bb67d542911b319",
+    "models/grid_nca/metrics.json": "e2c20ed3922192356947be8e690a8c8112d3d9210d810038d9997c13960f27e7",
+    "models/graph_nca/train_predictions.jsonl": "46e03caa0572b43148738d923d486b29d84f8f11f1af8c4ba47eb3acfd7fb05e",
+    "models/graph_nca/development_predictions.jsonl": "60d2034ab18d722d78062fd04d6c34a7519d4ec8c77009090a68588d4abaebc0",
+    "models/graph_nca/metrics.json": "21552491166532095733cabceabe7f971244d0784a41afa4bf038f1b7dd05dea",
+    "models/prefix_grid/train_predictions.jsonl": "c0cc5c6ecf79057299595f081a9fe674e83129853209444a3b3df92403c22072",
+    "models/prefix_grid/development_predictions.jsonl": "ce1597839375e9d70a6fbcb829b063c67211f9cd652f6e35df053f529bdfcf40",
+    "models/prefix_grid/metrics.json": "61ba3552cdbb2db5484db52715f8324537051eb14c17fb4e65ecc1256a9a8ab0",
+    "models/prefix_graph/train_predictions.jsonl": "86456b345148b3f10e5bacf66b56981b5becfc970092a85222ea4cc2a8f93ed4",
+    "models/prefix_graph/development_predictions.jsonl": "a04d494102826becc97ee8a8e428ed2bd3493e866e2364d8179ba5c59d4b884d",
+    "models/prefix_graph/metrics.json": "8189df80fc83e190765cbe999affda9362e7f7117c4374a5eae6dc56eb4734c8"
+  },
+  "scope": "New CPU checkpoint-only diagnostic; zero new optimizer updates"
+}

@@ -1,0 +1,173 @@
+{
+  "scope": "Inspected-development nested cache comparison; twelve new CPU models versus twelve imported controls",
+  "files": {
+    "plan.json": {
+      "sha256": "833219dd13b85713c34af5b649cfd2693939b1b766e3a3d900933685ac231101",
+      "origin": "Frozen nested-diversity study: plan.json"
+    },
+    "plan_receipt.json": {
+      "sha256": "397ddcbc7c5c41d0f1bb5eee6aef0b2252c264c26a28feed31b677b8a0e85b35",
+      "origin": "Frozen nested-diversity study: plan_receipt.json"
+    },
+    "FROZEN_PROTOCOL.md": {
+      "sha256": "68697ea04e2c3612324bdf71219708d8c2c9d7e01ebf6e5d056e2701900d9282",
+      "origin": "Frozen nested-diversity study: FROZEN_PROTOCOL.md"
+    },
+    "training_complete.json": {
+      "sha256": "eb815f23d6c7ad10d5fa99b3d952c956bb0ef0f5fe74c49af20aa3f0f961031a",
+      "origin": "Frozen nested-diversity study: training_complete.json"
+    },
+    "training_receipt.json": {
+      "sha256": "16dd5114388280426adc8cfebdb478a8b7230caa8769f71e8011ef1b60784c9b",
+      "origin": "Frozen nested-diversity study: training_receipt.json"
+    },
+    "results.json": {
+      "sha256": "40227955890e3a0d106595966779368446c4743cb70d15c36752053a9c90c375",
+      "origin": "Frozen nested-diversity study: results.json"
+    },
+    "results_receipt.json": {
+      "sha256": "639f4cf14211e4174eb073d7d35591bf052a911e4997659ddf03015a5fa3b53a",
+      "origin": "Frozen nested-diversity study: results_receipt.json"
+    },
+    "verification.json": {
+      "sha256": "2f56e4672ab9e472ffa494bfc48b2a54069e6a0b6d77b52ef3b8332fd8ac3731",
+      "origin": "Frozen nested-diversity study: verification.json"
+    },
+    "status.json": {
+      "sha256": "13ca7d25c3253dc94ff9dc46813a66f6ab89080096abf031b3fbcaf087e44e41",
+      "origin": "Frozen nested-diversity study: status.json"
+    },
+    "evidence/full_cells_131.json": {
+      "sha256": "0c4b93debc331fc3ae9c8cfa97f1d975a1b472701006d4c0daae4a218d51cb7a",
+      "origin": "Frozen nested-diversity study: evidence/full_cells_131.json"
+    },
+    "evidence/fit_cells_131.json": {
+      "sha256": "2c2b54697ea5ccd56287ee1a3704bc237ea06548da67565de95ebf3b20684653",
+      "origin": "Frozen nested-diversity study: evidence/fit_cells_131.json"
+    },
+    "evidence/intervention_cells_131.json": {
+      "sha256": "5db9c6c7df93e3bd3f8ade1afbb2aff053b74808b0307013bdca6378f2f52d39",
+      "origin": "Frozen nested-diversity study: evidence/intervention_cells_131.json"
+    },
+    "evidence/full_cells_149.json": {
+      "sha256": "c04b32a903d7a3c9d5c81c447c3d6e10803871d0fe995f7bd886f8f2eac9eff4",
+      "origin": "Frozen nested-diversity study: evidence/full_cells_149.json"
+    },
+    "evidence/fit_cells_149.json": {
+      "sha256": "48af48356bba7ce8ab29981ae8f4a53d7965ca9b4ffe5ddb12aedfb56e64d406",
+      "origin": "Frozen nested-diversity study: evidence/fit_cells_149.json"
+    },
+    "evidence/intervention_cells_149.json": {
+      "sha256": "a51f9f954815292d11f1bfa333996766f130ec2c238a735f9a74abc2643b367f",
+      "origin": "Frozen nested-diversity study: evidence/intervention_cells_149.json"
+    },
+    "evidence/full_cells_167.json": {
+      "sha256": "5c0755a8e2a248f56379ab5af03c54ac0dd6b46739e55b0502d60e234d9cf6ae",
+      "origin": "Frozen nested-diversity study: evidence/full_cells_167.json"
+    },
+    "evidence/fit_cells_167.json": {
+      "sha256": "939a61dafbf199eac67158efe2bbe82a8f69e6bf3be3d256eeb3e22e1d38da4a",
+      "origin": "Frozen nested-diversity study: evidence/fit_cells_167.json"
+    },
+    "evidence/intervention_cells_167.json": {
+      "sha256": "0ebd5a177332d54dd7200109ceed6f1b76dfc1544a55d3f819a02085a3ccf2ba",
+      "origin": "Frozen nested-diversity study: evidence/intervention_cells_167.json"
+    },
+    "standard_coherent_131/metrics.jsonl": {
+      "sha256": "dc5dc3568895943dbab61b3b3099a21923db149f6f14c4c1f5cd22810da8857f",
+      "origin": "Frozen nested-diversity study: standard_coherent_131/metrics.jsonl"
+    },
+    "standard_coherent_131/summary.json": {
+      "sha256": "21e88b5686643ea754ba9478d4983faf300a09461eb49685e78dae303a062e95",
+      "origin": "Frozen nested-diversity study: standard_coherent_131/summary.json"
+    },
+    "standard_prefix_131/metrics.jsonl": {
+      "sha256": "be6c8c4a5e1290160e7f3cfb4df08bf94ca76ae79c893757b004a41749dd0a00",
+      "origin": "Frozen nested-diversity study: standard_prefix_131/metrics.jsonl"
+    },
+    "standard_prefix_131/summary.json": {
+      "sha256": "de051072101cc742b8eaad9d621dc477c12416fab6548ec6b7fa01ef76641535",
+      "origin": "Frozen nested-diversity study: standard_prefix_131/summary.json"
+    },
+    "weighted_coherent_131/metrics.jsonl": {
+      "sha256": "1d03d61c06773cb90740522ba2e5dd170fad87b273ce8b6a5a6e2d09bafe5f06",
+      "origin": "Frozen nested-diversity study: weighted_coherent_131/metrics.jsonl"
+    },
+    "weighted_coherent_131/summary.json": {
+      "sha256": "83f4b43d0738433e57c22aa13d8e8a818cf7629b75c238cfe2f6c2a219e2e61e",
+      "origin": "Frozen nested-diversity study: weighted_coherent_131/summary.json"
+    },
+    "weighted_prefix_131/metrics.jsonl": {
+      "sha256": "a54f2146baced0ffc0518bcb3db517585772103ce0b03d31aca3472a827b207f",
+      "origin": "Frozen nested-diversity study: weighted_prefix_131/metrics.jsonl"
+    },
+    "weighted_prefix_131/summary.json": {
+      "sha256": "194019e29e9cf19e01d8eeafa2b3305f0b72ac78324da661cc60233f9ff195f6",
+      "origin": "Frozen nested-diversity study: weighted_prefix_131/summary.json"
+    },
+    "standard_coherent_149/metrics.jsonl": {
+      "sha256": "85f087a3147a5769576907ae20cf666ce34c8830d57044c3c6d5927dc6b692be",
+      "origin": "Frozen nested-diversity study: standard_coherent_149/metrics.jsonl"
+    },
+    "standard_coherent_149/summary.json": {
+      "sha256": "35ffc4fc0bed3033adfe1e14cde412950fac69e0db06e2f1548cbcd80b35139b",
+      "origin": "Frozen nested-diversity study: standard_coherent_149/summary.json"
+    },
+    "standard_prefix_149/metrics.jsonl": {
+      "sha256": "b92540698659f7b6cbf1acfdfadc37bf02df6b107f145791b06440075bb18a11",
+      "origin": "Frozen nested-diversity study: standard_prefix_149/metrics.jsonl"
+    },
+    "standard_prefix_149/summary.json": {
+      "sha256": "42c292402ed822791130310753386afca52a1741155683b158ebb721e38bf374",
+      "origin": "Frozen nested-diversity study: standard_prefix_149/summary.json"
+    },
+    "weighted_coherent_149/metrics.jsonl": {
+      "sha256": "fb9b154ce793aaacc717ec0b3e0c32cde133510dd8f9d49c0100266098927468",
+      "origin": "Frozen nested-diversity study: weighted_coherent_149/metrics.jsonl"
+    },
+    "weighted_coherent_149/summary.json": {
+      "sha256": "3b02ff2b5bd9bca175e94077ec0c7aaa001af9ed5f6e4b35cea66f69a710084c",
+      "origin": "Frozen nested-diversity study: weighted_coherent_149/summary.json"
+    },
+    "weighted_prefix_149/metrics.jsonl": {
+      "sha256": "53656cb83faead7e5708445e57806bfe4ebc9f9ff2060cd73b21bf053656aa09",
+      "origin": "Frozen nested-diversity study: weighted_prefix_149/metrics.jsonl"
+    },
+    "weighted_prefix_149/summary.json": {
+      "sha256": "914161387271dd6fc44cd782fe3b13d68a9180cfda0227723e203a3cf3d31f48",
+      "origin": "Frozen nested-diversity study: weighted_prefix_149/summary.json"
+    },
+    "standard_coherent_167/metrics.jsonl": {
+      "sha256": "479e9b1c873bbbfb9c8e0344ba0e27f8e7d3bb16411f65614c7cbcde1a9474f4",
+      "origin": "Frozen nested-diversity study: standard_coherent_167/metrics.jsonl"
+    },
+    "standard_coherent_167/summary.json": {
+      "sha256": "ad5e63708deedd4cab516c1ecacfab7dbdd73d69db190bf97198adb13ce2b3ad",
+      "origin": "Frozen nested-diversity study: standard_coherent_167/summary.json"
+    },
+    "standard_prefix_167/metrics.jsonl": {
+      "sha256": "f3cd47b8ac0579fef5b5397486db6bd2bd416ec71a97299ebdaf1f7b4be3da9b",
+      "origin": "Frozen nested-diversity study: standard_prefix_167/metrics.jsonl"
+    },
+    "standard_prefix_167/summary.json": {
+      "sha256": "89ac5ad66ae12b375008a3e1aa3614ebfa8f739eb4f40548db14f3315baf0d4f",
+      "origin": "Frozen nested-diversity study: standard_prefix_167/summary.json"
+    },
+    "weighted_coherent_167/metrics.jsonl": {
+      "sha256": "391af6e77b8b0fb1e57322ae2505c8b3b28e1cbbb2cd56e983ad3c5aa0fc57e7",
+      "origin": "Frozen nested-diversity study: weighted_coherent_167/metrics.jsonl"
+    },
+    "weighted_coherent_167/summary.json": {
+      "sha256": "c20970703bb5f57ad1e56d100439229fbc8e0f58fa252709504a7e1fbcd9d8c9",
+      "origin": "Frozen nested-diversity study: weighted_coherent_167/summary.json"
+    },
+    "weighted_prefix_167/metrics.jsonl": {
+      "sha256": "61f61041f2e24905fe53ddd75bc7c60471494c8283911d561bfd7e38a6d93825",
+      "origin": "Frozen nested-diversity study: weighted_prefix_167/metrics.jsonl"
+    },
+    "weighted_prefix_167/summary.json": {
+      "sha256": "40b5e475905cd4d4a9767f3d30b9e0895def2efac9d255463637dfb87a5aa299",
+      "origin": "Frozen nested-diversity study: weighted_prefix_167/summary.json"
+    }
+  }
+}

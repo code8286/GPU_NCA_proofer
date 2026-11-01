@@ -1,0 +1,163 @@
+{
+  "schema_version": 12,
+  "created_utc": "2026-10-29T20:17:17.805783+00:00",
+  "config": {
+    "schema_version": 12,
+    "purpose": "development_ood_measurement_and_historical_zero_shot",
+    "data_seed": 20261030,
+    "tasks": [
+      "bfs_distances",
+      "dijkstra_distances"
+    ],
+    "id_sizes": [
+      8,
+      10
+    ],
+    "ood_sizes": [
+      12,
+      16,
+      20
+    ],
+    "families": [
+      "cyclic_er",
+      "branching_tree",
+      "path",
+      "two_components"
+    ],
+    "train_graphs_per_cell": 128,
+    "development_graphs_per_cell": 32,
+    "assessment_graphs_per_cell": 32,
+    "context_limit": 1024,
+    "generation_tokens": 128,
+    "legacy_seed": 59,
+    "legacy_arms": [
+      "scratch",
+      "grid_nca",
+      "graph_nca",
+      "prefix_grid",
+      "prefix_graph"
+    ],
+    "legacy_cases": [
+      "id_cyclic_er_8",
+      "size_cyclic_er_16",
+      "family_path_8",
+      "joint_path_16"
+    ],
+    "language_training_allowed": false,
+    "reserved_confirmation_generated": false
+  },
+  "source_sha256": {
+    "ood_v12/__init__.py": "b248c3841fa1de0ef362ffbeac9373e8c47b009f901f1792f6d0c8f1b58a94ce",
+    "ood_v12/data.py": "7425f27625ebd48be75d46b2a7a473e5fab0e0276045faf0b812c0abf4a37152",
+    "ood_v12/graphs.py": "e4bd428c54d585aa30cbd489976bc137d88b92c0fbb886eb82f4b56751cac941",
+    "ood_v12/inference.py": "734b8d9f3bf7fb07bed3fd7fbf77fe9efe50f620550f66fcdeca5b1b66c7fac4",
+    "ood_v12/plan.py": "01cfabd545ad0af5b70858f892b1a32f2f569a321912481472e59e01b090a981",
+    "ood_v12/run.py": "5b44eb1b6a6e67e989f823959cfd08455c8b1bbf08630c8886a140911978d4d1",
+    "ood_v12/scoring.py": "aecbeb2f8fdf44ffe185931a23d1d9fb2b2acd0e887ab4eedeace8b562df404b",
+    "transfer_v4/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7"
+  },
+  "protocol_sha256": "c6438edf52b9fac5e5d0d3a8363f3cd42129153689640cf7495e7edf791e4d6d",
+  "reference_sha256": "34791ca01b61b25f03ae6516e5b790dc9fc32797821e6483ed503c6fcb906721",
+  "input_files_sha256": {
+    "data/train.jsonl": "6cac8b6c9ff808dca9ed2bdf07e31db7799cb319413a178ac63e65368ab08d95",
+    "data/development.jsonl": "8e04cdca892162aacffb92985a0601c79d281f4148b19a66f41ab11241eb3e24",
+    "data/assessment.jsonl": "7295083aa1e37b5a1fb7105828eb0be0eb8826b1234062d2c216a79ff3c27eff",
+    "data/legacy_pilot.jsonl": "27690b5e8d9f82362e9852d3a8b667068fa1b64c83036c669d0087005e84caa6"
+  },
+  "data_inventory": {
+    "train": {
+      "examples": 512,
+      "base_graph_instances": 256,
+      "base_topology_clusters": 252,
+      "reserved_topology_clusters_including_cuts": 613
+    },
+    "development": {
+      "examples": 128,
+      "base_graph_instances": 64,
+      "base_topology_clusters": 64,
+      "reserved_topology_clusters_including_cuts": 161
+    },
+    "assessment": {
+      "examples": 5120,
+      "base_graph_instances": 640,
+      "base_topology_clusters": 376,
+      "reserved_topology_clusters_including_cuts": 908
+    }
+  },
+  "legacy_checkpoints": [
+    {
+      "arm": "scratch",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/scratch_59/language_final.pt",
+      "checkpoint_sha256": "0654f4b0e02ce33d4cd1f458b3f3bb549e8c098be2d3406cb93576dec650d126",
+      "summary_sha256": "8f050e1928c220f478e63cd6129c9767844f1c98f2ed0183737f5ca9841a884f",
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/grid_nca_59/language_final.pt",
+      "checkpoint_sha256": "311f2fbd0859c6462b718d31a7bb1bdb850273a0ef26d22f8c8c53dda5dccad0",
+      "summary_sha256": "9e89a2c7eb495f8e5b0de625d0340cefa4b149ad1e58db1252de6335194e3870",
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/graph_nca_59/language_final.pt",
+      "checkpoint_sha256": "3eac2202e37e0677bed12e2b6701db1b74467fd723fc37a171c8b5bd2863a788",
+      "summary_sha256": "e2fe9e153a46fba9f70895a8bc362a4ad7f2594704da4c88cd4554fb4eb100ae",
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/prefix_grid_59/language_final.pt",
+      "checkpoint_sha256": "f6136e070c892f36d7634ed80a22a234a0b88c378d2b5c3675e26861ddfa6c9d",
+      "summary_sha256": "d47a3b488dd1799b905579ab83c8389cfc0463ef9467672ac24a8193bea8499e",
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/prefix_graph_59/language_final.pt",
+      "checkpoint_sha256": "ff3f4fc4c49d970b2d75f4245ac91f2eba0cc562968295676592330657f59761",
+      "summary_sha256": "44e25343886856ce301ee52a5b8e80e550be0c1b76229b2c522f40143273d9dd",
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_head_initial_sha256": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "language_order_sha256": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule_sha256": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4"
+    }
+  ],
+  "tokenizer": {
+    "name": "gpt2",
+    "vocab": 50257,
+    "max_assessment_prompt_tokens": 233,
+    "max_reference_tokens": 42
+  },
+  "environment": {
+    "numpy": "2.5.2",
+    "torch": "2.14.1+cpu",
+    "tiktoken": "0.14.0"
+  },
+  "scope": "New OOD measurement controls and single-cohort historical zero-shot development diagnostic; zero optimizer updates",
+  "language_training_allowed": false,
+  "reserved_confirmation_generated": false
+}

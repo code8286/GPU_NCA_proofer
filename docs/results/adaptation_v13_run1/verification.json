@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checkpoint_replays": 20,
+  "generated_answers_replayed": 2560,
+  "results_sha256": "f9ca281f82e4e874394052ee7b354e962a74e0cd30c2d81edda5e585449f32d5",
+  "plan_sha256": "9e18f7f90def47c453f29847244d7715ebab48cdbf0d267a23bbde66957d5b5e",
+  "scope": "Separate same-code checkpoint generation/NLL replay and independent graph labels; no retraining"
+}

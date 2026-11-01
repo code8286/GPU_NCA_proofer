@@ -1,0 +1,508 @@
+{
+  "schema_version": 15,
+  "created_utc": "2026-10-30T19:09:22.909659+00:00",
+  "config": {
+    "schema_version": 15,
+    "purpose": "development_small_cache_overfit_positive_control",
+    "training_graphs_per_size": 4,
+    "selection_salt": "id-audit-v14-20261031",
+    "arms": [
+      "scratch",
+      "grid_nca",
+      "graph_nca",
+      "prefix_grid",
+      "prefix_graph"
+    ],
+    "adaptation_config": "configs/adaptation_v13.json",
+    "reference_cache_examples": 512,
+    "small_cache_examples": 16,
+    "ood_evaluation_allowed": false,
+    "confirmatory_graph_claim_allowed": false
+  },
+  "adaptation_config": {
+    "schema_version": 13,
+    "purpose": "historical_id_interface_trainability_calibration",
+    "updates": 600,
+    "batch": 8,
+    "order_seed": 20261031,
+    "learning_rate": 0.0003,
+    "warmup_updates": 30,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "evaluation_updates": [
+      0,
+      100,
+      300,
+      600
+    ],
+    "id_exact_match_target": 0.8,
+    "id_format_target": 0.95,
+    "generation_tokens": 128,
+    "device": "cpu",
+    "threads": 2,
+    "language_training_allowed": false,
+    "confirmatory_graph_claim_allowed": false
+  },
+  "base_config_sha256": "709ef0476fa4764e77146f3b3fea8ae3c5e5f55e75d00af90b5bb46af5775bf7",
+  "source_sha256": {
+    "adaptation_v13/__init__.py": "e69d72c9bb8e012b1a831325865f302bf234d53285cc813eb008d70481392e33",
+    "adaptation_v13/run.py": "0ad34eafdf25175fdd1d2dc47beb37bc53469194b1b5f195ca6ee75202ec50bf",
+    "adaptation_v13/training.py": "403079d3f8083a391a1260a9a536b897ac051947843aeb146613b1d109e5c986",
+    "ood_v12/__init__.py": "b248c3841fa1de0ef362ffbeac9373e8c47b009f901f1792f6d0c8f1b58a94ce",
+    "ood_v12/data.py": "7425f27625ebd48be75d46b2a7a473e5fab0e0276045faf0b812c0abf4a37152",
+    "ood_v12/graphs.py": "e4bd428c54d585aa30cbd489976bc137d88b92c0fbb886eb82f4b56751cac941",
+    "ood_v12/inference.py": "734b8d9f3bf7fb07bed3fd7fbf77fe9efe50f620550f66fcdeca5b1b66c7fac4",
+    "ood_v12/plan.py": "01cfabd545ad0af5b70858f892b1a32f2f569a321912481472e59e01b090a981",
+    "ood_v12/run.py": "5b44eb1b6a6e67e989f823959cfd08455c8b1bbf08630c8886a140911978d4d1",
+    "ood_v12/scoring.py": "aecbeb2f8fdf44ffe185931a23d1d9fb2b2acd0e887ab4eedeace8b562df404b",
+    "transfer_v4/common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7",
+    "transfer_v4/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "id_audit_v14/__init__.py": "55e1078937f78fcdef87bbedad1ff942c5967a1e1180bfa5227f9f9769191ee0",
+    "id_audit_v14/metrics.py": "f2ff064fd8abc5c4e5c6c6ee736bb8ee04bbfcdda6ff70e6b379f4c5529b05aa",
+    "id_audit_v14/run.py": "e24e6b75097f5f35fe258585070a815a665a99051c304a2e61cf53bf57a61d83",
+    "overfit_v15/__init__.py": "0766fd474640895fa7538d1f8460f18465afc65609e78739e59095f75d00b4f4",
+    "overfit_v15/core.py": "b33c08a3e26324dc2923b51021ec783661e4aec59b929031de096092fd7b9634",
+    "overfit_v15/run.py": "8258badfdadfe80defdb71ef94dd10ff7aed496b85ae06d99095347cbc6b3708"
+  },
+  "protocol_sha256": "ddb7535599d70d2e58c29569f134f1a22d764d53166019769d63b1be4313dcdd",
+  "prior_evidence_sha256": {
+    "runs/adaptation_v13_run1/plan.json": "9e18f7f90def47c453f29847244d7715ebab48cdbf0d267a23bbde66957d5b5e",
+    "runs/adaptation_v13_run1/results.json": "f9ca281f82e4e874394052ee7b354e962a74e0cd30c2d81edda5e585449f32d5",
+    "runs/adaptation_v13_run1/verification.json": "fbef8c4e6de0ea678f9303bbe3dcd8368f18db635c63f7f6feaab6fb4f3c5707",
+    "runs/id_audit_v14_run1/plan.json": "190ab24f24655072f8ebfe9f309d61135920aab57dd7c7611628db6fef57e393",
+    "runs/id_audit_v14_run1/results.json": "37035df1150bb8f3ad116116f1581aeb9b575c1ac8cb79b635f48fa38847cb24",
+    "runs/id_audit_v14_run1/verification.json": "6ea29dc2c889d87104a27ccd356b5adff0484f57a136a0d9f2b49555d07b8959"
+  },
+  "records": [
+    {
+      "arm": "scratch",
+      "initial_checkpoint": "runs/adaptation_v13_run1/models/scratch/step_0.pt",
+      "initial_checkpoint_sha256": "32f8221eb2ba9a6adb11d0651f27f58e98e7e255712f0cc6a8d8cbb70838d402",
+      "initial_model_sha256": "95820bc4056139f937e23608ed246758cb349127bbb77a27e47b3901178814ec",
+      "reference_files_sha256": {
+        "models/scratch/train_predictions.jsonl": "c290484600ae656387074f03f26729f0ac71e0a02ccc0997f7870289f5d93bc4",
+        "models/scratch/development_predictions.jsonl": "e319322674332d27410dd77e941c9838ad62a027903b1ab8bb2d2ef869f1d22a",
+        "models/scratch/metrics.json": "de3322d4b8e2b664c08c4215a7ec36068faf07b1a18c264b5e4ba440ec5a9c49"
+      },
+      "historical_reference_updates": 600,
+      "historical_reference_counts": {
+        "input_tokens": 562855,
+        "supervised_targets": 96016,
+        "padded_positions": 691560
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "initial_checkpoint": "runs/adaptation_v13_run1/models/grid_nca/step_0.pt",
+      "initial_checkpoint_sha256": "e43d40fb61f4a0d024c8e7741358ad65a796056b03fecad33c22d3470a15bd26",
+      "initial_model_sha256": "053def3ca56ffb5f1309b5964ebf9449c835890db3399e4ffeaecca5b4c9ec65",
+      "reference_files_sha256": {
+        "models/grid_nca/train_predictions.jsonl": "0fbb97416d2bb2eb6ecd4ea0aa668282ddc216af928ea4dcf53c2bfa6572e071",
+        "models/grid_nca/development_predictions.jsonl": "c21995cfeb90434d0c9aea37726f882398f95dc875d6f98f0bb67d542911b319",
+        "models/grid_nca/metrics.json": "e2c20ed3922192356947be8e690a8c8112d3d9210d810038d9997c13960f27e7"
+      },
+      "historical_reference_updates": 600,
+      "historical_reference_counts": {
+        "input_tokens": 562855,
+        "supervised_targets": 96016,
+        "padded_positions": 691560
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "initial_checkpoint": "runs/adaptation_v13_run1/models/graph_nca/step_0.pt",
+      "initial_checkpoint_sha256": "5f1ce73c78fe5454013a64e7fcc27a350ece6b244b8745b626b8b26bb3db4320",
+      "initial_model_sha256": "513cc4131231b3aeace5a094f92097633d748c403a27c9682647520dd704b78c",
+      "reference_files_sha256": {
+        "models/graph_nca/train_predictions.jsonl": "46e03caa0572b43148738d923d486b29d84f8f11f1af8c4ba47eb3acfd7fb05e",
+        "models/graph_nca/development_predictions.jsonl": "60d2034ab18d722d78062fd04d6c34a7519d4ec8c77009090a68588d4abaebc0",
+        "models/graph_nca/metrics.json": "21552491166532095733cabceabe7f971244d0784a41afa4bf038f1b7dd05dea"
+      },
+      "historical_reference_updates": 600,
+      "historical_reference_counts": {
+        "input_tokens": 562855,
+        "supervised_targets": 96016,
+        "padded_positions": 691560
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "initial_checkpoint": "runs/adaptation_v13_run1/models/prefix_grid/step_0.pt",
+      "initial_checkpoint_sha256": "ac73c35b3fc923c9c7059df91d1c9dc1fd534d7c907dac3495f66a421889c205",
+      "initial_model_sha256": "6f1bfe12ca7aad1c5f4e9f47bdc7b648a1d548c52a0f73c3a90a6d33f5257818",
+      "reference_files_sha256": {
+        "models/prefix_grid/train_predictions.jsonl": "c0cc5c6ecf79057299595f081a9fe674e83129853209444a3b3df92403c22072",
+        "models/prefix_grid/development_predictions.jsonl": "ce1597839375e9d70a6fbcb829b063c67211f9cd652f6e35df053f529bdfcf40",
+        "models/prefix_grid/metrics.json": "61ba3552cdbb2db5484db52715f8324537051eb14c17fb4e65ecc1256a9a8ab0"
+      },
+      "historical_reference_updates": 600,
+      "historical_reference_counts": {
+        "input_tokens": 562855,
+        "supervised_targets": 96016,
+        "padded_positions": 691560
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "initial_checkpoint": "runs/adaptation_v13_run1/models/prefix_graph/step_0.pt",
+      "initial_checkpoint_sha256": "88fdf1ffedf95d25250ae4bec1acf06aad934e94cae5193f4c1868ebb8e29f64",
+      "initial_model_sha256": "14c4716db7203d9e25b7046fd061f17b2f42519d98ea559f37f2a0e96a7146f7",
+      "reference_files_sha256": {
+        "models/prefix_graph/train_predictions.jsonl": "86456b345148b3f10e5bacf66b56981b5becfc970092a85222ea4cc2a8f93ed4",
+        "models/prefix_graph/development_predictions.jsonl": "a04d494102826becc97ee8a8e428ed2bd3493e866e2364d8179ba5c59d4b884d",
+        "models/prefix_graph/metrics.json": "8189df80fc83e190765cbe999affda9362e7f7117c4374a5eae6dc56eb4734c8"
+      },
+      "historical_reference_updates": 600,
+      "historical_reference_counts": {
+        "input_tokens": 562855,
+        "supervised_targets": 96016,
+        "padded_positions": 691560
+      }
+    }
+  ],
+  "inputs_sha256": {
+    "data/train.jsonl": "885af070b4e6d30d68383b01918ba31fbd4a8e107d7649f4a43a331e836e1a78",
+    "data/development.jsonl": "8e04cdca892162aacffb92985a0601c79d281f4148b19a66f41ab11241eb3e24",
+    "order.npy": "5f781d2c3049b79ea68bc43f8a024bdafb6df7732959a2134aaed20d00172c57",
+    "reference/scratch/metrics.json": "ac7e7928d8b4f6e74fb053cce12ea9f79154c2a15cd8615878186656648fd597",
+    "reference/scratch/train_predictions.jsonl": "0086987064478631542a3f858d4310e6c8d55a967f50bbea5d4c2fb6c8cacfd8",
+    "reference/scratch/development_predictions.jsonl": "e319322674332d27410dd77e941c9838ad62a027903b1ab8bb2d2ef869f1d22a",
+    "reference/grid_nca/metrics.json": "aee49dbf38d5ecfa8ef4b3cbc1ebb3b67629a9ea5702163daf1c0f2016f667f1",
+    "reference/grid_nca/train_predictions.jsonl": "115b1ed872ee7ab8242196d3835b75dd5a5fa8d518d0d383984faa78b1ddfb9a",
+    "reference/grid_nca/development_predictions.jsonl": "c21995cfeb90434d0c9aea37726f882398f95dc875d6f98f0bb67d542911b319",
+    "reference/graph_nca/metrics.json": "302342479155ca769d02a53944c9e35a3a4232e4e2695529bc136c9ed55bb6f1",
+    "reference/graph_nca/train_predictions.jsonl": "1198df4b3186198615ca3956cfe36cbe5bc5edee9410d1566057b97dacf2c6d0",
+    "reference/graph_nca/development_predictions.jsonl": "60d2034ab18d722d78062fd04d6c34a7519d4ec8c77009090a68588d4abaebc0",
+    "reference/prefix_grid/metrics.json": "a8f7a193d492355d4a4369d58cf872ac5fd534b83bc4dc134a56f7a1321e2742",
+    "reference/prefix_grid/train_predictions.jsonl": "2c91ab524a5b67051b2e1c8f74f77660a41c07c8a3c74b2fc3c86dcbd7515bd3",
+    "reference/prefix_grid/development_predictions.jsonl": "ce1597839375e9d70a6fbcb829b063c67211f9cd652f6e35df053f529bdfcf40",
+    "reference/prefix_graph/metrics.json": "5849ed29ba876e9a89afd5145a8bed2d922dd6f9171afc5b8476f4df963c7501",
+    "reference/prefix_graph/train_predictions.jsonl": "f647962060608899a90d8c31b19e91d893ca463fd773207715c5a041eac62667",
+    "reference/prefix_graph/development_predictions.jsonl": "a04d494102826becc97ee8a8e428ed2bd3493e866e2364d8179ba5c59d4b884d"
+  },
+  "selected_ids": {
+    "train": [
+      "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:bfs_distances:native",
+      "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:dijkstra_distances:native",
+      "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:bfs_distances:native",
+      "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:dijkstra_distances:native",
+      "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:bfs_distances:native",
+      "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:dijkstra_distances:native",
+      "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:bfs_distances:native",
+      "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:dijkstra_distances:native",
+      "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:bfs_distances:native",
+      "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:dijkstra_distances:native",
+      "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:bfs_distances:native",
+      "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:dijkstra_distances:native",
+      "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:bfs_distances:native",
+      "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:dijkstra_distances:native",
+      "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:bfs_distances:native",
+      "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:dijkstra_distances:native"
+    ],
+    "development": [
+      "737be0888ddc992e9e15ef3d4c844b7f9685c1f7e04c5b887cb38fbbdb8bda1b:bfs_distances:native",
+      "737be0888ddc992e9e15ef3d4c844b7f9685c1f7e04c5b887cb38fbbdb8bda1b:dijkstra_distances:native",
+      "fc32d5e6b25cc3f2391efbb36dbd2eec1f3305657e5801b7a94ab7a83cd7c2cc:bfs_distances:native",
+      "fc32d5e6b25cc3f2391efbb36dbd2eec1f3305657e5801b7a94ab7a83cd7c2cc:dijkstra_distances:native",
+      "84d339fbeaf26d8dd26a6b840c424842a00be716d32744f0043f94dd37774bc1:bfs_distances:native",
+      "84d339fbeaf26d8dd26a6b840c424842a00be716d32744f0043f94dd37774bc1:dijkstra_distances:native",
+      "3fd3009e5fe24c6b4e11d31538d67922bd86b74863c9ff68906cff7aba0ceed2:bfs_distances:native",
+      "3fd3009e5fe24c6b4e11d31538d67922bd86b74863c9ff68906cff7aba0ceed2:dijkstra_distances:native",
+      "0635d25eb9da3fe1032f35924d6c4219e6c68542adaa644c5bb21c3cd498c91e:bfs_distances:native",
+      "0635d25eb9da3fe1032f35924d6c4219e6c68542adaa644c5bb21c3cd498c91e:dijkstra_distances:native",
+      "00260323dac3ceeed141a894830d5f4fe704ac9fc396942b9a6e27f2288c038e:bfs_distances:native",
+      "00260323dac3ceeed141a894830d5f4fe704ac9fc396942b9a6e27f2288c038e:dijkstra_distances:native",
+      "e9e155d161c87caf2499c95556bbe22c8c813fa8eef0498e58ede80c317d0af2:bfs_distances:native",
+      "e9e155d161c87caf2499c95556bbe22c8c813fa8eef0498e58ede80c317d0af2:dijkstra_distances:native",
+      "937306d013fb629c8049c35b789f77e93eb6392b5c31a8ade28a720501362982:bfs_distances:native",
+      "937306d013fb629c8049c35b789f77e93eb6392b5c31a8ade28a720501362982:dijkstra_distances:native",
+      "7d3ad1cdd72eb57c76688cb6a0de6d5c97229426167ee94d450513bfe2641037:bfs_distances:native",
+      "7d3ad1cdd72eb57c76688cb6a0de6d5c97229426167ee94d450513bfe2641037:dijkstra_distances:native",
+      "aba9efead0290d98ff76e812cb7572cd3ed5df6a44a626153e3ff8657a7f0ee2:bfs_distances:native",
+      "aba9efead0290d98ff76e812cb7572cd3ed5df6a44a626153e3ff8657a7f0ee2:dijkstra_distances:native",
+      "ff69b6ba4cf9a5b894be0d0324e41b4c1055b1a3d79f425ede094e0daecf96ff:bfs_distances:native",
+      "ff69b6ba4cf9a5b894be0d0324e41b4c1055b1a3d79f425ede094e0daecf96ff:dijkstra_distances:native",
+      "a47db7212db21d810569492eaeb77e7fecd5fcb4b3eb6610ef83203e925fe783:bfs_distances:native",
+      "a47db7212db21d810569492eaeb77e7fecd5fcb4b3eb6610ef83203e925fe783:dijkstra_distances:native",
+      "b5f231faa7aa28713199cab84d5ad1e8218f36d5ab0eedab9b0ea53701d154d8:bfs_distances:native",
+      "b5f231faa7aa28713199cab84d5ad1e8218f36d5ab0eedab9b0ea53701d154d8:dijkstra_distances:native",
+      "df67e8f00160917fc3cd1ab5409075f7be51c336780af9519ad76d95ccdc6ea1:bfs_distances:native",
+      "df67e8f00160917fc3cd1ab5409075f7be51c336780af9519ad76d95ccdc6ea1:dijkstra_distances:native",
+      "503dc59c69508be6a914548f2f5800b040d2a14a60bf2459498ca2f11d28316a:bfs_distances:native",
+      "503dc59c69508be6a914548f2f5800b040d2a14a60bf2459498ca2f11d28316a:dijkstra_distances:native",
+      "eed56962f327a12bea5e1959246aca925e5071e8f7d1e258f571e982650a4567:bfs_distances:native",
+      "eed56962f327a12bea5e1959246aca925e5071e8f7d1e258f571e982650a4567:dijkstra_distances:native",
+      "297d7be8d7f75e7c3701cc0194701e7b9341635b0f94ae26beb86c1165629a11:bfs_distances:native",
+      "297d7be8d7f75e7c3701cc0194701e7b9341635b0f94ae26beb86c1165629a11:dijkstra_distances:native",
+      "7343b69bb0e5bb760d4704c698d99218ab64a6f5565c3a9b1dd9b8d1beb8df20:bfs_distances:native",
+      "7343b69bb0e5bb760d4704c698d99218ab64a6f5565c3a9b1dd9b8d1beb8df20:dijkstra_distances:native",
+      "fad3607e5da6459b227d306e5834e34a0ec0f997ccebcf25c72d3f89a83d97e3:bfs_distances:native",
+      "fad3607e5da6459b227d306e5834e34a0ec0f997ccebcf25c72d3f89a83d97e3:dijkstra_distances:native",
+      "3bf6d1558eb24e7d59473d1e425742a46bc09223b800ff6c7697d6de0bc6fbe0:bfs_distances:native",
+      "3bf6d1558eb24e7d59473d1e425742a46bc09223b800ff6c7697d6de0bc6fbe0:dijkstra_distances:native",
+      "de303f835c090b4e7920188261a3c17ca22b8b4c50e980f8c733010e1e6f5eb2:bfs_distances:native",
+      "de303f835c090b4e7920188261a3c17ca22b8b4c50e980f8c733010e1e6f5eb2:dijkstra_distances:native",
+      "6731fc2b5a9c01318f4f1242c3b12502584a5f9c35cb8b00c41a064283068b2e:bfs_distances:native",
+      "6731fc2b5a9c01318f4f1242c3b12502584a5f9c35cb8b00c41a064283068b2e:dijkstra_distances:native",
+      "58fee2fcb6a67ab8dabf1ee9914f1f29e15a8ecff3a61623c5a51d8474f866e2:bfs_distances:native",
+      "58fee2fcb6a67ab8dabf1ee9914f1f29e15a8ecff3a61623c5a51d8474f866e2:dijkstra_distances:native",
+      "dfe4079138beae41481dee8f56f0610907bc527d366687a71c542bf261a41292:bfs_distances:native",
+      "dfe4079138beae41481dee8f56f0610907bc527d366687a71c542bf261a41292:dijkstra_distances:native",
+      "537ea58dcfa8131e5f9504a65486a8cfb032044a1f3f3e071f321b5aa9e1673b:bfs_distances:native",
+      "537ea58dcfa8131e5f9504a65486a8cfb032044a1f3f3e071f321b5aa9e1673b:dijkstra_distances:native",
+      "1de4101fafbff7290cc9803db33f09d37a6899e2c156deb0091aee5b6f967eae:bfs_distances:native",
+      "1de4101fafbff7290cc9803db33f09d37a6899e2c156deb0091aee5b6f967eae:dijkstra_distances:native",
+      "61d50ebeaa8ed383e34b80864de563cbad3fbbef645ffc3aab446cc586c785cc:bfs_distances:native",
+      "61d50ebeaa8ed383e34b80864de563cbad3fbbef645ffc3aab446cc586c785cc:dijkstra_distances:native",
+      "6fb789485ef638c12ced3da354d56e1fedc13dbc3aa933a87e85d08a8ada3e7c:bfs_distances:native",
+      "6fb789485ef638c12ced3da354d56e1fedc13dbc3aa933a87e85d08a8ada3e7c:dijkstra_distances:native",
+      "91737f649770278ffab81c8077a35c632cb330a2f2271fcfba188cf7c7c172be:bfs_distances:native",
+      "91737f649770278ffab81c8077a35c632cb330a2f2271fcfba188cf7c7c172be:dijkstra_distances:native",
+      "73d5db1c13d7deabb5f56df6742f0d4dd662cc76b0fb8fd49d4f5982903057b2:bfs_distances:native",
+      "73d5db1c13d7deabb5f56df6742f0d4dd662cc76b0fb8fd49d4f5982903057b2:dijkstra_distances:native",
+      "d10491d10630cd33365e86ce7de636309da6a0ccd9117e1edc986c80d6ee50a5:bfs_distances:native",
+      "d10491d10630cd33365e86ce7de636309da6a0ccd9117e1edc986c80d6ee50a5:dijkstra_distances:native",
+      "4bf47b8410c0d44226e63410dbb5bde51cf47abd4a91099cd58e531a1fab3c59:bfs_distances:native",
+      "4bf47b8410c0d44226e63410dbb5bde51cf47abd4a91099cd58e531a1fab3c59:dijkstra_distances:native",
+      "510253567208ebf907f38ea6c1cc75af90016d13e8ebef1dc135d4e07555aef6:bfs_distances:native",
+      "510253567208ebf907f38ea6c1cc75af90016d13e8ebef1dc135d4e07555aef6:dijkstra_distances:native",
+      "27caa52bc39b16384f93308dcc787ce2ecd3964c94f2acc7f4f0a55bfd073e0a:bfs_distances:native",
+      "27caa52bc39b16384f93308dcc787ce2ecd3964c94f2acc7f4f0a55bfd073e0a:dijkstra_distances:native",
+      "6ce69ecbed2e185832c0956338580117bb749aaad52055884fb63a07c6801337:bfs_distances:native",
+      "6ce69ecbed2e185832c0956338580117bb749aaad52055884fb63a07c6801337:dijkstra_distances:native",
+      "51f9ed5fd6736b2500934aa3742e4cf2569dbed7dc0fd50048b1371848aad5f3:bfs_distances:native",
+      "51f9ed5fd6736b2500934aa3742e4cf2569dbed7dc0fd50048b1371848aad5f3:dijkstra_distances:native",
+      "c5dc23fcf069e946e6ba42107ca6762d476133d8858f062b9eedbd271e7a225f:bfs_distances:native",
+      "c5dc23fcf069e946e6ba42107ca6762d476133d8858f062b9eedbd271e7a225f:dijkstra_distances:native",
+      "7f92952b85ed4044bf33928f07bc1afa832a0021e0c19d0f210b234df446afff:bfs_distances:native",
+      "7f92952b85ed4044bf33928f07bc1afa832a0021e0c19d0f210b234df446afff:dijkstra_distances:native",
+      "e97ac81e4d479efe1ef4e84edf29f22eadc44dc734f665de6a78425dcb381efd:bfs_distances:native",
+      "e97ac81e4d479efe1ef4e84edf29f22eadc44dc734f665de6a78425dcb381efd:dijkstra_distances:native",
+      "662b6ac45580be974b94f9b81efa35e23360562d7104581a381fb7a593117e19:bfs_distances:native",
+      "662b6ac45580be974b94f9b81efa35e23360562d7104581a381fb7a593117e19:dijkstra_distances:native",
+      "3e177155ae20bbb63ee2a3742c91b3263f6e304ac3ca0562028d28c1f6932ce4:bfs_distances:native",
+      "3e177155ae20bbb63ee2a3742c91b3263f6e304ac3ca0562028d28c1f6932ce4:dijkstra_distances:native",
+      "cc3b64469181bb03a152ca8da7928c72e95995890c110ed77a06e848f131e0e3:bfs_distances:native",
+      "cc3b64469181bb03a152ca8da7928c72e95995890c110ed77a06e848f131e0e3:dijkstra_distances:native",
+      "757b90279c4814c44c9ad8be3bbf5c11f3625ce307a837c4d2e5bb6faef4334f:bfs_distances:native",
+      "757b90279c4814c44c9ad8be3bbf5c11f3625ce307a837c4d2e5bb6faef4334f:dijkstra_distances:native",
+      "ca1c7fe52d87a7c479978a2f76c1dc0a6080e33649ebbb2f2d81d9e2143ab5e8:bfs_distances:native",
+      "ca1c7fe52d87a7c479978a2f76c1dc0a6080e33649ebbb2f2d81d9e2143ab5e8:dijkstra_distances:native",
+      "dc0d7caec8947a277560109834ae394490f8f45975f63eea7eb391ec934a6b06:bfs_distances:native",
+      "dc0d7caec8947a277560109834ae394490f8f45975f63eea7eb391ec934a6b06:dijkstra_distances:native",
+      "b7ae232b6748ac63a54c2206a97955a570c567ae3dc8127b9e0e0c7d1fcd4f21:bfs_distances:native",
+      "b7ae232b6748ac63a54c2206a97955a570c567ae3dc8127b9e0e0c7d1fcd4f21:dijkstra_distances:native",
+      "0fb454424534f420f8ce1011848b87db6a585698447a779ddc81453cee6d29d1:bfs_distances:native",
+      "0fb454424534f420f8ce1011848b87db6a585698447a779ddc81453cee6d29d1:dijkstra_distances:native",
+      "9f497131fb4eb6f0b35e46c19df4b0aca1fa9180b9b86d35b1780490cff0f425:bfs_distances:native",
+      "9f497131fb4eb6f0b35e46c19df4b0aca1fa9180b9b86d35b1780490cff0f425:dijkstra_distances:native",
+      "300cbacffff8a16a2f784099c99abfe3e912c211f6e9051c540d6aa6fea565c4:bfs_distances:native",
+      "300cbacffff8a16a2f784099c99abfe3e912c211f6e9051c540d6aa6fea565c4:dijkstra_distances:native",
+      "d64a551863ddc8047d549c82d97e402064f5fd72356d7258ea8e6f0520cf4a4d:bfs_distances:native",
+      "d64a551863ddc8047d549c82d97e402064f5fd72356d7258ea8e6f0520cf4a4d:dijkstra_distances:native",
+      "82552c92961e0dbe84f022f202f4a5be8ec51b4843dc045357d3265f4106e9d8:bfs_distances:native",
+      "82552c92961e0dbe84f022f202f4a5be8ec51b4843dc045357d3265f4106e9d8:dijkstra_distances:native",
+      "b04d557461c13921b3e8f1d0549848b8fd9ad9324a2b83d8413f4490556f5a73:bfs_distances:native",
+      "b04d557461c13921b3e8f1d0549848b8fd9ad9324a2b83d8413f4490556f5a73:dijkstra_distances:native",
+      "8d6e9a2cc65f6143f9f4ded35a019ab4fad5f67ea641133dda1d13f0a1f784d1:bfs_distances:native",
+      "8d6e9a2cc65f6143f9f4ded35a019ab4fad5f67ea641133dda1d13f0a1f784d1:dijkstra_distances:native",
+      "8752e848bbd189a04df797b7aa1217f672dc64e300eb1f05b56e67d94bcdc248:bfs_distances:native",
+      "8752e848bbd189a04df797b7aa1217f672dc64e300eb1f05b56e67d94bcdc248:dijkstra_distances:native",
+      "c17f9be82d8e3e6c48eca540cc40259c76d42232bcc5481ee3e6df7a63c56e2a:bfs_distances:native",
+      "c17f9be82d8e3e6c48eca540cc40259c76d42232bcc5481ee3e6df7a63c56e2a:dijkstra_distances:native",
+      "fe4ea894a461ae864c509906dce2a3faa8db3a438290f8a0ce894dc76bf421c8:bfs_distances:native",
+      "fe4ea894a461ae864c509906dce2a3faa8db3a438290f8a0ce894dc76bf421c8:dijkstra_distances:native",
+      "02689ae3f6c2809a655f39e6a5f6ca9443f800343be486a014effc8ed35d0a42:bfs_distances:native",
+      "02689ae3f6c2809a655f39e6a5f6ca9443f800343be486a014effc8ed35d0a42:dijkstra_distances:native",
+      "cbd9009feb1e28ef527c8d6716d3646c6b1ac1b1a192df1253c725d19393a7ee:bfs_distances:native",
+      "cbd9009feb1e28ef527c8d6716d3646c6b1ac1b1a192df1253c725d19393a7ee:dijkstra_distances:native",
+      "6ce2a7443c478d6d743c4ffb80f1020fbdc484c666ee7b3648a83e1ddb4437a6:bfs_distances:native",
+      "6ce2a7443c478d6d743c4ffb80f1020fbdc484c666ee7b3648a83e1ddb4437a6:dijkstra_distances:native",
+      "00e1373519f743af2f47a1165c179b71d38bb7839f2abb4e0042ff48d1cf9abc:bfs_distances:native",
+      "00e1373519f743af2f47a1165c179b71d38bb7839f2abb4e0042ff48d1cf9abc:dijkstra_distances:native",
+      "f749d2b822eecd727c8036a2c1dd2466d7666beedef96b8e4fa81bff83f50178:bfs_distances:native",
+      "f749d2b822eecd727c8036a2c1dd2466d7666beedef96b8e4fa81bff83f50178:dijkstra_distances:native",
+      "039a246cd7cab4427c55ff9b7d35b9a47f10b541b6d81b99bf85b19d9931f5d1:bfs_distances:native",
+      "039a246cd7cab4427c55ff9b7d35b9a47f10b541b6d81b99bf85b19d9931f5d1:dijkstra_distances:native",
+      "b708e29e2f67539c9f35ab32d0f8f87eaec34c9e4ef0c16625ad84cf3a04e887:bfs_distances:native",
+      "b708e29e2f67539c9f35ab32d0f8f87eaec34c9e4ef0c16625ad84cf3a04e887:dijkstra_distances:native",
+      "4a337c8b1d8c8b8eb735a698baa6d97e5cd2f02a024eda89d8e6aae0b1c01039:bfs_distances:native",
+      "4a337c8b1d8c8b8eb735a698baa6d97e5cd2f02a024eda89d8e6aae0b1c01039:dijkstra_distances:native"
+    ]
+  },
+  "inventory": {
+    "train": [
+      {
+        "task": "bfs_distances",
+        "n": 8,
+        "examples": 4,
+        "graphs": 4,
+        "mean_edges": 11.5,
+        "mean_source_degree": 2.25,
+        "mean_target_distance": 1.71875
+      },
+      {
+        "task": "bfs_distances",
+        "n": 10,
+        "examples": 4,
+        "graphs": 4,
+        "mean_edges": 14.75,
+        "mean_source_degree": 2.75,
+        "mean_target_distance": 1.8
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 8,
+        "examples": 4,
+        "graphs": 4,
+        "mean_edges": 11.5,
+        "mean_source_degree": 2.25,
+        "mean_target_distance": 7.71875
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 10,
+        "examples": 4,
+        "graphs": 4,
+        "mean_edges": 14.75,
+        "mean_source_degree": 2.75,
+        "mean_target_distance": 7.25
+      }
+    ],
+    "development": [
+      {
+        "task": "bfs_distances",
+        "n": 8,
+        "examples": 32,
+        "graphs": 32,
+        "mean_edges": 11.40625,
+        "mean_source_degree": 2.78125,
+        "mean_target_distance": 1.58984375
+      },
+      {
+        "task": "bfs_distances",
+        "n": 10,
+        "examples": 32,
+        "graphs": 32,
+        "mean_edges": 13.96875,
+        "mean_source_degree": 3.28125,
+        "mean_target_distance": 1.703125
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 8,
+        "examples": 32,
+        "graphs": 32,
+        "mean_edges": 11.40625,
+        "mean_source_degree": 2.78125,
+        "mean_target_distance": 7.13671875
+      },
+      {
+        "task": "dijkstra_distances",
+        "n": 10,
+        "examples": 32,
+        "graphs": 32,
+        "mean_edges": 13.96875,
+        "mean_source_degree": 3.28125,
+        "mean_target_distance": 7.75625
+      }
+    ]
+  },
+  "exposures_per_example": {
+    "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:bfs_distances:native": 300,
+    "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:bfs_distances:native": 300,
+    "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:dijkstra_distances:native": 300,
+    "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:dijkstra_distances:native": 300,
+    "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:dijkstra_distances:native": 300,
+    "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:bfs_distances:native": 300,
+    "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:bfs_distances:native": 300,
+    "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:bfs_distances:native": 300,
+    "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:dijkstra_distances:native": 300,
+    "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:bfs_distances:native": 300,
+    "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:dijkstra_distances:native": 300,
+    "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:dijkstra_distances:native": 300,
+    "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:dijkstra_distances:native": 300,
+    "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:bfs_distances:native": 300,
+    "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:dijkstra_distances:native": 300,
+    "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:bfs_distances:native": 300
+  },
+  "per_example_counts": {
+    "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:bfs_distances:native": {
+      "input_tokens": 90,
+      "supervised_targets": 18
+    },
+    "52399d7916ade50d2cde6ca159c241ffca1c687120a2073380a151c8c5d0c0eb:dijkstra_distances:native": {
+      "input_tokens": 109,
+      "supervised_targets": 18
+    },
+    "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:bfs_distances:native": {
+      "input_tokens": 96,
+      "supervised_targets": 18
+    },
+    "531ac091da4597640f13e1fea31db80a8567e0d3b6ac47ef569a17e9a369972f:dijkstra_distances:native": {
+      "input_tokens": 119,
+      "supervised_targets": 18
+    },
+    "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:bfs_distances:native": {
+      "input_tokens": 93,
+      "supervised_targets": 18
+    },
+    "da044116cec9f80be5fe079b91520f012eb641060f36287c52cc928f996f33cc:dijkstra_distances:native": {
+      "input_tokens": 114,
+      "supervised_targets": 18
+    },
+    "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:bfs_distances:native": {
+      "input_tokens": 113,
+      "supervised_targets": 18
+    },
+    "e06f5de49984794aaaf81463d4849f2444c2f4eb345159ef47d1e0db2c04b939:dijkstra_distances:native": {
+      "input_tokens": 146,
+      "supervised_targets": 18
+    },
+    "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:bfs_distances:native": {
+      "input_tokens": 117,
+      "supervised_targets": 22
+    },
+    "01e6df13032f69105a8633ece2904d5bd05b6586f5a6a617efcd04ad11f336a5:dijkstra_distances:native": {
+      "input_tokens": 152,
+      "supervised_targets": 22
+    },
+    "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:bfs_distances:native": {
+      "input_tokens": 111,
+      "supervised_targets": 22
+    },
+    "1d7e5759e953077dd488f579617d7eff0af43f2e0f1de013b88c3811146e88e3:dijkstra_distances:native": {
+      "input_tokens": 138,
+      "supervised_targets": 22
+    },
+    "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:bfs_distances:native": {
+      "input_tokens": 109,
+      "supervised_targets": 22
+    },
+    "4afb5287d41d9bdc155b362fe40c50fbf6c6a9a1f0ca134a5403e7201bf492b6:dijkstra_distances:native": {
+      "input_tokens": 140,
+      "supervised_targets": 22
+    },
+    "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:bfs_distances:native": {
+      "input_tokens": 114,
+      "supervised_targets": 22
+    },
+    "96af6393ecd727aab423f493e4e7a4bd16a7425485a211e9cb0427b37e1566a8:dijkstra_distances:native": {
+      "input_tokens": 143,
+      "supervised_targets": 22
+    }
+  },
+  "expected_counts_per_arm": {
+    "input_tokens": 571200,
+    "supervised_targets": 96000,
+    "padded_positions": 708488
+  },
+  "sampled_order_sha256": "45c38903f5d8f905a6498b04ef020371a271eec35c797304e53bdbc4bb030f40",
+  "schedule_sha256": "d9cf302f13f09d30d4cf780ad26479b6287c26d4e811a48b51d87c5633a532fa",
+  "environment": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.2"
+  },
+  "ood_evaluation_allowed": false,
+  "scope": "One historical cohort; new small-cache CPU task fitting with imported 512-cache reference, not graph acceleration"
+}

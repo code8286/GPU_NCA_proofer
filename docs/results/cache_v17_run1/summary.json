@@ -1,0 +1,438 @@
+{
+  "plan_sha256": "6b52c649bdfab7fd8d43d11a308e62606a0e285a10f9210db2a502a629195028",
+  "models": [
+    {
+      "arm": "scratch",
+      "new64_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.00527375123660495,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.005385796488381498,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_development": {
+        "exact_match": 0,
+        "valid_format": 0.59375,
+        "node_accuracy": 0.128125,
+        "coverage": 1,
+        "teacher_nll": 2.0393273501871882,
+        "teacher_digit_accuracy": 0.2369140625,
+        "teacher_other_accuracy": 0.97265625
+      },
+      "reference512_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3109375,
+        "coverage": 1,
+        "teacher_nll": 0.8076353167972503,
+        "teacher_digit_accuracy": 0.37929687500000003,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_common": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.321875,
+        "coverage": 1,
+        "teacher_nll": 0.7967012884788494,
+        "teacher_digit_accuracy": 0.43125,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_development": {
+        "exact_match": 0,
+        "valid_format": 0.9921875,
+        "node_accuracy": 0.216015625,
+        "coverage": 1,
+        "teacher_nll": 0.9764048867786023,
+        "teacher_digit_accuracy": 0.2787109375,
+        "teacher_other_accuracy": 0.9993489583333334
+      },
+      "reference16_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0020813969685738324,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_development": {
+        "exact_match": 0,
+        "valid_format": 0.6640625,
+        "node_accuracy": 0.1203125,
+        "coverage": 1,
+        "teacher_nll": 2.5892281673876556,
+        "teacher_digit_accuracy": 0.2017578125,
+        "teacher_other_accuracy": 0.9352864583333333
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 280757,
+        "supervised_targets": 48004,
+        "training_seconds": 109.61564249996445
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "new64_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.004641203799543875,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.004617486625312552,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_development": {
+        "exact_match": 0,
+        "valid_format": 0.6640625,
+        "node_accuracy": 0.125390625,
+        "coverage": 1,
+        "teacher_nll": 2.187614717713603,
+        "teacher_digit_accuracy": 0.2138671875,
+        "teacher_other_accuracy": 0.965625
+      },
+      "reference512_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.30859375,
+        "coverage": 1,
+        "teacher_nll": 0.8140057895752211,
+        "teacher_digit_accuracy": 0.37265625,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_common": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.36875,
+        "coverage": 1,
+        "teacher_nll": 0.8039289035870265,
+        "teacher_digit_accuracy": 0.4015625,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.189453125,
+        "coverage": 1,
+        "teacher_nll": 0.9911621774440569,
+        "teacher_digit_accuracy": 0.2435546875,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0019325719395446226,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_development": {
+        "exact_match": 0,
+        "valid_format": 0.53125,
+        "node_accuracy": 0.096484375,
+        "coverage": 1,
+        "teacher_nll": 2.620473777335357,
+        "teacher_digit_accuracy": 0.204296875,
+        "teacher_other_accuracy": 0.945703125
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 280757,
+        "supervised_targets": 48004,
+        "training_seconds": 121.14896709999084
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "new64_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.004453035058380313,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.00438626205730295,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_development": {
+        "exact_match": 0,
+        "valid_format": 0.875,
+        "node_accuracy": 0.1708984375,
+        "coverage": 1,
+        "teacher_nll": 2.1339984448792206,
+        "teacher_digit_accuracy": 0.2125,
+        "teacher_other_accuracy": 0.9927083333333333
+      },
+      "reference512_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.35,
+        "coverage": 1,
+        "teacher_nll": 0.7768553625014819,
+        "teacher_digit_accuracy": 0.4125,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_common": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3671875,
+        "coverage": 1,
+        "teacher_nll": 0.770961719144048,
+        "teacher_digit_accuracy": 0.38437499999999997,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2107421875,
+        "coverage": 1,
+        "teacher_nll": 0.9983352744329982,
+        "teacher_digit_accuracy": 0.280859375,
+        "teacher_other_accuracy": 0.9993489583333334
+      },
+      "reference16_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0019333610198028703,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_development": {
+        "exact_match": 0,
+        "valid_format": 0.515625,
+        "node_accuracy": 0.0861328125,
+        "coverage": 1,
+        "teacher_nll": 2.8112477203185455,
+        "teacher_digit_accuracy": 0.1947265625,
+        "teacher_other_accuracy": 0.9196614583333333
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 280757,
+        "supervised_targets": 48004,
+        "training_seconds": 118.86125380000158
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "new64_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.005201749483995797,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.005189880732203422,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_development": {
+        "exact_match": 0,
+        "valid_format": 0.671875,
+        "node_accuracy": 0.1216796875,
+        "coverage": 1,
+        "teacher_nll": 2.093168921589867,
+        "teacher_digit_accuracy": 0.2314453125,
+        "teacher_other_accuracy": 0.96953125
+      },
+      "reference512_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.293359375,
+        "coverage": 1,
+        "teacher_nll": 0.8299657832312825,
+        "teacher_digit_accuracy": 0.3453125,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_common": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.375,
+        "coverage": 1,
+        "teacher_nll": 0.8215556860211035,
+        "teacher_digit_accuracy": 0.3734375,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.1958984375,
+        "coverage": 1,
+        "teacher_nll": 0.9659795184908762,
+        "teacher_digit_accuracy": 0.2546875,
+        "teacher_other_accuracy": 0.99921875
+      },
+      "reference16_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.001943060960346691,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_development": {
+        "exact_match": 0,
+        "valid_format": 0.625,
+        "node_accuracy": 0.1234375,
+        "coverage": 1,
+        "teacher_nll": 2.6779461951890218,
+        "teacher_digit_accuracy": 0.205859375,
+        "teacher_other_accuracy": 0.931640625
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 280757,
+        "supervised_targets": 48004,
+        "training_seconds": 114.74149689997648
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "new64_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.004722033705246359,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.004806338198064126,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "new64_development": {
+        "exact_match": 0,
+        "valid_format": 0.9765625,
+        "node_accuracy": 0.187109375,
+        "coverage": 1,
+        "teacher_nll": 2.1801155186300267,
+        "teacher_digit_accuracy": 0.214453125,
+        "teacher_other_accuracy": 0.9979166666666667
+      },
+      "reference512_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3109375,
+        "coverage": 1,
+        "teacher_nll": 0.8077033946046518,
+        "teacher_digit_accuracy": 0.380859375,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_common": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3,
+        "coverage": 1,
+        "teacher_nll": 0.807424821404807,
+        "teacher_digit_accuracy": 0.375,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference512_development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.213671875,
+        "coverage": 1,
+        "teacher_nll": 0.9713285652580896,
+        "teacher_digit_accuracy": 0.2751953125,
+        "teacher_other_accuracy": 0.99921875
+      },
+      "reference16_common": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0018397452530702727,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference16_development": {
+        "exact_match": 0,
+        "valid_format": 0.5390625,
+        "node_accuracy": 0.091796875,
+        "coverage": 1,
+        "teacher_nll": 2.719861644118287,
+        "teacher_digit_accuracy": 0.1958984375,
+        "teacher_other_accuracy": 0.950390625
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 280757,
+        "supervised_targets": 48004,
+        "training_seconds": 117.03260180002326
+      }
+    }
+  ],
+  "cache64_control_passed": true,
+  "new_scientific_optimizer_updates": 3000,
+  "imported_reference_optimizer_updates": 6000,
+  "new_language_or_ppt_updates": 0,
+  "new_ood_predictions": 0,
+  "original_random_rule_readiness": "still_failed",
+  "ood_allowed": false,
+  "graph_acceleration_claim": null,
+  "new_training_seconds": 1163.2688861998504,
+  "new_evaluation_seconds": 403.7276289999936,
+  "new_predictions_replayed": 1920,
+  "checkpoints": 20,
+  "plot_sha256": "be213652f792a4999a68a9917274578126d3082a8437581222ede37ad899575d"
+}

@@ -1,0 +1,324 @@
+{
+  "arm": "prefix_graph",
+  "curve": [
+    {
+      "step": 0,
+      "selection_split": "id_development",
+      "tokens": 0,
+      "targets": 0,
+      "seconds": 0.0,
+      "evaluation_seconds": 4.133628700001282,
+      "exact_match": 0,
+      "valid_format": 0,
+      "coverage": 1,
+      "node_accuracy": 0.0,
+      "cells": [
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0,
+          "exact_match": 0,
+          "node_accuracy": 0.0
+        },
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0,
+          "exact_match": 0,
+          "node_accuracy": 0.0
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0,
+          "exact_match": 0,
+          "node_accuracy": 0.0
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0,
+          "exact_match": 0,
+          "node_accuracy": 0.0
+        }
+      ],
+      "train_nll": {
+        "answer_eos_nll": 7.955120325088501,
+        "supervised_targets": 1152,
+        "examples": 64
+      },
+      "development_nll": {
+        "answer_eos_nll": 7.795510658621788,
+        "supervised_targets": 2560,
+        "examples": 128
+      }
+    },
+    {
+      "step": 100,
+      "selection_split": "id_development",
+      "tokens": 94119,
+      "targets": 16020,
+      "seconds": 39.78008000000409,
+      "evaluation_seconds": 37.73073760000261,
+      "exact_match": 0,
+      "valid_format": 0.9921875,
+      "coverage": 1,
+      "node_accuracy": 0.2166015625,
+      "cells": [
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.3671875
+        },
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.3375
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0.96875,
+          "exact_match": 0,
+          "node_accuracy": 0.08984375
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.07187500000000001
+        }
+      ],
+      "train_nll": {
+        "answer_eos_nll": 0.9976044967770576,
+        "supervised_targets": 1152,
+        "examples": 64
+      },
+      "development_nll": {
+        "answer_eos_nll": 1.0158766951411962,
+        "supervised_targets": 2560,
+        "examples": 128
+      }
+    },
+    {
+      "step": 300,
+      "selection_split": "id_development",
+      "tokens": 281468,
+      "targets": 48016,
+      "seconds": 116.64314490000834,
+      "evaluation_seconds": 69.24969830000555,
+      "exact_match": 0,
+      "valid_format": 1,
+      "coverage": 1,
+      "node_accuracy": 0.21796875,
+      "cells": [
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.34765625
+        },
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.340625
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.10546875
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.078125
+        }
+      ],
+      "train_nll": {
+        "answer_eos_nll": 0.8719382435083389,
+        "supervised_targets": 1152,
+        "examples": 64
+      },
+      "development_nll": {
+        "answer_eos_nll": 0.9382509153336287,
+        "supervised_targets": 2560,
+        "examples": 128
+      }
+    },
+    {
+      "step": 600,
+      "selection_split": "id_development",
+      "tokens": 562855,
+      "targets": 96016,
+      "seconds": 231.4185601000063,
+      "evaluation_seconds": 99.57527500000651,
+      "exact_match": 0,
+      "valid_format": 0.984375,
+      "coverage": 1,
+      "node_accuracy": 0.213671875,
+      "cells": [
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.36328125
+        },
+        {
+          "task": "bfs_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 1,
+          "exact_match": 0,
+          "node_accuracy": 0.309375
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 8,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0.96875,
+          "exact_match": 0,
+          "node_accuracy": 0.09765625
+        },
+        {
+          "task": "dijkstra_distances",
+          "regime": "id",
+          "family": "cyclic_er",
+          "n": 10,
+          "view": "native",
+          "count": 32,
+          "coverage": 1,
+          "valid_format": 0.96875,
+          "exact_match": 0,
+          "node_accuracy": 0.084375
+        }
+      ],
+      "train_nll": {
+        "answer_eos_nll": 0.7491743192076683,
+        "supervised_targets": 1152,
+        "examples": 64
+      },
+      "development_nll": {
+        "answer_eos_nll": 0.9739836916327477,
+        "supervised_targets": 2560,
+        "examples": 128
+      }
+    }
+  ],
+  "decision": {
+    "passed": false,
+    "first_pooled_crossing": {
+      "reached": false,
+      "step": null,
+      "tokens": null,
+      "seconds": null
+    }
+  },
+  "files_sha256": {
+    "models/prefix_graph/step_0.pt": "88fdf1ffedf95d25250ae4bec1acf06aad934e94cae5193f4c1868ebb8e29f64",
+    "models/prefix_graph/predictions_0.jsonl": "db65f07625d591ca259a51ff6aa22d6f0de9da104c54e1e395f71bb3b0d710dd",
+    "models/prefix_graph/step_100.pt": "a82a6c122291b1c63bf4564d5522d681bdaa1c4eda1c75954f40184fc955cc5d",
+    "models/prefix_graph/predictions_100.jsonl": "2be9a6af25ec9555e7f36c7c05a3761633815f88190f77519a83f71384ee26a7",
+    "models/prefix_graph/step_300.pt": "1bb22248eadbc5786b7e2e987cae365006ade2e1d779b09f5c71fd38bf284546",
+    "models/prefix_graph/predictions_300.jsonl": "2b4e6c3bacd8cb3fffc496b172e6d3bfaff32ec04b9fa3e1d6ee39be8b8aad6f",
+    "models/prefix_graph/step_600.pt": "ac56866748b5be07f0c42ad26775a85a2f3b0cecf0676bcf4ad65f49ed124e85",
+    "models/prefix_graph/predictions_600.jsonl": "a04d494102826becc97ee8a8e428ed2bd3493e866e2364d8179ba5c59d4b884d",
+    "models/prefix_graph/updates.jsonl": "3b461039a782fcc9be81d7c2f0b4027271cff6f8a45ca63a326f30685cca6a83"
+  },
+  "counts": {
+    "input_tokens": 562855,
+    "supervised_targets": 96016,
+    "padded_positions": 691560
+  },
+  "updates": 600,
+  "sampled_order_sha256": "72d931ccb60c8f6bd9b15a5dbe9fc0d34b8853c214fb58e39598c982c5bd3963",
+  "schedule_sha256": "d9cf302f13f09d30d4cf780ad26479b6287c26d4e811a48b51d87c5633a532fa",
+  "initial_model_state_sha256": "14c4716db7203d9e25b7046fd061f17b2f42519d98ea559f37f2a0e96a7146f7",
+  "train_seconds": 231.4185601000063,
+  "evaluation_seconds": 99.57527500000651
+}

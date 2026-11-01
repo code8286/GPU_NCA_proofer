@@ -1,0 +1,43 @@
+{
+  "scope": "New exact/closed-form arithmetic checks of the manuscript, not model training, empirical checkpoint scoring or a Lean execution.",
+  "quadratic_toy": {
+    "scratch": {
+      "first_hit": 39,
+      "previous_loss": 0.010138273576791854,
+      "hit_loss": 0.009149791903054648
+    },
+    "transferred": {
+      "first_hit": 25,
+      "previous_loss": 0.010657198791806313,
+      "hit_loss": 0.009618121909593607
+    },
+    "language_ratio": 1.56,
+    "equal_step_cumulative_ratio_K10": 1.1142857142857143,
+    "equal_step_cumulative_ratio_K20": 0.8666666666666667
+  },
+  "v4_primary_reconstruction": [
+    {
+      "reference_arm": "grid_nca",
+      "geometric_token_ratio": 0.9905188301157578,
+      "one_sided_p": 1.0
+    },
+    {
+      "reference_arm": "prefix_graph",
+      "geometric_token_ratio": 1.0,
+      "one_sided_p": 0.984375
+    }
+  ],
+  "exchangeable_probability_log_error": 1.7763568394002505e-15,
+  "binary_row_involution_cases": 16,
+  "weighting": {
+    "first_transition_mass": 0.5,
+    "first_patch_mass": 0.08333333333333333,
+    "patch_mass": 0.6666666666666666
+  },
+  "assessment_decomposition": {
+    "first_patch_delta": 0.49611978576285765,
+    "four_patch_delta": -0.08017917039978784,
+    "later_three_patch_mean_delta": -0.272278822454003
+  },
+  "retained_lean_statement_count": 44
+}

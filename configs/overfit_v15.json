@@ -1,0 +1,12 @@
+{
+  "schema_version": 15,
+  "purpose": "development_small_cache_overfit_positive_control",
+  "training_graphs_per_size": 4,
+  "selection_salt": "id-audit-v14-20261031",
+  "arms": ["scratch", "grid_nca", "graph_nca", "prefix_grid", "prefix_graph"],
+  "adaptation_config": "configs/adaptation_v13.json",
+  "reference_cache_examples": 512,
+  "small_cache_examples": 16,
+  "ood_evaluation_allowed": false,
+  "confirmatory_graph_claim_allowed": false
+}

@@ -1,0 +1,257 @@
+{
+  "plan_sha256": "2efa24ef3342b417e796078bdca5d1743e202bdee6e6bac532d51bd54cf05c65",
+  "models": [
+    {
+      "arm": "scratch",
+      "small_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0020813969685738324,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.6640625,
+        "node_accuracy": 0.1203125,
+        "coverage": 1,
+        "teacher_nll": 2.5892281673876556,
+        "teacher_digit_accuracy": 0.2017578125,
+        "teacher_other_accuracy": 0.9352864583333333
+      },
+      "reference_same_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.321875,
+        "coverage": 1,
+        "teacher_nll": 0.7967012884788494,
+        "teacher_digit_accuracy": 0.43125,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference_development": {
+        "exact_match": 0,
+        "valid_format": 0.9921875,
+        "node_accuracy": 0.216015625,
+        "coverage": 1,
+        "teacher_nll": 0.9764048867786023,
+        "teacher_digit_accuracy": 0.2787109375,
+        "teacher_other_accuracy": 0.9993489583333334
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 285600,
+        "supervised_targets": 48000,
+        "training_seconds": 121.01313140000639
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "small_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0019325719395446226,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.53125,
+        "node_accuracy": 0.096484375,
+        "coverage": 1,
+        "teacher_nll": 2.620473777335357,
+        "teacher_digit_accuracy": 0.204296875,
+        "teacher_other_accuracy": 0.945703125
+      },
+      "reference_same_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.36875,
+        "coverage": 1,
+        "teacher_nll": 0.8039289035870265,
+        "teacher_digit_accuracy": 0.4015625,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference_development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.189453125,
+        "coverage": 1,
+        "teacher_nll": 0.9911621774440569,
+        "teacher_digit_accuracy": 0.2435546875,
+        "teacher_other_accuracy": 1.0
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 100,
+        "input_tokens": 95200,
+        "supervised_targets": 16000,
+        "training_seconds": 45.692254499994306
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "small_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0019333610198028703,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.515625,
+        "node_accuracy": 0.0861328125,
+        "coverage": 1,
+        "teacher_nll": 2.8112477203185455,
+        "teacher_digit_accuracy": 0.1947265625,
+        "teacher_other_accuracy": 0.9196614583333333
+      },
+      "reference_same_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3671875,
+        "coverage": 1,
+        "teacher_nll": 0.770961719144048,
+        "teacher_digit_accuracy": 0.38437499999999997,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference_development": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.2107421875,
+        "coverage": 1,
+        "teacher_nll": 0.9983352744329982,
+        "teacher_digit_accuracy": 0.280859375,
+        "teacher_other_accuracy": 0.9993489583333334
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 100,
+        "input_tokens": 95200,
+        "supervised_targets": 16000,
+        "training_seconds": 40.79613420000169
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "small_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.001943060960346691,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.625,
+        "node_accuracy": 0.1234375,
+        "coverage": 1,
+        "teacher_nll": 2.6779461951890218,
+        "teacher_digit_accuracy": 0.205859375,
+        "teacher_other_accuracy": 0.931640625
+      },
+      "reference_same_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.375,
+        "coverage": 1,
+        "teacher_nll": 0.8215556860211035,
+        "teacher_digit_accuracy": 0.3734375,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference_development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.1958984375,
+        "coverage": 1,
+        "teacher_nll": 0.9659795184908762,
+        "teacher_digit_accuracy": 0.2546875,
+        "teacher_other_accuracy": 0.99921875
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 100,
+        "input_tokens": 95200,
+        "supervised_targets": 16000,
+        "training_seconds": 37.09169420002581
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "small_cache": {
+        "exact_match": 1,
+        "valid_format": 1,
+        "node_accuracy": 1,
+        "coverage": 1,
+        "teacher_nll": 0.0018397452530702727,
+        "teacher_digit_accuracy": 1.0,
+        "teacher_other_accuracy": 1.0
+      },
+      "development": {
+        "exact_match": 0,
+        "valid_format": 0.5390625,
+        "node_accuracy": 0.091796875,
+        "coverage": 1,
+        "teacher_nll": 2.719861644118287,
+        "teacher_digit_accuracy": 0.1958984375,
+        "teacher_other_accuracy": 0.950390625
+      },
+      "reference_same_cache": {
+        "exact_match": 0,
+        "valid_format": 1,
+        "node_accuracy": 0.3,
+        "coverage": 1,
+        "teacher_nll": 0.807424821404807,
+        "teacher_digit_accuracy": 0.375,
+        "teacher_other_accuracy": 1.0
+      },
+      "reference_development": {
+        "exact_match": 0,
+        "valid_format": 0.984375,
+        "node_accuracy": 0.213671875,
+        "coverage": 1,
+        "teacher_nll": 0.9713285652580896,
+        "teacher_digit_accuracy": 0.2751953125,
+        "teacher_other_accuracy": 0.99921875
+      },
+      "cache_competent": true,
+      "development_competent": false,
+      "first_cache_crossing": {
+        "reached": true,
+        "step": 300,
+        "input_tokens": 285600,
+        "supervised_targets": 48000,
+        "training_seconds": 113.67182599995431
+      }
+    }
+  ],
+  "small_cache_control_passed": true,
+  "new_scientific_optimizer_updates": 3000,
+  "imported_reference_optimizer_updates": 3000,
+  "new_language_or_ppt_updates": 0,
+  "new_ood_predictions": 0,
+  "original_random_rule_readiness": "still_failed",
+  "graph_acceleration_claim": null,
+  "new_training_seconds": 1215.7873099999924,
+  "new_evaluation_seconds": 217.22985259999405,
+  "new_predictions_replayed": 960,
+  "checkpoint_replays": 20,
+  "plot_sha256": "f455d695f24b1a856b981a37dd4bb892892a93b018be9e298dffb8967a0e1351"
+}

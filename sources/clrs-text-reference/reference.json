@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/google-deepmind/clrs",
+  "commit": "d1c2ad7af8437c7536cf329d9cef8fdf93184d9d",
+  "tag": "v2.0.1",
+  "paper": "https://arxiv.org/html/2406.04229v1",
+  "scope": "Reference only; local graph diagnostic is an explicit task/output adaptation, not official CLRS-Text scores",
+  "files": {
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/README.md",
+      "sha256": "dfc6c58b9d794434085cfc288f2c380c3beac288ecab841f11a23f493c0606d4"
+    },
+    "clrs/_src/clrs_text/README.md": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/clrs/_src/clrs_text/README.md",
+      "sha256": "df84d9b6b2084cac7c342b4880239afc229af7b110fa3f36cfe0f19a77746944"
+    },
+    "clrs/_src/clrs_text/clrs_utils.py": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/clrs/_src/clrs_text/clrs_utils.py",
+      "sha256": "b3c96fbd13af916b0b44cd1c2b8f6398c61cca645fb42a0b07af957e362a660f"
+    },
+    "clrs/_src/clrs_text/generate_clrs_text.py": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/clrs/_src/clrs_text/generate_clrs_text.py",
+      "sha256": "67a168aa7f365fb6cd271460c2958e67e58c0a3433704dc2ce6b0d3206f192f3"
+    },
+    "clrs/_src/algorithms/graphs.py": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/clrs/_src/algorithms/graphs.py",
+      "sha256": "75366fdd2bd72e8f84103dbda6417214fa071bd42237130909b0035b3cd34940"
+    },
+    "clrs/_src/specs.py": {
+      "url": "https://raw.githubusercontent.com/google-deepmind/clrs/d1c2ad7af8437c7536cf329d9cef8fdf93184d9d/clrs/_src/specs.py",
+      "sha256": "51f1cc936b28189c7b2e3b2030c30e224fb448f3d2846181983329448f1ed018"
+    }
+  }
+}

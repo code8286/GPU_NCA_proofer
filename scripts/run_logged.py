@@ -50,7 +50,30 @@ def main():
                          for p in sorted((ROOT / 'loss_weight_v8').glob('*.py'))}
     fit_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
                    for p in sorted((ROOT / 'fit_v9').glob('*.py'))}
+    diversity_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                         for p in sorted((ROOT / 'diversity_v10').glob('*.py'))}
+    confirmation_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                            for p in sorted((ROOT / 'confirmation_v11').glob('*.py'))}
+    ood_sources = {str(p.relative_to(ROOT)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+                   for p in sorted((ROOT / 'ood_v12').glob('*.py'))}
+    adaptation_sources = {str(p.relative_to(ROOT)).replace(chr(92), "/"): hashlib.sha256(p.read_bytes()).hexdigest()
+                          for p in sorted((ROOT / "adaptation_v13").glob("*.py"))}
+    id_audit_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                        for p in sorted((ROOT / "id_audit_v14").glob("*.py"))}
+    overfit_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                       for p in sorted((ROOT / "overfit_v15").glob("*.py"))}
+    error_audit_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                          for p in sorted((ROOT / "error_audit_v16").glob("*.py"))}
+    cache_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                     for p in sorted((ROOT / "cache_v17").glob("*.py"))}
+    scientific_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                          for p in sorted((ROOT / "scientific_transfer").glob("*"))
+                          if p.is_file() and p.suffix in {".py", ".json", ".md", ".txt"}}
     tick = time.perf_counter()
+    accel_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                     for p in sorted((ROOT / "accel_v18").glob("*.py"))}
+    fit_audit_sources = {p.relative_to(ROOT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest()
+                         for p in sorted((ROOT / "fit_audit_v19").glob("*.py"))}
     try:
         result = subprocess.run(command, cwd=args.cwd, env=env, capture_output=True,
                                 text=True, encoding="utf-8", errors="replace", check=False)
@@ -80,6 +103,17 @@ def main():
         "interaction_v7_sources_sha256": interaction_sources,
         "loss_weight_v8_sources_sha256": weighting_sources,
         "fit_v9_sources_sha256": fit_sources,
+        "diversity_v10_sources_sha256": diversity_sources,
+        "confirmation_v11_sources_sha256": confirmation_sources,
+        "ood_v12_sources_sha256": ood_sources,
+        "adaptation_v13_sources_sha256": adaptation_sources,
+        "id_audit_v14_sources_sha256": id_audit_sources,
+        "overfit_v15_sources_sha256": overfit_sources,
+        "error_audit_v16_sources_sha256": error_audit_sources,
+        "cache_v17_sources_sha256": cache_sources,
+        "accel_v18_sources_sha256": accel_sources,
+        "fit_audit_v19_sources_sha256": fit_audit_sources,
+        "scientific_transfer_sources_sha256": scientific_sources,
         "stdout": portable(stdout), "stderr": portable(stderr),
     }
     log = ROOT / "logs/checks.jsonl"

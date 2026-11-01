@@ -1,0 +1,42 @@
+{
+  "kind": "new CPU numerical development checks, no neural training",
+  "model_id": "steady_bridge_v1",
+  "plan_sha256": "9792cc9dc2a0f5213ac4ea487f369ba773a7d0d38ba7a58b46adc3d658357fb5",
+  "sources": {
+    "__init__.py": "a01e251e6e74e12db0a18315edb1b428beadfa90ca22a6e77a768f56fd4b6ee3",
+    "config.json": "df2b07d09a556c956cc6d0428fe308718f3f189b7265cd0799071487bc7d6252",
+    "EQUATION_AUDIT.md": "5cd7c33a703a085f248970bc47aee63aa23f3f4bf64f4a5e26989c0684b256bf",
+    "metrics.py": "be5254a46bf567c777751de682e75cd94326ad9065788c35423ae2e054567189",
+    "physics.py": "0d2354fbb0aae53168ed5f1837e07732668d34e6f8a8ca12385a2045a696235a",
+    "PROTOCOL.md": "3981537bad949a20c5cb3508dd32ea395f4f8b90f39029ddc6574b3358d9f1ae",
+    "README.md": "673c95a59463c8601a3f5209558e97121feea19fb46c6088df0b58bb8f9bbced",
+    "requirements.txt": "5b38e632ce60bc2814d0441240ce82fd4fc962a9b138a4012552907124d09119",
+    "run.py": "76039c524933fafe1ab360199d69841876bbe0d4c449f3e04e9cdb6b40679c5e",
+    "test_scientific_transfer.py": "99dc94446bceeece72f707b033234bc006a8fcc8132b7a5fb24afa84121abfb0"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "scipy": "1.17.0"
+  },
+  "train_accepted": 8,
+  "train_attempted": 8,
+  "development_accepted": 4,
+  "development_attempted": 4,
+  "max_profile_agreement": 9.6232069229929e-08,
+  "max_wall_agreement": 2.194326054194562e-09,
+  "verified_analytic_corrections": 4,
+  "max_correction_error": 0.0,
+  "raw_artifact_sha256": {
+    "analytic_corrections.json": "59ffe97a1f78658ff3c943471d803afd4979d36bc5c34ffbd4500250aee3a864",
+    "analytic_guesses.json": "b08aaa5d9e5caaec30db33b9c6554c1fd13e232342c215053f0b387e8721fe59",
+    "analytic_scores.json": "d658beb383bd36df36342f14a5ee7a691964a37ec3610ae9f293723fcc550622",
+    "development.json": "a4550827416c8cd5dea0aa177735aaad4c98e331705fdefe99c8c51640c4b083",
+    "plan.json": "22ba1e43e5490bd65512444a5680c92ed352a94151caa697857c86cd2b3e5cf6",
+    "train.json": "2af69911c158cb0b5b67d978bc9ab67620900a2f3731ae45ba9dcc24d93d7cd5"
+  },
+  "assessment_solutions_generated": false,
+  "extrapolation_solutions_generated": false,
+  "neural_updates": 0,
+  "manuscript_replication": false
+}
