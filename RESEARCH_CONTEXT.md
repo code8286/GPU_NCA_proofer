@@ -518,3 +518,31 @@ updates per arm and fixed blocks/first50/last50 summaries are retained. There is
 no fitting, new language/PPT/GPU/OOD/official-test evaluation or confirmation-gate
 change. A later longer-budget treatment must freeze data/model/objective/controls,
 schedule, target/censoring and costs separately, preserving all old endpoints.
+
+## Separate scientific-transfer milestone completion (2 November 2026)
+
+The numerical/specification milestone2 for the explicitly declared
+steady_hybrid_v2 is complete: all four cases pass original numerical variants
+and independent full-system49/65 spectral checks, with separate exact replay
+except timers. The failed first-order spectral attempt remains retained. This
+is not faithful reproduction of the unresolved CEJA manuscript or experimental
+validation. See docs/results/scientific_transfer_completion/REVIEW.md.
+
+Milestone3 now implements a matched numeric-interface runner and prepares all
+five actual original v4 cohort59 language starts, common adapter tensors,32/8
+ID-only reference profiles and fixed400-update schedule/competence/censoring.
+The real fit guard rejects before a fitting marker or scientific update because
+the retained original random-rule starts still fail stronger synthetic readiness.
+No old stage18 exception is inferred. Planned exposure is not measured training;
+new numeric query tokens are not language tokens. All26 new/retained scientific
+unit tests and213 root regressions pass locally. No new scientific neural fit,
+GPU/PPT/language/OOD/official-test result, graph speedup or cost recovery exists.
+
+## Milestone 3 exploratory execution and milestone 4 ID assessment
+
+All five original cohort 59 arms completed 400 matched numeric adaptation
+updates in the separate local CPU exploratory execution. Every arm passed
+0/8 ID development profiles at the endpoint and never reached the frozen
+competence criterion. All crossing times are censored at 400. The ID gate
+keeps OOD evaluation pending. Separate replay verifies 25 checkpoints and
+200 predictions. See [the review](docs/results/scientific_m3_exploratory/REVIEW.md).

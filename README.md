@@ -144,6 +144,11 @@ The detailed [research presentation](docs/presentation/GPU_NCA_Research_Detailed
 and its [slide/source index](docs/presentation/README.md) cover the theory,
 proofs, implementation, notebooks, visualizations and reviewed results through
 stage 8 (20 October 2026), including the negative weighting outcome.
+The updated [IEEE template paper through stage 19](docs/paper/transactions_2026_11_02/README.md)
+adds fresh confirmation, graph-task adaptation and the latest fitting audit,
+with the separate scientific-transfer numerical foundation. It includes the
+Word article, mathematical LaTeX companion, retained-result figures and provenance.
+
 The accompanying [research paper and editable LaTeX project](docs/paper/README.md)
 cover the completed work through stage 9, with source-grounded mathematics,
 reviewed results and explicit verification limits.

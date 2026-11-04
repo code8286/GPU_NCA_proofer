@@ -2804,3 +2804,184 @@ All four notebook builds pass. No new neural science, reserved outcome, compiler
 paid/remote run or external publication is claimed. After final logged recursive
 selection check, rebuild the starter and run direct Prod sync/check to avoid
 append-only logger drift. Preserve earlier PDFs/renders, ZIPs, sources/evidence.
+
+## 2026-11-02 - Updated paper in the supplied Transactions template
+
+Created a new author-attributed paper edition under
+`docs/paper/transactions_2026_11_02/`, with evidence through 1 November:
+stages 1-19 and the separate scientific-transfer numerical foundation.
+Preserved all earlier results and the October stage9 article; its original PDF
+retains SHA256 2fccf60a428add4c9493c20e4d277f3ab57a196c79819c8a3f0949a0c70380cf
+at the existing docs/paper/output/pdf archive location. The first provenance
+check expected the historical root output path and failed; discovering the
+existing archive location resolved it without moving or rebuilding that PDF.
+The user-supplied reference DOCX remains unchanged and is formatting authority,
+not a scientific source or instruction to submit, contact anyone or pay fees.
+
+Read and applied the document skill. Reviewed all seven template pages; recorded
+geometry, styles, slots and package preservation. New Word article is13 Letter
+pages,15 equations,8 tables and7 figures. Reuses full-width title/two-column
+body, source styles, captions/references and template-permitted full-width
+end tables/figures. Removes visible sample authors, ID/grant/biography examples;
+uses only the supplied Soumyajit Deb/VIT/contact details. Preserves20 opaque/style
+package parts byte-identically and original title/body page geometry. Fields
+refresh on opening; native Word field refresh was unavailable.
+
+The initial packaged render failed because this Windows runtime lacks soffice;
+Word COM also was unavailable. Downloaded an official LibreOffice25.2.7.2 MSI
+into ignored task space after network escalation. Administrative extraction
+failed (1601/access denied); archive extraction and read-only MSI path mapping
+provided a task-local renderer, without installing/changing desktop apps. Initial
+font hard links failed; temporary package font copies were used. No installed
+user LibreOffice was used. All QA uses the packaged render_docx helper and the
+explicit temporary renderer. Reference and final remain unmodified by export.
+
+Retained authoring failures: quoted mathematical primes caused an initial
+builder SyntaxError; fixed quoting. A UTF-8 diagnostic print needed explicit
+encoding. Visual review caught a title-only first page, duplicate header text
+and blank native OfficeMath preview. Minimal probes and font checks retained
+that renderer limitation. Corrected section flow/header and supplied600dpi
+mathematical fallback artwork while retaining native OfficeMath in a compatibility
+choice. Initial artwork clipped deep subscripts; exact math-image bounding
+boxes repaired it. All15 fallback images have content inside their bounds;
+LaTeX/JSON provide full mathematical editing sources. Native Word equation
+rendering is not claimed. Trimmed formal-scope prose to remove a near-empty page.
+
+All13 final pages were individually visually inspected. Final template-diff
+renders are pixel-identical to those reviewed pages. A portable rebuild yields
+all identical package parts. Content checks retain every source paragraph,
+210 rendered prose windows, numbering, byline/references and page bounds.
+Word SHA256:373e829b4eca17c344a8ca54f9a29aa2dd8a27c5eff10516bfb4e0389b655755.
+The new mathematical LaTeX companion compiled successfully with the desktop
+compiler; final source SHA78fcf72fd40769b6253e0aac42644ea3ba755769ce0919b4e9f2d74ebabb9f58.
+This does not recompile the older theory project or execute Lean.
+
+Retained failed primaries, all-censored stage18 ratios, objective-specific fresh
+weighted confirmation and unresolved stage19 seen fitting. Added explicit
+exact-match/node inequality and semantic-target/censoring derivations, retaining
+the conditional transfer proof and scientific similarity/conservative-radiation
+math. Arithmetic checks cover32 finite validity/correctness cases, rational
+quadratic first hits39/25, normalized weight masses and loss decomposition.
+Stage11 table/decisions, stage18 null crossings/ratios and stage19 zero exact
+scores match retained records. No new neural training, checkpoint scoring,
+scientific solver run, reserved/OOD/official-test access or GPU measurement.
+
+Added canonical JSON, readable/LaTeX sources, portable source builders, two
+retained-result plots plus five exact figure copies, equation assets, README,
+validation and source map with1057 research/evidence identities. Explicitly
+selected this complete project in publication.json; updated root README and
+CHANGELOG without rewriting the old paper snapshot. All440 local Markdown links
+pass. Static Lean source/evidence checks pass all44 statements across6 modules;
+no new Lean run. All four notebooks regenerate. Full suite213 is historical
+executed evidence, not rerun or relabeled by this documentation task. No remote
+CI, paid training, email, push, submission or external publication occurred.
+Final source-distribution checks and direct sync/check follow.
+
+Updated-paper final distribution checks pass:1348 selected files,82 embedded
+sources,12 pinned-reference files and historical evidence integrity. Starter CRC
+and all1348 archive hashes pass. All source-map identities and the original
+October PDF identity remain exact. Recursive source/Prod parity passes19 Lean,
+12 theory and34 updated-paper files, including all proof records, mathematical
+sources and the final Word article. No new scientific result is inferred from
+packaging. Final direct sync/check includes these completed log entries and this
+append; no further logged command will create transcript drift afterward.
+
+## 2026-11-02 - fully close declared-model milestone2; start milestone3
+
+User requests next-milestone work and full milestone2 completion. Read current
+research/methodology context and preserve updated-paper/stage19 work added by
+other sessions. Do not modify old neural runners/weights/protocols/results.
+Add a separate completion contract for steady_hybrid_v2: all original4 cases,
+independent full7-state Chebyshev/root49 AND65, cross-method profile/wall1e-5,
+collocation/BC1e-7 and dense defect1e-4; retain original variation checks.
+Preflight of the new independent radiative discretization passes; its logged
+output is an implementation check, distinct from the later frozen certificate.
+Original spectral Homann check covered only the pure-fluid limit. Full-model
+independence means independent discretization sharing the declared physical RHS.
+Bind selected model/derivation/completion sources and require separate-invocation
+replay of all numeric outputs except timers. No original source/evidence changed.
+
+Start milestone3 by declaring numeric2-token parameter/eta queries, output7-state
+regression with fixedscales, common newly initialized numeric heads and full
+retained transformer-backbone transfer. Integrate all5 original v4 cohort59
+language-final checkpoints (not later graph-task-adapted states); actual full/core/
+complete-adaptation-start hashes and shared language/head/order/schedule must
+verify. Prepare32 train/8 ID-development tuples with no reserved rows and no
+resampling failed references. Fix400 updates, all control arms, actual shared
+order, optimizer/LR, all8-profile/wall/BC competence gates and censoring before
+any scientific fitting. Bind original v5 result receipt and cohort gates; current
+starts must reject before a fit marker/optimizer update. Prior stage18 waiver
+is not applied. No new language/PPT, neural science fitting, OOD, GPU, official
+test, paid/remote run, email, push or publication is launched by implementation.
+Record imported T4 aggregate/stage costs separately from new CPU reference time;
+this integration is not full milestone5 cost-accounting or recovery evidence.
+
+### Completion certificate failure and numerical correction retained
+
+First frozen completion check rejects pure/Zn/TiO2, while radiative passes.
+The first-order Chebyshev state discretization permits a spurious between-node
+polynomial mode despite tiny node residual/wall error. Fixed off-node checks
+catch it; preserve complete failed PLAN/CHECKS and diagnostic output. Replace
+the discretization with direct3-field (third/second/second-order) polynomial
+residuals, analytic block Jacobian and differentiated7-state reconstruction.
+Keep ALL4 cases,49/65 resolutions and every original tolerance. Freeze a new
+revision in m2_completion_r2; never overwrite/relabel the failed first run.
+Seven focused tests now pass, including pure-case off-node regression and
+readiness rejection before any fitting marker. Adapter test uses only a tiny
+fixture backward/update check; it is not a scientific training result.
+
+### Declared milestone2 complete; milestone3 real preparation verified
+
+Revision2 frozen completion passes all4 cases at49 AND65, with max cross-method
+profile2.9284774883e-9, wall6.1205682744e-9 under unchanged1e-5 bounds. Separate
+invocation replay reproduces every numeric/status/error/decision except timers.
+Internal completion CPU timer0.3287978s. Seven public copies include original
+failed PLAN/CHECKS, revised PLAN/CHECKS/REPLAY and actual M3 PLAN/GATE; keep all
+under docs/results/scientific_transfer_completion with exact-copy provenance.
+Milestone2 numerical/specification completion is not manuscript/experimental
+validation. Original numerical evidence, data, sources and all old results stay.
+
+Real M3 preparation loads/checks original5 language-final checkpoints, full/core/
+complete numeric-adapter starts and common language/adapter policies. Prepare32
+train/8 dev whole profiles,400-update common order and planned515200 query tokens/
+1803200 scalars per arm. Actual new CPU reference timer3.6927962s. Separate
+input/start verification passes. Actualfit guard exits1 on retained v5 readiness
+BEFORE FIT_STARTED or optimizer update; expected rejection is retained, never
+silently waived. No scientific fit occurred. All26 scientific and213 root tests
+pass; small fixture backward/update checks are not scientific measurements.
+Add public-only checksum/numerical-decision/source/metadata auditor, explicit
+publication selection and review/context/changelog. No compiler/remote CI,
+new PPT/language/GPU/OOD/official test, paid job, email, push or publication.
+
+### Completion distribution checks and scope
+
+All453 first-party local Markdown links pass. Public-only evidence audit passes
+full numeric profile/wall recomputation, replay/source identities, seven exact
+copies, retained failed attempt and matched five-arm metadata with closed gate.
+All four notebook builds pass. Recursive selection includes26 scientific source/
+doc/config/test files,9 new evidence/review/provenance files,19 Lean and12 theory
+files. Whole docs selection also preserves existing paper/updated-paper assets;
+a queried docs/updated_paper prefix was not the actual authored-project location.
+No private training corpus or weight is selected. Final starter regeneration and
+direct sync/check follow the last logged check so logger appends cannot drift.
+No new proof/LaTeX compiler, remote CI, scientific neural fit or graph effect is
+claimed. The unchanged readiness requirement, manuscript limitations and every
+previous negative/failed endpoint remain explicit.
+
+## 2026-11-03 - milestone 3 exploratory execution
+
+Interpret the request to complete milestone 3 as authorization for a separate
+local exploratory study with the retained five-arm preparation. Bind the new
+protocol and runner before fitting. Preserve readiness rejection and original
+plan. Apply the unchanged ID competence criteria as the next objective.
+
+### Milestone 3 execution complete and milestone 4 ID decision
+
+All five exploratory arms complete 400 CPU updates and 515200 numeric query
+positions per arm. Each endpoint passes 0/8 development profiles. All first and
+sustained crossings are right-censored at 400. The ID decision keeps OOD gated.
+Replay matches all 200 predictions at 25 checkpoints and verifies scores,
+optimizer counts, LR traces and crossing decisions. All 26 scientific tests
+pass locally. Retain raw outputs in runs and compact score/cost receipts in
+scientific_m3_exploratory results. Select both scripts for distribution. The
+original rejected preparation and its stronger synthetic readiness are retained.

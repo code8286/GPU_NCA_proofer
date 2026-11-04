@@ -1,0 +1,50 @@
+{
+  "config": {
+    "model_id": "steady_hybrid_v2",
+    "scope": "numerical specification and reproduction of declared steady model, not manuscript/experimental validation",
+    "cases": {
+      "pure": {},
+      "zinc": {
+        "phi_zinc": 0.01
+      },
+      "titania": {
+        "phi_titania": 0.01
+      },
+      "hybrid_radiative": {
+        "phi_zinc": 0.01,
+        "phi_titania": 0.01,
+        "magnetic": 0.2,
+        "rotation": 0.2,
+        "buoyancy": 0.1,
+        "radiation": 0.2,
+        "temperature_ratio": 1.2
+      }
+    },
+    "spectral_points": [
+      49,
+      65
+    ],
+    "cross_method_profile_absolute": 1e-05,
+    "cross_method_wall_absolute": 1e-05,
+    "reference_variant_absolute": 0.0001,
+    "no_neural_updates": true
+  },
+  "model_sources": {
+    "physics.py": "0d2354fbb0aae53168ed5f1837e07732668d34e6f8a8ca12385a2045a696235a",
+    "materials.py": "1b8c0e27634589af30f34cce44c717e81ad89a14d4f44485e705840408e48784",
+    "hybrid_v2.py": "ce938601342ba0c352a3e3c23ae4f4c1ec6742377f41bc6f46acf5548578764a",
+    "spectral_hybrid.py": "d25d44d671498f7c7cc76498dd1a48aa9746d31e56cec1b2ab31997524e1dfee",
+    "independent_reference.py": "46266cf329aa5096830df9922b1afdb0a0c05593108a719b882a1d9c365ef527",
+    "complete_m2.py": "158f8f08e9720bc121962099e61377726f6bd3fc020888a9f998cd7df42c775c",
+    "completion_config.json": "061cee6f6f78c37c1f02047b459aeb2812e901eb662a08d643f89ad963380cd1",
+    "DERIVATION_V2.md": "83730a68c2ebcd73d3dcf9c26c35a1e2ae34c0492c65148562a61d62ff6a3764",
+    "MILESTONE2_COMPLETION.md": "c6d118a3171665f3d1beae4c4b7ef3aba9df4dbf87eb34a4120430aa9ae5463e",
+    "run.py": "76039c524933fafe1ab360199d69841876bbe0d4c449f3e04e9cdb6b40679c5e"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.2",
+    "scipy": "1.17.0"
+  },
+  "sha256": "859e346a6c8c4aa54779b92adae91a089ed3030a57c5bd760756114debda809c"
+}

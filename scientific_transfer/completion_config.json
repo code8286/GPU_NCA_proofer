@@ -1,0 +1,15 @@
+{
+  "model_id": "steady_hybrid_v2",
+  "scope": "numerical specification and reproduction of declared steady model, not manuscript/experimental validation",
+  "cases": {
+    "pure": {},
+    "zinc": {"phi_zinc": 0.01},
+    "titania": {"phi_titania": 0.01},
+    "hybrid_radiative": {"phi_zinc": 0.01, "phi_titania": 0.01, "magnetic": 0.2, "rotation": 0.2, "buoyancy": 0.1, "radiation": 0.2, "temperature_ratio": 1.2}
+  },
+  "spectral_points": [49, 65],
+  "cross_method_profile_absolute": 0.00001,
+  "cross_method_wall_absolute": 0.00001,
+  "reference_variant_absolute": 0.0001,
+  "no_neural_updates": true
+}

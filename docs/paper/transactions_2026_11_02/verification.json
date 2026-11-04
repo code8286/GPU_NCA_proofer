@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-02",
+  "docx_sha256": "373e829b4eca17c344a8ca54f9a29aa2dd8a27c5eff10516bfb4e0389b655755",
+  "template_sha256": "eea69bea29ff9c6e72eabc7717cd0cb58a39ea187894d73d09d70817773d817b",
+  "pages": 13,
+  "equations": 15,
+  "tables": 8,
+  "scientific_figures": 7,
+  "preserve_only_parts_unchanged": [
+    "_rels/.rels",
+    "word/endnotes.xml",
+    "word/media/image1.png",
+    "word/media/image2.png",
+    "word/media/image3.tiff",
+    "word/media/image4.wmf",
+    "word/embeddings/oleObject1.bin",
+    "word/media/image5.jpeg",
+    "word/theme/theme1.xml",
+    "customXml/item1.xml",
+    "customXml/itemProps1.xml",
+    "customXml/item2.xml",
+    "customXml/itemProps2.xml",
+    "word/numbering.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "docProps/app.xml",
+    "customXml/_rels/item1.xml.rels",
+    "customXml/_rels/item2.xml.rels"
+  ],
+  "all_source_prose_preserved": true,
+  "rendered_prose_windows": 210,
+  "portable_rebuild_package_parts_identical": true,
+  "all_pages_visually_reviewed": true,
+  "equation_artwork_bounds": "passed, 600 dpi compatibility path reviewed",
+  "native_equation_word_rendering": "not executed; native OMML retained in compatibility choice",
+  "latex_compilation": {
+    "tool": "Codex desktop compile_latex_document",
+    "kind": "success",
+    "date": "2026-11-02",
+    "main_tex_sha256": "78fcf72fd40769b6253e0aac42644ea3ba755769ce0919b4e9f2d74ebabb9f58"
+  },
+  "math_checks": [
+    "32 exact-versus-node cases",
+    "exact normalized weighting masses",
+    "positionwise decomposition",
+    "rational quadratic first hits 39 and 25"
+  ],
+  "retained_results_recomputed": [
+    "stage11 table and declared decisions",
+    "stage18 all-censored decisions and null ratios",
+    "stage19 all seen/development exact scores zero"
+  ],
+  "new_training_or_neural_scoring": false,
+  "new_lean_execution": false,
+  "qa_pdf_sha256": "3df04eb26b728541a7c9c7de76a1474a0d9174b6415ba625fb4d4bea917be5af"
+}

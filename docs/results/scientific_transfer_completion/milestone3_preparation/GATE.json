@@ -1,0 +1,24 @@
+{
+  "report": "docs/results/readiness_v5_run1/summary.json",
+  "sha256": "21678493cfe3f63ddd198c10bd43c3373b0c176af468115c1f78588106c3b4d0",
+  "results_sha256": "be515494a3f1ddb503fb514d909d932d6f66acc751eb0895d036dc14160487e0",
+  "cohort_gates": [
+    {
+      "frequency_advantage_nats": -0.6415656319351859,
+      "ordering_advantage_nats": -0.0011625824671277485,
+      "frequency_passed": false,
+      "ordering_passed": false,
+      "passed": false
+    },
+    {
+      "frequency_advantage_nats": -0.32750567666179276,
+      "ordering_advantage_nats": -0.0001426615362234429,
+      "frequency_passed": false,
+      "ordering_passed": false,
+      "passed": false
+    }
+  ],
+  "approved_initializations": [],
+  "allowed": false,
+  "reason": "retained v4 random-rule initializations fail stronger readiness; no exception inferred"
+}

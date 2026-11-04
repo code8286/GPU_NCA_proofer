@@ -1,0 +1,1051 @@
+{
+  "title": "Graph Neural Cellular Automata for Synthetic Pretraining and Controlled Transfer Evaluation",
+  "author": "Soumyajit Deb",
+  "affiliation": "Vellore Institute of Technology (VIT)",
+  "email": "soumyajit.deb2026@vitstudent.ac.in",
+  "date": "2 November 2026",
+  "evidence_cutoff": "1 November 2026",
+  "abstract": "Graph neural cellular automata provide structured synthetic sequences for pre-pre-training a transformer before an otherwise identical language stage. We combine typed-graph mathematics, conditional transfer and cost derivations, selected formal proofs, paired language experiments and controlled predictive diagnostics. In a retained six-cohort GPU study, graph initialization uses approximately 13.4% fewer language tokens than scratch but approximately 16.6% more cumulative recorded time; both graph-specific primary tests fail. Subsequent CPU studies expose weak first-transition prediction despite high trajectory accuracy. A prospectively specified weighted diversity comparison passes in three fresh initialization seeds, while its broader both-objective criterion fails. Later five-arm graph-task adaptation memorizes small caches but does not establish held-out competence. All arms miss a frozen baseline-relative semantic target through 600 updates, leaving acceleration ratios undefined. A checkpoint-only audit also finds zero exact answers on balanced seen probes, so unresolved fitting accompanies the held-out gap. A separate steady hybrid-flow numerical foundation passes fixed convergence and independent limiting-solver checks but contains no neural-transfer result. These findings support a reproducible competence-first evaluation framework rather than established graph-specific acceleration, general reasoning gains or cost recovery.",
+  "keywords": [
+    "Algorithmic reasoning",
+    "Cellular automata",
+    "Graph neural networks",
+    "Pretraining",
+    "Transfer learning"
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "I. Introduction",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Synthetic pre-pre-training (PPT) asks whether learning structured artificial sequences can improve the initialization used for subsequent language learning. We study graph neural cellular automata as an alternative to lattice automata, while keeping the downstream language stage identical. The retained evidence supports some language-stage transfer relative to scratch, but it does not establish a graph-specific advantage or cumulative cost recovery. Later controlled studies identify a narrow positive diversity result alongside persistent failures of first-transition prediction and graph-task semantic fitting."
+    },
+    {
+      "type": "paragraph",
+      "text": "The scientific question is about the learned transformer initialization, not faster execution of a graph generator. A valid comparison gives scratch, grid, graph and matched shuffled controls the same target-language data, head initialization, optimizer, learning-rate schedule and number of language updates. Synthetic generation and pre-pre-training are additional costs. Replacing part of the language budget by synthetic examples answers a different resource-allocation question and is retained separately as the historical pilot."
+    },
+    {
+      "type": "paragraph",
+      "text": "This article extends the earlier stage 9 account through the completed stage 19 diagnostic and the separately declared scientific-transfer numerical milestone, with an evidence cutoff of 1 November 2026. It contributes a typed-graph mathematical formulation, conditional transfer and cost derivations, a position-wise loss analysis, prospective semantic-target accounting, and an audit of what the measured experiments can support. Historical graphics processing unit (GPU) measurements, subsequent local central processing unit (CPU) fitting, checkpoint-only inference and numerical solver checks are identified separately throughout."
+    },
+    {
+      "type": "paragraph",
+      "text": "The strongest graph comparison is the seven-arm, six-cohort development study. Its two frozen graph-advantage tests fail. A fresh controlled binary-rule study subsequently confirms a prospectively specified weighted diversity comparison in three initialization seeds, while its broader both-objective criterion fails. In downstream graph tasks, all five arms remain right-censored at the 600-update semantic target, and a final seen-probe audit finds unresolved fitting even on selected training cases. These findings motivate a staged competence-first research program rather than a claim of general reasoning acceleration."
+    },
+    {
+      "type": "heading",
+      "text": "II. Related Work and Scope",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Lee et al. [1] motivate training language models using neural cellular-automaton sequences before ordinary language pre-training. We retain that initialization question and distinguish it from a matched-total-budget replacement pilot. Mordvintsev et al. [2] study learned local cellular dynamics; their growing-automata setting supplies conceptual context rather than an accuracy or speed benchmark for our categorical language-transfer experiment. Typed neighbor aggregation relates the graph construction to message passing [3], while the predictive model is an autoregressive transformer [4]."
+    },
+    {
+      "type": "paragraph",
+      "text": "WikiText [5] supplies the retained language development setting, and Adam-family optimization [6] is held fixed within each declared comparison. Selected elementary claims are formalized in Lean 4 [7]. Our retained research bundle [8] contains the actual protocols, source identities, checkpoint audit receipts and per-case results behind the article. A passed software test or saved proof receipt is not an additional scientific training replicate."
+    },
+    {
+      "type": "paragraph",
+      "text": "In-distribution (ID) competence and out-of-distribution (OOD) assessment are distinct. The later graph evaluation is inspired by CLRS-Text [9], which provides textual algorithmic traces. Our local breadth-first-search and Dijkstra distance tasks use an explicitly adapted prompt/output/scoring contract; the scores are not official CLRS-Text benchmark results and are not compared numerically with its larger language models. A separate collocation foundation uses SciPy boundary-value solving [10] to prepare a possible scientific-transfer application. Numerical verification of that declared steady model is not evidence of neural transfer or experimental validation of material physics."
+    },
+    {
+      "type": "paragraph",
+      "text": "The research gap is therefore causal and operational: can graph dynamics improve a common initialization beyond equally formatted frequency controls; can the synthetic predictor use relevant spatial information; and does any downstream benefit repay the extra work? Table I summarizes the complete sequence of studies without pooling unlike seeds, splits, objectives or hardware."
+    },
+    {
+      "type": "heading",
+      "text": "III. Mathematical Formulation",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "A. Typed Graph Dynamics and Serialization",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Let G have n vertices and d typed donor maps pi_r. A donor map specifies exactly which previous-state vertex is read in slot r; the slot type is retained when topology changes. With q categories, gather one-hot state vectors and apply the same local rule at every vertex:"
+    },
+    {
+      "type": "equation",
+      "tex": "u_i=[e(x_i);e(x_{\\pi_1(i)});\\ldots;e(x_{\\pi_d(i)})]",
+      "word": [
+        "uᵢ = [e(xᵢ); e(xπ₁₍ᵢ₎); …; e(xπd₍ᵢ₎)]"
+      ]
+    },
+    {
+      "type": "equation",
+      "tex": "\\ell_i=W_3\\operatorname{ReLU}(W_2W_1u_i),\\quad x_i^+=\\arg\\max_a(\\ell_{i,a}+\\tau g_{i,a})",
+      "word": [
+        "ℓᵢ = W₃ ReLU(W₂W₁uᵢ)",
+        "xᵢ⁺ = arg maxₐ (ℓᵢₐ + τgᵢₐ)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here e is one-hot encoding and g is Gumbel noise. The retained categorical generator uses a small nonzero temperature; it is stochastic and must not be silently relabeled deterministic. A grid convolution is a special typed graph gather when donor maps are translations. Relabeling vertices by a permutation Pi and relabeling every donor relation consistently yields F(Πx; ω, ΠG) = ΠF(x; ω, G). This equivariance does not imply invariance to changing edges while keeping the serialization fixed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Degree preservation alone does not establish rapid mixing: a degree-regular graph can be disconnected. For the lazy average on the periodic 8 by 8 Moore grid, Fourier diagonalization gives a nontrivial spectral radius (1 + sqrt(2))/3 = 0.8047378541. This is an analytic property of that linear averaging operator, not a measured rate for the nonlinear categorical generator. Changing h one-hot donor slots changes the squared Frobenius norm of the stacked gather by exactly 2h; this perturbation identity likewise gives no automatic direction of transfer."
+    },
+    {
+      "type": "equation",
+      "tex": "Q_G=\\frac{I+\\sum_{r=1}^{8}P_r}{9},\\qquad \\|\\mathcal{G}_G-\\mathcal{G}_{\\rm grid}\\|_F^2=2h",
+      "word": [
+        "QG = (I + Σᵣ₌₁⁸ Pᵣ)/9",
+        "‖𝒢G − 𝒢grid‖²F = 2h"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A 2 by 2 patch with categories a,b,c,d is encoded as z = a + qb + q²c + q³d, so 0 <= z < q⁴ and decoding is unique. With M patches per frame and a fixed serialized vertex order s, donor lag is M + s(i) - s(pi_r(i)). For a permutation donor map its vertex mean is M, by cancellation of the two order sums. The mean hides the lag distribution and the visibility of spatial information within a patch."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a deterministic rule conditioned on its rule and graph, the entire trajectory is a function of its initial state. Consequently the conditional trajectory entropy is bounded by the initial-state entropy and therefore by n log q. Fresh stochastic noise invalidates that bound unless it is also conditioned on. More saved frames can increase training tokens without increasing independent initial-condition information. This motivates explicit checks of phases, diversity and the first next-frame patch rather than reliance on pooled teacher-forced accuracy."
+    },
+    {
+      "type": "heading",
+      "text": "B. A Conditional Transfer Result",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Write the model parameters as backbone B and language-specific head or embedding E. The controlled language boundary resets E to a shared E₀ while retaining B. A perturbation in the reset coordinates does not transfer: T(B,E) = (B,E₀), with differential D T(δ B,δ E) = (δ B,0). Formalizing a projection identity does not prove the differential calculus of an entire transformer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let f be the downstream language loss with the common head and let g = gradient f(B₀). Assume that the gradient is L-Lipschitz along the line segment from B₀ to B₀ + δ. Apply the fundamental theorem of calculus to this segment and subtract the linear term. Cauchy-Schwarz then bounds the remainder:"
+    },
+    {
+      "type": "equation",
+      "tex": "f(B_0+\\delta)-f(B_0)-g^\\top\\delta=\\int_0^1[\\nabla f(B_0+t\\delta)-g]^\\top\\delta\\,dt",
+      "word": [
+        "f(B₀+δ) − f(B₀) − gᵀδ",
+        "= ∫₀¹ [∇f(B₀+tδ) − g]ᵀδ dt"
+      ]
+    },
+    {
+      "type": "equation",
+      "tex": "|f(B_0+\\delta)-f(B_0)-g^\\top\\delta|\\leq \\frac{L}{2}\\|\\delta\\|^2",
+      "word": [
+        "|f(B₀+δ) − f(B₀) − gᵀδ|",
+        "≤ (L/2) ‖δ‖²"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Indeed, the integrand magnitude is at most Lt times the squared perturbation norm, and integrating t from zero to one gives one half. A sufficient improvement condition is therefore a negative linear term larger than the worst-case remainder. For one synthetic gradient step δ = -η gₛᵧₙ, the condition becomes positive alignment of the target and synthetic gradients:"
+    },
+    {
+      "type": "equation",
+      "tex": "g^\\top g_{\\rm syn}>\\frac{L\\eta}{2}\\|g_{\\rm syn}\\|^2\\ \\Longrightarrow\\ f(B_0-\\eta g_{\\rm syn})<f(B_0)",
+      "word": [
+        "gᵀg_syn > (Lη/2) ‖g_syn‖²",
+        "⇒ f(B₀ − ηg_syn) < f(B₀)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a sufficient conditional result. The experiments do not estimate a valid global L or establish the alignment inequality for the transformer, so the derivation is not a proof of empirical acceleration. Shared graph structure alone cannot supply the missing condition. It explains why useful synthetic prediction and the effect of a retained backbone deserve separate measurements."
+    },
+    {
+      "type": "heading",
+      "text": "C. An Exact Numerical Example and Cost Recovery",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "For a quadratic loss with eigenvalues λⱼ and coordinates cⱼ, gradient descent has an exact spectral expression. When 0 < αλⱼ < 2, every nonzero spectral factor contracts. Reducing a slow eigencoordinate can lower a first-hit count even if all optimizer settings remain fixed:"
+    },
+    {
+      "type": "equation",
+      "tex": "f_n-f_*={1\\over2}\\sum_j\\lambda_j(1-\\alpha\\lambda_j)^{2n}c_j^2",
+      "word": [
+        "fₙ − f* = ½ Σⱼ λⱼ(1−αλⱼ)²ⁿcⱼ²"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Take eigenvalues 1 and 10, alpha = 0.05, scratch coordinates (1,1) and transferred coordinates (0.5,1). At loss threshold 0.01 the exact losses are one half times (0.95^(2n) + 10 times 0.5^(2n)) and one half times (0.25 times 0.95^(2n) + 10 times 0.5^(2n)). Their first integer hits are 39 and 25, giving 39/25 = 1.56. Adding 10 update-equivalent units of synthetic overhead yields 39/35; adding 20 yields 39/45. Thus faster downstream learning can coexist with worse cumulative cost. These are analytic toy values, not fitted neural results."
+    },
+    {
+      "type": "equation",
+      "tex": "S_{\\rm lang}={c_0N_0\\over c_GN_G},\\qquad S_{\\rm cum}={c_0N_0\\over C_{\\rm gen}+c_{\\rm ppt}K+c_GN_G}",
+      "word": [
+        "S_lang = c₀N₀/(cGNG)",
+        "S_cum = c₀N₀/(Cgen + c_ppt K + cGNG)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here c denotes comparable per-update cost, K the synthetic budget and Cgen the allocated generation cost. Cumulative recovery requires the downstream saving to exceed generation and synthetic-training overhead. Mixed CPU and T4 execution ledgers remain component costs; adding unlike hardware seconds is not a controlled throughput experiment or monetary cost estimate. Generation, setup, evaluation and abandoned work cannot be silently charged as zero."
+    },
+    {
+      "type": "heading",
+      "text": "D. Positionwise Loss and Semantic Targets",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "For the known binary spatial rule on a periodic four-cell row, define A = I + S_L + S_R over the field with two elements and F(x) = 1 + Ax. Cross terms cancel in A²; S_L² = S_R², so A² = I. Also A1 = 1, giving F(F(x)) = 1 + A1 + A²x = x. The resulting two-phase structure is useful for controlled tests but limits what can be inferred about arbitrary categorical or unseen rules."
+    },
+    {
+      "type": "equation",
+      "tex": "A^2=I,\\quad A1=1,\\quad F(F(x))=x\\quad (\\mathbb{F}_2)",
+      "word": [
+        "A² = I,  A1 = 1,  F(F(x)) = x  (𝔽₂)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The first-transition objective assigns weight six to all six next-transition targets and weight one to the remaining 36. Its normalizer is 72: the first-transition mass rises from 1/7 to 1/2, while the first patch receives 1/12 and all patch tokens together retain mass 2/3. Reweighting is not an extra data or update budget. Equal-count patch means obey the following accounting identity:"
+    },
+    {
+      "type": "equation",
+      "tex": "\\Delta\\overline L_{2:4}={4\\Delta L_{1:4}-\\Delta L_1\\over3}",
+      "word": [
+        "ΔL̄₂:₄ = (4ΔL₁:₄ − ΔL₁)/3"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "From stage 9, weighted-minus-standard assessment changes are +0.4961197858 nats at the first patch and -0.0801791704 for the four-patch mean. The implied later-three-patch mean change is -0.2722788225. This exact algebra explains how whole-transition likelihood can improve while first prediction worsens. Later teacher scores condition on true earlier patches; they do not measure autonomous execution."
+    },
+    {
+      "type": "paragraph",
+      "text": "For graph tasks let V_i indicate a valid parsed vector, y_i the target vector, source s_i and n_i the vertex count. Invalid vectors receive zero semantic credit. Define the unconditional non-source score in cell c by pooling its non-source nodes, and require all four task/size cells to beat a source-aware training-only marginal baseline by 0.10. Exact vector match is a separate all-components event:"
+    },
+    {
+      "type": "equation",
+      "tex": "A_c={\\sum_{i\\in c}V_i\\sum_{v\\ne s_i}{\\bf1}(\\hat y_{iv}=y_{iv})\\over\\sum_{i\\in c}(n_i-1)},\\quad E={1\\over m}\\sum_i V_i\\prod_v{\\bf1}(\\hat y_{iv}=y_{iv})",
+      "word": [
+        "Ac = Σᵢ∈c Vᵢ Σᵥ≠sᵢ 1(ŷᵢᵥ=yᵢᵥ)",
+        "      / Σᵢ∈c (nᵢ−1)",
+        "E = (1/m) Σᵢ Vᵢ ∏ᵥ 1(ŷᵢᵥ=yᵢᵥ)"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For any fixed valid vector, exact correctness implies every node is correct, hence its exact indicator is bounded above by its node-accuracy fraction. Averaging preserves this inequality for the corresponding example-weighted node score. There is no converse: a high fraction of correct nodes can coexist with zero exact vectors. A product of empirical node accuracies is not an exact-match estimate without an independence assumption. No such assumption is made here. Known source-zero answers are excluded from the semantic target to prevent a trivial contribution from driving readiness."
+    },
+    {
+      "type": "equation",
+      "tex": "k_a^*=\\min\\{k\\in\\mathcal E:\\ \\forall c, A_{a,c}(k)\\geq b_c+0.10,\\ V_a(k)\\geq0.95,\\ C_a(k)=1\\}",
+      "word": [
+        "k*a = min{k∈ℰ : all Ac(k) ≥ bc+0.10,",
+        "                    V(k) ≥ 0.95, C(k)=1}"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "V is pooled validity, C is complete coverage and the set ℰ contains the scheduled evaluation updates. A missing crossing through budget K is recorded as right-censored at K, not as an observed hit at K. If either arm lacks an observed crossing, the empirical crossing ratio is undefined. Setting both missing values to K would manufacture a speedup of one and change the estimand. This algebraic point is decisive for stage 18."
+    },
+    {
+      "type": "heading",
+      "text": "IV. Experimental Methods and Implementation",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "A. Versioned Language Transfer and Controls",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The first pilot assigns scratch 1000 language updates and synthetic arms 100 synthetic plus 900 language updates, with an additional scheduler mismatch. It is retained as a historical replacement experiment. The independent-stage v2 runner instead provides 1000 synthetic updates followed by the same 2000 language updates as scratch. V3 introduces graph donors and v4 adds prefix-matched shuffle controls. Historical source snapshots, returned archives and saved checkpoints remain immutable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The strongest v4 study uses six fresh cohort seeds 59, 71, 83, 97, 109 and 127 with seven arms: scratch, grid, graph, original grid-shuffle, original graph-shuffle, prefix-grid and prefix-graph. Each language stage has 8,192,000 input tokens; each synthetic stage adds 4,096,000. The shared backbone has 2,656,704 parameters, with 4,577,088 total parameters for the synthetic vocabulary and 12,306,048 for the language vocabulary. Language heads, batches, order and optimizer schedules are paired. The language development evaluation uses 32,768 tokens at 100-update cadence; the official language test is unused in v2-v4."
+    },
+    {
+      "type": "paragraph",
+      "text": "Categorical v4 data use a 12 by 12 lattice, ten states, burn-in of ten and 27 retained frames, with 38 serialized symbols per frame. The 1026-symbol retained sequence supplies a 1025-symbol prefix for 1024 input positions. Graph treatment changes typed donors while preserving the declared degree/slot structure. Prefix controls operate on the actual retained training prefix so that discarded tail symbols do not create a frequency mismatch. Figs. 1 and 2 show actual retained data and topology; it is not a newly generated illustrative training set."
+    },
+    {
+      "type": "paragraph",
+      "text": "Primary comparisons use the first recorded language crossing of each paired grid endpoint, rather than interpolating between evaluations. All seeds and censoring are retained. The geometric mean of within-cohort token ratios differs from a ratio of averaged endpoints. The v4 graph-versus-grid and graph-versus-prefix-graph co-primary tests each require their declared criterion; one-sided exact sign-test tails count ties as nonwins and use alpha 0.025. Secondary scratch comparisons cannot replace either primary."
+    },
+    {
+      "type": "heading",
+      "text": "B. Predictive Readiness and Controlled Spatial Tests",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Negative log-likelihood (NLL) is reported in nats per declared target token. Readiness compares coherent next-token loss with a causal exchangeable frequency model and with a matched shuffled ordering, requiring both declared margins. The frequency predictor conditions only on visible tokens, with fixed prior counts and sequential count updates. It must not peek at future symbols or compare incompatible token subsets. Full-sequence low loss alone can be driven by easy markers or within-frame context."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stages 6-11 use simpler fixed binary rules to isolate learnability, phase-disjoint data and neighbor sensitivity. The spatial bridge uses a 4 by 4 periodic grid, eight frames, 2 by 2 patches, alphabet 18 and context 47, with the same six-layer, width-192, four-head backbone. Each model receives 1000 updates, 188,000 input tokens and 168,000 supervised targets. First-patch prediction sees the initial frame and next start marker only. An intervention flips an initial neighboring bit outside the target patch that changes the true next patch; paired correctness requires both answers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The diversity study expands a nested 512-condition training cache to 4096 at fixed exposure, retaining standard and factor-six objectives and coherent/shuffled controls. Four thousand replacement draws do not expose all 4096 rows: observed diversity is reported separately from available cache size. Development stage 10 reuses inspected assessment data. Stage 11 prospectively selects weighted confirmation as primary, reserves fresh joint-phase-disjoint assessment pairs, uses three fresh initialization seeds and retains the standard stratum and broader both-objective criterion. The fresh seeds share one new split and one known rule; they are not independent rule cohorts."
+    },
+    {
+      "type": "heading",
+      "text": "C. Graph Task Evaluation and Adaptation",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The local graph suite predicts complete BFS or Dijkstra distance vectors on textual cyclic-ER-family graphs. Independent BFS/Dijkstra and Floyd-Warshall agree on the generated references. Native and changed-graph pairs diagnose reliance on adjacency; a cached-native answer can look strong on unchanged views while failing intervention pairs. ID calibration is required before interpreting larger-size or family-shift results. Later ID-only experiments do not retroactively erase the original random-rule readiness failure or authorize confirmatory OOD claims."
+    },
+    {
+      "type": "paragraph",
+      "text": "Five retained v4 cohort-59 final language models provide scratch, grid, graph, prefix-grid and prefix-graph starts. Adaptation preserves each full learned language head and uses a fresh optimizer. Within a study all arms share architecture, tokenizer, answer/EOS masks, data, order, schedule, batch and 600-update budget. Cache-size studies refit from these starts rather than continuing selected successful task checkpoints. Their changes in repeated presentations, sequence lengths and content mean equal update counts are not a claim of equal FLOPs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 18 separately freezes a new 512/128 ID sample, sizes eight and ten, both tasks, seven evaluations at updates 0,100,...,600 and the baseline-relative semantic target in (12). The baseline is fitted to training labels only; it knows the source but cannot use adjacency. Every arm completes all 600 updates regardless of intermediate performance. First observed crossing is primary; a subsequent-observation sustained crossing is only a sensitivity analysis. Every missing or invalid vector remains in the denominator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 19 freezes a balanced 128-case seen probe before new predictions, with 32 examples per task/size cell and both tasks on 64 selected training graphs. Each selected case was actually presented nine or ten times. It imports exactly the same 128 held-out predictions per arm from stage 18. New inference is restricted to 640 seen generations/teacher scores; no optimizer update occurs. Train and development match task/size counts but not all graph covariates, and the seen subset is not an exhaustive training census."
+    },
+    {
+      "type": "heading",
+      "text": "D. Code Evidence and Verification Boundaries",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The historical runner is experiment.py; independent versions are transfer_v2/, transfer_v3/ and transfer_v4/, with four reproducible notebook entry points. Controlled studies reside in readiness_v5/ through confirmation_v11/. Graph diagnostics and adaptation use ood_v12/, adaptation_v13/, id_audit_v14/, overfit_v15/, error_audit_v16/, cache_v17/, accel_v18/ and fit_audit_v19/. Each public review links frozen plans, result JSON/CSV files and provenance. Table VIII maps the latest claims to precise source functions and evidence records."
+    },
+    {
+      "type": "paragraph",
+      "text": "Checkpoint replay and public-only reconstruction answer different questions. A same-code replay loads retained weights and reproduces predictions; it is not a second independent training experiment. Independent parsing and token/count reconstruction can audit saved outputs without private weights but cannot recreate neural logits. The public distribution excludes raw corpora, weight files, optimizer tensors and caches, while retaining compact outputs, plans, traces and proof/documentation evidence. Configured CI jobs are not counted as executed checks."
+    },
+    {
+      "type": "heading",
+      "text": "V. Results",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "A. GPU Transfer and the Failed Graph Primary",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The pilot shows a negative result under its confounded replacement budget: graph takes approximately 1.432 times as long at the retained target and has higher final held-out byte NLL. Its result remains valid for that design but is not a clean rejection of independent-stage initialization transfer. V2 shows faster language-stage token crossings than scratch, with similar benefit for shuffled data and additional cumulative cost. V3 has paired grid-target graph crossings at 1800, 2000 and not by 2000, so its all-seed primary ratio is not estimated by dropping the censored seed."
+    },
+    {
+      "type": "paragraph",
+      "text": "In v4, graph versus scratch has a descriptive language-token speed ratio 1.15427, approximately 13.4% fewer language tokens, but cumulative-time ratio 0.85799, approximately 16.6% more recorded time. The frozen graph/grid contrast has zero wins, five ties and one loss, geometric token ratio 0.99052 and one-sided sign-test p = 1. Graph/prefix-graph has one win, four ties and one loss, ratio 1.00000 and p = 0.984375. Both co-primary graph claims fail. Means and cost axes are shown in Table II and Fig. 3; no graph-specific speedup follows from the secondary scratch comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "Independent CPU replay checks all 78 selected v4 stage checkpoints and six actual initializations, with maximum metric discrepancy 2.78275788e-7. It reproduces selected saved metric states, not GPU wall times or missing intermediate checkpoints. The imported GPU measurements remain distinct from the CPU verification."
+    },
+    {
+      "type": "heading",
+      "text": "B. Readiness and Positionwise Failures",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "The stronger stage 5 readiness diagnostic rejects all 12 original structured v4 models. Mean frequency advantages are -0.58755 for grid and -0.29795 for graph; ordering advantages are about 0.00085 and 0.00099 nats, below the 0.01 margin. Consequently the original synthetic admission gate is insufficient to establish dynamics-specific predictive competence. This later diagnostic does not alter the original logged v4 gate flags."
+    },
+    {
+      "type": "paragraph",
+      "text": "The simpler complement task reaches 100% accuracy and mean NLL 0.05642 in stage 6, demonstrating trainability on that fixed rule. Stage 7 spatial models reach 91.84% full-trajectory accuracy but only 47.40% first-patch, 42.08% intervention and 19.95% paired correctness. Sixfold first-transition weighting in stage 8 reduces those first/intervention values to 32.03% and 30.05%, with 11.20% paired correctness. Its primary fails in every seed even though trajectory readiness still passes. Stage 9 detects both held-out reversals and a within-training regression; the loss decomposition in (10) explains why the later teacher-forced patches can improve simultaneously."
+    },
+    {
+      "type": "heading",
+      "text": "C. Diversity Development and Fresh Confirmation",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 10 fits twelve new larger-cache models and imports twelve smaller-cache controls. Its study-wide both-objective primary fails: weighted passes all three initialization seeds, standard only one. Standard smaller-to-larger first accuracy decreases from 47.40% to 27.86%; weighted rises from 32.03% to 45.57%. The latter is still below the original small-cache standard accuracy. This is an objective-dependent development result rather than a general claim about diversity or language transfer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 11 freezes a separate weighted primary before 24 fresh fits. It excludes 4926 historical joint phase classes and reserves 128 native/intervention pairs, then 64 development and 4096 training states, with nested 512 rows. Weighted passes the >=0.01 native and intervention NLL improvements and unchanged readiness requirements in all three new seeds; standard passes one. Mean weighted native NLL changes from 1.511389 to 1.105500 and intervention NLL from 1.678323 to 1.218692. Native accuracy changes from 48.44% to 56.51%; intervention from 40.89% to 47.66%. Table III and Fig. 4 retain both objectives and cache sizes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The weighted confirmation passes as declared; the broader both-objective criterion fails and language remains gated. Three initialization seeds on one new split do not establish arbitrary-rule generalization, a dynamics-specific mechanism or GraphNCA acceleration. Final endpoints account for 24,000 updates and 4,512,000 input tokens, but actual fitting includes an interrupted 800-update write and totals 24,800 updates and 4,662,400 inputs. Failed and recovery command times are retained separately. A discarded partial fit is a real cost, not a negative result to omit."
+    },
+    {
+      "type": "heading",
+      "text": "D. Graph Tasks Separate Memorization From Generalization",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 12 reference controls attain 100% oracle exact/paired accuracy, whereas cached-native answers have 75% pooled exact and 0% paired correctness. All five historical neural starts produce zero valid and zero exact answers on 32 zero-shot calibration prompts each. This is a task-format/elicitation floor, not an interpretable OOD transfer gap. The local graph adaptation should not be represented as reproducing official CLRS-Text model scores."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 13 gives each arm the same 512-example cache and 600 updates. All final exact scores are 0/128; vector validity is already about 98-100%. Stage 14 finds 0/128 exact answers on both matched seen and held-out probes, with seen node accuracy 29.55-32.89% versus held-out 18.95-21.60%. Teacher-forced digit accuracy remains weak even when formatting tokens are nearly perfect. The gap does not identify capacity, optimization, representation or rollout as a unique cause."
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 15 refits a nested 16-example cache. Every arm obtains 16/16 exact cache answers after repeated exposure, yet all score 0/128 held out and held-out node accuracy falls to 8.61-12.34%. Stage 16 independently audits retained errors without new forwards: valid-vector nodes and gold-prefix digit predictions remain poor, so malformed output is only part of the problem. Stage 17 uses 64 examples; all arms reach 64/64 cache exactness but remain 0/128 held out. Their observed pooled 80% cache crossings all occur at update 300. These are fitting controls, not evidence of equal latent learning speed or graph reasoning."
+    },
+    {
+      "type": "paragraph",
+      "text": "Increasing cache diversity reduces repetition at fixed updates and changes sequence-level exposure. In stage 17 the held-out teacher NLL improves relative to the 16-cache runs for all arms, while node-accuracy changes are mixed and the historical 512-cache endpoints remain better on both. Table IV retains these different endpoints instead of selecting whichever metric favors graph. One inspected inherited initialization cohort cannot yield a confirmatory paired rule/topology effect."
+    },
+    {
+      "type": "heading",
+      "text": "E. Exploratory Acceleration Remains Censored",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 18 performs 3000 new CPU adaptation updates, 600 for each of five arms. All arms miss every required semantic-cell target throughout the 140 observed cell points and are right-censored at update 600. All final exact scores are 0/128 and vector validity is 100%; scratch has one exact answer at update 500 that does not persist. Final whole-node accuracy is 20.59% scratch, 21.66% grid, 20.78% graph, 21.52% prefix-grid and 20.61% prefix-graph. No finite graph/grid, graph/prefix-graph or graph/scratch time-to-target ratio is estimable. Fig. 5 shows every scheduled semantic-cell observation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each arm sees 562,823 actual unpadded input tokens, 96,024 supervised targets and 696,256 padded positions, rather than a configured count substituted for actual exposure. New fit-command wall time is 2561.106 seconds; summed training and evaluation times are 1375.383 and 1095.985 seconds. The inherited T4 language stage remains 2000 updates per arm and each synthetic start additionally carries 1000 PPT updates. Table VI retains these costs separately. The experiment measures ID task adaptation after language pre-training; it is not a new language convergence study or a GNN-kernel benchmark."
+    },
+    {
+      "type": "paragraph",
+      "text": "All 35 saved model/optimizer checkpoints and 4480 generations/teacher scores replay exactly in the retained verification. Independent parsing/count/cost checks and public-only reconstruction complement the replay. Original timings are observations, not expected bitwise-reproducible values. All-censored endpoints leave the requested empirical ratio undefined; they neither prove equivalence nor rule out a future benefit at another independently frozen budget."
+    },
+    {
+      "type": "heading",
+      "text": "F. Latest Seen Probe Shows Unresolved Fitting",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Stage 19 performs no training. Every unchanged update-600 arm has 0/128 exact vectors and fails the semantic target on both the balanced seen probe and the imported development set. Whole-node seen accuracy is 23.48-28.65% versus development 20.59-21.66%; teacher-forced seen digit accuracy is only 34.00-37.66%. Vector validity is 100% for all arms on both probes. Table V separates non-source cell means, whole-node example means and teacher digit means; they are different estimands."
+    },
+    {
+      "type": "paragraph",
+      "text": "The full 600-update traces show first-50 mean loss 3.038-3.320 and last-50 loss 0.834-0.863. All 30 fixed 100-update blocks, sampled identities, actual exposures, LR and clipping summaries are retained. A decreasing mixture of digit, punctuation and EOS losses does not imply competent graph computation. Seen examples already fail, so generalization alone is not a sufficient diagnosis. Nor does this audit prove a unique optimization defect or guarantee that extra updates will solve it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The newly scored 640 seen outputs and teacher scores reproduce exactly on separate same-code replay; the 640 development outputs are imported from stage 18, not newly predicted here. New seen evaluation timers sum 151.558 seconds, separate from preparation and replay. Fig. 6 shows non-source accuracy and actual loss-block means. All 213 root regression tests recorded before this paper task passed; their tiny software fixtures are not new scientific fitting evidence."
+    },
+    {
+      "type": "heading",
+      "text": "VI. Separate Scientific Transfer Numerical Foundation",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "The newest application branch declares a steady local-pole rotating-sphere boundary-layer model, steady_hybrid_v2, independently of a supplied unsteady nanofluid manuscript. Its visual equation audit is partial: a suspected Prandtl inconsistency is withdrawn after inspecting the full fraction, while printed density/momentum issues remain unresolved and exact author code is unavailable. Faithful reproduction remains disabled. The declared model, its closures and its solver results must not be presented as a repaired replication of that manuscript."
+    },
+    {
+      "type": "paragraph",
+      "text": "With eta = z sqrt(a/nu_f), radial velocity u = ar f′, normal velocity w = -2 sqrt(a nu_f) f, azimuthal velocity v = Omega r g and temperature T = Tinf + DeltaT theta, continuity is satisfied exactly. Constant effective mixture properties and a Rosseland radiative conductivity give the following reduced momentum and conservative thermal equations:"
+    },
+    {
+      "type": "equation",
+      "tex": "n_\\mu f'''+n_\\rho(2ff''+1-f'^2+R g^2)-n_\\sigma M^2(f'-1)+n_\\beta\\Lambda\\theta=0",
+      "word": [
+        "nμ f‴ + nρ(2ff″ + 1 − f′² + Rg²)",
+        "− nσM²(f′−1) + nβΛθ = 0"
+      ]
+    },
+    {
+      "type": "equation",
+      "tex": "n_\\mu g''+n_\\rho(2fg'-2f'g)-n_\\sigma M^2g=0",
+      "word": [
+        "nμg″ + nρ(2fg′−2f′g) − nσM²g = 0"
+      ]
+    },
+    {
+      "type": "equation",
+      "tex": "[K(\\theta)\\theta']'+2\\mathrm{Pr}\\,n_{cp}f\\theta'=0,\\quad K(\\theta)=n_k+R_d[1+(r_T-1)\\theta]^3",
+      "word": [
+        "[K(θ)θ′]′ + 2Pr ncp fθ′ = 0",
+        "K(θ) = nk + Rd[1 + (rT−1)θ]³"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here property ratios n are relative to the base fluid, R = (Omega/a)², M² = sigma_f B²/(rho_f a), Lambda = g beta_f DeltaT/(a² sphere_radius), Pr = mu_f cp_f/k_f, Rd = 16 sigma_SB Tinf³/(3 k_star k_f) and rT = Tw/Tinf. Distinct symbols distinguish rotation R from the physical sphere radius. At the wall f = f′ = 0 and g = theta = 1; the finite-domain far boundary imposes f′ = 1 and g = theta = 0. The model neglects unsteadiness, induced fields, migration, Joule/viscous heating and heat sources; its local geometry and optically thick closure are assumptions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expanding the thermal divergence gives K theta″ + (dK/dtheta)(theta′)². The nonlinear derivative term is necessary for the conservative radiation model and is explicitly tested. Final mixture volume fractions are used, with direct volume sums for density and heat capacity, a declared dilute viscosity closure, and sequential spherical Maxwell mixing in the stated Zn-then-TiO2 order. Imported table properties are unvalidated inputs, not newly measured material constants. Zero loading returns all six ratios exactly one."
+    },
+    {
+      "type": "paragraph",
+      "text": "Four frozen cases—pure, Zn-only, TiO2-only and hybrid radiative—pass base, tighter-tolerance, initial-mesh and domain-extension checks. Across 12 comparisons the maximum profile discrepancy is 2.4200894622e-9 and wall-coefficient discrepancy 4.0103629306e-9 against the unchanged 1e-4 criterion. An independent Chebyshev/root velocity calculation and linear spectral thermal solver at 49 and 65 nodes do not call solve_bvp or start from its solution. Their largest Homann-limit wall discrepancies against collocation are 2.2594370819e-9 and 8.0424511495e-10 under the fixed 1e-5 criterion. Fig. 7 and Table VII retain the actual numerical records."
+    },
+    {
+      "type": "paragraph",
+      "text": "These checks establish numerical consistency for the declared cases and limiting equations, not uniqueness of all solution branches, validation of every physical closure or neural acceleration. Dimensionless outputs are explicitly n_mu f″(0), -n_mu g′(0) and -K(1)theta′(0); they are not the supplied manuscript’s skin-friction/Nusselt normalizations. The numerical milestone records 0.2718832 internal CPU seconds excluding startup, imports, output and packaging, and zero neural updates. Neural freezing, held-out ID competence, reserved OOD evaluation and full inherited-stage cost accounting remain pending."
+    },
+    {
+      "type": "heading",
+      "text": "VII. Discussion and Limitations",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Three levels of inference must remain separate. First, a lower language-stage crossing relative to scratch is compatible with nonspecific frequency or formatting transfer and does not establish graph causation. Second, learning a known binary rule with fresh phases is narrower than learning unseen categorical dynamics. Third, a complete answer format, low teacher-forced loss or a memorized small cache is weaker than generated graph-task competence. The later diagnostics provide concrete counterexamples to treating those proxies as interchangeable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The positive result is specific: a prospectively frozen weighted larger-cache comparison improves native and neighbor-intervened first-patch NLL in all three fresh initialization seeds on one known rule and one split. It leaves the broader both-objective claim false and the original categorical readiness bridge unresolved. The negative results are also specific: v4 graph primaries fail, weighting at the narrow cache fails, all stage 18 semantic crossings are censored, and stage 19 seen fitting is not established. None is a universal impossibility result."
+    },
+    {
+      "type": "paragraph",
+      "text": "Statistical scope is limited by small models and budgets, shared caches, related tasks on the same graph and repeated use of historical starts. Six v4 cohorts are distinct from three paired initialization seeds on a single phase split, and both differ from one inherited graph-task cohort. A ratio of means, a geometric mean of paired ratios, token accuracy, node-micro accuracy and cell-macro accuracy must not be silently exchanged. Development criteria are not p-values, and reused cases do not become independent samples through repeated scoring."
+    },
+    {
+      "type": "paragraph",
+      "text": "The mathematical transfer condition supplies a clear sufficient mechanism but no empirical measurement of its assumptions. The exact quadratic example is illustrative, the deterministic entropy bound is conditional, and regular degree does not ensure useful mixing. Selected Lean statements support their declared finite/algebraic scope, not a verified implementation of the full transformer, scientific solver or empirical causal claim."
+    },
+    {
+      "type": "paragraph",
+      "text": "The scientific-transfer branch offers a plausible larger-scale testbed: a learned initialization could eventually propose a numerical starting guess whose corrected solution is compared with a standard guess. The current analytic guess equals its ordinary baseline and demonstrates the scoring/correction pipeline only. A future learned comparison must freeze a validated target model, whole-parameter-tuple splits, a common adaptation stage, missing/failure denominators, independent residual/mesh/domain checks and complete amortized costs. Numerical agreement alone cannot fill the absent neural result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The next useful graph-task experiment should change one property at a time and prospectively freeze its budget, semantic targets and censoring. Establishing seen fitting is a prerequisite to attributing held-out failure entirely to generalization; establishing ID competence is a prerequisite to interpreting OOD performance. Longer training, alternative representations or a categorical bridge are candidate studies, not results. All controls, negative endpoints and earlier gates remain available for those decisions."
+    },
+    {
+      "type": "heading",
+      "text": "VIII. Conclusion",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "Graph neural cellular automata provide a precise structured synthetic source and a useful setting for studying initialization transfer. In the measured small-scale studies, synthetic pre-pre-training can reduce language-stage tokens relative to scratch, but graph-specific advantage and cumulative cost recovery are not established. Controlled spatial diagnostics reveal position-sensitive failure, and a narrow diversity benefit survives fresh confirmation without supporting broader claims. The latest graph-task learning curves remain fully censored and their endpoints fail even a selected seen-probe semantic target. The resulting contribution is a mathematical and reproducible experimental account of these distinctions, together with a separately verified numerical application foundation for future competence-controlled transfer tests."
+    },
+    {
+      "type": "heading",
+      "text": "Appendix A. Formal Scope and Reproducibility",
+      "level": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "The retained Lean core has 44 statements in six modules: Graph (5), Serialization (8), Transfer (8), LinearSurrogate (4), Quadratic (5) and Numerics (14). Saved reports list standard axioms propext, Classical.choice and Quot.sound as applicable. The scope excludes full-transformer calculus, entropy and spectral analysis, new semantic-target derivations and the scientific solver. This revision does not execute Lean."
+    },
+    {
+      "type": "paragraph",
+      "text": "Four notebook builders, frozen protocols, compact outputs and provenance accompany the article [8]. All scientific measurements predate this revision. Preparing the paper adds mathematical exposition, figure rendering and document checks, with zero new scientific fits, checkpoint scoring, OOD or official-language-test evaluations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Public records support score-accounting audits; neural replay requires the retained private checkpoints. Source maps bind this article to its evidence and original experimental scope."
+    },
+    {
+      "type": "heading",
+      "text": "Appendix B. Tables and Figures",
+      "level": 1
+    },
+    {
+      "type": "table",
+      "title": "Study sequence and evidence type",
+      "headers": [
+        "Stage",
+        "Question and new work",
+        "Outcome"
+      ],
+      "rows": [
+        [
+          "1",
+          "Historical total-budget GPU pilot",
+          "Negative; unequal language exposure"
+        ],
+        [
+          "2–4",
+          "Independent-stage GPU transfer and graph controls",
+          "Scratch-relative token benefit; graph primaries fail"
+        ],
+        [
+          "5",
+          "CPU readiness on retained models",
+          "All 12 original structured models fail"
+        ],
+        [
+          "6–7",
+          "CPU fixed-rule trainability and spatial bridge",
+          "Simple rule learned; first spatial prediction weak"
+        ],
+        [
+          "8–9",
+          "CPU weighting and checkpoint fit analysis",
+          "Weighting primary fails; aggregate loss masks position errors"
+        ],
+        [
+          "10–11",
+          "CPU diversity development and fresh confirmation",
+          "Weighted confirmation passes; both-objective criterion fails"
+        ],
+        [
+          "12–14",
+          "CPU graph calibration, adaptation and seen audit",
+          "No exact task competence; seen fitting unresolved"
+        ],
+        [
+          "15–17",
+          "CPU cache-size fits and retained error audits",
+          "16/64 caches memorized; held-out exact remains zero"
+        ],
+        [
+          "18",
+          "CPU five-arm ID learning curves",
+          "All censored at 600; no finite speed ratio"
+        ],
+        [
+          "19",
+          "CPU checkpoint-only seen and trace audit",
+          "0/128 seen and held out in all arms"
+        ],
+        [
+          "Separate",
+          "Steady hybrid numerical reference checks",
+          "Four fixed cases pass; neural milestones pending"
+        ]
+      ],
+      "source": "RESULTS.md; docs/results/*/REVIEW.md"
+    },
+    {
+      "type": "table",
+      "title": "V4 language endpoints and frozen graph comparisons",
+      "headers": [
+        "Arm or contrast",
+        "Mean final NLL or paired token ratio",
+        "Frozen inference"
+      ],
+      "rows": [
+        [
+          "Scratch",
+          "5.273956",
+          "No synthetic pre-pre-training"
+        ],
+        [
+          "Grid",
+          "5.230608",
+          "Reference for primary"
+        ],
+        [
+          "Graph",
+          "5.234337",
+          "13.4% fewer language tokens vs scratch; extra cumulative cost"
+        ],
+        [
+          "Original grid shuffle",
+          "5.236298",
+          "Retained frequency control"
+        ],
+        [
+          "Original graph shuffle",
+          "5.234172",
+          "Retained frequency control"
+        ],
+        [
+          "Prefix grid",
+          "5.235063",
+          "Training-prefix-matched control"
+        ],
+        [
+          "Prefix graph",
+          "5.235680",
+          "Required graph control"
+        ],
+        [
+          "Graph / grid",
+          "0.990519",
+          "0 wins / 5 ties / 1 loss; p = 1"
+        ],
+        [
+          "Graph / prefix graph",
+          "1.000000",
+          "1 win / 4 ties / 1 loss; p = 0.984375"
+        ]
+      ],
+      "source": "docs/results/transfer_v4_run1/primary_analysis.json; REVIEW.md"
+    },
+    {
+      "type": "table",
+      "title": "Fresh stage 11 confirmation across three initialization seeds",
+      "headers": [
+        "Objective",
+        "Cache",
+        "Native NLL",
+        "Native accuracy",
+        "Changed NLL",
+        "Changed accuracy"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "512",
+          "1.359112",
+          "48.44%",
+          "1.624712",
+          "40.10%"
+        ],
+        [
+          "Standard",
+          "4096",
+          "1.306698",
+          "41.41%",
+          "1.475631",
+          "28.65%"
+        ],
+        [
+          "Weighted",
+          "512",
+          "1.511389",
+          "48.44%",
+          "1.678323",
+          "40.89%"
+        ],
+        [
+          "Weighted",
+          "4096",
+          "1.105500",
+          "56.51%",
+          "1.218692",
+          "47.66%"
+        ]
+      ],
+      "source": "docs/results/confirmation_v11_run1/summary.json; weighted passes 3/3, standard 1/3"
+    },
+    {
+      "type": "table",
+      "title": "Cache fitting and held out ID behavior",
+      "headers": [
+        "Study",
+        "Training cache",
+        "Final cache exact",
+        "Held-out exact per arm",
+        "Held-out node range"
+      ],
+      "rows": [
+        [
+          "13",
+          "512",
+          "Matched subset 0/128 in stage 14",
+          "0/128",
+          "18.95–21.60%"
+        ],
+        [
+          "15",
+          "16",
+          "16/16 in all arms",
+          "0/128",
+          "8.61–12.34%"
+        ],
+        [
+          "17",
+          "64",
+          "64/64 in all arms",
+          "0/128",
+          "12.17–18.71%"
+        ],
+        [
+          "18",
+          "512 new sample",
+          "Balanced probe 0/128 in stage 19",
+          "0/128",
+          "20.59–21.66%"
+        ]
+      ],
+      "source": "docs/results/adaptation_v13_run1, id_audit_v14_run1, overfit_v15_run1, cache_v17_run1, accel_v18_run1, fit_audit_v19_run1"
+    },
+    {
+      "type": "table",
+      "title": "Stage 19 seen and development scores",
+      "headers": [
+        "Arm",
+        "Non-source cell mean seen / dev",
+        "Whole-node mean seen / dev",
+        "Teacher digit mean seen / dev",
+        "Exact seen / dev"
+      ],
+      "rows": [
+        [
+          "scratch",
+          "28.00% / 21.43%",
+          "28.65% / 20.59%",
+          "37.66% / 28.09%",
+          "0/128 / 0/128"
+        ],
+        [
+          "grid_nca",
+          "27.10% / 22.17%",
+          "26.43% / 21.66%",
+          "34.86% / 26.46%",
+          "0/128 / 0/128"
+        ],
+        [
+          "graph_nca",
+          "25.27% / 22.01%",
+          "25.49% / 20.78%",
+          "36.02% / 25.47%",
+          "0/128 / 0/128"
+        ],
+        [
+          "prefix_grid",
+          "23.56% / 22.42%",
+          "23.48% / 21.52%",
+          "34.00% / 28.44%",
+          "0/128 / 0/128"
+        ],
+        [
+          "prefix_graph",
+          "28.44% / 21.18%",
+          "28.12% / 20.61%",
+          "34.08% / 25.02%",
+          "0/128 / 0/128"
+        ]
+      ],
+      "source": "docs/results/fit_audit_v19_run1/summary.json; all validity 100%; both targets fail in all arms"
+    },
+    {
+      "type": "table",
+      "title": "Stage 18 inherited T4 and new CPU component costs",
+      "headers": [
+        "Arm",
+        "Original cumulative T4 seconds",
+        "New CPU train seconds",
+        "New CPU evaluation seconds",
+        "Crossing"
+      ],
+      "rows": [
+        [
+          "Scratch",
+          "487.963",
+          "292.316",
+          "225.824",
+          "Censored 600"
+        ],
+        [
+          "Grid",
+          "631.786",
+          "231.219",
+          "186.018",
+          "Censored 600"
+        ],
+        [
+          "Graph",
+          "633.964",
+          "251.213",
+          "191.175",
+          "Censored 600"
+        ],
+        [
+          "Prefix grid",
+          "634.472",
+          "284.634",
+          "214.077",
+          "Censored 600"
+        ],
+        [
+          "Prefix graph",
+          "633.915",
+          "316.001",
+          "278.893",
+          "Censored 600"
+        ]
+      ],
+      "source": "docs/results/accel_v18_run1/costs.json; REVIEW.md. Unlike hardware components are not throughput ratios."
+    },
+    {
+      "type": "table",
+      "title": "Separate scientific transfer numerical agreement",
+      "headers": [
+        "Check",
+        "Maximum discrepancy",
+        "Frozen bound",
+        "Scope"
+      ],
+      "rows": [
+        [
+          "Profile under tolerance/mesh/domain changes",
+          "2.42009 × 10⁻⁹",
+          "10⁻⁴",
+          "Four declared steady cases"
+        ],
+        [
+          "Wall coefficients under those changes",
+          "4.01036 × 10⁻⁹",
+          "10⁻⁴",
+          "Same collocation family"
+        ],
+        [
+          "Independent velocity wall derivative",
+          "2.25944 × 10⁻⁹",
+          "10⁻⁵",
+          "Homann limit, 49/65 nodes"
+        ],
+        [
+          "Independent thermal wall derivative",
+          "8.04245 × 10⁻¹⁰",
+          "10⁻⁵",
+          "Linear thermal limit, 49/65 nodes"
+        ]
+      ],
+      "source": "docs/results/scientific_transfer_v2/CHECKS.json; PLAN.json"
+    },
+    {
+      "type": "table",
+      "title": "Source navigation for the latest claims",
+      "headers": [
+        "Claim",
+        "Code and evidence"
+      ],
+      "rows": [
+        [
+          "V4 graph contrasts",
+          "transfer_v4/; docs/results/transfer_v4_run1/primary_analysis.json"
+        ],
+        [
+          "Fresh weighted confirmation",
+          "confirmation_v11/; docs/results/confirmation_v11_run1/summary.json"
+        ],
+        [
+          "Graph ID task generation and scoring",
+          "ood_v12/; adaptation_v13/; frozen protocols under docs/"
+        ],
+        [
+          "Censored acceleration and actual counts",
+          "accel_v18/; docs/results/accel_v18_run1/results.json, costs.json"
+        ],
+        [
+          "Seen probe and complete optimization trace",
+          "fit_audit_v19/; docs/results/fit_audit_v19_run1/results.json, trace_blocks.csv"
+        ],
+        [
+          "Scientific equations and independent solver",
+          "scientific_transfer/DERIVATION_V2.md, hybrid_v2.py, independent_reference.py; frozen CHECKS.json"
+        ],
+        [
+          "Selected formal proofs and longer mathematics",
+          "proofs/lean/GraphNCA/; docs/theory/"
+        ],
+        [
+          "Notebook implementations",
+          "kaggle_gnn_nca_pilot.ipynb; kaggle_nca_transfer_v2/v3/v4.ipynb"
+        ]
+      ],
+      "source": "All paths are repository-relative; original source identities are retained in SOURCE_MAP.json"
+    },
+    {
+      "type": "figure",
+      "file": "figures/dataset.png",
+      "title": "Retained categorical trajectories",
+      "caption": "Actual retained validation example, row zero, frames 0, 1, 10 and 26. Colors encode categories rather than measured physical fields.",
+      "source": "docs/paper/figures/dataset.png"
+    },
+    {
+      "type": "figure",
+      "file": "figures/topology.png",
+      "title": "Actual typed grid and graph donors",
+      "caption": "The retained topology illustration compares actual donor arrays; 113 donor slots differ. This illustrative historical graph is not silently substituted for every v4 cohort.",
+      "source": "docs/paper/figures/topology.png"
+    },
+    {
+      "type": "figure",
+      "file": "figures/v4_cost.png",
+      "title": "Language transfer and cumulative cost",
+      "caption": "Recorded paired v4 ratios use different denominators for language exposure and cumulative time. A token benefit is not cumulative recovery.",
+      "source": "docs/paper/figures/v4_cost.png"
+    },
+    {
+      "type": "figure",
+      "file": "figures/confirmation.png",
+      "title": "Fresh weighted and standard diversity confirmation",
+      "caption": "Three-seed endpoint NLL means. Weighted native and intervention comparisons pass all seeds; standard only one. These are fixed-budget endpoints, not speed curves.",
+      "source": "docs/results/confirmation_v11_run1/summary.json"
+    },
+    {
+      "type": "figure",
+      "file": "figures/id_curves.png",
+      "title": "All scheduled stage 18 semantic observations",
+      "caption": "Four task/size panels preserve the source-aware marginal baseline and +10 percentage-point target. All arms remain censored at 600. Lines join observations without interpolation.",
+      "source": "docs/results/accel_v18_run1/id_curves.png"
+    },
+    {
+      "type": "figure",
+      "file": "figures/fit_and_trace.png",
+      "title": "Seen probe fitting and actual stage 19 trace summaries",
+      "caption": "Non-source cell means and each probe’s own baseline remain separate. Six fixed block means describe optimization; they are not target crossings or a causal diagnosis.",
+      "source": "docs/results/fit_audit_v19_run1/fit_and_trace.png"
+    },
+    {
+      "type": "figure",
+      "file": "figures/scientific_profiles.png",
+      "title": "Retained steady hybrid reference profiles",
+      "caption": "Profiles come directly from the four retained collocation states. They are numerical solutions of the declared steady model, not experimental data or neural predictions.",
+      "source": "docs/results/scientific_transfer_v2/CHECKS.json"
+    },
+    {
+      "type": "heading",
+      "text": "References",
+      "level": 1
+    },
+    {
+      "type": "reference",
+      "number": 1,
+      "text": "D. Lee, S. Han, A. Kumar and P. Agrawal. Training Language Models via Neural Cellular Automata. arXiv:2603.10055v1, 2026.",
+      "url": "https://arxiv.org/abs/2603.10055v1"
+    },
+    {
+      "type": "reference",
+      "number": 2,
+      "text": "A. Mordvintsev, E. Randazzo, E. Niklasson and M. Levin. Growing Neural Cellular Automata. Distill, 2020. doi:10.23915/distill.00023.",
+      "url": "https://distill.pub/2020/growing-ca/"
+    },
+    {
+      "type": "reference",
+      "number": 3,
+      "text": "J. Gilmer, S. S. Schoenholz, P. F. Riley, O. Vinyals and G. E. Dahl. Neural Message Passing for Quantum Chemistry. arXiv:1704.01212, 2017.",
+      "url": "https://arxiv.org/abs/1704.01212"
+    },
+    {
+      "type": "reference",
+      "number": 4,
+      "text": "A. Vaswani et al. Attention Is All You Need. arXiv:1706.03762, 2017.",
+      "url": "https://arxiv.org/abs/1706.03762"
+    },
+    {
+      "type": "reference",
+      "number": 5,
+      "text": "S. Merity, C. Xiong, J. Bradbury and R. Socher. Pointer Sentinel Mixture Models. arXiv:1609.07843, 2016.",
+      "url": "https://arxiv.org/abs/1609.07843"
+    },
+    {
+      "type": "reference",
+      "number": 6,
+      "text": "D. P. Kingma and J. Ba. Adam: A Method for Stochastic Optimization. arXiv:1412.6980, 2014.",
+      "url": "https://arxiv.org/abs/1412.6980"
+    },
+    {
+      "type": "reference",
+      "number": 7,
+      "text": "Lean community. Theorem Proving in Lean 4. Official online documentation, accessed 20 October 2026.",
+      "url": "https://lean-lang.org/theorem_proving_in_lean4/"
+    },
+    {
+      "type": "reference",
+      "number": 8,
+      "text": "S. Deb, “Graph neural cellular automata research protocols, mathematical notes and audited evidence through stage 19,” unpublished accompanying research bundle, Nov. 2026.",
+      "url": null
+    },
+    {
+      "type": "reference",
+      "number": 9,
+      "text": "L. Markeeva et al., “The CLRS-Text Algorithmic Reasoning Language Benchmark,” arXiv:2406.04229v1, 2024.",
+      "url": "https://arxiv.org/abs/2406.04229v1"
+    },
+    {
+      "type": "reference",
+      "number": 10,
+      "text": "SciPy community, “scipy.integrate.solve_bvp,” official documentation, accessed Nov. 2, 2026. Residual-controlled collocation method.",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_bvp.html"
+    }
+  ]
+}

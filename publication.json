@@ -44,6 +44,9 @@
     "scripts/check_v2_text.py",
     "scripts/git_roundtrip_check.py",
     "scripts/run_logged.py",
+    "scripts/check_scientific_completion.py",
+    "scripts/scientific_exploratory.py",
+    "scripts/check_scientific_exploratory.py",
     "scripts/smoke_check.py",
     "scripts/smoke_transfer_v2.py",
     "scripts/sync_prod.py",
@@ -218,6 +221,7 @@
     "accel_v18",
     "docs/results/accel_v18_run1",
     "fit_audit_v19",
-    "docs/results/fit_audit_v19_run1"
+    "docs/results/fit_audit_v19_run1",
+    "docs/paper/transactions_2026_11_02"
   ]
 }

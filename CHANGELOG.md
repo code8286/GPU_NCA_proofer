@@ -5,6 +5,37 @@ Public changes are summarized here; measurements and failures are in
 
 ## Unreleased
 
+- Complete the separately frozen five-arm milestone 3 CPU exploratory run.
+  Evaluate milestone 4 ID competence. All arms finish with zero passing
+  development profiles and censored competence crossings.
+
+### Scientific-transfer milestone2 completion and milestone3 integration - 2026-11-02
+
+- Add a fixed completion contract with independent full seven-state Chebyshev
+  checks at two resolutions, separate numerical replay and immutable certificates.
+- Implement a matched numeric adapter and original five-arm language-checkpoint
+  registry, ID data/order preparation, prospective thresholds/censoring and a
+  readiness-gated training runner. Preserve failed readiness; no inferred waiver.
+- Keep exact manuscript replication and engineering validation distinct from the
+  declared steady-model numerical milestone. Preserve previous sources/evidence.
+- Complete all four full-system/two-resolution numerical checks and separate
+  exact replay (timers excepted). Retain the failed first-order spectral attempt
+  and its corrected formulation without changing cases, resolutions or bounds.
+- Verify all five actual inherited starts and32/8 ID profiles; enforce real
+  readiness rejection before any scientific fitting. All26 scientific tests,
+  213 root regressions and public-only evidence audit pass locally.
+
+### Updated IEEE template manuscript - 2026-11-02
+
+- Add a new Word article following the supplied Transactions template, preserving
+  the October stage 9 paper and all original experiment evidence.
+- Extend the account through stage 19 and the separate steady hybrid numerical
+  milestone, retaining failed primaries, censoring, controls and complete costs.
+- Add mathematical derivations, editable LaTeX/Markdown companions, source-bound
+  figures, equation compatibility assets and document verification records.
+- Select the complete new source project for Prod alongside current Lean/theory
+  sources and existing verification evidence; no new training or Lean run.
+
 ### Scientific-transfer material/radiation milestone - 2026-11-01
 
 - Visually audit manuscript equations: withdraw the extraction-based suspected

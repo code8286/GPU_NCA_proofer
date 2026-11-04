@@ -1,0 +1,1740 @@
+{
+  "plan": {
+    "parent_sha256": "fb18722b3f09a8e0b2876220c818585d45315b772a9447a6a7e8fe7391497e6f",
+    "protocol_sha256": "c1a7e1f56c41d00eb2f8be4e4875f53bea61049d15efbc2d0917981918054f35",
+    "runner_sha256": "c5125d8bb07a153141c3807261c65fe3e43e27458a4998d198315bdbdce2c44b",
+    "torch_version": "2.14.1+cpu",
+    "scope": "single-cohort exploratory local CPU adaptation",
+    "synthetic_readiness_passed": false,
+    "ood_authorized": false
+  },
+  "summaries": [
+    {
+      "arm": "scratch",
+      "exposure": {
+        "updates": 400,
+        "query_tokens": 515200,
+        "supervised_scalars": 1803200
+      },
+      "curve": [
+        {
+          "step": 0,
+          "query_tokens": 0,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.3868865466288751,
+              "wall_absolute_max": 4.175282451155928,
+              "boundary_max": 4.205469489097595
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.38328568594991647,
+              "wall_absolute_max": 4.493183531568941,
+              "boundary_max": 5.847563743591309
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.6146661850236931,
+              "wall_absolute_max": 4.381590780825903,
+              "boundary_max": 2.3701004683971405
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.588823236763718,
+              "wall_absolute_max": 4.018181997180878,
+              "boundary_max": 2.2253669798374176
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.5474921323042605,
+              "wall_absolute_max": 4.5955290937445525,
+              "boundary_max": 6.929309964179993
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.5291642121416779,
+              "wall_absolute_max": 4.848033793175261,
+              "boundary_max": 6.212623715400696
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.4747934056199634,
+              "wall_absolute_max": 4.573952235992718,
+              "boundary_max": 7.012149095535278
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.49095141135091097,
+              "wall_absolute_max": 4.644824940051576,
+              "boundary_max": 3.6523807048797607
+            }
+          ]
+        },
+        {
+          "step": 100,
+          "query_tokens": 128800,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.027193854901129383,
+              "wall_absolute_max": 0.28725989663143503,
+              "boundary_max": 0.19067347049713135
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.02144833722236364,
+              "wall_absolute_max": 0.1942727001626332,
+              "boundary_max": 0.325767919421196
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.029735866860420374,
+              "wall_absolute_max": 0.27004451355612025,
+              "boundary_max": 0.24618186056613922
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.02975725821800973,
+              "wall_absolute_max": 0.17399889523149392,
+              "boundary_max": 0.3430550545454025
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.02449897656729805,
+              "wall_absolute_max": 0.06301608016672744,
+              "boundary_max": 0.2274812012910843
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.052544177356867276,
+              "wall_absolute_max": 0.6609981005977776,
+              "boundary_max": 0.15768562257289886
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.0513841141775689,
+              "wall_absolute_max": 0.8567474202759915,
+              "boundary_max": 0.3754972666501999
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.02889899581019845,
+              "wall_absolute_max": 0.3226173973078412,
+              "boundary_max": 0.17272062599658966
+            }
+          ]
+        },
+        {
+          "step": 200,
+          "query_tokens": 257600,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.01651096212781005,
+              "wall_absolute_max": 0.3027147722245931,
+              "boundary_max": 0.13688299804925919
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.011332739364144374,
+              "wall_absolute_max": 0.09915420610368808,
+              "boundary_max": 0.05806572735309601
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.01404245694589598,
+              "wall_absolute_max": 0.13135900358805785,
+              "boundary_max": 0.08647110313177109
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.01775505844064346,
+              "wall_absolute_max": 0.15361930999351325,
+              "boundary_max": 0.10801909118890762
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.014673970014707242,
+              "wall_absolute_max": 0.11194447652795847,
+              "boundary_max": 0.08962227404117584
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.04278388904889672,
+              "wall_absolute_max": 0.5474793768976136,
+              "boundary_max": 0.17441678792238235
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.04099526575756932,
+              "wall_absolute_max": 0.7539643406767271,
+              "boundary_max": 0.11582612991333008
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.020416748897320362,
+              "wall_absolute_max": 0.2459584633087799,
+              "boundary_max": 0.133168064057827
+            }
+          ]
+        },
+        {
+          "step": 300,
+          "query_tokens": 386400,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.009578485500674524,
+              "wall_absolute_max": 0.14853022844492414,
+              "boundary_max": 0.06764985620975494
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.009018985240259559,
+              "wall_absolute_max": 0.11975860725703691,
+              "boundary_max": 0.046430036425590515
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.007241602298186245,
+              "wall_absolute_max": 0.1611760552259225,
+              "boundary_max": 0.07120392471551895
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.01401230189850407,
+              "wall_absolute_max": 0.1625575667956568,
+              "boundary_max": 0.11668391525745392
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.007872821517566114,
+              "wall_absolute_max": 0.10781390020692894,
+              "boundary_max": 0.07359251379966736
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.03686075113860008,
+              "wall_absolute_max": 0.3356385790375558,
+              "boundary_max": 0.07559426128864288
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.03457311246306331,
+              "wall_absolute_max": 0.5001517436187288,
+              "boundary_max": 0.21430887281894684
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.02018272467548397,
+              "wall_absolute_max": 0.25958051575092633,
+              "boundary_max": 0.07010260224342346
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "query_tokens": 515200,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.008940654695375083,
+              "wall_absolute_max": 0.15955197565157309,
+              "boundary_max": 0.03324519470334053
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.0078105709262534595,
+              "wall_absolute_max": 0.11242716645331785,
+              "boundary_max": 0.058888643980026245
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.006918081288714872,
+              "wall_absolute_max": 0.1544211665694908,
+              "boundary_max": 0.0760079026222229
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.014609010929945453,
+              "wall_absolute_max": 0.15496862911154807,
+              "boundary_max": 0.16911178827285767
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.008719317400657966,
+              "wall_absolute_max": 0.1008918838506716,
+              "boundary_max": 0.08186019957065582
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.03607031040156091,
+              "wall_absolute_max": 0.3375862010612465,
+              "boundary_max": 0.03572654724121094
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.033717885437000335,
+              "wall_absolute_max": 0.5016236740450168,
+              "boundary_max": 0.26997484266757965
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.019731992382786438,
+              "wall_absolute_max": 0.23992024897730402,
+              "boundary_max": 0.07206708192825317
+            }
+          ]
+        }
+      ],
+      "initial_sha256": "10d1e562468b780dcdd5aa283862882376fe6592b9f2761548793d3e93536f2b",
+      "first": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "sustained": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "endpoint_competent": false,
+      "training_CPU_seconds": 227.80914719970315,
+      "evaluation_CPU_seconds": 2.583366399994702,
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.13701209600003,
+        "cumulative_seconds": 487.96314237700017,
+        "ppt_updates": 0,
+        "ppt_tokens": 0,
+        "ppt_stage_seconds": 0,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "exposure": {
+        "updates": 400,
+        "query_tokens": 515200,
+        "supervised_scalars": 1803200
+      },
+      "curve": [
+        {
+          "step": 0,
+          "query_tokens": 0,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.7135917316829313,
+              "wall_absolute_max": 3.5149856729639826,
+              "boundary_max": 2.8810739517211914
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.6229927992713787,
+              "wall_absolute_max": 3.9266225439654714,
+              "boundary_max": 1.9436176121234894
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.6440976433969247,
+              "wall_absolute_max": 3.9110746830255487,
+              "boundary_max": 4.990360736846924
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.7545759823947823,
+              "wall_absolute_max": 3.84609688093558,
+              "boundary_max": 4.062699675559998
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.7216055569572617,
+              "wall_absolute_max": 4.007146017090285,
+              "boundary_max": 6.318041086196899
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.668893390929553,
+              "wall_absolute_max": 3.8089019139826394,
+              "boundary_max": 4.353092312812805
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.6971962656610834,
+              "wall_absolute_max": 3.6058031220480316,
+              "boundary_max": 1.903236746788025
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.6943235402098378,
+              "wall_absolute_max": 4.351474955786747,
+              "boundary_max": 4.5992207527160645
+            }
+          ]
+        },
+        {
+          "step": 100,
+          "query_tokens": 128800,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.016796859566788315,
+              "wall_absolute_max": 0.37656718284666435,
+              "boundary_max": 0.29215194284915924
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.01974598011339687,
+              "wall_absolute_max": 0.16565583314289034,
+              "boundary_max": 0.12368112802505493
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.015932724726670913,
+              "wall_absolute_max": 0.1656907725760135,
+              "boundary_max": 0.10572079569101334
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.019269178689190234,
+              "wall_absolute_max": 0.12404812038642699,
+              "boundary_max": 0.26331041008234024
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.01646587087545959,
+              "wall_absolute_max": 0.10668025589355001,
+              "boundary_max": 0.12542670965194702
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.045232284756430936,
+              "wall_absolute_max": 0.6787773688906882,
+              "boundary_max": 0.5113447457551956
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.03728901590002169,
+              "wall_absolute_max": 0.8170264820385922,
+              "boundary_max": 0.4776734858751297
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.025705375010923882,
+              "wall_absolute_max": 0.26816374158852163,
+              "boundary_max": 0.21217703819274902
+            }
+          ]
+        },
+        {
+          "step": 200,
+          "query_tokens": 257600,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.009743743013737975,
+              "wall_absolute_max": 0.27813333837808796,
+              "boundary_max": 0.10521486401557922
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.010728569224419074,
+              "wall_absolute_max": 0.09682648182807863,
+              "boundary_max": 0.07941552996635437
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.01111021247008897,
+              "wall_absolute_max": 0.09294030580196644,
+              "boundary_max": 0.21794982254505157
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.017801445414476372,
+              "wall_absolute_max": 0.13225937563716927,
+              "boundary_max": 0.513080433011055
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.011869297635616295,
+              "wall_absolute_max": 0.1075096611140478,
+              "boundary_max": 0.0866231918334961
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.035142524595766785,
+              "wall_absolute_max": 0.42099340547934094,
+              "boundary_max": 0.34343816339969635
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.029006220716483906,
+              "wall_absolute_max": 0.43185764098357127,
+              "boundary_max": 0.4797738045454025
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.018010874419591115,
+              "wall_absolute_max": 0.19069581972583616,
+              "boundary_max": 0.4247647151350975
+            }
+          ]
+        },
+        {
+          "step": 300,
+          "query_tokens": 386400,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.007482231601230686,
+              "wall_absolute_max": 0.13540998397775827,
+              "boundary_max": 0.04222951829433441
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.01111927303165659,
+              "wall_absolute_max": 0.12068013596376448,
+              "boundary_max": 0.07583372294902802
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.009642669172042886,
+              "wall_absolute_max": 0.11192343234821045,
+              "boundary_max": 0.32475508749485016
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.013093027286522178,
+              "wall_absolute_max": 0.143313663089209,
+              "boundary_max": 0.5754531174898148
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.006409195651033824,
+              "wall_absolute_max": 0.08366183511661451,
+              "boundary_max": 0.07431250065565109
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.02900973033341416,
+              "wall_absolute_max": 0.2515991944082614,
+              "boundary_max": 0.21404065191745758
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.02430918675144047,
+              "wall_absolute_max": 0.19540673116458418,
+              "boundary_max": 0.34352995455265045
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.014599462458049788,
+              "wall_absolute_max": 0.20593810448620342,
+              "boundary_max": 0.4808356240391731
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "query_tokens": 515200,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.005951324839527593,
+              "wall_absolute_max": 0.14544662678556386,
+              "boundary_max": 0.04070393741130829
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.009314288551363525,
+              "wall_absolute_max": 0.10928702450251149,
+              "boundary_max": 0.07784314453601837
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.007484938220648884,
+              "wall_absolute_max": 0.1099219315932114,
+              "boundary_max": 0.31980033963918686
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.0124118509429205,
+              "wall_absolute_max": 0.13334618485040206,
+              "boundary_max": 0.5684713646769524
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.008894154972036121,
+              "wall_absolute_max": 0.07584453769817423,
+              "boundary_max": 0.06993827223777771
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.02918752346767652,
+              "wall_absolute_max": 0.26012402549440594,
+              "boundary_max": 0.2135290950536728
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.023714560804194137,
+              "wall_absolute_max": 0.20270820604797302,
+              "boundary_max": 0.33963993191719055
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.013305138129453258,
+              "wall_absolute_max": 0.19248804658723873,
+              "boundary_max": 0.4707659035921097
+            }
+          ]
+        }
+      ],
+      "initial_sha256": "ce46bc6ae72ceaaa4f560ada01d677671af5b3c3840abe6c48c9e86f6b9567c2",
+      "first": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "sustained": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "endpoint_competent": false,
+      "training_CPU_seconds": 216.74174219999986,
+      "evaluation_CPU_seconds": 1.8666908999875886,
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 480.7262336500007,
+        "cumulative_seconds": 631.7861601090007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 127.346663116,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "exposure": {
+        "updates": 400,
+        "query_tokens": 515200,
+        "supervised_scalars": 1803200
+      },
+      "curve": [
+        {
+          "step": 0,
+          "query_tokens": 0,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.6814233137751935,
+              "wall_absolute_max": 3.2776435756657385,
+              "boundary_max": 4.1370320320129395
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.6232610834081215,
+              "wall_absolute_max": 4.019801313999826,
+              "boundary_max": 4.949289560317993
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.7276321061871306,
+              "wall_absolute_max": 3.90195905872642,
+              "boundary_max": 2.688559889793396
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.8219956684101278,
+              "wall_absolute_max": 3.614685365226379,
+              "boundary_max": 1.7819905877113342
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.752531724854847,
+              "wall_absolute_max": 3.968084810514349,
+              "boundary_max": 6.186758279800415
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.6467334109380053,
+              "wall_absolute_max": 3.923001750731519,
+              "boundary_max": 8.243818879127502
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.5241414351723537,
+              "wall_absolute_max": 3.726047410645731,
+              "boundary_max": 6.813673377037048
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.8644114597443981,
+              "wall_absolute_max": 4.169624086635242,
+              "boundary_max": 2.021538734436035
+            }
+          ]
+        },
+        {
+          "step": 100,
+          "query_tokens": 128800,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.04648159603532451,
+              "wall_absolute_max": 0.40654475559662107,
+              "boundary_max": 0.23610617220401764
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.03645791742319029,
+              "wall_absolute_max": 0.2847134343800586,
+              "boundary_max": 0.25885987281799316
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.04196489397838624,
+              "wall_absolute_max": 0.2956289228949913,
+              "boundary_max": 0.25418996810913086
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.03833020463798459,
+              "wall_absolute_max": 0.19781407963122688,
+              "boundary_max": 0.27940496802330017
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.04736884037025085,
+              "wall_absolute_max": 0.09948668062935595,
+              "boundary_max": 0.25952568650245667
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.05836909600885871,
+              "wall_absolute_max": 0.6899037662125138,
+              "boundary_max": 0.24258790910243988
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.05798764595572885,
+              "wall_absolute_max": 0.8690975750760155,
+              "boundary_max": 0.22744302451610565
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.031810733301545546,
+              "wall_absolute_max": 0.33632487657346233,
+              "boundary_max": 0.24288445711135864
+            }
+          ]
+        },
+        {
+          "step": 200,
+          "query_tokens": 257600,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.009871942916489082,
+              "wall_absolute_max": 0.37074306842464755,
+              "boundary_max": 0.19546084105968475
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.009302540128560542,
+              "wall_absolute_max": 0.13080248290419205,
+              "boundary_max": 0.049810655415058136
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.00986184094852154,
+              "wall_absolute_max": 0.11013441953563885,
+              "boundary_max": 0.03429526090621948
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.01222025745986403,
+              "wall_absolute_max": 0.15322027010970096,
+              "boundary_max": 0.09663724899291992
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.01183276764419737,
+              "wall_absolute_max": 0.10185410319502952,
+              "boundary_max": 0.2303583174943924
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.03065882449805499,
+              "wall_absolute_max": 0.4940628375454339,
+              "boundary_max": 0.13541027903556824
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.02562303909238679,
+              "wall_absolute_max": 0.5974799770788157,
+              "boundary_max": 0.1987743377685547
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.014060461976082144,
+              "wall_absolute_max": 0.22800093546080902,
+              "boundary_max": 0.10452193021774292
+            }
+          ]
+        },
+        {
+          "step": 300,
+          "query_tokens": 386400,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.007073974040377529,
+              "wall_absolute_max": 0.21667148814022208,
+              "boundary_max": 0.08465558290481567
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.011238691263210924,
+              "wall_absolute_max": 0.1303896962007569,
+              "boundary_max": 0.06813254207372665
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.007652981047878275,
+              "wall_absolute_max": 0.12570865612633542,
+              "boundary_max": 0.10995697230100632
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.0112698659599333,
+              "wall_absolute_max": 0.136600727984317,
+              "boundary_max": 0.061327576637268066
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.0081216133917652,
+              "wall_absolute_max": 0.11312991923558258,
+              "boundary_max": 0.11605039238929749
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.02551789327854307,
+              "wall_absolute_max": 0.3266933186655505,
+              "boundary_max": 0.06350827217102051
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.020909435120485577,
+              "wall_absolute_max": 0.3787322963904336,
+              "boundary_max": 0.08429503440856934
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.013643455915954873,
+              "wall_absolute_max": 0.24852547657688073,
+              "boundary_max": 0.06751835346221924
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "query_tokens": 515200,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.0057796902911163885,
+              "wall_absolute_max": 0.21421226891275968,
+              "boundary_max": 0.07363021373748779
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.009783949561859722,
+              "wall_absolute_max": 0.1272018961270991,
+              "boundary_max": 0.06990965455770493
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.007021568793349287,
+              "wall_absolute_max": 0.12920287345957537,
+              "boundary_max": 0.11912979185581207
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.010752048694663407,
+              "wall_absolute_max": 0.13422332866483377,
+              "boundary_max": 0.06247150897979736
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.009731875762375967,
+              "wall_absolute_max": 0.11176583305729904,
+              "boundary_max": 0.11198066174983978
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.02568717985239506,
+              "wall_absolute_max": 0.32234871201361015,
+              "boundary_max": 0.06537306308746338
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.020078297028408482,
+              "wall_absolute_max": 0.3708706928048313,
+              "boundary_max": 0.08627724647521973
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.012158079406443601,
+              "wall_absolute_max": 0.23837342638415548,
+              "boundary_max": 0.06885862350463867
+            }
+          ]
+        }
+      ],
+      "initial_sha256": "139be5758c3b8cc6c7af5d8a79fde4671b367724b0733964051f8f426bcd4430",
+      "first": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "sustained": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "endpoint_competent": false,
+      "training_CPU_seconds": 229.50708510002005,
+      "evaluation_CPU_seconds": 1.7443810000113444,
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.1545481309995,
+        "cumulative_seconds": 633.964263117999,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.095979892,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "exposure": {
+        "updates": 400,
+        "query_tokens": 515200,
+        "supervised_scalars": 1803200
+      },
+      "curve": [
+        {
+          "step": 0,
+          "query_tokens": 0,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.6570794602171175,
+              "wall_absolute_max": 3.7396278825193896,
+              "boundary_max": 5.725255608558655
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.5653756965149426,
+              "wall_absolute_max": 3.9574320208578193,
+              "boundary_max": 3.942437767982483
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.6254638682270559,
+              "wall_absolute_max": 3.7076950326084193,
+              "boundary_max": 7.299666404724121
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.5428341979212329,
+              "wall_absolute_max": 3.4101781040419232,
+              "boundary_max": 7.58516252040863
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.6894554803447034,
+              "wall_absolute_max": 3.77636248233432,
+              "boundary_max": 6.000356674194336
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.8409396700300271,
+              "wall_absolute_max": 3.8280799203831855,
+              "boundary_max": 5.014201998710632
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.8031436232181144,
+              "wall_absolute_max": 3.939080361150771,
+              "boundary_max": 4.004198908805847
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.5513529335785259,
+              "wall_absolute_max": 3.973679881749018,
+              "boundary_max": 6.219266057014465
+            }
+          ]
+        },
+        {
+          "step": 100,
+          "query_tokens": 128800,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.01582700773199577,
+              "wall_absolute_max": 0.26760529806180067,
+              "boundary_max": 0.26831790804862976
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.021168128181054163,
+              "wall_absolute_max": 0.18521773276346454,
+              "boundary_max": 0.11146259307861328
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.02070441405564119,
+              "wall_absolute_max": 0.22130947683807056,
+              "boundary_max": 0.1597786322236061
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.022658930840140836,
+              "wall_absolute_max": 0.15081103823621023,
+              "boundary_max": 0.13603460788726807
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.022374022054590926,
+              "wall_absolute_max": 0.1033328857171667,
+              "boundary_max": 0.11724576354026794
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.043855254487460534,
+              "wall_absolute_max": 0.6406404383288513,
+              "boundary_max": 0.20884715020656586
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.038636853273355386,
+              "wall_absolute_max": 0.7959248727111377,
+              "boundary_max": 0.13554438948631287
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.029619236256329475,
+              "wall_absolute_max": 0.3000151705723515,
+              "boundary_max": 0.25661733001470566
+            }
+          ]
+        },
+        {
+          "step": 200,
+          "query_tokens": 257600,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.013401385499967262,
+              "wall_absolute_max": 0.3192006201123201,
+              "boundary_max": 0.0588226318359375
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.011962320995893103,
+              "wall_absolute_max": 0.1326349492739023,
+              "boundary_max": 0.06133207678794861
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.010119069543283782,
+              "wall_absolute_max": 0.11285389448992267,
+              "boundary_max": 0.35914644598960876
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.013596106039535368,
+              "wall_absolute_max": 0.14588971848367738,
+              "boundary_max": 0.2845863625407219
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.013993340075451274,
+              "wall_absolute_max": 0.10520606982891567,
+              "boundary_max": 0.08632534742355347
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.036666026544720585,
+              "wall_absolute_max": 0.5256263997508388,
+              "boundary_max": 0.048501819372177124
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.03150139229328347,
+              "wall_absolute_max": 0.6169848588753235,
+              "boundary_max": 0.03144059330224991
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.016948971115156572,
+              "wall_absolute_max": 0.21911314036040053,
+              "boundary_max": 0.3089378774166107
+            }
+          ]
+        },
+        {
+          "step": 300,
+          "query_tokens": 386400,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.007915901173236043,
+              "wall_absolute_max": 0.1805054576159939,
+              "boundary_max": 0.04701785743236542
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.015716106659240135,
+              "wall_absolute_max": 0.13047699654861455,
+              "boundary_max": 0.026591092348098755
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.0068853096029540565,
+              "wall_absolute_max": 0.12016674074070699,
+              "boundary_max": 0.35844698548316956
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.012830384810038767,
+              "wall_absolute_max": 0.17300807814837205,
+              "boundary_max": 0.27370236814022064
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.007697610425831583,
+              "wall_absolute_max": 0.1136240722594608,
+              "boundary_max": 0.048291075974702835
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.03170434976943179,
+              "wall_absolute_max": 0.33853191090736523,
+              "boundary_max": 0.05849599838256836
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.027507882717956015,
+              "wall_absolute_max": 0.3764890185460523,
+              "boundary_max": 0.08687376976013184
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.015916320338812996,
+              "wall_absolute_max": 0.24332671408715711,
+              "boundary_max": 0.30278801918029785
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "query_tokens": 515200,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.007078302253230607,
+              "wall_absolute_max": 0.17596500734898624,
+              "boundary_max": 0.09041301906108856
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.014525373387576217,
+              "wall_absolute_max": 0.12961977745726894,
+              "boundary_max": 0.04729166626930237
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.006548661634112081,
+              "wall_absolute_max": 0.113296623205973,
+              "boundary_max": 0.3142750635743141
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.012464377955701768,
+              "wall_absolute_max": 0.17144082729079257,
+              "boundary_max": 0.23028340190649033
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.009221712879955409,
+              "wall_absolute_max": 0.11630575635245766,
+              "boundary_max": 0.055327992886304855
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.03158673184184234,
+              "wall_absolute_max": 0.3261827608117098,
+              "boundary_max": 0.0712326169013977
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.02683233440613029,
+              "wall_absolute_max": 0.3606554434557214,
+              "boundary_max": 0.09041059017181396
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.01534235551661762,
+              "wall_absolute_max": 0.23633995584410417,
+              "boundary_max": 0.2535385638475418
+            }
+          ]
+        }
+      ],
+      "initial_sha256": "b33a7415c4eaf065dd01770e7c481a824af8e94717629d82f7d0c1ff8a176252",
+      "first": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "sustained": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "endpoint_competent": false,
+      "training_CPU_seconds": 255.37906369993289,
+      "evaluation_CPU_seconds": 2.3223996000015177,
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.4449266169995,
+        "cumulative_seconds": 634.4720692359996,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.3231750770001,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "exposure": {
+        "updates": 400,
+        "query_tokens": 515200,
+        "supervised_scalars": 1803200
+      },
+      "curve": [
+        {
+          "step": 0,
+          "query_tokens": 0,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.7668335216268045,
+              "wall_absolute_max": 3.930098881203995,
+              "boundary_max": 2.085262656211853
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.7083959418711715,
+              "wall_absolute_max": 4.337640557903725,
+              "boundary_max": 1.9424484372138977
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.8312473006623259,
+              "wall_absolute_max": 4.005947188988415,
+              "boundary_max": 3.4109151363372803
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.8731535203634977,
+              "wall_absolute_max": 3.912308354816931,
+              "boundary_max": 3.273113965988159
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.8990558532089798,
+              "wall_absolute_max": 4.07340573950379,
+              "boundary_max": 2.266811966896057
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.7759966656152669,
+              "wall_absolute_max": 4.225557280982328,
+              "boundary_max": 2.217519521713257
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.6869334050978588,
+              "wall_absolute_max": 4.09911788039601,
+              "boundary_max": 2.070578932762146
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.9401179991578649,
+              "wall_absolute_max": 4.41545707575419,
+              "boundary_max": 2.182242274284363
+            }
+          ]
+        },
+        {
+          "step": 100,
+          "query_tokens": 128800,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.028363883880790846,
+              "wall_absolute_max": 0.30640635627298773,
+              "boundary_max": 0.10833387821912766
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.02479517291365068,
+              "wall_absolute_max": 0.21195644899203314,
+              "boundary_max": 0.12894611060619354
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.032169084594109304,
+              "wall_absolute_max": 0.2639914003292332,
+              "boundary_max": 0.2248585969209671
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.03181517900264711,
+              "wall_absolute_max": 0.18341171626051245,
+              "boundary_max": 0.18886928260326385
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.030584064942793605,
+              "wall_absolute_max": 0.08232388294518667,
+              "boundary_max": 0.139491468667984
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.05082768367146569,
+              "wall_absolute_max": 0.5776634855234966,
+              "boundary_max": 0.12139692902565002
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.046613861343993764,
+              "wall_absolute_max": 0.7650250788972517,
+              "boundary_max": 0.08962312340736389
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.03102804952158107,
+              "wall_absolute_max": 0.2835750591164192,
+              "boundary_max": 0.1751960813999176
+            }
+          ]
+        },
+        {
+          "step": 200,
+          "query_tokens": 257600,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.011849405134330184,
+              "wall_absolute_max": 0.31966966133821506,
+              "boundary_max": 0.2134888619184494
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.013564292210534054,
+              "wall_absolute_max": 0.07643014473747245,
+              "boundary_max": 0.14933422207832336
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.009651909960966128,
+              "wall_absolute_max": 0.1121625290428121,
+              "boundary_max": 0.1704804226756096
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.01451338457474873,
+              "wall_absolute_max": 0.1585151131610174,
+              "boundary_max": 0.09084463119506836
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.013849278923014045,
+              "wall_absolute_max": 0.1066296948610197,
+              "boundary_max": 0.16912974417209625
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.031649779427395934,
+              "wall_absolute_max": 0.4534669589648612,
+              "boundary_max": 0.06481271237134933
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.02998950723469176,
+              "wall_absolute_max": 0.5855295414184365,
+              "boundary_max": 0.0763530284166336
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.01694202369202657,
+              "wall_absolute_max": 0.1978437126680157,
+              "boundary_max": 0.11807471513748169
+            }
+          ]
+        },
+        {
+          "step": 300,
+          "query_tokens": 386400,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.007673072237379286,
+              "wall_absolute_max": 0.16898068829463653,
+              "boundary_max": 0.10988511145114899
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.014789491747008127,
+              "wall_absolute_max": 0.09143608363182021,
+              "boundary_max": 0.07068000733852386
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.00901382334253443,
+              "wall_absolute_max": 0.12412906111573219,
+              "boundary_max": 0.23098118603229523
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.012785215933059974,
+              "wall_absolute_max": 0.13587284172215286,
+              "boundary_max": 0.05962951108813286
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.009833875030404818,
+              "wall_absolute_max": 0.07224270252726317,
+              "boundary_max": 0.105496346950531
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.0278155043712521,
+              "wall_absolute_max": 0.3069994584207374,
+              "boundary_max": 0.12435965240001678
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.02710908065179165,
+              "wall_absolute_max": 0.36808524598916526,
+              "boundary_max": 0.12198960781097412
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.016615593728048526,
+              "wall_absolute_max": 0.23303694132664443,
+              "boundary_max": 0.12372016906738281
+            }
+          ]
+        },
+        {
+          "step": 400,
+          "query_tokens": 515200,
+          "cases": [
+            {
+              "case_id": "56554c5bc4341a92a61d9a3a43cb430a36dfaf962bf22aa863d12a5385e29269",
+              "valid": true,
+              "profile_rmse": 0.0069542525320249815,
+              "wall_absolute_max": 0.18294998240505045,
+              "boundary_max": 0.08611619472503662
+            },
+            {
+              "case_id": "8b7fdd63a328473562df3c6df73f65c040bc68b302e983aeaf2af5bfcf852f58",
+              "valid": true,
+              "profile_rmse": 0.011247400501002466,
+              "wall_absolute_max": 0.09614097314844305,
+              "boundary_max": 0.055159926414489746
+            },
+            {
+              "case_id": "f2623718ce2e60ec55cd12b800f5e82110825cf8a6f214d204b9e025a8de4119",
+              "valid": true,
+              "profile_rmse": 0.007721328322057874,
+              "wall_absolute_max": 0.138204252307901,
+              "boundary_max": 0.2351924031972885
+            },
+            {
+              "case_id": "0a74e4de8d4725df9c491ad5044561afa11af07e22064c8efa259ac9e89a3327",
+              "valid": true,
+              "profile_rmse": 0.013190444389375956,
+              "wall_absolute_max": 0.1288115277769435,
+              "boundary_max": 0.06705863773822784
+            },
+            {
+              "case_id": "4c03db669be15619b54f13cb3d9200f714ee9ed8232b29bb195660bbe16bc4af",
+              "valid": true,
+              "profile_rmse": 0.012254102476610284,
+              "wall_absolute_max": 0.0643530109031547,
+              "boundary_max": 0.0968477874994278
+            },
+            {
+              "case_id": "d55418acb4f5c1bb76970cf8a878178cb731a784b112e5b84c5b7c1a5abe7498",
+              "valid": true,
+              "profile_rmse": 0.02853498245998467,
+              "wall_absolute_max": 0.320564448019383,
+              "boundary_max": 0.1339295133948326
+            },
+            {
+              "case_id": "08e0342063545b7eb163c59edcbdec64c4342d0d37b7e3393abed9132a5658bb",
+              "valid": true,
+              "profile_rmse": 0.026288875405791192,
+              "wall_absolute_max": 0.37943042336704824,
+              "boundary_max": 0.1136559247970581
+            },
+            {
+              "case_id": "035a845f5f4ad8ee1a6dd9cb6c40fa25712654e30195c9a4886a0e309f32d649",
+              "valid": true,
+              "profile_rmse": 0.014631724098763895,
+              "wall_absolute_max": 0.2203276799328553,
+              "boundary_max": 0.1375523954629898
+            }
+          ]
+        }
+      ],
+      "initial_sha256": "f2f3e2234edbc88275c198354b4994e03fc03f259d4597fe1ab9e87794e48e15",
+      "first": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "sustained": {
+        "reached": false,
+        "step": null,
+        "query_tokens": null,
+        "censored_at": 400
+      },
+      "endpoint_competent": false,
+      "training_CPU_seconds": 259.5115950001782,
+      "evaluation_CPU_seconds": 2.265218000000459,
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.1424818000005,
+        "cumulative_seconds": 633.9153657880007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.013564438,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    }
+  ],
+  "id_gate_passed": false,
+  "ood_executed": false
+}

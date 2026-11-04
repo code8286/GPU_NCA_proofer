@@ -24,9 +24,13 @@ predicted-guess correction versus an ordinary-guess solve; immutable JSON output
 The verification rerun uses the SAME SciPy implementation, not an independent
 physics derivation or numerical algorithm. Multiple branches are not excluded.
 
-Neural fitting/checkpoint import is not implemented or enabled. The five-arm
-configuration is a draft contract, not an executable training plan. No learned
-starting guesses or training speedup are measured by this foundation.
+The [milestone2 completion contract](MILESTONE2_COMPLETION.md) adds independent
+full-system discretization and separate replay to the original numerical checks.
+The [milestone3 protocol](MILESTONE3_PROTOCOL.md) now specifies a numeric adapter,
+all five retained language starts, ID-only data, common optimization and fixed
+competence/censoring criteria. Checkpoint preparation and a readiness-gated
+training runner are implemented; the retained starts remain unready. No learned
+starting guesses or training speedup are established by implementation/tests.
 
 ## Usage
 
@@ -81,6 +85,37 @@ The original five milestones remain below. Milestone1 is partly resolved and
 milestone2 now has an explicit implementation; later neural/ID/OOD milestones
 are not relabeled completed. V1's historical plans bind its earlier source state;
 retain them rather than rebuilding over old artifacts after these additions.
+
+## Completion and matched-training preparation
+
+Use NEW output directories for each freeze. Finish milestone2's certificate
+before preparing milestone3. Preparation loads/checks original language states
+but performs no neural prediction or optimizer update; the published v5 guard
+currently blocks fitting before its first fitting marker. No stage18 exception
+is inherited. A changed eligibility/cohort policy requires a new declaration.
+
+```powershell
+python scripts/run_logged.py --label scientific-m2-completion-freeze -- python -m scientific_transfer.complete_m2 freeze --output runs/scientific_transfer/m2_completion_r2
+python scripts/run_logged.py --label scientific-m2-completion-check -- python -m scientific_transfer.complete_m2 check --output runs/scientific_transfer/m2_completion_r2
+python scripts/run_logged.py --label scientific-m2-completion-replay -- python -m scientific_transfer.complete_m2 replay --output runs/scientific_transfer/m2_completion_r2
+python scripts/run_logged.py --label scientific-m3-prepare -- python -m scientific_transfer.training prepare --completion runs/scientific_transfer/m2_completion_r2 --output runs/scientific_transfer/m3_preparation
+python scripts/run_logged.py --label scientific-m3-verify -- python -m scientific_transfer.training verify --output runs/scientific_transfer/m3_preparation
+```
+
+M2 completion is numerical/specification completion for steady_hybrid_v2, not
+experimental validation or completion of manuscript milestone1. Its source
+receipt binds selected mathematical files so later neural work remains separate.
+The M3 plan binds all current scientific sources, actual inherited LM/core/new
+adapter hashes, data/order and readiness evidence. Numeric query tokens are
+counted separately from historical language tokens. See its protocol for the
+limits of inherited cost aggregates and the additional work needed for milestone5.
+
+Completion revision2 passed all four cases at both spectral resolutions and
+the separate-invocation replay. The first completion run remains a failed
+first-order spectral discretization diagnostic; revision2 corrects that
+discretization without changing model equations, cases, resolutions or bounds.
+Milestone2 is complete for the DECLARED steady model, with exact manuscript
+replication and experimental validation still outside that completion claim.
 
 1. Resolve the manuscript audit using the original derivation/code and reproduce
    at least one numerical reference with tolerance/domain/material checks.

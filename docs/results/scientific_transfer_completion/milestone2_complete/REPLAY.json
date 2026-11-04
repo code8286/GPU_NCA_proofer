@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "plan_sha256": "550925aa73ac8f3c09a92a04d7aaa42053d278aa1bb687fdd4105d557e50ac19",
+  "checks_sha256": "bda581dd4dcca791ea165006b23b2e272618fabe85516396bb5ef5f9a55c3ba1",
+  "scope": "separate invocation same-code numerical replay; timers excluded"
+}

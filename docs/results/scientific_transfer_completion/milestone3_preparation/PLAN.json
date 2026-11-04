@@ -1,0 +1,305 @@
+{
+  "config": {
+    "schema": 3,
+    "model_id": "steady_hybrid_v2",
+    "arms": [
+      "scratch",
+      "grid_nca",
+      "graph_nca",
+      "prefix_grid",
+      "prefix_graph"
+    ],
+    "cohort_seed": 59,
+    "adapter_seed": 20261102,
+    "data_seed": 2026110203,
+    "order_seed": 2026110204,
+    "train_cases": 32,
+    "development_cases": 8,
+    "parameter_ranges": {
+      "magnetic": [
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        1
+      ],
+      "buoyancy": [
+        0,
+        0.5
+      ],
+      "prandtl": [
+        0.7,
+        3
+      ],
+      "phi_zinc": [
+        0,
+        0.02
+      ],
+      "phi_titania": [
+        0,
+        0.02
+      ],
+      "radiation": [
+        0,
+        0.5
+      ],
+      "temperature_ratio": [
+        1,
+        1.5
+      ]
+    },
+    "updates": 400,
+    "batch_profiles": 4,
+    "evaluation_updates": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "learning_rate": 0.0003,
+    "warmup_updates": 20,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "output_scales": [
+      10,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "id_profile_rmse_max": 0.02,
+    "id_wall_absolute_max": 0.05,
+    "id_boundary_max": 0.05,
+    "require_all_development_cases": true,
+    "threads": 2,
+    "device": "cpu",
+    "require_stronger_synthetic_readiness": true,
+    "new_language_or_ppt_training": false,
+    "confirmation_or_ood_allowed": false
+  },
+  "sources": {
+    "__init__.py": "a01e251e6e74e12db0a18315edb1b428beadfa90ca22a6e77a768f56fd4b6ee3",
+    "complete_m2.py": "158f8f08e9720bc121962099e61377726f6bd3fc020888a9f998cd7df42c775c",
+    "completion_config.json": "061cee6f6f78c37c1f02047b459aeb2812e901eb662a08d643f89ad963380cd1",
+    "config.json": "df2b07d09a556c956cc6d0428fe308718f3f189b7265cd0799071487bc7d6252",
+    "DERIVATION_V2.md": "83730a68c2ebcd73d3dcf9c26c35a1e2ae34c0492c65148562a61d62ff6a3764",
+    "EQUATION_AUDIT.md": "2552182307bcd1d443e38c6950c8f4538f4612b3b9e8fca26eaf045121a1fddb",
+    "hybrid_v2.py": "ce938601342ba0c352a3e3c23ae4f4c1ec6742377f41bc6f46acf5548578764a",
+    "independent_reference.py": "46266cf329aa5096830df9922b1afdb0a0c05593108a719b882a1d9c365ef527",
+    "materials.py": "1b8c0e27634589af30f34cce44c717e81ad89a14d4f44485e705840408e48784",
+    "metrics.py": "be5254a46bf567c777751de682e75cd94326ad9065788c35423ae2e054567189",
+    "MILESTONE2_COMPLETION.md": "c09074c61382e7a07ebdee773ecf2b6e1b61faffe6ce487d43ff8579d3ed8f02",
+    "milestone2_config.json": "5cc5be96068e6c06d3778b6e7e92003b34168d2026731004e51b74e81017691a",
+    "MILESTONE3_PROTOCOL.md": "8da21614410d7aef7bb57141c8cb420e1ad202ad20033a5aa5609a180e95f753",
+    "milestones.py": "a0c19e67157e012a52c8f61e4c9befcc5e795af590fc0cea8958cfbf99aca917",
+    "numeric_adapter.py": "9e6b67f0cc4fbe2924d89727f3a2ba868a4d2b2f3432794d92c0be598491c646",
+    "physics.py": "0d2354fbb0aae53168ed5f1837e07732668d34e6f8a8ca12385a2045a696235a",
+    "PROTOCOL.md": "3981537bad949a20c5cb3508dd32ea395f4f8b90f39029ddc6574b3358d9f1ae",
+    "README.md": "25f5a3f21c93433c0db99fdf7af37f934c5d4c5dc4a78d0c051c85fd5ac5aebf",
+    "requirements.txt": "ac734e8afca6aa6538a7c59594c0d4ae35fe6a67dc8e9329eca0b46e7cdc1f3e",
+    "run.py": "76039c524933fafe1ab360199d69841876bbe0d4c449f3e04e9cdb6b40679c5e",
+    "spectral_hybrid.py": "90cbe0bedfd61cb6a7509baf4a0f7ef4d8c49dc062c424183c32ea7f5e630cac",
+    "test_hybrid_v2.py": "243207534e98f52eb8c5a9917b55aa7fac00ea5b0c819bc8fce676aaab8bd3d7",
+    "test_milestone_completion.py": "cef254a5d60b8f0f78fe6015f202fc6cc3208ea29494a838a534c903ae908bf8",
+    "test_scientific_transfer.py": "99dc94446bceeece72f707b033234bc006a8fcc8132b7a5fb24afa84121abfb0",
+    "training.py": "9552afd54d0c900d0c00c1599895037935a51c3388a73f95fba8d3a2f96ad92c",
+    "training_config.json": "9ac2faf0320a875e5e6d43610692425b7065e3145f3f585af2ef9c7af4802ce4",
+    "transfer_v4/model.py": "4394c7c226ec72113925da5fb9c50949361d652c5d47f54926e399a5b8f8c6b7",
+    "transfer_v4/common.py": "1cda526fe4d4a108c38d40261df7c66e0b1ddc9aedbe575d9b3525345ebcffd7"
+  },
+  "registry": [
+    {
+      "arm": "scratch",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/scratch_59/language_final.pt",
+      "checkpoint_sha256": "0654f4b0e02ce33d4cd1f458b3f3bb549e8c098be2d3406cb93576dec650d126",
+      "full_model_sha256": "95820bc4056139f937e23608ed246758cb349127bbb77a27e47b3901178814ec",
+      "core_sha256": "940dc7a76dba1e6b3207968dafb11fd8de69225f13247fecf57f18088adc7ce7",
+      "adapter_sha256": "edc1e0237ad670245174bb36fbefe24a717636773a89d4ba1b9d0cc67c8edc23",
+      "adaptation_initial_sha256": "10d1e562468b780dcdd5aa283862882376fe6592b9f2761548793d3e93536f2b",
+      "architecture": {
+        "layers": 6,
+        "heads": 4,
+        "width": 192,
+        "context": 1024
+      },
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_order": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+      "language_head_initial": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.13701209600003,
+        "cumulative_seconds": 487.96314237700017,
+        "ppt_updates": 0,
+        "ppt_tokens": 0,
+        "ppt_stage_seconds": 0,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "grid_nca",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/grid_nca_59/language_final.pt",
+      "checkpoint_sha256": "311f2fbd0859c6462b718d31a7bb1bdb850273a0ef26d22f8c8c53dda5dccad0",
+      "full_model_sha256": "053def3ca56ffb5f1309b5964ebf9449c835890db3399e4ffeaecca5b4c9ec65",
+      "core_sha256": "e7bec0c90f99e32195fe3e969cd860c28d53bdba88dddf36cd2a1c45b38c56b4",
+      "adapter_sha256": "edc1e0237ad670245174bb36fbefe24a717636773a89d4ba1b9d0cc67c8edc23",
+      "adaptation_initial_sha256": "ce46bc6ae72ceaaa4f560ada01d677671af5b3c3840abe6c48c9e86f6b9567c2",
+      "architecture": {
+        "layers": 6,
+        "heads": 4,
+        "width": 192,
+        "context": 1024
+      },
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_order": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+      "language_head_initial": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 480.7262336500007,
+        "cumulative_seconds": 631.7861601090007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 127.346663116,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "graph_nca",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/graph_nca_59/language_final.pt",
+      "checkpoint_sha256": "3eac2202e37e0677bed12e2b6701db1b74467fd723fc37a171c8b5bd2863a788",
+      "full_model_sha256": "513cc4131231b3aeace5a094f92097633d748c403a27c9682647520dd704b78c",
+      "core_sha256": "9c0b7e95aa7a02045995495fb459845391e9c5d06c0ca4eae8d194c34d4cbb7c",
+      "adapter_sha256": "edc1e0237ad670245174bb36fbefe24a717636773a89d4ba1b9d0cc67c8edc23",
+      "adaptation_initial_sha256": "139be5758c3b8cc6c7af5d8a79fde4671b367724b0733964051f8f426bcd4430",
+      "architecture": {
+        "layers": 6,
+        "heads": 4,
+        "width": 192,
+        "context": 1024
+      },
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_order": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+      "language_head_initial": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.1545481309995,
+        "cumulative_seconds": 633.964263117999,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.095979892,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "prefix_grid",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/prefix_grid_59/language_final.pt",
+      "checkpoint_sha256": "f6136e070c892f36d7634ed80a22a234a0b88c378d2b5c3675e26861ddfa6c9d",
+      "full_model_sha256": "6f1bfe12ca7aad1c5f4e9f47bdc7b648a1d548c52a0f73c3a90a6d33f5257818",
+      "core_sha256": "c18497a834670365ebc9b4f13d5cb51f6a16a7e0e4fa35dd9071dce9cddaf3fe",
+      "adapter_sha256": "edc1e0237ad670245174bb36fbefe24a717636773a89d4ba1b9d0cc67c8edc23",
+      "adaptation_initial_sha256": "b33a7415c4eaf065dd01770e7c481a824af8e94717629d82f7d0c1ff8a176252",
+      "architecture": {
+        "layers": 6,
+        "heads": 4,
+        "width": 192,
+        "context": 1024
+      },
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_order": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+      "language_head_initial": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.4449266169995,
+        "cumulative_seconds": 634.4720692359996,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.3231750770001,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    },
+    {
+      "arm": "prefix_graph",
+      "seed": 59,
+      "checkpoint": "Kaggle Outputs/nca_transfer_v4_run1_review/artifacts/runs/development/prefix_graph_59/language_final.pt",
+      "checkpoint_sha256": "ff3f4fc4c49d970b2d75f4245ac91f2eba0cc562968295676592330657f59761",
+      "full_model_sha256": "14c4716db7203d9e25b7046fd061f17b2f42519d98ea559f37f2a0e96a7146f7",
+      "core_sha256": "46fc86612d48dcaa65e767f5bad016cb73fb725783dac28a72c9ad6f1ee2a07d",
+      "adapter_sha256": "edc1e0237ad670245174bb36fbefe24a717636773a89d4ba1b9d0cc67c8edc23",
+      "adaptation_initial_sha256": "f2f3e2234edbc88275c198354b4994e03fc03f259d4597fe1ab9e87794e48e15",
+      "architecture": {
+        "layers": 6,
+        "heads": 4,
+        "width": 192,
+        "context": 1024
+      },
+      "language_updates": 2000,
+      "language_tokens": 8192000,
+      "language_order": "4da12b65136599d73253faf7e53510b960d5965440a58c2d4ad1e6b027ea9c8c",
+      "language_schedule": "0f6b7013b671b5b4c0c8cb985395dc3fffb15ebca3ca2612e34c6e92535801c4",
+      "language_head_initial": "152d24121ebf5346a4b44b015a17ecd49c5d22c07c64d14a2adea806c827f911",
+      "imported_cost": {
+        "hardware": "Tesla T4 GPU, historical",
+        "language_seconds": 481.1424818000005,
+        "cumulative_seconds": 633.9153657880007,
+        "ppt_updates": 1000,
+        "ppt_tokens": 4096000,
+        "ppt_stage_seconds": 129.013564438,
+        "status": "imported measurement; cumulative already includes original preparation, do not add stage costs again"
+      }
+    }
+  ],
+  "eligibility": {
+    "report": "docs/results/readiness_v5_run1/summary.json",
+    "sha256": "21678493cfe3f63ddd198c10bd43c3373b0c176af468115c1f78588106c3b4d0",
+    "results_sha256": "be515494a3f1ddb503fb514d909d932d6f66acc751eb0895d036dc14160487e0",
+    "cohort_gates": [
+      {
+        "frequency_advantage_nats": -0.6415656319351859,
+        "ordering_advantage_nats": -0.0011625824671277485,
+        "frequency_passed": false,
+        "ordering_passed": false,
+        "passed": false
+      },
+      {
+        "frequency_advantage_nats": -0.32750567666179276,
+        "ordering_advantage_nats": -0.0001426615362234429,
+        "frequency_passed": false,
+        "ordering_passed": false,
+        "passed": false
+      }
+    ],
+    "approved_initializations": [],
+    "allowed": false,
+    "reason": "retained v4 random-rule initializations fail stronger readiness; no exception inferred"
+  },
+  "completion_plan_sha256": "550925aa73ac8f3c09a92a04d7aaa42053d278aa1bb687fdd4105d557e50ac19",
+  "files": {
+    "train.json": "3e25e5dab02bc3bcf2954a020524c446f1a9542c65b7eb1b671194b6f934d25e",
+    "development.json": "5a0601468737a56a1ea29ef09372c2d234e7f43a9ec0aaa07efa344a441214ac",
+    "ORDER.json": "c5273a0f245111beb6aff6cd009ffd9cf32a6df10cf7bbb28d8836658b42e774"
+  },
+  "expected_per_arm": {
+    "updates": 400,
+    "query_tokens": 515200,
+    "supervised_scalars": 1803200
+  },
+  "reference_CPU_seconds": 3.6927961999899708,
+  "protocol_sha256": "8da21614410d7aef7bb57141c8cb420e1ad202ad20033a5aa5609a180e95f753",
+  "scope": "historical single-cohort numeric-adapter preparation; no fitting or confirmation",
+  "sha256": "5d04e5900128f3fc60479ca32e8db745ec1a9d57752dac8d9940a2735c85c701"
+}
